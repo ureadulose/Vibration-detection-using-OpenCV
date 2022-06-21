@@ -11,8 +11,6 @@ VibrationDetector::VibrationDetector()
 
 VibrationDetector::~VibrationDetector()
 {
-	std::cout << "PointsTracker Destructor" << std::endl;
-	// TODO: add delete[]
 	delete[] this->fft_performer_;
 	delete[] this->data_displayer_;
 }
