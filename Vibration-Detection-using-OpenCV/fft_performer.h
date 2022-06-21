@@ -1,5 +1,5 @@
-#ifndef FFT_BUFFER_H_
-#define FFT_BUFFER_H_
+#ifndef FFT_PERFORMER_H_
+#define FFT_PERFORMER_H_
 
 // OpenCV headers
 #include <opencv2/opencv.hpp>

@@ -1,4 +1,4 @@
-#include "fft_buffer.h"
+#include "fft_performer.h"
 
 FftPerformer::FftPerformer()
 	:size_of_vecs_{ 0 }

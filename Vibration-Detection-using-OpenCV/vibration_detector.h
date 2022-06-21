@@ -14,7 +14,7 @@
 
 // my headers
 #include "video_processing.h"
-#include "fft_buffer.h"
+#include "fft_performer.h"
 #include "data_displayer.h"
 #include "contour_finder.h"
 

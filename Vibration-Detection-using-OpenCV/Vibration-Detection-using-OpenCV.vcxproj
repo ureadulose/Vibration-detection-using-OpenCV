@@ -144,7 +144,7 @@
   <ItemGroup>
     <ClCompile Include="contour_finder.cpp" />
     <ClCompile Include="data_displayer.cpp" />
-    <ClCompile Include="fft_buffer.cpp" />
+    <ClCompile Include="fft_performer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PeakFinder.cpp" />
     <ClCompile Include="vibration_detector.cpp" />
@@ -153,7 +153,7 @@
   <ItemGroup>
     <ClInclude Include="contour_finder.h" />
     <ClInclude Include="data_displayer.h" />
-    <ClInclude Include="fft_buffer.h" />
+    <ClInclude Include="fft_performer.h" />
     <ClInclude Include="PeakFinder.h" />
     <ClInclude Include="vibration_detector.h" />
     <ClInclude Include="video_processing.h" />
