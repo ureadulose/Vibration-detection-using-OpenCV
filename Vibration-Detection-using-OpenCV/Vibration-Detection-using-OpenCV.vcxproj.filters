@@ -27,10 +27,13 @@
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="points_tracker.cpp">
+    <ClCompile Include="video_processing.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="video_processing.cpp">
+    <ClCompile Include="vibration_detector.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="PeakFinder.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,10 +47,13 @@
     <ClInclude Include="fft_buffer.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="points_tracker.h">
+    <ClInclude Include="video_processing.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="video_processing.h">
+    <ClInclude Include="vibration_detector.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="PeakFinder.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

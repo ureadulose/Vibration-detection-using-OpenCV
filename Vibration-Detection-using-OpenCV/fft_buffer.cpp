@@ -67,9 +67,6 @@ std::vector<float> FftPerformer::ExecuteFft(int sampling_frequency)
 
 	double threshold = (double)0.0;
 
-	// https://github.com/chongkaechin/FindMultiplePeaksAlgorithm
-	// усебне цнбмн
-	// оепедекюи
 	PeakFinder::findPeaks(magnitudes, indexes_of_target_frequencies_, false, 1);
 
 	std::vector<float> dst;

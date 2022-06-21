@@ -1,9 +1,9 @@
-#include "points_tracker.h"
+#include "vibration_detector.h"
 
 void ExecuteVibrationMonitoring()
 {
-	PointsTracker b;
-	b.ExecuteTracking();
+	VibrationDetector b;
+	b.ExecuteVibrationDetection();
 }
 
 void main()

@@ -146,14 +146,16 @@
     <ClCompile Include="data_displayer.cpp" />
     <ClCompile Include="fft_buffer.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="points_tracker.cpp" />
+    <ClCompile Include="PeakFinder.cpp" />
+    <ClCompile Include="vibration_detector.cpp" />
     <ClCompile Include="video_processing.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="contour_finder.h" />
     <ClInclude Include="data_displayer.h" />
     <ClInclude Include="fft_buffer.h" />
-    <ClInclude Include="points_tracker.h" />
+    <ClInclude Include="PeakFinder.h" />
+    <ClInclude Include="vibration_detector.h" />
     <ClInclude Include="video_processing.h" />
   </ItemGroup>
   <ItemGroup>

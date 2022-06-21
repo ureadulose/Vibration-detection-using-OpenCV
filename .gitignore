@@ -2,3 +2,5 @@
 *.mp4
 /.vs
 *.txt
+/x64
+/Vibration-Detection-using-OpenCV/x64
