@@ -4,5 +4,3 @@
 *.txt
 /x64
 /Vibration-Detection-using-OpenCV/x64
-points_tracker.cpp
-points_tracker.h
