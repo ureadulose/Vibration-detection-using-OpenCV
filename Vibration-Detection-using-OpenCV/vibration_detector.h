@@ -25,10 +25,6 @@ public:
 	~VibrationDetector();
 	void ExecuteVibrationDetection();
 
-
-
-	///////////////// FOR FAST FOURIER TRANSFORM //////////////////
-
 private:
 	// Converts RGB to gray scale
 	Mat RgbToGray(Mat frame_to_be_grayed);
@@ -46,11 +42,6 @@ private:
 	// Draws a track of movements
 	void DrawLines(std::vector<Point2f> prev_pts, std::vector<Point2f> next_pts);
 
-
-
-	///////////////// FOR FAST FOURIER TRANSFORM //////////////////
-
-
 private:
 	String window_name_;
 
@@ -59,7 +50,6 @@ private:
 	// for detecting the click
 	bool point_selected_;
 	Point2f click_coords_;
-
 
 	// for Lucas-Kanade tracking
 	Mat prev_img_gray_;
