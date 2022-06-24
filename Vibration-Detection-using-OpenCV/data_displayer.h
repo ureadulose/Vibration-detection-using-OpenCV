@@ -9,7 +9,7 @@ using namespace cv;
 class DataDisplayer
 {
 public:
-	void output_vibration_parameters(Mat& frame, Point2f point, std::vector<float> vec_of_frequencies);
+	void OutputVibrationParameters(Mat& frame, Point2f point, std::vector<float> vec_of_frequencies);
 private:
 
 };

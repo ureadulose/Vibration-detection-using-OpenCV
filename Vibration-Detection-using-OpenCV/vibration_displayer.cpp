@@ -23,5 +23,28 @@ void VibrationDisplayer::Init()
 
 void VibrationDisplayer::ContourHandler(std::vector<std::vector<Point>> contour_shapes)
 {
-
+	std::vector<Point> contour_points;
+	// рассматриваем каждый найденный контур
+	for (int i = 0; i < contour_shapes.size(); i++)
+	{
+		
+	}
+	// imshow
 }
+
+void VibrationDisplayer::GetContourHeadPoints(std::vector<std::vector<Point>> contour_shapes/*, std::vector<Point>& contour_head_points*/)
+{
+	std::vector<Point> tmp;
+	// рассматриваем каждый найденный контур
+	for (int i = 0; i < contour_shapes.size(); i++)
+	{
+		std::cout << "cum" << std::endl;
+		if (!contour_shapes[i].empty())
+		{
+			std::cout << "cum" << std::endl;
+			tmp.push_back(contour_shapes[i][0]);
+		}
+	}
+}
+
+

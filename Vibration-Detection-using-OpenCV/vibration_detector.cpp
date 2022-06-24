@@ -70,7 +70,7 @@ void VibrationDetector::GoodFeaturesToTrack(int MAX_PTS)
 	);
 }
 
-void VibrationDetector::ContourLucasKanadeTracking(Mat prev_img_gray, Mat next_img_gray, std::vector<Point2f>& prev_pts, std::vector<Point2f>& next_pts, std::vector<uchar>& status)
+void VibrationDetector::LucasKanadeTracking(Mat prev_img_gray, Mat next_img_gray, std::vector<Point2f>& prev_pts, std::vector<Point2f>& next_pts, std::vector<uchar>& status)
 {
 	// calling Lucas-Kanade algorithm
 	calcOpticalFlowPyrLK(
@@ -127,8 +127,6 @@ void VibrationDetector::ExecuteVibrationDetection()
 	VibrationDisplayer vibration_displayer(V_MONITOR_WINDOW_NAME, sequence_of_frames.GetFrameWidth(), sequence_of_frames.GetFrameHeight());
 	vibration_displayer.Init();
 
-	ContourFinder contour_finder;
-
 	// reading the first frame of sequence so we can convert it to gray color space
 	sequence_of_frames.ReadNextFrame();
 	this->current_tracking_frame_ = sequence_of_frames.GetCurrentFrame();
@@ -150,7 +148,7 @@ void VibrationDetector::ExecuteVibrationDetection()
 		if (this->point_selected_)
 		{
 			// getting next_pts_ updated from Lucas-Kanade tracking
-			ContourLucasKanadeTracking(prev_img_gray_, next_img_gray_, prev_pts_, next_pts_, status_);
+			LucasKanadeTracking(prev_img_gray_, next_img_gray_, prev_pts_, next_pts_, status_);
 
 			// collecting just tracked points
 			for (int i = 0; i < number_of_points_; i++)
@@ -165,13 +163,13 @@ void VibrationDetector::ExecuteVibrationDetection()
 				if (vec_of_fft_performers_[i].GetSizeOfVecs() > 30)
 				{
 					// output data on the frame
-					data_displayer_[i].output_vibration_parameters(current_tracking_frame_, next_pts_[i], vec_of_frequencies_);
+					data_displayer_[i].OutputVibrationParameters(current_tracking_frame_, next_pts_[i], vec_of_frequencies_);
 				}
 			}
 
 			contour_prev_pts_ = prev_pts_;
 			contour_next_pts_ = next_pts_;
-			ContourLucasKanadeTracking(prev_img_gray_, next_img_gray_, contour_prev_pts_, contour_next_pts_, contour_status_);
+			LucasKanadeTracking(prev_img_gray_, next_img_gray_, contour_prev_pts_, contour_next_pts_, contour_status_);
 
 			// drawing lines
 			DrawLines(prev_pts_, next_pts_);
@@ -182,8 +180,10 @@ void VibrationDetector::ExecuteVibrationDetection()
 		}
 
 		// finding contours on a frame
-		contour_shapes_ = contour_finder.GetContours(current_tracking_frame_);
-		
+		contour_shapes_ = vibration_displayer.GetContours(current_tracking_frame_);
+
+		std::vector<Point> output_array;
+		//vibration_displayer.GetContourHeadPoints(current_tracking_frame_/*, output_array*/);
 
 		// displaying vibration
 		vibration_displayer.ContourHandler(contour_shapes_);

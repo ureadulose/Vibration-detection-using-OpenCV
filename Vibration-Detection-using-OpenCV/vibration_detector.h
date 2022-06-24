@@ -17,7 +17,6 @@
 #include "video_processing.h"
 #include "fft_performer.h"
 #include "data_displayer.h"
-#include "contour_finder.h"
 #include "vibration_displayer.h"
 
 class VibrationDetector
@@ -36,7 +35,7 @@ private:
 	void OnMouse(int event, int x, int y, int flags);
 
 	// Lucas-Kanade tracking
-	void ContourLucasKanadeTracking(Mat prev_img_gray, Mat next_img_gray, std::vector<Point2f>& prev_pts, std::vector<Point2f>& next_pts, std::vector<uchar>& status);
+	void LucasKanadeTracking(Mat prev_img_gray, Mat next_img_gray, std::vector<Point2f>& prev_pts, std::vector<Point2f>& next_pts, std::vector<uchar>& status);
 
 	// Lucas-Kanade auto-tracking
 	void GoodFeaturesToTrack(int MAX_PTS);

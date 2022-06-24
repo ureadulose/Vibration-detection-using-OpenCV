@@ -1,6 +1,6 @@
 #include "data_displayer.h"
 
-void DataDisplayer::output_vibration_parameters(Mat& frame, Point2f point, std::vector<float> vec_of_frequencies)
+void DataDisplayer::OutputVibrationParameters(Mat& frame, Point2f point, std::vector<float> vec_of_frequencies)
 {
 	for (int j = 0; j < static_cast<int>(vec_of_frequencies.size()); j++)
 	{
