@@ -11,7 +11,12 @@ VibrationDisplayer::VibrationDisplayer(std::string window_name, int frame_width,
 void VibrationDisplayer::Init()
 {
 	// making a window
-	namedWindow(window_name_, WINDOW_AUTOSIZE);
-	frame_ = Mat(frame_height_, frame_width_, CV_8UC3, Scalar(0, 0, 0));
-	imshow(window_name_, frame_);
+	
+	// UNCOMMENT THIS LATER
+	// 
+	// 
+	//namedWindow(window_name_, WINDOW_AUTOSIZE);
+	//frame_ = Mat(frame_height_, frame_width_, CV_8UC3, Scalar(0, 0, 0));
+	//
+	//imshow(window_name_, frame_);
 }

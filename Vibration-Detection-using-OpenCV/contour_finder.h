@@ -9,7 +9,7 @@ using namespace cv;
 class ContourFinder
 {
 public:
-	std::vector<std::vector<Point>> GetContours(Mat& frame);
+	std::vector<std::vector<Point>> GetContours(Mat frame);
 };
 
 #endif

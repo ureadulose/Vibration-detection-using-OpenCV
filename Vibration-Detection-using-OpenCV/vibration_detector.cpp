@@ -118,14 +118,14 @@ void VibrationDetector::ExecuteVibrationDetection()
 	VibrationDisplayer vibration_monitor(V_MONITOR_WINDOW_NAME, sequence_of_frames.GetFrameWidth(), sequence_of_frames.GetFrameHeight());
 	vibration_monitor.Init();
 
+	ContourFinder contour_finder;
+
 	// reading the first frame of sequence so we can convert it to gray color space
 	sequence_of_frames.ReadNextFrame();
 	this->current_tracking_frame_ = sequence_of_frames.GetCurrentFrame();
 	this->prev_img_gray_ = RgbToGray(sequence_of_frames.GetCurrentFrame());
 	this->sampling_frequency_ = sequence_of_frames.GetInputFps();
 
-	//ContourFinder contour_finder;
-	//std::vector<std::vector<Point>> contour_shapes;
 
 	while (sequence_of_frames.GetInputCapStatus())
 	{
@@ -168,6 +168,19 @@ void VibrationDetector::ExecuteVibrationDetection()
 			next_img_gray_.copyTo(this->prev_img_gray_);
 		}
 
+
+
+		///////////////////////////////////////////////////
+		contour_shapes_ = contour_finder.GetContours(current_tracking_frame_);
+
+		for (int i = 0; i < contour_shapes_.size(); i++)
+		{
+			drawContours(current_tracking_frame_, contour_shapes_, i, Scalar(255, 0, 255), 1);
+		}
+		///////////////////////////////////////////////////
+
+
+		
 		// display frame
 		sequence_of_frames.ShowFrame(current_tracking_frame_);
 		waitKey(20);

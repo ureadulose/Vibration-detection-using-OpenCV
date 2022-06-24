@@ -74,6 +74,9 @@ private:
 	DataDisplayer* data_displayer_;
 	std::vector<DataDisplayer> vec_of_data_displayer_;
 	std::vector<float> vec_of_frequencies_; // for a certain point
+
+	// for displaying vibration with points
+	std::vector<std::vector<Point>> contour_shapes_;
 };
 
 #endif
