@@ -9,7 +9,13 @@ using namespace cv;
 class ContourFinder
 {
 public:
-	std::vector<std::vector<Point>> GetContours(Mat frame);
+	std::vector<std::vector<Point>> GetContours(Mat input_frame);
+	Mat GetPreparedFrame();
+private:
+	// prepare a frame for finding contours
+	Mat PrepareFrame(Mat input_frame);
+private:
+	Mat prep_frame_;
 };
 
 #endif

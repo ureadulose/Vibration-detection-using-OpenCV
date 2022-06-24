@@ -1,20 +1,16 @@
 #include "contour_finder.h"
 
-std::vector<std::vector<Point>> ContourFinder::GetContours(Mat frame)
+std::vector<std::vector<Point>> ContourFinder::GetContours(Mat input_frame)
 {
 	std::vector<std::vector<Point>> suitable_contour_shapes;
-
-	// preparing a frame for finding contours
-	Mat prep_frame;
-	cvtColor(frame, prep_frame, COLOR_BGR2GRAY);
-	GaussianBlur(prep_frame, prep_frame, Size(7, 7), 0);
-	Canny(prep_frame, prep_frame, 64, 192);
 
 	// doing dzhob
 	std::vector<std::vector<Point>> contours = { {Point(0,0)} };
 	std::vector<Vec4i> hierarchy = { 0 };
 
-	findContours(prep_frame, contours, hierarchy, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
+	prep_frame_ = PrepareFrame(input_frame);
+
+	findContours(prep_frame_, contours, hierarchy, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
 
 	std::vector<std::vector<Point>> contour_shapes(contours.size());
 
@@ -31,7 +27,21 @@ std::vector<std::vector<Point>> ContourFinder::GetContours(Mat frame)
 		}
 	}
 
-
-
 	return suitable_contour_shapes;
+}
+
+Mat ContourFinder::GetPreparedFrame()
+{
+	return prep_frame_;
+}
+
+Mat ContourFinder::PrepareFrame(Mat input_frame)
+{
+	Mat prep_frame;
+
+	cvtColor(input_frame, prep_frame, COLOR_BGR2GRAY);
+	GaussianBlur(prep_frame, prep_frame, Size(7, 7), 0);
+	Canny(prep_frame, prep_frame, 64, 192);
+
+	return prep_frame;
 }

@@ -20,3 +20,8 @@ void VibrationDisplayer::Init()
 	//
 	//imshow(window_name_, frame_);
 }
+
+void VibrationDisplayer::ContourHandler(std::vector<std::vector<Point>> contour_shapes)
+{
+
+}

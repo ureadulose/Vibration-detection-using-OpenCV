@@ -28,21 +28,24 @@ public:
 	void ExecuteVibrationDetection();
 
 private:
-	// Converts RGB to gray scale
+	// converts RGB to gray scale
 	Mat RgbToGray(Mat frame_to_be_grayed);
 
-	// Callback functions for detecting the click
+	// callback functions for detecting the click
 	static void SelectPoint(int event, int x, int y, int flags, void* userdata);
 	void OnMouse(int event, int x, int y, int flags);
 
 	// Lucas-Kanade tracking
-	void LucasKanadeTracking();
+	void ContourLucasKanadeTracking(Mat prev_img_gray, Mat next_img_gray, std::vector<Point2f>& prev_pts, std::vector<Point2f>& next_pts, std::vector<uchar>& status);
 
 	// Lucas-Kanade auto-tracking
 	void GoodFeaturesToTrack(int MAX_PTS);
 
-	// Draws a track of movements
+	// draws a track of movements
 	void DrawLines(std::vector<Point2f> prev_pts, std::vector<Point2f> next_pts);
+
+	// draws shapes of found contours
+	void DrawContours(Mat& frame, std::vector<std::vector<Point>> contour_shapes);
 
 private:
 	String main_window_name_;
@@ -59,7 +62,10 @@ private:
 	Mat next_img_gray_;
 	std::vector<Point2f> prev_pts_;
 	std::vector<Point2f> next_pts_;
+	std::vector<Point2f> contour_prev_pts_;
+	std::vector<Point2f> contour_next_pts_;
 	std::vector<uchar> status_; // 1 if features found, 0 if not
+	std::vector<uchar> contour_status_;
 	int lk_win_size_;
 
 	// useful parameters

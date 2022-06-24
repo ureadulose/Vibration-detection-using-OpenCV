@@ -70,15 +70,15 @@ void VibrationDetector::GoodFeaturesToTrack(int MAX_PTS)
 	);
 }
 
-void VibrationDetector::LucasKanadeTracking()
+void VibrationDetector::ContourLucasKanadeTracking(Mat prev_img_gray, Mat next_img_gray, std::vector<Point2f>& prev_pts, std::vector<Point2f>& next_pts, std::vector<uchar>& status)
 {
 	// calling Lucas-Kanade algorithm
 	calcOpticalFlowPyrLK(
-		prev_img_gray_,
-		next_img_gray_,
-		prev_pts_,
-		next_pts_,
-		status_,
+		prev_img_gray,
+		next_img_gray,
+		prev_pts,
+		next_pts,
+		status,
 		noArray(),
 		Size(lk_win_size_ * 2 + 1, lk_win_size_ * 2 + 1),
 		5,
@@ -89,6 +89,7 @@ void VibrationDetector::LucasKanadeTracking()
 		)
 	);
 }
+
 
 void VibrationDetector::DrawLines(std::vector<Point2f> prev_pts, std::vector<Point2f> next_pts)
 {
@@ -110,13 +111,21 @@ void VibrationDetector::DrawLines(std::vector<Point2f> prev_pts, std::vector<Poi
 	}
 }
 
+void VibrationDetector::DrawContours(Mat& frame, std::vector<std::vector<Point>> contour_shapes)
+{
+	for (int i = 0; i < contour_shapes_.size(); i++)
+	{
+		drawContours(current_tracking_frame_, contour_shapes, i, Scalar(255, 0, 255), 1);
+	}
+}
+
 void VibrationDetector::ExecuteVibrationDetection()
 {
 	VideoProcessor sequence_of_frames(INPUT_FILE_NAME, MAIN_WINDOW_NAME);
 	sequence_of_frames.Init();
 
-	VibrationDisplayer vibration_monitor(V_MONITOR_WINDOW_NAME, sequence_of_frames.GetFrameWidth(), sequence_of_frames.GetFrameHeight());
-	vibration_monitor.Init();
+	VibrationDisplayer vibration_displayer(V_MONITOR_WINDOW_NAME, sequence_of_frames.GetFrameWidth(), sequence_of_frames.GetFrameHeight());
+	vibration_displayer.Init();
 
 	ContourFinder contour_finder;
 
@@ -141,7 +150,7 @@ void VibrationDetector::ExecuteVibrationDetection()
 		if (this->point_selected_)
 		{
 			// getting next_pts_ updated from Lucas-Kanade tracking
-			LucasKanadeTracking();
+			ContourLucasKanadeTracking(prev_img_gray_, next_img_gray_, prev_pts_, next_pts_, status_);
 
 			// collecting just tracked points
 			for (int i = 0; i < number_of_points_; i++)
@@ -160,6 +169,10 @@ void VibrationDetector::ExecuteVibrationDetection()
 				}
 			}
 
+			contour_prev_pts_ = prev_pts_;
+			contour_next_pts_ = next_pts_;
+			ContourLucasKanadeTracking(prev_img_gray_, next_img_gray_, contour_prev_pts_, contour_next_pts_, contour_status_);
+
 			// drawing lines
 			DrawLines(prev_pts_, next_pts_);
 
@@ -168,19 +181,16 @@ void VibrationDetector::ExecuteVibrationDetection()
 			next_img_gray_.copyTo(this->prev_img_gray_);
 		}
 
-
-
-		///////////////////////////////////////////////////
+		// finding contours on a frame
 		contour_shapes_ = contour_finder.GetContours(current_tracking_frame_);
-
-		for (int i = 0; i < contour_shapes_.size(); i++)
-		{
-			drawContours(current_tracking_frame_, contour_shapes_, i, Scalar(255, 0, 255), 1);
-		}
-		///////////////////////////////////////////////////
-
-
 		
+
+		// displaying vibration
+		vibration_displayer.ContourHandler(contour_shapes_);
+
+		// drawing contours
+		DrawContours(current_tracking_frame_, contour_shapes_);
+
 		// display frame
 		sequence_of_frames.ShowFrame(current_tracking_frame_);
 		waitKey(20);

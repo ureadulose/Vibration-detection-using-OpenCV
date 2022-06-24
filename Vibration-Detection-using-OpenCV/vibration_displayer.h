@@ -14,8 +14,9 @@ class VibrationDisplayer
 public:
 	VibrationDisplayer(std::string window_name, int width, int height);
 	void Init();
+	void ContourHandler(std::vector<std::vector<Point>> contour_shapes);
 private:
-
+	
 private:
 	std::string window_name_;
 	int frame_width_;
