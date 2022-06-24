@@ -11,72 +11,72 @@ FftPerformer::~FftPerformer()
 
 }
 
-void FftPerformer::ClearTrash()
-{
-	// clearing out vectors
-	y_values_.clear();
-	fft_result_.clear();
-	p1_.clear();
-	p2_.clear();
-	indexes_of_target_frequencies_.clear();
-}
-
 std::vector<float> FftPerformer::ExecuteFft(int sampling_frequency)
 {
+	std::vector<Point2f> fft_result;
+	std::vector<Point2f> p2;
+	std::vector<Point2f> p1;
+	std::vector<float> frequencies;
+	std::vector<int> indexes_of_peak_frequencies;
+	std::vector<float> magnitudes;
+
+	std::vector<float> peak_frequencies;
+
 	this->sampling_frequency_ = sampling_frequency;
 	this->size_of_vecs_ = coordinates_of_point_.size();
 
-	ClearTrash();
+	// subtracting mean value so the samples would be fluctuating around zero
+	std::vector<cv::Point2f> vec_meaned_coordinates_of_point_;
 
-	SubtractMean();
-	dft(coordinates_of_point_, fft_result_);
+	meaned_coordinates_of_point_ = mean(coordinates_of_point_);
+	double meaned_x = meaned_coordinates_of_point_.val[0];
+	double meaned_y = meaned_coordinates_of_point_.val[1];
+
+	for (int i = 0; i < coordinates_of_point_.size(); i++)
+	{
+		vec_meaned_coordinates_of_point_.push_back(Point(meaned_x, meaned_y));
+	}
+
+	dft(vec_meaned_coordinates_of_point_, fft_result);
 
 	// computing two-sided spectrum P2
-	for (int i = 0; i < fft_result_.size(); i++)
+	for (int i = 0; i < fft_result.size(); i++)
 	{
 		Point2f tmp;
-		tmp.x = abs(fft_result_[i].x / size_of_vecs_);
-		tmp.y = abs(fft_result_[i].y / size_of_vecs_);
-		p2_.push_back(tmp);
+		tmp.x = abs(fft_result[i].x / size_of_vecs_);
+		tmp.y = abs(fft_result[i].y / size_of_vecs_);
+		p2.push_back(tmp);
 	}
 
-	std::cout << coordinates_of_point_.size() << std::endl;
-
-	// computing single-sided spectrum P1 based on P2 and the even-valued signal length (the same as int size_of_vecs_)
-	for (int i = 0; i < p2_.size(); i++)
+	// computing single-sided spectrum P1 based on P2 and the even-valued signal length (the same as size_of_vecs_)
+	for (int i = 0; i < p2.size(); i++)
 	{
-		p1_.push_back(p2_[(int)(i / 2 + 1)]);
+		p1.push_back(p2[(int)(i / 2 + 1)]);
 	}
 
-	// y_values are possible frequencies
+	// possible frequencies
 	for (int i = 0; i < size_of_vecs_; i++)
 	{
 		float tmp = sampling_frequency_ * (i / 2) / size_of_vecs_;
-		y_values_.push_back(tmp);
+		frequencies.push_back(tmp);
 	}
 
-	float max_magnitude = 0;
-	
-	std::vector<float> magnitudes; // im creating this vec here cause i dont need to know what are magnidutes of previous calculation of fft
-
-	for (int i = 0; i < p1_.size(); i++)
+	for (int i = 0; i < p1.size(); i++)
 	{
-		float current_magnitude = sqrt(p1_[i].x * p1_[i].x + p1_[i].y * p1_[i].y);
+		float current_magnitude = p1[i].x; //sqrt(p1[i].x * p1[i].x + p1[i].y * p1[i].y);
 		magnitudes.push_back(current_magnitude);
 	}
 
-	double threshold = (double)0.0;
+	// searching peaks in output vector of magnitudes
+	PeakFinder::findPeaks(magnitudes, indexes_of_peak_frequencies, false, 1);
 
-	PeakFinder::findPeaks(magnitudes, indexes_of_target_frequencies_, false, 1);
-
-	std::vector<float> dst;
-
-	for (int i = 0; i < indexes_of_target_frequencies_.size(); i++)
+	// filling in vector of peak_frequencies with the just found peak frequencies 
+	for (int i = 0; i < indexes_of_peak_frequencies.size(); i++)
 	{
-		dst.push_back(y_values_[indexes_of_target_frequencies_[i]]);
+		peak_frequencies.push_back(frequencies[indexes_of_peak_frequencies[i]]);
 	}
 
-	return dst;
+	return peak_frequencies;
 }
 
 void FftPerformer::CollectTrackedPoints(int frame_pos_of_point, Point2f coordinates_of_points, double frame_time_of_point, int num)
@@ -90,7 +90,7 @@ void FftPerformer::CollectTrackedPoints(int frame_pos_of_point, Point2f coordina
 
 void FftPerformer::WriteSpectrumToTxt()
 {
-	std::fstream file;
+	/*std::fstream file;
 	file.open("data.txt", 'w');
 
 	for (int i = 0; i < size_of_vecs_; i++)
@@ -101,7 +101,7 @@ void FftPerformer::WriteSpectrumToTxt()
 
 	std::cout << "WRITTEN WRITTEN WRITTEN WRITTEN WRITTEN WRITTEN WRITTEN WRITTEN" << std::endl;
 
-	file.close();
+	file.close();*/
 }
 
 void FftPerformer::WriteDataToTxt()
@@ -135,21 +135,8 @@ void FftPerformer::SubtractMean()
 	double meaned_x = meaned_coordinates_of_point_.val[0];
 	double meaned_y = meaned_coordinates_of_point_.val[1];
 
-	for (int i = 0; i < coordinates_of_point_.size(); i++)
+	/*for (int i = 0; i < coordinates_of_point_.size(); i++)
 	{
-		coordinates_of_point_[i].x -= meaned_x;
-		coordinates_of_point_[i].y -= meaned_y;
-	}
-}
-
-std::vector<Point2f> FftPerformer::HammingWindow()
-{
-
-	return std::vector<Point2f>();
-}
-
-std::vector<Point2f> FftPerformer::HighPass()
-{
-
-	return std::vector<Point2f>();
+		vec_meaned_coordinates_of_point_.push_back(Point(meaned_x, meaned_y));
+	}*/
 }

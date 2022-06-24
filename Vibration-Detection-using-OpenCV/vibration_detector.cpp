@@ -148,10 +148,21 @@ void VibrationDetector::ExecuteVibrationDetection()
 					vec_of_frequencies_ = vec_of_fft_performers_[i].ExecuteFft(sampling_frequency_);
 				}*/
 
-				//vec_of_fft_performers_[i].CollectTrackedPoints(sequence_of_frames.GetCurrentPosOfFrame(), next_pts_[i], sequence_of_frames.GetCurrentTimeOfFrame(), i);
-				
+				vec_of_fft_performers_[i].CollectTrackedPoints(sequence_of_frames.GetCurrentPosOfFrame(), next_pts_[i], sequence_of_frames.GetCurrentTimeOfFrame(), i);
+
+				if (((vec_of_fft_performers_[i].GetSizeOfVecs()) % 30 == 0) && (vec_of_fft_performers_[i].GetSizeOfVecs() != 0))
+				{
+					vec_of_frequencies_.clear();
+					vec_of_frequencies_ = vec_of_fft_performers_[i].ExecuteFft(sampling_frequency_); // for a certain point
+				}
+				if (vec_of_fft_performers_[i].GetSizeOfVecs() > 30)
+				{
+					// output data on the frame
+					data_displayer_[i].output_vibration_parameters(current_tracking_frame_, next_pts_[i], vec_of_frequencies_);
+				}
+
 				// output data on the frame
-				//data_displayer_[i].output_vibration_parameters(current_tracking_frame_, next_pts_[i], vec_of_frequencies_);
+				//data_displayer_[i].output_vibration_parameters(current_tracking_frame_, next_pts_[i], vec_of_frequencies_[i]);
 			}
 
 			// drawing lines

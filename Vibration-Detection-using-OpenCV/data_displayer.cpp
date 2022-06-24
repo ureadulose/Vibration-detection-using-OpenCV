@@ -2,10 +2,12 @@
 
 void DataDisplayer::output_vibration_parameters(Mat& frame, Point2f point, std::vector<float> vec_of_frequencies)
 {
+	std::cout << vec_of_frequencies.size() << std::endl;
 	for (int j = 0; j < static_cast<int>(vec_of_frequencies.size()); j++)
 	{
 		if (!vec_of_frequencies.empty())
 		{
+			//std::cout << "frequency[j] is " << vec_of_frequencies[j] << std::endl;
 			putText(
 				frame,
 				"hz: " + std::to_string(vec_of_frequencies[j]),
