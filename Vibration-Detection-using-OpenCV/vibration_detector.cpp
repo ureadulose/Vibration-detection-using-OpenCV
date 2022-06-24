@@ -112,8 +112,12 @@ void VibrationDetector::DrawLines(std::vector<Point2f> prev_pts, std::vector<Poi
 
 void VibrationDetector::ExecuteVibrationDetection()
 {
-	VideoProcessor sequence_of_frames(INPUT_FILE_NAME, WINDOW_NAME);
+	VideoProcessor sequence_of_frames(INPUT_FILE_NAME, MAIN_WINDOW_NAME);
 	sequence_of_frames.Init();
+
+	VibrationDisplayer vibration_monitor(V_MONITOR_WINDOW_NAME, sequence_of_frames.GetFrameWidth(), sequence_of_frames.GetFrameHeight());
+	vibration_monitor.Init();
+
 	// reading the first frame of sequence so we can convert it to gray color space
 	sequence_of_frames.ReadNextFrame();
 	this->current_tracking_frame_ = sequence_of_frames.GetCurrentFrame();
@@ -142,12 +146,6 @@ void VibrationDetector::ExecuteVibrationDetection()
 			// collecting just tracked points
 			for (int i = 0; i < number_of_points_; i++)
 			{
-				/*if (((vec_of_fft_performers_[i].GetSizeOfVecs()) % 60 == 0) && (vec_of_fft_performers_[i].GetSizeOfVecs() != 0))
-				{
-					vec_of_frequencies_.clear();
-					vec_of_frequencies_ = vec_of_fft_performers_[i].ExecuteFft(sampling_frequency_);
-				}*/
-
 				vec_of_fft_performers_[i].CollectTrackedPoints(sequence_of_frames.GetCurrentPosOfFrame(), next_pts_[i], sequence_of_frames.GetCurrentTimeOfFrame(), i);
 
 				if (((vec_of_fft_performers_[i].GetSizeOfVecs()) % 30 == 0) && (vec_of_fft_performers_[i].GetSizeOfVecs() != 0))
@@ -160,9 +158,6 @@ void VibrationDetector::ExecuteVibrationDetection()
 					// output data on the frame
 					data_displayer_[i].output_vibration_parameters(current_tracking_frame_, next_pts_[i], vec_of_frequencies_);
 				}
-
-				// output data on the frame
-				//data_displayer_[i].output_vibration_parameters(current_tracking_frame_, next_pts_[i], vec_of_frequencies_[i]);
 			}
 
 			// drawing lines

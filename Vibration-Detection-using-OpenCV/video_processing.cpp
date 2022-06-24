@@ -89,3 +89,13 @@ int VideoProcessor::GetInputFps()
 {
 	return input_fps_;
 }
+
+int VideoProcessor::GetFrameWidth()
+{
+	return input_frame_width_;
+}
+
+int VideoProcessor::GetFrameHeight()
+{
+	return input_frame_height_;
+}

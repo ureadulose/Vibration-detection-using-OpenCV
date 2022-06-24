@@ -30,10 +30,6 @@ public:
 	int GetSizeOfVecs();
 private:
 	// performing FFT
-	void SubtractMean();
-
-	//std::vector<Point2f> HammingWindow();
-	//std::vector<Point2f> HighPass();
 
 private:
 	int size_of_vecs_;

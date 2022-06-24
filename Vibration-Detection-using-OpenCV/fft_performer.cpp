@@ -128,15 +128,3 @@ int FftPerformer::GetSizeOfVecs()
 {
 	return size_of_vecs_;
 }
-
-void FftPerformer::SubtractMean()
-{
-	meaned_coordinates_of_point_ = mean(coordinates_of_point_);
-	double meaned_x = meaned_coordinates_of_point_.val[0];
-	double meaned_y = meaned_coordinates_of_point_.val[1];
-
-	/*for (int i = 0; i < coordinates_of_point_.size(); i++)
-	{
-		vec_meaned_coordinates_of_point_.push_back(Point(meaned_x, meaned_y));
-	}*/
-}

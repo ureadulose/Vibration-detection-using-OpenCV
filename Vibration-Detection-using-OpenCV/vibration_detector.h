@@ -3,7 +3,8 @@
 
 // VREMENNO
 #define INPUT_FILE_NAME "Resources/engine.mp4" // leaf.mp4 or engine.mp4 or vibration1.mp4
-#define WINDOW_NAME "Video"
+#define MAIN_WINDOW_NAME "Video"
+#define V_MONITOR_WINDOW_NAME "Vibration Monitor"
 
 // standart headers
 #include <iostream>
@@ -17,6 +18,7 @@
 #include "fft_performer.h"
 #include "data_displayer.h"
 #include "contour_finder.h"
+#include "vibration_displayer.h"
 
 class VibrationDetector
 {
@@ -43,7 +45,8 @@ private:
 	void DrawLines(std::vector<Point2f> prev_pts, std::vector<Point2f> next_pts);
 
 private:
-	String window_name_;
+	String main_window_name_;
+	String v_monitor_window_name_;
 
 	Mat current_tracking_frame_;
 	

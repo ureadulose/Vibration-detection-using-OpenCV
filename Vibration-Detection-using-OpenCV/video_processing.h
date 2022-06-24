@@ -32,6 +32,8 @@ public:
 	double GetCurrentTimeOfFrame();
 	int GetCurrentPosOfFrame();
 	int GetInputFps();
+	int GetFrameWidth();
+	int GetFrameHeight();
 
 private:
 	Mat input_frame_;
