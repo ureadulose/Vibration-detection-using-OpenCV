@@ -13,6 +13,8 @@ FftPerformer::~FftPerformer()
 
 std::vector<float> FftPerformer::ExecuteFft(int sampling_frequency)
 {
+	std::cout << "doin" << std::endl;
+
 	std::vector<Point2f> fft_result;
 	std::vector<Point2f> p2;
 	std::vector<Point2f> p1;

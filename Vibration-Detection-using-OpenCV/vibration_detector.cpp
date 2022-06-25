@@ -207,11 +207,7 @@ void VibrationDetector::ExecuteVibrationDetection()
 		// display vibration frame
 		if (this->rectangle_selected_)
 		{
-			vibration_displayer.ShowFrame(prev_vibrating_pts_);
-
 			LucasKanadeTracking(prev_img_gray_, next_img_gray_, prev_vibrating_pts_, next_vibrating_pts_, rect_status_);
-
-			std::cout << number_of_vibrating_pts_ << std::endl;
 
 			for (int i = 0; i < number_of_vibrating_pts_; i++)
 			{
@@ -223,6 +219,13 @@ void VibrationDetector::ExecuteVibrationDetection()
 					vec_of_rect_frequencies_ = vec_of_rect_fft_performers_[i].ExecuteFft(sampling_frequency_); // for a certain point
 				}
 			}
+			if (!vec_of_rect_frequencies_.empty())
+			{
+				std::cout << "vec of rect frequencies is not empty" << std::endl;
+				vibration_displayer.ColorPoints(vec_of_rect_frequencies_, next_vibrating_pts_, 15.0);
+			}
+
+			vibration_displayer.ShowFrame(next_vibrating_pts_);
 		}
 
 		// Lucas-Kanade tracking

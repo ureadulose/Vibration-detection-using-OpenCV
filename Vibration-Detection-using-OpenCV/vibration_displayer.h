@@ -22,8 +22,14 @@ public:
 	void ShowFrame(std::vector<Point2f> vibrating_points);
 	void ShowFrame();
 	void SetRoi(Rect roi);
+	void ColorPoints(std::vector<float> frequencies, std::vector<Point2f> points, double range);
 private:
+	// making frame black
 	void ClearFrame();
+
+public:
+	// Getting color value from gradient
+	std::vector<int> Rgb(double ratio);
 private:
 	std::string window_name_;
 	int frame_width_;
