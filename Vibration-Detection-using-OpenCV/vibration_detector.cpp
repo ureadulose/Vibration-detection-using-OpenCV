@@ -39,15 +39,44 @@ void VibrationDetector::OnMouse(int event, int x, int y, int flags)
 
 		this->data_displayer_ = new DataDisplayer();
 		this->vec_of_data_displayer_.push_back(*data_displayer_);
+		break;
+	case EVENT_RBUTTONDOWN:
+		// we need to initialize coordinates so if we select roi again, the default bottim right coordinates would be reset
+		this->right_button_down_ = true;
+		this->tl_click_coords_.x = x;
+		this->tl_click_coords_.y = y;
+		this->br_click_coords_.x = x;
+		this->br_click_coords_.y = y;
+		mouse_move_coords_.x = x;
+		mouse_move_coords_.y = y;
+		break;
+	case EVENT_RBUTTONUP:
+		this->right_button_down_ = false;
+		this->rectangle_selected_ = true;
+		this->br_click_coords_.x = x;
+		this->br_click_coords_.y = y;
+		break;
+	case EVENT_MOUSEMOVE:
+		if (right_button_down_)
+		{
+			mouse_move_coords_.x = x;
+			mouse_move_coords_.y = y;
+		}
+		break;
 	}
 }
 
-void VibrationDetector::GoodFeaturesToTrack(int MAX_PTS)
+std::vector<Point2f> VibrationDetector::GoodFeaturesToTrack(Mat frame, int MAX_PTS, const Rect& roi)
 {
+	std::vector<Point2f> corners;
+
+	// adding rectangle of interest to a frame
+	Mat image = frame(roi);
+
 	// auto-search for good points (features) to track
 	goodFeaturesToTrack(
-		prev_img_gray_,
-		prev_pts_,
+		image,
+		corners,
 		MAX_PTS,
 		0.01,
 		5,
@@ -58,8 +87,8 @@ void VibrationDetector::GoodFeaturesToTrack(int MAX_PTS)
 	);
 
 	cornerSubPix(
-		prev_img_gray_,
-		prev_pts_,
+		image,
+		corners,
 		Size(lk_win_size_, lk_win_size_),
 		Size(-1, -1),
 		TermCriteria(
@@ -68,6 +97,8 @@ void VibrationDetector::GoodFeaturesToTrack(int MAX_PTS)
 			0.03
 		)
 	);
+
+	return corners;
 }
 
 void VibrationDetector::LucasKanadeTracking(Mat prev_img_gray, Mat next_img_gray, std::vector<Point2f>& prev_pts, std::vector<Point2f>& next_pts, std::vector<uchar>& status)
@@ -127,6 +158,8 @@ void VibrationDetector::ExecuteVibrationDetection()
 	VibrationDisplayer vibration_displayer(V_MONITOR_WINDOW_NAME, sequence_of_frames.GetFrameWidth(), sequence_of_frames.GetFrameHeight());
 	vibration_displayer.Init();
 
+	vibration_init_ = true;
+
 	// reading the first frame of sequence so we can convert it to gray color space
 	sequence_of_frames.ReadNextFrame();
 	this->current_tracking_frame_ = sequence_of_frames.GetCurrentFrame();
@@ -143,6 +176,54 @@ void VibrationDetector::ExecuteVibrationDetection()
 
 		// callback function for detecting the click - these coords are our starting point
 		setMouseCallback(sequence_of_frames.GetWindowName(), SelectPoint, (void*)this);
+
+		if (this->right_button_down_)
+		{
+			this->roi_ = Rect(tl_click_coords_, mouse_move_coords_);
+			vibration_displayer.SetRoi(Rect(tl_click_coords_, mouse_move_coords_));
+			rectangle(current_tracking_frame_, roi_.tl(), roi_.br(), Scalar(0, 255, 0), 1);
+			vibration_displayer.ShowFrame();
+		}
+
+		// initialize vibration displaying (second window)
+		if ((this->rectangle_selected_) && (vibration_init_ == true))
+		{
+			vibration_init_ = false;
+			prev_vibrating_pts_ = GoodFeaturesToTrack(next_img_gray_, 100, Rect(tl_click_coords_, br_click_coords_));
+			number_of_vibrating_pts_ = prev_vibrating_pts_.size();
+
+			// creating vector of fft performers for points in ROI
+			for (int i = 0; i < number_of_vibrating_pts_; i++)
+			{
+				this->rect_fft_performer_ = new FftPerformer();
+				this->vec_of_rect_fft_performers_.push_back(*rect_fft_performer_);
+
+				// transform coordinates based on roi to overall coordinates
+				prev_vibrating_pts_[i].x = prev_vibrating_pts_[i].x + tl_click_coords_.x;
+				prev_vibrating_pts_[i].y = prev_vibrating_pts_[i].y + tl_click_coords_.y;
+			}
+		}
+
+		// display vibration frame
+		if (this->rectangle_selected_)
+		{
+			vibration_displayer.ShowFrame(prev_vibrating_pts_);
+
+			LucasKanadeTracking(prev_img_gray_, next_img_gray_, prev_vibrating_pts_, next_vibrating_pts_, rect_status_);
+
+			std::cout << number_of_vibrating_pts_ << std::endl;
+
+			for (int i = 0; i < number_of_vibrating_pts_; i++)
+			{
+				vec_of_rect_fft_performers_[i].CollectTrackedPoints(sequence_of_frames.GetCurrentPosOfFrame(), next_vibrating_pts_[i], sequence_of_frames.GetCurrentPosOfFrame(), i);
+
+				if (((vec_of_rect_fft_performers_[i].GetSizeOfVecs()) % 30 == 0) && (vec_of_rect_fft_performers_[i].GetSizeOfVecs() != 0))
+				{
+					vec_of_rect_frequencies_.clear();
+					vec_of_rect_frequencies_ = vec_of_rect_fft_performers_[i].ExecuteFft(sampling_frequency_); // for a certain point
+				}
+			}
+		}
 
 		// Lucas-Kanade tracking
 		if (this->point_selected_)
@@ -176,26 +257,31 @@ void VibrationDetector::ExecuteVibrationDetection()
 
 			// update points and frames
 			this->prev_pts_ = next_pts_;
+			this->prev_vibrating_pts_ = next_vibrating_pts_;
 			next_img_gray_.copyTo(this->prev_img_gray_);
 		}
 
-		//// finding contours on a frame
-		//contour_shapes_ = vibration_displayer.GetContours(current_tracking_frame_);
+		// cre
 
-		//std::vector<Point> contour_head_points;
-		//vibration_displayer.GetContourHeadPoints(contour_shapes_, contour_head_points);
+		/*// finding contours on a frame
+		contour_shapes_ = vibration_displayer.GetContours(current_tracking_frame_);
 
-		//for (int i = 0; i < contour_head_points.size(); i++)
-		//{
-		//	// circle
-		//	circle(current_tracking_frame_, contour_head_points[i], 10, (0, 0, 255), 2);
-		//}
+		std::vector<Point> contour_head_points;
+		vibration_displayer.GetContourHeadPoints(contour_shapes_, contour_head_points);
 
-		//// displaying vibration
-		//vibration_displayer.ContourHandler(contour_shapes_);
+		for (int i = 0; i < contour_head_points.size(); i++)
+		{
+			// circle
+			circle(current_tracking_frame_, contour_head_points[i], 10, (0, 0, 255), 2);
+		}
 
-		//// drawing contours
-		//DrawContours(current_tracking_frame_, contour_shapes_);
+		// displaying vibration
+		vibration_displayer.ContourHandler(contour_shapes_);
+
+		// drawing contours
+		DrawContours(current_tracking_frame_, contour_shapes_);*/
+
+		
 
 		// display frame
 		sequence_of_frames.ShowFrame(current_tracking_frame_);

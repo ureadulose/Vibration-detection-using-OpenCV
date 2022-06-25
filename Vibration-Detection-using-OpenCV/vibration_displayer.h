@@ -17,16 +17,20 @@ class VibrationDisplayer : public ContourFinder
 public:
 	VibrationDisplayer(std::string window_name, int width, int height);
 	void Init();
-	void ContourHandler(std::vector<std::vector<Point>> contour_shapes);
-	void GetContourHeadPoints(std::vector<std::vector<Point>> contour_shapes, std::vector<Point>& contour_head_points);
+	//void ContourHandler(std::vector<std::vector<Point>> contour_shapes);
+	//void GetContourHeadPoints(std::vector<std::vector<Point>> contour_shapes, std::vector<Point>& contour_head_points);
+	void ShowFrame(std::vector<Point2f> vibrating_points);
+	void ShowFrame();
+	void SetRoi(Rect roi);
 private:
-	
+	void ClearFrame();
 private:
 	std::string window_name_;
 	int frame_width_;
 	int frame_height_;
 
 	Mat frame_;
+	Rect roi_;
 };
 
 #endif

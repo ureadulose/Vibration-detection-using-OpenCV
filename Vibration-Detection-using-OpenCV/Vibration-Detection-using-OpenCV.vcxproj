@@ -147,6 +147,7 @@
     <ClCompile Include="fft_performer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PeakFinder.cpp" />
+    <ClCompile Include="test.cpp" />
     <ClCompile Include="vibration_detector.cpp" />
     <ClCompile Include="vibration_displayer.cpp" />
     <ClCompile Include="video_processing.cpp" />
