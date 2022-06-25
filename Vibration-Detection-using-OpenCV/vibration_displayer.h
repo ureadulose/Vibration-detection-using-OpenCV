@@ -18,7 +18,7 @@ public:
 	VibrationDisplayer(std::string window_name, int width, int height);
 	void Init();
 	void ContourHandler(std::vector<std::vector<Point>> contour_shapes);
-	void GetContourHeadPoints(std::vector<std::vector<Point>> contour_shapes/*, std::vector<Point>& contour_head_points*/);
+	void GetContourHeadPoints(std::vector<std::vector<Point>> contour_shapes, std::vector<Point>& contour_head_points);
 private:
 	
 private:

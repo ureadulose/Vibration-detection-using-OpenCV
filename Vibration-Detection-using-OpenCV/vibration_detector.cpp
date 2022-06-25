@@ -167,9 +167,9 @@ void VibrationDetector::ExecuteVibrationDetection()
 				}
 			}
 
-			contour_prev_pts_ = prev_pts_;
+			/*contour_prev_pts_ = prev_pts_;
 			contour_next_pts_ = next_pts_;
-			LucasKanadeTracking(prev_img_gray_, next_img_gray_, contour_prev_pts_, contour_next_pts_, contour_status_);
+			LucasKanadeTracking(prev_img_gray_, next_img_gray_, contour_prev_pts_, contour_next_pts_, contour_status_);*/
 
 			// drawing lines
 			DrawLines(prev_pts_, next_pts_);
@@ -179,17 +179,23 @@ void VibrationDetector::ExecuteVibrationDetection()
 			next_img_gray_.copyTo(this->prev_img_gray_);
 		}
 
-		// finding contours on a frame
-		contour_shapes_ = vibration_displayer.GetContours(current_tracking_frame_);
+		//// finding contours on a frame
+		//contour_shapes_ = vibration_displayer.GetContours(current_tracking_frame_);
 
-		std::vector<Point> output_array;
-		//vibration_displayer.GetContourHeadPoints(current_tracking_frame_/*, output_array*/);
+		//std::vector<Point> contour_head_points;
+		//vibration_displayer.GetContourHeadPoints(contour_shapes_, contour_head_points);
 
-		// displaying vibration
-		vibration_displayer.ContourHandler(contour_shapes_);
+		//for (int i = 0; i < contour_head_points.size(); i++)
+		//{
+		//	// circle
+		//	circle(current_tracking_frame_, contour_head_points[i], 10, (0, 0, 255), 2);
+		//}
 
-		// drawing contours
-		DrawContours(current_tracking_frame_, contour_shapes_);
+		//// displaying vibration
+		//vibration_displayer.ContourHandler(contour_shapes_);
+
+		//// drawing contours
+		//DrawContours(current_tracking_frame_, contour_shapes_);
 
 		// display frame
 		sequence_of_frames.ShowFrame(current_tracking_frame_);
