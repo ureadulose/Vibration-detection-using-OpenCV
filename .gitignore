@@ -4,3 +4,4 @@
 *.txt
 /x64
 /Vibration-Detection-using-OpenCV/x64
+test.cpp
