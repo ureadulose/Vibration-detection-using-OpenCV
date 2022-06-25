@@ -13,28 +13,41 @@ void VibrationDisplayer::Init()
 	// making a window
 	namedWindow(window_name_, WINDOW_AUTOSIZE);
 	frame_ = Mat(frame_height_, frame_width_, CV_8UC3, Scalar(0, 0, 0));
-	
-	
 }
 
-void VibrationDisplayer::ShowFrame(std::vector<Point2f> vibrating_points)
+bool VibrationDisplayer::InitColors()
 {
-	//ClearFrame();
-	rectangle(frame_, roi_.tl(), roi_.br(), Scalar(0, 255, 0), 1);
+	if (points_.empty())
+		return false;
 
-	for (int i = 0; i < vibrating_points.size(); i++)
+	if (!colors_.empty())
+		return false;
+
+	for (int i = 0; i < points_.size(); i++)
 	{
-
-		// circle
-		circle(frame_, vibrating_points[i], 1, (0, 0, 255), FILLED);
+		colors_.push_back(Scalar(0, 0, 255));
 	}
-
-	imshow(window_name_, frame_);
+	return true;
 }
 
 void VibrationDisplayer::ShowFrame()
 {
-	rectangle(frame_, roi_.tl(), roi_.br(), Scalar(0, 255, 0), 1);
+	ClearFrame();
+
+	// drawing ROI and updating colors
+	UpdateDisplayingRectangle();
+	UpdateColors();
+
+	for (int i = 0; i < points_.size(); i++)
+	{
+		// drawing points with their own colors - frequencies
+		circle(frame_, points_[i], 2, colors_[i], FILLED);
+		/*std::cout << "points_ size " << points_.size() << std::endl;
+		std::cout << "colors_ size " << colors_.size() << std::endl;
+		std::cout << "frame_ size " << frame_.size() << std::endl;*/
+	}
+
+	// finally showing frame
 	imshow(window_name_, frame_);
 }
 
@@ -43,26 +56,44 @@ void VibrationDisplayer::SetRoi(Rect roi)
 	roi_ = roi;
 }
 
-void VibrationDisplayer::ColorPoints(std::vector<float> frequencies, std::vector<Point2f> points, double range)
+void VibrationDisplayer::UpdateFrequencies(std::vector<float> frequencies, double range)
 {
-	ClearFrame();
-	// for now maximum possible value of frequency is 15
-	// so lets translate frequency [0; 15] to [0; 255] int color value;
-	std::cout << "points size is " << points.size() << std::endl;
-	for (int i = 0; i < points.size(); i++)
-	{
-		std::vector<int> color = Rgb(frequencies[i] / range);
-		for (int i = 0; i < color.size(); i++)
-		{
-			std::cout << "color[" << i << "] is " << color[i] << std::endl;
-		}
-		circle(frame_, points[i], 2, Scalar(color[0], color[1], color[3]), FILLED);
-	}
+	std::cout << "FREQUENCIES UPDATED" << std::endl;
+	frequencies_ = frequencies;
+	range_ = range;
+}
+
+void VibrationDisplayer::UpdateDisplayingPoints(std::vector<Point2f> points)
+{
+	points_ = points;
 }
 
 void VibrationDisplayer::ClearFrame()
 {
 	frame_ = Mat(frame_height_, frame_width_, CV_8UC3, Scalar(0, 0, 0));
+}
+
+void VibrationDisplayer::UpdateDisplayingRectangle()
+{
+	rectangle(frame_, roi_.tl(), roi_.br(), Scalar(0, 255, 0), 1);
+}
+
+void VibrationDisplayer::UpdateColors()
+{
+	std::cout << "updating colors..." << std::endl;
+	// for now maximum possible value of frequency is 15
+	// so lets translate frequency [0; 15] to [0; 255] int color value;
+	if (!frequencies_.empty())
+	{
+		std::cout << "points_ size is " << points_.size() << std::endl;
+		std::cout << "frequencies_ size is " << frequencies_.size() << std::endl;
+		colors_.clear();
+		for (int i = 0; i < points_.size(); i++)
+		{
+			std::vector<int> color = Rgb(frequencies_[i] / range_);
+			colors_.push_back(Scalar(color[0], color[1], color[3]));
+		}
+	}
 }
 
 // not mine, taken from stackoverflow

@@ -62,6 +62,7 @@ private:
 	Point2f mouse_move_coords_;
 	bool right_button_down_;
 	bool rectangle_selected_;
+	bool colors_inited_;
 	Rect roi_;
 	std::vector<Point2f> prev_vibrating_pts_;
 	std::vector<Point2f> next_vibrating_pts_;
@@ -80,7 +81,7 @@ private:
 	// useful parameters
 	int number_of_points_;
 	int number_of_vibrating_pts_;
-	bool vibration_init_;
+	bool vibration_inited_;
 
 	// Fast Fourier Transform
 	int sampling_frequency_;

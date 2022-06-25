@@ -17,15 +17,18 @@ class VibrationDisplayer : public ContourFinder
 public:
 	VibrationDisplayer(std::string window_name, int width, int height);
 	void Init();
+	bool InitColors();
 	//void ContourHandler(std::vector<std::vector<Point>> contour_shapes);
 	//void GetContourHeadPoints(std::vector<std::vector<Point>> contour_shapes, std::vector<Point>& contour_head_points);
-	void ShowFrame(std::vector<Point2f> vibrating_points);
 	void ShowFrame();
 	void SetRoi(Rect roi);
-	void ColorPoints(std::vector<float> frequencies, std::vector<Point2f> points, double range);
+	void UpdateFrequencies(std::vector<float> frequencies, double range);
+	void UpdateDisplayingPoints(std::vector<Point2f> points);
 private:
 	// making frame black
 	void ClearFrame();
+	void UpdateDisplayingRectangle();
+	void UpdateColors();
 
 public:
 	// Getting color value from gradient
@@ -34,6 +37,11 @@ private:
 	std::string window_name_;
 	int frame_width_;
 	int frame_height_;
+
+	std::vector<Point2f> points_;
+	std::vector<float> frequencies_;
+	std::vector<Scalar> colors_;
+	double range_;
 
 	Mat frame_;
 	Rect roi_;

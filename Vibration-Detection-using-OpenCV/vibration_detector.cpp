@@ -158,14 +158,14 @@ void VibrationDetector::ExecuteVibrationDetection()
 	VibrationDisplayer vibration_displayer(V_MONITOR_WINDOW_NAME, sequence_of_frames.GetFrameWidth(), sequence_of_frames.GetFrameHeight());
 	vibration_displayer.Init();
 
-	vibration_init_ = true;
+	vibration_inited_ = false;
+	colors_inited_ = false;
 
 	// reading the first frame of sequence so we can convert it to gray color space
 	sequence_of_frames.ReadNextFrame();
 	this->current_tracking_frame_ = sequence_of_frames.GetCurrentFrame();
 	this->prev_img_gray_ = RgbToGray(sequence_of_frames.GetCurrentFrame());
 	this->sampling_frequency_ = sequence_of_frames.GetInputFps();
-
 
 	while (sequence_of_frames.GetInputCapStatus())
 	{
@@ -179,19 +179,30 @@ void VibrationDetector::ExecuteVibrationDetection()
 
 		if (this->right_button_down_)
 		{
+			std::cout << "Selecting ROI" << std::endl;
 			this->roi_ = Rect(tl_click_coords_, mouse_move_coords_);
-			vibration_displayer.SetRoi(Rect(tl_click_coords_, mouse_move_coords_));
 			rectangle(current_tracking_frame_, roi_.tl(), roi_.br(), Scalar(0, 255, 0), 1);
-			vibration_displayer.ShowFrame();
+			//vibration_displayer.ShowFrame();
+		}
+
+		if (this->rectangle_selected_)
+		{
+			std::cout << "ROI selected" << std::endl;
+			vibration_displayer.SetRoi(Rect(tl_click_coords_, mouse_move_coords_));
 		}
 
 		// initialize vibration displaying (second window)
-		if ((this->rectangle_selected_) && (vibration_init_ == true))
+		if ((this->rectangle_selected_) && (vibration_inited_ == false))
 		{
-			vibration_init_ = false;
+			vibration_inited_ = true;
 			prev_vibrating_pts_ = GoodFeaturesToTrack(next_img_gray_, 100, Rect(tl_click_coords_, br_click_coords_));
 			number_of_vibrating_pts_ = prev_vibrating_pts_.size();
 
+			// sending just found points to vibration displayer and initializing colors of these points
+			vibration_displayer.UpdateDisplayingPoints(prev_vibrating_pts_);
+			std::cout << "Sent " << prev_vibrating_pts_.size() << " points" << std::endl;
+			colors_inited_ = vibration_displayer.InitColors();
+			
 			// creating vector of fft performers for points in ROI
 			for (int i = 0; i < number_of_vibrating_pts_; i++)
 			{
@@ -205,9 +216,16 @@ void VibrationDetector::ExecuteVibrationDetection()
 		}
 
 		// display vibration frame
-		if (this->rectangle_selected_)
+		if ((this->rectangle_selected_) && (vibration_inited_ == true))
 		{
+			// for main window
+			rectangle(current_tracking_frame_, roi_.tl(), roi_.br(), Scalar(0, 255, 0), 1);
+
+			// call of Lucas-Kanade optical flow tracking
 			LucasKanadeTracking(prev_img_gray_, next_img_gray_, prev_vibrating_pts_, next_vibrating_pts_, rect_status_);
+
+			// sending and updating new points in ROI found from optical flow
+			vibration_displayer.UpdateDisplayingPoints(next_vibrating_pts_);
 
 			for (int i = 0; i < number_of_vibrating_pts_; i++)
 			{
@@ -222,10 +240,10 @@ void VibrationDetector::ExecuteVibrationDetection()
 			if (!vec_of_rect_frequencies_.empty())
 			{
 				std::cout << "vec of rect frequencies is not empty" << std::endl;
-				vibration_displayer.ColorPoints(vec_of_rect_frequencies_, next_vibrating_pts_, 15.0);
+				vibration_displayer.UpdateFrequencies(vec_of_rect_frequencies_, 15.0);
 			}
 
-			vibration_displayer.ShowFrame(next_vibrating_pts_);
+			vibration_displayer.ShowFrame();
 		}
 
 		// Lucas-Kanade tracking
