@@ -166,7 +166,7 @@ void PeakFinder::findPeaks(std::vector<float> x0, std::vector<int>& peakInds, bo
 		std::vector<int> peakLoc(maxPeaks,0);
 		std::vector<float> peakMag(maxPeaks,0.0);
 		int cInd = 1;
-		int tempLoc;		
+		int tempLoc = 0;		
     
     	while(ii < len)
     	{

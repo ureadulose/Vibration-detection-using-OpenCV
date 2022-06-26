@@ -253,20 +253,26 @@ void VibrationDetector::ExecuteVibrationDetection()
 			LucasKanadeTracking(prev_img_gray_, next_img_gray_, prev_pts_, next_pts_, status_);
 
 			// collecting just tracked points
-			for (int i = 0; i < number_of_points_; i++)
+			std::cout << "doin " << std::endl;
+			for (int i = 0; i < next_pts_.size(); i++)
 			{
 				vec_of_fft_performers_[i].CollectTrackedPoints(sequence_of_frames.GetCurrentPosOfFrame(), next_pts_[i], sequence_of_frames.GetCurrentTimeOfFrame(), i);
 
-				if (((vec_of_fft_performers_[i].GetSizeOfVecs()) % 30 == 0) && (vec_of_fft_performers_[i].GetSizeOfVecs() != 0))
+				if (((vec_of_fft_performers_[i].GetSizeOfVecs()) % 3 == 0) && (vec_of_fft_performers_[i].GetSizeOfVecs() != 0))
 				{
+
 					vec_of_frequencies_.clear();
-					vec_of_frequencies_ = vec_of_fft_performers_[i].ExecuteFft(sampling_frequency_); // for a certain point
+					vec_of_frequencies_ = vec_of_fft_performers_[i].ExecuteFft(sampling_frequency_, i); // for a certain point
+
+					for (int j = 0; j < vec_of_frequencies_.size(); j++)
+					{
+						std::cout << "vibration of " << i << " point is: " << vec_of_frequencies_[j] << std::endl;
+
+					}
+					vec_of_data_displayer_[i].SetVectorOfFrequencies(vec_of_frequencies_);
 				}
-				if (vec_of_fft_performers_[i].GetSizeOfVecs() > 30)
-				{
-					// output data on the frame
-					data_displayer_[i].OutputVibrationParameters(current_tracking_frame_, next_pts_[i], vec_of_frequencies_);
-				}
+				
+				vec_of_data_displayer_[i].OutputVibrationParameters(current_tracking_frame_, next_pts_[i]);
 			}
 
 			/*contour_prev_pts_ = prev_pts_;
