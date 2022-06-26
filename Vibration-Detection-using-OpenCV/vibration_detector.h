@@ -3,6 +3,7 @@
 
 // VREMENNO
 #define INPUT_FILE_NAME "Resources/engine.mp4" // leaf.mp4 or engine.mp4 or vibration1.mp4
+#define OUTPUT_FILE_NAME "Output/vibration.avi" // leaf.mp4 or engine.mp4 or vibration1.mp4
 #define MAIN_WINDOW_NAME "Video"
 #define V_MONITOR_WINDOW_NAME "Vibration Monitor"
 

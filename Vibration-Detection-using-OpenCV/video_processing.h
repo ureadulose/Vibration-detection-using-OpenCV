@@ -19,11 +19,12 @@ using namespace cv;
 class VideoProcessor
 {
 public:
-	VideoProcessor(const std::string input_file_name, const std::string window_name);
+	VideoProcessor(const std::string input_file_name, const std::string output_file_name, const std::string window_name);
 	~VideoProcessor();
 	bool Init();
 	void ReadNextFrame();
 	void ShowFrame(Mat frame);
+	void WriteFrame(Mat frame);
 
 public:
 	bool GetInputCapStatus();
@@ -40,7 +41,9 @@ private:
 	Mat current_frame_;
 
 	VideoCapture* input_cap_;
+	VideoWriter* output_cap_;
 	std::string input_path_;
+	std::string output_path_;
 
 	// characteristics of a video
 	int input_frame_width_;

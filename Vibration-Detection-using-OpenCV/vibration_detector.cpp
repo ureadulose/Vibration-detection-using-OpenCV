@@ -152,7 +152,7 @@ void VibrationDetector::DrawContours(Mat& frame, std::vector<std::vector<Point>>
 
 void VibrationDetector::ExecuteVibrationDetection()
 {
-	VideoProcessor sequence_of_frames(INPUT_FILE_NAME, MAIN_WINDOW_NAME);
+	VideoProcessor sequence_of_frames(INPUT_FILE_NAME, OUTPUT_FILE_NAME, MAIN_WINDOW_NAME);
 	sequence_of_frames.Init();
 
 	VibrationDisplayer vibration_displayer(V_MONITOR_WINDOW_NAME, sequence_of_frames.GetFrameWidth(), sequence_of_frames.GetFrameHeight());
@@ -224,6 +224,10 @@ void VibrationDetector::ExecuteVibrationDetection()
 			// sending and updating new points in ROI found from optical flow
 			vibration_displayer.UpdateDisplayingPoints(next_vibrating_pts_);
 
+			// тут кароче прикольчик
+			// vec_of_frequencies содержит информацию о частотах конкретной точки
+			// но € сделал так, что прога воспринимает это как вектор частот всех точек, а не одной конкретной
+			// »—ѕ–јјјј¬№
 			for (int i = 0; i < number_of_vibrating_pts_; i++)
 			{
 				vec_of_rect_fft_performers_[i].CollectTrackedPoints(sequence_of_frames.GetCurrentPosOfFrame(), next_vibrating_pts_[i], sequence_of_frames.GetCurrentPosOfFrame(), i);
@@ -232,14 +236,16 @@ void VibrationDetector::ExecuteVibrationDetection()
 				{
 					vec_of_rect_frequencies_.clear();
 					vec_of_rect_frequencies_ = vec_of_rect_fft_performers_[i].ExecuteFft(sampling_frequency_); // for a certain point
+
+					vibration_displayer.UpdateFrequencies(vec_of_rect_frequencies_, 15.0);
 				}
 			}
-			if (!vec_of_rect_frequencies_.empty())
+			/*if (!vec_of_rect_frequencies_.empty())
 			{
-				vibration_displayer.UpdateFrequencies(vec_of_rect_frequencies_, 15.0);
-			}
+			}*/
 
 			vibration_displayer.ShowFrame();
+			sequence_of_frames.WriteFrame(vibration_displayer.GetFrame());
 		}
 
 		// Lucas-Kanade tracking

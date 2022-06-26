@@ -30,6 +30,7 @@ private:
 	void ClearFrame();
 	void UpdateDisplayingRectangle();
 	void UpdateColors();
+	void AddGradient();
 
 public:
 	// Getting color value from gradient

@@ -42,10 +42,10 @@ void VibrationDisplayer::ShowFrame()
 	{
 		// drawing points with their own colors - frequencies
 		circle(frame_, points_[i], 2, colors_[i], FILLED);
-		/*std::cout << "points_ size " << points_.size() << std::endl;
-		std::cout << "colors_ size " << colors_.size() << std::endl;
-		std::cout << "frame_ size " << frame_.size() << std::endl;*/
 	}
+
+	// adding frequency gradient
+	AddGradient();
 
 	// finally showing frame
 	imshow(window_name_, frame_);
@@ -99,6 +99,51 @@ void VibrationDisplayer::UpdateColors()
 			std::vector<int> color = Rgb(frequencies_[0] / range_);
 			colors_.push_back(Scalar(color[0], color[1], color[2]));
 		}
+	}
+}
+
+void VibrationDisplayer::AddGradient()
+{
+	// эта штука захардкожена, сюда не надо смотреть((
+	// потом нормально сделаю
+
+	Point top_left = Point(15, frame_.rows - 150);
+	Point bottom_right = Point(frame_.cols - 15, frame_.rows - 50);
+	Rect gradient_bounds(top_left, bottom_right);
+	rectangle(frame_, gradient_bounds.tl(), gradient_bounds.br(), Scalar(0, 255, 0), 1);
+
+	Point position;
+	position = Point(top_left.x - 2, bottom_right.y + 15);
+
+	for (int i = 0; i <= 6; i++)
+	{
+		putText(frame_, std::to_string(i * 3), position, FONT_HERSHEY_PLAIN, 1, Scalar(255, 255, 255), 1);
+		position = Point(position.x + (frame_.cols - 30)/5 - 1, bottom_right.y + 15);
+	}
+
+	int rect_width = bottom_right.x - top_left.x;
+	int rect_height = top_left.y - bottom_right.y;
+
+	int slices = 32;
+	int dx = rect_width / slices;
+	Point tl = gradient_bounds.tl();
+	Point br = Point(tl.x + dx, bottom_right.y);
+
+	for (int i = 0; i < slices; i++)
+	{
+		Scalar scalar_color;
+		std::vector<int> vec_color = Rgb((double)(i) / (double)(slices));
+		std::cout << vec_color[0] << std::endl;
+
+		scalar_color[0] = vec_color[0];
+		scalar_color[1] = vec_color[1];
+		scalar_color[2] = vec_color[2];
+
+		rectangle(frame_, tl, br, scalar_color, FILLED);
+
+		tl = Point(tl.x + dx, tl.y);
+		br = Point(br.x + dx, br.y);
+
 	}
 }
 

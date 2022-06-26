@@ -1,8 +1,10 @@
 #include "video_processing.h"
 
-VideoProcessor::VideoProcessor(const std::string input_file_name, const std::string window_name)
+VideoProcessor::VideoProcessor(const std::string input_file_name, const std::string output_file_name, const std::string window_name)
 	:input_path_{ input_file_name },
 	input_cap_{ new VideoCapture(input_file_name) },
+	output_path_{ output_file_name },
+	output_cap_{ new VideoWriter(output_file_name, VideoWriter::fourcc('M', 'J', 'P', 'G'), input_cap_->get(CAP_PROP_FPS), Size(input_cap_->get(CAP_PROP_FRAME_WIDTH), input_cap_->get(CAP_PROP_FRAME_HEIGHT)))},
 	window_name_{ window_name },
 	current_time_of_frame_{ 0 },
 	input_fps_{ 0 },
@@ -19,6 +21,8 @@ VideoProcessor::~VideoProcessor()
 
 	this->input_cap_->release();
 	delete[] this->input_cap_;
+	this->output_cap_->release();
+	delete[] this->output_cap_;
 
 	destroyAllWindows;
 }
@@ -58,6 +62,11 @@ void VideoProcessor::ReadNextFrame()
 void VideoProcessor::ShowFrame(Mat frame)
 {
 	imshow(window_name_, frame);
+}
+
+void VideoProcessor::WriteFrame(Mat frame)
+{
+	output_cap_->write(frame);
 }
 
 bool VideoProcessor::GetInputCapStatus()
