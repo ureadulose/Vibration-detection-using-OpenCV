@@ -19,7 +19,7 @@ public:
 	FftPerformer();
 	~FftPerformer();
 
-	std::vector<float> ExecuteFft(int sampling_frequency, int debugging_num = 0);
+	std::vector<float> ExecuteFft(int sampling_frequency, bool absolute_peak, int debugging_num = 0);
 	
 	// Collects new data of tracked points (frame at which point was tracked, coordinates of point, time at which point was tracked)
 	void CollectTrackedPoints(int frame_pos_of_point, Point2f coordinates_of_points, double frame_time_of_point, int num);
@@ -27,7 +27,7 @@ public:
 	void WriteSpectrumToTxt();
 	void WriteDataToTxt();
 
-	int GetSizeOfVecs();
+	int GetLengthOfPointData();
 private:
 	// performing FFT
 

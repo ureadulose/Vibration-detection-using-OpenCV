@@ -84,19 +84,13 @@ void VibrationDisplayer::UpdateDisplayingRectangle()
 
 void VibrationDisplayer::UpdateColors()
 {
-	// for now maximum possible value of frequency is 15
-	// so lets translate frequency [0; 15] to [0; 255] int color value;
+	// translate frequency [0; range_] to [0; 255] int color value;
 	if (!frequencies_.empty())
 	{
 		colors_.clear();
 		for (int i = 0; i < points_.size(); i++)
 		{
-			// there is one feature (not a bug of course)
-			// i take only one frequency from frequencies_
-			// i'll fix this later, now im too tired
-			// вообще на самом деле не знаю, зачем € пищу комменты на англ, потом переделаю)
-			// по крайней мере уж этот коммент точно можно было и на русском написать 
-			std::vector<int> color = Rgb(frequencies_[0] / range_);
+			std::vector<int> color = Rgb(frequencies_[i] / range_);
 			colors_.push_back(Scalar(color[0], color[1], color[2]));
 		}
 	}
@@ -133,7 +127,7 @@ void VibrationDisplayer::AddGradient()
 	{
 		Scalar scalar_color;
 		std::vector<int> vec_color = Rgb((double)(i) / (double)(slices));
-		std::cout << vec_color[0] << std::endl;
+		//std::cout << vec_color[0] << std::endl;
 
 		scalar_color[0] = vec_color[0];
 		scalar_color[1] = vec_color[1];

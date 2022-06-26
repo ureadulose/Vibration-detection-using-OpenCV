@@ -27,7 +27,7 @@ void WriteToTxt(std::vector<float> magnitudes)
 	file.close();
 }
 
-std::vector<float> FftPerformer::ExecuteFft(int sampling_frequency, int debugging_num)
+std::vector<float> FftPerformer::ExecuteFft(int sampling_frequency, bool absolute_peak, int debugging_num)
 {
 	//std::cout << "doin " << debugging_num << std::endl;
 
@@ -107,15 +107,45 @@ std::vector<float> FftPerformer::ExecuteFft(int sampling_frequency, int debuggin
 
 	/////////////////////////////////////
 
-	// searching peaks in output vector of magnitudes
-	PeakFinder::findPeaks(magnitudes, indexes_of_peak_frequencies, false, 1);
-
-	// this function works strange, it doesn't always returns the indexes
-	// so i decided to do the following
-	int maxIdx = 0;
-	if (indexes_of_peak_frequencies.empty())
+	if (!absolute_peak)
 	{
-		std::cout << "alternative way" << std::endl;
+		// searching peaks in output vector of magnitudes
+		PeakFinder::findPeaks(magnitudes, indexes_of_peak_frequencies, false, 1);
+
+		// this function works strange, it doesn't always returns the indexes
+		// so i decided to do the following
+		int maxIdx = 0;
+		if (indexes_of_peak_frequencies.empty())
+		{
+			//std::cout << "alternative way" << std::endl;
+			double tmp_max_value = 0.0;
+			// here we start from 1 and not 0
+			// it's called "lyutiy kostyl"
+			for (int i = 1; i < magnitudes.size(); i++)
+			{
+				if (magnitudes[i] > tmp_max_value)
+				{
+					tmp_max_value = magnitudes[i];
+					maxIdx = i;
+				}
+
+			}
+			peak_frequencies.push_back(frequencies[maxIdx]);
+		}
+
+
+		// filling in vector of peak_frequencies with the just found peak frequencies 
+		for (int i = 0; i < indexes_of_peak_frequencies.size(); i++)
+		{
+			peak_frequencies.push_back(frequencies[indexes_of_peak_frequencies[i]]);
+
+			//std::cout << "Max is " << frequencies[indexes_of_peak_frequencies[i]] << std::endl;
+		}
+	}
+
+	if (absolute_peak)
+	{
+		int maxIdx = 0;
 		double tmp_max_value = 0.0;
 		// here we start from 1 and not 0
 		// it's called "lyutiy kostyl"
@@ -130,15 +160,8 @@ std::vector<float> FftPerformer::ExecuteFft(int sampling_frequency, int debuggin
 		}
 		peak_frequencies.push_back(frequencies[maxIdx]);
 	}
+
 	
-
-	// filling in vector of peak_frequencies with the just found peak frequencies 
-	for (int i = 0; i < indexes_of_peak_frequencies.size(); i++)
-	{
-		peak_frequencies.push_back(frequencies[indexes_of_peak_frequencies[i]]);
-
-		//std::cout << "Max is " << frequencies[indexes_of_peak_frequencies[i]] << std::endl;
-	}
 
 	return peak_frequencies;
 }
@@ -188,7 +211,7 @@ void FftPerformer::WriteDataToTxt()
 	file.close();
 }
 
-int FftPerformer::GetSizeOfVecs()
+int FftPerformer::GetLengthOfPointData()
 {
 	return size_of_vecs_;
 }

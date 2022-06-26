@@ -86,7 +86,7 @@ std::vector<Point2f> VibrationDetector::GoodFeaturesToTrack(Mat frame, int MAX_P
 		0.04
 	);
 
-	cornerSubPix(
+	/*cornerSubPix(
 		image,
 		corners,
 		Size(lk_win_size_, lk_win_size_),
@@ -96,7 +96,7 @@ std::vector<Point2f> VibrationDetector::GoodFeaturesToTrack(Mat frame, int MAX_P
 			20,
 			0.03
 		)
-	);
+	);*/
 
 	return corners;
 }
@@ -224,22 +224,26 @@ void VibrationDetector::ExecuteVibrationDetection()
 			// sending and updating new points in ROI found from optical flow
 			vibration_displayer.UpdateDisplayingPoints(next_vibrating_pts_);
 
-			// тут кароче прикольчик
-			// vec_of_frequencies содержит информацию о частотах конкретной точки
-			// но € сделал так, что прога воспринимает это как вектор частот всех точек, а не одной конкретной
-			// »—ѕ–јјјј¬№
+			vec_of_updated_frequencies_.clear();
+
+			// executing fft for each point
 			for (int i = 0; i < number_of_vibrating_pts_; i++)
 			{
 				vec_of_rect_fft_performers_[i].CollectTrackedPoints(sequence_of_frames.GetCurrentPosOfFrame(), next_vibrating_pts_[i], sequence_of_frames.GetCurrentPosOfFrame(), i);
 
-				if (((vec_of_rect_fft_performers_[i].GetSizeOfVecs()) % 3 == 0) && (vec_of_rect_fft_performers_[i].GetSizeOfVecs() != 0))
+				if (((vec_of_rect_fft_performers_[i].GetLengthOfPointData()) % 3 == 0) && (vec_of_rect_fft_performers_[i].GetLengthOfPointData() != 0))
 				{
 					vec_of_rect_frequencies_.clear();
-					vec_of_rect_frequencies_ = vec_of_rect_fft_performers_[i].ExecuteFft(sampling_frequency_); // for a certain point
+					vec_of_rect_frequencies_ = vec_of_rect_fft_performers_[i].ExecuteFft(sampling_frequency_, true); // for a certain point
 
-					vibration_displayer.UpdateFrequencies(vec_of_rect_frequencies_, 15.0);
+					rect_point_frequency_ = vec_of_rect_frequencies_[0];
+					std::cout << i << " - point. Freq: " << rect_point_frequency_ << std::endl;
+					vec_of_updated_frequencies_.push_back(rect_point_frequency_);
 				}
 			}
+			
+
+			vibration_displayer.UpdateFrequencies(vec_of_updated_frequencies_, 15.0);
 			/*if (!vec_of_rect_frequencies_.empty())
 			{
 			}*/
@@ -260,11 +264,11 @@ void VibrationDetector::ExecuteVibrationDetection()
 			{
 				vec_of_fft_performers_[i].CollectTrackedPoints(sequence_of_frames.GetCurrentPosOfFrame(), next_pts_[i], sequence_of_frames.GetCurrentTimeOfFrame(), i);
 
-				if (((vec_of_fft_performers_[i].GetSizeOfVecs()) % 3 == 0) && (vec_of_fft_performers_[i].GetSizeOfVecs() != 0))
+				if (((vec_of_fft_performers_[i].GetLengthOfPointData()) % 3 == 0) && (vec_of_fft_performers_[i].GetLengthOfPointData() != 0))
 				{
 
 					vec_of_frequencies_.clear();
-					vec_of_frequencies_ = vec_of_fft_performers_[i].ExecuteFft(sampling_frequency_, i); // for a certain point
+					vec_of_frequencies_ = vec_of_fft_performers_[i].ExecuteFft(sampling_frequency_, false, i); // for a certain point
 
 					vec_of_data_displayer_[i].SetVectorOfFrequencies(vec_of_frequencies_);
 				}

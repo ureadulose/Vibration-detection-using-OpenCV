@@ -98,6 +98,8 @@ private:
 	std::vector<float> vec_of_frequencies_; // for a certain point
 
 	std::vector<float> vec_of_rect_frequencies_; // for a certain point
+	std::vector<float> vec_of_updated_frequencies_; // for a all points
+	float rect_point_frequency_;
 
 	// for displaying vibration with points
 	std::vector<std::vector<Point>> contour_shapes_;
