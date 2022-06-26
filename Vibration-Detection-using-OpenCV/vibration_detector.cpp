@@ -179,7 +179,6 @@ void VibrationDetector::ExecuteVibrationDetection()
 
 		if (this->right_button_down_)
 		{
-			std::cout << "Selecting ROI" << std::endl;
 			this->roi_ = Rect(tl_click_coords_, mouse_move_coords_);
 			rectangle(current_tracking_frame_, roi_.tl(), roi_.br(), Scalar(0, 255, 0), 1);
 			//vibration_displayer.ShowFrame();
@@ -187,7 +186,6 @@ void VibrationDetector::ExecuteVibrationDetection()
 
 		if (this->rectangle_selected_)
 		{
-			std::cout << "ROI selected" << std::endl;
 			vibration_displayer.SetRoi(Rect(tl_click_coords_, mouse_move_coords_));
 		}
 
@@ -195,12 +193,11 @@ void VibrationDetector::ExecuteVibrationDetection()
 		if ((this->rectangle_selected_) && (vibration_inited_ == false))
 		{
 			vibration_inited_ = true;
-			prev_vibrating_pts_ = GoodFeaturesToTrack(next_img_gray_, 100, Rect(tl_click_coords_, br_click_coords_));
+			prev_vibrating_pts_ = GoodFeaturesToTrack(next_img_gray_, 500, Rect(tl_click_coords_, br_click_coords_));
 			number_of_vibrating_pts_ = prev_vibrating_pts_.size();
 
 			// sending just found points to vibration displayer and initializing colors of these points
 			vibration_displayer.UpdateDisplayingPoints(prev_vibrating_pts_);
-			std::cout << "Sent " << prev_vibrating_pts_.size() << " points" << std::endl;
 			colors_inited_ = vibration_displayer.InitColors();
 			
 			// creating vector of fft performers for points in ROI
@@ -231,7 +228,7 @@ void VibrationDetector::ExecuteVibrationDetection()
 			{
 				vec_of_rect_fft_performers_[i].CollectTrackedPoints(sequence_of_frames.GetCurrentPosOfFrame(), next_vibrating_pts_[i], sequence_of_frames.GetCurrentPosOfFrame(), i);
 
-				if (((vec_of_rect_fft_performers_[i].GetSizeOfVecs()) % 30 == 0) && (vec_of_rect_fft_performers_[i].GetSizeOfVecs() != 0))
+				if (((vec_of_rect_fft_performers_[i].GetSizeOfVecs()) % 3 == 0) && (vec_of_rect_fft_performers_[i].GetSizeOfVecs() != 0))
 				{
 					vec_of_rect_frequencies_.clear();
 					vec_of_rect_frequencies_ = vec_of_rect_fft_performers_[i].ExecuteFft(sampling_frequency_); // for a certain point
@@ -239,7 +236,6 @@ void VibrationDetector::ExecuteVibrationDetection()
 			}
 			if (!vec_of_rect_frequencies_.empty())
 			{
-				std::cout << "vec of rect frequencies is not empty" << std::endl;
 				vibration_displayer.UpdateFrequencies(vec_of_rect_frequencies_, 15.0);
 			}
 
@@ -264,11 +260,6 @@ void VibrationDetector::ExecuteVibrationDetection()
 					vec_of_frequencies_.clear();
 					vec_of_frequencies_ = vec_of_fft_performers_[i].ExecuteFft(sampling_frequency_, i); // for a certain point
 
-					for (int j = 0; j < vec_of_frequencies_.size(); j++)
-					{
-						std::cout << "vibration of " << i << " point is: " << vec_of_frequencies_[j] << std::endl;
-
-					}
 					vec_of_data_displayer_[i].SetVectorOfFrequencies(vec_of_frequencies_);
 				}
 				

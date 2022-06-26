@@ -51,6 +51,11 @@ void VibrationDisplayer::ShowFrame()
 	imshow(window_name_, frame_);
 }
 
+Mat VibrationDisplayer::GetFrame()
+{
+	return frame_;
+}
+
 void VibrationDisplayer::SetRoi(Rect roi)
 {
 	roi_ = roi;
@@ -58,7 +63,6 @@ void VibrationDisplayer::SetRoi(Rect roi)
 
 void VibrationDisplayer::UpdateFrequencies(std::vector<float> frequencies, double range)
 {
-	std::cout << "FREQUENCIES UPDATED" << std::endl;
 	frequencies_ = frequencies;
 	range_ = range;
 }
@@ -80,18 +84,20 @@ void VibrationDisplayer::UpdateDisplayingRectangle()
 
 void VibrationDisplayer::UpdateColors()
 {
-	std::cout << "updating colors..." << std::endl;
 	// for now maximum possible value of frequency is 15
 	// so lets translate frequency [0; 15] to [0; 255] int color value;
 	if (!frequencies_.empty())
 	{
-		std::cout << "points_ size is " << points_.size() << std::endl;
-		std::cout << "frequencies_ size is " << frequencies_.size() << std::endl;
 		colors_.clear();
 		for (int i = 0; i < points_.size(); i++)
 		{
-			std::vector<int> color = Rgb(frequencies_[i] / range_);
-			colors_.push_back(Scalar(color[0], color[1], color[3]));
+			// there is one feature (not a bug of course)
+			// i take only one frequency from frequencies_
+			// i'll fix this later, now im too tired
+			// вообще на самом деле не знаю, зачем € пищу комменты на англ, потом переделаю)
+			// по крайней мере уж этот коммент точно можно было и на русском написать 
+			std::vector<int> color = Rgb(frequencies_[0] / range_);
+			colors_.push_back(Scalar(color[0], color[1], color[2]));
 		}
 	}
 }

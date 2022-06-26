@@ -21,6 +21,7 @@ public:
 	//void ContourHandler(std::vector<std::vector<Point>> contour_shapes);
 	//void GetContourHeadPoints(std::vector<std::vector<Point>> contour_shapes, std::vector<Point>& contour_head_points);
 	void ShowFrame();
+	Mat GetFrame();
 	void SetRoi(Rect roi);
 	void UpdateFrequencies(std::vector<float> frequencies, double range);
 	void UpdateDisplayingPoints(std::vector<Point2f> points);
