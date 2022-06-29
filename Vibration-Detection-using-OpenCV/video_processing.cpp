@@ -12,12 +12,10 @@ VideoProcessor::VideoProcessor(const std::string input_file_name, const std::str
 	input_frame_width_{ 0 }
 
 {
-	std::cout << "VideoProcessor Constructor" << std::endl;
 }
 
 VideoProcessor::~VideoProcessor()
 {
-	std::cout << "VideoProcessor Destructor" << std::endl;
 
 	this->input_cap_->release();
 	delete[] this->input_cap_;
