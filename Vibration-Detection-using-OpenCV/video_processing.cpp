@@ -4,10 +4,10 @@ VideoProcessor::VideoProcessor(const std::string input_file_name, const std::str
 	:input_path_{ input_file_name },
 	input_cap_{ new VideoCapture(input_file_name) },
 	output_path_{ output_file_name },
-	output_cap_{ new VideoWriter(output_file_name, VideoWriter::fourcc('M', 'J', 'P', 'G'), input_cap_->get(CAP_PROP_FPS), Size(input_cap_->get(CAP_PROP_FRAME_WIDTH), input_cap_->get(CAP_PROP_FRAME_HEIGHT)))},
+	output_cap_{ new VideoWriter(output_file_name, VideoWriter::fourcc('M', 'J', 'P', 'G'), input_cap_->get(CAP_PROP_FPS), Size(input_cap_->get(CAP_PROP_FRAME_WIDTH), input_cap_->get(CAP_PROP_FRAME_HEIGHT))) },
 	window_name_{ window_name },
 	current_time_of_frame_{ 0 },
-	input_fps_{ 0 },
+	input_fps_{ input_cap_->get(CAP_PROP_FPS) },
 	input_frame_height_{ 0 },
 	input_frame_width_{ 0 }
 
@@ -27,6 +27,9 @@ VideoProcessor::~VideoProcessor()
 
 bool VideoProcessor::Init()
 {
+	std::cout << "////////////////////////////////////////////////////////////////////////////////////" << std::endl;
+	std::cout << input_fps_ << std::endl;
+
 	// input file + initialize capturing
 	if (!input_cap_->isOpened()) {
 		std::cout << "Error: unable to open input video file" << std::endl;
@@ -41,7 +44,7 @@ bool VideoProcessor::Init()
 	namedWindow(window_name_, WINDOW_AUTOSIZE);
 
 	// getting fps of a video
-	this->input_fps_ = input_cap_->get(CAP_PROP_FPS);
+	//this->input_fps_ = input_cap_->get(CAP_PROP_FPS);
 
 	// TODO: output file
 

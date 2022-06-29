@@ -48,7 +48,7 @@ private:
 	// characteristics of a video
 	int input_frame_width_;
 	int input_frame_height_;
-	int input_fps_;
+	double input_fps_;
 
 	std::string window_name_;
 
