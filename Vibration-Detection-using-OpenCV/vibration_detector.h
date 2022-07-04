@@ -2,7 +2,7 @@
 #define VIBRATION_DETECTOR_H
 
 // VREMENNO
-#define INPUT_FILE_NAME "Resources/engine.mp4" // leaf.mp4 or engine.mp4 or vibration1.mp4
+#define INPUT_FILE_NAME "Resources/7.mp4" // leaf.mp4 or engine.mp4 or vibration1.mp4
 #define OUTPUT_FILE_NAME "Output/vibration.avi" // leaf.mp4 or engine.mp4 or vibration1.mp4
 #define MAIN_WINDOW_NAME "Video"
 #define V_MONITOR_WINDOW_NAME "Vibration Monitor"
@@ -23,7 +23,7 @@
 class VibrationDetector
 {
 public:
-	VibrationDetector();
+	VibrationDetector(std::string input_file_name, std::string output_file_name, std::string window_name);
 	~VibrationDetector();
 	void ExecuteVibrationDetection();
 
@@ -48,6 +48,10 @@ private:
 	void DrawContours(Mat& frame, std::vector<std::vector<Point>> contour_shapes);
 
 private:
+	std::string input_file_name_;
+	std::string output_file_name_;
+	std::string window_name_;
+
 	String main_window_name_;
 	String v_monitor_window_name_;
 

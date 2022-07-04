@@ -2,7 +2,7 @@
 
 void ExecuteVibrationMonitoring()
 {
-	VibrationDetector b;
+	VibrationDetector b(INPUT_FILE_NAME, OUTPUT_FILE_NAME, MAIN_WINDOW_NAME);
 	b.ExecuteVibrationDetection();
 }
 

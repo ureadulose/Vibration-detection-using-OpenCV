@@ -1,7 +1,10 @@
 #include "vibration_detector.h"
 
-VibrationDetector::VibrationDetector()
-	:fft_performer_{nullptr},
+VibrationDetector::VibrationDetector(std::string input_file_name, std::string output_file_name, std::string window_name) :
+	input_file_name_{ input_file_name },
+	output_file_name_{ output_file_name },
+	window_name_{ window_name },
+	fft_performer_{nullptr},
 	number_of_points_{ 0 },
 	vec_of_frequencies_{ 0 }
 {
@@ -152,7 +155,7 @@ void VibrationDetector::DrawContours(Mat& frame, std::vector<std::vector<Point>>
 
 void VibrationDetector::ExecuteVibrationDetection()
 {
-	VideoProcessor sequence_of_frames(INPUT_FILE_NAME, OUTPUT_FILE_NAME, MAIN_WINDOW_NAME);
+	VideoProcessor sequence_of_frames(input_file_name_, output_file_name_, MAIN_WINDOW_NAME);
 	sequence_of_frames.Init();
 
 	VibrationDisplayer vibration_displayer(V_MONITOR_WINDOW_NAME, sequence_of_frames.GetFrameWidth(), sequence_of_frames.GetFrameHeight());
