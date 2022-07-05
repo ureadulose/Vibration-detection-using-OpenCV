@@ -150,7 +150,9 @@
     <ClCompile Include="test.cpp" />
     <ClCompile Include="vibration_detector.cpp" />
     <ClCompile Include="vibration_displayer.cpp" />
+    <ClCompile Include="camera_calibrator.cpp" />
     <ClCompile Include="video_processing.cpp" />
+    <ClCompile Include="video_undistorter.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="contour_finder.h" />
@@ -159,7 +161,9 @@
     <ClInclude Include="vibration_displayer.h" />
     <ClInclude Include="PeakFinder.h" />
     <ClInclude Include="vibration_detector.h" />
+    <ClInclude Include="camera_calibrator.h" />
     <ClInclude Include="video_processing.h" />
+    <ClInclude Include="video_undistorter.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="samples.txt" />
