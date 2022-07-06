@@ -36,22 +36,25 @@ void CameraCalibrator::ExecuteCameraCalibration()
 	std::cout << "Starting camera calibration..." << std::endl;
 
 	std::cout << "Finding corners..." << std::endl;
-	int frame_number = 1;
+	int chessboard_number = 0;
 
 	LoadImages(chessboards_path_);
 
-	while (frame_number < frame_count_)
+	while (chessboard_number < chessboards_amount_)
 	{
-		frame_number++;
-		std::cout << "Current frame: " << frame_number << "/" << frame_count_ << std::endl;
-		input_cap_->read(current_frame_);
-		pattern_found_ = FindCorners(current_frame_, pattern_size_);
+		
+		std::cout << "Current frame: " << chessboard_number << "/" << chessboards_amount_ << std::endl;
+		
+		Mat chessboard = chessboards_[chessboard_number];
+
+		pattern_found_ = FindCorners(chessboard, pattern_size_);
 
 		if (pattern_found_ == true)
 		{
 			std::cout << "Pattern found" << std::endl;
 			vec_of_corners_.push_back(corners_);
 		}
+		chessboard_number++;
 	}
 	///////// creating coordinate plain //////////
 	std::vector<Point3f> object_points;
@@ -81,6 +84,17 @@ void CameraCalibrator::ExecuteCameraCalibration()
 		translation_vector_
 	);
 	std::cout << "Error is " << error << std::endl;
+	std::cout << "camera_matrix_ is " << camera_matrix_ << std::endl;
+	std::cout << "distortion_coefficients_ is " << distortion_coefficients_ << std::endl;
+
+	for (int i = 0; i < rotation_vector_.size(); i++)
+	{
+		std::cout << "rotation_vector_ is " << rotation_vector_[i] << std::endl;
+	}
+	for (int i = 0; i < translation_vector_.size(); i++)
+	{
+		std::cout << "translation_vector_ is " << translation_vector_[i] << std::endl;
+	}
 
 	// saving found parameters to a txt file
 	SaveFoundParamsToFile(camera_matrix_, distortion_coefficients_, txt_file_name_);
@@ -88,33 +102,33 @@ void CameraCalibrator::ExecuteCameraCalibration()
 
 void CameraCalibrator::LoadImages(std::string chessboards_path)
 {
-	Mat image;
+	Mat chessboard;
 
 	// transform path a little bit
 	std::string path = chessboards_path;
-	int num = 0;
+	chessboards_amount_ = 0;
 	path += "chessboard_"; // location/chessboard_
-	path += std::to_string(num); // location/chessboard_0
+	path += std::to_string(chessboards_amount_); // location/chessboard_0
 	path += ".png"; // location/chessboard_0.png
 
 	// first iter
-	image = imread(path);
+	chessboard = imread(path);
 
-	while (!image.empty())
+	while (!chessboard.empty())
 	{
-		images_.push_back(image);
-		num++;
+		chessboards_.push_back(chessboard);
+		chessboards_amount_++;
 
 		// transforming path for reading next image
 		path = chessboards_path;
 		path += "chessboard_"; // location/chessboard_
-		path += std::to_string(num); // location/chessboard_0
+		path += std::to_string(chessboards_amount_); // location/chessboard_0
 		path += ".png"; // location/chessboard_0.png
 
-		std::cout << "Reading " << num << " image" << std::endl;
-		image = imread(path);
+		std::cout << "Reading " << chessboards_amount_ << " image" << std::endl;
+		chessboard = imread(path);
 	}
-	std::cout << "Amount of images: " << num << std::endl;
+	std::cout << "Amount of chessboards: " << chessboards_amount_ << std::endl;
 }
 
 bool CameraCalibrator::FindCorners(Mat& input_frame, Size pattern_size)

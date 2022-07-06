@@ -34,7 +34,8 @@ private:
 	
 private:
 	std::string chessboards_path_;
-	std::vector<Mat> images_;
+	int chessboards_amount_;
+	std::vector<Mat> chessboards_;
 
 	VideoCapture* input_cap_;
 
