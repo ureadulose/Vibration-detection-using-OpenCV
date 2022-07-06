@@ -20,7 +20,7 @@ public:
 	bool InitColors();
 	//void ContourHandler(std::vector<std::vector<Point>> contour_shapes);
 	//void GetContourHeadPoints(std::vector<std::vector<Point>> contour_shapes, std::vector<Point>& contour_head_points);
-	void ShowFrame();
+	void ShowFrame(Mat tmp_frame);
 	Mat GetFrame();
 	void SetRoi(Rect roi);
 	void UpdateFrequencies(std::vector<float> frequencies, double range);
@@ -36,6 +36,8 @@ public:
 	// Getting color value from gradient
 	std::vector<int> Rgb(double ratio);
 private:
+	Mat tmp_frame_;
+
 	std::string window_name_;
 	int frame_width_;
 	int frame_height_;

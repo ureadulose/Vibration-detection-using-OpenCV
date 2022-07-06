@@ -39,12 +39,21 @@ void VideoUndistorter::ExecuteVideoUndistortion()
 
 	std::cout << frame_count_ << std::endl;
 
+	int frame_num = 0;
+
 	//undistort each frame in loop
-	while (input_cap_->read(current_frame_))
+	while (input_cap_->get(CAP_PROP_POS_FRAMES) < frame_count_)
 	{
-		std::cout << "Processing frame " << input_cap_->get(CAP_PROP_POS_FRAMES) << "/" << frame_count_ << std::endl;
-		undistort(current_frame_, undistorted_frame_, camera_matrix_, distortion_coefficients_);
-		SaveFrame(undistorted_frame_);
+		input_cap_->read(current_frame_);
+		if (!current_frame_.empty())
+		{
+			std::cout << "Processing frame " << input_cap_->get(CAP_PROP_POS_FRAMES) << "/" << frame_count_ << std::endl;
+			Mat mapX, mapY;
+			initUndistortRectifyMap(camera_matrix_, distortion_coefficients_, Matx33f::eye(), camera_matrix_, Size(frame_width_, frame_height_), CV_32FC1, mapX, mapY);
+			//undistort(current_frame_, undistorted_frame_, camera_matrix_, distortion_coefficients_);
+			remap(current_frame_, undistorted_frame_, mapX, mapY, cv::INTER_LINEAR);
+			SaveFrame(undistorted_frame_);
+		}
 	}
 
 	std::cout << "Undistortion completed" << std::endl;

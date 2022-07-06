@@ -125,23 +125,36 @@ void VibrationDetector::LucasKanadeTracking(Mat prev_img_gray, Mat next_img_gray
 }
 
 
-void VibrationDetector::DrawLines(std::vector<Point2f> prev_pts, std::vector<Point2f> next_pts)
+void VibrationDetector::DrawLines(std::vector<Point2f> prev_pts, std::vector<Point2f> next_pts, Mat& frame)
 {
 	for (int current_tracking_point = 0; current_tracking_point < static_cast<int>(prev_pts.size()); current_tracking_point++) {
-		if (status_[current_tracking_point] == 1) {
+		//if (status_[current_tracking_point] == 1) {
 
-			// line between two dots (next and previous)
-			line(current_tracking_frame_,
-				prev_pts[current_tracking_point],
-				next_pts[current_tracking_point],
-				Scalar(0, 255, 0),
-				1,
-				LINE_AA
-			);
+		//	// line between two dots (next and previous)
+		//	line(frame,
+		//		prev_pts[current_tracking_point],
+		//		next_pts[current_tracking_point],
+		//		Scalar(0, 255, 0),
+		//		1,
+		//		LINE_AA
+		//	);
 
-			// circle
-			circle(current_tracking_frame_, next_pts[current_tracking_point], 10, (0, 0, 255), 2);
-		}
+		//	// circle
+		//	circle(frame, next_pts[current_tracking_point], 10, (0, 0, 255), 2);
+		//}
+		
+		// line between two dots (next and previous)
+		std::cout << "puk" << std::endl;
+		line(frame,
+			prev_pts[current_tracking_point],
+			next_pts[current_tracking_point],
+			Scalar(0, 255, 0),
+			1,
+			LINE_AA
+		);
+
+		// circle
+		circle(frame, next_pts[current_tracking_point], 10, (0, 0, 255), 2);
 	}
 }
 
@@ -251,7 +264,10 @@ void VibrationDetector::ExecuteVibrationDetection()
 			{
 			}*/
 
-			vibration_displayer.ShowFrame();
+			// it's not actually showing frame. just updating. gonna fix this later
+			Mat tmp = current_tracking_frame_;
+			vibration_displayer.ShowFrame(tmp);
+			current_tracking_frame_ = vibration_displayer.GetFrame();
 			sequence_of_frames.WriteFrame(vibration_displayer.GetFrame());
 		}
 
@@ -284,7 +300,7 @@ void VibrationDetector::ExecuteVibrationDetection()
 			LucasKanadeTracking(prev_img_gray_, next_img_gray_, contour_prev_pts_, contour_next_pts_, contour_status_);*/
 
 			// drawing lines
-			DrawLines(prev_pts_, next_pts_);
+			DrawLines(prev_pts_, next_pts_, current_tracking_frame_);
 
 			// update points and frames
 			this->prev_pts_ = next_pts_;
@@ -312,6 +328,22 @@ void VibrationDetector::ExecuteVibrationDetection()
 		// drawing contours
 		DrawContours(current_tracking_frame_, contour_shapes_);*/
 
+		//if (!prev_pts_.empty())
+		//{
+		//	for (int current_tracking_point = 0; current_tracking_point < static_cast<int>(prev_pts_.size()); current_tracking_point++) {
+		//		// line between two dots (next and previous)
+		//		line(current_tracking_frame_,
+		//			prev_pts_[current_tracking_point],
+		//			next_pts_[current_tracking_point],
+		//			Scalar(0, 255, 0),
+		//			1,
+		//			LINE_AA
+		//		);
+		//		std::cout << "risuyu" << std::endl;
+		//		// circle
+		//		circle(current_tracking_frame_, next_pts_[current_tracking_point], 10, (0, 0, 255), 2);
+		//	}
+		//}
 		
 
 		// display frame

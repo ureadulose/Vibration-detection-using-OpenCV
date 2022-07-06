@@ -11,7 +11,8 @@ VibrationDisplayer::VibrationDisplayer(std::string window_name, int frame_width,
 void VibrationDisplayer::Init()
 {
 	// making a window
-	namedWindow(window_name_, WINDOW_AUTOSIZE);
+	// uncomment to show in another window
+	//namedWindow(window_name_, WINDOW_AUTOSIZE);
 	frame_ = Mat(frame_height_, frame_width_, CV_8UC3, Scalar(0, 0, 0));
 }
 
@@ -30,9 +31,11 @@ bool VibrationDisplayer::InitColors()
 	return true;
 }
 
-void VibrationDisplayer::ShowFrame()
+void VibrationDisplayer::ShowFrame(Mat tmp_frame)
 {
-	ClearFrame();
+	// "le kostyl", going to be fixed later
+	tmp_frame_ = tmp_frame;
+	//ClearFrame();
 
 	// drawing ROI and updating colors
 	UpdateDisplayingRectangle();
@@ -41,19 +44,20 @@ void VibrationDisplayer::ShowFrame()
 	for (int i = 0; i < points_.size(); i++)
 	{
 		// drawing points with their own colors - frequencies
-		circle(frame_, points_[i], 2, colors_[i], FILLED);
+		circle(/*frame_*/tmp_frame_, points_[i], 1, colors_[i], FILLED);
 	}
 
 	// adding frequency gradient
 	AddGradient();
 
 	// finally showing frame
-	imshow(window_name_, frame_);
+	// uncomment to show in another window
+	//imshow(window_name_, frame_);
 }
 
 Mat VibrationDisplayer::GetFrame()
 {
-	return frame_;
+	return /*frame_*/tmp_frame_;
 }
 
 void VibrationDisplayer::SetRoi(Rect roi)
@@ -104,14 +108,14 @@ void VibrationDisplayer::AddGradient()
 	Point top_left = Point(15, frame_.rows - 150);
 	Point bottom_right = Point(frame_.cols - 15, frame_.rows - 50);
 	Rect gradient_bounds(top_left, bottom_right);
-	rectangle(frame_, gradient_bounds.tl(), gradient_bounds.br(), Scalar(0, 255, 0), 1);
+	rectangle(/*frame_*/tmp_frame_, gradient_bounds.tl(), gradient_bounds.br(), Scalar(0, 255, 0), 1);
 
 	Point position;
 	position = Point(top_left.x - 2, bottom_right.y + 15);
 
 	for (int i = 0; i <= 6; i++)
 	{
-		putText(frame_, std::to_string(i * 3), position, FONT_HERSHEY_PLAIN, 1, Scalar(255, 255, 255), 1);
+		putText(/*frame_*/tmp_frame_, std::to_string(i * 3), position, FONT_HERSHEY_PLAIN, 1, Scalar(255, 255, 255), 1);
 		position = Point(position.x + (frame_.cols - 30)/5 - 1, bottom_right.y + 15);
 	}
 
@@ -133,7 +137,7 @@ void VibrationDisplayer::AddGradient()
 		scalar_color[1] = vec_color[1];
 		scalar_color[2] = vec_color[2];
 
-		rectangle(frame_, tl, br, scalar_color, FILLED);
+		rectangle(/*frame_*/tmp_frame_, tl, br, scalar_color, FILLED);
 
 		tl = Point(tl.x + dx, tl.y);
 		br = Point(br.x + dx, br.y);
@@ -146,7 +150,7 @@ std::vector<int> VibrationDisplayer::Rgb(double ratio)
 {
 	// we want to normalize ratio so that it fits in to 6 regions
 	// where each region is 256 units long
-	int normalized = int(ratio * 256 * 6);
+	int normalized = int(ratio * 256 * 4);
 
 	// find the region for this position
 	int region = normalized / 256;
@@ -161,8 +165,8 @@ std::vector<int> VibrationDisplayer::Rgb(double ratio)
 	case 1: r = 255; g = 255; b = 0;   r -= x; break;
 	case 2: r = 0;   g = 255; b = 0;   b += x; break;
 	case 3: r = 0;   g = 255; b = 255; g -= x; break;
-	case 4: r = 0;   g = 0;   b = 255; r += x; break;
-	case 5: r = 255; g = 0;   b = 255; b -= x; break;
+	//case 4: r = 0;   g = 0;   b = 255; r += x; break;
+	//case 5: r = 255; g = 0;   b = 255; b -= x; break;
 	}
 	return { r, g, b };
 }

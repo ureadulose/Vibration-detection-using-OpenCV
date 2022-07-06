@@ -17,7 +17,7 @@ CameraCalibrator::CameraCalibrator(std::string input_file_name, std::string ches
 
 
 	// наших углов должен быть 10 и 7 по горизонтали и вертикали соответственно
-	pattern_size_ = Size(10, 7);
+	pattern_size_ = Size(9, 6);
 
 	txt_file_name_ = "parameters.txt";
 }

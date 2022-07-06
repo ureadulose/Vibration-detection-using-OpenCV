@@ -42,7 +42,7 @@ private:
 	std::vector<Point2f> GoodFeaturesToTrack(Mat frame, int MAX_PTS, const Rect& roi);
 
 	// draws a track of movements
-	void DrawLines(std::vector<Point2f> prev_pts, std::vector<Point2f> next_pts);
+	void DrawLines(std::vector<Point2f> prev_pts, std::vector<Point2f> next_pts, Mat& frame);
 
 	// draws shapes of found contours
 	void DrawContours(Mat& frame, std::vector<std::vector<Point>> contour_shapes);
