@@ -7,9 +7,9 @@
 #define VIBRMON 2
 
 
-void ExecuteCameraCalibration(std::string input_file_name)
+void ExecuteCameraCalibration(std::string input_file_name, std::string chessboards_path)
 {
-	CameraCalibrator camera_calibrator(input_file_name);
+	CameraCalibrator camera_calibrator(input_file_name, chessboards_path);
 	camera_calibrator.ExecuteCameraCalibration();
 }
 
@@ -47,19 +47,21 @@ int Execute(std::string txt_file_name, int type)
 	std::string output_undistorted_video;
 	std::string input_vibration_detection;
 	std::string output_vibration_detection;
+	std::string chessboards_path;
 
 	std::getline(params_file, input_calibration_video);
 	std::getline(params_file, input_distorted_video);
 	std::getline(params_file, output_undistorted_video);
 	std::getline(params_file, input_vibration_detection);
 	std::getline(params_file, output_vibration_detection);
+	std::getline(params_file, chessboards_path);
 
 	// calls of modules
 	switch (type)
 	{
 	case CALIBRATION:
 		std::cout << "u've chosen camera calibration" << std::endl;
-		ExecuteCameraCalibration(input_calibration_video);
+		ExecuteCameraCalibration(input_calibration_video, chessboards_path);
 		break;
 	case UNDISTORTION:
 		std::cout << "u've chosen undistortion" << std::endl;

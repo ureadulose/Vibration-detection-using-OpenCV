@@ -1,7 +1,8 @@
 #include "camera_calibrator.h"
 
-CameraCalibrator::CameraCalibrator(std::string input_file_name) :
-	input_file_name_{ input_file_name }
+CameraCalibrator::CameraCalibrator(std::string input_file_name, std::string chessboards_path) :
+	input_file_name_{ input_file_name },
+	chessboards_path_{ chessboards_path }
 {
 	input_cap_ = new VideoCapture(input_file_name);
 
@@ -36,6 +37,8 @@ void CameraCalibrator::ExecuteCameraCalibration()
 
 	std::cout << "Finding corners..." << std::endl;
 	int frame_number = 1;
+
+	LoadImages(chessboards_path_);
 
 	while (frame_number < frame_count_)
 	{
@@ -81,6 +84,37 @@ void CameraCalibrator::ExecuteCameraCalibration()
 
 	// saving found parameters to a txt file
 	SaveFoundParamsToFile(camera_matrix_, distortion_coefficients_, txt_file_name_);
+}
+
+void CameraCalibrator::LoadImages(std::string chessboards_path)
+{
+	Mat image;
+
+	// transform path a little bit
+	std::string path = chessboards_path;
+	int num = 0;
+	path += "chessboard_"; // location/chessboard_
+	path += std::to_string(num); // location/chessboard_0
+	path += ".png"; // location/chessboard_0.png
+
+	// first iter
+	image = imread(path);
+
+	while (!image.empty())
+	{
+		images_.push_back(image);
+		num++;
+
+		// transforming path for reading next image
+		path = chessboards_path;
+		path += "chessboard_"; // location/chessboard_
+		path += std::to_string(num); // location/chessboard_0
+		path += ".png"; // location/chessboard_0.png
+
+		std::cout << "Reading " << num << " image" << std::endl;
+		image = imread(path);
+	}
+	std::cout << "Amount of images: " << num << std::endl;
 }
 
 bool CameraCalibrator::FindCorners(Mat& input_frame, Size pattern_size)

@@ -18,12 +18,14 @@ using namespace cv;
 class CameraCalibrator
 {
 public:
-	CameraCalibrator(std::string input_file_name_);
+	CameraCalibrator(std::string input_file_name, std::string chessboards_path);
 	~CameraCalibrator();
 
 	void ExecuteCameraCalibration();
 
 private:
+	void LoadImages(std::string chessboards_path);
+
 	bool FindCorners(Mat& input_frame, Size pattern_size);
 	void SaveFoundParamsToFile(Mat camera_matrix, Mat dist_coeffs_2be_written, std::string file);
 
@@ -31,6 +33,9 @@ private:
 	std::string ToStringWithPrecision(const T a_value, const int n = 9);
 	
 private:
+	std::string chessboards_path_;
+	std::vector<Mat> images_;
+
 	VideoCapture* input_cap_;
 
 	double frame_width_;
