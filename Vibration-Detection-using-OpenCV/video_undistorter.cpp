@@ -51,7 +51,7 @@ void VideoUndistorter::ExecuteVideoUndistortion()
 			Mat mapX, mapY;
 			initUndistortRectifyMap(camera_matrix_, distortion_coefficients_, Matx33f::eye(), camera_matrix_, Size(frame_width_, frame_height_), CV_32FC1, mapX, mapY);
 			//undistort(current_frame_, undistorted_frame_, camera_matrix_, distortion_coefficients_);
-			remap(current_frame_, undistorted_frame_, mapX, mapY, cv::INTER_LINEAR);
+			remap(current_frame_, undistorted_frame_, mapX, mapY, INTER_LINEAR);
 			SaveFrame(undistorted_frame_);
 		}
 	}
