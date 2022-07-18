@@ -1,9 +1,6 @@
 #ifndef VIDEO_PROCESSING_H_
 #define VIDEO_PROCESSING_H_
 
-// to be removed
-//#define WINDOW_NAME ("Video")
-
 // standart headers
 #include <iostream>
 
@@ -36,7 +33,7 @@ public:
 	int GetFrameWidth();
 	int GetFrameHeight();
 
-private:
+protected:
 	Mat input_frame_;
 	Mat current_frame_;
 

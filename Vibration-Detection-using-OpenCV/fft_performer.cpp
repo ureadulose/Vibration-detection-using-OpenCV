@@ -52,6 +52,8 @@ std::vector<float> FftPerformer::ExecuteFft(int sampling_frequency, bool absolut
 	double meaned_y = mean_coordinates_of_point_.val[1];
 	//std::cout << meaned_x << std::endl;
 	//std::cout << meaned_y << std::endl;
+	amplitude_x_ = coordinates_of_point_.back().x - meaned_x;
+	amplitude_y_ = coordinates_of_point_.back().y - meaned_y;
 
 	for (int i = 0; i < coordinates_of_point_.size(); i++)
 	{
@@ -209,6 +211,11 @@ void FftPerformer::WriteDataToTxt()
 	std::cout << "WRITTEN WRITTEN WRITTEN WRITTEN WRITTEN WRITTEN WRITTEN WRITTEN" << std::endl;
 
 	file.close();
+}
+
+double FftPerformer::GetAmplitude()
+{
+	return amplitude_x_;
 }
 
 int FftPerformer::GetLengthOfPointData()

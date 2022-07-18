@@ -1,10 +1,12 @@
 #include "vibration_detector.h"
 #include "video_undistorter.h"
 #include "camera_calibrator.h"
+#include "amplitude_calibrator.h"
 
 #define CALIBRATION 0
 #define UNDISTORTION 1
 #define VIBRMON 2
+#define AMPLCALIBMODE 3
 
 
 void ExecuteCameraCalibration(std::string input_file_name, std::string chessboards_path)
@@ -31,6 +33,11 @@ void ExecuteVibrationMonitoring(std::string input_file_name, std::string output_
 	vibration_detector.ExecuteVibrationDetection();
 }
 
+void ExecuteAmplitudeCalibration(std::string input_file_name, std::string output_file_name)
+{
+	AmplitudeCalibrator amplitude_calibrator;
+}
+
 int Execute(std::string txt_file_name, int type)
 {
 	std::ifstream params_file;
@@ -48,6 +55,8 @@ int Execute(std::string txt_file_name, int type)
 	std::string input_vibration_detection;
 	std::string output_vibration_detection;
 	std::string chessboards_path;
+	std::string input_ampl_calib_video;
+	std::string output_ampl_calib_file;
 
 	std::getline(params_file, input_calibration_video);
 	std::getline(params_file, input_distorted_video);
@@ -55,6 +64,8 @@ int Execute(std::string txt_file_name, int type)
 	std::getline(params_file, input_vibration_detection);
 	std::getline(params_file, output_vibration_detection);
 	std::getline(params_file, chessboards_path);
+	std::getline(params_file, input_ampl_calib_video);
+	std::getline(params_file, output_ampl_calib_file);
 
 	// calls of modules
 	switch (type)
@@ -70,6 +81,10 @@ int Execute(std::string txt_file_name, int type)
 	case VIBRMON:
 		std::cout << "u've chosen vibration monitoring" << std::endl;
 		ExecuteVibrationMonitoring(input_vibration_detection, output_vibration_detection);
+		break;
+	case AMPLCALIBMODE:
+		std::cout << "You have amplitude calibration mode" << std::endl;
+		ExecuteAmplitudeCalibration(input_ampl_calib_video, output_ampl_calib_file);
 		break;
 	}
 	

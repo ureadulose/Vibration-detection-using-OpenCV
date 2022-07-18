@@ -7,7 +7,7 @@ CameraCalibrator::CameraCalibrator(std::string input_file_name, std::string ches
 	input_cap_ = new VideoCapture(input_file_name);
 
 	if (!input_cap_->isOpened())
-		std::cout << "FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK" << std::endl;
+		std::cout << "input cap is not opened" << std::endl;
 
 	frame_width_ = input_cap_->get(CAP_PROP_FRAME_WIDTH);
 	frame_height_ = input_cap_->get(CAP_PROP_FRAME_HEIGHT);

@@ -47,6 +47,10 @@ private:
 	// draws shapes of found contours
 	void DrawContours(Mat& frame, std::vector<std::vector<Point>> contour_shapes);
 
+	// reading amplitude coefficient from txt
+	double ReadCoeff();
+	// захардкодил, потому что на данный момент эта версия проекта тупиковая из-за своей архитектуры)
+
 private:
 	std::string input_file_name_;
 	std::string output_file_name_;
@@ -95,6 +99,10 @@ private:
 
 	FftPerformer* rect_fft_performer_;
 	std::vector<FftPerformer> vec_of_rect_fft_performers_;
+
+	bool amplitude_coeff_inited_;
+	double amplitude_coeff_;
+	double current_amplitude_;
 
 	// for displaying data
 	DataDisplayer* data_displayer_;

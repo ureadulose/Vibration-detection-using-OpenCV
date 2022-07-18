@@ -24,8 +24,11 @@ public:
 	// Collects new data of tracked points (frame at which point was tracked, coordinates of point, time at which point was tracked)
 	void CollectTrackedPoints(int frame_pos_of_point, Point2f coordinates_of_points, double frame_time_of_point, int num);
 
+	// debug
 	void WriteSpectrumToTxt();
 	void WriteDataToTxt();
+
+	double GetAmplitude();
 
 	int GetLengthOfPointData();
 private:
@@ -34,6 +37,9 @@ private:
 public:
 	int size_of_vecs_;
 	float sampling_frequency_; // in fact fps of a video
+
+	double amplitude_x_;
+	double amplitude_y_;
 
 	std::vector<int> frame_pos_of_point_;
 	std::vector<cv::Point2f> coordinates_of_point_;

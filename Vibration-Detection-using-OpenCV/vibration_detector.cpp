@@ -166,6 +166,12 @@ void VibrationDetector::DrawContours(Mat& frame, std::vector<std::vector<Point>>
 	}
 }
 
+double VibrationDetector::ReadCoeff()
+{
+	// doin...
+	return 0.0;
+}
+
 void VibrationDetector::ExecuteVibrationDetection()
 {
 	VideoProcessor sequence_of_frames(input_file_name_, output_file_name_, MAIN_WINDOW_NAME);
@@ -176,6 +182,13 @@ void VibrationDetector::ExecuteVibrationDetection()
 
 	vibration_inited_ = false;
 	colors_inited_ = false;
+	amplitude_coeff_inited_ = false;
+
+	// amplitude initialization
+	if (!amplitude_coeff_inited_)
+	{
+		amplitude_coeff_ = ReadCoeff();
+	}
 
 	// reading the first frame of sequence so we can convert it to gray color space
 	sequence_of_frames.ReadNextFrame();
@@ -290,9 +303,11 @@ void VibrationDetector::ExecuteVibrationDetection()
 					vec_of_frequencies_ = vec_of_fft_performers_[i].ExecuteFft(sampling_frequency_, false, i); // for a certain point
 
 					vec_of_data_displayer_[i].SetVectorOfFrequencies(vec_of_frequencies_);
+					
+					current_amplitude_ = vec_of_fft_performers_[i].GetAmplitude();
 				}
 				
-				vec_of_data_displayer_[i].OutputVibrationParameters(current_tracking_frame_, next_pts_[i]);
+				vec_of_data_displayer_[i].OutputVibrationParameters(current_tracking_frame_, next_pts_[i], amplitude_coeff_, current_amplitude_);
 			}
 
 			/*contour_prev_pts_ = prev_pts_;
