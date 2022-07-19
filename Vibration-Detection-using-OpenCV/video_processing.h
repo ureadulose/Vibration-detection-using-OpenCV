@@ -38,6 +38,7 @@ protected:
 	Mat current_frame_;
 
 	VideoCapture* input_cap_;
+	bool input_cap_status_;
 	VideoWriter* output_cap_;
 	std::string input_path_;
 	std::string output_path_;

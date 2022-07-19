@@ -31,6 +31,7 @@ void ExecuteVibrationMonitoring(std::string input_file_name, std::string output_
 {
 	VibrationDetector vibration_detector(input_file_name, output_file_name, MAIN_WINDOW_NAME);
 	vibration_detector.ExecuteVibrationDetection();
+	std::cout << "done" << std::endl;
 }
 
 void ExecuteAmplitudeCalibration(std::string input_file_name, std::string output_file_name)
@@ -87,7 +88,6 @@ int Execute(std::string txt_file_name, int type)
 		ExecuteAmplitudeCalibration(input_ampl_calib_video, output_ampl_calib_file);
 		break;
 	}
-	
 	return 1;
 }
 

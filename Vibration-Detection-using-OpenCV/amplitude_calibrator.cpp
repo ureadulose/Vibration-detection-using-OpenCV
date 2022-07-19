@@ -2,4 +2,5 @@
 
 AmplitudeCalibrator::AmplitudeCalibrator()
 {
+	// 
 }

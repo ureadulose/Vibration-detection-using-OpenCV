@@ -52,6 +52,8 @@ private:
 	// захардкодил, потому что на данный момент эта версия проекта тупиковая из-за своей архитектуры)
 
 private:
+	bool running_;
+
 	std::string input_file_name_;
 	std::string output_file_name_;
 	std::string window_name_;

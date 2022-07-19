@@ -174,10 +174,10 @@ double VibrationDetector::ReadCoeff()
 
 void VibrationDetector::ExecuteVibrationDetection()
 {
-	VideoProcessor sequence_of_frames(input_file_name_, output_file_name_, MAIN_WINDOW_NAME);
-	sequence_of_frames.Init();
+	VideoProcessor frame_processor(input_file_name_, output_file_name_, MAIN_WINDOW_NAME);
+	frame_processor.Init();
 
-	VibrationDisplayer vibration_displayer(V_MONITOR_WINDOW_NAME, sequence_of_frames.GetFrameWidth(), sequence_of_frames.GetFrameHeight());
+	VibrationDisplayer vibration_displayer(V_MONITOR_WINDOW_NAME, frame_processor.GetFrameWidth(), frame_processor.GetFrameHeight());
 	vibration_displayer.Init();
 
 	vibration_inited_ = false;
@@ -191,20 +191,22 @@ void VibrationDetector::ExecuteVibrationDetection()
 	}
 
 	// reading the first frame of sequence so we can convert it to gray color space
-	sequence_of_frames.ReadNextFrame();
-	this->current_tracking_frame_ = sequence_of_frames.GetCurrentFrame();
-	this->prev_img_gray_ = RgbToGray(sequence_of_frames.GetCurrentFrame());
-	this->sampling_frequency_ = sequence_of_frames.GetInputFps();
+	frame_processor.ReadNextFrame();
+	current_tracking_frame_ = frame_processor.GetCurrentFrame();
+	prev_img_gray_ = RgbToGray(frame_processor.GetCurrentFrame());
+	sampling_frequency_ = frame_processor.GetInputFps();
 
-	while (sequence_of_frames.GetInputCapStatus())
+	running_ = true;
+
+	while (frame_processor.GetInputCapStatus() && running_ == true)
 	{
 		// reading next frame and converting it to gray color space
-		sequence_of_frames.ReadNextFrame();
-		this->current_tracking_frame_ = sequence_of_frames.GetCurrentFrame();
-		this->next_img_gray_ = RgbToGray(current_tracking_frame_);
+		frame_processor.ReadNextFrame();
+		current_tracking_frame_ = frame_processor.GetCurrentFrame();
+		next_img_gray_ = RgbToGray(current_tracking_frame_);
 
 		// callback function for detecting the click - these coords are our starting point
-		setMouseCallback(sequence_of_frames.GetWindowName(), SelectPoint, (void*)this);
+		setMouseCallback(frame_processor.GetWindowName(), SelectPoint, (void*)this);
 
 		if (this->right_button_down_)
 		{
@@ -258,7 +260,7 @@ void VibrationDetector::ExecuteVibrationDetection()
 			// executing fft for each point
 			for (int i = 0; i < number_of_vibrating_pts_; i++)
 			{
-				vec_of_rect_fft_performers_[i].CollectTrackedPoints(sequence_of_frames.GetCurrentPosOfFrame(), next_vibrating_pts_[i], sequence_of_frames.GetCurrentPosOfFrame(), i);
+				vec_of_rect_fft_performers_[i].CollectTrackedPoints(frame_processor.GetCurrentPosOfFrame(), next_vibrating_pts_[i], frame_processor.GetCurrentPosOfFrame(), i);
 
 				if (((vec_of_rect_fft_performers_[i].GetLengthOfPointData()) % 3 == 0) && (vec_of_rect_fft_performers_[i].GetLengthOfPointData() != 0))
 				{
@@ -281,7 +283,7 @@ void VibrationDetector::ExecuteVibrationDetection()
 			Mat tmp = current_tracking_frame_;
 			vibration_displayer.ShowFrame(tmp);
 			current_tracking_frame_ = vibration_displayer.GetFrame();
-			sequence_of_frames.WriteFrame(vibration_displayer.GetFrame());
+			frame_processor.WriteFrame(vibration_displayer.GetFrame());
 		}
 
 		// Lucas-Kanade tracking
@@ -294,7 +296,7 @@ void VibrationDetector::ExecuteVibrationDetection()
 			std::cout << "doin " << std::endl;
 			for (int i = 0; i < next_pts_.size(); i++)
 			{
-				vec_of_fft_performers_[i].CollectTrackedPoints(sequence_of_frames.GetCurrentPosOfFrame(), next_pts_[i], sequence_of_frames.GetCurrentTimeOfFrame(), i);
+				vec_of_fft_performers_[i].CollectTrackedPoints(frame_processor.GetCurrentPosOfFrame(), next_pts_[i], frame_processor.GetCurrentTimeOfFrame(), i);
 
 				if (((vec_of_fft_performers_[i].GetLengthOfPointData()) % 3 == 0) && (vec_of_fft_performers_[i].GetLengthOfPointData() != 0))
 				{
@@ -362,11 +364,21 @@ void VibrationDetector::ExecuteVibrationDetection()
 		
 
 		// display frame
-		sequence_of_frames.ShowFrame(current_tracking_frame_);
-		waitKey(20);
+		frame_processor.ShowFrame(current_tracking_frame_);
+		// 20 - delay in ms
+		int code = waitKey(20);
+		switch (code)
+		{
+		case 'v':
+			std::cout << "PRESSED PRESSED PRESSED PRESSED PRESSED" << std::endl;
+			break;
+		case 'q':
+			frame_processor.~VideoProcessor();
+			running_ = false;
+			std::cout << frame_processor.GetInputCapStatus() << std::endl;
+			break;
+		}
 	}
-
-	sequence_of_frames.~VideoProcessor();
 }
 
 Mat VibrationDetector::RgbToGray(Mat frame_to_be_grayed)
