@@ -6,7 +6,8 @@ VibrationDetector::VibrationDetector(std::string input_file_name, std::string ou
 	window_name_{ window_name },
 	fft_performer_{nullptr},
 	number_of_points_{ 0 },
-	vec_of_frequencies_{ 0 }
+	vec_of_frequencies_{ 0 },
+	amplitude_coeff_{ 1.0 }
 {
 	point_selected_ = false;
 	lk_win_size_ = 45;
@@ -30,6 +31,7 @@ void VibrationDetector::OnMouse(int event, int x, int y, int flags)
 {
 	switch (event) {
 	case EVENT_LBUTTONDOWN:
+		std::cout << "l_click" << std::endl;
 		this->point_selected_ = true;
 		this->click_coords_.x = x;
 		this->click_coords_.y = y;
@@ -144,7 +146,6 @@ void VibrationDetector::DrawLines(std::vector<Point2f> prev_pts, std::vector<Poi
 		//}
 		
 		// line between two dots (next and previous)
-		std::cout << "puk" << std::endl;
 		line(frame,
 			prev_pts[current_tracking_point],
 			next_pts[current_tracking_point],
@@ -166,12 +167,6 @@ void VibrationDetector::DrawContours(Mat& frame, std::vector<std::vector<Point>>
 	}
 }
 
-double VibrationDetector::ReadCoeff()
-{
-	// doin...
-	return 0.0;
-}
-
 void VibrationDetector::ExecuteVibrationDetection()
 {
 	VideoProcessor frame_processor(input_file_name_, output_file_name_, MAIN_WINDOW_NAME);
@@ -182,13 +177,6 @@ void VibrationDetector::ExecuteVibrationDetection()
 
 	vibration_inited_ = false;
 	colors_inited_ = false;
-	amplitude_coeff_inited_ = false;
-
-	// amplitude initialization
-	if (!amplitude_coeff_inited_)
-	{
-		amplitude_coeff_ = ReadCoeff();
-	}
 
 	// reading the first frame of sequence so we can convert it to gray color space
 	frame_processor.ReadNextFrame();
@@ -196,10 +184,14 @@ void VibrationDetector::ExecuteVibrationDetection()
 	prev_img_gray_ = RgbToGray(frame_processor.GetCurrentFrame());
 	sampling_frequency_ = frame_processor.GetInputFps();
 
+	// conditions of exit
 	running_ = true;
+	int current_num_of_frame = 0;
+	int amount_of_frames = frame_processor.GetAmountOfFrames();
 
-	while (frame_processor.GetInputCapStatus() && running_ == true)
+	while ((current_num_of_frame <= amount_of_frames) && running_ == true)
 	{
+		current_num_of_frame = frame_processor.GetCurrentPosOfFrame();
 		// reading next frame and converting it to gray color space
 		frame_processor.ReadNextFrame();
 		current_tracking_frame_ = frame_processor.GetCurrentFrame();
@@ -283,7 +275,6 @@ void VibrationDetector::ExecuteVibrationDetection()
 			Mat tmp = current_tracking_frame_;
 			vibration_displayer.ShowFrame(tmp);
 			current_tracking_frame_ = vibration_displayer.GetFrame();
-			frame_processor.WriteFrame(vibration_displayer.GetFrame());
 		}
 
 		// Lucas-Kanade tracking
@@ -363,20 +354,31 @@ void VibrationDetector::ExecuteVibrationDetection()
 		//}
 		
 
-		// display frame
+		// display and write frame
 		frame_processor.ShowFrame(current_tracking_frame_);
+		frame_processor.WriteFrame(current_tracking_frame_);
+
 		// 20 - delay in ms
 		int code = waitKey(20);
 		switch (code)
 		{
 		case 'v':
-			std::cout << "PRESSED PRESSED PRESSED PRESSED PRESSED" << std::endl;
+		{
+			std::cout << "waiting..." << std::endl;
+			AmplitudeCalibrator amplitude_calibrator(current_tracking_frame_.clone());
+			amplitude_calibrator.Execute();
+			amplitude_coeff_ = amplitude_calibrator.GetCmPerPixelRatio();
+			waitKey(0);
+			std::cout << "continuing..." << std::endl;
 			break;
+		}
 		case 'q':
+		{
 			frame_processor.~VideoProcessor();
 			running_ = false;
 			std::cout << frame_processor.GetInputCapStatus() << std::endl;
 			break;
+		}
 		}
 	}
 }

@@ -29,6 +29,7 @@ public:
 	String GetWindowName();
 	double GetCurrentTimeOfFrame();
 	int GetCurrentPosOfFrame();
+	int GetAmountOfFrames();
 	int GetInputFps();
 	int GetFrameWidth();
 	int GetFrameHeight();

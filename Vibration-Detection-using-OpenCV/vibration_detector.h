@@ -19,6 +19,7 @@
 #include "fft_performer.h"
 #include "data_displayer.h"
 #include "vibration_displayer.h"
+#include "amplitude_calibrator.h"
 
 class VibrationDetector
 {
@@ -102,7 +103,6 @@ private:
 	FftPerformer* rect_fft_performer_;
 	std::vector<FftPerformer> vec_of_rect_fft_performers_;
 
-	bool amplitude_coeff_inited_;
 	double amplitude_coeff_;
 	double current_amplitude_;
 

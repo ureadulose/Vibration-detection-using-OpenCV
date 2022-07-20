@@ -5,7 +5,7 @@ VideoProcessor::VideoProcessor(const std::string input_file_name, const std::str
 	input_cap_{ new VideoCapture(input_file_name) },
 	input_cap_status_{ false },
 	output_path_{ output_file_name },
-	output_cap_{ new VideoWriter(output_file_name, VideoWriter::fourcc('M', 'J', 'P', 'G'), input_cap_->get(CAP_PROP_FPS), Size(input_cap_->get(CAP_PROP_FRAME_WIDTH), input_cap_->get(CAP_PROP_FRAME_HEIGHT))) },
+	output_cap_{ new VideoWriter(output_file_name, VideoWriter::fourcc('D', 'I', 'V', 'X'), input_cap_->get(CAP_PROP_FPS), Size(input_cap_->get(CAP_PROP_FRAME_WIDTH), input_cap_->get(CAP_PROP_FRAME_HEIGHT))) },
 	window_name_{ window_name },
 	current_time_of_frame_{ 0 },
 	input_fps_{ input_cap_->get(CAP_PROP_FPS) },
@@ -90,6 +90,11 @@ double VideoProcessor::GetCurrentTimeOfFrame()
 int VideoProcessor::GetCurrentPosOfFrame()
 {
 	return current_pos_of_frame_;
+}
+
+int VideoProcessor::GetAmountOfFrames()
+{
+	return input_cap_->get(CAP_PROP_FRAME_COUNT);
 }
 
 int VideoProcessor::GetInputFps()
