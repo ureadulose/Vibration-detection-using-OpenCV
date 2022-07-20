@@ -19,5 +19,6 @@
 ![lucas_kanade_tracking](https://user-images.githubusercontent.com/79339489/177723572-bf63eddd-801a-422d-8e5f-e5867b2c8400.png)
 
 ## АТТЕНШН
-тут нет "усиления" движения, его чуть позже добавлю, тк делал его в отдельном проекте
+в репозитории нет "усиления" движения, его чуть позже добавлю, тк делал его в отдельном проекте
+вот его результат:
 ![test1_ampld_3](https://user-images.githubusercontent.com/79339489/179936553-2fefc33e-8f34-4ef4-a9b6-9beea70c7f26.gif)
