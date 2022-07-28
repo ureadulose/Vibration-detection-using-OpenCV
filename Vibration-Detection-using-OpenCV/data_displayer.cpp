@@ -18,7 +18,7 @@ void DataDisplayer::OutputVibrationParameters(Mat& frame, Point2f point, double 
 			
 		}
 	}
-	/*putText(
+	putText(
 		frame,
 		"amplitude: " + std::to_string(amplitude * amplitude_coefficient),
 		Point(point.x + 15, point.y + (vec_of_frequencies_.size() - 1) * 20 + 45),
@@ -26,7 +26,7 @@ void DataDisplayer::OutputVibrationParameters(Mat& frame, Point2f point, double 
 		1.25,
 		Scalar(0, 69, 255),
 		2
-	);*/
+	);
 
 }
 
