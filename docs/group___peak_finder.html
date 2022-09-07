@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Visual Vibration Tracking: PeakFinder</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Visual Vibration Tracking<span id="projectnumber">&#160;0.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">PeakFinder</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga3abfea54e33401437ebbee36ab9ee1f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___peak_finder.html#ga3abfea54e33401437ebbee36ab9ee1f2">PeakFinder::findPeaks</a> (std::vector&lt; float &gt; x0, std::vector&lt; int &gt; &amp;peakInds, bool includeEndpoints=true, float extrema=1)</td></tr>
+<tr class="separator:ga3abfea54e33401437ebbee36ab9ee1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<h2 class="groupheader">Функции</h2>
+<a id="ga3abfea54e33401437ebbee36ab9ee1f2" name="ga3abfea54e33401437ebbee36ab9ee1f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3abfea54e33401437ebbee36ab9ee1f2">&#9670;&#160;</a></span>findPeaks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PeakFinder::findPeaks </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>peakInds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>includeEndpoints</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>extrema</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x0</td><td>входной массив </td></tr>
+    <tr><td class="paramname">extrema</td><td>1 - если нужен максимум, -1 - если нужен минимум </td></tr>
+    <tr><td class="paramname">includeEndpoints</td><td>true - если границы интервала входного массива x0 должны быть включены в поиск пика, false - в противном случае </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>peakInds: индексы пиков, найденные в x0 </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="peak__finder_8cpp_source.html">peak_finder.cpp</a> строка <a class="el" href="peak__finder_8cpp_source.html#l00066">66</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   67</span>{</div>
+<div class="line"><span class="lineno">   68</span>    <span class="keywordtype">int</span> minIdx = distance(x0.begin(), min_element(x0.begin(), x0.end()));</div>
+<div class="line"><span class="lineno">   69</span>    <span class="keywordtype">int</span> maxIdx = distance(x0.begin(), max_element(x0.begin(), x0.end()));</div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordtype">float</span> sel = (x0[maxIdx]-x0[minIdx])/4.0;</div>
+<div class="line"><span class="lineno">   72</span>    <span class="keywordtype">int</span> len0 = x0.size();</div>
+<div class="line"><span class="lineno">   73</span> </div>
+<div class="line"><span class="lineno">   74</span>    scalarProduct(extrema, x0, x0);</div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>    std::vector&lt;float&gt; dx;</div>
+<div class="line"><span class="lineno">   77</span>    diff(x0, dx);</div>
+<div class="line"><span class="lineno">   78</span>    replace(dx.begin(), dx.end(), 0.0f, -PeakFinder::EPS);</div>
+<div class="line"><span class="lineno">   79</span>    std::vector&lt;float&gt; dx0(dx.begin(), dx.end()-1);</div>
+<div class="line"><span class="lineno">   80</span>    std::vector&lt;float&gt; dx0_1(dx.begin()+1, dx.end());</div>
+<div class="line"><span class="lineno">   81</span>    std::vector&lt;float&gt; dx0_2;</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>    vectorElementsProduct(dx0, dx0_1, dx0_2);</div>
+<div class="line"><span class="lineno">   84</span> </div>
+<div class="line"><span class="lineno">   85</span>    std::vector&lt;int&gt; ind;</div>
+<div class="line"><span class="lineno">   86</span>    findIndicesLessThan(dx0_2, 0, ind); <span class="comment">// Find where the derivative changes sign   </span></div>
+<div class="line"><span class="lineno">   87</span>    std::vector&lt;float&gt; x;</div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordtype">float</span> leftMin;</div>
+<div class="line"><span class="lineno">   89</span>    <span class="keywordtype">int</span> minMagIdx;</div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordtype">float</span> minMag;</div>
+<div class="line"><span class="lineno">   91</span>    </div>
+<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">if</span>(includeEndpoints)</div>
+<div class="line"><span class="lineno">   93</span>    {</div>
+<div class="line"><span class="lineno">   94</span>        <span class="comment">//x = [x0(1);x0(ind);x0(end)];  </span></div>
+<div class="line"><span class="lineno">   95</span>        selectElementsFromIndices(x0, ind, x);      </div>
+<div class="line"><span class="lineno">   96</span>        x.insert(x.begin(), x0[0]);</div>
+<div class="line"><span class="lineno">   97</span>        x.insert(x.end(), x0[x0.size()-1]);</div>
+<div class="line"><span class="lineno">   98</span>        <span class="comment">//ind = [1;ind;len0];</span></div>
+<div class="line"><span class="lineno">   99</span>        ind.insert(ind.begin(), 1);</div>
+<div class="line"><span class="lineno">  100</span>        ind.insert(ind.end(), len0);</div>
+<div class="line"><span class="lineno">  101</span>        minMagIdx = distance(x.begin(), std::min_element(x.begin(), x.end()));</div>
+<div class="line"><span class="lineno">  102</span>        minMag = x[minMagIdx];      </div>
+<div class="line"><span class="lineno">  103</span>        <span class="comment">//std::cout&lt;&lt;&quot;Hola&quot;&lt;&lt;std::endl;</span></div>
+<div class="line"><span class="lineno">  104</span>        leftMin = minMag;</div>
+<div class="line"><span class="lineno">  105</span>    }</div>
+<div class="line"><span class="lineno">  106</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  107</span>    {</div>
+<div class="line"><span class="lineno">  108</span>        selectElementsFromIndices(x0, ind, x);</div>
+<div class="line"><span class="lineno">  109</span>        <span class="keywordflow">if</span>(x.size()&gt;2)</div>
+<div class="line"><span class="lineno">  110</span>        {</div>
+<div class="line"><span class="lineno">  111</span>            minMagIdx = distance(x.begin(), std::min_element(x.begin(), x.end()));      </div>
+<div class="line"><span class="lineno">  112</span>            minMag = x[minMagIdx];              </div>
+<div class="line"><span class="lineno">  113</span>            leftMin = x[0]&lt;x0[0]?x[0]:x0[0];</div>
+<div class="line"><span class="lineno">  114</span>        }</div>
+<div class="line"><span class="lineno">  115</span>    }</div>
+<div class="line"><span class="lineno">  116</span> </div>
+<div class="line"><span class="lineno">  117</span>    <span class="keywordtype">int</span> len = x.size();</div>
+<div class="line"><span class="lineno">  118</span> </div>
+<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">if</span>(len&gt;2)</div>
+<div class="line"><span class="lineno">  120</span>    {</div>
+<div class="line"><span class="lineno">  121</span>        <span class="keywordtype">float</span> tempMag = minMag;</div>
+<div class="line"><span class="lineno">  122</span>        <span class="keywordtype">bool</span> foundPeak = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  123</span>        <span class="keywordtype">int</span> ii;</div>
+<div class="line"><span class="lineno">  124</span> </div>
+<div class="line"><span class="lineno">  125</span>        <span class="keywordflow">if</span>(includeEndpoints)</div>
+<div class="line"><span class="lineno">  126</span>        {</div>
+<div class="line"><span class="lineno">  127</span>            <span class="comment">// Deal with first point a little differently since tacked it on</span></div>
+<div class="line"><span class="lineno">  128</span>            <span class="comment">// Calculate the sign of the derivative since we tacked the first</span></div>
+<div class="line"><span class="lineno">  129</span>            <span class="comment">//  point on it does not neccessarily alternate like the rest.</span></div>
+<div class="line"><span class="lineno">  130</span>            std::vector&lt;float&gt; xSub0(x.begin(), x.begin()+3);<span class="comment">//tener cuidado subvector</span></div>
+<div class="line"><span class="lineno">  131</span>            std::vector&lt;float&gt; xDiff;<span class="comment">//tener cuidado subvector</span></div>
+<div class="line"><span class="lineno">  132</span>            diff(xSub0, xDiff);</div>
+<div class="line"><span class="lineno">  133</span> </div>
+<div class="line"><span class="lineno">  134</span>            std::vector&lt;int&gt; signDx;</div>
+<div class="line"><span class="lineno">  135</span>            signVector(xDiff, signDx);</div>
+<div class="line"><span class="lineno">  136</span> </div>
+<div class="line"><span class="lineno">  137</span>            <span class="keywordflow">if</span> (signDx[0] &lt;= 0) <span class="comment">// The first point is larger or equal to the second</span></div>
+<div class="line"><span class="lineno">  138</span>            {</div>
+<div class="line"><span class="lineno">  139</span>                <span class="keywordflow">if</span> (signDx[0] == signDx[1]) <span class="comment">// Want alternating signs</span></div>
+<div class="line"><span class="lineno">  140</span>                {</div>
+<div class="line"><span class="lineno">  141</span>                    x.erase(x.begin()+1);</div>
+<div class="line"><span class="lineno">  142</span>                    ind.erase(ind.begin()+1);</div>
+<div class="line"><span class="lineno">  143</span>                    len = len-1;</div>
+<div class="line"><span class="lineno">  144</span>                }</div>
+<div class="line"><span class="lineno">  145</span>            }</div>
+<div class="line"><span class="lineno">  146</span>            <span class="keywordflow">else</span> <span class="comment">// First point is smaller than the second</span></div>
+<div class="line"><span class="lineno">  147</span>            {</div>
+<div class="line"><span class="lineno">  148</span>                <span class="keywordflow">if</span> (signDx[0] == signDx[1]) <span class="comment">// Want alternating signs</span></div>
+<div class="line"><span class="lineno">  149</span>                {</div>
+<div class="line"><span class="lineno">  150</span>                    x.erase(x.begin());</div>
+<div class="line"><span class="lineno">  151</span>                    ind.erase(ind.begin());</div>
+<div class="line"><span class="lineno">  152</span>                    len = len-1;</div>
+<div class="line"><span class="lineno">  153</span>                }</div>
+<div class="line"><span class="lineno">  154</span>            }</div>
+<div class="line"><span class="lineno">  155</span>        }</div>
+<div class="line"><span class="lineno">  156</span> </div>
+<div class="line"><span class="lineno">  157</span>        <span class="comment">//Skip the first point if it is smaller so we always start on maxima</span></div>
+<div class="line"><span class="lineno">  158</span>        <span class="keywordflow">if</span> ( x[0] &gt;= x[1] )</div>
+<div class="line"><span class="lineno">  159</span>            ii = 0;</div>
+<div class="line"><span class="lineno">  160</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  161</span>            ii = 1;</div>
+<div class="line"><span class="lineno">  162</span> </div>
+<div class="line"><span class="lineno">  163</span>        <span class="comment">//Preallocate max number of maxima</span></div>
+<div class="line"><span class="lineno">  164</span>        <span class="keywordtype">float</span> maxPeaks = ceil((<span class="keywordtype">float</span>)len/2.0);</div>
+<div class="line"><span class="lineno">  165</span>        std::vector&lt;int&gt; peakLoc(maxPeaks,0);</div>
+<div class="line"><span class="lineno">  166</span>        std::vector&lt;float&gt; peakMag(maxPeaks,0.0);</div>
+<div class="line"><span class="lineno">  167</span>        <span class="keywordtype">int</span> cInd = 1;</div>
+<div class="line"><span class="lineno">  168</span>        <span class="keywordtype">int</span> tempLoc = 0;        </div>
+<div class="line"><span class="lineno">  169</span>    </div>
+<div class="line"><span class="lineno">  170</span>        <span class="keywordflow">while</span>(ii &lt; len)</div>
+<div class="line"><span class="lineno">  171</span>        {</div>
+<div class="line"><span class="lineno">  172</span>            ii = ii+1;<span class="comment">//This is a peak</span></div>
+<div class="line"><span class="lineno">  173</span>            <span class="comment">//Reset peak finding if we had a peak and the next peak is bigger</span></div>
+<div class="line"><span class="lineno">  174</span>            <span class="comment">//than the last or the left min was small enough to reset.</span></div>
+<div class="line"><span class="lineno">  175</span>            <span class="keywordflow">if</span>(foundPeak)</div>
+<div class="line"><span class="lineno">  176</span>            {</div>
+<div class="line"><span class="lineno">  177</span>                tempMag = minMag;</div>
+<div class="line"><span class="lineno">  178</span>                foundPeak = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  179</span>            }</div>
+<div class="line"><span class="lineno">  180</span>        </div>
+<div class="line"><span class="lineno">  181</span>            <span class="comment">//Found new peak that was lager than temp mag and selectivity larger</span></div>
+<div class="line"><span class="lineno">  182</span>            <span class="comment">//than the minimum to its left.</span></div>
+<div class="line"><span class="lineno">  183</span>        </div>
+<div class="line"><span class="lineno">  184</span>            <span class="keywordflow">if</span>( x[ii-1] &gt; tempMag &amp;&amp; x[ii-1] &gt; leftMin + sel )</div>
+<div class="line"><span class="lineno">  185</span>            {</div>
+<div class="line"><span class="lineno">  186</span>                tempLoc = ii-1;</div>
+<div class="line"><span class="lineno">  187</span>                tempMag = x[ii-1];</div>
+<div class="line"><span class="lineno">  188</span>            }</div>
+<div class="line"><span class="lineno">  189</span> </div>
+<div class="line"><span class="lineno">  190</span>            <span class="comment">//Make sure we don&#39;t iterate past the length of our vector</span></div>
+<div class="line"><span class="lineno">  191</span>            <span class="keywordflow">if</span>(ii == len)</div>
+<div class="line"><span class="lineno">  192</span>                <span class="keywordflow">break</span>; <span class="comment">//We assign the last point differently out of the loop</span></div>
+<div class="line"><span class="lineno">  193</span> </div>
+<div class="line"><span class="lineno">  194</span>            ii = ii+1; <span class="comment">// Move onto the valley</span></div>
+<div class="line"><span class="lineno">  195</span>            </div>
+<div class="line"><span class="lineno">  196</span>            <span class="comment">//Come down at least sel from peak</span></div>
+<div class="line"><span class="lineno">  197</span>            <span class="keywordflow">if</span>(!foundPeak &amp;&amp; tempMag &gt; sel + x[ii-1])</div>
+<div class="line"><span class="lineno">  198</span>            {               </div>
+<div class="line"><span class="lineno">  199</span>                foundPeak = <span class="keyword">true</span>; <span class="comment">//We have found a peak</span></div>
+<div class="line"><span class="lineno">  200</span>                leftMin = x[ii-1];</div>
+<div class="line"><span class="lineno">  201</span>                peakLoc[cInd-1] = tempLoc; <span class="comment">// Add peak to index</span></div>
+<div class="line"><span class="lineno">  202</span>                peakMag[cInd-1] = tempMag;</div>
+<div class="line"><span class="lineno">  203</span>                cInd = cInd+1;</div>
+<div class="line"><span class="lineno">  204</span>            }</div>
+<div class="line"><span class="lineno">  205</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(x[ii-1] &lt; leftMin) <span class="comment">// New left minima</span></div>
+<div class="line"><span class="lineno">  206</span>                leftMin = x[ii-1];</div>
+<div class="line"><span class="lineno">  207</span>            </div>
+<div class="line"><span class="lineno">  208</span>        }</div>
+<div class="line"><span class="lineno">  209</span> </div>
+<div class="line"><span class="lineno">  210</span>        <span class="comment">// Check end point</span></div>
+<div class="line"><span class="lineno">  211</span>        <span class="keywordflow">if</span>(includeEndpoints)</div>
+<div class="line"><span class="lineno">  212</span>        {        </div>
+<div class="line"><span class="lineno">  213</span>            <span class="keywordflow">if</span> ( x[x.size()-1] &gt; tempMag &amp;&amp; x[x.size()-1] &gt; leftMin + sel )</div>
+<div class="line"><span class="lineno">  214</span>            {</div>
+<div class="line"><span class="lineno">  215</span>                peakLoc[cInd-1] = len-1;</div>
+<div class="line"><span class="lineno">  216</span>                peakMag[cInd-1] = x[x.size()-1];</div>
+<div class="line"><span class="lineno">  217</span>                cInd = cInd + 1;</div>
+<div class="line"><span class="lineno">  218</span>            }</div>
+<div class="line"><span class="lineno">  219</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span>( !foundPeak &amp;&amp; tempMag &gt; minMag )<span class="comment">// Check if we still need to add the last point</span></div>
+<div class="line"><span class="lineno">  220</span>            {</div>
+<div class="line"><span class="lineno">  221</span>                peakLoc[cInd-1] = tempLoc;</div>
+<div class="line"><span class="lineno">  222</span>                peakMag[cInd-1] = tempMag;</div>
+<div class="line"><span class="lineno">  223</span>                cInd = cInd + 1;</div>
+<div class="line"><span class="lineno">  224</span>            }</div>
+<div class="line"><span class="lineno">  225</span>        }</div>
+<div class="line"><span class="lineno">  226</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!foundPeak)</div>
+<div class="line"><span class="lineno">  227</span>        {</div>
+<div class="line"><span class="lineno">  228</span>            <span class="keywordtype">float</span> minAux = x0[x0.size()-1]&lt;x[x.size()-1]?x0[x0.size()-1]:x[x.size()-1];</div>
+<div class="line"><span class="lineno">  229</span>            <span class="keywordflow">if</span> ( x[x.size()-1] &gt; tempMag &amp;&amp; x[x.size()-1] &gt; leftMin + sel )</div>
+<div class="line"><span class="lineno">  230</span>            {</div>
+<div class="line"><span class="lineno">  231</span>                peakLoc[cInd-1] = len-1;</div>
+<div class="line"><span class="lineno">  232</span>                peakMag[cInd-1] = x[x.size()-1];</div>
+<div class="line"><span class="lineno">  233</span>                cInd = cInd + 1;</div>
+<div class="line"><span class="lineno">  234</span>            }</div>
+<div class="line"><span class="lineno">  235</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span>( !tempMag &gt;  minAux + sel)<span class="comment">// Check if we still need to add the last point</span></div>
+<div class="line"><span class="lineno">  236</span>            {</div>
+<div class="line"><span class="lineno">  237</span>                peakLoc[cInd-1] = tempLoc;</div>
+<div class="line"><span class="lineno">  238</span>                peakMag[cInd-1] = tempMag;</div>
+<div class="line"><span class="lineno">  239</span>                cInd = cInd + 1;</div>
+<div class="line"><span class="lineno">  240</span>            }</div>
+<div class="line"><span class="lineno">  241</span>        }</div>
+<div class="line"><span class="lineno">  242</span> </div>
+<div class="line"><span class="lineno">  243</span>        <span class="comment">//Create output</span></div>
+<div class="line"><span class="lineno">  244</span>        <span class="keywordflow">if</span>( cInd &gt; 0 )</div>
+<div class="line"><span class="lineno">  245</span>        {           </div>
+<div class="line"><span class="lineno">  246</span>            std::vector&lt;int&gt; peakLocTmp(peakLoc.begin(), peakLoc.begin()+cInd-1);</div>
+<div class="line"><span class="lineno">  247</span>            selectElementsFromIndices(ind, peakLocTmp, peakInds);           </div>
+<div class="line"><span class="lineno">  248</span>        }       </div>
+<div class="line"><span class="lineno">  249</span> </div>
+<div class="line"><span class="lineno">  250</span>    }</div>
+<div class="line"><span class="lineno">  251</span>    <span class="comment">//else</span></div>
+<div class="line"><span class="lineno">  252</span>    <span class="comment">//{</span></div>
+<div class="line"><span class="lineno">  253</span>        <span class="comment">//input signal length &lt;= 2</span></div>
+<div class="line"><span class="lineno">  254</span>    <span class="comment">//}</span></div>
+<div class="line"><span class="lineno">  255</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

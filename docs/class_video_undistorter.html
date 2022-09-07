@@ -1,0 +1,912 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Visual Vibration Tracking: Класс VideoUndistorter</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Visual Vibration Tracking<span id="projectnumber">&#160;0.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_video_undistorter-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс VideoUndistorter</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для удаления дисторсии на видео  
+ <a href="class_video_undistorter.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aa42fc7f2661d48c5bfe2ff4ade623b30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#aa42fc7f2661d48c5bfe2ff4ade623b30">VideoUndistorter</a> (std::string input_file_name_, std::string output_file_name, std::string txt_file_name)</td></tr>
+<tr class="memdesc:aa42fc7f2661d48c5bfe2ff4ade623b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор этого класса  <a href="class_video_undistorter.html#aa42fc7f2661d48c5bfe2ff4ade623b30">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa42fc7f2661d48c5bfe2ff4ade623b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9354f24f06d65380155118590b0fd6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#ac9354f24f06d65380155118590b0fd6c">ExecuteVideoUndistortion</a> ()</td></tr>
+<tr class="separator:ac9354f24f06d65380155118590b0fd6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:ac82e158db201e5d3189cc2c2eaa0db46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#ac82e158db201e5d3189cc2c2eaa0db46">SaveFrame</a> (Mat frame)</td></tr>
+<tr class="separator:ac82e158db201e5d3189cc2c2eaa0db46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad97e93cf1bb586a53494fb95909a4bc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#ad97e93cf1bb586a53494fb95909a4bc6">LoadFoundParamsFromFile</a> (std::string txt_file_name)</td></tr>
+<tr class="separator:ad97e93cf1bb586a53494fb95909a4bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb5c11e438bef28a04b438ed7cf70c45"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#adb5c11e438bef28a04b438ed7cf70c45">SplitString</a> (std::string line, std::string delimiter)</td></tr>
+<tr class="separator:adb5c11e438bef28a04b438ed7cf70c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a0ca2ae8209afff234c56e1cb61eb4240"><td class="memItemLeft" align="right" valign="top">VideoCapture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#a0ca2ae8209afff234c56e1cb61eb4240">input_cap_</a></td></tr>
+<tr class="separator:a0ca2ae8209afff234c56e1cb61eb4240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa51dcc2cc2726c97ed156eaa3249665f"><td class="memItemLeft" align="right" valign="top">VideoWriter *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#aa51dcc2cc2726c97ed156eaa3249665f">output_cap_</a></td></tr>
+<tr class="separator:aa51dcc2cc2726c97ed156eaa3249665f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33e09df7fd3e1b728ce4a5fd7e1d5a84"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#a33e09df7fd3e1b728ce4a5fd7e1d5a84">frame_width_</a></td></tr>
+<tr class="separator:a33e09df7fd3e1b728ce4a5fd7e1d5a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09eb1a83ffec08ce3c34c71c2e953b42"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#a09eb1a83ffec08ce3c34c71c2e953b42">frame_height_</a></td></tr>
+<tr class="separator:a09eb1a83ffec08ce3c34c71c2e953b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a980e5ca1b2658242f45d2cf2468f4bfd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#a980e5ca1b2658242f45d2cf2468f4bfd">bitrate_</a></td></tr>
+<tr class="separator:a980e5ca1b2658242f45d2cf2468f4bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66a505ba920eabecbf0ddc268b96ec95"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#a66a505ba920eabecbf0ddc268b96ec95">frame_count_</a></td></tr>
+<tr class="separator:a66a505ba920eabecbf0ddc268b96ec95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a374b4a4060c1a77bdb736f432082c9ce"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#a374b4a4060c1a77bdb736f432082c9ce">fps_</a></td></tr>
+<tr class="separator:a374b4a4060c1a77bdb736f432082c9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d43fecaef39aa0136e13140432b8a57"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#a5d43fecaef39aa0136e13140432b8a57">input_file_name_</a></td></tr>
+<tr class="separator:a5d43fecaef39aa0136e13140432b8a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb48040817f02d9e15638a06e5491777"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#adb48040817f02d9e15638a06e5491777">output_file_name_</a></td></tr>
+<tr class="separator:adb48040817f02d9e15638a06e5491777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78e9df5a43762efac01d4d37d97be8e5"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#a78e9df5a43762efac01d4d37d97be8e5">camera_matrix_</a></td></tr>
+<tr class="separator:a78e9df5a43762efac01d4d37d97be8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9363566d895ea53cf3d7b48c5b6e1964"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#a9363566d895ea53cf3d7b48c5b6e1964">distortion_coefficients_</a></td></tr>
+<tr class="separator:a9363566d895ea53cf3d7b48c5b6e1964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c8ce476d923037934eb6299a503593e"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#a5c8ce476d923037934eb6299a503593e">current_frame_</a></td></tr>
+<tr class="separator:a5c8ce476d923037934eb6299a503593e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3bd77c199df2c27bf8162c67c54eff"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#aea3bd77c199df2c27bf8162c67c54eff">undistorted_frame_</a></td></tr>
+<tr class="separator:aea3bd77c199df2c27bf8162c67c54eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c6f9ed1d749ab45b4703e5768588ec"><td class="memItemLeft" align="right" valign="top">std::ifstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#ad9c6f9ed1d749ab45b4703e5768588ec">input_file_</a></td></tr>
+<tr class="separator:ad9c6f9ed1d749ab45b4703e5768588ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11423c2edf80da39457470b604e995a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#aa11423c2edf80da39457470b604e995a">fx_</a></td></tr>
+<tr class="separator:aa11423c2edf80da39457470b604e995a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07c962e8a5b9737cab7c7ceef4f99aff"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#a07c962e8a5b9737cab7c7ceef4f99aff">fy_</a></td></tr>
+<tr class="separator:a07c962e8a5b9737cab7c7ceef4f99aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c3a67cc5f2dc470a5354ffcbbd7816"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#a11c3a67cc5f2dc470a5354ffcbbd7816">px_</a></td></tr>
+<tr class="separator:a11c3a67cc5f2dc470a5354ffcbbd7816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e6d7352f492baaa97a51f161a016056"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#a9e6d7352f492baaa97a51f161a016056">py_</a></td></tr>
+<tr class="separator:a9e6d7352f492baaa97a51f161a016056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af84edc3f788032cdb9895f05ab4a984b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#af84edc3f788032cdb9895f05ab4a984b">txt_file_name_</a></td></tr>
+<tr class="separator:af84edc3f788032cdb9895f05ab4a984b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p >Класс для удаления дисторсии на видео </p>
+<p >Объект класса осуществляет чтение и сохранение кадров с удаленной дисторсией в выходную последовательность (видео) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00024">24</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="aa42fc7f2661d48c5bfe2ff4ade623b30" name="aa42fc7f2661d48c5bfe2ff4ade623b30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42fc7f2661d48c5bfe2ff4ade623b30">&#9670;&#160;</a></span>VideoUndistorter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VideoUndistorter::VideoUndistorter </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>input_file_name_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>output_file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>txt_file_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор этого класса </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_file_name</td><td>имя (путь) входного видео для обработки </td></tr>
+    <tr><td class="paramname">output_file_name</td><td>имя (путь) выходдного видео после обработки </td></tr>
+    <tr><td class="paramname">txt_file_name</td><td>имя (путь) файла с "коэффициентами дисторсии" линзы </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Заметки</dt><dd><a class="el" href="class_camera_calibrator.html" title="Класс для нахождения коэффициентов для конкретной линзы (с помощью которой было снято видео)">CameraCalibrator</a> </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8cpp_source.html">video_undistorter.cpp</a> строка <a class="el" href="video__undistorter_8cpp_source.html#l00003">3</a></p>
+<div class="fragment"><div class="line"><span class="lineno">    3</span>                                                                                                                 :</div>
+<div class="line"><span class="lineno">    4</span>    input_file_name_{ input_file_name },</div>
+<div class="line"><span class="lineno">    5</span>    output_file_name_{ output_file_name },</div>
+<div class="line"><span class="lineno">    6</span>    txt_file_name_{ txt_file_name }</div>
+<div class="line"><span class="lineno">    7</span>{</div>
+<div class="line"><span class="lineno">    8</span>    input_cap_ = <span class="keyword">new</span> VideoCapture(input_file_name);</div>
+<div class="line"><span class="lineno">    9</span> </div>
+<div class="line"><span class="lineno">   10</span>    frame_width_ = input_cap_-&gt;get(CAP_PROP_FRAME_WIDTH);</div>
+<div class="line"><span class="lineno">   11</span>    frame_height_ = input_cap_-&gt;get(CAP_PROP_FRAME_HEIGHT);</div>
+<div class="line"><span class="lineno">   12</span>    bitrate_ = input_cap_-&gt;get(CAP_PROP_BITRATE);</div>
+<div class="line"><span class="lineno">   13</span>    frame_count_ = input_cap_-&gt;get(CAP_PROP_FRAME_COUNT);</div>
+<div class="line"><span class="lineno">   14</span>    fps_ = input_cap_-&gt;get(CAP_PROP_FPS);</div>
+<div class="line"><span class="lineno">   15</span> </div>
+<div class="line"><span class="lineno">   16</span>    output_cap_ = <span class="keyword">new</span> VideoWriter</div>
+<div class="line"><span class="lineno">   17</span>    (</div>
+<div class="line"><span class="lineno">   18</span>        output_file_name_,</div>
+<div class="line"><span class="lineno">   19</span>        cv::VideoWriter::fourcc(<span class="charliteral">&#39;m&#39;</span>, <span class="charliteral">&#39;p&#39;</span>, <span class="charliteral">&#39;4&#39;</span>, <span class="charliteral">&#39;v&#39;</span>), <span class="comment">// codec</span></div>
+<div class="line"><span class="lineno">   20</span>        fps_,</div>
+<div class="line"><span class="lineno">   21</span>        Size(frame_width_, frame_height_)</div>
+<div class="line"><span class="lineno">   22</span>    );</div>
+<div class="line"><span class="lineno">   23</span> </div>
+<div class="line"><span class="lineno">   24</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab3e3867dcceb45b4aa1b40944e45df24" name="ab3e3867dcceb45b4aa1b40944e45df24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3e3867dcceb45b4aa1b40944e45df24">&#9670;&#160;</a></span>~VideoUndistorter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VideoUndistorter::~VideoUndistorter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8cpp_source.html">video_undistorter.cpp</a> строка <a class="el" href="video__undistorter_8cpp_source.html#l00026">26</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   27</span>{</div>
+<div class="line"><span class="lineno">   28</span>    input_cap_-&gt;release();</div>
+<div class="line"><span class="lineno">   29</span>    output_cap_-&gt;release();</div>
+<div class="line"><span class="lineno">   30</span> </div>
+<div class="line"><span class="lineno">   31</span>    <span class="keyword">delete</span>[] input_cap_;</div>
+<div class="line"><span class="lineno">   32</span>    <span class="keyword">delete</span>[] output_cap_;</div>
+<div class="line"><span class="lineno">   33</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="ac9354f24f06d65380155118590b0fd6c" name="ac9354f24f06d65380155118590b0fd6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9354f24f06d65380155118590b0fd6c">&#9670;&#160;</a></span>ExecuteVideoUndistortion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VideoUndistorter::ExecuteVideoUndistortion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8cpp_source.html">video_undistorter.cpp</a> строка <a class="el" href="video__undistorter_8cpp_source.html#l00035">35</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>{</div>
+<div class="line"><span class="lineno">   37</span>    <span class="comment">// read distortion parameters from txt file</span></div>
+<div class="line"><span class="lineno">   38</span>    LoadFoundParamsFromFile(txt_file_name_);</div>
+<div class="line"><span class="lineno">   39</span> </div>
+<div class="line"><span class="lineno">   40</span>    std::cout &lt;&lt; frame_count_ &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   41</span> </div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordtype">int</span> frame_num = 0;</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>    <span class="comment">//undistort each frame in loop</span></div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">while</span> (input_cap_-&gt;get(CAP_PROP_POS_FRAMES) &lt; frame_count_)</div>
+<div class="line"><span class="lineno">   46</span>    {</div>
+<div class="line"><span class="lineno">   47</span>        input_cap_-&gt;read(current_frame_);</div>
+<div class="line"><span class="lineno">   48</span>        <span class="keywordflow">if</span> (!current_frame_.empty())</div>
+<div class="line"><span class="lineno">   49</span>        {</div>
+<div class="line"><span class="lineno">   50</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Processing frame &quot;</span> &lt;&lt; input_cap_-&gt;get(CAP_PROP_POS_FRAMES) &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; frame_count_ &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   51</span>            Mat mapX, mapY;</div>
+<div class="line"><span class="lineno">   52</span>            initUndistortRectifyMap(camera_matrix_, distortion_coefficients_, Matx33f::eye(), camera_matrix_, Size(frame_width_, frame_height_), CV_32FC1, mapX, mapY);</div>
+<div class="line"><span class="lineno">   53</span>            <span class="comment">//undistort(current_frame_, undistorted_frame_, camera_matrix_, distortion_coefficients_);</span></div>
+<div class="line"><span class="lineno">   54</span>            remap(current_frame_, undistorted_frame_, mapX, mapY, INTER_LINEAR);</div>
+<div class="line"><span class="lineno">   55</span>            SaveFrame(undistorted_frame_);</div>
+<div class="line"><span class="lineno">   56</span>        }</div>
+<div class="line"><span class="lineno">   57</span>    }</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Undistortion completed&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   60</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad97e93cf1bb586a53494fb95909a4bc6" name="ad97e93cf1bb586a53494fb95909a4bc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad97e93cf1bb586a53494fb95909a4bc6">&#9670;&#160;</a></span>LoadFoundParamsFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VideoUndistorter::LoadFoundParamsFromFile </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>txt_file_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8cpp_source.html">video_undistorter.cpp</a> строка <a class="el" href="video__undistorter_8cpp_source.html#l00067">67</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>{</div>
+<div class="line"><span class="lineno">   69</span>    </div>
+<div class="line"><span class="lineno">   70</span>    std::vector&lt;double&gt;* dist = <span class="keyword">new</span> std::vector&lt;double&gt;(0);</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>    input_file_.open(txt_file_name);</div>
+<div class="line"><span class="lineno">   73</span>    std::string line;</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">if</span> (input_file_.is_open())</div>
+<div class="line"><span class="lineno">   76</span>    {</div>
+<div class="line"><span class="lineno">   77</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Param file opened&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">while</span> (std::getline(input_file_, line))</div>
+<div class="line"><span class="lineno">   79</span>        {</div>
+<div class="line"><span class="lineno">   80</span>            <span class="comment">//std::cout &lt;&lt; &quot;Read line: &quot; &lt;&lt; line &lt;&lt; &#39;\n&#39;;</span></div>
+<div class="line"><span class="lineno">   81</span>            std::vector&lt;cv::String&gt; line_sp = SplitString(line, <span class="stringliteral">&quot;:&quot;</span>);</div>
+<div class="line"><span class="lineno">   82</span>            <span class="keywordflow">if</span> (line_sp[0] == <span class="stringliteral">&quot;fx&quot;</span>)</div>
+<div class="line"><span class="lineno">   83</span>                fx_ = std::stod(line_sp[1]);</div>
+<div class="line"><span class="lineno">   84</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (line_sp[0] == <span class="stringliteral">&quot;fy&quot;</span>)</div>
+<div class="line"><span class="lineno">   85</span>                fy_ = std::stod(line_sp[1]);</div>
+<div class="line"><span class="lineno">   86</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (line_sp[0] == <span class="stringliteral">&quot;px&quot;</span>)</div>
+<div class="line"><span class="lineno">   87</span>                px_ = std::stod(line_sp[1]);</div>
+<div class="line"><span class="lineno">   88</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (line_sp[0] == <span class="stringliteral">&quot;py&quot;</span>)</div>
+<div class="line"><span class="lineno">   89</span>                py_ = std::stod(line_sp[1]);</div>
+<div class="line"><span class="lineno">   90</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (line_sp[0] == <span class="stringliteral">&quot;dist&quot;</span>)</div>
+<div class="line"><span class="lineno">   91</span>            {</div>
+<div class="line"><span class="lineno">   92</span>                std::vector&lt;cv::String&gt; dist_sp = SplitString(line_sp[1], <span class="stringliteral">&quot;,&quot;</span>);</div>
+<div class="line"><span class="lineno">   93</span>                dist-&gt;resize(dist_sp.size());</div>
+<div class="line"><span class="lineno">   94</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = 0; n &lt; dist_sp.size(); n++)</div>
+<div class="line"><span class="lineno">   95</span>                    dist-&gt;at(n) = std::stod(dist_sp[n]);</div>
+<div class="line"><span class="lineno">   96</span>            }</div>
+<div class="line"><span class="lineno">   97</span>        }</div>
+<div class="line"><span class="lineno">   98</span>        input_file_.close();</div>
+<div class="line"><span class="lineno">   99</span>    }</div>
+<div class="line"><span class="lineno">  100</span> </div>
+<div class="line"><span class="lineno">  101</span>    std::vector&lt;double&gt;* intrin_arr = <span class="keyword">new</span> std::vector&lt;double&gt;{ fx_, 0, px_, 0, fy_, py_, 0, 0, 1 };</div>
+<div class="line"><span class="lineno">  102</span>    intrin_arr-&gt;data();</div>
+<div class="line"><span class="lineno">  103</span>    camera_matrix_ = Mat(3, 3, CV_64F, intrin_arr-&gt;data());</div>
+<div class="line"><span class="lineno">  104</span>    distortion_coefficients_ = Mat(1, dist-&gt;size(), CV_64F, dist-&gt;data());</div>
+<div class="line"><span class="lineno">  105</span> </div>
+<div class="line"><span class="lineno">  106</span>    std::cout &lt;&lt; camera_matrix_.size() &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  107</span>    std::cout &lt;&lt; distortion_coefficients_.size() &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  108</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac82e158db201e5d3189cc2c2eaa0db46" name="ac82e158db201e5d3189cc2c2eaa0db46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac82e158db201e5d3189cc2c2eaa0db46">&#9670;&#160;</a></span>SaveFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VideoUndistorter::SaveFrame </td>
+          <td>(</td>
+          <td class="paramtype">Mat&#160;</td>
+          <td class="paramname"><em>frame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8cpp_source.html">video_undistorter.cpp</a> строка <a class="el" href="video__undistorter_8cpp_source.html#l00062">62</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>{</div>
+<div class="line"><span class="lineno">   64</span>    output_cap_-&gt;write(frame);</div>
+<div class="line"><span class="lineno">   65</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adb5c11e438bef28a04b438ed7cf70c45" name="adb5c11e438bef28a04b438ed7cf70c45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb5c11e438bef28a04b438ed7cf70c45">&#9670;&#160;</a></span>SplitString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; VideoUndistorter::SplitString </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>delimiter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8cpp_source.html">video_undistorter.cpp</a> строка <a class="el" href="video__undistorter_8cpp_source.html#l00110">110</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  111</span>{</div>
+<div class="line"><span class="lineno">  112</span>    <span class="keywordtype">int</span> start_position = 0;</div>
+<div class="line"><span class="lineno">  113</span>    <span class="keywordtype">int</span> end_position;</div>
+<div class="line"><span class="lineno">  114</span>    <span class="keywordtype">int</span> delimiter_length = delimiter.length();</div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>    std::string token;</div>
+<div class="line"><span class="lineno">  117</span>    std::vector&lt;std::string&gt; dst;</div>
+<div class="line"><span class="lineno">  118</span> </div>
+<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">while</span> ((end_position = input_string.find(delimiter, start_position)) != std::string::npos) {</div>
+<div class="line"><span class="lineno">  120</span>        token = input_string.substr(start_position, end_position - start_position);</div>
+<div class="line"><span class="lineno">  121</span>        start_position = end_position + delimiter_length;</div>
+<div class="line"><span class="lineno">  122</span>        dst.push_back(token);</div>
+<div class="line"><span class="lineno">  123</span>    }</div>
+<div class="line"><span class="lineno">  124</span> </div>
+<div class="line"><span class="lineno">  125</span>    dst.push_back(input_string.substr(start_position));</div>
+<div class="line"><span class="lineno">  126</span>    <span class="keywordflow">return</span> dst;</div>
+<div class="line"><span class="lineno">  127</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a980e5ca1b2658242f45d2cf2468f4bfd" name="a980e5ca1b2658242f45d2cf2468f4bfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a980e5ca1b2658242f45d2cf2468f4bfd">&#9670;&#160;</a></span>bitrate_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double VideoUndistorter::bitrate_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00050">50</a></p>
+
+</div>
+</div>
+<a id="a78e9df5a43762efac01d4d37d97be8e5" name="a78e9df5a43762efac01d4d37d97be8e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78e9df5a43762efac01d4d37d97be8e5">&#9670;&#160;</a></span>camera_matrix_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat VideoUndistorter::camera_matrix_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00056">56</a></p>
+
+</div>
+</div>
+<a id="a5c8ce476d923037934eb6299a503593e" name="a5c8ce476d923037934eb6299a503593e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c8ce476d923037934eb6299a503593e">&#9670;&#160;</a></span>current_frame_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat VideoUndistorter::current_frame_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00059">59</a></p>
+
+</div>
+</div>
+<a id="a9363566d895ea53cf3d7b48c5b6e1964" name="a9363566d895ea53cf3d7b48c5b6e1964"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9363566d895ea53cf3d7b48c5b6e1964">&#9670;&#160;</a></span>distortion_coefficients_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat VideoUndistorter::distortion_coefficients_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00057">57</a></p>
+
+</div>
+</div>
+<a id="a374b4a4060c1a77bdb736f432082c9ce" name="a374b4a4060c1a77bdb736f432082c9ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a374b4a4060c1a77bdb736f432082c9ce">&#9670;&#160;</a></span>fps_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double VideoUndistorter::fps_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00052">52</a></p>
+
+</div>
+</div>
+<a id="a66a505ba920eabecbf0ddc268b96ec95" name="a66a505ba920eabecbf0ddc268b96ec95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66a505ba920eabecbf0ddc268b96ec95">&#9670;&#160;</a></span>frame_count_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double VideoUndistorter::frame_count_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00051">51</a></p>
+
+</div>
+</div>
+<a id="a09eb1a83ffec08ce3c34c71c2e953b42" name="a09eb1a83ffec08ce3c34c71c2e953b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09eb1a83ffec08ce3c34c71c2e953b42">&#9670;&#160;</a></span>frame_height_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double VideoUndistorter::frame_height_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00049">49</a></p>
+
+</div>
+</div>
+<a id="a33e09df7fd3e1b728ce4a5fd7e1d5a84" name="a33e09df7fd3e1b728ce4a5fd7e1d5a84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33e09df7fd3e1b728ce4a5fd7e1d5a84">&#9670;&#160;</a></span>frame_width_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double VideoUndistorter::frame_width_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00048">48</a></p>
+
+</div>
+</div>
+<a id="aa11423c2edf80da39457470b604e995a" name="aa11423c2edf80da39457470b604e995a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa11423c2edf80da39457470b604e995a">&#9670;&#160;</a></span>fx_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double VideoUndistorter::fx_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00064">64</a></p>
+
+</div>
+</div>
+<a id="a07c962e8a5b9737cab7c7ceef4f99aff" name="a07c962e8a5b9737cab7c7ceef4f99aff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07c962e8a5b9737cab7c7ceef4f99aff">&#9670;&#160;</a></span>fy_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double VideoUndistorter::fy_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00065">65</a></p>
+
+</div>
+</div>
+<a id="a0ca2ae8209afff234c56e1cb61eb4240" name="a0ca2ae8209afff234c56e1cb61eb4240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ca2ae8209afff234c56e1cb61eb4240">&#9670;&#160;</a></span>input_cap_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VideoCapture* VideoUndistorter::input_cap_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00045">45</a></p>
+
+</div>
+</div>
+<a id="ad9c6f9ed1d749ab45b4703e5768588ec" name="ad9c6f9ed1d749ab45b4703e5768588ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9c6f9ed1d749ab45b4703e5768588ec">&#9670;&#160;</a></span>input_file_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ifstream VideoUndistorter::input_file_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00062">62</a></p>
+
+</div>
+</div>
+<a id="a5d43fecaef39aa0136e13140432b8a57" name="a5d43fecaef39aa0136e13140432b8a57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d43fecaef39aa0136e13140432b8a57">&#9670;&#160;</a></span>input_file_name_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string VideoUndistorter::input_file_name_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00054">54</a></p>
+
+</div>
+</div>
+<a id="aa51dcc2cc2726c97ed156eaa3249665f" name="aa51dcc2cc2726c97ed156eaa3249665f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa51dcc2cc2726c97ed156eaa3249665f">&#9670;&#160;</a></span>output_cap_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VideoWriter* VideoUndistorter::output_cap_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00046">46</a></p>
+
+</div>
+</div>
+<a id="adb48040817f02d9e15638a06e5491777" name="adb48040817f02d9e15638a06e5491777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb48040817f02d9e15638a06e5491777">&#9670;&#160;</a></span>output_file_name_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string VideoUndistorter::output_file_name_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00055">55</a></p>
+
+</div>
+</div>
+<a id="a11c3a67cc5f2dc470a5354ffcbbd7816" name="a11c3a67cc5f2dc470a5354ffcbbd7816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11c3a67cc5f2dc470a5354ffcbbd7816">&#9670;&#160;</a></span>px_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double VideoUndistorter::px_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00066">66</a></p>
+
+</div>
+</div>
+<a id="a9e6d7352f492baaa97a51f161a016056" name="a9e6d7352f492baaa97a51f161a016056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e6d7352f492baaa97a51f161a016056">&#9670;&#160;</a></span>py_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double VideoUndistorter::py_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00067">67</a></p>
+
+</div>
+</div>
+<a id="af84edc3f788032cdb9895f05ab4a984b" name="af84edc3f788032cdb9895f05ab4a984b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af84edc3f788032cdb9895f05ab4a984b">&#9670;&#160;</a></span>txt_file_name_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string VideoUndistorter::txt_file_name_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00069">69</a></p>
+
+</div>
+</div>
+<a id="aea3bd77c199df2c27bf8162c67c54eff" name="aea3bd77c199df2c27bf8162c67c54eff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea3bd77c199df2c27bf8162c67c54eff">&#9670;&#160;</a></span>undistorted_frame_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat VideoUndistorter::undistorted_frame_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00060">60</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/include/CamCalib/<a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a></li>
+<li>C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/source/<a class="el" href="video__undistorter_8cpp_source.html">video_undistorter.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

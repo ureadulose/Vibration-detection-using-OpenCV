@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Visual Vibration Tracking: Исходный файл C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/include/GUI/main_menu.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Visual Vibration Tracking<span id="projectnumber">&#160;0.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_1a7b6f8ea6414524e6d315978b19a51d.html">seeyo</a></li><li class="navelem"><a class="el" href="dir_2849c7605547aec047c1bbd084b35fb3.html">source</a></li><li class="navelem"><a class="el" href="dir_e74395836ad52566ee1a5217dc9ad081.html">repos</a></li><li class="navelem"><a class="el" href="dir_9c05f254fdeb3977de6d7fceb436c906.html">Visual-Vibration-Tracking-V2</a></li><li class="navelem"><a class="el" href="dir_77f13ed43646d921c318463cd4f3fa10.html">include</a></li><li class="navelem"><a class="el" href="dir_ae90e781effeb3b04d06975683ca7632.html">GUI</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">main_menu.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef MAIN_MENU_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define MAIN_MENU_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define MAIN_MENU_WINDOW_NAME &quot;Main menu&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// standart headers</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// OpenCV headers</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;opencv2/opencv.hpp&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;opencv2/core.hpp&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// my headers</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;VVT-V2\vibration_detector.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;CamCalib\video_undistorter.h&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;CamCalib\camera_calibrator.h&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;MovEn/movement_enlargement.h&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">using namespace </span>cv;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_main_menu.html">   25</a></span><span class="keyword">class </span><a class="code hl_class" href="class_main_menu.html">MainMenu</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_main_menu.html#af5860e380c7d3b75817fbc9cd7be6dab">   30</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_main_menu.html#af5860e380c7d3b75817fbc9cd7be6dab">MODE</a></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        CALIBRATION,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        UNDISTORTION,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        VIBRATION_MONITORING,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        MOVEMENT_ENLARGEMENT</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    };</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_class" href="class_main_menu.html">MainMenu</a>(std::string txt_file_name);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_menu.html#acf5b3599f1461c5f9431ea1f704da910">LoadPaths</a>();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_menu.html#a41a2be93180082fd98866a49e99b5487">ExecuteCameraCalibration</a>(std::string input_file_name, std::string chessboards_path);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_menu.html#a30aba8993a7f8e9f39b242f10fbaf931">ExecuteVideoUndistortion</a>(std::string input_file_name, std::string output_file_name);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_menu.html#aa5e21268330d9703d6c8bf9f4b33d228">ExecuteVibrationMonitoring</a>(std::string input_file_name, std::string output_file_name);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_menu.html#a7110d2e44a744a1556f8a2b2950b9d38">ExecuteMotionMagnification</a>(std::string input_file_name, std::string output_file_name);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_menu.html#a5ecabae61a1ba65a16966268056fa113">CreateMenu</a>();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_menu.html#af6a2070f337a611b3b24be4766bfa826">UpdateBtnColorAndText</a>();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_menu.html#af802f4a248ffeb94f29d460522850b4f">OnMouse</a>(<span class="keywordtype">int</span> event, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> flags, <span class="keywordtype">void</span>* userdata);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_menu.html#aa378e087eb0805fd1451dcf116e2d56d">DetectEvent</a>(<span class="keywordtype">int</span> event, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> flags);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_menu.html#a671d24b20bcb5142a67cb28ca7598747">Idle</a>();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="class_main_menu.html#a300dd1a1e464e73087d4feabb94e8fb9">   99</a></span>    std::string <a class="code hl_variable" href="class_main_menu.html#a300dd1a1e464e73087d4feabb94e8fb9">params_file_name_</a>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="class_main_menu.html#a8b8a1a133a5ef0bfcb8203b104d9e7d8">  103</a></span>    std::string <a class="code hl_variable" href="class_main_menu.html#a8b8a1a133a5ef0bfcb8203b104d9e7d8">winname_</a>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="class_main_menu.html#a21f7500296ee52056ba2ff187d437558">  107</a></span>    Mat <a class="code hl_variable" href="class_main_menu.html#a21f7500296ee52056ba2ff187d437558">menu_</a>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">  111</a></span>    std::vector&lt;Rect&gt; <a class="code hl_variable" href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">buttons_</a>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="class_main_menu.html#a678f9dbcd2216709540d4af16ed66b38">  115</a></span>    std::string <a class="code hl_variable" href="class_main_menu.html#a678f9dbcd2216709540d4af16ed66b38">button_text_</a>[4];</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="class_main_menu.html#a72f1383d94f8e16f245d58fc596392d0">  119</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_main_menu.html#a72f1383d94f8e16f245d58fc596392d0">menu_width_</a>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="class_main_menu.html#ae2c50f92a5f3c7486e7a3ad9ef866221">  123</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_main_menu.html#ae2c50f92a5f3c7486e7a3ad9ef866221">menu_height_</a>;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="class_main_menu.html#ad625d2c00b71239f30056eda2709e69d">  127</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_main_menu.html#ad625d2c00b71239f30056eda2709e69d">button_amount_</a>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="class_main_menu.html#aafca88e812926ead49f00ec323a987cc">  131</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_main_menu.html#aafca88e812926ead49f00ec323a987cc">button_width_</a>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="class_main_menu.html#a091b2780210717c4620b8b8bec5edb8e">  135</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_main_menu.html#a091b2780210717c4620b8b8bec5edb8e">button_height_</a>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="class_main_menu.html#a3609956a27889cec7af6ec85195ac743">  139</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_main_menu.html#a3609956a27889cec7af6ec85195ac743">button_spacing_</a>;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="class_main_menu.html#a726804731d9b92dc1797ec69c2e48f93">  143</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_main_menu.html#a726804731d9b92dc1797ec69c2e48f93">top_offset_</a>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="class_main_menu.html#ae9b1fae3596f0d598cdd590e1d799fce">  147</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_main_menu.html#ae9b1fae3596f0d598cdd590e1d799fce">bottom_offset_</a>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="class_main_menu.html#ac8cde06a54ac62981f6ee2aaab284dbc">  151</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_main_menu.html#ac8cde06a54ac62981f6ee2aaab284dbc">width_offset_</a>;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="class_main_menu.html#a141c52a3decb4c9f74528cd158347a9e">  155</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_main_menu.html#a141c52a3decb4c9f74528cd158347a9e">font</a>;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="class_main_menu.html#a2c1c1409a6638988fa33fb7e073ba13d">  159</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_main_menu.html#a2c1c1409a6638988fa33fb7e073ba13d">font_scale</a>;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="class_main_menu.html#a29d574adf0376f03c3ef3918fd87141e">  163</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_main_menu.html#a29d574adf0376f03c3ef3918fd87141e">thickness</a>;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="class_main_menu.html#a9bcf2dfafca93c905bfea6f0a53cbe15">  167</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_main_menu.html#a9bcf2dfafca93c905bfea6f0a53cbe15">baseline</a>;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="class_main_menu.html#a40e69fd0735c12fa24bc0c6ef37bf237">  172</a></span>    Point2i <a class="code hl_variable" href="class_main_menu.html#a40e69fd0735c12fa24bc0c6ef37bf237">last_mouse_position_</a>;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="class_main_menu.html#ad7381c9c612fc48c2a21d9a0e0fdb65f">  176</a></span>    std::vector&lt;Scalar&gt; <a class="code hl_variable" href="class_main_menu.html#ad7381c9c612fc48c2a21d9a0e0fdb65f">buttons_color_</a>;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="class_main_menu.html#a7807da405b38a72055b51da2230c551b">  180</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_main_menu.html#a7807da405b38a72055b51da2230c551b">mode_chosen_</a>;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="class_main_menu.html#a5e2264e9d3087ffdc1e64fc48777f7c2">  184</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_main_menu.html#a5e2264e9d3087ffdc1e64fc48777f7c2">wanna_quit_</a>;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="class_main_menu.html#a4ecd32d232bdc09bad417fec831efe2b">  190</a></span>    std::string <a class="code hl_variable" href="class_main_menu.html#a4ecd32d232bdc09bad417fec831efe2b">input_calibration_video_</a>;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="class_main_menu.html#a43569f3b9d5700184c9cd21e760e78b0">  194</a></span>    std::string <a class="code hl_variable" href="class_main_menu.html#a43569f3b9d5700184c9cd21e760e78b0">input_distorted_video_</a>;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="class_main_menu.html#ae1388275b984f4d7e5975c42bd20a45e">  198</a></span>    std::string <a class="code hl_variable" href="class_main_menu.html#ae1388275b984f4d7e5975c42bd20a45e">output_undistorted_video_</a>;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="class_main_menu.html#a085f0e7b8a81371f8b868f447b787ac1">  202</a></span>    std::string <a class="code hl_variable" href="class_main_menu.html#a085f0e7b8a81371f8b868f447b787ac1">input_vibration_detection_</a>;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="class_main_menu.html#a4e9d0a1af8b544e9f4b856f02864c26f">  206</a></span>    std::string <a class="code hl_variable" href="class_main_menu.html#a4e9d0a1af8b544e9f4b856f02864c26f">output_vibration_detection_</a>;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="class_main_menu.html#ae70524216396d958e84697846751db33">  210</a></span>    std::string <a class="code hl_variable" href="class_main_menu.html#ae70524216396d958e84697846751db33">chessboards_path_</a>;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="class_main_menu.html#abbc9df90951e4ef60b081c2971fbd978">  214</a></span>    std::string <a class="code hl_variable" href="class_main_menu.html#abbc9df90951e4ef60b081c2971fbd978">input_movement_enlargment_</a>;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="class_main_menu.html#a29d7b279fb12523356ba6e084dd1a5e4">  218</a></span>    std::string <a class="code hl_variable" href="class_main_menu.html#a29d7b279fb12523356ba6e084dd1a5e4">output_movement_enlargement_</a>;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>};</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_main_menu_html"><div class="ttname"><a href="class_main_menu.html">MainMenu</a></div><div class="ttdoc">Класс для создания начального меню выбора режима работы программы</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00025">main_menu.h:26</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a085f0e7b8a81371f8b868f447b787ac1"><div class="ttname"><a href="class_main_menu.html#a085f0e7b8a81371f8b868f447b787ac1">MainMenu::input_vibration_detection_</a></div><div class="ttdeci">std::string input_vibration_detection_</div><div class="ttdoc">Имя (путь) входного файла (видео) для детекции вибрации</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00202">main_menu.h:202</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a091b2780210717c4620b8b8bec5edb8e"><div class="ttname"><a href="class_main_menu.html#a091b2780210717c4620b8b8bec5edb8e">MainMenu::button_height_</a></div><div class="ttdeci">int button_height_</div><div class="ttdoc">Высота кнопки</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00135">main_menu.h:135</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a141c52a3decb4c9f74528cd158347a9e"><div class="ttname"><a href="class_main_menu.html#a141c52a3decb4c9f74528cd158347a9e">MainMenu::font</a></div><div class="ttdeci">int font</div><div class="ttdoc">Шрифт</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00155">main_menu.h:155</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a21f7500296ee52056ba2ff187d437558"><div class="ttname"><a href="class_main_menu.html#a21f7500296ee52056ba2ff187d437558">MainMenu::menu_</a></div><div class="ttdeci">Mat menu_</div><div class="ttdoc">Изображение меню, на котором будет происходить отрисовка</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00107">main_menu.h:107</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a29d574adf0376f03c3ef3918fd87141e"><div class="ttname"><a href="class_main_menu.html#a29d574adf0376f03c3ef3918fd87141e">MainMenu::thickness</a></div><div class="ttdeci">int thickness</div><div class="ttdoc">Толщина шрифта</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00163">main_menu.h:163</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a29d7b279fb12523356ba6e084dd1a5e4"><div class="ttname"><a href="class_main_menu.html#a29d7b279fb12523356ba6e084dd1a5e4">MainMenu::output_movement_enlargement_</a></div><div class="ttdeci">std::string output_movement_enlargement_</div><div class="ttdoc">Имя (путь) выходного файла (видео) для усиления движения</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00218">main_menu.h:218</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a2c1c1409a6638988fa33fb7e073ba13d"><div class="ttname"><a href="class_main_menu.html#a2c1c1409a6638988fa33fb7e073ba13d">MainMenu::font_scale</a></div><div class="ttdeci">double font_scale</div><div class="ttdoc">Величина шрифта</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00159">main_menu.h:159</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a300dd1a1e464e73087d4feabb94e8fb9"><div class="ttname"><a href="class_main_menu.html#a300dd1a1e464e73087d4feabb94e8fb9">MainMenu::params_file_name_</a></div><div class="ttdeci">std::string params_file_name_</div><div class="ttdoc">Путь файла с параметрами</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00099">main_menu.h:99</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a30aba8993a7f8e9f39b242f10fbaf931"><div class="ttname"><a href="class_main_menu.html#a30aba8993a7f8e9f39b242f10fbaf931">MainMenu::ExecuteVideoUndistortion</a></div><div class="ttdeci">void ExecuteVideoUndistortion(std::string input_file_name, std::string output_file_name)</div><div class="ttdoc">Запускает удаление дисторсии</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00065">main_menu.cpp:65</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a3609956a27889cec7af6ec85195ac743"><div class="ttname"><a href="class_main_menu.html#a3609956a27889cec7af6ec85195ac743">MainMenu::button_spacing_</a></div><div class="ttdeci">int button_spacing_</div><div class="ttdoc">Отступ между кнопками</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00139">main_menu.h:139</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a40e69fd0735c12fa24bc0c6ef37bf237"><div class="ttname"><a href="class_main_menu.html#a40e69fd0735c12fa24bc0c6ef37bf237">MainMenu::last_mouse_position_</a></div><div class="ttdeci">Point2i last_mouse_position_</div><div class="ttdoc">Последние найденные в callback координаты курсора</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00172">main_menu.h:172</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a41a2be93180082fd98866a49e99b5487"><div class="ttname"><a href="class_main_menu.html#a41a2be93180082fd98866a49e99b5487">MainMenu::ExecuteCameraCalibration</a></div><div class="ttdeci">void ExecuteCameraCalibration(std::string input_file_name, std::string chessboards_path)</div><div class="ttdoc">Запускает калибровку камеры по картинкам шахматных досок</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00059">main_menu.cpp:59</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a43569f3b9d5700184c9cd21e760e78b0"><div class="ttname"><a href="class_main_menu.html#a43569f3b9d5700184c9cd21e760e78b0">MainMenu::input_distorted_video_</a></div><div class="ttdeci">std::string input_distorted_video_</div><div class="ttdoc">Имя (путь) входного файла (видео) для удаления дисторсии</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00194">main_menu.h:194</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a4e9d0a1af8b544e9f4b856f02864c26f"><div class="ttname"><a href="class_main_menu.html#a4e9d0a1af8b544e9f4b856f02864c26f">MainMenu::output_vibration_detection_</a></div><div class="ttdeci">std::string output_vibration_detection_</div><div class="ttdoc">Имя (путь) выходного файла (видео) после детекции вибрации</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00206">main_menu.h:206</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a4ecd32d232bdc09bad417fec831efe2b"><div class="ttname"><a href="class_main_menu.html#a4ecd32d232bdc09bad417fec831efe2b">MainMenu::input_calibration_video_</a></div><div class="ttdeci">std::string input_calibration_video_</div><div class="ttdoc">Имя (путь) входного файла (видео) для калибровки</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00190">main_menu.h:190</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a5e2264e9d3087ffdc1e64fc48777f7c2"><div class="ttname"><a href="class_main_menu.html#a5e2264e9d3087ffdc1e64fc48777f7c2">MainMenu::wanna_quit_</a></div><div class="ttdeci">bool wanna_quit_</div><div class="ttdoc">Флаг выхода из программы</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00184">main_menu.h:184</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a5ecabae61a1ba65a16966268056fa113"><div class="ttname"><a href="class_main_menu.html#a5ecabae61a1ba65a16966268056fa113">MainMenu::CreateMenu</a></div><div class="ttdeci">void CreateMenu()</div><div class="ttdoc">Строит сетку меню с кнопками и надписями на Mat-объекте menu_.</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00089">main_menu.cpp:89</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a671d24b20bcb5142a67cb28ca7598747"><div class="ttname"><a href="class_main_menu.html#a671d24b20bcb5142a67cb28ca7598747">MainMenu::Idle</a></div><div class="ttdeci">void Idle()</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00216">main_menu.cpp:216</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a678f9dbcd2216709540d4af16ed66b38"><div class="ttname"><a href="class_main_menu.html#a678f9dbcd2216709540d4af16ed66b38">MainMenu::button_text_</a></div><div class="ttdeci">std::string button_text_[4]</div><div class="ttdoc">Тексты кнопок</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00115">main_menu.h:115</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a7110d2e44a744a1556f8a2b2950b9d38"><div class="ttname"><a href="class_main_menu.html#a7110d2e44a744a1556f8a2b2950b9d38">MainMenu::ExecuteMotionMagnification</a></div><div class="ttdeci">void ExecuteMotionMagnification(std::string input_file_name, std::string output_file_name)</div><div class="ttdoc">Запускает увеличение движения</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00083">main_menu.cpp:83</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a726804731d9b92dc1797ec69c2e48f93"><div class="ttname"><a href="class_main_menu.html#a726804731d9b92dc1797ec69c2e48f93">MainMenu::top_offset_</a></div><div class="ttdeci">int top_offset_</div><div class="ttdoc">Отступ от застаканных кнопок сверху</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00143">main_menu.h:143</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a72f1383d94f8e16f245d58fc596392d0"><div class="ttname"><a href="class_main_menu.html#a72f1383d94f8e16f245d58fc596392d0">MainMenu::menu_width_</a></div><div class="ttdeci">int menu_width_</div><div class="ttdoc">Ширина меню</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00119">main_menu.h:119</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a7807da405b38a72055b51da2230c551b"><div class="ttname"><a href="class_main_menu.html#a7807da405b38a72055b51da2230c551b">MainMenu::mode_chosen_</a></div><div class="ttdeci">bool mode_chosen_</div><div class="ttdoc">Флаг выбранного режима</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00180">main_menu.h:180</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a8b8a1a133a5ef0bfcb8203b104d9e7d8"><div class="ttname"><a href="class_main_menu.html#a8b8a1a133a5ef0bfcb8203b104d9e7d8">MainMenu::winname_</a></div><div class="ttdeci">std::string winname_</div><div class="ttdoc">Название окна</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00103">main_menu.h:103</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a9bcf2dfafca93c905bfea6f0a53cbe15"><div class="ttname"><a href="class_main_menu.html#a9bcf2dfafca93c905bfea6f0a53cbe15">MainMenu::baseline</a></div><div class="ttdeci">int baseline</div><div class="ttdoc">Параметр для cv::getText()</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00167">main_menu.h:167</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_aa378e087eb0805fd1451dcf116e2d56d"><div class="ttname"><a href="class_main_menu.html#aa378e087eb0805fd1451dcf116e2d56d">MainMenu::DetectEvent</a></div><div class="ttdeci">void DetectEvent(int event, int x, int y, int flags)</div><div class="ttdoc">callback функция для определения события (используется для хэндлинга клика мышью)</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00162">main_menu.cpp:162</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_aa5e21268330d9703d6c8bf9f4b33d228"><div class="ttname"><a href="class_main_menu.html#aa5e21268330d9703d6c8bf9f4b33d228">MainMenu::ExecuteVibrationMonitoring</a></div><div class="ttdeci">void ExecuteVibrationMonitoring(std::string input_file_name, std::string output_file_name)</div><div class="ttdoc">Запускает детекцию вибрации (основной режим)</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00077">main_menu.cpp:77</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_aafca88e812926ead49f00ec323a987cc"><div class="ttname"><a href="class_main_menu.html#aafca88e812926ead49f00ec323a987cc">MainMenu::button_width_</a></div><div class="ttdeci">int button_width_</div><div class="ttdoc">Ширина кнопки</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00131">main_menu.h:131</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_abbc9df90951e4ef60b081c2971fbd978"><div class="ttname"><a href="class_main_menu.html#abbc9df90951e4ef60b081c2971fbd978">MainMenu::input_movement_enlargment_</a></div><div class="ttdeci">std::string input_movement_enlargment_</div><div class="ttdoc">Имя (путь) входного файла (видео) для усиления движения</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00214">main_menu.h:214</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ac6afebbdaef47782d019da5034768389"><div class="ttname"><a href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">MainMenu::buttons_</a></div><div class="ttdeci">std::vector&lt; Rect &gt; buttons_</div><div class="ttdoc">Контейнер, хранящий в себе прямоугольники-кнопки (фактически тут хранятся координаты кнопок)</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00111">main_menu.h:111</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ac8cde06a54ac62981f6ee2aaab284dbc"><div class="ttname"><a href="class_main_menu.html#ac8cde06a54ac62981f6ee2aaab284dbc">MainMenu::width_offset_</a></div><div class="ttdeci">int width_offset_</div><div class="ttdoc">Отступ с двух сторон от кнопки по ширине</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00151">main_menu.h:151</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_acf5b3599f1461c5f9431ea1f704da910"><div class="ttname"><a href="class_main_menu.html#acf5b3599f1461c5f9431ea1f704da910">MainMenu::LoadPaths</a></div><div class="ttdeci">void LoadPaths()</div><div class="ttdoc">Открывает нужные пути</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00039">main_menu.cpp:39</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ad625d2c00b71239f30056eda2709e69d"><div class="ttname"><a href="class_main_menu.html#ad625d2c00b71239f30056eda2709e69d">MainMenu::button_amount_</a></div><div class="ttdeci">int button_amount_</div><div class="ttdoc">Количество кнопок</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00127">main_menu.h:127</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ad7381c9c612fc48c2a21d9a0e0fdb65f"><div class="ttname"><a href="class_main_menu.html#ad7381c9c612fc48c2a21d9a0e0fdb65f">MainMenu::buttons_color_</a></div><div class="ttdeci">std::vector&lt; Scalar &gt; buttons_color_</div><div class="ttdoc">Контейнер для хранения цвета каждой кнопки</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00176">main_menu.h:176</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ae1388275b984f4d7e5975c42bd20a45e"><div class="ttname"><a href="class_main_menu.html#ae1388275b984f4d7e5975c42bd20a45e">MainMenu::output_undistorted_video_</a></div><div class="ttdeci">std::string output_undistorted_video_</div><div class="ttdoc">Имя (путь) выходного файла (видео) после удаления дисторсии</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00198">main_menu.h:198</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ae2c50f92a5f3c7486e7a3ad9ef866221"><div class="ttname"><a href="class_main_menu.html#ae2c50f92a5f3c7486e7a3ad9ef866221">MainMenu::menu_height_</a></div><div class="ttdeci">int menu_height_</div><div class="ttdoc">Высота меню</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00123">main_menu.h:123</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ae70524216396d958e84697846751db33"><div class="ttname"><a href="class_main_menu.html#ae70524216396d958e84697846751db33">MainMenu::chessboards_path_</a></div><div class="ttdeci">std::string chessboards_path_</div><div class="ttdoc">Путь к папке с фотографиями шахматной доски</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00210">main_menu.h:210</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ae9b1fae3596f0d598cdd590e1d799fce"><div class="ttname"><a href="class_main_menu.html#ae9b1fae3596f0d598cdd590e1d799fce">MainMenu::bottom_offset_</a></div><div class="ttdeci">int bottom_offset_</div><div class="ttdoc">Отступ от застаканных кнопок снизу</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00147">main_menu.h:147</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_af5860e380c7d3b75817fbc9cd7be6dab"><div class="ttname"><a href="class_main_menu.html#af5860e380c7d3b75817fbc9cd7be6dab">MainMenu::MODE</a></div><div class="ttdeci">MODE</div><div class="ttdoc">Перечисление со списком основных режимов работы</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00030">main_menu.h:31</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_af6a2070f337a611b3b24be4766bfa826"><div class="ttname"><a href="class_main_menu.html#af6a2070f337a611b3b24be4766bfa826">MainMenu::UpdateBtnColorAndText</a></div><div class="ttdeci">void UpdateBtnColorAndText()</div><div class="ttdoc">Раскрашивает кнопки и наносит на них текст</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00129">main_menu.cpp:129</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_af802f4a248ffeb94f29d460522850b4f"><div class="ttname"><a href="class_main_menu.html#af802f4a248ffeb94f29d460522850b4f">MainMenu::OnMouse</a></div><div class="ttdeci">static void OnMouse(int event, int x, int y, int flags, void *userdata)</div><div class="ttdoc">callback функция для определения события (используется для хэндлинга клика мышью)</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00156">main_menu.cpp:156</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>
