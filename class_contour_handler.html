@@ -1,0 +1,478 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Visual Vibration Tracking: Класс ContourHandler</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Visual Vibration Tracking<span id="projectnumber">&#160;0.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_contour_handler-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс ContourHandler</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для создания объектов-обработчиков контуров.  
+ <a href="class_contour_handler.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="contour__handler_8h_source.html">contour_handler.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a166e4049c623a262f39ff0adbc19becc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contour_handler.html#a166e4049c623a262f39ff0adbc19becc">ContourHandler</a> (Mat frame, Rect *ROI=nullptr)</td></tr>
+<tr class="memdesc:a166e4049c623a262f39ff0adbc19becc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор этого класса  <a href="class_contour_handler.html#a166e4049c623a262f39ff0adbc19becc">Подробнее...</a><br /></td></tr>
+<tr class="separator:a166e4049c623a262f39ff0adbc19becc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c2833a1ef8248481212716d2b9427e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contour_handler.html#a8c2833a1ef8248481212716d2b9427e3">DrawContours</a> (Mat &amp;frame)</td></tr>
+<tr class="memdesc:a8c2833a1ef8248481212716d2b9427e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отрисовывает контура на изображении  <a href="class_contour_handler.html#a8c2833a1ef8248481212716d2b9427e3">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8c2833a1ef8248481212716d2b9427e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5479d4bdebb1fff89f7d5467fc60b0c6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; Point2i &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contour_handler.html#a5479d4bdebb1fff89f7d5467fc60b0c6">GetContours</a> ()</td></tr>
+<tr class="memdesc:a5479d4bdebb1fff89f7d5467fc60b0c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает найденные контура в виде { { contour_1 }, { contour_2 }, ... , { contour_n } }.  <a href="class_contour_handler.html#a5479d4bdebb1fff89f7d5467fc60b0c6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5479d4bdebb1fff89f7d5467fc60b0c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cac49d5d2fda43b7be55efbc06913f6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Point2f &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contour_handler.html#a9cac49d5d2fda43b7be55efbc06913f6">GetContinousContours</a> ()</td></tr>
+<tr class="memdesc:a9cac49d5d2fda43b7be55efbc06913f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает найденные контура в виде { contour_1, contour_2, ... , contour_n }.  <a href="class_contour_handler.html#a9cac49d5d2fda43b7be55efbc06913f6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9cac49d5d2fda43b7be55efbc06913f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:abc7f823a49e23e395f25c3d9778da80f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:abc7f823a49e23e395f25c3d9778da80f"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_contour_handler.html#abc7f823a49e23e395f25c3d9778da80f">MakeTwiceThinner</a> (std::vector&lt; T &gt; src)</td></tr>
+<tr class="memdesc:abc7f823a49e23e395f25c3d9778da80f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет каждый второй элемент вектора (уменьшает размер в два раза)  <a href="class_contour_handler.html#abc7f823a49e23e395f25c3d9778da80f">Подробнее...</a><br /></td></tr>
+<tr class="separator:abc7f823a49e23e395f25c3d9778da80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa6ec340cf86e6296174df57f87fd1ab"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aaa6ec340cf86e6296174df57f87fd1ab"><td class="memTemplItemLeft" align="right" valign="top">float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_contour_handler.html#aaa6ec340cf86e6296174df57f87fd1ab">CalculateDistance</a> (T point1, T point2)</td></tr>
+<tr class="memdesc:aaa6ec340cf86e6296174df57f87fd1ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет расстояние между двумя точками  <a href="class_contour_handler.html#aaa6ec340cf86e6296174df57f87fd1ab">Подробнее...</a><br /></td></tr>
+<tr class="separator:aaa6ec340cf86e6296174df57f87fd1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:acc71ce959c1863dfd3a995ea28e4225c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; Point &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contour_handler.html#acc71ce959c1863dfd3a995ea28e4225c">contour_shapes_</a></td></tr>
+<tr class="memdesc:acc71ce959c1863dfd3a995ea28e4225c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Контуры в виде { { contour_1 }, { contour_2 }, ... , { contour_n } }.  <a href="class_contour_handler.html#acc71ce959c1863dfd3a995ea28e4225c">Подробнее...</a><br /></td></tr>
+<tr class="separator:acc71ce959c1863dfd3a995ea28e4225c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1558e96a61f972bfc202cededb335311"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contour_handler.html#a1558e96a61f972bfc202cededb335311">minimal_distance_</a></td></tr>
+<tr class="memdesc:a1558e96a61f972bfc202cededb335311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Минимальное расстояние между точками контура, при котором "левая" ("первая") точка будет сохранена  <a href="class_contour_handler.html#a1558e96a61f972bfc202cededb335311">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1558e96a61f972bfc202cededb335311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p >Класс для создания объектов-обработчиков контуров. </p>
+<p >Способен найти контура на входном изображении (принимается в конструкторе), отрисовать их, и произвести определенные операции над ними (например, уменьшить размер или плотность точек в контуре </p>
+
+<p class="definition">См. определение в файле <a class="el" href="contour__handler_8h_source.html">contour_handler.h</a> строка <a class="el" href="contour__handler_8h_source.html#l00022">22</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a166e4049c623a262f39ff0adbc19becc" name="a166e4049c623a262f39ff0adbc19becc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a166e4049c623a262f39ff0adbc19becc">&#9670;&#160;</a></span>ContourHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ContourHandler::ContourHandler </td>
+          <td>(</td>
+          <td class="paramtype">Mat&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Rect *&#160;</td>
+          <td class="paramname"><em>ROI</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор этого класса </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>Mat-instance изображения, на котором будет выполнен поиск контуров. Изображение может быть в RGB/gray-scale (в первом случае будет сконвертировано внутри) </td></tr>
+    <tr><td class="paramname">ROI</td><td>регион интереса, на котором будут найдены контуры. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="contour__handler_8cpp_source.html">contour_handler.cpp</a> строка <a class="el" href="contour__handler_8cpp_source.html#l00003">3</a></p>
+<div class="fragment"><div class="line"><span class="lineno">    3</span>                                                   :</div>
+<div class="line"><span class="lineno">    4</span>    <a class="code hl_variable" href="class_contour_handler.html#a1558e96a61f972bfc202cededb335311">minimal_distance_</a>{ 5.0f }</div>
+<div class="line"><span class="lineno">    5</span>{</div>
+<div class="line"><span class="lineno">    6</span>    Mat prep_frame;</div>
+<div class="line"><span class="lineno">    7</span>    std::vector&lt;Vec4i&gt; hierarchy = { 0 };</div>
+<div class="line"><span class="lineno">    8</span> </div>
+<div class="line"><span class="lineno">    9</span>    <span class="comment">// Проверка на то, был ли послан ROI или нет</span></div>
+<div class="line"><span class="lineno">   10</span>    <span class="keywordflow">if</span> (ROI != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   11</span>        prep_frame = Mat(frame, *ROI);</div>
+<div class="line"><span class="lineno">   12</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   13</span>        frame.copyTo(prep_frame);</div>
+<div class="line"><span class="lineno">   14</span> </div>
+<div class="line"><span class="lineno">   15</span>    <span class="comment">// Проверка на грейскейл</span></div>
+<div class="line"><span class="lineno">   16</span>    <span class="keywordflow">if</span> (frame.channels() &gt; 2)</div>
+<div class="line"><span class="lineno">   17</span>        cvtColor(prep_frame, prep_frame, COLOR_BGR2GRAY);</div>
+<div class="line"><span class="lineno">   18</span> </div>
+<div class="line"><span class="lineno">   19</span>    <span class="comment">// Имаге процессинг</span></div>
+<div class="line"><span class="lineno">   20</span>    GaussianBlur(prep_frame, prep_frame, Size(7, 7), 0);</div>
+<div class="line"><span class="lineno">   21</span>    threshold(prep_frame, prep_frame, 80, 255, cv::THRESH_BINARY);</div>
+<div class="line"><span class="lineno">   22</span>    Canny(prep_frame, prep_frame, 64, 192);</div>
+<div class="line"><span class="lineno">   23</span>    Canny(prep_frame, prep_frame, 64, 192);</div>
+<div class="line"><span class="lineno">   24</span> </div>
+<div class="line"><span class="lineno">   25</span>    <span class="comment">// Находим контуры и дополнительно, если ROI не пустой</span></div>
+<div class="line"><span class="lineno">   26</span>    <span class="comment">// транслируем координаты из координат &quot;ROI-куска&quot; в координаты исходного изображения (аналог contour_shapes_[i][j] += ROI.tl())</span></div>
+<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">if</span> (ROI != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   28</span>        findContours(prep_frame, <a class="code hl_variable" href="class_contour_handler.html#acc71ce959c1863dfd3a995ea28e4225c">contour_shapes_</a>, hierarchy, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE, ROI-&gt;tl());</div>
+<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   30</span>        findContours(prep_frame, <a class="code hl_variable" href="class_contour_handler.html#acc71ce959c1863dfd3a995ea28e4225c">contour_shapes_</a>, hierarchy, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);</div>
+<div class="line"><span class="lineno">   31</span>}</div>
+<div class="ttc" id="aclass_contour_handler_html_a1558e96a61f972bfc202cededb335311"><div class="ttname"><a href="class_contour_handler.html#a1558e96a61f972bfc202cededb335311">ContourHandler::minimal_distance_</a></div><div class="ttdeci">float minimal_distance_</div><div class="ttdoc">Минимальное расстояние между точками контура, при котором &quot;левая&quot; (&quot;первая&quot;) точка будет сохранена</div><div class="ttdef"><b>Definition:</b> <a href="contour__handler_8h_source.html#l00074">contour_handler.h:74</a></div></div>
+<div class="ttc" id="aclass_contour_handler_html_acc71ce959c1863dfd3a995ea28e4225c"><div class="ttname"><a href="class_contour_handler.html#acc71ce959c1863dfd3a995ea28e4225c">ContourHandler::contour_shapes_</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; Point &gt; &gt; contour_shapes_</div><div class="ttdoc">Контуры в виде { { contour_1 }, { contour_2 }, ... , { contour_n } }.</div><div class="ttdef"><b>Definition:</b> <a href="contour__handler_8h_source.html#l00069">contour_handler.h:69</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="aaa6ec340cf86e6296174df57f87fd1ab" name="aaa6ec340cf86e6296174df57f87fd1ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa6ec340cf86e6296174df57f87fd1ab">&#9670;&#160;</a></span>CalculateDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ContourHandler::CalculateDistance </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>point1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>point2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисляет расстояние между двумя точками </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point1</td><td>первая точка </td></tr>
+    <tr><td class="paramname">point2</td><td>вторая точка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Расстояние между точками </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="contour__handler_8cpp_source.html">contour_handler.cpp</a> строка <a class="el" href="contour__handler_8cpp_source.html#l00094">94</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   95</span>{</div>
+<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">return</span> sqrt((point1.x - point2.x) * (point1.x - point2.x) + (point1.y - point2.y) * (point1.y - point2.y));</div>
+<div class="line"><span class="lineno">   97</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8c2833a1ef8248481212716d2b9427e3" name="a8c2833a1ef8248481212716d2b9427e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c2833a1ef8248481212716d2b9427e3">&#9670;&#160;</a></span>DrawContours()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ContourHandler::DrawContours </td>
+          <td>(</td>
+          <td class="paramtype">Mat &amp;&#160;</td>
+          <td class="paramname"><em>frame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отрисовывает контура на изображении </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>адрес изображения, на котором будет отрисованы найденные контура </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="contour__handler_8cpp_source.html">contour_handler.cpp</a> строка <a class="el" href="contour__handler_8cpp_source.html#l00033">33</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>{</div>
+<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_contour_handler.html#acc71ce959c1863dfd3a995ea28e4225c">contour_shapes_</a>.size(); i++)</div>
+<div class="line"><span class="lineno">   36</span>    {</div>
+<div class="line"><span class="lineno">   37</span>        drawContours(frame, <a class="code hl_variable" href="class_contour_handler.html#acc71ce959c1863dfd3a995ea28e4225c">contour_shapes_</a>, i, Scalar(255, 0, 0), 6);</div>
+<div class="line"><span class="lineno">   38</span>    }</div>
+<div class="line"><span class="lineno">   39</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9cac49d5d2fda43b7be55efbc06913f6" name="a9cac49d5d2fda43b7be55efbc06913f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cac49d5d2fda43b7be55efbc06913f6">&#9670;&#160;</a></span>GetContinousContours()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; Point2f &gt; ContourHandler::GetContinousContours </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает найденные контура в виде { contour_1, contour_2, ... , contour_n }. </p>
+<p >Фактически выполняет "склеивание" найденных контуров в один вектор </p><dl class="section return"><dt>Возвращает</dt><dd>Изображение с нарисованными контурами </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="contour__handler_8cpp_source.html">contour_handler.cpp</a> строка <a class="el" href="contour__handler_8cpp_source.html#l00046">46</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>{</div>
+<div class="line"><span class="lineno">   48</span>    std::vector&lt;Point2f&gt; continous_contour_shapes;</div>
+<div class="line"><span class="lineno">   49</span> </div>
+<div class="line"><span class="lineno">   50</span>    <span class="comment">// Проходимся по вектору контуров (std::vector&lt;std::vector&gt;&gt;) и проверяем на соответствие условию ниже</span></div>
+<div class="line"><span class="lineno">   51</span>    <span class="keyword">auto</span> extern_itt = <a class="code hl_variable" href="class_contour_handler.html#acc71ce959c1863dfd3a995ea28e4225c">contour_shapes_</a>.begin();</div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">while</span> (extern_itt != <a class="code hl_variable" href="class_contour_handler.html#acc71ce959c1863dfd3a995ea28e4225c">contour_shapes_</a>.end())</div>
+<div class="line"><span class="lineno">   53</span>    {</div>
+<div class="line"><span class="lineno">   54</span>        std::vector&lt;Point&gt; shape = *extern_itt;</div>
+<div class="line"><span class="lineno">   55</span> </div>
+<div class="line"><span class="lineno">   56</span>        <span class="keyword">auto</span> intern_itt = shape.begin();</div>
+<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">while</span> (intern_itt != shape.end())</div>
+<div class="line"><span class="lineno">   58</span>        {</div>
+<div class="line"><span class="lineno">   59</span>            <span class="comment">// То самое условие: минимальная дистанция между точками + размер контура</span></div>
+<div class="line"><span class="lineno">   60</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="class_contour_handler.html#aaa6ec340cf86e6296174df57f87fd1ab">CalculateDistance</a>(*intern_itt, *(intern_itt + 1)) &gt; <a class="code hl_variable" href="class_contour_handler.html#a1558e96a61f972bfc202cededb335311">minimal_distance_</a> &amp;&amp; (contourArea(*extern_itt) &gt; 100))</div>
+<div class="line"><span class="lineno">   61</span>            {</div>
+<div class="line"><span class="lineno">   62</span>                continous_contour_shapes.push_back(*intern_itt);</div>
+<div class="line"><span class="lineno">   63</span>            }</div>
+<div class="line"><span class="lineno">   64</span>            intern_itt++;</div>
+<div class="line"><span class="lineno">   65</span>        }</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>        extern_itt++;</div>
+<div class="line"><span class="lineno">   68</span>    }</div>
+<div class="line"><span class="lineno">   69</span> </div>
+<div class="line"><span class="lineno">   70</span>    <span class="comment">// Ограничиваем длину контуров</span></div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">while</span> (continous_contour_shapes.size() &gt; 500)</div>
+<div class="line"><span class="lineno">   72</span>        continous_contour_shapes = <a class="code hl_function" href="class_contour_handler.html#abc7f823a49e23e395f25c3d9778da80f">MakeTwiceThinner</a>(continous_contour_shapes);</div>
+<div class="line"><span class="lineno">   73</span> </div>
+<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">return</span> continous_contour_shapes;</div>
+<div class="line"><span class="lineno">   75</span>}</div>
+<div class="ttc" id="aclass_contour_handler_html_aaa6ec340cf86e6296174df57f87fd1ab"><div class="ttname"><a href="class_contour_handler.html#aaa6ec340cf86e6296174df57f87fd1ab">ContourHandler::CalculateDistance</a></div><div class="ttdeci">float CalculateDistance(T point1, T point2)</div><div class="ttdoc">Вычисляет расстояние между двумя точками</div><div class="ttdef"><b>Definition:</b> <a href="contour__handler_8cpp_source.html#l00094">contour_handler.cpp:94</a></div></div>
+<div class="ttc" id="aclass_contour_handler_html_abc7f823a49e23e395f25c3d9778da80f"><div class="ttname"><a href="class_contour_handler.html#abc7f823a49e23e395f25c3d9778da80f">ContourHandler::MakeTwiceThinner</a></div><div class="ttdeci">std::vector&lt; T &gt; MakeTwiceThinner(std::vector&lt; T &gt; src)</div><div class="ttdoc">Удаляет каждый второй элемент вектора (уменьшает размер в два раза)</div><div class="ttdef"><b>Definition:</b> <a href="contour__handler_8cpp_source.html#l00078">contour_handler.cpp:78</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5479d4bdebb1fff89f7d5467fc60b0c6" name="a5479d4bdebb1fff89f7d5467fc60b0c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5479d4bdebb1fff89f7d5467fc60b0c6">&#9670;&#160;</a></span>GetContours()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::vector&lt; Point2i &gt; &gt; ContourHandler::GetContours </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает найденные контура в виде { { contour_1 }, { contour_2 }, ... , { contour_n } }. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Контуры </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="contour__handler_8cpp_source.html">contour_handler.cpp</a> строка <a class="el" href="contour__handler_8cpp_source.html#l00041">41</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>{</div>
+<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_contour_handler.html#acc71ce959c1863dfd3a995ea28e4225c">contour_shapes_</a>;</div>
+<div class="line"><span class="lineno">   44</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abc7f823a49e23e395f25c3d9778da80f" name="abc7f823a49e23e395f25c3d9778da80f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc7f823a49e23e395f25c3d9778da80f">&#9670;&#160;</a></span>MakeTwiceThinner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; T &gt; ContourHandler::MakeTwiceThinner </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Удаляет каждый второй элемент вектора (уменьшает размер в два раза) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>вектор, который будет "проряжён" </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="contour__handler_8cpp_source.html">contour_handler.cpp</a> строка <a class="el" href="contour__handler_8cpp_source.html#l00078">78</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   79</span>{</div>
+<div class="line"><span class="lineno">   80</span>    std::vector&lt;T&gt; dst;</div>
+<div class="line"><span class="lineno">   81</span> </div>
+<div class="line"><span class="lineno">   82</span>    <span class="keyword">auto</span> it = src.begin();</div>
+<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">while</span> (it != src.end() - 1)</div>
+<div class="line"><span class="lineno">   84</span>    {</div>
+<div class="line"><span class="lineno">   85</span>        <span class="keywordflow">if</span> ((std::distance(src.begin(), it)) % 2 == 0)</div>
+<div class="line"><span class="lineno">   86</span>            dst.push_back(*(it));</div>
+<div class="line"><span class="lineno">   87</span>        it++;</div>
+<div class="line"><span class="lineno">   88</span>    }</div>
+<div class="line"><span class="lineno">   89</span> </div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">return</span> dst;</div>
+<div class="line"><span class="lineno">   91</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="acc71ce959c1863dfd3a995ea28e4225c" name="acc71ce959c1863dfd3a995ea28e4225c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc71ce959c1863dfd3a995ea28e4225c">&#9670;&#160;</a></span>contour_shapes_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;Point&gt; &gt; ContourHandler::contour_shapes_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Контуры в виде { { contour_1 }, { contour_2 }, ... , { contour_n } }. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="contour__handler_8h_source.html">contour_handler.h</a> строка <a class="el" href="contour__handler_8h_source.html#l00069">69</a></p>
+
+</div>
+</div>
+<a id="a1558e96a61f972bfc202cededb335311" name="a1558e96a61f972bfc202cededb335311"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1558e96a61f972bfc202cededb335311">&#9670;&#160;</a></span>minimal_distance_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ContourHandler::minimal_distance_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Минимальное расстояние между точками контура, при котором "левая" ("первая") точка будет сохранена </p>
+<dl class="section see"><dt>См. также</dt><dd>Используется в <a class="el" href="class_contour_handler.html#a9cac49d5d2fda43b7be55efbc06913f6" title="Возвращает найденные контура в виде { contour_1, contour_2, ... , contour_n }.">GetContinousContours()</a> </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="contour__handler_8h_source.html">contour_handler.h</a> строка <a class="el" href="contour__handler_8h_source.html#l00074">74</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/include/VVT-V2/<a class="el" href="contour__handler_8h_source.html">contour_handler.h</a></li>
+<li>C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/source/<a class="el" href="contour__handler_8cpp_source.html">contour_handler.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>
