@@ -273,7 +273,7 @@ void VibrationDetector::ExecuteVibrationDetection()
 
 			// it's not actually showing frame. just updating. gonna fix this later
 			Mat tmp = current_tracking_frame_;
-			vibration_displayer.ShowFrame(tmp);
+			vibration_displayer.ProcessFrame(tmp);
 			current_tracking_frame_ = vibration_displayer.GetFrame();
 		}
 

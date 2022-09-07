@@ -20,7 +20,7 @@ public:
 	bool InitColors();
 	//void ContourHandler(std::vector<std::vector<Point>> contour_shapes);
 	//void GetContourHeadPoints(std::vector<std::vector<Point>> contour_shapes, std::vector<Point>& contour_head_points);
-	void ShowFrame(Mat tmp_frame);
+	void ProcessFrame(Mat tmp_frame);
 	Mat GetFrame();
 	void SetRoi(Rect roi);
 	void UpdateFrequencies(std::vector<float> frequencies, double range);

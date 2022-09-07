@@ -31,7 +31,7 @@ bool VibrationDisplayer::InitColors()
 	return true;
 }
 
-void VibrationDisplayer::ShowFrame(Mat tmp_frame)
+void VibrationDisplayer::ProcessFrame(Mat tmp_frame)
 {
 	// "le kostyl", going to be fixed later
 	tmp_frame_ = tmp_frame;
