@@ -84,13 +84,13 @@ $(function() {
 <div class="dynheader">
 Граф наследования:OutputToCsv:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_output_to_csv.png" usemap="#OutputToCsv_map" alt=""/>
-  <map id="OutputToCsv_map" name="OutputToCsv_map">
-<area href="class_colored_point_handler.html" title="Дочерний (от VibratingPoint) класс. Предназначен для помещения множества цветных точек на кадр и отсл..." alt="ColoredPointHandler" shape="rect" coords="0,56,130,80"/>
-<area href="class_lonely_point_handler.html" title="Дочерний (от VibratingPoint) класс. Предназначен для помещения точки на кадр и отслеживания её вибрац..." alt="LonelyPointHandler" shape="rect" coords="140,56,270,80"/>
-  </map>
-</div></div>
+<div class="center"><img src="class_output_to_csv__inherit__graph.png" border="0" usemap="#a_output_to_csv_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_output_to_csv_inherit__map" id="a_output_to_csv_inherit__map">
+<area shape="rect" title="Класс для сохранения метаданных (временных и пространственных координат, ID точки)" alt="" coords="107,5,203,31"/>
+<area shape="rect" href="class_colored_point_handler.html" title="Дочерний (от VibratingPoint) класс. Предназначен для помещения множества цветных точек на кадр и отсл..." alt="" coords="5,79,145,104"/>
+<area shape="rect" href="class_lonely_point_handler.html" title="Дочерний (от VibratingPoint) класс. Предназначен для помещения точки на кадр и отслеживания её вибрац..." alt="" coords="169,79,304,104"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Открытые члены</h2></td></tr>
@@ -209,34 +209,38 @@ $(function() {
 <div class="fragment"><div class="line"><span class="lineno">   12</span>{</div>
 <div class="line"><span class="lineno">   13</span>    std::ofstream file;</div>
 <div class="line"><span class="lineno">   14</span>    file.open(<a class="code hl_variable" href="class_output_to_csv.html#a54c842383d98ee9896149112be64e70e">output_file_name_</a>, std::fstream::app);</div>
-<div class="line"><span class="lineno">   15</span>    <span class="comment">// Запишем ID точки</span></div>
-<div class="line"><span class="lineno">   16</span>    file &lt;&lt; <span class="stringliteral">&quot;Point &quot;</span> + std::to_string(<a class="code hl_variable" href="class_output_to_csv.html#a13ad8d8720f27eab5e5c504fc755398c">point_id_</a>) + <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   17</span>    <span class="comment">// Запишем временные позиции точки</span></div>
-<div class="line"><span class="lineno">   18</span>    file &lt;&lt; <span class="stringliteral">&quot;Time pos;&quot;</span>;</div>
-<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_output_to_csv.html#a8aaab03dcb5f23e40bc58c6d1ac1e4a1">time_coordinates_</a>-&gt;size(); i++)</div>
-<div class="line"><span class="lineno">   20</span>    {</div>
-<div class="line"><span class="lineno">   21</span>        file &lt;&lt; std::to_string(<a class="code hl_variable" href="class_output_to_csv.html#a8aaab03dcb5f23e40bc58c6d1ac1e4a1">time_coordinates_</a>-&gt;at(i)) + <span class="stringliteral">&quot;;&quot;</span>;</div>
-<div class="line"><span class="lineno">   22</span>    }</div>
-<div class="line"><span class="lineno">   23</span>    file &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   24</span>    <span class="comment">// Запишем координаты </span></div>
-<div class="line"><span class="lineno">   25</span>    <span class="comment">// Сначала по X</span></div>
-<div class="line"><span class="lineno">   26</span>    file &lt;&lt; <span class="stringliteral">&quot;X pos; &quot;</span>;</div>
-<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_output_to_csv.html#a88fc80ddae3f02ad0dfb04b0529f9fd3">coordinates_</a>-&gt;size(); i++)</div>
-<div class="line"><span class="lineno">   28</span>    {</div>
-<div class="line"><span class="lineno">   29</span>        file &lt;&lt; std::to_string(<a class="code hl_variable" href="class_output_to_csv.html#a88fc80ddae3f02ad0dfb04b0529f9fd3">coordinates_</a>-&gt;at(i).x) + <span class="stringliteral">&quot;;&quot;</span>;</div>
-<div class="line"><span class="lineno">   30</span>    }</div>
-<div class="line"><span class="lineno">   31</span>    file &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   32</span>    file &lt;&lt; <span class="stringliteral">&quot;Y pos; &quot;</span>;</div>
-<div class="line"><span class="lineno">   33</span>    <span class="comment">// Затем по Y</span></div>
-<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_output_to_csv.html#a88fc80ddae3f02ad0dfb04b0529f9fd3">coordinates_</a>-&gt;size(); i++)</div>
-<div class="line"><span class="lineno">   35</span>    {</div>
-<div class="line"><span class="lineno">   36</span>        file &lt;&lt; std::to_string(<a class="code hl_variable" href="class_output_to_csv.html#a88fc80ddae3f02ad0dfb04b0529f9fd3">coordinates_</a>-&gt;at(i).y) + <span class="stringliteral">&quot;;&quot;</span>;</div>
-<div class="line"><span class="lineno">   37</span>    }</div>
-<div class="line"><span class="lineno">   38</span>    file &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   39</span> </div>
-<div class="line"><span class="lineno">   40</span>    file.close();</div>
-<div class="line"><span class="lineno">   41</span>    </div>
-<div class="line"><span class="lineno">   42</span>}</div>
+<div class="line"><span class="lineno">   15</span> </div>
+<div class="line"><span class="lineno">   16</span>    <span class="comment">// Запишем ID точки</span></div>
+<div class="line"><span class="lineno">   17</span>    file &lt;&lt; <span class="stringliteral">&quot;Point &quot;</span> + std::to_string(<a class="code hl_variable" href="class_output_to_csv.html#a13ad8d8720f27eab5e5c504fc755398c">point_id_</a>) + <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   18</span> </div>
+<div class="line"><span class="lineno">   19</span>    <span class="comment">// Запишем временные позиции точки</span></div>
+<div class="line"><span class="lineno">   20</span>    file &lt;&lt; <span class="stringliteral">&quot;Time pos;&quot;</span>;</div>
+<div class="line"><span class="lineno">   21</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_output_to_csv.html#a8aaab03dcb5f23e40bc58c6d1ac1e4a1">time_coordinates_</a>-&gt;size(); i++)</div>
+<div class="line"><span class="lineno">   22</span>    {</div>
+<div class="line"><span class="lineno">   23</span>        file &lt;&lt; std::to_string(<a class="code hl_variable" href="class_output_to_csv.html#a8aaab03dcb5f23e40bc58c6d1ac1e4a1">time_coordinates_</a>-&gt;at(i)) + <span class="stringliteral">&quot;;&quot;</span>;</div>
+<div class="line"><span class="lineno">   24</span>    }</div>
+<div class="line"><span class="lineno">   25</span>    file &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   26</span> </div>
+<div class="line"><span class="lineno">   27</span>    <span class="comment">// Запишем координаты </span></div>
+<div class="line"><span class="lineno">   28</span>    <span class="comment">// Сначала по X</span></div>
+<div class="line"><span class="lineno">   29</span>    file &lt;&lt; <span class="stringliteral">&quot;X pos; &quot;</span>;</div>
+<div class="line"><span class="lineno">   30</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_output_to_csv.html#a88fc80ddae3f02ad0dfb04b0529f9fd3">coordinates_</a>-&gt;size(); i++)</div>
+<div class="line"><span class="lineno">   31</span>    {</div>
+<div class="line"><span class="lineno">   32</span>        file &lt;&lt; std::to_string(<a class="code hl_variable" href="class_output_to_csv.html#a88fc80ddae3f02ad0dfb04b0529f9fd3">coordinates_</a>-&gt;at(i).x) + <span class="stringliteral">&quot;;&quot;</span>;</div>
+<div class="line"><span class="lineno">   33</span>    }</div>
+<div class="line"><span class="lineno">   34</span>    file &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   35</span> </div>
+<div class="line"><span class="lineno">   36</span>    <span class="comment">// Затем по Y</span></div>
+<div class="line"><span class="lineno">   37</span>    file &lt;&lt; <span class="stringliteral">&quot;Y pos; &quot;</span>;</div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_output_to_csv.html#a88fc80ddae3f02ad0dfb04b0529f9fd3">coordinates_</a>-&gt;size(); i++)</div>
+<div class="line"><span class="lineno">   39</span>    {</div>
+<div class="line"><span class="lineno">   40</span>        file &lt;&lt; std::to_string(<a class="code hl_variable" href="class_output_to_csv.html#a88fc80ddae3f02ad0dfb04b0529f9fd3">coordinates_</a>-&gt;at(i).y) + <span class="stringliteral">&quot;;&quot;</span>;</div>
+<div class="line"><span class="lineno">   41</span>    }</div>
+<div class="line"><span class="lineno">   42</span>    file &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>    file.close();</div>
+<div class="line"><span class="lineno">   45</span>    </div>
+<div class="line"><span class="lineno">   46</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

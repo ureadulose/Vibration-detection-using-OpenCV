@@ -5,5 +5,6 @@ var searchData=
   ['vec_5fmeaned_5fcoordinates_5fof_5fpoint_5f_2',['vec_meaned_coordinates_of_point_',['../class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb',1,'VibratingPoint']]],
   ['vibratingpoint_3',['VibratingPoint',['../class_vibrating_point.html',1,'']]],
   ['vibrationdetector_4',['VibrationDetector',['../class_vibration_detector.html',1,'']]],
-  ['videoundistorter_5',['VideoUndistorter',['../class_video_undistorter.html',1,'VideoUndistorter'],['../class_video_undistorter.html#aa42fc7f2661d48c5bfe2ff4ade623b30',1,'VideoUndistorter::VideoUndistorter()']]]
+  ['videoundistorter_5',['VideoUndistorter',['../class_video_undistorter.html',1,'VideoUndistorter'],['../class_video_undistorter.html#aa42fc7f2661d48c5bfe2ff4ade623b30',1,'VideoUndistorter::VideoUndistorter()']]],
+  ['visual_20vibration_20trahink_6',['Visual Vibration Trahink',['../index.html',1,'']]]
 ];

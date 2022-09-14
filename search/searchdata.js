@@ -6,7 +6,8 @@ var indexSectionsWithContent =
   3: "abcdefghilmoprstuvw~",
   4: "abcdefghilmnoprstvwxy",
   5: "cm",
-  6: "hp"
+  6: "hp",
+  7: "v"
 };
 
 var indexSectionNames =
@@ -17,7 +18,8 @@ var indexSectionNames =
   3: "functions",
   4: "variables",
   5: "enums",
-  6: "groups"
+  6: "groups",
+  7: "pages"
 };
 
 var indexSectionLabels =
@@ -28,6 +30,7 @@ var indexSectionLabels =
   3: "Функции",
   4: "Переменные",
   5: "Перечисления",
-  6: "Группы"
+  6: "Группы",
+  7: "Страницы"
 };
 

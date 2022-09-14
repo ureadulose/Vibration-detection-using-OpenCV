@@ -87,18 +87,16 @@ $(function() {
 <div class="dynheader">
 Граф наследования:VibratingPoint:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_vibrating_point.png" usemap="#VibratingPoint_map" alt=""/>
-  <map id="VibratingPoint_map" name="VibratingPoint_map">
-<area href="class_colored_point_handler.html" title="Дочерний (от VibratingPoint) класс. Предназначен для помещения множества цветных точек на кадр и отсл..." alt="ColoredPointHandler" shape="rect" coords="0,56,130,80"/>
-<area href="class_lonely_point_handler.html" title="Дочерний (от VibratingPoint) класс. Предназначен для помещения точки на кадр и отслеживания её вибрац..." alt="LonelyPointHandler" shape="rect" coords="140,56,270,80"/>
-  </map>
-</div></div>
+<div class="center"><img src="class_vibrating_point__inherit__graph.png" border="0" usemap="#a_vibrating_point_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_vibrating_point_inherit__map" id="a_vibrating_point_inherit__map">
+<area shape="rect" title="Абстрактный класс для описания вибрирующей точки" alt="" coords="104,5,207,31"/>
+<area shape="rect" href="class_colored_point_handler.html" title="Дочерний (от VibratingPoint) класс. Предназначен для помещения множества цветных точек на кадр и отсл..." alt="" coords="5,79,145,104"/>
+<area shape="rect" href="class_lonely_point_handler.html" title="Дочерний (от VibratingPoint) класс. Предназначен для помещения точки на кадр и отслеживания её вибрац..." alt="" coords="169,79,304,104"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:ab8af9cea2d7828e75d03abfe5c620b50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#ab8af9cea2d7828e75d03abfe5c620b50">UpdateExtremumAmplitude</a> (double extremum_amplitude)</td></tr>
-<tr class="separator:ab8af9cea2d7828e75d03abfe5c620b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a005868411bd6b296d992f3dcd79451d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#a005868411bd6b296d992f3dcd79451d7">ExecuteFFT</a> ()</td></tr>
 <tr class="memdesc:a005868411bd6b296d992f3dcd79451d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет БПФ для нахождения частоты вибрации.  <a href="class_vibrating_point.html#a005868411bd6b296d992f3dcd79451d7">Подробнее...</a><br /></td></tr>
 <tr class="separator:a005868411bd6b296d992f3dcd79451d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,7 +223,7 @@ $(function() {
 <p >Объект класса-наследника будет иметь возможность добавления новых пространственных и временных позиций, нахождения частоты вибрации точки на кадре на основе этих данных (<a class="el" href="class_vibrating_point.html#a005868411bd6b296d992f3dcd79451d7" title="Выполняет БПФ для нахождения частоты вибрации.">ExecuteFFT()</a>)</p>
 <p >А также проверить пересечение курсором области взаимодействия с точкой (метод <a class="el" href="class_vibrating_point.html#a342c75a6ac0f9ab85de1a0dd663eab03" title="Проверяет точку на наличие взаимодействия с ней (если курсор попал в область взаимодействия точки Vib...">IsInteracted()</a>) </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00026">26</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00024">24</a></p>
 </div><h2 class="groupheader">Методы</h2>
 <a id="a1b2402724fd5d9aba2785ba771042c91" name="a1b2402724fd5d9aba2785ba771042c91"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1b2402724fd5d9aba2785ba771042c91">&#9670;&#160;</a></span>AddNewPointPosition()</h2>
@@ -251,19 +249,19 @@ $(function() {
   </dd>
 </dl>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00154">154</a></p>
-<div class="fragment"><div class="line"><span class="lineno">  155</span>{</div>
-<div class="line"><span class="lineno">  156</span>    <span class="comment">// Обновляем прямоугольник взаимодействия</span></div>
-<div class="line"><span class="lineno">  157</span>    <a class="code hl_variable" href="class_vibrating_point.html#a5b35f5a2109df2be2d2832b25dfa2285">interaction_box_</a> = Rect(</div>
-<div class="line"><span class="lineno">  158</span>        Point2i(position.x - <a class="code hl_variable" href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">interaction_offset_</a>, position.y - <a class="code hl_variable" href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">interaction_offset_</a>),</div>
-<div class="line"><span class="lineno">  159</span>        Point2i(position.x + <a class="code hl_variable" href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">interaction_offset_</a>, position.y + <a class="code hl_variable" href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">interaction_offset_</a>)</div>
-<div class="line"><span class="lineno">  160</span>    );</div>
-<div class="line"><span class="lineno">  161</span> </div>
-<div class="line"><span class="lineno">  162</span>    <a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>.push_back(position);</div>
-<div class="line"><span class="lineno">  163</span>}</div>
-<div class="ttc" id="aclass_vibrating_point_html_a5b35f5a2109df2be2d2832b25dfa2285"><div class="ttname"><a href="class_vibrating_point.html#a5b35f5a2109df2be2d2832b25dfa2285">VibratingPoint::interaction_box_</a></div><div class="ttdeci">Rect interaction_box_</div><div class="ttdoc">Прямоугольник (область) взаимодействия с точкой</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00113">vibrating_point.h:113</a></div></div>
-<div class="ttc" id="aclass_vibrating_point_html_a8c035e084006469922a45f023b1bcce0"><div class="ttname"><a href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">VibratingPoint::interaction_offset_</a></div><div class="ttdeci">int interaction_offset_</div><div class="ttdoc">Половина длины прямоугольника взаимодействия</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00117">vibrating_point.h:117</a></div></div>
-<div class="ttc" id="aclass_vibrating_point_html_afb01bb9d96c3d2fb6d9f99982fde66c6"><div class="ttname"><a href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">VibratingPoint::point_coordinates_</a></div><div class="ttdeci">std::vector&lt; Point2f &gt; point_coordinates_</div><div class="ttdoc">Контейнер для координат точки</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00136">vibrating_point.h:136</a></div></div>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00149">149</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  150</span>{</div>
+<div class="line"><span class="lineno">  151</span>    <span class="comment">// Обновляем прямоугольник взаимодействия</span></div>
+<div class="line"><span class="lineno">  152</span>    <a class="code hl_variable" href="class_vibrating_point.html#a5b35f5a2109df2be2d2832b25dfa2285">interaction_box_</a> = Rect(</div>
+<div class="line"><span class="lineno">  153</span>        Point2i(position.x - <a class="code hl_variable" href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">interaction_offset_</a>, position.y - <a class="code hl_variable" href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">interaction_offset_</a>),</div>
+<div class="line"><span class="lineno">  154</span>        Point2i(position.x + <a class="code hl_variable" href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">interaction_offset_</a>, position.y + <a class="code hl_variable" href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">interaction_offset_</a>)</div>
+<div class="line"><span class="lineno">  155</span>    );</div>
+<div class="line"><span class="lineno">  156</span> </div>
+<div class="line"><span class="lineno">  157</span>    <a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>.push_back(position);</div>
+<div class="line"><span class="lineno">  158</span>}</div>
+<div class="ttc" id="aclass_vibrating_point_html_a5b35f5a2109df2be2d2832b25dfa2285"><div class="ttname"><a href="class_vibrating_point.html#a5b35f5a2109df2be2d2832b25dfa2285">VibratingPoint::interaction_box_</a></div><div class="ttdeci">Rect interaction_box_</div><div class="ttdoc">Прямоугольник (область) взаимодействия с точкой</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00112">vibrating_point.h:112</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a8c035e084006469922a45f023b1bcce0"><div class="ttname"><a href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">VibratingPoint::interaction_offset_</a></div><div class="ttdeci">int interaction_offset_</div><div class="ttdoc">Половина длины прямоугольника взаимодействия</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00116">vibrating_point.h:116</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_afb01bb9d96c3d2fb6d9f99982fde66c6"><div class="ttname"><a href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">VibratingPoint::point_coordinates_</a></div><div class="ttdeci">std::vector&lt; Point2f &gt; point_coordinates_</div><div class="ttdoc">Контейнер для координат точки</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00135">vibrating_point.h:135</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -291,11 +289,11 @@ $(function() {
   </dd>
 </dl>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00165">165</a></p>
-<div class="fragment"><div class="line"><span class="lineno">  166</span>{</div>
-<div class="line"><span class="lineno">  167</span>    <a class="code hl_variable" href="class_vibrating_point.html#ad2aa8fe4bc94a957f75aa00fb9ce9f26">point_time_coordinates_</a>.push_back(time);</div>
-<div class="line"><span class="lineno">  168</span>}</div>
-<div class="ttc" id="aclass_vibrating_point_html_ad2aa8fe4bc94a957f75aa00fb9ce9f26"><div class="ttname"><a href="class_vibrating_point.html#ad2aa8fe4bc94a957f75aa00fb9ce9f26">VibratingPoint::point_time_coordinates_</a></div><div class="ttdeci">std::vector&lt; double &gt; point_time_coordinates_</div><div class="ttdoc">Контейнер для временных координат точки</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00160">vibrating_point.h:160</a></div></div>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00160">160</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  161</span>{</div>
+<div class="line"><span class="lineno">  162</span>    <a class="code hl_variable" href="class_vibrating_point.html#ad2aa8fe4bc94a957f75aa00fb9ce9f26">point_time_coordinates_</a>.push_back(time);</div>
+<div class="line"><span class="lineno">  163</span>}</div>
+<div class="ttc" id="aclass_vibrating_point_html_ad2aa8fe4bc94a957f75aa00fb9ce9f26"><div class="ttname"><a href="class_vibrating_point.html#ad2aa8fe4bc94a957f75aa00fb9ce9f26">VibratingPoint::point_time_coordinates_</a></div><div class="ttdeci">std::vector&lt; double &gt; point_time_coordinates_</div><div class="ttdoc">Контейнер для временных координат точки</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00159">vibrating_point.h:159</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -317,63 +315,63 @@ $(function() {
 <p>Проводит необходимые для вычисления амплитуды вычисления </p>
 <p >for amplitude calculation</p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00181">181</a></p>
-<div class="fragment"><div class="line"><span class="lineno">  182</span>{</div>
-<div class="line"><span class="lineno">  186</span>    <span class="keywordtype">float</span> max_meaned_x = 0;</div>
-<div class="line"><span class="lineno">  187</span>    <span class="keywordtype">float</span> max_meaned_y = 0;</div>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00176">176</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  177</span>{</div>
+<div class="line"><span class="lineno">  181</span>    <span class="keywordtype">float</span> max_meaned_x = 0;</div>
+<div class="line"><span class="lineno">  182</span>    <span class="keywordtype">float</span> max_meaned_y = 0;</div>
+<div class="line"><span class="lineno">  183</span> </div>
+<div class="line"><span class="lineno">  184</span>    <span class="comment">// Создаем контей</span></div>
+<div class="line"><span class="lineno">  185</span> </div>
+<div class="line"><span class="lineno">  186</span>    max_meaned_x = <a class="code hl_variable" href="class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb">vec_meaned_coordinates_of_point_</a>[<a class="code hl_function" href="group___helper_functions.html#gacc82d70b750eb60ad49c7a36e5c7f0ca">HelperFunctions::FindGlobalMaxIdx</a>(<a class="code hl_variable" href="class_vibrating_point.html#a6653e27fe96e5fe6e7aa410fb3138c92">x_coordinates_</a>)].x;</div>
+<div class="line"><span class="lineno">  187</span>    max_meaned_y = <a class="code hl_variable" href="class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb">vec_meaned_coordinates_of_point_</a>[<a class="code hl_function" href="group___helper_functions.html#gacc82d70b750eb60ad49c7a36e5c7f0ca">HelperFunctions::FindGlobalMaxIdx</a>(<a class="code hl_variable" href="class_vibrating_point.html#a5df5aa7a4d955de091640290f849961c">y_coordinates_</a>)].y;</div>
 <div class="line"><span class="lineno">  188</span> </div>
-<div class="line"><span class="lineno">  189</span>    <span class="comment">// Создаем контей</span></div>
-<div class="line"><span class="lineno">  190</span> </div>
-<div class="line"><span class="lineno">  191</span>    max_meaned_x = <a class="code hl_variable" href="class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb">vec_meaned_coordinates_of_point_</a>[<a class="code hl_function" href="group___helper_functions.html#gacc82d70b750eb60ad49c7a36e5c7f0ca">HelperFunctions::FindGlobalMaxIdx</a>(<a class="code hl_variable" href="class_vibrating_point.html#a6653e27fe96e5fe6e7aa410fb3138c92">x_coordinates_</a>)].x;</div>
-<div class="line"><span class="lineno">  192</span>    max_meaned_y = <a class="code hl_variable" href="class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb">vec_meaned_coordinates_of_point_</a>[<a class="code hl_function" href="group___helper_functions.html#gacc82d70b750eb60ad49c7a36e5c7f0ca">HelperFunctions::FindGlobalMaxIdx</a>(<a class="code hl_variable" href="class_vibrating_point.html#a5df5aa7a4d955de091640290f849961c">y_coordinates_</a>)].y;</div>
-<div class="line"><span class="lineno">  193</span> </div>
-<div class="line"><span class="lineno">  194</span>    <span class="keywordtype">float</span> relative_amplitude_x = 0.0f;</div>
-<div class="line"><span class="lineno">  195</span>    <span class="keywordtype">float</span> relative_amplitude_y = 0.0f;</div>
-<div class="line"><span class="lineno">  196</span> </div>
-<div class="line"><span class="lineno">  197</span>    Scalar mean_of_mean_coordinates_of_point = mean(<a class="code hl_variable" href="class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb">vec_meaned_coordinates_of_point_</a>);</div>
-<div class="line"><span class="lineno">  198</span>    <span class="keywordtype">double</span> meaned_mean_x = mean_of_mean_coordinates_of_point.val[0];</div>
-<div class="line"><span class="lineno">  199</span>    <span class="keywordtype">double</span> meaned_mean_y = mean_of_mean_coordinates_of_point.val[1];</div>
-<div class="line"><span class="lineno">  200</span> </div>
-<div class="line"><span class="lineno">  202</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>.size() &gt; 2)</div>
-<div class="line"><span class="lineno">  203</span>    {</div>
-<div class="line"><span class="lineno">  204</span>        relative_amplitude_x = (max_meaned_x) / (max_meaned_x + max_meaned_y);</div>
-<div class="line"><span class="lineno">  205</span>        relative_amplitude_y = (max_meaned_y) / (max_meaned_x + max_meaned_y);</div>
-<div class="line"><span class="lineno">  206</span>    }</div>
-<div class="line"><span class="lineno">  207</span> </div>
-<div class="line"><span class="lineno">  208</span>    <span class="comment">/*</span></div>
-<div class="line"><span class="lineno">  209</span><span class="comment">    // FOR DEBUG PURPOSES</span></div>
-<div class="line"><span class="lineno">  210</span><span class="comment">    if (std::isnan(relative_amplitude_x) || std::isnan(relative_amplitude_y))</span></div>
-<div class="line"><span class="lineno">  211</span><span class="comment">    {</span></div>
-<div class="line"><span class="lineno">  212</span><span class="comment">        std::cout &lt;&lt; &quot;!DEBUG first inf (x): &quot; &lt;&lt; relative_amplitude_x &lt;&lt; &quot; second inf (y): &quot; &lt;&lt; relative_amplitude_y &lt;&lt; std::endl;</span></div>
-<div class="line"><span class="lineno">  213</span><span class="comment">        std::cout &lt;&lt; &quot;!DEBUG max_meaned_x: &quot; &lt;&lt; vec_meaned_coordinates_of_point_[HelperFunctions::FindGlobalMaxIdx(x_coordinates)].x &lt;&lt; &quot; max_meaned_y: &quot; &lt;&lt; vec_meaned_coordinates_of_point_[HelperFunctions::FindGlobalMaxIdx(y_coordinates)].y &lt;&lt; std::endl;</span></div>
-<div class="line"><span class="lineno">  214</span><span class="comment">        std::cout &lt;&lt; &quot;vec size: &quot; &lt;&lt; point_coordinates_.size() &lt;&lt; std::endl;</span></div>
-<div class="line"><span class="lineno">  215</span><span class="comment">        for (int i = 0; i &lt; point_coordinates_.size(); i++)</span></div>
-<div class="line"><span class="lineno">  216</span><span class="comment">        {</span></div>
-<div class="line"><span class="lineno">  217</span><span class="comment">            std::cout &lt;&lt; i &lt;&lt; &quot;-th coords: &quot; &lt;&lt; point_coordinates_[i] &lt;&lt; std::endl;</span></div>
-<div class="line"><span class="lineno">  218</span><span class="comment">        }</span></div>
-<div class="line"><span class="lineno">  219</span><span class="comment">    }</span></div>
-<div class="line"><span class="lineno">  220</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">  221</span><span class="comment">    if ((relative_amplitude_x &gt; 1) || (relative_amplitude_y &gt; 1))</span></div>
-<div class="line"><span class="lineno">  222</span><span class="comment">    {</span></div>
-<div class="line"><span class="lineno">  223</span><span class="comment">        std::cout &lt;&lt; &quot;!DEBUG first big (x): &quot; &lt;&lt; relative_amplitude_x &lt;&lt; &quot; second big (y): &quot; &lt;&lt; relative_amplitude_y &lt;&lt; std::endl;</span></div>
-<div class="line"><span class="lineno">  224</span><span class="comment">        std::cout &lt;&lt; &quot;!DEBUG max_meaned_x: &quot; &lt;&lt; max_meaned_x &lt;&lt; &quot; max_meaned_y: &quot; &lt;&lt; max_meaned_y &lt;&lt; std::endl;</span></div>
-<div class="line"><span class="lineno">  225</span><span class="comment">    }</span></div>
-<div class="line"><span class="lineno">  226</span><span class="comment">    */</span></div>
-<div class="line"><span class="lineno">  227</span> </div>
-<div class="line"><span class="lineno">  228</span>    <span class="keywordflow">if</span> (!(std::isnan(relative_amplitude_x) || std::isnan(relative_amplitude_y)))</div>
-<div class="line"><span class="lineno">  229</span>    {</div>
-<div class="line"><span class="lineno">  230</span>        <a class="code hl_variable" href="class_vibrating_point.html#a9989c50fa30cecf13079ae0c595ef87c">relative_amplitude_</a>.x = relative_amplitude_x;</div>
-<div class="line"><span class="lineno">  231</span>        <a class="code hl_variable" href="class_vibrating_point.html#a9989c50fa30cecf13079ae0c595ef87c">relative_amplitude_</a>.y = relative_amplitude_y;</div>
-<div class="line"><span class="lineno">  232</span>        <a class="code hl_variable" href="class_vibrating_point.html#a5ae50ac111f6681489eded6da7ef66ea">current_amplitude_</a>.x = max_meaned_x - meaned_mean_x;</div>
-<div class="line"><span class="lineno">  233</span>        <a class="code hl_variable" href="class_vibrating_point.html#a5ae50ac111f6681489eded6da7ef66ea">current_amplitude_</a>.y = max_meaned_y - meaned_mean_y;</div>
-<div class="line"><span class="lineno">  234</span>    }</div>
-<div class="line"><span class="lineno">  235</span>}</div>
-<div class="ttc" id="aclass_vibrating_point_html_a5ae50ac111f6681489eded6da7ef66ea"><div class="ttname"><a href="class_vibrating_point.html#a5ae50ac111f6681489eded6da7ef66ea">VibratingPoint::current_amplitude_</a></div><div class="ttdeci">Point3f current_amplitude_</div><div class="ttdoc">Фактические амплитуды вибрации по x, y. Выражаюытся в пикселях</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00132">vibrating_point.h:132</a></div></div>
-<div class="ttc" id="aclass_vibrating_point_html_a5df5aa7a4d955de091640290f849961c"><div class="ttname"><a href="class_vibrating_point.html#a5df5aa7a4d955de091640290f849961c">VibratingPoint::y_coordinates_</a></div><div class="ttdeci">std::vector&lt; double &gt; y_coordinates_</div><div class="ttdoc">Контейнер для координат точки по оси Y.</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00144">vibrating_point.h:144</a></div></div>
-<div class="ttc" id="aclass_vibrating_point_html_a6653e27fe96e5fe6e7aa410fb3138c92"><div class="ttname"><a href="class_vibrating_point.html#a6653e27fe96e5fe6e7aa410fb3138c92">VibratingPoint::x_coordinates_</a></div><div class="ttdeci">std::vector&lt; double &gt; x_coordinates_</div><div class="ttdoc">Контейнер для координат точки по оси X.</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00140">vibrating_point.h:140</a></div></div>
-<div class="ttc" id="aclass_vibrating_point_html_a9989c50fa30cecf13079ae0c595ef87c"><div class="ttname"><a href="class_vibrating_point.html#a9989c50fa30cecf13079ae0c595ef87c">VibratingPoint::relative_amplitude_</a></div><div class="ttdeci">Point3f relative_amplitude_</div><div class="ttdoc">Относительные амплитуды вибрации по x, y. Выражается отношением амплитуды</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00128">vibrating_point.h:128</a></div></div>
-<div class="ttc" id="aclass_vibrating_point_html_aa65df19b908306e2f4c725480594b2bb"><div class="ttname"><a href="class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb">VibratingPoint::vec_meaned_coordinates_of_point_</a></div><div class="ttdeci">std::vector&lt; cv::Point2f &gt; vec_meaned_coordinates_of_point_</div><div class="ttdoc">Контейнер для координат точки относительно нулевого уровня</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00148">vibrating_point.h:148</a></div></div>
-<div class="ttc" id="agroup___helper_functions_html_gacc82d70b750eb60ad49c7a36e5c7f0ca"><div class="ttname"><a href="group___helper_functions.html#gacc82d70b750eb60ad49c7a36e5c7f0ca">HelperFunctions::FindGlobalMaxIdx</a></div><div class="ttdeci">int FindGlobalMaxIdx(std::vector&lt; T &gt; src)</div><div class="ttdoc">Возвращает индекс самого большого элемента вектора src.</div><div class="ttdef"><b>Definition:</b> <a href="helper_8h_source.html#l00123">helper.h:123</a></div></div>
+<div class="line"><span class="lineno">  189</span>    <span class="keywordtype">float</span> relative_amplitude_x = 0.0f;</div>
+<div class="line"><span class="lineno">  190</span>    <span class="keywordtype">float</span> relative_amplitude_y = 0.0f;</div>
+<div class="line"><span class="lineno">  191</span> </div>
+<div class="line"><span class="lineno">  192</span>    Scalar mean_of_mean_coordinates_of_point = mean(<a class="code hl_variable" href="class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb">vec_meaned_coordinates_of_point_</a>);</div>
+<div class="line"><span class="lineno">  193</span>    <span class="keywordtype">double</span> meaned_mean_x = mean_of_mean_coordinates_of_point.val[0];</div>
+<div class="line"><span class="lineno">  194</span>    <span class="keywordtype">double</span> meaned_mean_y = mean_of_mean_coordinates_of_point.val[1];</div>
+<div class="line"><span class="lineno">  195</span> </div>
+<div class="line"><span class="lineno">  197</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>.size() &gt; 2)</div>
+<div class="line"><span class="lineno">  198</span>    {</div>
+<div class="line"><span class="lineno">  199</span>        relative_amplitude_x = (max_meaned_x) / (max_meaned_x + max_meaned_y);</div>
+<div class="line"><span class="lineno">  200</span>        relative_amplitude_y = (max_meaned_y) / (max_meaned_x + max_meaned_y);</div>
+<div class="line"><span class="lineno">  201</span>    }</div>
+<div class="line"><span class="lineno">  202</span> </div>
+<div class="line"><span class="lineno">  203</span>    <span class="comment">/*</span></div>
+<div class="line"><span class="lineno">  204</span><span class="comment">    // FOR DEBUG PURPOSES</span></div>
+<div class="line"><span class="lineno">  205</span><span class="comment">    if (std::isnan(relative_amplitude_x) || std::isnan(relative_amplitude_y))</span></div>
+<div class="line"><span class="lineno">  206</span><span class="comment">    {</span></div>
+<div class="line"><span class="lineno">  207</span><span class="comment">        std::cout &lt;&lt; &quot;!DEBUG first inf (x): &quot; &lt;&lt; relative_amplitude_x &lt;&lt; &quot; second inf (y): &quot; &lt;&lt; relative_amplitude_y &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  208</span><span class="comment">        std::cout &lt;&lt; &quot;!DEBUG max_meaned_x: &quot; &lt;&lt; vec_meaned_coordinates_of_point_[HelperFunctions::FindGlobalMaxIdx(x_coordinates)].x &lt;&lt; &quot; max_meaned_y: &quot; &lt;&lt; vec_meaned_coordinates_of_point_[HelperFunctions::FindGlobalMaxIdx(y_coordinates)].y &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  209</span><span class="comment">        std::cout &lt;&lt; &quot;vec size: &quot; &lt;&lt; point_coordinates_.size() &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  210</span><span class="comment">        for (int i = 0; i &lt; point_coordinates_.size(); i++)</span></div>
+<div class="line"><span class="lineno">  211</span><span class="comment">        {</span></div>
+<div class="line"><span class="lineno">  212</span><span class="comment">            std::cout &lt;&lt; i &lt;&lt; &quot;-th coords: &quot; &lt;&lt; point_coordinates_[i] &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  213</span><span class="comment">        }</span></div>
+<div class="line"><span class="lineno">  214</span><span class="comment">    }</span></div>
+<div class="line"><span class="lineno">  215</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">  216</span><span class="comment">    if ((relative_amplitude_x &gt; 1) || (relative_amplitude_y &gt; 1))</span></div>
+<div class="line"><span class="lineno">  217</span><span class="comment">    {</span></div>
+<div class="line"><span class="lineno">  218</span><span class="comment">        std::cout &lt;&lt; &quot;!DEBUG first big (x): &quot; &lt;&lt; relative_amplitude_x &lt;&lt; &quot; second big (y): &quot; &lt;&lt; relative_amplitude_y &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  219</span><span class="comment">        std::cout &lt;&lt; &quot;!DEBUG max_meaned_x: &quot; &lt;&lt; max_meaned_x &lt;&lt; &quot; max_meaned_y: &quot; &lt;&lt; max_meaned_y &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  220</span><span class="comment">    }</span></div>
+<div class="line"><span class="lineno">  221</span><span class="comment">    */</span></div>
+<div class="line"><span class="lineno">  222</span> </div>
+<div class="line"><span class="lineno">  223</span>    <span class="keywordflow">if</span> (!(std::isnan(relative_amplitude_x) || std::isnan(relative_amplitude_y)))</div>
+<div class="line"><span class="lineno">  224</span>    {</div>
+<div class="line"><span class="lineno">  225</span>        <a class="code hl_variable" href="class_vibrating_point.html#a9989c50fa30cecf13079ae0c595ef87c">relative_amplitude_</a>.x = relative_amplitude_x;</div>
+<div class="line"><span class="lineno">  226</span>        <a class="code hl_variable" href="class_vibrating_point.html#a9989c50fa30cecf13079ae0c595ef87c">relative_amplitude_</a>.y = relative_amplitude_y;</div>
+<div class="line"><span class="lineno">  227</span>        <a class="code hl_variable" href="class_vibrating_point.html#a5ae50ac111f6681489eded6da7ef66ea">current_amplitude_</a>.x = max_meaned_x - meaned_mean_x;</div>
+<div class="line"><span class="lineno">  228</span>        <a class="code hl_variable" href="class_vibrating_point.html#a5ae50ac111f6681489eded6da7ef66ea">current_amplitude_</a>.y = max_meaned_y - meaned_mean_y;</div>
+<div class="line"><span class="lineno">  229</span>    }</div>
+<div class="line"><span class="lineno">  230</span>}</div>
+<div class="ttc" id="aclass_vibrating_point_html_a5ae50ac111f6681489eded6da7ef66ea"><div class="ttname"><a href="class_vibrating_point.html#a5ae50ac111f6681489eded6da7ef66ea">VibratingPoint::current_amplitude_</a></div><div class="ttdeci">Point3f current_amplitude_</div><div class="ttdoc">Фактические амплитуды вибрации по x, y. Выражаюытся в пикселях</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00131">vibrating_point.h:131</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a5df5aa7a4d955de091640290f849961c"><div class="ttname"><a href="class_vibrating_point.html#a5df5aa7a4d955de091640290f849961c">VibratingPoint::y_coordinates_</a></div><div class="ttdeci">std::vector&lt; double &gt; y_coordinates_</div><div class="ttdoc">Контейнер для координат точки по оси Y.</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00143">vibrating_point.h:143</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a6653e27fe96e5fe6e7aa410fb3138c92"><div class="ttname"><a href="class_vibrating_point.html#a6653e27fe96e5fe6e7aa410fb3138c92">VibratingPoint::x_coordinates_</a></div><div class="ttdeci">std::vector&lt; double &gt; x_coordinates_</div><div class="ttdoc">Контейнер для координат точки по оси X.</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00139">vibrating_point.h:139</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a9989c50fa30cecf13079ae0c595ef87c"><div class="ttname"><a href="class_vibrating_point.html#a9989c50fa30cecf13079ae0c595ef87c">VibratingPoint::relative_amplitude_</a></div><div class="ttdeci">Point3f relative_amplitude_</div><div class="ttdoc">Относительные амплитуды вибрации по x, y. Выражается отношением амплитуды</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00127">vibrating_point.h:127</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_aa65df19b908306e2f4c725480594b2bb"><div class="ttname"><a href="class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb">VibratingPoint::vec_meaned_coordinates_of_point_</a></div><div class="ttdeci">std::vector&lt; cv::Point2f &gt; vec_meaned_coordinates_of_point_</div><div class="ttdoc">Контейнер для координат точки относительно нулевого уровня</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00147">vibrating_point.h:147</a></div></div>
+<div class="ttc" id="agroup___helper_functions_html_gacc82d70b750eb60ad49c7a36e5c7f0ca"><div class="ttname"><a href="group___helper_functions.html#gacc82d70b750eb60ad49c7a36e5c7f0ca">HelperFunctions::FindGlobalMaxIdx</a></div><div class="ttdeci">int FindGlobalMaxIdx(std::vector&lt; T &gt; src)</div><div class="ttdoc">Возвращает индекс самого большого элемента вектора src.</div><div class="ttdef"><b>Definition:</b> <a href="helper_8h_source.html#l00127">helper.h:127</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -460,161 +458,163 @@ $(function() {
 <p>Выполняет БПФ для нахождения частоты вибрации. </p>
 <p >После выполнения записывает в контейнер frequencies_ найденные пики, а также добавляет в контейнер x_ найденный спектр частот вибрации (для отображения гистограммы) </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00008">8</a></p>
-<div class="fragment"><div class="line"><span class="lineno">    9</span>{</div>
-<div class="line"><span class="lineno">   10</span>    <span class="keywordtype">bool</span> absolute_peak = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   11</span> </div>
-<div class="line"><span class="lineno">   12</span>    std::vector&lt;Point2f&gt; fft_result;</div>
-<div class="line"><span class="lineno">   13</span>    std::vector&lt;Point2f&gt; p2;</div>
-<div class="line"><span class="lineno">   14</span>    std::vector&lt;Point2f&gt; p1;</div>
-<div class="line"><span class="lineno">   15</span>    std::vector&lt;double&gt; frequencies;</div>
-<div class="line"><span class="lineno">   16</span>    std::vector&lt;int&gt; indexes_of_peak_frequencies;</div>
-<div class="line"><span class="lineno">   17</span>    std::vector&lt;float&gt; magnitudes;</div>
-<div class="line"><span class="lineno">   18</span> </div>
-<div class="line"><span class="lineno">   19</span>    std::vector&lt;double&gt; peak_frequencies;</div>
-<div class="line"><span class="lineno">   20</span> </div>
-<div class="line"><span class="lineno">   21</span>    <span class="keywordtype">int</span> samples_amount = <a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>.size();</div>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00003">3</a></p>
+<div class="fragment"><div class="line"><span class="lineno">    4</span>{</div>
+<div class="line"><span class="lineno">    5</span>    <span class="keywordtype">bool</span> absolute_peak = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">    6</span> </div>
+<div class="line"><span class="lineno">    7</span>    std::vector&lt;Point2f&gt; fft_result;</div>
+<div class="line"><span class="lineno">    8</span>    std::vector&lt;Point2f&gt; p2;</div>
+<div class="line"><span class="lineno">    9</span>    std::vector&lt;Point2f&gt; p1;</div>
+<div class="line"><span class="lineno">   10</span>    std::vector&lt;double&gt; frequencies;</div>
+<div class="line"><span class="lineno">   11</span>    std::vector&lt;int&gt; indexes_of_peak_frequencies;</div>
+<div class="line"><span class="lineno">   12</span>    std::vector&lt;float&gt; magnitudes;</div>
+<div class="line"><span class="lineno">   13</span> </div>
+<div class="line"><span class="lineno">   14</span>    std::vector&lt;double&gt; peak_frequencies;</div>
+<div class="line"><span class="lineno">   15</span> </div>
+<div class="line"><span class="lineno">   16</span>    <span class="keywordtype">int</span> samples_amount = <a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>.size();</div>
+<div class="line"><span class="lineno">   17</span> </div>
+<div class="line"><span class="lineno">   18</span>    Scalar mean_coordinates_of_point_ = mean(<a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>);</div>
+<div class="line"><span class="lineno">   19</span>    <span class="comment">//std::cout &lt;&lt; mean_coordinates_of_point_ &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">   20</span>    <span class="keywordtype">double</span> meaned_x = mean_coordinates_of_point_.val[0];</div>
+<div class="line"><span class="lineno">   21</span>    <span class="keywordtype">double</span> meaned_y = mean_coordinates_of_point_.val[1];</div>
 <div class="line"><span class="lineno">   22</span> </div>
-<div class="line"><span class="lineno">   23</span>    Scalar mean_coordinates_of_point_ = mean(<a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>);</div>
-<div class="line"><span class="lineno">   24</span>    <span class="comment">//std::cout &lt;&lt; mean_coordinates_of_point_ &lt;&lt; std::endl;</span></div>
-<div class="line"><span class="lineno">   25</span>    <span class="keywordtype">double</span> meaned_x = mean_coordinates_of_point_.val[0];</div>
-<div class="line"><span class="lineno">   26</span>    <span class="keywordtype">double</span> meaned_y = mean_coordinates_of_point_.val[1];</div>
-<div class="line"><span class="lineno">   27</span> </div>
-<div class="line"><span class="lineno">   28</span>    <a class="code hl_variable" href="class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb">vec_meaned_coordinates_of_point_</a>.clear();</div>
-<div class="line"><span class="lineno">   29</span>    <a class="code hl_variable" href="class_vibrating_point.html#a6653e27fe96e5fe6e7aa410fb3138c92">x_coordinates_</a>.clear();</div>
-<div class="line"><span class="lineno">   30</span>    <a class="code hl_variable" href="class_vibrating_point.html#a5df5aa7a4d955de091640290f849961c">y_coordinates_</a>.clear();</div>
-<div class="line"><span class="lineno">   31</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>.size(); i++)</div>
-<div class="line"><span class="lineno">   32</span>    {</div>
-<div class="line"><span class="lineno">   33</span>        <a class="code hl_variable" href="class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb">vec_meaned_coordinates_of_point_</a>.push_back(Point2f(<a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>[i].x - meaned_x, <a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>[i].y - meaned_y));</div>
-<div class="line"><span class="lineno">   34</span>        <a class="code hl_variable" href="class_vibrating_point.html#a6653e27fe96e5fe6e7aa410fb3138c92">x_coordinates_</a>.push_back(<a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>[i].x - meaned_x);</div>
-<div class="line"><span class="lineno">   35</span>        <a class="code hl_variable" href="class_vibrating_point.html#a5df5aa7a4d955de091640290f849961c">y_coordinates_</a>.push_back(<a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>[i].y - meaned_y);</div>
-<div class="line"><span class="lineno">   36</span>    }</div>
-<div class="line"><span class="lineno">   37</span> </div>
-<div class="line"><span class="lineno">   38</span>    dft(<a class="code hl_variable" href="class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb">vec_meaned_coordinates_of_point_</a>, fft_result);</div>
-<div class="line"><span class="lineno">   39</span> </div>
-<div class="line"><span class="lineno">   40</span>    <span class="comment">// computing two-sided spectrum P2</span></div>
-<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; fft_result.size(); i++)</div>
-<div class="line"><span class="lineno">   42</span>    {</div>
-<div class="line"><span class="lineno">   43</span>        Point2f tmp;</div>
-<div class="line"><span class="lineno">   44</span>        tmp.x = abs(fft_result[i].x / samples_amount);</div>
-<div class="line"><span class="lineno">   45</span>        tmp.y = abs(fft_result[i].y / samples_amount);</div>
-<div class="line"><span class="lineno">   46</span>        p2.push_back(tmp);</div>
-<div class="line"><span class="lineno">   47</span>    }</div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>    <span class="comment">// computing single-sided spectrum P1 based on P2 and the even-valued signal length (the same as size_of_vecs_)</span></div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; p2.size(); i++)</div>
-<div class="line"><span class="lineno">   51</span>    {</div>
-<div class="line"><span class="lineno">   52</span>        <span class="keywordtype">size_t</span> idx = 0;</div>
-<div class="line"><span class="lineno">   53</span>        idx = (int)(((<span class="keywordtype">double</span>)(i)) / 2.0 + 1.0);</div>
-<div class="line"><span class="lineno">   54</span>        p1.push_back(p2[idx]);</div>
-<div class="line"><span class="lineno">   55</span>    }</div>
-<div class="line"><span class="lineno">   56</span> </div>
-<div class="line"><span class="lineno">   57</span>    <span class="comment">// possible frequencies</span></div>
-<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; samples_amount; i++)</div>
-<div class="line"><span class="lineno">   59</span>    {</div>
-<div class="line"><span class="lineno">   60</span>        <span class="keywordtype">float</span> tmp = <a class="code hl_variable" href="class_vibrating_point.html#a67ffaaa1b714226a78d6d5cc31c195c9">sampling_rate_</a> * ((double)(i) / 2) / samples_amount;</div>
-<div class="line"><span class="lineno">   61</span>        frequencies.push_back(tmp);</div>
-<div class="line"><span class="lineno">   62</span>    }</div>
-<div class="line"><span class="lineno">   63</span> </div>
-<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; p1.size(); i++)</div>
-<div class="line"><span class="lineno">   65</span>    {</div>
-<div class="line"><span class="lineno">   66</span>        <span class="keywordtype">float</span> current_magnitude = sqrt(p1[i].x * p1[i].x + p1[i].y * p1[i].y);</div>
-<div class="line"><span class="lineno">   67</span>        magnitudes.push_back(current_magnitude);</div>
-<div class="line"><span class="lineno">   68</span>    }</div>
-<div class="line"><span class="lineno">   69</span> </div>
-<div class="line"><span class="lineno">   70</span>    <a class="code hl_function" href="group___helper_functions.html#ga09104c3d04cd6c0eb8bcc39bea203eb6">HelperFunctions::DeadzoneFilter</a>(frequencies);</div>
-<div class="line"><span class="lineno">   71</span>    <a class="code hl_function" href="group___helper_functions.html#ga09104c3d04cd6c0eb8bcc39bea203eb6">HelperFunctions::DeadzoneFilter</a>(magnitudes);</div>
-<div class="line"><span class="lineno">   72</span> </div>
-<div class="line"><span class="lineno">   74</span> </div>
-<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>.size() &gt; 5)</div>
-<div class="line"><span class="lineno">   76</span>    {</div>
-<div class="line"><span class="lineno">   77</span>        std::fstream file;</div>
-<div class="line"><span class="lineno">   78</span>        file.open(<span class="stringliteral">&quot;C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/docs/magnitudes.txt&quot;</span>, <span class="charliteral">&#39;w&#39;</span>);</div>
-<div class="line"><span class="lineno">   79</span> </div>
-<div class="line"><span class="lineno">   80</span>        <span class="comment">/*for (int i = 0; i &lt; magnitudes.size(); i++)</span></div>
-<div class="line"><span class="lineno">   81</span><span class="comment">        {</span></div>
-<div class="line"><span class="lineno">   82</span><span class="comment">            std::string tmp = std::to_string(frequencies[i]) + &quot; &quot; + std::to_string(magnitudes[i]) + &quot; &quot; + std::to_string(p1[i].x) + &quot; &quot; + std::to_string(p1[i].y);</span></div>
-<div class="line"><span class="lineno">   83</span><span class="comment">            file &lt;&lt; tmp &lt;&lt; std::endl;</span></div>
-<div class="line"><span class="lineno">   84</span><span class="comment">        }*/</span></div>
-<div class="line"><span class="lineno">   85</span> </div>
-<div class="line"><span class="lineno">   86</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>.size(); i++)</div>
-<div class="line"><span class="lineno">   87</span>        {</div>
-<div class="line"><span class="lineno">   88</span>            std::string tmp = std::to_string(<a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>[i].x) + <span class="stringliteral">&quot; &quot;</span> + std::to_string(<a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>[i].y) + <span class="stringliteral">&quot; &quot;</span> + std::to_string(<a class="code hl_variable" href="class_vibrating_point.html#ad2aa8fe4bc94a957f75aa00fb9ce9f26">point_time_coordinates_</a>[i]);</div>
-<div class="line"><span class="lineno">   89</span>            file &lt;&lt; tmp &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   90</span>        }</div>
+<div class="line"><span class="lineno">   23</span>    <a class="code hl_variable" href="class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb">vec_meaned_coordinates_of_point_</a>.clear();</div>
+<div class="line"><span class="lineno">   24</span>    <a class="code hl_variable" href="class_vibrating_point.html#a6653e27fe96e5fe6e7aa410fb3138c92">x_coordinates_</a>.clear();</div>
+<div class="line"><span class="lineno">   25</span>    <a class="code hl_variable" href="class_vibrating_point.html#a5df5aa7a4d955de091640290f849961c">y_coordinates_</a>.clear();</div>
+<div class="line"><span class="lineno">   26</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>.size(); i++)</div>
+<div class="line"><span class="lineno">   27</span>    {</div>
+<div class="line"><span class="lineno">   28</span>        <a class="code hl_variable" href="class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb">vec_meaned_coordinates_of_point_</a>.push_back(Point2f(<a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>[i].x - meaned_x, <a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>[i].y - meaned_y));</div>
+<div class="line"><span class="lineno">   29</span>        <a class="code hl_variable" href="class_vibrating_point.html#a6653e27fe96e5fe6e7aa410fb3138c92">x_coordinates_</a>.push_back(<a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>[i].x - meaned_x);</div>
+<div class="line"><span class="lineno">   30</span>        <a class="code hl_variable" href="class_vibrating_point.html#a5df5aa7a4d955de091640290f849961c">y_coordinates_</a>.push_back(<a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>[i].y - meaned_y);</div>
+<div class="line"><span class="lineno">   31</span>    }</div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>    dft(<a class="code hl_variable" href="class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb">vec_meaned_coordinates_of_point_</a>, fft_result);</div>
+<div class="line"><span class="lineno">   34</span> </div>
+<div class="line"><span class="lineno">   35</span>    <span class="comment">// computing two-sided spectrum P2</span></div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; fft_result.size(); i++)</div>
+<div class="line"><span class="lineno">   37</span>    {</div>
+<div class="line"><span class="lineno">   38</span>        Point2f tmp;</div>
+<div class="line"><span class="lineno">   39</span>        tmp.x = abs(fft_result[i].x / samples_amount);</div>
+<div class="line"><span class="lineno">   40</span>        tmp.y = abs(fft_result[i].y / samples_amount);</div>
+<div class="line"><span class="lineno">   41</span>        p2.push_back(tmp);</div>
+<div class="line"><span class="lineno">   42</span>    }</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>    <span class="comment">// computing single-sided spectrum P1 based on P2 and the even-valued signal length (the same as size_of_vecs_)</span></div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; p2.size(); i++)</div>
+<div class="line"><span class="lineno">   46</span>    {</div>
+<div class="line"><span class="lineno">   47</span>        <span class="keywordtype">size_t</span> idx = 0;</div>
+<div class="line"><span class="lineno">   48</span>        idx = (int)(((<span class="keywordtype">double</span>)(i)) / 2.0 + 1.0);</div>
+<div class="line"><span class="lineno">   49</span>        p1.push_back(p2[idx]);</div>
+<div class="line"><span class="lineno">   50</span>    }</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>    <span class="comment">// possible frequencies</span></div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; samples_amount; i++)</div>
+<div class="line"><span class="lineno">   54</span>    {</div>
+<div class="line"><span class="lineno">   55</span>        <span class="keywordtype">float</span> tmp = <a class="code hl_variable" href="class_vibrating_point.html#a67ffaaa1b714226a78d6d5cc31c195c9">sampling_rate_</a> * ((double)(i) / 2) / samples_amount;</div>
+<div class="line"><span class="lineno">   56</span>        frequencies.push_back(tmp);</div>
+<div class="line"><span class="lineno">   57</span>    }</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; p1.size(); i++)</div>
+<div class="line"><span class="lineno">   60</span>    {</div>
+<div class="line"><span class="lineno">   61</span>        <span class="keywordtype">float</span> current_magnitude = sqrt(p1[i].x * p1[i].x + p1[i].y * p1[i].y);</div>
+<div class="line"><span class="lineno">   62</span>        magnitudes.push_back(current_magnitude);</div>
+<div class="line"><span class="lineno">   63</span>    }</div>
+<div class="line"><span class="lineno">   64</span> </div>
+<div class="line"><span class="lineno">   65</span>    <a class="code hl_function" href="group___helper_functions.html#ga09104c3d04cd6c0eb8bcc39bea203eb6">HelperFunctions::DeadzoneFilter</a>(frequencies);</div>
+<div class="line"><span class="lineno">   66</span>    <a class="code hl_function" href="group___helper_functions.html#ga09104c3d04cd6c0eb8bcc39bea203eb6">HelperFunctions::DeadzoneFilter</a>(magnitudes);</div>
+<div class="line"><span class="lineno">   67</span> </div>
+<div class="line"><span class="lineno">   68</span>    <span class="comment">/*</span></div>
+<div class="line"><span class="lineno">   69</span><span class="comment">    * FOR DEBUG</span></div>
+<div class="line"><span class="lineno">   70</span><span class="comment">    * </span></div>
+<div class="line"><span class="lineno">   71</span><span class="comment">    if (point_coordinates_.size() &gt; 5)</span></div>
+<div class="line"><span class="lineno">   72</span><span class="comment">    {</span></div>
+<div class="line"><span class="lineno">   73</span><span class="comment">        std::fstream file;</span></div>
+<div class="line"><span class="lineno">   74</span><span class="comment">        file.open(&quot;C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/docs/magnitudes.txt&quot;, &#39;w&#39;);</span></div>
+<div class="line"><span class="lineno">   75</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">   76</span><span class="comment">        //for (int i = 0; i &lt; magnitudes.size(); i++)</span></div>
+<div class="line"><span class="lineno">   77</span><span class="comment">        //{</span></div>
+<div class="line"><span class="lineno">   78</span><span class="comment">        //  std::string tmp = std::to_string(frequencies[i]) + &quot; &quot; + std::to_string(magnitudes[i]) + &quot; &quot; + std::to_string(p1[i].x) + &quot; &quot; + std::to_string(p1[i].y);</span></div>
+<div class="line"><span class="lineno">   79</span><span class="comment">        //  file &lt;&lt; tmp &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">   80</span><span class="comment">        //}</span></div>
+<div class="line"><span class="lineno">   81</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">   82</span><span class="comment">        for (int i = 0; i &lt; point_coordinates_.size(); i++)</span></div>
+<div class="line"><span class="lineno">   83</span><span class="comment">        {</span></div>
+<div class="line"><span class="lineno">   84</span><span class="comment">            std::string tmp = std::to_string(point_coordinates_[i].x) + &quot; &quot; + std::to_string(point_coordinates_[i].y) + &quot; &quot; + std::to_string(point_time_coordinates_[i]);</span></div>
+<div class="line"><span class="lineno">   85</span><span class="comment">            file &lt;&lt; tmp &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">   86</span><span class="comment">        }</span></div>
+<div class="line"><span class="lineno">   87</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">   88</span><span class="comment">        file.close();</span></div>
+<div class="line"><span class="lineno">   89</span><span class="comment">    }</span></div>
+<div class="line"><span class="lineno">   90</span><span class="comment">    */</span></div>
 <div class="line"><span class="lineno">   91</span> </div>
-<div class="line"><span class="lineno">   92</span>        file.close();</div>
-<div class="line"><span class="lineno">   93</span>    }</div>
+<div class="line"><span class="lineno">   92</span>    <a class="code hl_variable" href="class_vibrating_point.html#a5ea36bdad5aeac784ecfa21f3ca98517">x_</a> = frequencies;</div>
+<div class="line"><span class="lineno">   93</span>    <a class="code hl_variable" href="class_vibrating_point.html#aa22ce2e3bdd0b4614b1c0ad0adf256e5">y_</a> = magnitudes;</div>
 <div class="line"><span class="lineno">   94</span> </div>
-<div class="line"><span class="lineno">   96</span> </div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_variable" href="class_vibrating_point.html#a5ea36bdad5aeac784ecfa21f3ca98517">x_</a> = frequencies;</div>
-<div class="line"><span class="lineno">   98</span>    <a class="code hl_variable" href="class_vibrating_point.html#aa22ce2e3bdd0b4614b1c0ad0adf256e5">y_</a> = magnitudes;</div>
-<div class="line"><span class="lineno">   99</span> </div>
-<div class="line"><span class="lineno">  100</span>    <span class="comment">// Вызов отрисовщика гистограммы</span></div>
-<div class="line"><span class="lineno">  101</span>    <a class="code hl_function" href="class_vibrating_point.html#a2bd28bb86f01ccae6fa193914863045a">DrawHistogram</a>();</div>
-<div class="line"><span class="lineno">  102</span> </div>
-<div class="line"><span class="lineno">  103</span>    <span class="keywordtype">bool</span> candidate_for_being_full_zero = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  104</span>    <span class="keywordtype">int</span> zero_flag = 0;</div>
-<div class="line"><span class="lineno">  105</span> </div>
-<div class="line"><span class="lineno">  106</span>    <span class="keywordflow">if</span> (!absolute_peak)</div>
-<div class="line"><span class="lineno">  107</span>    {</div>
-<div class="line"><span class="lineno">  108</span>        <span class="comment">// searching peaks in output vector of magnitudes</span></div>
-<div class="line"><span class="lineno">  109</span>        </div>
-<div class="line"><span class="lineno">  110</span>        <a class="code hl_function" href="group___peak_finder.html#ga3abfea54e33401437ebbee36ab9ee1f2">PeakFinder::findPeaks</a>(magnitudes, indexes_of_peak_frequencies, <span class="keyword">false</span>, 1);</div>
-<div class="line"><span class="lineno">  111</span> </div>
-<div class="line"><span class="lineno">  112</span>        <span class="keywordtype">int</span> maxIdx = 0;</div>
-<div class="line"><span class="lineno">  113</span> </div>
-<div class="line"><span class="lineno">  114</span>        zero_flag = indexes_of_peak_frequencies.size();</div>
-<div class="line"><span class="lineno">  115</span> </div>
-<div class="line"><span class="lineno">  116</span>        <span class="keywordtype">double</span> mag_sum = 0;</div>
+<div class="line"><span class="lineno">   95</span>    <span class="comment">// Вызов отрисовщика гистограммы</span></div>
+<div class="line"><span class="lineno">   96</span>    <a class="code hl_function" href="class_vibrating_point.html#a2bd28bb86f01ccae6fa193914863045a">DrawHistogram</a>();</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordtype">bool</span> candidate_for_being_full_zero = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   99</span>    <span class="keywordtype">int</span> zero_flag = 0;</div>
+<div class="line"><span class="lineno">  100</span> </div>
+<div class="line"><span class="lineno">  101</span>    <span class="keywordflow">if</span> (!absolute_peak)</div>
+<div class="line"><span class="lineno">  102</span>    {</div>
+<div class="line"><span class="lineno">  103</span>        <span class="comment">// searching peaks in output vector of magnitudes</span></div>
+<div class="line"><span class="lineno">  104</span>        </div>
+<div class="line"><span class="lineno">  105</span>        <a class="code hl_function" href="group___peak_finder.html#ga3abfea54e33401437ebbee36ab9ee1f2">PeakFinder::findPeaks</a>(magnitudes, indexes_of_peak_frequencies, <span class="keyword">false</span>, 1);</div>
+<div class="line"><span class="lineno">  106</span> </div>
+<div class="line"><span class="lineno">  107</span>        <span class="keywordtype">int</span> maxIdx = 0;</div>
+<div class="line"><span class="lineno">  108</span> </div>
+<div class="line"><span class="lineno">  109</span>        zero_flag = indexes_of_peak_frequencies.size();</div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>        <span class="keywordtype">double</span> mag_sum = 0;</div>
+<div class="line"><span class="lineno">  112</span> </div>
+<div class="line"><span class="lineno">  113</span>        <span class="comment">// filling in vector of peak_frequencies with the just found peak frequencies </span></div>
+<div class="line"><span class="lineno">  114</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; indexes_of_peak_frequencies.size(); i++)</div>
+<div class="line"><span class="lineno">  115</span>        {</div>
+<div class="line"><span class="lineno">  116</span>            peak_frequencies.push_back(frequencies[indexes_of_peak_frequencies[i]]);</div>
 <div class="line"><span class="lineno">  117</span> </div>
-<div class="line"><span class="lineno">  118</span>        <span class="comment">// filling in vector of peak_frequencies with the just found peak frequencies </span></div>
-<div class="line"><span class="lineno">  119</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; indexes_of_peak_frequencies.size(); i++)</div>
-<div class="line"><span class="lineno">  120</span>        {</div>
-<div class="line"><span class="lineno">  121</span>            peak_frequencies.push_back(frequencies[indexes_of_peak_frequencies[i]]);</div>
-<div class="line"><span class="lineno">  122</span> </div>
-<div class="line"><span class="lineno">  123</span>            <span class="comment">//std::cout &lt;&lt; &quot;mag: &quot; &lt;&lt; magnitudes[indexes_of_peak_frequencies[i]] &lt;&lt; std::endl;</span></div>
-<div class="line"><span class="lineno">  124</span>            mag_sum += magnitudes[indexes_of_peak_frequencies[i]];</div>
-<div class="line"><span class="lineno">  125</span>            <span class="keywordflow">if</span> ((magnitudes[indexes_of_peak_frequencies[i]]) &lt; 0.01f)</div>
-<div class="line"><span class="lineno">  126</span>                zero_flag--;</div>
-<div class="line"><span class="lineno">  127</span>        }</div>
-<div class="line"><span class="lineno">  128</span> </div>
-<div class="line"><span class="lineno">  129</span>        <a class="code hl_variable" href="class_vibrating_point.html#aa0b94560fbac6ae1c5dbae9f4931d28c">main_frequency_</a> = frequencies[<a class="code hl_function" href="group___helper_functions.html#gacc82d70b750eb60ad49c7a36e5c7f0ca">HelperFunctions::FindGlobalMaxIdx</a>(magnitudes)];</div>
-<div class="line"><span class="lineno">  130</span>        <span class="keywordtype">float</span> max_diff = <a class="code hl_function" href="group___helper_functions.html#gae2aaeb3c9edcae730b5c4fdb6655ef71">HelperFunctions::CalculateMaxDifferenceInVector</a>(magnitudes);</div>
-<div class="line"><span class="lineno">  131</span>        <a class="code hl_variable" href="class_vibrating_point.html#a69824b3fe81e876f3018844d236b72c5">mag_max_differences_</a>.push_back(max_diff);</div>
-<div class="line"><span class="lineno">  132</span>        <span class="keywordtype">float</span> mean_diff_of_max_diffs = 0;</div>
-<div class="line"><span class="lineno">  133</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_vibrating_point.html#a69824b3fe81e876f3018844d236b72c5">mag_max_differences_</a>.size() &gt; 1)</div>
-<div class="line"><span class="lineno">  134</span>            mean_diff_of_max_diffs = <a class="code hl_function" href="group___helper_functions.html#gae752077bcc98a1b2dcd5a1371d55bca5">HelperFunctions::CalculateMeanDifferenceInVector</a>(<a class="code hl_variable" href="class_vibrating_point.html#a69824b3fe81e876f3018844d236b72c5">mag_max_differences_</a>);</div>
-<div class="line"><span class="lineno">  135</span> </div>
-<div class="line"><span class="lineno">  136</span>        <span class="keywordflow">if</span> (mean_diff_of_max_diffs &lt; <a class="code hl_variable" href="class_vibrating_point.html#ab2539b861e02f361eb772c71e06c9af3">sensivity_</a> || std::isnan(mean_diff_of_max_diffs))</div>
-<div class="line"><span class="lineno">  137</span>            <a class="code hl_variable" href="class_vibrating_point.html#a6ed26ed40b33b1486cb4c304981d4444">confidence_level_</a> -= 0.01;</div>
-<div class="line"><span class="lineno">  138</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  139</span>            <a class="code hl_variable" href="class_vibrating_point.html#a6ed26ed40b33b1486cb4c304981d4444">confidence_level_</a> += 0.01;</div>
-<div class="line"><span class="lineno">  140</span>        </div>
-<div class="line"><span class="lineno">  141</span>        <span class="keywordflow">if</span> (zero_flag == 0 &amp;&amp; indexes_of_peak_frequencies.size() != 0)</div>
+<div class="line"><span class="lineno">  118</span>            <span class="comment">//std::cout &lt;&lt; &quot;mag: &quot; &lt;&lt; magnitudes[indexes_of_peak_frequencies[i]] &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  119</span>            mag_sum += magnitudes[indexes_of_peak_frequencies[i]];</div>
+<div class="line"><span class="lineno">  120</span>            <span class="keywordflow">if</span> ((magnitudes[indexes_of_peak_frequencies[i]]) &lt; 0.01f)</div>
+<div class="line"><span class="lineno">  121</span>                zero_flag--;</div>
+<div class="line"><span class="lineno">  122</span>        }</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>        <a class="code hl_variable" href="class_vibrating_point.html#aa0b94560fbac6ae1c5dbae9f4931d28c">main_frequency_</a> = frequencies[<a class="code hl_function" href="group___helper_functions.html#gacc82d70b750eb60ad49c7a36e5c7f0ca">HelperFunctions::FindGlobalMaxIdx</a>(magnitudes)];</div>
+<div class="line"><span class="lineno">  125</span>        <span class="keywordtype">float</span> max_diff = <a class="code hl_function" href="group___helper_functions.html#gae2aaeb3c9edcae730b5c4fdb6655ef71">HelperFunctions::CalculateMaxDifferenceInVector</a>(magnitudes);</div>
+<div class="line"><span class="lineno">  126</span>        <a class="code hl_variable" href="class_vibrating_point.html#a69824b3fe81e876f3018844d236b72c5">mag_max_differences_</a>.push_back(max_diff);</div>
+<div class="line"><span class="lineno">  127</span>        <span class="keywordtype">float</span> mean_diff_of_max_diffs = 0;</div>
+<div class="line"><span class="lineno">  128</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_vibrating_point.html#a69824b3fe81e876f3018844d236b72c5">mag_max_differences_</a>.size() &gt; 1)</div>
+<div class="line"><span class="lineno">  129</span>            mean_diff_of_max_diffs = <a class="code hl_function" href="group___helper_functions.html#gae752077bcc98a1b2dcd5a1371d55bca5">HelperFunctions::CalculateMeanDifferenceInVector</a>(<a class="code hl_variable" href="class_vibrating_point.html#a69824b3fe81e876f3018844d236b72c5">mag_max_differences_</a>);</div>
+<div class="line"><span class="lineno">  130</span> </div>
+<div class="line"><span class="lineno">  131</span>        <span class="keywordflow">if</span> (mean_diff_of_max_diffs &lt; <a class="code hl_variable" href="class_vibrating_point.html#ab2539b861e02f361eb772c71e06c9af3">sensivity_</a> || std::isnan(mean_diff_of_max_diffs))</div>
+<div class="line"><span class="lineno">  132</span>            <a class="code hl_variable" href="class_vibrating_point.html#a6ed26ed40b33b1486cb4c304981d4444">confidence_level_</a> -= 0.01;</div>
+<div class="line"><span class="lineno">  133</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  134</span>            <a class="code hl_variable" href="class_vibrating_point.html#a6ed26ed40b33b1486cb4c304981d4444">confidence_level_</a> += 0.01;</div>
+<div class="line"><span class="lineno">  135</span>        </div>
+<div class="line"><span class="lineno">  136</span>        <span class="keywordflow">if</span> (zero_flag == 0 &amp;&amp; indexes_of_peak_frequencies.size() != 0)</div>
+<div class="line"><span class="lineno">  137</span>        {</div>
+<div class="line"><span class="lineno">  138</span>            <a class="code hl_variable" href="class_vibrating_point.html#adfd1433886cf1fb2b3b07062b69614b1">frequencies_</a>.clear();</div>
+<div class="line"><span class="lineno">  139</span>            <a class="code hl_variable" href="class_vibrating_point.html#adfd1433886cf1fb2b3b07062b69614b1">frequencies_</a>.push_back(0.0);</div>
+<div class="line"><span class="lineno">  140</span>        }</div>
+<div class="line"><span class="lineno">  141</span>        <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  142</span>        {</div>
-<div class="line"><span class="lineno">  143</span>            <a class="code hl_variable" href="class_vibrating_point.html#adfd1433886cf1fb2b3b07062b69614b1">frequencies_</a>.clear();</div>
-<div class="line"><span class="lineno">  144</span>            <a class="code hl_variable" href="class_vibrating_point.html#adfd1433886cf1fb2b3b07062b69614b1">frequencies_</a>.push_back(0.0);</div>
-<div class="line"><span class="lineno">  145</span>        }</div>
-<div class="line"><span class="lineno">  146</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  147</span>        {</div>
-<div class="line"><span class="lineno">  148</span>            <a class="code hl_variable" href="class_vibrating_point.html#adfd1433886cf1fb2b3b07062b69614b1">frequencies_</a> = peak_frequencies;</div>
-<div class="line"><span class="lineno">  149</span>        }</div>
-<div class="line"><span class="lineno">  150</span>    }</div>
-<div class="line"><span class="lineno">  151</span> </div>
-<div class="line"><span class="lineno">  152</span>}</div>
+<div class="line"><span class="lineno">  143</span>            <a class="code hl_variable" href="class_vibrating_point.html#adfd1433886cf1fb2b3b07062b69614b1">frequencies_</a> = peak_frequencies;</div>
+<div class="line"><span class="lineno">  144</span>        }</div>
+<div class="line"><span class="lineno">  145</span>    }</div>
+<div class="line"><span class="lineno">  146</span> </div>
+<div class="line"><span class="lineno">  147</span>}</div>
 <div class="ttc" id="aclass_vibrating_point_html_a2bd28bb86f01ccae6fa193914863045a"><div class="ttname"><a href="class_vibrating_point.html#a2bd28bb86f01ccae6fa193914863045a">VibratingPoint::DrawHistogram</a></div><div class="ttdeci">virtual void DrawHistogram()=0</div><div class="ttdoc">Отрисовывает гистограмму спектра частот колебаний точки (полученную после БПФ в методе ExecuteFFT())</div></div>
-<div class="ttc" id="aclass_vibrating_point_html_a5ea36bdad5aeac784ecfa21f3ca98517"><div class="ttname"><a href="class_vibrating_point.html#a5ea36bdad5aeac784ecfa21f3ca98517">VibratingPoint::x_</a></div><div class="ttdeci">std::vector&lt; double &gt; x_</div><div class="ttdoc">Контейнер для хранения координат гистограммы по оси X (фактически - найденный спектр частот вибрации ...</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00177">vibrating_point.h:177</a></div></div>
-<div class="ttc" id="aclass_vibrating_point_html_a67ffaaa1b714226a78d6d5cc31c195c9"><div class="ttname"><a href="class_vibrating_point.html#a67ffaaa1b714226a78d6d5cc31c195c9">VibratingPoint::sampling_rate_</a></div><div class="ttdeci">double sampling_rate_</div><div class="ttdoc">Частота сэмплирования (фактически - FPS исходного видео)</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00164">vibrating_point.h:164</a></div></div>
-<div class="ttc" id="aclass_vibrating_point_html_a69824b3fe81e876f3018844d236b72c5"><div class="ttname"><a href="class_vibrating_point.html#a69824b3fe81e876f3018844d236b72c5">VibratingPoint::mag_max_differences_</a></div><div class="ttdeci">std::vector&lt; float &gt; mag_max_differences_</div><div class="ttdoc">Максимальная разнциа в магнитудах в найденном спектре после БПФ</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00196">vibrating_point.h:196</a></div></div>
-<div class="ttc" id="aclass_vibrating_point_html_a6ed26ed40b33b1486cb4c304981d4444"><div class="ttname"><a href="class_vibrating_point.html#a6ed26ed40b33b1486cb4c304981d4444">VibratingPoint::confidence_level_</a></div><div class="ttdeci">double confidence_level_</div><div class="ttdoc">Рейтинг достоверности вибрации</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00189">vibrating_point.h:189</a></div></div>
-<div class="ttc" id="aclass_vibrating_point_html_aa0b94560fbac6ae1c5dbae9f4931d28c"><div class="ttname"><a href="class_vibrating_point.html#aa0b94560fbac6ae1c5dbae9f4931d28c">VibratingPoint::main_frequency_</a></div><div class="ttdeci">double main_frequency_</div><div class="ttdoc">Главная частота (основная)</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00156">vibrating_point.h:156</a></div></div>
-<div class="ttc" id="aclass_vibrating_point_html_aa22ce2e3bdd0b4614b1c0ad0adf256e5"><div class="ttname"><a href="class_vibrating_point.html#aa22ce2e3bdd0b4614b1c0ad0adf256e5">VibratingPoint::y_</a></div><div class="ttdeci">std::vector&lt; float &gt; y_</div><div class="ttdoc">Контейнер для хранения координат гистограммы по оси Y (фактически - найденные магнитуды точки после в...</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00181">vibrating_point.h:181</a></div></div>
-<div class="ttc" id="aclass_vibrating_point_html_ab2539b861e02f361eb772c71e06c9af3"><div class="ttname"><a href="class_vibrating_point.html#ab2539b861e02f361eb772c71e06c9af3">VibratingPoint::sensivity_</a></div><div class="ttdeci">double sensivity_</div><div class="ttdoc">Чувствительность определения вибрации</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00185">vibrating_point.h:185</a></div></div>
-<div class="ttc" id="aclass_vibrating_point_html_adfd1433886cf1fb2b3b07062b69614b1"><div class="ttname"><a href="class_vibrating_point.html#adfd1433886cf1fb2b3b07062b69614b1">VibratingPoint::frequencies_</a></div><div class="ttdeci">std::vector&lt; double &gt; frequencies_</div><div class="ttdoc">Контейнер для частот точки</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00152">vibrating_point.h:152</a></div></div>
-<div class="ttc" id="agroup___helper_functions_html_ga09104c3d04cd6c0eb8bcc39bea203eb6"><div class="ttname"><a href="group___helper_functions.html#ga09104c3d04cd6c0eb8bcc39bea203eb6">HelperFunctions::DeadzoneFilter</a></div><div class="ttdeci">void DeadzoneFilter(std::vector&lt; T &gt; &amp;input_vector)</div><div class="ttdoc">Частотный фильтр для нижней части диапазона</div><div class="ttdef"><b>Definition:</b> <a href="helper_8h_source.html#l00057">helper.h:57</a></div></div>
-<div class="ttc" id="agroup___helper_functions_html_gae2aaeb3c9edcae730b5c4fdb6655ef71"><div class="ttname"><a href="group___helper_functions.html#gae2aaeb3c9edcae730b5c4fdb6655ef71">HelperFunctions::CalculateMaxDifferenceInVector</a></div><div class="ttdeci">T CalculateMaxDifferenceInVector(std::vector&lt; T &gt; src)</div><div class="ttdoc">Вычисляет максимальное значение разности элементов массива</div><div class="ttdef"><b>Definition:</b> <a href="helper_8h_source.html#l00167">helper.h:167</a></div></div>
-<div class="ttc" id="agroup___helper_functions_html_gae752077bcc98a1b2dcd5a1371d55bca5"><div class="ttname"><a href="group___helper_functions.html#gae752077bcc98a1b2dcd5a1371d55bca5">HelperFunctions::CalculateMeanDifferenceInVector</a></div><div class="ttdeci">T CalculateMeanDifferenceInVector(std::vector&lt; T &gt; src)</div><div class="ttdoc">Вычисляет среднее значение разности элементов массива в виде ((a0 - a1) + (a1 - a2)) / 3.</div><div class="ttdef"><b>Definition:</b> <a href="helper_8h_source.html#l00092">helper.h:92</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a5ea36bdad5aeac784ecfa21f3ca98517"><div class="ttname"><a href="class_vibrating_point.html#a5ea36bdad5aeac784ecfa21f3ca98517">VibratingPoint::x_</a></div><div class="ttdeci">std::vector&lt; double &gt; x_</div><div class="ttdoc">Контейнер для хранения координат гистограммы по оси X (фактически - найденный спектр частот вибрации ...</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00176">vibrating_point.h:176</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a67ffaaa1b714226a78d6d5cc31c195c9"><div class="ttname"><a href="class_vibrating_point.html#a67ffaaa1b714226a78d6d5cc31c195c9">VibratingPoint::sampling_rate_</a></div><div class="ttdeci">double sampling_rate_</div><div class="ttdoc">Частота сэмплирования (фактически - FPS исходного видео)</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00163">vibrating_point.h:163</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a69824b3fe81e876f3018844d236b72c5"><div class="ttname"><a href="class_vibrating_point.html#a69824b3fe81e876f3018844d236b72c5">VibratingPoint::mag_max_differences_</a></div><div class="ttdeci">std::vector&lt; float &gt; mag_max_differences_</div><div class="ttdoc">Максимальная разнциа в магнитудах в найденном спектре после БПФ</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00195">vibrating_point.h:195</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a6ed26ed40b33b1486cb4c304981d4444"><div class="ttname"><a href="class_vibrating_point.html#a6ed26ed40b33b1486cb4c304981d4444">VibratingPoint::confidence_level_</a></div><div class="ttdeci">double confidence_level_</div><div class="ttdoc">Рейтинг достоверности вибрации</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00188">vibrating_point.h:188</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_aa0b94560fbac6ae1c5dbae9f4931d28c"><div class="ttname"><a href="class_vibrating_point.html#aa0b94560fbac6ae1c5dbae9f4931d28c">VibratingPoint::main_frequency_</a></div><div class="ttdeci">double main_frequency_</div><div class="ttdoc">Главная частота (основная)</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00155">vibrating_point.h:155</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_aa22ce2e3bdd0b4614b1c0ad0adf256e5"><div class="ttname"><a href="class_vibrating_point.html#aa22ce2e3bdd0b4614b1c0ad0adf256e5">VibratingPoint::y_</a></div><div class="ttdeci">std::vector&lt; float &gt; y_</div><div class="ttdoc">Контейнер для хранения координат гистограммы по оси Y (фактически - найденные магнитуды точки после в...</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00180">vibrating_point.h:180</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_ab2539b861e02f361eb772c71e06c9af3"><div class="ttname"><a href="class_vibrating_point.html#ab2539b861e02f361eb772c71e06c9af3">VibratingPoint::sensivity_</a></div><div class="ttdeci">double sensivity_</div><div class="ttdoc">Чувствительность определения вибрации</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00184">vibrating_point.h:184</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_adfd1433886cf1fb2b3b07062b69614b1"><div class="ttname"><a href="class_vibrating_point.html#adfd1433886cf1fb2b3b07062b69614b1">VibratingPoint::frequencies_</a></div><div class="ttdeci">std::vector&lt; double &gt; frequencies_</div><div class="ttdoc">Контейнер для частот точки</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00151">vibrating_point.h:151</a></div></div>
+<div class="ttc" id="agroup___helper_functions_html_ga09104c3d04cd6c0eb8bcc39bea203eb6"><div class="ttname"><a href="group___helper_functions.html#ga09104c3d04cd6c0eb8bcc39bea203eb6">HelperFunctions::DeadzoneFilter</a></div><div class="ttdeci">void DeadzoneFilter(std::vector&lt; T &gt; &amp;input_vector)</div><div class="ttdoc">Частотный фильтр для нижней части диапазона</div><div class="ttdef"><b>Definition:</b> <a href="helper_8h_source.html#l00061">helper.h:61</a></div></div>
+<div class="ttc" id="agroup___helper_functions_html_gae2aaeb3c9edcae730b5c4fdb6655ef71"><div class="ttname"><a href="group___helper_functions.html#gae2aaeb3c9edcae730b5c4fdb6655ef71">HelperFunctions::CalculateMaxDifferenceInVector</a></div><div class="ttdeci">T CalculateMaxDifferenceInVector(std::vector&lt; T &gt; src)</div><div class="ttdoc">Вычисляет максимальное значение разности элементов массива</div><div class="ttdef"><b>Definition:</b> <a href="helper_8h_source.html#l00171">helper.h:171</a></div></div>
+<div class="ttc" id="agroup___helper_functions_html_gae752077bcc98a1b2dcd5a1371d55bca5"><div class="ttname"><a href="group___helper_functions.html#gae752077bcc98a1b2dcd5a1371d55bca5">HelperFunctions::CalculateMeanDifferenceInVector</a></div><div class="ttdeci">T CalculateMeanDifferenceInVector(std::vector&lt; T &gt; src)</div><div class="ttdoc">Вычисляет среднее значение разности элементов массива в виде ((a0 - a1) + (a1 - a2)) / 3.</div><div class="ttdef"><b>Definition:</b> <a href="helper_8h_source.html#l00096">helper.h:96</a></div></div>
 <div class="ttc" id="agroup___peak_finder_html_ga3abfea54e33401437ebbee36ab9ee1f2"><div class="ttname"><a href="group___peak_finder.html#ga3abfea54e33401437ebbee36ab9ee1f2">PeakFinder::findPeaks</a></div><div class="ttdeci">void findPeaks(std::vector&lt; float &gt; x0, std::vector&lt; int &gt; &amp;peakInds, bool includeEndpoints=true, float extrema=1)</div><div class="ttdef"><b>Definition:</b> <a href="peak__finder_8cpp_source.html#l00066">peak_finder.cpp:66</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -636,10 +636,10 @@ $(function() {
 
 <p>Возвращает последнюю найденную относительную амплитуду </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00257">257</a></p>
-<div class="fragment"><div class="line"><span class="lineno">  258</span>{</div>
-<div class="line"><span class="lineno">  259</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_vibrating_point.html#a5ae50ac111f6681489eded6da7ef66ea">current_amplitude_</a>;</div>
-<div class="line"><span class="lineno">  260</span>}</div>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00252">252</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  253</span>{</div>
+<div class="line"><span class="lineno">  254</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_vibrating_point.html#a5ae50ac111f6681489eded6da7ef66ea">current_amplitude_</a>;</div>
+<div class="line"><span class="lineno">  255</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -660,10 +660,10 @@ $(function() {
 
 <p>Возвращает последний найденный уровень достоверности </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00262">262</a></p>
-<div class="fragment"><div class="line"><span class="lineno">  263</span>{</div>
-<div class="line"><span class="lineno">  264</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_vibrating_point.html#a6ed26ed40b33b1486cb4c304981d4444">confidence_level_</a>;</div>
-<div class="line"><span class="lineno">  265</span>}</div>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00257">257</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  258</span>{</div>
+<div class="line"><span class="lineno">  259</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_vibrating_point.html#a6ed26ed40b33b1486cb4c304981d4444">confidence_level_</a>;</div>
+<div class="line"><span class="lineno">  260</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -684,10 +684,10 @@ $(function() {
 
 <p>Возвращает текущую "основную" частоту </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00247">247</a></p>
-<div class="fragment"><div class="line"><span class="lineno">  248</span>{</div>
-<div class="line"><span class="lineno">  249</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_vibrating_point.html#aa0b94560fbac6ae1c5dbae9f4931d28c">main_frequency_</a>;</div>
-<div class="line"><span class="lineno">  250</span>}</div>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00242">242</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  243</span>{</div>
+<div class="line"><span class="lineno">  244</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_vibrating_point.html#aa0b94560fbac6ae1c5dbae9f4931d28c">main_frequency_</a>;</div>
+<div class="line"><span class="lineno">  245</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -708,10 +708,10 @@ $(function() {
 
 <p>Возвращает вектор текущих частот точки </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00242">242</a></p>
-<div class="fragment"><div class="line"><span class="lineno">  243</span>{</div>
-<div class="line"><span class="lineno">  244</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_vibrating_point.html#adfd1433886cf1fb2b3b07062b69614b1">frequencies_</a>;</div>
-<div class="line"><span class="lineno">  245</span>}</div>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00237">237</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  238</span>{</div>
+<div class="line"><span class="lineno">  239</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_vibrating_point.html#adfd1433886cf1fb2b3b07062b69614b1">frequencies_</a>;</div>
+<div class="line"><span class="lineno">  240</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -732,10 +732,10 @@ $(function() {
 
 <p>Возвращает последний элемент вектора координат </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00237">237</a></p>
-<div class="fragment"><div class="line"><span class="lineno">  238</span>{</div>
-<div class="line"><span class="lineno">  239</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>.back();</div>
-<div class="line"><span class="lineno">  240</span>}</div>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00232">232</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  233</span>{</div>
+<div class="line"><span class="lineno">  234</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>.back();</div>
+<div class="line"><span class="lineno">  235</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -756,10 +756,10 @@ $(function() {
 
 <p>Возвращает последнюю найденную относительную амплитуду </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00252">252</a></p>
-<div class="fragment"><div class="line"><span class="lineno">  253</span>{</div>
-<div class="line"><span class="lineno">  254</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_vibrating_point.html#a9989c50fa30cecf13079ae0c595ef87c">relative_amplitude_</a>;</div>
-<div class="line"><span class="lineno">  255</span>}</div>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00247">247</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  248</span>{</div>
+<div class="line"><span class="lineno">  249</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_vibrating_point.html#a9989c50fa30cecf13079ae0c595ef87c">relative_amplitude_</a>;</div>
+<div class="line"><span class="lineno">  250</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -787,12 +787,12 @@ $(function() {
   </dd>
 </dl>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00170">170</a></p>
-<div class="fragment"><div class="line"><span class="lineno">  171</span>{</div>
-<div class="line"><span class="lineno">  172</span>    <a class="code hl_variable" href="class_vibrating_point.html#a0298c80261ea234f82e1afff59d2d1fa">interacted_</a> = <a class="code hl_variable" href="class_vibrating_point.html#a5b35f5a2109df2be2d2832b25dfa2285">interaction_box_</a>.contains(coordinates);</div>
-<div class="line"><span class="lineno">  173</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_vibrating_point.html#a0298c80261ea234f82e1afff59d2d1fa">interacted_</a>;</div>
-<div class="line"><span class="lineno">  174</span>}</div>
-<div class="ttc" id="aclass_vibrating_point_html_a0298c80261ea234f82e1afff59d2d1fa"><div class="ttname"><a href="class_vibrating_point.html#a0298c80261ea234f82e1afff59d2d1fa">VibratingPoint::interacted_</a></div><div class="ttdeci">bool interacted_</div><div class="ttdoc">Флаг взаимодействия с точкой</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00123">vibrating_point.h:123</a></div></div>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00165">165</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  166</span>{</div>
+<div class="line"><span class="lineno">  167</span>    <a class="code hl_variable" href="class_vibrating_point.html#a0298c80261ea234f82e1afff59d2d1fa">interacted_</a> = <a class="code hl_variable" href="class_vibrating_point.html#a5b35f5a2109df2be2d2832b25dfa2285">interaction_box_</a>.contains(coordinates);</div>
+<div class="line"><span class="lineno">  168</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_vibrating_point.html#a0298c80261ea234f82e1afff59d2d1fa">interacted_</a>;</div>
+<div class="line"><span class="lineno">  169</span>}</div>
+<div class="ttc" id="aclass_vibrating_point_html_a0298c80261ea234f82e1afff59d2d1fa"><div class="ttname"><a href="class_vibrating_point.html#a0298c80261ea234f82e1afff59d2d1fa">VibratingPoint::interacted_</a></div><div class="ttdeci">bool interacted_</div><div class="ttdoc">Флаг взаимодействия с точкой</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00122">vibrating_point.h:122</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -814,33 +814,10 @@ $(function() {
 
 <p>Устанавливает чувствительность, влияющую на confidence. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00176">176</a></p>
-<div class="fragment"><div class="line"><span class="lineno">  177</span>{</div>
-<div class="line"><span class="lineno">  178</span>    <a class="code hl_variable" href="class_vibrating_point.html#ab2539b861e02f361eb772c71e06c9af3">sensivity_</a> = sensivity;</div>
-<div class="line"><span class="lineno">  179</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ab8af9cea2d7828e75d03abfe5c620b50" name="ab8af9cea2d7828e75d03abfe5c620b50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8af9cea2d7828e75d03abfe5c620b50">&#9670;&#160;</a></span>UpdateExtremumAmplitude()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void VibratingPoint::UpdateExtremumAmplitude </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>extremum_amplitude</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00003">3</a></p>
-<div class="fragment"><div class="line"><span class="lineno">    4</span>{</div>
-<div class="line"><span class="lineno">    5</span> </div>
-<div class="line"><span class="lineno">    6</span>}</div>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8cpp_source.html">vibrating_point.cpp</a> строка <a class="el" href="vibrating__point_8cpp_source.html#l00171">171</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  172</span>{</div>
+<div class="line"><span class="lineno">  173</span>    <a class="code hl_variable" href="class_vibrating_point.html#ab2539b861e02f361eb772c71e06c9af3">sensivity_</a> = sensivity;</div>
+<div class="line"><span class="lineno">  174</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -896,7 +873,7 @@ $(function() {
 
 <p>Рейтинг достоверности вибрации </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00189">189</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00188">188</a></p>
 
 </div>
 </div>
@@ -922,7 +899,7 @@ $(function() {
 
 <p>Фактические амплитуды вибрации по x, y. Выражаюытся в пикселях </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00132">132</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00131">131</a></p>
 
 </div>
 </div>
@@ -948,7 +925,7 @@ $(function() {
 
 <p>Радиус точки, который нужен для её отрисовки </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00168">168</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00167">167</a></p>
 
 </div>
 </div>
@@ -974,7 +951,7 @@ $(function() {
 
 <p>Дефолтный радиус точки </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00172">172</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00171">171</a></p>
 
 </div>
 </div>
@@ -999,8 +976,9 @@ $(function() {
 </div><div class="memdoc">
 
 <p>Максимум и минимум амплитуды среди всех <a class="el" href="class_vibrating_point.html" title="Абстрактный класс для описания вибрирующей точки">VibratingPoint</a> объектов-наследников </p>
+<p >inline - для совмещенного объявления с определением переменной внутри класса </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00107">107</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00106">106</a></p>
 
 </div>
 </div>
@@ -1026,7 +1004,7 @@ $(function() {
 
 <p>Контейнер для частот точки </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00152">152</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00151">151</a></p>
 
 </div>
 </div>
@@ -1053,7 +1031,7 @@ $(function() {
 <p>Флаг взаимодействия с точкой </p>
 <p >True - в случае взаимодействия, false - в противном </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00123">123</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00122">122</a></p>
 
 </div>
 </div>
@@ -1079,7 +1057,7 @@ $(function() {
 
 <p>Прямоугольник (область) взаимодействия с точкой </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00113">113</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00112">112</a></p>
 
 </div>
 </div>
@@ -1105,7 +1083,7 @@ $(function() {
 
 <p>Половина длины прямоугольника взаимодействия </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00117">117</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00116">116</a></p>
 
 </div>
 </div>
@@ -1132,7 +1110,7 @@ $(function() {
 <p>Максимальная разнциа в магнитудах в найденном спектре после БПФ </p>
 <dl class="section see"><dt>См. также</dt><dd><a class="el" href="class_vibrating_point.html#a005868411bd6b296d992f3dcd79451d7" title="Выполняет БПФ для нахождения частоты вибрации.">ExecuteFFT()</a> и <a class="el" href="class_vibrating_point.html#a6ed26ed40b33b1486cb4c304981d4444" title="Рейтинг достоверности вибрации">confidence_level_</a> - используется для определения "уровня достоверности" результатов у конкретной точки </dd></dl>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00196">196</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00195">195</a></p>
 
 </div>
 </div>
@@ -1158,7 +1136,7 @@ $(function() {
 
 <p>Главная частота (основная) </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00156">156</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00155">155</a></p>
 
 </div>
 </div>
@@ -1184,7 +1162,7 @@ $(function() {
 
 <p>Контейнер для координат точки </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00136">136</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00135">135</a></p>
 
 </div>
 </div>
@@ -1210,7 +1188,7 @@ $(function() {
 
 <p>Контейнер для временных координат точки </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00160">160</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00159">159</a></p>
 
 </div>
 </div>
@@ -1236,7 +1214,7 @@ $(function() {
 
 <p>Относительные амплитуды вибрации по x, y. Выражается отношением амплитуды </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00128">128</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00127">127</a></p>
 
 </div>
 </div>
@@ -1262,7 +1240,7 @@ $(function() {
 
 <p>Частота сэмплирования (фактически - FPS исходного видео) </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00164">164</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00163">163</a></p>
 
 </div>
 </div>
@@ -1288,7 +1266,7 @@ $(function() {
 
 <p>Чувствительность определения вибрации </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00185">185</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00184">184</a></p>
 
 </div>
 </div>
@@ -1314,7 +1292,7 @@ $(function() {
 
 <p>Контейнер для координат точки относительно нулевого уровня </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00148">148</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00147">147</a></p>
 
 </div>
 </div>
@@ -1340,7 +1318,7 @@ $(function() {
 
 <p>Контейнер для хранения координат гистограммы по оси X (фактически - найденный спектр частот вибрации точки после выполнения БПФ) </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00177">177</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00176">176</a></p>
 
 </div>
 </div>
@@ -1366,7 +1344,7 @@ $(function() {
 
 <p>Контейнер для координат точки по оси X. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00140">140</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00139">139</a></p>
 
 </div>
 </div>
@@ -1392,7 +1370,7 @@ $(function() {
 
 <p>Контейнер для хранения координат гистограммы по оси Y (фактически - найденные магнитуды точки после выполнения БПФ) </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00181">181</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00180">180</a></p>
 
 </div>
 </div>
@@ -1418,7 +1396,7 @@ $(function() {
 
 <p>Контейнер для координат точки по оси Y. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00144">144</a></p>
+<p class="definition">См. определение в файле <a class="el" href="vibrating__point_8h_source.html">vibrating_point.h</a> строка <a class="el" href="vibrating__point_8h_source.html#l00143">143</a></p>
 
 </div>
 </div>

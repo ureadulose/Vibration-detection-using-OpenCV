@@ -1,0 +1,5 @@
+<map id="VibratingPoint" name="VibratingPoint">
+<area shape="rect" id="node1" title="Абстрактный класс для описания вибрирующей точки" alt="" coords="104,5,207,31"/>
+<area shape="rect" id="node2" href="$class_colored_point_handler.html" title="Дочерний (от VibratingPoint) класс. Предназначен для помещения множества цветных точек на кадр и отсл..." alt="" coords="5,79,145,104"/>
+<area shape="rect" id="node3" href="$class_lonely_point_handler.html" title="Дочерний (от VibratingPoint) класс. Предназначен для помещения точки на кадр и отслеживания её вибрац..." alt="" coords="169,79,304,104"/>
+</map>

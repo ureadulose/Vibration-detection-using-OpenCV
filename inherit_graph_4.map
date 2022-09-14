@@ -1,0 +1,7 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node1" href="$class_histogram.html" title="Класс для создания объектов&#45;гистограмм, на которые можно выводить различную информацию" alt="" coords="16,5,97,31"/>
+<area shape="rect" id="node2" href="$class_colored_point_handler.html" title="Дочерний (от VibratingPoint) класс. Предназначен для помещения множества цветных точек на кадр и отсл..." alt="" coords="156,31,296,56"/>
+<area shape="rect" id="node3" href="$class_lonely_point_handler.html" title="Дочерний (от VibratingPoint) класс. Предназначен для помещения точки на кадр и отслеживания её вибрац..." alt="" coords="159,80,293,105"/>
+<area shape="rect" id="node4" href="$class_output_to_csv.html" title="Класс для сохранения метаданных (временных и пространственных координат, ID точки)" alt="" coords="9,55,105,80"/>
+<area shape="rect" id="node5" href="$class_vibrating_point.html" title="Абстрактный класс для описания вибрирующей точки" alt="" coords="5,104,108,129"/>
+</map>

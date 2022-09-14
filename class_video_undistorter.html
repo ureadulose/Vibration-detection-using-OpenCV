@@ -88,11 +88,13 @@ $(function() {
 <tr class="memitem:aa42fc7f2661d48c5bfe2ff4ade623b30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#aa42fc7f2661d48c5bfe2ff4ade623b30">VideoUndistorter</a> (std::string input_file_name_, std::string output_file_name, std::string txt_file_name)</td></tr>
 <tr class="memdesc:aa42fc7f2661d48c5bfe2ff4ade623b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор этого класса  <a href="class_video_undistorter.html#aa42fc7f2661d48c5bfe2ff4ade623b30">Подробнее...</a><br /></td></tr>
 <tr class="separator:aa42fc7f2661d48c5bfe2ff4ade623b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9354f24f06d65380155118590b0fd6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#ac9354f24f06d65380155118590b0fd6c">ExecuteVideoUndistortion</a> ()</td></tr>
-<tr class="separator:ac9354f24f06d65380155118590b0fd6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b19bb1af0c5fcfd147c48dd447d44d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#a05b19bb1af0c5fcfd147c48dd447d44d">ExecuteVideoUndistortion</a> ()</td></tr>
+<tr class="separator:a05b19bb1af0c5fcfd147c48dd447d44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Закрытые члены</h2></td></tr>
+<tr class="memitem:a015a3e4b982094d3ba737debd9f3590e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#a015a3e4b982094d3ba737debd9f3590e">AddTips</a> (Mat &amp;frame, std::string tip)</td></tr>
+<tr class="separator:a015a3e4b982094d3ba737debd9f3590e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac82e158db201e5d3189cc2c2eaa0db46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#ac82e158db201e5d3189cc2c2eaa0db46">SaveFrame</a> (Mat frame)</td></tr>
 <tr class="separator:ac82e158db201e5d3189cc2c2eaa0db46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad97e93cf1bb586a53494fb95909a4bc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#ad97e93cf1bb586a53494fb95909a4bc6">LoadFoundParamsFromFile</a> (std::string txt_file_name)</td></tr>
@@ -102,6 +104,8 @@ $(function() {
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Закрытые данные</h2></td></tr>
+<tr class="memitem:aaec69d8897221bf238ce22b9eefd0d1c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#aaec69d8897221bf238ce22b9eefd0d1c">winname_</a></td></tr>
+<tr class="separator:aaec69d8897221bf238ce22b9eefd0d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ca2ae8209afff234c56e1cb61eb4240"><td class="memItemLeft" align="right" valign="top">VideoCapture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#a0ca2ae8209afff234c56e1cb61eb4240">input_cap_</a></td></tr>
 <tr class="separator:a0ca2ae8209afff234c56e1cb61eb4240"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa51dcc2cc2726c97ed156eaa3249665f"><td class="memItemLeft" align="right" valign="top">VideoWriter *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#aa51dcc2cc2726c97ed156eaa3249665f">output_cap_</a></td></tr>
@@ -128,8 +132,6 @@ $(function() {
 <tr class="separator:a5c8ce476d923037934eb6299a503593e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea3bd77c199df2c27bf8162c67c54eff"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#aea3bd77c199df2c27bf8162c67c54eff">undistorted_frame_</a></td></tr>
 <tr class="separator:aea3bd77c199df2c27bf8162c67c54eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9c6f9ed1d749ab45b4703e5768588ec"><td class="memItemLeft" align="right" valign="top">std::ifstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#ad9c6f9ed1d749ab45b4703e5768588ec">input_file_</a></td></tr>
-<tr class="separator:ad9c6f9ed1d749ab45b4703e5768588ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa11423c2edf80da39457470b604e995a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#aa11423c2edf80da39457470b604e995a">fx_</a></td></tr>
 <tr class="separator:aa11423c2edf80da39457470b604e995a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07c962e8a5b9737cab7c7ceef4f99aff"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_undistorter.html#a07c962e8a5b9737cab7c7ceef4f99aff">fy_</a></td></tr>
@@ -145,7 +147,7 @@ $(function() {
 <div class="textblock"><p >Класс для удаления дисторсии на видео </p>
 <p >Объект класса осуществляет чтение и сохранение кадров с удаленной дисторсией в выходную последовательность (видео) </p>
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00024">24</a></p>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00026">26</a></p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="aa42fc7f2661d48c5bfe2ff4ade623b30" name="aa42fc7f2661d48c5bfe2ff4ade623b30"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa42fc7f2661d48c5bfe2ff4ade623b30">&#9670;&#160;</a></span>VideoUndistorter()</h2>
@@ -194,25 +196,27 @@ $(function() {
 <div class="fragment"><div class="line"><span class="lineno">    3</span>                                                                                                                 :</div>
 <div class="line"><span class="lineno">    4</span>    input_file_name_{ input_file_name },</div>
 <div class="line"><span class="lineno">    5</span>    output_file_name_{ output_file_name },</div>
-<div class="line"><span class="lineno">    6</span>    txt_file_name_{ txt_file_name }</div>
-<div class="line"><span class="lineno">    7</span>{</div>
-<div class="line"><span class="lineno">    8</span>    input_cap_ = <span class="keyword">new</span> VideoCapture(input_file_name);</div>
-<div class="line"><span class="lineno">    9</span> </div>
-<div class="line"><span class="lineno">   10</span>    frame_width_ = input_cap_-&gt;get(CAP_PROP_FRAME_WIDTH);</div>
-<div class="line"><span class="lineno">   11</span>    frame_height_ = input_cap_-&gt;get(CAP_PROP_FRAME_HEIGHT);</div>
-<div class="line"><span class="lineno">   12</span>    bitrate_ = input_cap_-&gt;get(CAP_PROP_BITRATE);</div>
-<div class="line"><span class="lineno">   13</span>    frame_count_ = input_cap_-&gt;get(CAP_PROP_FRAME_COUNT);</div>
-<div class="line"><span class="lineno">   14</span>    fps_ = input_cap_-&gt;get(CAP_PROP_FPS);</div>
-<div class="line"><span class="lineno">   15</span> </div>
-<div class="line"><span class="lineno">   16</span>    output_cap_ = <span class="keyword">new</span> VideoWriter</div>
-<div class="line"><span class="lineno">   17</span>    (</div>
-<div class="line"><span class="lineno">   18</span>        output_file_name_,</div>
-<div class="line"><span class="lineno">   19</span>        cv::VideoWriter::fourcc(<span class="charliteral">&#39;m&#39;</span>, <span class="charliteral">&#39;p&#39;</span>, <span class="charliteral">&#39;4&#39;</span>, <span class="charliteral">&#39;v&#39;</span>), <span class="comment">// codec</span></div>
-<div class="line"><span class="lineno">   20</span>        fps_,</div>
-<div class="line"><span class="lineno">   21</span>        Size(frame_width_, frame_height_)</div>
-<div class="line"><span class="lineno">   22</span>    );</div>
-<div class="line"><span class="lineno">   23</span> </div>
-<div class="line"><span class="lineno">   24</span>}</div>
+<div class="line"><span class="lineno">    6</span>    txt_file_name_{ txt_file_name },</div>
+<div class="line"><span class="lineno">    7</span>    winname_{ <span class="stringliteral">&quot;Undistortion&quot;</span> }</div>
+<div class="line"><span class="lineno">    8</span>{</div>
+<div class="line"><span class="lineno">    9</span>    input_cap_ = <span class="keyword">new</span> VideoCapture(input_file_name);</div>
+<div class="line"><span class="lineno">   10</span> </div>
+<div class="line"><span class="lineno">   11</span>    frame_width_ = input_cap_-&gt;get(CAP_PROP_FRAME_WIDTH);</div>
+<div class="line"><span class="lineno">   12</span>    frame_height_ = input_cap_-&gt;get(CAP_PROP_FRAME_HEIGHT);</div>
+<div class="line"><span class="lineno">   13</span>    bitrate_ = input_cap_-&gt;get(CAP_PROP_BITRATE);</div>
+<div class="line"><span class="lineno">   14</span>    frame_count_ = input_cap_-&gt;get(CAP_PROP_FRAME_COUNT);</div>
+<div class="line"><span class="lineno">   15</span>    fps_ = input_cap_-&gt;get(CAP_PROP_FPS);</div>
+<div class="line"><span class="lineno">   16</span> </div>
+<div class="line"><span class="lineno">   17</span>    output_cap_ = <span class="keyword">new</span> VideoWriter</div>
+<div class="line"><span class="lineno">   18</span>    (</div>
+<div class="line"><span class="lineno">   19</span>        output_file_name_,</div>
+<div class="line"><span class="lineno">   20</span>        cv::VideoWriter::fourcc(<span class="charliteral">&#39;m&#39;</span>, <span class="charliteral">&#39;p&#39;</span>, <span class="charliteral">&#39;4&#39;</span>, <span class="charliteral">&#39;v&#39;</span>), <span class="comment">// codec</span></div>
+<div class="line"><span class="lineno">   21</span>        fps_,</div>
+<div class="line"><span class="lineno">   22</span>        Size(frame_width_, frame_height_)</div>
+<div class="line"><span class="lineno">   23</span>    );</div>
+<div class="line"><span class="lineno">   24</span> </div>
+<div class="line"><span class="lineno">   25</span>    namedWindow(winname_, WINDOW_NORMAL);</div>
+<div class="line"><span class="lineno">   26</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -231,26 +235,81 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8cpp_source.html">video_undistorter.cpp</a> строка <a class="el" href="video__undistorter_8cpp_source.html#l00026">26</a></p>
-<div class="fragment"><div class="line"><span class="lineno">   27</span>{</div>
-<div class="line"><span class="lineno">   28</span>    input_cap_-&gt;release();</div>
-<div class="line"><span class="lineno">   29</span>    output_cap_-&gt;release();</div>
-<div class="line"><span class="lineno">   30</span> </div>
-<div class="line"><span class="lineno">   31</span>    <span class="keyword">delete</span>[] input_cap_;</div>
-<div class="line"><span class="lineno">   32</span>    <span class="keyword">delete</span>[] output_cap_;</div>
-<div class="line"><span class="lineno">   33</span>}</div>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8cpp_source.html">video_undistorter.cpp</a> строка <a class="el" href="video__undistorter_8cpp_source.html#l00028">28</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   29</span>{</div>
+<div class="line"><span class="lineno">   30</span>    input_cap_-&gt;release();</div>
+<div class="line"><span class="lineno">   31</span>    output_cap_-&gt;release();</div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>    <span class="keyword">delete</span> input_cap_;</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keyword">delete</span> output_cap_;</div>
+<div class="line"><span class="lineno">   35</span> </div>
+<div class="line"><span class="lineno">   36</span>    destroyWindow(winname_);</div>
+<div class="line"><span class="lineno">   37</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
-<a id="ac9354f24f06d65380155118590b0fd6c" name="ac9354f24f06d65380155118590b0fd6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9354f24f06d65380155118590b0fd6c">&#9670;&#160;</a></span>ExecuteVideoUndistortion()</h2>
+<a id="a015a3e4b982094d3ba737debd9f3590e" name="a015a3e4b982094d3ba737debd9f3590e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a015a3e4b982094d3ba737debd9f3590e">&#9670;&#160;</a></span>AddTips()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VideoUndistorter::AddTips </td>
+          <td>(</td>
+          <td class="paramtype">Mat &amp;&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>tip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8cpp_source.html">video_undistorter.cpp</a> строка <a class="el" href="video__undistorter_8cpp_source.html#l00087">87</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   88</span>{</div>
+<div class="line"><span class="lineno">   89</span>    <span class="keywordtype">int</span> font = FONT_HERSHEY_PLAIN;</div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordtype">double</span> font_scale = 1.5;</div>
+<div class="line"><span class="lineno">   91</span>    <span class="keywordtype">int</span> thickness = 2;</div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>    putText(</div>
+<div class="line"><span class="lineno">   94</span>        frame,</div>
+<div class="line"><span class="lineno">   95</span>        tip,</div>
+<div class="line"><span class="lineno">   96</span>        Point(frame.cols * 0.05, frame.rows * 0.05),</div>
+<div class="line"><span class="lineno">   97</span>        font,</div>
+<div class="line"><span class="lineno">   98</span>        font_scale,</div>
+<div class="line"><span class="lineno">   99</span>        Scalar(0, 255, 0),</div>
+<div class="line"><span class="lineno">  100</span>        thickness</div>
+<div class="line"><span class="lineno">  101</span>    );</div>
+<div class="line"><span class="lineno">  102</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a05b19bb1af0c5fcfd147c48dd447d44d" name="a05b19bb1af0c5fcfd147c48dd447d44d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05b19bb1af0c5fcfd147c48dd447d44d">&#9670;&#160;</a></span>ExecuteVideoUndistortion()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void VideoUndistorter::ExecuteVideoUndistortion </td>
+          <td class="memname">int VideoUndistorter::ExecuteVideoUndistortion </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -258,32 +317,54 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8cpp_source.html">video_undistorter.cpp</a> строка <a class="el" href="video__undistorter_8cpp_source.html#l00035">35</a></p>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>{</div>
-<div class="line"><span class="lineno">   37</span>    <span class="comment">// read distortion parameters from txt file</span></div>
-<div class="line"><span class="lineno">   38</span>    LoadFoundParamsFromFile(txt_file_name_);</div>
-<div class="line"><span class="lineno">   39</span> </div>
-<div class="line"><span class="lineno">   40</span>    std::cout &lt;&lt; frame_count_ &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   41</span> </div>
-<div class="line"><span class="lineno">   42</span>    <span class="keywordtype">int</span> frame_num = 0;</div>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8cpp_source.html">video_undistorter.cpp</a> строка <a class="el" href="video__undistorter_8cpp_source.html#l00039">39</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{</div>
+<div class="line"><span class="lineno">   41</span>    <span class="comment">// read distortion parameters from txt file</span></div>
+<div class="line"><span class="lineno">   42</span>    LoadFoundParamsFromFile(txt_file_name_);</div>
 <div class="line"><span class="lineno">   43</span> </div>
-<div class="line"><span class="lineno">   44</span>    <span class="comment">//undistort each frame in loop</span></div>
-<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">while</span> (input_cap_-&gt;get(CAP_PROP_POS_FRAMES) &lt; frame_count_)</div>
-<div class="line"><span class="lineno">   46</span>    {</div>
-<div class="line"><span class="lineno">   47</span>        input_cap_-&gt;read(current_frame_);</div>
-<div class="line"><span class="lineno">   48</span>        <span class="keywordflow">if</span> (!current_frame_.empty())</div>
-<div class="line"><span class="lineno">   49</span>        {</div>
-<div class="line"><span class="lineno">   50</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Processing frame &quot;</span> &lt;&lt; input_cap_-&gt;get(CAP_PROP_POS_FRAMES) &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; frame_count_ &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   51</span>            Mat mapX, mapY;</div>
-<div class="line"><span class="lineno">   52</span>            initUndistortRectifyMap(camera_matrix_, distortion_coefficients_, Matx33f::eye(), camera_matrix_, Size(frame_width_, frame_height_), CV_32FC1, mapX, mapY);</div>
-<div class="line"><span class="lineno">   53</span>            <span class="comment">//undistort(current_frame_, undistorted_frame_, camera_matrix_, distortion_coefficients_);</span></div>
-<div class="line"><span class="lineno">   54</span>            remap(current_frame_, undistorted_frame_, mapX, mapY, INTER_LINEAR);</div>
-<div class="line"><span class="lineno">   55</span>            SaveFrame(undistorted_frame_);</div>
-<div class="line"><span class="lineno">   56</span>        }</div>
-<div class="line"><span class="lineno">   57</span>    }</div>
-<div class="line"><span class="lineno">   58</span> </div>
-<div class="line"><span class="lineno">   59</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Undistortion completed&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   60</span>}</div>
+<div class="line"><span class="lineno">   44</span>    std::cout &lt;&lt; frame_count_ &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   45</span> </div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordtype">int</span> frame_num = 0;</div>
+<div class="line"><span class="lineno">   47</span>    Mat mapX, mapY;</div>
+<div class="line"><span class="lineno">   48</span>    initUndistortRectifyMap(camera_matrix_, distortion_coefficients_, Matx33f::eye(), camera_matrix_, Size(frame_width_, frame_height_), CV_32FC1, mapX, mapY);</div>
+<div class="line"><span class="lineno">   49</span>    <span class="comment">//undistort each frame in loop</span></div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">while</span> (input_cap_-&gt;get(CAP_PROP_POS_FRAMES) &lt; frame_count_)</div>
+<div class="line"><span class="lineno">   51</span>    {</div>
+<div class="line"><span class="lineno">   52</span>        input_cap_-&gt;read(current_frame_);</div>
+<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">if</span> (!current_frame_.empty())</div>
+<div class="line"><span class="lineno">   54</span>        {</div>
+<div class="line"><span class="lineno">   55</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Processing frame &quot;</span> &lt;&lt; input_cap_-&gt;get(CAP_PROP_POS_FRAMES) &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; frame_count_ &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   56</span>            <span class="comment">//imshow(winname_, current_frame_);</span></div>
+<div class="line"><span class="lineno">   57</span>            </div>
+<div class="line"><span class="lineno">   58</span>            <span class="comment">//undistort(current_frame_, undistorted_frame_, camera_matrix_, distortion_coefficients_);</span></div>
+<div class="line"><span class="lineno">   59</span>            remap(current_frame_, undistorted_frame_, mapX, mapY, INTER_LINEAR);</div>
+<div class="line"><span class="lineno">   60</span>            SaveFrame(undistorted_frame_);</div>
+<div class="line"><span class="lineno">   61</span>            AddTips(undistorted_frame_, <span class="stringliteral">&quot;Current frame: &quot;</span> + <a class="code hl_function" href="group___helper_functions.html#gad8a95244f86df84c8f5d35197fe0196f">HelperFunctions::ToStringWithPrecision</a>(input_cap_-&gt;get(CAP_PROP_POS_FRAMES), 0) + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_function" href="group___helper_functions.html#gad8a95244f86df84c8f5d35197fe0196f">HelperFunctions::ToStringWithPrecision</a>(frame_count_, 0));</div>
+<div class="line"><span class="lineno">   62</span>            imshow(winname_, undistorted_frame_);</div>
+<div class="line"><span class="lineno">   63</span> </div>
+<div class="line"><span class="lineno">   64</span>            <span class="keywordtype">int</span> code = waitKey(20);</div>
+<div class="line"><span class="lineno">   65</span>            <span class="keywordflow">switch</span> (code)</div>
+<div class="line"><span class="lineno">   66</span>            {</div>
+<div class="line"><span class="lineno">   67</span>                <span class="comment">// Пауза</span></div>
+<div class="line"><span class="lineno">   68</span>                <span class="comment">// Клавиши - пробел (ASCII code)</span></div>
+<div class="line"><span class="lineno">   69</span>            <span class="keywordflow">case</span> 32:</div>
+<div class="line"><span class="lineno">   70</span>            {</div>
+<div class="line"><span class="lineno">   71</span>                waitKey(0);</div>
+<div class="line"><span class="lineno">   72</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   73</span>            }</div>
+<div class="line"><span class="lineno">   74</span>            <span class="keywordflow">case</span> <span class="charliteral">&#39;q&#39;</span>:</div>
+<div class="line"><span class="lineno">   75</span>            {</div>
+<div class="line"><span class="lineno">   76</span>                <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   77</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   78</span>            }</div>
+<div class="line"><span class="lineno">   79</span>            }</div>
+<div class="line"><span class="lineno">   80</span>        }</div>
+<div class="line"><span class="lineno">   81</span>    }</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Undistortion completed&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">   85</span>}</div>
+<div class="ttc" id="agroup___helper_functions_html_gad8a95244f86df84c8f5d35197fe0196f"><div class="ttname"><a href="group___helper_functions.html#gad8a95244f86df84c8f5d35197fe0196f">HelperFunctions::ToStringWithPrecision</a></div><div class="ttdeci">std::string ToStringWithPrecision(const T value, const int n=9)</div><div class="ttdoc">Выполняет округление числа с определенной точностью</div><div class="ttdef"><b>Definition:</b> <a href="helper_8h_source.html#l00049">helper.h:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -311,48 +392,54 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8cpp_source.html">video_undistorter.cpp</a> строка <a class="el" href="video__undistorter_8cpp_source.html#l00067">67</a></p>
-<div class="fragment"><div class="line"><span class="lineno">   68</span>{</div>
-<div class="line"><span class="lineno">   69</span>    </div>
-<div class="line"><span class="lineno">   70</span>    std::vector&lt;double&gt;* dist = <span class="keyword">new</span> std::vector&lt;double&gt;(0);</div>
-<div class="line"><span class="lineno">   71</span> </div>
-<div class="line"><span class="lineno">   72</span>    input_file_.open(txt_file_name);</div>
-<div class="line"><span class="lineno">   73</span>    std::string line;</div>
-<div class="line"><span class="lineno">   74</span> </div>
-<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">if</span> (input_file_.is_open())</div>
-<div class="line"><span class="lineno">   76</span>    {</div>
-<div class="line"><span class="lineno">   77</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Param file opened&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">while</span> (std::getline(input_file_, line))</div>
-<div class="line"><span class="lineno">   79</span>        {</div>
-<div class="line"><span class="lineno">   80</span>            <span class="comment">//std::cout &lt;&lt; &quot;Read line: &quot; &lt;&lt; line &lt;&lt; &#39;\n&#39;;</span></div>
-<div class="line"><span class="lineno">   81</span>            std::vector&lt;cv::String&gt; line_sp = SplitString(line, <span class="stringliteral">&quot;:&quot;</span>);</div>
-<div class="line"><span class="lineno">   82</span>            <span class="keywordflow">if</span> (line_sp[0] == <span class="stringliteral">&quot;fx&quot;</span>)</div>
-<div class="line"><span class="lineno">   83</span>                fx_ = std::stod(line_sp[1]);</div>
-<div class="line"><span class="lineno">   84</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (line_sp[0] == <span class="stringliteral">&quot;fy&quot;</span>)</div>
-<div class="line"><span class="lineno">   85</span>                fy_ = std::stod(line_sp[1]);</div>
-<div class="line"><span class="lineno">   86</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (line_sp[0] == <span class="stringliteral">&quot;px&quot;</span>)</div>
-<div class="line"><span class="lineno">   87</span>                px_ = std::stod(line_sp[1]);</div>
-<div class="line"><span class="lineno">   88</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (line_sp[0] == <span class="stringliteral">&quot;py&quot;</span>)</div>
-<div class="line"><span class="lineno">   89</span>                py_ = std::stod(line_sp[1]);</div>
-<div class="line"><span class="lineno">   90</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (line_sp[0] == <span class="stringliteral">&quot;dist&quot;</span>)</div>
-<div class="line"><span class="lineno">   91</span>            {</div>
-<div class="line"><span class="lineno">   92</span>                std::vector&lt;cv::String&gt; dist_sp = SplitString(line_sp[1], <span class="stringliteral">&quot;,&quot;</span>);</div>
-<div class="line"><span class="lineno">   93</span>                dist-&gt;resize(dist_sp.size());</div>
-<div class="line"><span class="lineno">   94</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = 0; n &lt; dist_sp.size(); n++)</div>
-<div class="line"><span class="lineno">   95</span>                    dist-&gt;at(n) = std::stod(dist_sp[n]);</div>
-<div class="line"><span class="lineno">   96</span>            }</div>
-<div class="line"><span class="lineno">   97</span>        }</div>
-<div class="line"><span class="lineno">   98</span>        input_file_.close();</div>
-<div class="line"><span class="lineno">   99</span>    }</div>
-<div class="line"><span class="lineno">  100</span> </div>
-<div class="line"><span class="lineno">  101</span>    std::vector&lt;double&gt;* intrin_arr = <span class="keyword">new</span> std::vector&lt;double&gt;{ fx_, 0, px_, 0, fy_, py_, 0, 0, 1 };</div>
-<div class="line"><span class="lineno">  102</span>    intrin_arr-&gt;data();</div>
-<div class="line"><span class="lineno">  103</span>    camera_matrix_ = Mat(3, 3, CV_64F, intrin_arr-&gt;data());</div>
-<div class="line"><span class="lineno">  104</span>    distortion_coefficients_ = Mat(1, dist-&gt;size(), CV_64F, dist-&gt;data());</div>
-<div class="line"><span class="lineno">  105</span> </div>
-<div class="line"><span class="lineno">  106</span>    std::cout &lt;&lt; camera_matrix_.size() &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  107</span>    std::cout &lt;&lt; distortion_coefficients_.size() &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  108</span>}</div>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8cpp_source.html">video_undistorter.cpp</a> строка <a class="el" href="video__undistorter_8cpp_source.html#l00109">109</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  110</span>{</div>
+<div class="line"><span class="lineno">  111</span>    </div>
+<div class="line"><span class="lineno">  112</span>    std::vector&lt;double&gt; dist;</div>
+<div class="line"><span class="lineno">  113</span> </div>
+<div class="line"><span class="lineno">  114</span>    std::ifstream file;</div>
+<div class="line"><span class="lineno">  115</span>    std::string line;</div>
+<div class="line"><span class="lineno">  116</span>    std::vector&lt;std::vector&lt;double&gt;&gt; read_data;</div>
+<div class="line"><span class="lineno">  117</span> </div>
+<div class="line"><span class="lineno">  118</span>    file.open(txt_file_name);</div>
+<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">if</span> (file.is_open())</div>
+<div class="line"><span class="lineno">  120</span>    {</div>
+<div class="line"><span class="lineno">  121</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Param file opened&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  122</span> </div>
+<div class="line"><span class="lineno">  123</span>        <span class="keywordflow">while</span> (!file.eof())</div>
+<div class="line"><span class="lineno">  124</span>        {</div>
+<div class="line"><span class="lineno">  125</span>            file &gt;&gt; line;</div>
+<div class="line"><span class="lineno">  126</span>            std::vector&lt;std::string&gt; delimited_line = SplitString(line, <span class="stringliteral">&quot;;&quot;</span>);</div>
+<div class="line"><span class="lineno">  127</span>            delimited_line.erase(delimited_line.begin());</div>
+<div class="line"><span class="lineno">  128</span> </div>
+<div class="line"><span class="lineno">  129</span>            std::vector&lt;double&gt; data;</div>
+<div class="line"><span class="lineno">  130</span>            <span class="keywordtype">double</span> hui;</div>
+<div class="line"><span class="lineno">  131</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; delimited_line.size(); i++)</div>
+<div class="line"><span class="lineno">  132</span>            {</div>
+<div class="line"><span class="lineno">  133</span>                data.push_back(std::stod(delimited_line[i]));</div>
+<div class="line"><span class="lineno">  134</span>            }</div>
+<div class="line"><span class="lineno">  135</span>            read_data.push_back(data);</div>
+<div class="line"><span class="lineno">  136</span>        }</div>
+<div class="line"><span class="lineno">  137</span> </div>
+<div class="line"><span class="lineno">  138</span>        file.close();</div>
+<div class="line"><span class="lineno">  139</span>    }</div>
+<div class="line"><span class="lineno">  140</span> </div>
+<div class="line"><span class="lineno">  141</span>    fx_ = read_data[0][0];</div>
+<div class="line"><span class="lineno">  142</span>    fy_ = read_data[1][0];</div>
+<div class="line"><span class="lineno">  143</span>    px_ = read_data[2][0];</div>
+<div class="line"><span class="lineno">  144</span>    py_ = read_data[3][0];</div>
+<div class="line"><span class="lineno">  145</span>    dist = { read_data[4][0], read_data[4][1], read_data[4][2], read_data[4][3], read_data[4][4] };</div>
+<div class="line"><span class="lineno">  146</span> </div>
+<div class="line"><span class="lineno">  147</span>    std::vector&lt;double&gt; intrin_arr = { fx_, 0, px_, 0, fy_, py_, 0, 0, 1 };</div>
+<div class="line"><span class="lineno">  148</span> </div>
+<div class="line"><span class="lineno">  149</span>    camera_matrix_ = Mat(3, 3, CV_64F, intrin_arr.data());</div>
+<div class="line"><span class="lineno">  150</span>    distortion_coefficients_ = Mat(1, dist.size(), CV_64F, dist.data());</div>
+<div class="line"><span class="lineno">  151</span> </div>
+<div class="line"><span class="lineno">  152</span>    std::cout &lt;&lt; camera_matrix_.size() &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  153</span>    std::cout &lt;&lt; distortion_coefficients_.size() &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  154</span>    std::cout &lt;&lt; camera_matrix_ &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  155</span>    std::cout &lt;&lt; distortion_coefficients_ &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  156</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -380,10 +467,10 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8cpp_source.html">video_undistorter.cpp</a> строка <a class="el" href="video__undistorter_8cpp_source.html#l00062">62</a></p>
-<div class="fragment"><div class="line"><span class="lineno">   63</span>{</div>
-<div class="line"><span class="lineno">   64</span>    output_cap_-&gt;write(frame);</div>
-<div class="line"><span class="lineno">   65</span>}</div>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8cpp_source.html">video_undistorter.cpp</a> строка <a class="el" href="video__undistorter_8cpp_source.html#l00104">104</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  105</span>{</div>
+<div class="line"><span class="lineno">  106</span>    output_cap_-&gt;write(frame);</div>
+<div class="line"><span class="lineno">  107</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -421,24 +508,24 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8cpp_source.html">video_undistorter.cpp</a> строка <a class="el" href="video__undistorter_8cpp_source.html#l00110">110</a></p>
-<div class="fragment"><div class="line"><span class="lineno">  111</span>{</div>
-<div class="line"><span class="lineno">  112</span>    <span class="keywordtype">int</span> start_position = 0;</div>
-<div class="line"><span class="lineno">  113</span>    <span class="keywordtype">int</span> end_position;</div>
-<div class="line"><span class="lineno">  114</span>    <span class="keywordtype">int</span> delimiter_length = delimiter.length();</div>
-<div class="line"><span class="lineno">  115</span> </div>
-<div class="line"><span class="lineno">  116</span>    std::string token;</div>
-<div class="line"><span class="lineno">  117</span>    std::vector&lt;std::string&gt; dst;</div>
-<div class="line"><span class="lineno">  118</span> </div>
-<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">while</span> ((end_position = input_string.find(delimiter, start_position)) != std::string::npos) {</div>
-<div class="line"><span class="lineno">  120</span>        token = input_string.substr(start_position, end_position - start_position);</div>
-<div class="line"><span class="lineno">  121</span>        start_position = end_position + delimiter_length;</div>
-<div class="line"><span class="lineno">  122</span>        dst.push_back(token);</div>
-<div class="line"><span class="lineno">  123</span>    }</div>
-<div class="line"><span class="lineno">  124</span> </div>
-<div class="line"><span class="lineno">  125</span>    dst.push_back(input_string.substr(start_position));</div>
-<div class="line"><span class="lineno">  126</span>    <span class="keywordflow">return</span> dst;</div>
-<div class="line"><span class="lineno">  127</span>}</div>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8cpp_source.html">video_undistorter.cpp</a> строка <a class="el" href="video__undistorter_8cpp_source.html#l00158">158</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  159</span>{</div>
+<div class="line"><span class="lineno">  160</span>    <span class="keywordtype">int</span> start_position = 0;</div>
+<div class="line"><span class="lineno">  161</span>    <span class="keywordtype">int</span> end_position;</div>
+<div class="line"><span class="lineno">  162</span>    <span class="keywordtype">int</span> delimiter_length = delimiter.length();</div>
+<div class="line"><span class="lineno">  163</span> </div>
+<div class="line"><span class="lineno">  164</span>    std::string token;</div>
+<div class="line"><span class="lineno">  165</span>    std::vector&lt;std::string&gt; left;</div>
+<div class="line"><span class="lineno">  166</span> </div>
+<div class="line"><span class="lineno">  167</span>    <span class="keywordflow">while</span> ((end_position = input_string.find(delimiter, start_position)) != std::string::npos) {</div>
+<div class="line"><span class="lineno">  168</span>        token = input_string.substr(start_position, end_position - start_position);</div>
+<div class="line"><span class="lineno">  169</span>        start_position = end_position + delimiter_length;</div>
+<div class="line"><span class="lineno">  170</span>        left.push_back(token);</div>
+<div class="line"><span class="lineno">  171</span>    }</div>
+<div class="line"><span class="lineno">  172</span> </div>
+<div class="line"><span class="lineno">  173</span>    left.push_back(input_string.substr(start_position));</div>
+<div class="line"><span class="lineno">  174</span>    <span class="keywordflow">return</span> left;</div>
+<div class="line"><span class="lineno">  175</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -463,7 +550,7 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00050">50</a></p>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00055">55</a></p>
 
 </div>
 </div>
@@ -487,7 +574,7 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00056">56</a></p>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00061">61</a></p>
 
 </div>
 </div>
@@ -511,7 +598,7 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00059">59</a></p>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00064">64</a></p>
 
 </div>
 </div>
@@ -535,7 +622,7 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00057">57</a></p>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00062">62</a></p>
 
 </div>
 </div>
@@ -559,7 +646,7 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00052">52</a></p>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00057">57</a></p>
 
 </div>
 </div>
@@ -583,7 +670,7 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00051">51</a></p>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00056">56</a></p>
 
 </div>
 </div>
@@ -607,7 +694,7 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00049">49</a></p>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00054">54</a></p>
 
 </div>
 </div>
@@ -631,7 +718,7 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00048">48</a></p>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00053">53</a></p>
 
 </div>
 </div>
@@ -655,7 +742,7 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00064">64</a></p>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00067">67</a></p>
 
 </div>
 </div>
@@ -679,7 +766,7 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00065">65</a></p>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00068">68</a></p>
 
 </div>
 </div>
@@ -703,31 +790,7 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00045">45</a></p>
-
-</div>
-</div>
-<a id="ad9c6f9ed1d749ab45b4703e5768588ec" name="ad9c6f9ed1d749ab45b4703e5768588ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9c6f9ed1d749ab45b4703e5768588ec">&#9670;&#160;</a></span>input_file_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ifstream VideoUndistorter::input_file_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00062">62</a></p>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00050">50</a></p>
 
 </div>
 </div>
@@ -751,7 +814,7 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00054">54</a></p>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00059">59</a></p>
 
 </div>
 </div>
@@ -775,7 +838,7 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00046">46</a></p>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00051">51</a></p>
 
 </div>
 </div>
@@ -799,7 +862,7 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00055">55</a></p>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00060">60</a></p>
 
 </div>
 </div>
@@ -823,7 +886,7 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00066">66</a></p>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00069">69</a></p>
 
 </div>
 </div>
@@ -847,7 +910,7 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00067">67</a></p>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00070">70</a></p>
 
 </div>
 </div>
@@ -871,7 +934,7 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00069">69</a></p>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00072">72</a></p>
 
 </div>
 </div>
@@ -895,7 +958,31 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00060">60</a></p>
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00065">65</a></p>
+
+</div>
+</div>
+<a id="aaec69d8897221bf238ce22b9eefd0d1c" name="aaec69d8897221bf238ce22b9eefd0d1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaec69d8897221bf238ce22b9eefd0d1c">&#9670;&#160;</a></span>winname_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string VideoUndistorter::winname_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="video__undistorter_8h_source.html">video_undistorter.h</a> строка <a class="el" href="video__undistorter_8h_source.html#l00048">48</a></p>
 
 </div>
 </div>
