@@ -1,0 +1,800 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Visual Vibration Tracking: Класс EulerEnlarger</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Visual Vibration Tracking<span id="projectnumber">&#160;0.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="class_euler_enlarger-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс EulerEnlarger</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для визуального увеличения вибрации на видео  
+ <a href="class_euler_enlarger.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="eulerian__enlargement_8h_source.html">eulerian_enlargement.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:EulerEnlarger:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_euler_enlarger__inherit__graph.png" border="0" usemap="#a_euler_enlarger_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_euler_enlarger_inherit__map" id="a_euler_enlarger_inherit__map">
+<area shape="rect" title="Класс для визуального увеличения вибрации на видео" alt="" coords="20,5,120,31"/>
+<area shape="rect" href="class_movement_enlarger.html" title="Дочерний (от EulerEnlarger) класс для визуального увеличения вибрации на видео" alt="" coords="5,79,135,104"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a4d191318cbe997cd7ac5dd027b508921"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_euler_enlarger.html#a4d191318cbe997cd7ac5dd027b508921">LaplaceEnlarge</a> (Mat &amp;motion_pyramid_level, int current_level)</td></tr>
+<tr class="memdesc:a4d191318cbe997cd7ac5dd027b508921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Осуществляет увеличение движения на конкретном уровне пирамиды  <a href="class_euler_enlarger.html#a4d191318cbe997cd7ac5dd027b508921">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4d191318cbe997cd7ac5dd027b508921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c4a9b97963d309d990bde769f4dc582"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_euler_enlarger.html#a6c4a9b97963d309d990bde769f4dc582">Attenuate</a> (Mat &amp;motion_frame)</td></tr>
+<tr class="memdesc:a6c4a9b97963d309d990bde769f4dc582"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Приглушает" усиленные цвета на кадре  <a href="class_euler_enlarger.html#a6c4a9b97963d309d990bde769f4dc582">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6c4a9b97963d309d990bde769f4dc582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9937057b5b3fae05bfdc67e66147b20f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_euler_enlarger.html#a9937057b5b3fae05bfdc67e66147b20f">BuildLaplacePyramid</a> (const Mat &amp;input_frame, std::vector&lt; Mat &gt; &amp;input_pyramid, const int levels)</td></tr>
+<tr class="memdesc:a9937057b5b3fae05bfdc67e66147b20f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создает пирамиду изображений  <a href="class_euler_enlarger.html#a9937057b5b3fae05bfdc67e66147b20f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9937057b5b3fae05bfdc67e66147b20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c982a889d750215233354eba98bc391"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_euler_enlarger.html#a1c982a889d750215233354eba98bc391">IirFilter</a> (Mat &amp;input_pyramid_level, Mat &amp;motion_pyramid_level, Mat &amp;low_pass_high_level, Mat &amp;low_pass_low_level, double cutoff_low, double cutoff_high)</td></tr>
+<tr class="memdesc:a1c982a889d750215233354eba98bc391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Фильтр для отсекания низких и высоких "пространственных" частот ("фильтр с бесконечной импульсной характеристикой" - infinite impulse response)  <a href="class_euler_enlarger.html#a1c982a889d750215233354eba98bc391">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1c982a889d750215233354eba98bc391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a253b74eea3ae020c1c549e7e0c47fd60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_euler_enlarger.html#a253b74eea3ae020c1c549e7e0c47fd60">BuildFromLaplacePyramid</a> (std::vector&lt; Mat &gt; &amp;motion_pyramid, Mat &amp;motion_frame, int levels)</td></tr>
+<tr class="memdesc:a253b74eea3ae020c1c549e7e0c47fd60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Извлекаем выходное изображение из пирамиды Лапласа  <a href="class_euler_enlarger.html#a253b74eea3ae020c1c549e7e0c47fd60">Подробнее...</a><br /></td></tr>
+<tr class="separator:a253b74eea3ae020c1c549e7e0c47fd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:ade09863b5c4931f14e424e86168c60e0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Mat &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_euler_enlarger.html#ade09863b5c4931f14e424e86168c60e0">low_pass_high_pyramid_</a></td></tr>
+<tr class="separator:ade09863b5c4931f14e424e86168c60e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae47c0a2c915288fbd02c6671861860f1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Mat &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_euler_enlarger.html#ae47c0a2c915288fbd02c6671861860f1">low_pass_low_pyramid_</a></td></tr>
+<tr class="separator:ae47c0a2c915288fbd02c6671861860f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fa8710057b79f42c2d1430693d65179"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_euler_enlarger.html#a8fa8710057b79f42c2d1430693d65179">cutoff_low_</a></td></tr>
+<tr class="separator:a8fa8710057b79f42c2d1430693d65179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7775d588967f3fa4d9778d4ad9f4c2f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_euler_enlarger.html#ab7775d588967f3fa4d9778d4ad9f4c2f">cutoff_high_</a></td></tr>
+<tr class="separator:ab7775d588967f3fa4d9778d4ad9f4c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35076bfb98ab8e0ad28bba64f861b77a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_euler_enlarger.html#a35076bfb98ab8e0ad28bba64f861b77a">levels_amount_</a></td></tr>
+<tr class="memdesc:a35076bfb98ab8e0ad28bba64f861b77a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество уровней (слоев) пирамиды  <a href="class_euler_enlarger.html#a35076bfb98ab8e0ad28bba64f861b77a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a35076bfb98ab8e0ad28bba64f861b77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cb21e07ef755dd1e96e12df21077e90"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_euler_enlarger.html#a2cb21e07ef755dd1e96e12df21077e90">exaggeraiton_coefficient_</a></td></tr>
+<tr class="memdesc:a2cb21e07ef755dd1e96e12df21077e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Коэффициент увеличения. Чем выше - тем больше шума, тем сильнее увеличиваются небольшие движения.  <a href="class_euler_enlarger.html#a2cb21e07ef755dd1e96e12df21077e90">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2cb21e07ef755dd1e96e12df21077e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af2a486a304fd753049f1647ea790e4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_euler_enlarger.html#a1af2a486a304fd753049f1647ea790e4">lambda_</a></td></tr>
+<tr class="memdesc:a1af2a486a304fd753049f1647ea790e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Показательная длина волны  <a href="class_euler_enlarger.html#a1af2a486a304fd753049f1647ea790e4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1af2a486a304fd753049f1647ea790e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa7ed3c1fa47e4420039f9c6cc7fe590"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_euler_enlarger.html#aaa7ed3c1fa47e4420039f9c6cc7fe590">lambda_cutoff_</a></td></tr>
+<tr class="separator:aaa7ed3c1fa47e4420039f9c6cc7fe590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6176560a34867b75a7bc019cc550346"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_euler_enlarger.html#ab6176560a34867b75a7bc019cc550346">color_attenuation_coefficient_</a></td></tr>
+<tr class="memdesc:ab6176560a34867b75a7bc019cc550346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Коэффициент приглушеняи цвета  <a href="class_euler_enlarger.html#ab6176560a34867b75a7bc019cc550346">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab6176560a34867b75a7bc019cc550346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ba64d98bf7304db30a7dddfc0009b2b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_euler_enlarger.html#a5ba64d98bf7304db30a7dddfc0009b2b">delta_</a></td></tr>
+<tr class="memdesc:a5ba64d98bf7304db30a7dddfc0009b2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Коэффициент, использующийся при увеличении  <a href="class_euler_enlarger.html#a5ba64d98bf7304db30a7dddfc0009b2b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5ba64d98bf7304db30a7dddfc0009b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a172eb1596931729b32b1fe7a68e0dcf3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_euler_enlarger.html#a172eb1596931729b32b1fe7a68e0dcf3">alpha_</a></td></tr>
+<tr class="separator:a172eb1596931729b32b1fe7a68e0dcf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p >Класс для визуального увеличения вибрации на видео </p>
+
+<p class="definition">См. определение в файле <a class="el" href="eulerian__enlargement_8h_source.html">eulerian_enlargement.h</a> строка <a class="el" href="eulerian__enlargement_8h_source.html#l00012">12</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a2ef838014ac66b081283506f3c2ebf95" name="a2ef838014ac66b081283506f3c2ebf95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ef838014ac66b081283506f3c2ebf95">&#9670;&#160;</a></span>EulerEnlarger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EulerEnlarger::EulerEnlarger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="eulerian__enlargement_8cpp_source.html">eulerian_enlargement.cpp</a> строка <a class="el" href="eulerian__enlargement_8cpp_source.html#l00003">3</a></p>
+<div class="fragment"><div class="line"><span class="lineno">    3</span>                             :</div>
+<div class="line"><span class="lineno">    4</span>    cutoff_low_{ 0.1 },</div>
+<div class="line"><span class="lineno">    5</span>    cutoff_high_{ 1.0 },</div>
+<div class="line"><span class="lineno">    6</span>    <a class="code hl_variable" href="class_euler_enlarger.html#a2cb21e07ef755dd1e96e12df21077e90">exaggeraiton_coefficient_</a>{ 2.0 },</div>
+<div class="line"><span class="lineno">    7</span>    <a class="code hl_variable" href="class_euler_enlarger.html#a1af2a486a304fd753049f1647ea790e4">lambda_</a>{ 0.0 }, <span class="comment">// будем изменено в цикле</span></div>
+<div class="line"><span class="lineno">    8</span>    lambda_cutoff_{ 16.0 },</div>
+<div class="line"><span class="lineno">    9</span>    <a class="code hl_variable" href="class_euler_enlarger.html#ab6176560a34867b75a7bc019cc550346">color_attenuation_coefficient_</a>{ 0.0 },</div>
+<div class="line"><span class="lineno">   10</span>    <a class="code hl_variable" href="class_euler_enlarger.html#a5ba64d98bf7304db30a7dddfc0009b2b">delta_</a>{ 0.0 },</div>
+<div class="line"><span class="lineno">   11</span>    alpha_{ 10.0 },</div>
+<div class="line"><span class="lineno">   12</span>    <a class="code hl_variable" href="class_euler_enlarger.html#a35076bfb98ab8e0ad28bba64f861b77a">levels_amount_</a>{ 3 }</div>
+<div class="line"><span class="lineno">   13</span>{</div>
+<div class="line"><span class="lineno">   14</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Euler Enlarger constructor&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   15</span>}</div>
+<div class="ttc" id="aclass_euler_enlarger_html_a1af2a486a304fd753049f1647ea790e4"><div class="ttname"><a href="class_euler_enlarger.html#a1af2a486a304fd753049f1647ea790e4">EulerEnlarger::lambda_</a></div><div class="ttdeci">double lambda_</div><div class="ttdoc">Показательная длина волны</div><div class="ttdef"><b>Definition:</b> <a href="eulerian__enlargement_8h_source.html#l00064">eulerian_enlargement.h:64</a></div></div>
+<div class="ttc" id="aclass_euler_enlarger_html_a2cb21e07ef755dd1e96e12df21077e90"><div class="ttname"><a href="class_euler_enlarger.html#a2cb21e07ef755dd1e96e12df21077e90">EulerEnlarger::exaggeraiton_coefficient_</a></div><div class="ttdeci">double exaggeraiton_coefficient_</div><div class="ttdoc">Коэффициент увеличения. Чем выше - тем больше шума, тем сильнее увеличиваются небольшие движения.</div><div class="ttdef"><b>Definition:</b> <a href="eulerian__enlargement_8h_source.html#l00060">eulerian_enlargement.h:60</a></div></div>
+<div class="ttc" id="aclass_euler_enlarger_html_a35076bfb98ab8e0ad28bba64f861b77a"><div class="ttname"><a href="class_euler_enlarger.html#a35076bfb98ab8e0ad28bba64f861b77a">EulerEnlarger::levels_amount_</a></div><div class="ttdeci">int levels_amount_</div><div class="ttdoc">Количество уровней (слоев) пирамиды</div><div class="ttdef"><b>Definition:</b> <a href="eulerian__enlargement_8h_source.html#l00056">eulerian_enlargement.h:56</a></div></div>
+<div class="ttc" id="aclass_euler_enlarger_html_a5ba64d98bf7304db30a7dddfc0009b2b"><div class="ttname"><a href="class_euler_enlarger.html#a5ba64d98bf7304db30a7dddfc0009b2b">EulerEnlarger::delta_</a></div><div class="ttdeci">double delta_</div><div class="ttdoc">Коэффициент, использующийся при увеличении</div><div class="ttdef"><b>Definition:</b> <a href="eulerian__enlargement_8h_source.html#l00073">eulerian_enlargement.h:73</a></div></div>
+<div class="ttc" id="aclass_euler_enlarger_html_ab6176560a34867b75a7bc019cc550346"><div class="ttname"><a href="class_euler_enlarger.html#ab6176560a34867b75a7bc019cc550346">EulerEnlarger::color_attenuation_coefficient_</a></div><div class="ttdeci">double color_attenuation_coefficient_</div><div class="ttdoc">Коэффициент приглушеняи цвета</div><div class="ttdef"><b>Definition:</b> <a href="eulerian__enlargement_8h_source.html#l00069">eulerian_enlargement.h:69</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a266b299dacefc94a721e18927e0d55bb" name="a266b299dacefc94a721e18927e0d55bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a266b299dacefc94a721e18927e0d55bb">&#9670;&#160;</a></span>~EulerEnlarger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EulerEnlarger::~EulerEnlarger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="eulerian__enlargement_8cpp_source.html">eulerian_enlargement.cpp</a> строка <a class="el" href="eulerian__enlargement_8cpp_source.html#l00017">17</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   18</span>{</div>
+<div class="line"><span class="lineno">   19</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Euler Enlarger destructor&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   20</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a6c4a9b97963d309d990bde769f4dc582" name="a6c4a9b97963d309d990bde769f4dc582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c4a9b97963d309d990bde769f4dc582">&#9670;&#160;</a></span>Attenuate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EulerEnlarger::Attenuate </td>
+          <td>(</td>
+          <td class="paramtype">Mat &amp;&#160;</td>
+          <td class="paramname"><em>motion_frame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>"Приглушает" усиленные цвета на кадре </p>
+
+<p class="definition">См. определение в файле <a class="el" href="eulerian__enlargement_8cpp_source.html">eulerian_enlargement.cpp</a> строка <a class="el" href="eulerian__enlargement_8cpp_source.html#l00038">38</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>{</div>
+<div class="line"><span class="lineno">   40</span>    <span class="comment">// &quot;Приглушение&quot; будет происходить только для цветных кадров</span></div>
+<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">if</span> (motion_frame.channels() &gt; 2)</div>
+<div class="line"><span class="lineno">   42</span>    {</div>
+<div class="line"><span class="lineno">   43</span>        <span class="comment">//std::vector&lt;Mat&gt; planes;</span></div>
+<div class="line"><span class="lineno">   44</span>        Mat planes[3];</div>
+<div class="line"><span class="lineno">   45</span>        split(motion_frame, planes);</div>
+<div class="line"><span class="lineno">   46</span>        <span class="comment">// Применяем только к 2-му и 3-му каналу, тк первый отвечает за ч-б составляющую картинки в нашем формате</span></div>
+<div class="line"><span class="lineno">   47</span>        planes[1] = planes[1] * <a class="code hl_variable" href="class_euler_enlarger.html#ab6176560a34867b75a7bc019cc550346">color_attenuation_coefficient_</a>;</div>
+<div class="line"><span class="lineno">   48</span>        planes[2] = planes[2] * <a class="code hl_variable" href="class_euler_enlarger.html#ab6176560a34867b75a7bc019cc550346">color_attenuation_coefficient_</a>;</div>
+<div class="line"><span class="lineno">   49</span>        merge(planes, 3, motion_frame);</div>
+<div class="line"><span class="lineno">   50</span>    }</div>
+<div class="line"><span class="lineno">   51</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a253b74eea3ae020c1c549e7e0c47fd60" name="a253b74eea3ae020c1c549e7e0c47fd60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a253b74eea3ae020c1c549e7e0c47fd60">&#9670;&#160;</a></span>BuildFromLaplacePyramid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EulerEnlarger::BuildFromLaplacePyramid </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; Mat &gt; &amp;&#160;</td>
+          <td class="paramname"><em>motion_pyramid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Mat &amp;&#160;</td>
+          <td class="paramname"><em>motion_frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>levels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Извлекаем выходное изображение из пирамиды Лапласа </p>
+
+<p class="definition">См. определение в файле <a class="el" href="eulerian__enlargement_8cpp_source.html">eulerian_enlargement.cpp</a> строка <a class="el" href="eulerian__enlargement_8cpp_source.html#l00082">82</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   83</span>{</div>
+<div class="line"><span class="lineno">   84</span>    <span class="comment">// Сначала рассматриваем последний элемент вектора - он же первый уровень пирамиды</span></div>
+<div class="line"><span class="lineno">   85</span>    Mat current_level = motion_pyramid[levels];</div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = levels - 1; level &gt;= 0; --level)</div>
+<div class="line"><span class="lineno">   88</span>    {</div>
+<div class="line"><span class="lineno">   89</span>        Mat up;</div>
+<div class="line"><span class="lineno">   90</span>        pyrUp(current_level, up, motion_pyramid[level].size());</div>
+<div class="line"><span class="lineno">   91</span>        <span class="comment">// Добавляем только что заапсемпленный уровень к &quot;текущему&quot; (по сути предыдущему) уровню пирамиды</span></div>
+<div class="line"><span class="lineno">   92</span>        current_level = up + motion_pyramid[level];</div>
+<div class="line"><span class="lineno">   93</span>    }</div>
+<div class="line"><span class="lineno">   94</span>    motion_frame = current_level.clone();</div>
+<div class="line"><span class="lineno">   95</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9937057b5b3fae05bfdc67e66147b20f" name="a9937057b5b3fae05bfdc67e66147b20f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9937057b5b3fae05bfdc67e66147b20f">&#9670;&#160;</a></span>BuildLaplacePyramid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EulerEnlarger::BuildLaplacePyramid </td>
+          <td>(</td>
+          <td class="paramtype">const Mat &amp;&#160;</td>
+          <td class="paramname"><em>input_frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; Mat &gt; &amp;&#160;</td>
+          <td class="paramname"><em>input_pyramid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>levels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создает пирамиду изображений </p>
+
+<p class="definition">См. определение в файле <a class="el" href="eulerian__enlargement_8cpp_source.html">eulerian_enlargement.cpp</a> строка <a class="el" href="eulerian__enlargement_8cpp_source.html#l00053">53</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   54</span>{</div>
+<div class="line"><span class="lineno">   55</span>    input_pyramid.clear();</div>
+<div class="line"><span class="lineno">   56</span>    std::vector&lt;Mat&gt; pyramid;</div>
+<div class="line"><span class="lineno">   57</span>    Mat current_level = input_frame.clone();</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = 0; level &lt; levels; level++)</div>
+<div class="line"><span class="lineno">   60</span>    {</div>
+<div class="line"><span class="lineno">   61</span>        Mat down, up;</div>
+<div class="line"><span class="lineno">   62</span>        <span class="comment">// Блюрим кадр и уменьшаем его размер по ширине и высоте в два раза</span></div>
+<div class="line"><span class="lineno">   63</span>        pyrDown(current_level, down);</div>
+<div class="line"><span class="lineno">   64</span>        <span class="comment">// Увеличиваем изображение по ширине и высоте в два раза, затем блюрим его</span></div>
+<div class="line"><span class="lineno">   65</span>        pyrUp(down, up, current_level.size());</div>
+<div class="line"><span class="lineno">   66</span>        Mat laplace = current_level - up;</div>
+<div class="line"><span class="lineno">   67</span>        pyramid.push_back(laplace);</div>
+<div class="line"><span class="lineno">   68</span>        current_level = down;</div>
+<div class="line"><span class="lineno">   69</span>    }</div>
+<div class="line"><span class="lineno">   70</span>    pyramid.push_back(current_level);</div>
+<div class="line"><span class="lineno">   71</span>    input_pyramid = pyramid;</div>
+<div class="line"><span class="lineno">   72</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1c982a889d750215233354eba98bc391" name="a1c982a889d750215233354eba98bc391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c982a889d750215233354eba98bc391">&#9670;&#160;</a></span>IirFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EulerEnlarger::IirFilter </td>
+          <td>(</td>
+          <td class="paramtype">Mat &amp;&#160;</td>
+          <td class="paramname"><em>input_pyramid_level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Mat &amp;&#160;</td>
+          <td class="paramname"><em>motion_pyramid_level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Mat &amp;&#160;</td>
+          <td class="paramname"><em>low_pass_high_level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Mat &amp;&#160;</td>
+          <td class="paramname"><em>low_pass_low_level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>cutoff_low</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>cutoff_high</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Фильтр для отсекания низких и высоких "пространственных" частот ("фильтр с бесконечной импульсной характеристикой" - infinite impulse response) </p>
+<p >Чем больше cutoff (пороговое значение), тем быстрее исчезает "низкочастотные" области изображения из "низкочастотной" пирамиды =&gt; длительные (соответственно большие) движения быстрее исчезают </p>
+
+<p class="definition">См. определение в файле <a class="el" href="eulerian__enlargement_8cpp_source.html">eulerian_enlargement.cpp</a> строка <a class="el" href="eulerian__enlargement_8cpp_source.html#l00074">74</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   75</span>{</div>
+<div class="line"><span class="lineno">   76</span>    low_pass_high_level = (1 - cutoff_high) * low_pass_high_level + cutoff_high * input_pyramid_level;</div>
+<div class="line"><span class="lineno">   77</span>    low_pass_low_level = (1 - cutoff_low) * low_pass_low_level + cutoff_low * input_pyramid_level;</div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span>    motion_pyramid_level = low_pass_high_level - low_pass_low_level;</div>
+<div class="line"><span class="lineno">   80</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4d191318cbe997cd7ac5dd027b508921" name="a4d191318cbe997cd7ac5dd027b508921"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d191318cbe997cd7ac5dd027b508921">&#9670;&#160;</a></span>LaplaceEnlarge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EulerEnlarger::LaplaceEnlarge </td>
+          <td>(</td>
+          <td class="paramtype">Mat &amp;&#160;</td>
+          <td class="paramname"><em>motion_pyramid_level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>current_level</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Осуществляет увеличение движения на конкретном уровне пирамиды </p>
+
+<p class="definition">См. определение в файле <a class="el" href="eulerian__enlargement_8cpp_source.html">eulerian_enlargement.cpp</a> строка <a class="el" href="eulerian__enlargement_8cpp_source.html#l00022">22</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>{</div>
+<div class="line"><span class="lineno">   24</span>    <span class="keywordtype">double</span> current_alpha = (<a class="code hl_variable" href="class_euler_enlarger.html#a1af2a486a304fd753049f1647ea790e4">lambda_</a> / <a class="code hl_variable" href="class_euler_enlarger.html#a5ba64d98bf7304db30a7dddfc0009b2b">delta_</a> / 8.0 - 1.0) * <a class="code hl_variable" href="class_euler_enlarger.html#a2cb21e07ef755dd1e96e12df21077e90">exaggeraiton_coefficient_</a>;</div>
+<div class="line"><span class="lineno">   25</span> </div>
+<div class="line"><span class="lineno">   26</span>    <span class="keywordflow">if</span> (current_level == <a class="code hl_variable" href="class_euler_enlarger.html#a35076bfb98ab8e0ad28bba64f861b77a">levels_amount_</a> || current_level == 0)</div>
+<div class="line"><span class="lineno">   27</span>    {</div>
+<div class="line"><span class="lineno">   28</span>        <span class="comment">// Для первого и последнего уровней пирамиды устанавливаем усиление на 0</span></div>
+<div class="line"><span class="lineno">   29</span>        motion_pyramid_level = motion_pyramid_level * 0;</div>
+<div class="line"><span class="lineno">   30</span>    }</div>
+<div class="line"><span class="lineno">   31</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   32</span>    {</div>
+<div class="line"><span class="lineno">   33</span>        <span class="comment">// Выполняем для остальных уровней</span></div>
+<div class="line"><span class="lineno">   34</span>        motion_pyramid_level = motion_pyramid_level * std::min(current_alpha, alpha_);</div>
+<div class="line"><span class="lineno">   35</span>    }</div>
+<div class="line"><span class="lineno">   36</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a172eb1596931729b32b1fe7a68e0dcf3" name="a172eb1596931729b32b1fe7a68e0dcf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a172eb1596931729b32b1fe7a68e0dcf3">&#9670;&#160;</a></span>alpha_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double EulerEnlarger::alpha_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="eulerian__enlargement_8h_source.html">eulerian_enlargement.h</a> строка <a class="el" href="eulerian__enlargement_8h_source.html#l00075">75</a></p>
+
+</div>
+</div>
+<a id="ab6176560a34867b75a7bc019cc550346" name="ab6176560a34867b75a7bc019cc550346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6176560a34867b75a7bc019cc550346">&#9670;&#160;</a></span>color_attenuation_coefficient_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double EulerEnlarger::color_attenuation_coefficient_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Коэффициент приглушеняи цвета </p>
+
+<p class="definition">См. определение в файле <a class="el" href="eulerian__enlargement_8h_source.html">eulerian_enlargement.h</a> строка <a class="el" href="eulerian__enlargement_8h_source.html#l00069">69</a></p>
+
+</div>
+</div>
+<a id="ab7775d588967f3fa4d9778d4ad9f4c2f" name="ab7775d588967f3fa4d9778d4ad9f4c2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7775d588967f3fa4d9778d4ad9f4c2f">&#9670;&#160;</a></span>cutoff_high_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double EulerEnlarger::cutoff_high_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="eulerian__enlargement_8h_source.html">eulerian_enlargement.h</a> строка <a class="el" href="eulerian__enlargement_8h_source.html#l00051">51</a></p>
+
+</div>
+</div>
+<a id="a8fa8710057b79f42c2d1430693d65179" name="a8fa8710057b79f42c2d1430693d65179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fa8710057b79f42c2d1430693d65179">&#9670;&#160;</a></span>cutoff_low_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double EulerEnlarger::cutoff_low_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="eulerian__enlargement_8h_source.html">eulerian_enlargement.h</a> строка <a class="el" href="eulerian__enlargement_8h_source.html#l00050">50</a></p>
+
+</div>
+</div>
+<a id="a5ba64d98bf7304db30a7dddfc0009b2b" name="a5ba64d98bf7304db30a7dddfc0009b2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ba64d98bf7304db30a7dddfc0009b2b">&#9670;&#160;</a></span>delta_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double EulerEnlarger::delta_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Коэффициент, использующийся при увеличении </p>
+
+<p class="definition">См. определение в файле <a class="el" href="eulerian__enlargement_8h_source.html">eulerian_enlargement.h</a> строка <a class="el" href="eulerian__enlargement_8h_source.html#l00073">73</a></p>
+
+</div>
+</div>
+<a id="a2cb21e07ef755dd1e96e12df21077e90" name="a2cb21e07ef755dd1e96e12df21077e90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cb21e07ef755dd1e96e12df21077e90">&#9670;&#160;</a></span>exaggeraiton_coefficient_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double EulerEnlarger::exaggeraiton_coefficient_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Коэффициент увеличения. Чем выше - тем больше шума, тем сильнее увеличиваются небольшие движения. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="eulerian__enlargement_8h_source.html">eulerian_enlargement.h</a> строка <a class="el" href="eulerian__enlargement_8h_source.html#l00060">60</a></p>
+
+</div>
+</div>
+<a id="a1af2a486a304fd753049f1647ea790e4" name="a1af2a486a304fd753049f1647ea790e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1af2a486a304fd753049f1647ea790e4">&#9670;&#160;</a></span>lambda_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double EulerEnlarger::lambda_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Показательная длина волны </p>
+
+<p class="definition">См. определение в файле <a class="el" href="eulerian__enlargement_8h_source.html">eulerian_enlargement.h</a> строка <a class="el" href="eulerian__enlargement_8h_source.html#l00064">64</a></p>
+
+</div>
+</div>
+<a id="aaa7ed3c1fa47e4420039f9c6cc7fe590" name="aaa7ed3c1fa47e4420039f9c6cc7fe590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa7ed3c1fa47e4420039f9c6cc7fe590">&#9670;&#160;</a></span>lambda_cutoff_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double EulerEnlarger::lambda_cutoff_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="eulerian__enlargement_8h_source.html">eulerian_enlargement.h</a> строка <a class="el" href="eulerian__enlargement_8h_source.html#l00065">65</a></p>
+
+</div>
+</div>
+<a id="a35076bfb98ab8e0ad28bba64f861b77a" name="a35076bfb98ab8e0ad28bba64f861b77a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35076bfb98ab8e0ad28bba64f861b77a">&#9670;&#160;</a></span>levels_amount_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int EulerEnlarger::levels_amount_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Количество уровней (слоев) пирамиды </p>
+
+<p class="definition">См. определение в файле <a class="el" href="eulerian__enlargement_8h_source.html">eulerian_enlargement.h</a> строка <a class="el" href="eulerian__enlargement_8h_source.html#l00056">56</a></p>
+
+</div>
+</div>
+<a id="ade09863b5c4931f14e424e86168c60e0" name="ade09863b5c4931f14e424e86168c60e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade09863b5c4931f14e424e86168c60e0">&#9670;&#160;</a></span>low_pass_high_pyramid_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Mat&gt; EulerEnlarger::low_pass_high_pyramid_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="eulerian__enlargement_8h_source.html">eulerian_enlargement.h</a> строка <a class="el" href="eulerian__enlargement_8h_source.html#l00047">47</a></p>
+
+</div>
+</div>
+<a id="ae47c0a2c915288fbd02c6671861860f1" name="ae47c0a2c915288fbd02c6671861860f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae47c0a2c915288fbd02c6671861860f1">&#9670;&#160;</a></span>low_pass_low_pyramid_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Mat&gt; EulerEnlarger::low_pass_low_pyramid_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="eulerian__enlargement_8h_source.html">eulerian_enlargement.h</a> строка <a class="el" href="eulerian__enlargement_8h_source.html#l00048">48</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/include/MovEn/<a class="el" href="eulerian__enlargement_8h_source.html">eulerian_enlargement.h</a></li>
+<li>C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/source/<a class="el" href="eulerian__enlargement_8cpp_source.html">eulerian_enlargement.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

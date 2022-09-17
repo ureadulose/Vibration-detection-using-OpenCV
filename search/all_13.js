@@ -6,7 +6,7 @@ var searchData=
   ['width_5foffset_5f_3',['width_offset_',['../class_main_menu.html#ac8cde06a54ac62981f6ee2aaab284dbc',1,'MainMenu']]],
   ['win_5fname_5f_4',['win_name_',['../class_movement_enlarger.html#a2ddb490175f6d262dc5c99ff67aa624b',1,'MovementEnlarger']]],
   ['window_5fname_5f_5',['window_name_',['../class_vibration_detector.html#a1dddb74ae6ef1b1f5cb4b66e2a352509',1,'VibrationDetector']]],
-  ['winname_5f_6',['winname_',['../class_main_menu.html#a8b8a1a133a5ef0bfcb8203b104d9e7d8',1,'MainMenu::winname_()'],['../class_histogram.html#a292702c6d9b47cb4b017a10c410d7fea',1,'Histogram::winname_()']]],
+  ['winname_5f_6',['winname_',['../class_camera_calibrator.html#a2da15c9fb792eba736b182ed375b902b',1,'CameraCalibrator::winname_()'],['../class_video_undistorter.html#aaec69d8897221bf238ce22b9eefd0d1c',1,'VideoUndistorter::winname_()'],['../class_main_menu.html#a8b8a1a133a5ef0bfcb8203b104d9e7d8',1,'MainMenu::winname_()'],['../class_histogram.html#a292702c6d9b47cb4b017a10c410d7fea',1,'Histogram::winname_()']]],
   ['write_7',['Write',['../class_output_to_csv.html#a8f1e3239fa21906aa102c3d601183f65',1,'OutputToCsv']]],
   ['writeframe_8',['WriteFrame',['../class_frame_handler.html#a43fe77a59e8e5d99f7bb0ad3499591ef',1,'FrameHandler']]]
 ];

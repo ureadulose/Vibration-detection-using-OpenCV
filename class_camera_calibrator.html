@@ -1,0 +1,1198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Visual Vibration Tracking: Класс CameraCalibrator</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Visual Vibration Tracking<span id="projectnumber">&#160;0.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_camera_calibrator-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс CameraCalibrator</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для нахождения коэффициентов для конкретной линзы (с помощью которой было снято видео)  
+ <a href="class_camera_calibrator.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a3e82880b602bc1400e306419211d466b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#a3e82880b602bc1400e306419211d466b">CameraCalibrator</a> (std::string chessboards_path)</td></tr>
+<tr class="memdesc:a3e82880b602bc1400e306419211d466b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор этого класса  <a href="class_camera_calibrator.html#a3e82880b602bc1400e306419211d466b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3e82880b602bc1400e306419211d466b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa149fb2446c10bd1a25d64aaecd99942"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#aa149fb2446c10bd1a25d64aaecd99942">ExecuteCameraCalibration</a> ()</td></tr>
+<tr class="separator:aa149fb2446c10bd1a25d64aaecd99942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:ade6a2521d6eb589d2ee76cfe090e2c4a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#ade6a2521d6eb589d2ee76cfe090e2c4a">LoadImages</a> (std::string chessboards_path)</td></tr>
+<tr class="memdesc:ade6a2521d6eb589d2ee76cfe090e2c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загружает фотографии (изображения) шахматных досок в память из пути к папке.  <a href="class_camera_calibrator.html#ade6a2521d6eb589d2ee76cfe090e2c4a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ade6a2521d6eb589d2ee76cfe090e2c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eca0d972785653183b262314c8e1127"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#a7eca0d972785653183b262314c8e1127">ReadNextImage</a> (std::string path)</td></tr>
+<tr class="memdesc:a7eca0d972785653183b262314c8e1127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Считывает новое изображение и увеличивает переменную chessboard_amount_ на один  <a href="class_camera_calibrator.html#a7eca0d972785653183b262314c8e1127">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7eca0d972785653183b262314c8e1127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2216558d0c8e967ad3ccfcfd0bf769d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#a2216558d0c8e967ad3ccfcfd0bf769d9">AddTips</a> (Mat &amp;frame, std::string tip)</td></tr>
+<tr class="memdesc:a2216558d0c8e967ad3ccfcfd0bf769d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">По аналогии с <a class="el" href="class_frame_handler.html#a13af7fdd06b373db04ece2adc6e62d14" title="Добавляет (отрисовывает) подсказки для пользователя на кадр">FrameHandler::AddTips</a> добавляет подсказки пользователя. В данном случае это - номер текущего обрабатываемого кадра и общее кол-во кадров.<br  />
+.  <a href="class_camera_calibrator.html#a2216558d0c8e967ad3ccfcfd0bf769d9">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2216558d0c8e967ad3ccfcfd0bf769d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc18e9a241225fdbb90d1dbea0421282"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#adc18e9a241225fdbb90d1dbea0421282">FindCorners</a> (Mat input_frame, Size pattern_size, std::vector&lt; Point2f &gt; &amp;corners)</td></tr>
+<tr class="memdesc:adc18e9a241225fdbb90d1dbea0421282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находит шахматный паттерн размером, заданным в конструкторе класса (<a class="el" href="class_camera_calibrator.html#a3e82880b602bc1400e306419211d466b" title="Конструктор этого класса">CameraCalibrator::CameraCalibrator</a>)  <a href="class_camera_calibrator.html#adc18e9a241225fdbb90d1dbea0421282">Подробнее...</a><br /></td></tr>
+<tr class="separator:adc18e9a241225fdbb90d1dbea0421282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d1c6667d68b7e15bfb185c4a54d65c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#a2d1c6667d68b7e15bfb185c4a54d65c5">SaveFoundParamsToFile</a> (Mat camera_matrix, Mat dist_coeffs_2be_written)</td></tr>
+<tr class="memdesc:a2d1c6667d68b7e15bfb185c4a54d65c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохраняет найденные параметры (коэффициенты fx, fy, cx, cy), необходимые для удаления дисторсии  <a href="class_camera_calibrator.html#a2d1c6667d68b7e15bfb185c4a54d65c5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2d1c6667d68b7e15bfb185c4a54d65c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:afd839658f3fe0b8b23cf6f6f08c67e48"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#afd839658f3fe0b8b23cf6f6f08c67e48">chessboards_folder_path_</a></td></tr>
+<tr class="memdesc:afd839658f3fe0b8b23cf6f6f08c67e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Путь к папке с фотографиями "шахматной доски".  <a href="class_camera_calibrator.html#afd839658f3fe0b8b23cf6f6f08c67e48">Подробнее...</a><br /></td></tr>
+<tr class="separator:afd839658f3fe0b8b23cf6f6f08c67e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac220c41909d09cf784734ded65525465"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#ac220c41909d09cf784734ded65525465">chessboards_amount_</a></td></tr>
+<tr class="memdesc:ac220c41909d09cf784734ded65525465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество фотографий шахматных досок (находится в <a class="el" href="class_camera_calibrator.html#ade6a2521d6eb589d2ee76cfe090e2c4a" title="Загружает фотографии (изображения) шахматных досок в память из пути к папке.">CameraCalibrator::LoadImages</a>)  <a href="class_camera_calibrator.html#ac220c41909d09cf784734ded65525465">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac220c41909d09cf784734ded65525465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce37665ea06fc1a62c12da5a2d43025"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Mat &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#a2ce37665ea06fc1a62c12da5a2d43025">images_with_chessboard_</a></td></tr>
+<tr class="memdesc:a2ce37665ea06fc1a62c12da5a2d43025"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор загруженных фотографий с шахматными досками  <a href="class_camera_calibrator.html#a2ce37665ea06fc1a62c12da5a2d43025">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2ce37665ea06fc1a62c12da5a2d43025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04f7e4c11486226a4dc8bbf610660503"><td class="memItemLeft" align="right" valign="top">VideoCapture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#a04f7e4c11486226a4dc8bbf610660503">input_cap_</a></td></tr>
+<tr class="memdesc:a04f7e4c11486226a4dc8bbf610660503"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Поток" из кадров входного видео (последовательности)  <a href="class_camera_calibrator.html#a04f7e4c11486226a4dc8bbf610660503">Подробнее...</a><br /></td></tr>
+<tr class="separator:a04f7e4c11486226a4dc8bbf610660503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc59f8fd0514b211ab7898f7d85cf961"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#acc59f8fd0514b211ab7898f7d85cf961">frame_width_</a></td></tr>
+<tr class="memdesc:acc59f8fd0514b211ab7898f7d85cf961"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ширина кадра  <a href="class_camera_calibrator.html#acc59f8fd0514b211ab7898f7d85cf961">Подробнее...</a><br /></td></tr>
+<tr class="separator:acc59f8fd0514b211ab7898f7d85cf961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a149f830d429e3581e1668a15ffb4e5e2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#a149f830d429e3581e1668a15ffb4e5e2">frame_height_</a></td></tr>
+<tr class="memdesc:a149f830d429e3581e1668a15ffb4e5e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Высота кадра  <a href="class_camera_calibrator.html#a149f830d429e3581e1668a15ffb4e5e2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a149f830d429e3581e1668a15ffb4e5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2da15c9fb792eba736b182ed375b902b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#a2da15c9fb792eba736b182ed375b902b">winname_</a></td></tr>
+<tr class="memdesc:a2da15c9fb792eba736b182ed375b902b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название окна  <a href="class_camera_calibrator.html#a2da15c9fb792eba736b182ed375b902b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2da15c9fb792eba736b182ed375b902b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6d7ca5b52ba0cdab65c1dc0230697ce"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#ab6d7ca5b52ba0cdab65c1dc0230697ce">txt_file_name_</a></td></tr>
+<tr class="memdesc:ab6d7ca5b52ba0cdab65c1dc0230697ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Путь к текстовому файлу, в который будут сохранены найденные коэффициенты  <a href="class_camera_calibrator.html#ab6d7ca5b52ba0cdab65c1dc0230697ce">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab6d7ca5b52ba0cdab65c1dc0230697ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1acb421aa0db1d5c4e9d4a6f5f516a66"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#a1acb421aa0db1d5c4e9d4a6f5f516a66">camera_matrix_</a></td></tr>
+<tr class="memdesc:a1acb421aa0db1d5c4e9d4a6f5f516a66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Матрица, в которой находятся найденные коэффициенты px, py, cx, cy.  <a href="class_camera_calibrator.html#a1acb421aa0db1d5c4e9d4a6f5f516a66">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1acb421aa0db1d5c4e9d4a6f5f516a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a574c82b6583c4a5b514e77918db61f50"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#a574c82b6583c4a5b514e77918db61f50">distortion_coefficients_</a></td></tr>
+<tr class="memdesc:a574c82b6583c4a5b514e77918db61f50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Коэффициенты дисторсии  <a href="class_camera_calibrator.html#a574c82b6583c4a5b514e77918db61f50">Подробнее...</a><br /></td></tr>
+<tr class="separator:a574c82b6583c4a5b514e77918db61f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e037f4855519733bd060ae02534856"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Mat &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#a03e037f4855519733bd060ae02534856">rotation_vector_</a></td></tr>
+<tr class="separator:a03e037f4855519733bd060ae02534856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2971536607c20d3068080625e454bf7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Mat &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#ae2971536607c20d3068080625e454bf7">translation_vector_</a></td></tr>
+<tr class="separator:ae2971536607c20d3068080625e454bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ae2cd85b73f6efcb224e45c582e555f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Point2f &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#a0ae2cd85b73f6efcb224e45c582e555f">corners_</a></td></tr>
+<tr class="memdesc:a0ae2cd85b73f6efcb224e45c582e555f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найденные узлы шахматной доски, найденные на конкретном изображении  <a href="class_camera_calibrator.html#a0ae2cd85b73f6efcb224e45c582e555f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0ae2cd85b73f6efcb224e45c582e555f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af702d786b8787340bddbffc450811e11"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; Point2f &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#af702d786b8787340bddbffc450811e11">vec_of_corners_</a></td></tr>
+<tr class="memdesc:af702d786b8787340bddbffc450811e11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Контейнер для хранения найденных узлов шахматных досок  <a href="class_camera_calibrator.html#af702d786b8787340bddbffc450811e11">Подробнее...</a><br /></td></tr>
+<tr class="separator:af702d786b8787340bddbffc450811e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c4b08c551880d1c1732608657b4130"><td class="memItemLeft" align="right" valign="top">Size&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#ae5c4b08c551880d1c1732608657b4130">pattern_size_</a></td></tr>
+<tr class="memdesc:ae5c4b08c551880d1c1732608657b4130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер паттерна, по которому будут искаться шахматные доски  <a href="class_camera_calibrator.html#ae5c4b08c551880d1c1732608657b4130">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae5c4b08c551880d1c1732608657b4130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca2c8622828a7638876c950860051bc2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#aca2c8622828a7638876c950860051bc2">fx_</a></td></tr>
+<tr class="memdesc:aca2c8622828a7638876c950860051bc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Коэффициент матрицы <a class="el" href="class_video_undistorter.html#a78e9df5a43762efac01d4d37d97be8e5" title="Та самая матрица, присущая конкретной паре - линща + камера.">VideoUndistorter::camera_matrix_</a>.  <a href="class_camera_calibrator.html#aca2c8622828a7638876c950860051bc2">Подробнее...</a><br /></td></tr>
+<tr class="separator:aca2c8622828a7638876c950860051bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab073b0d3c3c38a203fea48138e9badb8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#ab073b0d3c3c38a203fea48138e9badb8">fy_</a></td></tr>
+<tr class="memdesc:ab073b0d3c3c38a203fea48138e9badb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Коэффициент матрицы <a class="el" href="class_video_undistorter.html#a78e9df5a43762efac01d4d37d97be8e5" title="Та самая матрица, присущая конкретной паре - линща + камера.">VideoUndistorter::camera_matrix_</a>.  <a href="class_camera_calibrator.html#ab073b0d3c3c38a203fea48138e9badb8">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab073b0d3c3c38a203fea48138e9badb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2090cf7929cd099818929c220d18806"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#ab2090cf7929cd099818929c220d18806">px_</a></td></tr>
+<tr class="memdesc:ab2090cf7929cd099818929c220d18806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Коэффициент матрицы <a class="el" href="class_video_undistorter.html#a78e9df5a43762efac01d4d37d97be8e5" title="Та самая матрица, присущая конкретной паре - линща + камера.">VideoUndistorter::camera_matrix_</a>.  <a href="class_camera_calibrator.html#ab2090cf7929cd099818929c220d18806">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab2090cf7929cd099818929c220d18806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ab88a1e59d13dcaa481b4628abff359"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_calibrator.html#a6ab88a1e59d13dcaa481b4628abff359">py_</a></td></tr>
+<tr class="memdesc:a6ab88a1e59d13dcaa481b4628abff359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Коэффициент матрицы <a class="el" href="class_video_undistorter.html#a78e9df5a43762efac01d4d37d97be8e5" title="Та самая матрица, присущая конкретной паре - линща + камера.">VideoUndistorter::camera_matrix_</a>.  <a href="class_camera_calibrator.html#a6ab88a1e59d13dcaa481b4628abff359">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6ab88a1e59d13dcaa481b4628abff359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p >Класс для нахождения коэффициентов для конкретной линзы (с помощью которой было снято видео) </p>
+<p >Объект класса осуществляет чтение кадров/фотографий с шахматной доской в различных местах на кадре и вычисляет коэффициенты матрицы [] линзы TODO: добавить вид этой матрицы (3 х 3) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a> строка <a class="el" href="camera__calibrator_8h_source.html#l00029">29</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a3e82880b602bc1400e306419211d466b" name="a3e82880b602bc1400e306419211d466b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e82880b602bc1400e306419211d466b">&#9670;&#160;</a></span>CameraCalibrator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CameraCalibrator::CameraCalibrator </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>chessboards_path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор этого класса </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chessboards_path</td><td>имя (путь) к папке с изображениями шахматных досок </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Заметки</dt><dd><a class="el" href="class_video_undistorter.html" title="Класс для удаления дисторсии на видео">VideoUndistorter</a> </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8cpp_source.html">camera_calibrator.cpp</a> строка <a class="el" href="camera__calibrator_8cpp_source.html#l00003">3</a></p>
+<div class="fragment"><div class="line"><span class="lineno">    3</span>                                                             :</div>
+<div class="line"><span class="lineno">    4</span>    <a class="code hl_variable" href="class_camera_calibrator.html#afd839658f3fe0b8b23cf6f6f08c67e48">chessboards_folder_path_</a>{ chessboards_path },</div>
+<div class="line"><span class="lineno">    5</span>    <a class="code hl_variable" href="class_camera_calibrator.html#a2da15c9fb792eba736b182ed375b902b">winname_</a>{ <span class="stringliteral">&quot;Camera Calibrator&quot;</span> }</div>
+<div class="line"><span class="lineno">    6</span>{</div>
+<div class="line"><span class="lineno">    7</span>    <span class="comment">// наших углов должен быть 10 и 7 по горизонтали и вертикали соответственно</span></div>
+<div class="line"><span class="lineno">    8</span>    <a class="code hl_variable" href="class_camera_calibrator.html#ae5c4b08c551880d1c1732608657b4130">pattern_size_</a> = Size(10, 7);</div>
+<div class="line"><span class="lineno">    9</span> </div>
+<div class="line"><span class="lineno">   10</span>    <a class="code hl_variable" href="class_camera_calibrator.html#ab6d7ca5b52ba0cdab65c1dc0230697ce">txt_file_name_</a> = <span class="stringliteral">&quot;parameters.txt&quot;</span>;</div>
+<div class="line"><span class="lineno">   11</span>    namedWindow(<a class="code hl_variable" href="class_camera_calibrator.html#a2da15c9fb792eba736b182ed375b902b">winname_</a>, WINDOW_NORMAL);</div>
+<div class="line"><span class="lineno">   12</span>}</div>
+<div class="ttc" id="aclass_camera_calibrator_html_a2da15c9fb792eba736b182ed375b902b"><div class="ttname"><a href="class_camera_calibrator.html#a2da15c9fb792eba736b182ed375b902b">CameraCalibrator::winname_</a></div><div class="ttdeci">std::string winname_</div><div class="ttdoc">Название окна</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8h_source.html#l00104">camera_calibrator.h:104</a></div></div>
+<div class="ttc" id="aclass_camera_calibrator_html_ab6d7ca5b52ba0cdab65c1dc0230697ce"><div class="ttname"><a href="class_camera_calibrator.html#ab6d7ca5b52ba0cdab65c1dc0230697ce">CameraCalibrator::txt_file_name_</a></div><div class="ttdeci">std::string txt_file_name_</div><div class="ttdoc">Путь к текстовому файлу, в который будут сохранены найденные коэффициенты</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8h_source.html#l00108">camera_calibrator.h:108</a></div></div>
+<div class="ttc" id="aclass_camera_calibrator_html_ae5c4b08c551880d1c1732608657b4130"><div class="ttname"><a href="class_camera_calibrator.html#ae5c4b08c551880d1c1732608657b4130">CameraCalibrator::pattern_size_</a></div><div class="ttdeci">Size pattern_size_</div><div class="ttdoc">Размер паттерна, по которому будут искаться шахматные доски</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8h_source.html#l00130">camera_calibrator.h:130</a></div></div>
+<div class="ttc" id="aclass_camera_calibrator_html_afd839658f3fe0b8b23cf6f6f08c67e48"><div class="ttname"><a href="class_camera_calibrator.html#afd839658f3fe0b8b23cf6f6f08c67e48">CameraCalibrator::chessboards_folder_path_</a></div><div class="ttdeci">std::string chessboards_folder_path_</div><div class="ttdoc">Путь к папке с фотографиями &quot;шахматной доски&quot;.</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8h_source.html#l00080">camera_calibrator.h:80</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7d4a03f35cf1c985cd4dfb651dcab60f" name="a7d4a03f35cf1c985cd4dfb651dcab60f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d4a03f35cf1c985cd4dfb651dcab60f">&#9670;&#160;</a></span>~CameraCalibrator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CameraCalibrator::~CameraCalibrator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8cpp_source.html">camera_calibrator.cpp</a> строка <a class="el" href="camera__calibrator_8cpp_source.html#l00014">14</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   15</span>{</div>
+<div class="line"><span class="lineno">   16</span>    destroyWindow(<a class="code hl_variable" href="class_camera_calibrator.html#a2da15c9fb792eba736b182ed375b902b">winname_</a>);</div>
+<div class="line"><span class="lineno">   17</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a2216558d0c8e967ad3ccfcfd0bf769d9" name="a2216558d0c8e967ad3ccfcfd0bf769d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2216558d0c8e967ad3ccfcfd0bf769d9">&#9670;&#160;</a></span>AddTips()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraCalibrator::AddTips </td>
+          <td>(</td>
+          <td class="paramtype">Mat &amp;&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>tip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>По аналогии с <a class="el" href="class_frame_handler.html#a13af7fdd06b373db04ece2adc6e62d14" title="Добавляет (отрисовывает) подсказки для пользователя на кадр">FrameHandler::AddTips</a> добавляет подсказки пользователя. В данном случае это - номер текущего обрабатываемого кадра и общее кол-во кадров.<br  />
+. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>кадр, на который будут добавлены подсказки </td></tr>
+    <tr><td class="paramname">tip</td><td>строка с подсказкой </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Необходимо сделать:</a></b></dt><dd>Вынести её в какой-то отдельный модуль, чтобы не было дублирования кода </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8cpp_source.html">camera_calibrator.cpp</a> строка <a class="el" href="camera__calibrator_8cpp_source.html#l00152">152</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  153</span>{</div>
+<div class="line"><span class="lineno">  154</span>    <span class="keywordtype">int</span> font = FONT_HERSHEY_PLAIN;</div>
+<div class="line"><span class="lineno">  155</span>    <span class="keywordtype">double</span> font_scale = 1.5;</div>
+<div class="line"><span class="lineno">  156</span>    <span class="keywordtype">int</span> thickness = 2;</div>
+<div class="line"><span class="lineno">  157</span> </div>
+<div class="line"><span class="lineno">  158</span>    putText(</div>
+<div class="line"><span class="lineno">  159</span>        frame,</div>
+<div class="line"><span class="lineno">  160</span>        tip,</div>
+<div class="line"><span class="lineno">  161</span>        Point(frame.cols * 0.05, frame.rows * 0.05),</div>
+<div class="line"><span class="lineno">  162</span>        font,</div>
+<div class="line"><span class="lineno">  163</span>        font_scale,</div>
+<div class="line"><span class="lineno">  164</span>        Scalar(0, 255, 0),</div>
+<div class="line"><span class="lineno">  165</span>        thickness</div>
+<div class="line"><span class="lineno">  166</span>    );</div>
+<div class="line"><span class="lineno">  167</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa149fb2446c10bd1a25d64aaecd99942" name="aa149fb2446c10bd1a25d64aaecd99942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa149fb2446c10bd1a25d64aaecd99942">&#9670;&#160;</a></span>ExecuteCameraCalibration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraCalibrator::ExecuteCameraCalibration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8cpp_source.html">camera_calibrator.cpp</a> строка <a class="el" href="camera__calibrator_8cpp_source.html#l00019">19</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   20</span>{</div>
+<div class="line"><span class="lineno">   21</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Starting camera calibration...&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   22</span> </div>
+<div class="line"><span class="lineno">   23</span>    <span class="comment">// Загружаем изображения в память</span></div>
+<div class="line"><span class="lineno">   24</span>    <a class="code hl_function" href="class_camera_calibrator.html#ade6a2521d6eb589d2ee76cfe090e2c4a">LoadImages</a>(<a class="code hl_variable" href="class_camera_calibrator.html#afd839658f3fe0b8b23cf6f6f08c67e48">chessboards_folder_path_</a>);</div>
+<div class="line"><span class="lineno">   25</span> </div>
+<div class="line"><span class="lineno">   26</span>    <span class="keyword">auto</span> it = <a class="code hl_variable" href="class_camera_calibrator.html#a2ce37665ea06fc1a62c12da5a2d43025">images_with_chessboard_</a>.begin();</div>
+<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">while</span> (it != <a class="code hl_variable" href="class_camera_calibrator.html#a2ce37665ea06fc1a62c12da5a2d43025">images_with_chessboard_</a>.end())</div>
+<div class="line"><span class="lineno">   28</span>    {</div>
+<div class="line"><span class="lineno">   29</span>        Mat current_image = *it;</div>
+<div class="line"><span class="lineno">   30</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="class_camera_calibrator.html#adc18e9a241225fdbb90d1dbea0421282">FindCorners</a>(current_image, <a class="code hl_variable" href="class_camera_calibrator.html#ae5c4b08c551880d1c1732608657b4130">pattern_size_</a>, <a class="code hl_variable" href="class_camera_calibrator.html#a0ae2cd85b73f6efcb224e45c582e555f">corners_</a>))</div>
+<div class="line"><span class="lineno">   31</span>        {</div>
+<div class="line"><span class="lineno">   32</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Pattern found&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   33</span>            drawChessboardCorners(current_image, <a class="code hl_variable" href="class_camera_calibrator.html#ae5c4b08c551880d1c1732608657b4130">pattern_size_</a>, <a class="code hl_variable" href="class_camera_calibrator.html#a0ae2cd85b73f6efcb224e45c582e555f">corners_</a>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   34</span>            <a class="code hl_variable" href="class_camera_calibrator.html#af702d786b8787340bddbffc450811e11">vec_of_corners_</a>.push_back(<a class="code hl_variable" href="class_camera_calibrator.html#a0ae2cd85b73f6efcb224e45c582e555f">corners_</a>);</div>
+<div class="line"><span class="lineno">   35</span>        }</div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>        it++;</div>
+<div class="line"><span class="lineno">   38</span>        <a class="code hl_function" href="class_camera_calibrator.html#a2216558d0c8e967ad3ccfcfd0bf769d9">AddTips</a>(current_image, <span class="stringliteral">&quot;Current frame: &quot;</span> + std::to_string(std::distance(<a class="code hl_variable" href="class_camera_calibrator.html#a2ce37665ea06fc1a62c12da5a2d43025">images_with_chessboard_</a>.begin(), it)) + <span class="stringliteral">&quot;/&quot;</span> + std::to_string(<a class="code hl_variable" href="class_camera_calibrator.html#a2ce37665ea06fc1a62c12da5a2d43025">images_with_chessboard_</a>.size()));</div>
+<div class="line"><span class="lineno">   39</span>        imshow(<a class="code hl_variable" href="class_camera_calibrator.html#a2da15c9fb792eba736b182ed375b902b">winname_</a>, current_image);</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>        <span class="keywordtype">int</span> code = waitKey(20);</div>
+<div class="line"><span class="lineno">   42</span>        <span class="keywordflow">switch</span> (code)</div>
+<div class="line"><span class="lineno">   43</span>        {</div>
+<div class="line"><span class="lineno">   44</span>            <span class="comment">// Пауза</span></div>
+<div class="line"><span class="lineno">   45</span>            <span class="comment">// Клавиши - пробел (ASCII code)</span></div>
+<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">case</span> 32:</div>
+<div class="line"><span class="lineno">   47</span>        {</div>
+<div class="line"><span class="lineno">   48</span>            waitKey(0);</div>
+<div class="line"><span class="lineno">   49</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   50</span>        }</div>
+<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">case</span> <span class="charliteral">&#39;q&#39;</span>:</div>
+<div class="line"><span class="lineno">   52</span>        {</div>
+<div class="line"><span class="lineno">   53</span>            it = <a class="code hl_variable" href="class_camera_calibrator.html#a2ce37665ea06fc1a62c12da5a2d43025">images_with_chessboard_</a>.end();</div>
+<div class="line"><span class="lineno">   54</span>            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   55</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   56</span>        }</div>
+<div class="line"><span class="lineno">   57</span>        }</div>
+<div class="line"><span class="lineno">   58</span>    }</div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>    <span class="comment">// Создаем координатную плоскость</span></div>
+<div class="line"><span class="lineno">   61</span>    std::vector&lt;Point3f&gt; object_points;</div>
+<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_camera_calibrator.html#ae5c4b08c551880d1c1732608657b4130">pattern_size_</a>.height; i++)</div>
+<div class="line"><span class="lineno">   63</span>    {</div>
+<div class="line"><span class="lineno">   64</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; <a class="code hl_variable" href="class_camera_calibrator.html#ae5c4b08c551880d1c1732608657b4130">pattern_size_</a>.width; j++)</div>
+<div class="line"><span class="lineno">   65</span>        {</div>
+<div class="line"><span class="lineno">   66</span>            object_points.push_back(Point3f(i, j, 0));</div>
+<div class="line"><span class="lineno">   67</span>        }</div>
+<div class="line"><span class="lineno">   68</span>    }</div>
+<div class="line"><span class="lineno">   69</span>    std::vector&lt;std::vector&lt;Point3f&gt;&gt; vec_of_object_points(<a class="code hl_variable" href="class_camera_calibrator.html#af702d786b8787340bddbffc450811e11">vec_of_corners_</a>.size());</div>
+<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_camera_calibrator.html#af702d786b8787340bddbffc450811e11">vec_of_corners_</a>.size(); i++)</div>
+<div class="line"><span class="lineno">   71</span>    {</div>
+<div class="line"><span class="lineno">   72</span>        vec_of_object_points[i] = object_points;</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Camera calibration...&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   77</span>    <span class="keywordtype">float</span> error = calibrateCamera</div>
+<div class="line"><span class="lineno">   78</span>    (</div>
+<div class="line"><span class="lineno">   79</span>        vec_of_object_points,</div>
+<div class="line"><span class="lineno">   80</span>        <a class="code hl_variable" href="class_camera_calibrator.html#af702d786b8787340bddbffc450811e11">vec_of_corners_</a>,</div>
+<div class="line"><span class="lineno">   81</span>        Size(<a class="code hl_variable" href="class_camera_calibrator.html#a149f830d429e3581e1668a15ffb4e5e2">frame_height_</a>, <a class="code hl_variable" href="class_camera_calibrator.html#acc59f8fd0514b211ab7898f7d85cf961">frame_width_</a>),</div>
+<div class="line"><span class="lineno">   82</span>        <a class="code hl_variable" href="class_camera_calibrator.html#a1acb421aa0db1d5c4e9d4a6f5f516a66">camera_matrix_</a>,</div>
+<div class="line"><span class="lineno">   83</span>        <a class="code hl_variable" href="class_camera_calibrator.html#a574c82b6583c4a5b514e77918db61f50">distortion_coefficients_</a>,</div>
+<div class="line"><span class="lineno">   84</span>        rotation_vector_,</div>
+<div class="line"><span class="lineno">   85</span>        translation_vector_</div>
+<div class="line"><span class="lineno">   86</span>    );</div>
+<div class="line"><span class="lineno">   87</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Error is &quot;</span> &lt;&lt; error &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   88</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;camera_matrix_ is &quot;</span> &lt;&lt; <a class="code hl_variable" href="class_camera_calibrator.html#a1acb421aa0db1d5c4e9d4a6f5f516a66">camera_matrix_</a> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   89</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;distortion_coefficients_ is &quot;</span> &lt;&lt; <a class="code hl_variable" href="class_camera_calibrator.html#a574c82b6583c4a5b514e77918db61f50">distortion_coefficients_</a> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; rotation_vector_.size(); i++)</div>
+<div class="line"><span class="lineno">   92</span>    {</div>
+<div class="line"><span class="lineno">   93</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;rotation_vector_ is &quot;</span> &lt;&lt; rotation_vector_[i] &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   94</span>    }</div>
+<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; translation_vector_.size(); i++)</div>
+<div class="line"><span class="lineno">   96</span>    {</div>
+<div class="line"><span class="lineno">   97</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;translation_vector_ is &quot;</span> &lt;&lt; translation_vector_[i] &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   98</span>    }</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>    <span class="comment">// saving found parameters to a txt file</span></div>
+<div class="line"><span class="lineno">  101</span>    <a class="code hl_function" href="class_camera_calibrator.html#a2d1c6667d68b7e15bfb185c4a54d65c5">SaveFoundParamsToFile</a>(<a class="code hl_variable" href="class_camera_calibrator.html#a1acb421aa0db1d5c4e9d4a6f5f516a66">camera_matrix_</a>, <a class="code hl_variable" href="class_camera_calibrator.html#a574c82b6583c4a5b514e77918db61f50">distortion_coefficients_</a>);</div>
+<div class="line"><span class="lineno">  102</span>    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">  103</span>}</div>
+<div class="ttc" id="aclass_camera_calibrator_html_a0ae2cd85b73f6efcb224e45c582e555f"><div class="ttname"><a href="class_camera_calibrator.html#a0ae2cd85b73f6efcb224e45c582e555f">CameraCalibrator::corners_</a></div><div class="ttdeci">std::vector&lt; Point2f &gt; corners_</div><div class="ttdoc">Найденные узлы шахматной доски, найденные на конкретном изображении</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8h_source.html#l00122">camera_calibrator.h:122</a></div></div>
+<div class="ttc" id="aclass_camera_calibrator_html_a149f830d429e3581e1668a15ffb4e5e2"><div class="ttname"><a href="class_camera_calibrator.html#a149f830d429e3581e1668a15ffb4e5e2">CameraCalibrator::frame_height_</a></div><div class="ttdeci">double frame_height_</div><div class="ttdoc">Высота кадра</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8h_source.html#l00100">camera_calibrator.h:100</a></div></div>
+<div class="ttc" id="aclass_camera_calibrator_html_a1acb421aa0db1d5c4e9d4a6f5f516a66"><div class="ttname"><a href="class_camera_calibrator.html#a1acb421aa0db1d5c4e9d4a6f5f516a66">CameraCalibrator::camera_matrix_</a></div><div class="ttdeci">Mat camera_matrix_</div><div class="ttdoc">Матрица, в которой находятся найденные коэффициенты px, py, cx, cy.</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8h_source.html#l00112">camera_calibrator.h:112</a></div></div>
+<div class="ttc" id="aclass_camera_calibrator_html_a2216558d0c8e967ad3ccfcfd0bf769d9"><div class="ttname"><a href="class_camera_calibrator.html#a2216558d0c8e967ad3ccfcfd0bf769d9">CameraCalibrator::AddTips</a></div><div class="ttdeci">void AddTips(Mat &amp;frame, std::string tip)</div><div class="ttdoc">По аналогии с FrameHandler::AddTips добавляет подсказки пользователя. В данном случае это - номер тек...</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8cpp_source.html#l00152">camera_calibrator.cpp:152</a></div></div>
+<div class="ttc" id="aclass_camera_calibrator_html_a2ce37665ea06fc1a62c12da5a2d43025"><div class="ttname"><a href="class_camera_calibrator.html#a2ce37665ea06fc1a62c12da5a2d43025">CameraCalibrator::images_with_chessboard_</a></div><div class="ttdeci">std::vector&lt; Mat &gt; images_with_chessboard_</div><div class="ttdoc">Вектор загруженных фотографий с шахматными досками</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8h_source.html#l00088">camera_calibrator.h:88</a></div></div>
+<div class="ttc" id="aclass_camera_calibrator_html_a2d1c6667d68b7e15bfb185c4a54d65c5"><div class="ttname"><a href="class_camera_calibrator.html#a2d1c6667d68b7e15bfb185c4a54d65c5">CameraCalibrator::SaveFoundParamsToFile</a></div><div class="ttdeci">void SaveFoundParamsToFile(Mat camera_matrix, Mat dist_coeffs_2be_written)</div><div class="ttdoc">Сохраняет найденные параметры (коэффициенты fx, fy, cx, cy), необходимые для удаления дисторсии</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8cpp_source.html#l00197">camera_calibrator.cpp:197</a></div></div>
+<div class="ttc" id="aclass_camera_calibrator_html_a574c82b6583c4a5b514e77918db61f50"><div class="ttname"><a href="class_camera_calibrator.html#a574c82b6583c4a5b514e77918db61f50">CameraCalibrator::distortion_coefficients_</a></div><div class="ttdeci">Mat distortion_coefficients_</div><div class="ttdoc">Коэффициенты дисторсии</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8h_source.html#l00116">camera_calibrator.h:116</a></div></div>
+<div class="ttc" id="aclass_camera_calibrator_html_acc59f8fd0514b211ab7898f7d85cf961"><div class="ttname"><a href="class_camera_calibrator.html#acc59f8fd0514b211ab7898f7d85cf961">CameraCalibrator::frame_width_</a></div><div class="ttdeci">double frame_width_</div><div class="ttdoc">Ширина кадра</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8h_source.html#l00096">camera_calibrator.h:96</a></div></div>
+<div class="ttc" id="aclass_camera_calibrator_html_adc18e9a241225fdbb90d1dbea0421282"><div class="ttname"><a href="class_camera_calibrator.html#adc18e9a241225fdbb90d1dbea0421282">CameraCalibrator::FindCorners</a></div><div class="ttdeci">bool FindCorners(Mat input_frame, Size pattern_size, std::vector&lt; Point2f &gt; &amp;corners)</div><div class="ttdoc">Находит шахматный паттерн размером, заданным в конструкторе класса (CameraCalibrator::CameraCalibrato...</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8cpp_source.html#l00169">camera_calibrator.cpp:169</a></div></div>
+<div class="ttc" id="aclass_camera_calibrator_html_ade6a2521d6eb589d2ee76cfe090e2c4a"><div class="ttname"><a href="class_camera_calibrator.html#ade6a2521d6eb589d2ee76cfe090e2c4a">CameraCalibrator::LoadImages</a></div><div class="ttdeci">int LoadImages(std::string chessboards_path)</div><div class="ttdoc">Загружает фотографии (изображения) шахматных досок в память из пути к папке.</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8cpp_source.html#l00105">camera_calibrator.cpp:105</a></div></div>
+<div class="ttc" id="aclass_camera_calibrator_html_af702d786b8787340bddbffc450811e11"><div class="ttname"><a href="class_camera_calibrator.html#af702d786b8787340bddbffc450811e11">CameraCalibrator::vec_of_corners_</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; Point2f &gt; &gt; vec_of_corners_</div><div class="ttdoc">Контейнер для хранения найденных узлов шахматных досок</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8h_source.html#l00126">camera_calibrator.h:126</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adc18e9a241225fdbb90d1dbea0421282" name="adc18e9a241225fdbb90d1dbea0421282"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc18e9a241225fdbb90d1dbea0421282">&#9670;&#160;</a></span>FindCorners()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CameraCalibrator::FindCorners </td>
+          <td>(</td>
+          <td class="paramtype">Mat&#160;</td>
+          <td class="paramname"><em>input_frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Size&#160;</td>
+          <td class="paramname"><em>pattern_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; Point2f &gt; &amp;&#160;</td>
+          <td class="paramname"><em>corners</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Находит шахматный паттерн размером, заданным в конструкторе класса (<a class="el" href="class_camera_calibrator.html#a3e82880b602bc1400e306419211d466b" title="Конструктор этого класса">CameraCalibrator::CameraCalibrator</a>) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_frame</td><td>кадр, на котором будет осуществлён поиск паттерна </td></tr>
+    <tr><td class="paramname">pattern_size</td><td>размер паттерна (по дефолту я выбрал 6х9) </td></tr>
+    <tr><td class="paramname">corners</td><td>адрес на вектор, в который будут записаны найденные координаты узлов паттерна </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - в случае, если паттерн нашёлся, false - в противном случае </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8cpp_source.html">camera_calibrator.cpp</a> строка <a class="el" href="camera__calibrator_8cpp_source.html#l00169">169</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  170</span>{</div>
+<div class="line"><span class="lineno">  171</span>    Mat gray_frame;</div>
+<div class="line"><span class="lineno">  172</span>    <span class="keywordflow">if</span> (input_frame.channels() &gt; 2)</div>
+<div class="line"><span class="lineno">  173</span>        cvtColor(input_frame, input_frame, COLOR_BGR2GRAY);</div>
+<div class="line"><span class="lineno">  174</span> </div>
+<div class="line"><span class="lineno">  175</span>    input_frame.copyTo(gray_frame);</div>
+<div class="line"><span class="lineno">  176</span> </div>
+<div class="line"><span class="lineno">  177</span>    <span class="keywordtype">bool</span> pattern_found = findChessboardCorners</div>
+<div class="line"><span class="lineno">  178</span>    (</div>
+<div class="line"><span class="lineno">  179</span>        gray_frame,</div>
+<div class="line"><span class="lineno">  180</span>        pattern_size,</div>
+<div class="line"><span class="lineno">  181</span>        corners,</div>
+<div class="line"><span class="lineno">  182</span>        CALIB_CB_ADAPTIVE_THRESH + CALIB_CB_NORMALIZE_IMAGE + CALIB_CB_FAST_CHECK</div>
+<div class="line"><span class="lineno">  183</span>    );</div>
+<div class="line"><span class="lineno">  184</span> </div>
+<div class="line"><span class="lineno">  185</span>    <span class="keywordflow">if</span> (pattern_found)</div>
+<div class="line"><span class="lineno">  186</span>        cornerSubPix</div>
+<div class="line"><span class="lineno">  187</span>        (</div>
+<div class="line"><span class="lineno">  188</span>            gray_frame, corners,</div>
+<div class="line"><span class="lineno">  189</span>            Size(11, 11), <span class="comment">// window size</span></div>
+<div class="line"><span class="lineno">  190</span>            Size(-1, -1), <span class="comment">// zero zone</span></div>
+<div class="line"><span class="lineno">  191</span>            TermCriteria(TermCriteria::EPS + TermCriteria::COUNT, 40, 0.001)</div>
+<div class="line"><span class="lineno">  192</span>        );</div>
+<div class="line"><span class="lineno">  193</span> </div>
+<div class="line"><span class="lineno">  194</span>    <span class="keywordflow">return</span> pattern_found;</div>
+<div class="line"><span class="lineno">  195</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ade6a2521d6eb589d2ee76cfe090e2c4a" name="ade6a2521d6eb589d2ee76cfe090e2c4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade6a2521d6eb589d2ee76cfe090e2c4a">&#9670;&#160;</a></span>LoadImages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraCalibrator::LoadImages </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>chessboards_path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Загружает фотографии (изображения) шахматных досок в память из пути к папке. </p>
+<dl class="section note"><dt>Заметки</dt><dd>По умолчанию название изображений в пути должно быть по типа: "&lt;номер изображения&gt;.png" </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8cpp_source.html">camera_calibrator.cpp</a> строка <a class="el" href="camera__calibrator_8cpp_source.html#l00105">105</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  106</span>{</div>
+<div class="line"><span class="lineno">  107</span>    Mat image_with_chessboard;</div>
+<div class="line"><span class="lineno">  108</span>    std::string image_name = chessboards_path;</div>
+<div class="line"><span class="lineno">  109</span>    <a class="code hl_variable" href="class_camera_calibrator.html#ac220c41909d09cf784734ded65525465">chessboards_amount_</a> = 0;</div>
+<div class="line"><span class="lineno">  110</span>    </div>
+<div class="line"><span class="lineno">  111</span>    image_with_chessboard = <a class="code hl_function" href="class_camera_calibrator.html#a7eca0d972785653183b262314c8e1127">ReadNextImage</a>(image_name);</div>
+<div class="line"><span class="lineno">  112</span> </div>
+<div class="line"><span class="lineno">  113</span>    <span class="comment">// Инициализируем ширину и высоту кадра</span></div>
+<div class="line"><span class="lineno">  114</span>    <a class="code hl_variable" href="class_camera_calibrator.html#acc59f8fd0514b211ab7898f7d85cf961">frame_width_</a> = image_with_chessboard.size().width;</div>
+<div class="line"><span class="lineno">  115</span>    <a class="code hl_variable" href="class_camera_calibrator.html#a149f830d429e3581e1668a15ffb4e5e2">frame_height_</a> = image_with_chessboard.size().height;</div>
+<div class="line"><span class="lineno">  116</span> </div>
+<div class="line"><span class="lineno">  117</span>    <span class="keywordflow">while</span> (!image_with_chessboard.empty())</div>
+<div class="line"><span class="lineno">  118</span>    {</div>
+<div class="line"><span class="lineno">  119</span>        <a class="code hl_variable" href="class_camera_calibrator.html#a2ce37665ea06fc1a62c12da5a2d43025">images_with_chessboard_</a>.push_back(image_with_chessboard);</div>
+<div class="line"><span class="lineno">  120</span>        imshow(<a class="code hl_variable" href="class_camera_calibrator.html#a2da15c9fb792eba736b182ed375b902b">winname_</a>, image_with_chessboard);</div>
+<div class="line"><span class="lineno">  121</span>        image_with_chessboard = <a class="code hl_function" href="class_camera_calibrator.html#a7eca0d972785653183b262314c8e1127">ReadNextImage</a>(image_name);</div>
+<div class="line"><span class="lineno">  122</span> </div>
+<div class="line"><span class="lineno">  123</span>        <span class="keywordtype">int</span> code = waitKey(20);</div>
+<div class="line"><span class="lineno">  124</span>        <span class="keywordflow">switch</span> (code)</div>
+<div class="line"><span class="lineno">  125</span>        {</div>
+<div class="line"><span class="lineno">  126</span>            <span class="comment">// Пауза</span></div>
+<div class="line"><span class="lineno">  127</span>            <span class="comment">// Клавиши - пробел (ASCII code)</span></div>
+<div class="line"><span class="lineno">  128</span>        <span class="keywordflow">case</span> 32:</div>
+<div class="line"><span class="lineno">  129</span>        {</div>
+<div class="line"><span class="lineno">  130</span>            waitKey(0);</div>
+<div class="line"><span class="lineno">  131</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  132</span>        }</div>
+<div class="line"><span class="lineno">  133</span>        <span class="keywordflow">case</span> <span class="charliteral">&#39;q&#39;</span>:</div>
+<div class="line"><span class="lineno">  134</span>        {</div>
+<div class="line"><span class="lineno">  135</span>            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  136</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  137</span>        }</div>
+<div class="line"><span class="lineno">  138</span>        }</div>
+<div class="line"><span class="lineno">  139</span>    }</div>
+<div class="line"><span class="lineno">  140</span>    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">  141</span>}</div>
+<div class="ttc" id="aclass_camera_calibrator_html_a7eca0d972785653183b262314c8e1127"><div class="ttname"><a href="class_camera_calibrator.html#a7eca0d972785653183b262314c8e1127">CameraCalibrator::ReadNextImage</a></div><div class="ttdeci">Mat ReadNextImage(std::string path)</div><div class="ttdoc">Считывает новое изображение и увеличивает переменную chessboard_amount_ на один</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8cpp_source.html#l00143">camera_calibrator.cpp:143</a></div></div>
+<div class="ttc" id="aclass_camera_calibrator_html_ac220c41909d09cf784734ded65525465"><div class="ttname"><a href="class_camera_calibrator.html#ac220c41909d09cf784734ded65525465">CameraCalibrator::chessboards_amount_</a></div><div class="ttdeci">int chessboards_amount_</div><div class="ttdoc">Количество фотографий шахматных досок (находится в CameraCalibrator::LoadImages)</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8h_source.html#l00084">camera_calibrator.h:84</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7eca0d972785653183b262314c8e1127" name="a7eca0d972785653183b262314c8e1127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eca0d972785653183b262314c8e1127">&#9670;&#160;</a></span>ReadNextImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat CameraCalibrator::ReadNextImage </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Считывает новое изображение и увеличивает переменную chessboard_amount_ на один </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>путь к папке с изображениями </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>cv::Mat прочитанное изображение </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8cpp_source.html">camera_calibrator.cpp</a> строка <a class="el" href="camera__calibrator_8cpp_source.html#l00143">143</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  144</span>{</div>
+<div class="line"><span class="lineno">  145</span>    Mat image;</div>
+<div class="line"><span class="lineno">  146</span>    path += std::to_string(<a class="code hl_variable" href="class_camera_calibrator.html#ac220c41909d09cf784734ded65525465">chessboards_amount_</a>++);</div>
+<div class="line"><span class="lineno">  147</span>    path += EXTENTION;</div>
+<div class="line"><span class="lineno">  148</span>    image = imread(path);</div>
+<div class="line"><span class="lineno">  149</span>    <span class="keywordflow">return</span> image;</div>
+<div class="line"><span class="lineno">  150</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2d1c6667d68b7e15bfb185c4a54d65c5" name="a2d1c6667d68b7e15bfb185c4a54d65c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d1c6667d68b7e15bfb185c4a54d65c5">&#9670;&#160;</a></span>SaveFoundParamsToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraCalibrator::SaveFoundParamsToFile </td>
+          <td>(</td>
+          <td class="paramtype">Mat&#160;</td>
+          <td class="paramname"><em>camera_matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Mat&#160;</td>
+          <td class="paramname"><em>dist_coeffs_2be_written</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сохраняет найденные параметры (коэффициенты fx, fy, cx, cy), необходимые для удаления дисторсии </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">camera_matrix</td><td>матрица, которая будет записана в файл </td></tr>
+    <tr><td class="paramname">dist_coeffs_2be_written</td><td>коэффициенты дисторсии, которые будут записаны в файл </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8cpp_source.html">camera_calibrator.cpp</a> строка <a class="el" href="camera__calibrator_8cpp_source.html#l00197">197</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  198</span>{</div>
+<div class="line"><span class="lineno">  199</span>    std::string filename = <a class="code hl_function" href="group___helper_functions.html#ga757c85a4bbcc0f0aa436369ac7ed57e0">HelperFunctions::GenerateCsvFilename</a>(<span class="stringliteral">&quot;parameters_&quot;</span>);</div>
+<div class="line"><span class="lineno">  200</span> </div>
+<div class="line"><span class="lineno">  201</span>    <a class="code hl_variable" href="class_camera_calibrator.html#aca2c8622828a7638876c950860051bc2">fx_</a> = camera_matrix.at&lt;<span class="keywordtype">double</span>&gt;(0, 0);</div>
+<div class="line"><span class="lineno">  202</span>    <a class="code hl_variable" href="class_camera_calibrator.html#ab073b0d3c3c38a203fea48138e9badb8">fy_</a> = camera_matrix.at&lt;<span class="keywordtype">double</span>&gt;(1, 1);</div>
+<div class="line"><span class="lineno">  203</span>    <a class="code hl_variable" href="class_camera_calibrator.html#ab2090cf7929cd099818929c220d18806">px_</a> = camera_matrix.at&lt;<span class="keywordtype">double</span>&gt;(0, 2);</div>
+<div class="line"><span class="lineno">  204</span>    <a class="code hl_variable" href="class_camera_calibrator.html#a6ab88a1e59d13dcaa481b4628abff359">py_</a> = camera_matrix.at&lt;<span class="keywordtype">double</span>&gt;(1, 2);</div>
+<div class="line"><span class="lineno">  205</span> </div>
+<div class="line"><span class="lineno">  206</span>    std::vector&lt;double&gt; distortion_coefficients;</div>
+<div class="line"><span class="lineno">  207</span>    distortion_coefficients =</div>
+<div class="line"><span class="lineno">  208</span>    {</div>
+<div class="line"><span class="lineno">  209</span>        dist_coeffs_2be_written.at&lt;<span class="keywordtype">double</span>&gt;(0,0),</div>
+<div class="line"><span class="lineno">  210</span>        dist_coeffs_2be_written.at&lt;<span class="keywordtype">double</span>&gt;(0,1),</div>
+<div class="line"><span class="lineno">  211</span>        dist_coeffs_2be_written.at&lt;<span class="keywordtype">double</span>&gt;(0,2),</div>
+<div class="line"><span class="lineno">  212</span>        dist_coeffs_2be_written.at&lt;<span class="keywordtype">double</span>&gt;(0,3),</div>
+<div class="line"><span class="lineno">  213</span>        dist_coeffs_2be_written.at&lt;<span class="keywordtype">double</span>&gt;(0,4)</div>
+<div class="line"><span class="lineno">  214</span>    };</div>
+<div class="line"><span class="lineno">  215</span> </div>
+<div class="line"><span class="lineno">  216</span>    std::ofstream file;</div>
+<div class="line"><span class="lineno">  217</span>    file.open(filename, std::ios::out | std::ios::trunc);</div>
+<div class="line"><span class="lineno">  218</span> </div>
+<div class="line"><span class="lineno">  219</span>    file &lt;&lt; <span class="stringliteral">&quot;fx;&quot;</span> + <a class="code hl_function" href="group___helper_functions.html#gad8a95244f86df84c8f5d35197fe0196f">HelperFunctions::ToStringWithPrecision</a>(<a class="code hl_variable" href="class_camera_calibrator.html#aca2c8622828a7638876c950860051bc2">fx_</a>) &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  220</span>    file &lt;&lt; <span class="stringliteral">&quot;fy;&quot;</span> + <a class="code hl_function" href="group___helper_functions.html#gad8a95244f86df84c8f5d35197fe0196f">HelperFunctions::ToStringWithPrecision</a>(<a class="code hl_variable" href="class_camera_calibrator.html#ab073b0d3c3c38a203fea48138e9badb8">fy_</a>) &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  221</span>    file &lt;&lt; <span class="stringliteral">&quot;px;&quot;</span> + <a class="code hl_function" href="group___helper_functions.html#gad8a95244f86df84c8f5d35197fe0196f">HelperFunctions::ToStringWithPrecision</a>(<a class="code hl_variable" href="class_camera_calibrator.html#ab2090cf7929cd099818929c220d18806">px_</a>) &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  222</span>    file &lt;&lt; <span class="stringliteral">&quot;py;&quot;</span> + <a class="code hl_function" href="group___helper_functions.html#gad8a95244f86df84c8f5d35197fe0196f">HelperFunctions::ToStringWithPrecision</a>(<a class="code hl_variable" href="class_camera_calibrator.html#a6ab88a1e59d13dcaa481b4628abff359">py_</a>) &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  223</span>    file &lt;&lt; <span class="stringliteral">&quot;dist;&quot;</span> + <a class="code hl_function" href="group___helper_functions.html#gad8a95244f86df84c8f5d35197fe0196f">HelperFunctions::ToStringWithPrecision</a>(distortion_coefficients[0]) + <span class="stringliteral">&quot;;&quot;</span> + <a class="code hl_function" href="group___helper_functions.html#gad8a95244f86df84c8f5d35197fe0196f">HelperFunctions::ToStringWithPrecision</a>(distortion_coefficients[1])</div>
+<div class="line"><span class="lineno">  224</span>        + <span class="stringliteral">&quot;;&quot;</span> + <a class="code hl_function" href="group___helper_functions.html#gad8a95244f86df84c8f5d35197fe0196f">HelperFunctions::ToStringWithPrecision</a>(distortion_coefficients[2]) + <span class="stringliteral">&quot;;&quot;</span> + <a class="code hl_function" href="group___helper_functions.html#gad8a95244f86df84c8f5d35197fe0196f">HelperFunctions::ToStringWithPrecision</a>(distortion_coefficients[3]) + <span class="stringliteral">&quot;;&quot;</span> + <a class="code hl_function" href="group___helper_functions.html#gad8a95244f86df84c8f5d35197fe0196f">HelperFunctions::ToStringWithPrecision</a>(distortion_coefficients[4]);</div>
+<div class="line"><span class="lineno">  225</span> </div>
+<div class="line"><span class="lineno">  226</span>    file.close();</div>
+<div class="line"><span class="lineno">  227</span>}</div>
+<div class="ttc" id="aclass_camera_calibrator_html_a6ab88a1e59d13dcaa481b4628abff359"><div class="ttname"><a href="class_camera_calibrator.html#a6ab88a1e59d13dcaa481b4628abff359">CameraCalibrator::py_</a></div><div class="ttdeci">double py_</div><div class="ttdoc">Коэффициент матрицы VideoUndistorter::camera_matrix_.</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8h_source.html#l00146">camera_calibrator.h:146</a></div></div>
+<div class="ttc" id="aclass_camera_calibrator_html_ab073b0d3c3c38a203fea48138e9badb8"><div class="ttname"><a href="class_camera_calibrator.html#ab073b0d3c3c38a203fea48138e9badb8">CameraCalibrator::fy_</a></div><div class="ttdeci">double fy_</div><div class="ttdoc">Коэффициент матрицы VideoUndistorter::camera_matrix_.</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8h_source.html#l00138">camera_calibrator.h:138</a></div></div>
+<div class="ttc" id="aclass_camera_calibrator_html_ab2090cf7929cd099818929c220d18806"><div class="ttname"><a href="class_camera_calibrator.html#ab2090cf7929cd099818929c220d18806">CameraCalibrator::px_</a></div><div class="ttdeci">double px_</div><div class="ttdoc">Коэффициент матрицы VideoUndistorter::camera_matrix_.</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8h_source.html#l00142">camera_calibrator.h:142</a></div></div>
+<div class="ttc" id="aclass_camera_calibrator_html_aca2c8622828a7638876c950860051bc2"><div class="ttname"><a href="class_camera_calibrator.html#aca2c8622828a7638876c950860051bc2">CameraCalibrator::fx_</a></div><div class="ttdeci">double fx_</div><div class="ttdoc">Коэффициент матрицы VideoUndistorter::camera_matrix_.</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8h_source.html#l00134">camera_calibrator.h:134</a></div></div>
+<div class="ttc" id="agroup___helper_functions_html_ga757c85a4bbcc0f0aa436369ac7ed57e0"><div class="ttname"><a href="group___helper_functions.html#ga757c85a4bbcc0f0aa436369ac7ed57e0">HelperFunctions::GenerateCsvFilename</a></div><div class="ttdeci">std::string GenerateCsvFilename(std::string additional_text=&quot;&quot;)</div><div class="ttdoc">Генерирует имя CSV файла для сохранения метаданных</div><div class="ttdef"><b>Definition:</b> <a href="helper_8cpp_source.html#l00003">helper.cpp:3</a></div></div>
+<div class="ttc" id="agroup___helper_functions_html_gad8a95244f86df84c8f5d35197fe0196f"><div class="ttname"><a href="group___helper_functions.html#gad8a95244f86df84c8f5d35197fe0196f">HelperFunctions::ToStringWithPrecision</a></div><div class="ttdeci">std::string ToStringWithPrecision(const T value, const int n=9)</div><div class="ttdoc">Выполняет округление числа с определенной точностью</div><div class="ttdef"><b>Definition:</b> <a href="helper_8h_source.html#l00049">helper.h:49</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a1acb421aa0db1d5c4e9d4a6f5f516a66" name="a1acb421aa0db1d5c4e9d4a6f5f516a66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1acb421aa0db1d5c4e9d4a6f5f516a66">&#9670;&#160;</a></span>camera_matrix_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat CameraCalibrator::camera_matrix_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Матрица, в которой находятся найденные коэффициенты px, py, cx, cy. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a> строка <a class="el" href="camera__calibrator_8h_source.html#l00112">112</a></p>
+
+</div>
+</div>
+<a id="ac220c41909d09cf784734ded65525465" name="ac220c41909d09cf784734ded65525465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac220c41909d09cf784734ded65525465">&#9670;&#160;</a></span>chessboards_amount_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraCalibrator::chessboards_amount_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Количество фотографий шахматных досок (находится в <a class="el" href="class_camera_calibrator.html#ade6a2521d6eb589d2ee76cfe090e2c4a" title="Загружает фотографии (изображения) шахматных досок в память из пути к папке.">CameraCalibrator::LoadImages</a>) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a> строка <a class="el" href="camera__calibrator_8h_source.html#l00084">84</a></p>
+
+</div>
+</div>
+<a id="afd839658f3fe0b8b23cf6f6f08c67e48" name="afd839658f3fe0b8b23cf6f6f08c67e48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd839658f3fe0b8b23cf6f6f08c67e48">&#9670;&#160;</a></span>chessboards_folder_path_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string CameraCalibrator::chessboards_folder_path_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Путь к папке с фотографиями "шахматной доски". </p>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a> строка <a class="el" href="camera__calibrator_8h_source.html#l00080">80</a></p>
+
+</div>
+</div>
+<a id="a0ae2cd85b73f6efcb224e45c582e555f" name="a0ae2cd85b73f6efcb224e45c582e555f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ae2cd85b73f6efcb224e45c582e555f">&#9670;&#160;</a></span>corners_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Point2f&gt; CameraCalibrator::corners_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Найденные узлы шахматной доски, найденные на конкретном изображении </p>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a> строка <a class="el" href="camera__calibrator_8h_source.html#l00122">122</a></p>
+
+</div>
+</div>
+<a id="a574c82b6583c4a5b514e77918db61f50" name="a574c82b6583c4a5b514e77918db61f50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a574c82b6583c4a5b514e77918db61f50">&#9670;&#160;</a></span>distortion_coefficients_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat CameraCalibrator::distortion_coefficients_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Коэффициенты дисторсии </p>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a> строка <a class="el" href="camera__calibrator_8h_source.html#l00116">116</a></p>
+
+</div>
+</div>
+<a id="a149f830d429e3581e1668a15ffb4e5e2" name="a149f830d429e3581e1668a15ffb4e5e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a149f830d429e3581e1668a15ffb4e5e2">&#9670;&#160;</a></span>frame_height_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraCalibrator::frame_height_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Высота кадра </p>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a> строка <a class="el" href="camera__calibrator_8h_source.html#l00100">100</a></p>
+
+</div>
+</div>
+<a id="acc59f8fd0514b211ab7898f7d85cf961" name="acc59f8fd0514b211ab7898f7d85cf961"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc59f8fd0514b211ab7898f7d85cf961">&#9670;&#160;</a></span>frame_width_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraCalibrator::frame_width_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ширина кадра </p>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a> строка <a class="el" href="camera__calibrator_8h_source.html#l00096">96</a></p>
+
+</div>
+</div>
+<a id="aca2c8622828a7638876c950860051bc2" name="aca2c8622828a7638876c950860051bc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca2c8622828a7638876c950860051bc2">&#9670;&#160;</a></span>fx_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraCalibrator::fx_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Коэффициент матрицы <a class="el" href="class_video_undistorter.html#a78e9df5a43762efac01d4d37d97be8e5" title="Та самая матрица, присущая конкретной паре - линща + камера.">VideoUndistorter::camera_matrix_</a>. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a> строка <a class="el" href="camera__calibrator_8h_source.html#l00134">134</a></p>
+
+</div>
+</div>
+<a id="ab073b0d3c3c38a203fea48138e9badb8" name="ab073b0d3c3c38a203fea48138e9badb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab073b0d3c3c38a203fea48138e9badb8">&#9670;&#160;</a></span>fy_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraCalibrator::fy_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Коэффициент матрицы <a class="el" href="class_video_undistorter.html#a78e9df5a43762efac01d4d37d97be8e5" title="Та самая матрица, присущая конкретной паре - линща + камера.">VideoUndistorter::camera_matrix_</a>. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a> строка <a class="el" href="camera__calibrator_8h_source.html#l00138">138</a></p>
+
+</div>
+</div>
+<a id="a2ce37665ea06fc1a62c12da5a2d43025" name="a2ce37665ea06fc1a62c12da5a2d43025"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ce37665ea06fc1a62c12da5a2d43025">&#9670;&#160;</a></span>images_with_chessboard_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Mat&gt; CameraCalibrator::images_with_chessboard_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вектор загруженных фотографий с шахматными досками </p>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a> строка <a class="el" href="camera__calibrator_8h_source.html#l00088">88</a></p>
+
+</div>
+</div>
+<a id="a04f7e4c11486226a4dc8bbf610660503" name="a04f7e4c11486226a4dc8bbf610660503"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04f7e4c11486226a4dc8bbf610660503">&#9670;&#160;</a></span>input_cap_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VideoCapture* CameraCalibrator::input_cap_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>"Поток" из кадров входного видео (последовательности) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a> строка <a class="el" href="camera__calibrator_8h_source.html#l00092">92</a></p>
+
+</div>
+</div>
+<a id="ae5c4b08c551880d1c1732608657b4130" name="ae5c4b08c551880d1c1732608657b4130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c4b08c551880d1c1732608657b4130">&#9670;&#160;</a></span>pattern_size_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Size CameraCalibrator::pattern_size_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Размер паттерна, по которому будут искаться шахматные доски </p>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a> строка <a class="el" href="camera__calibrator_8h_source.html#l00130">130</a></p>
+
+</div>
+</div>
+<a id="ab2090cf7929cd099818929c220d18806" name="ab2090cf7929cd099818929c220d18806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2090cf7929cd099818929c220d18806">&#9670;&#160;</a></span>px_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraCalibrator::px_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Коэффициент матрицы <a class="el" href="class_video_undistorter.html#a78e9df5a43762efac01d4d37d97be8e5" title="Та самая матрица, присущая конкретной паре - линща + камера.">VideoUndistorter::camera_matrix_</a>. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a> строка <a class="el" href="camera__calibrator_8h_source.html#l00142">142</a></p>
+
+</div>
+</div>
+<a id="a6ab88a1e59d13dcaa481b4628abff359" name="a6ab88a1e59d13dcaa481b4628abff359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ab88a1e59d13dcaa481b4628abff359">&#9670;&#160;</a></span>py_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraCalibrator::py_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Коэффициент матрицы <a class="el" href="class_video_undistorter.html#a78e9df5a43762efac01d4d37d97be8e5" title="Та самая матрица, присущая конкретной паре - линща + камера.">VideoUndistorter::camera_matrix_</a>. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a> строка <a class="el" href="camera__calibrator_8h_source.html#l00146">146</a></p>
+
+</div>
+</div>
+<a id="a03e037f4855519733bd060ae02534856" name="a03e037f4855519733bd060ae02534856"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03e037f4855519733bd060ae02534856">&#9670;&#160;</a></span>rotation_vector_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Mat&gt; CameraCalibrator::rotation_vector_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a> строка <a class="el" href="camera__calibrator_8h_source.html#l00117">117</a></p>
+
+</div>
+</div>
+<a id="ae2971536607c20d3068080625e454bf7" name="ae2971536607c20d3068080625e454bf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2971536607c20d3068080625e454bf7">&#9670;&#160;</a></span>translation_vector_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Mat&gt; CameraCalibrator::translation_vector_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a> строка <a class="el" href="camera__calibrator_8h_source.html#l00118">118</a></p>
+
+</div>
+</div>
+<a id="ab6d7ca5b52ba0cdab65c1dc0230697ce" name="ab6d7ca5b52ba0cdab65c1dc0230697ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6d7ca5b52ba0cdab65c1dc0230697ce">&#9670;&#160;</a></span>txt_file_name_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string CameraCalibrator::txt_file_name_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Путь к текстовому файлу, в который будут сохранены найденные коэффициенты </p>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a> строка <a class="el" href="camera__calibrator_8h_source.html#l00108">108</a></p>
+
+</div>
+</div>
+<a id="af702d786b8787340bddbffc450811e11" name="af702d786b8787340bddbffc450811e11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af702d786b8787340bddbffc450811e11">&#9670;&#160;</a></span>vec_of_corners_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;Point2f&gt; &gt; CameraCalibrator::vec_of_corners_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Контейнер для хранения найденных узлов шахматных досок </p>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a> строка <a class="el" href="camera__calibrator_8h_source.html#l00126">126</a></p>
+
+</div>
+</div>
+<a id="a2da15c9fb792eba736b182ed375b902b" name="a2da15c9fb792eba736b182ed375b902b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2da15c9fb792eba736b182ed375b902b">&#9670;&#160;</a></span>winname_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string CameraCalibrator::winname_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название окна </p>
+
+<p class="definition">См. определение в файле <a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a> строка <a class="el" href="camera__calibrator_8h_source.html#l00104">104</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/include/CamCalib/<a class="el" href="camera__calibrator_8h_source.html">camera_calibrator.h</a></li>
+<li>C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/source/<a class="el" href="camera__calibrator_8cpp_source.html">camera_calibrator.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

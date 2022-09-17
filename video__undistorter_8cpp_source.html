@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Visual Vibration Tracking: Исходный файл C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/source/video_undistorter.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Visual Vibration Tracking<span id="projectnumber">&#160;0.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_1a7b6f8ea6414524e6d315978b19a51d.html">seeyo</a></li><li class="navelem"><a class="el" href="dir_2849c7605547aec047c1bbd084b35fb3.html">source</a></li><li class="navelem"><a class="el" href="dir_e74395836ad52566ee1a5217dc9ad081.html">repos</a></li><li class="navelem"><a class="el" href="dir_9c05f254fdeb3977de6d7fceb436c906.html">Visual-Vibration-Tracking-V2</a></li><li class="navelem"><a class="el" href="dir_79e40183697295403169ece52fc1338a.html">source</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">video_undistorter.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;CamCalib\video_undistorter.h&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="class_video_undistorter.html#aa42fc7f2661d48c5bfe2ff4ade623b30">    3</a></span><a class="code hl_function" href="class_video_undistorter.html#aa42fc7f2661d48c5bfe2ff4ade623b30">VideoUndistorter::VideoUndistorter</a>(std::string input_file_name, std::string output_file_name, std::string txt_file_name) :</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    input_file_name_{ input_file_name },</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    output_file_name_{ output_file_name },</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    txt_file_name_{ txt_file_name },</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    winname_{ <span class="stringliteral">&quot;Undistortion&quot;</span> }</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_variable" href="class_video_undistorter.html#a0ca2ae8209afff234c56e1cb61eb4240">input_cap_</a> = <span class="keyword">new</span> VideoCapture(input_file_name);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_variable" href="class_video_undistorter.html#a33e09df7fd3e1b728ce4a5fd7e1d5a84">frame_width_</a> = <a class="code hl_variable" href="class_video_undistorter.html#a0ca2ae8209afff234c56e1cb61eb4240">input_cap_</a>-&gt;get(CAP_PROP_FRAME_WIDTH);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_variable" href="class_video_undistorter.html#a09eb1a83ffec08ce3c34c71c2e953b42">frame_height_</a> = <a class="code hl_variable" href="class_video_undistorter.html#a0ca2ae8209afff234c56e1cb61eb4240">input_cap_</a>-&gt;get(CAP_PROP_FRAME_HEIGHT);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_variable" href="class_video_undistorter.html#a66a505ba920eabecbf0ddc268b96ec95">frame_count_</a> = <a class="code hl_variable" href="class_video_undistorter.html#a0ca2ae8209afff234c56e1cb61eb4240">input_cap_</a>-&gt;get(CAP_PROP_FRAME_COUNT);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_variable" href="class_video_undistorter.html#a374b4a4060c1a77bdb736f432082c9ce">fps_</a> = <a class="code hl_variable" href="class_video_undistorter.html#a0ca2ae8209afff234c56e1cb61eb4240">input_cap_</a>-&gt;get(CAP_PROP_FPS);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_variable" href="class_video_undistorter.html#aa51dcc2cc2726c97ed156eaa3249665f">output_cap_</a> = <span class="keyword">new</span> VideoWriter</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    (</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <a class="code hl_variable" href="class_video_undistorter.html#adb48040817f02d9e15638a06e5491777">output_file_name_</a>,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        cv::VideoWriter::fourcc(<span class="charliteral">&#39;m&#39;</span>, <span class="charliteral">&#39;p&#39;</span>, <span class="charliteral">&#39;4&#39;</span>, <span class="charliteral">&#39;v&#39;</span>), <span class="comment">// codec</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code hl_variable" href="class_video_undistorter.html#a374b4a4060c1a77bdb736f432082c9ce">fps_</a>,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        Size(<a class="code hl_variable" href="class_video_undistorter.html#a33e09df7fd3e1b728ce4a5fd7e1d5a84">frame_width_</a>, <a class="code hl_variable" href="class_video_undistorter.html#a09eb1a83ffec08ce3c34c71c2e953b42">frame_height_</a>)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    );</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    namedWindow(<a class="code hl_variable" href="class_video_undistorter.html#aaec69d8897221bf238ce22b9eefd0d1c">winname_</a>, WINDOW_NORMAL);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>VideoUndistorter::~VideoUndistorter()</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_variable" href="class_video_undistorter.html#a0ca2ae8209afff234c56e1cb61eb4240">input_cap_</a>-&gt;release();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_variable" href="class_video_undistorter.html#aa51dcc2cc2726c97ed156eaa3249665f">output_cap_</a>-&gt;release();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">delete</span> <a class="code hl_variable" href="class_video_undistorter.html#a0ca2ae8209afff234c56e1cb61eb4240">input_cap_</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">delete</span> <a class="code hl_variable" href="class_video_undistorter.html#aa51dcc2cc2726c97ed156eaa3249665f">output_cap_</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    destroyWindow(<a class="code hl_variable" href="class_video_undistorter.html#aaec69d8897221bf238ce22b9eefd0d1c">winname_</a>);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_video_undistorter.html#a05b19bb1af0c5fcfd147c48dd447d44d">   38</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_video_undistorter.html#a05b19bb1af0c5fcfd147c48dd447d44d">VideoUndistorter::ExecuteVideoUndistortion</a>()</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">// read distortion parameters from txt file</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_function" href="class_video_undistorter.html#ad97e93cf1bb586a53494fb95909a4bc6">LoadFoundParamsFromFile</a>(<a class="code hl_variable" href="class_video_undistorter.html#af84edc3f788032cdb9895f05ab4a984b">txt_file_name_</a>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    std::cout &lt;&lt; <a class="code hl_variable" href="class_video_undistorter.html#a66a505ba920eabecbf0ddc268b96ec95">frame_count_</a> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">int</span> frame_num = 0;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    Mat mapX, mapY;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    initUndistortRectifyMap(<a class="code hl_variable" href="class_video_undistorter.html#a78e9df5a43762efac01d4d37d97be8e5">camera_matrix_</a>, <a class="code hl_variable" href="class_video_undistorter.html#a9363566d895ea53cf3d7b48c5b6e1964">distortion_coefficients_</a>, Matx33f::eye(), <a class="code hl_variable" href="class_video_undistorter.html#a78e9df5a43762efac01d4d37d97be8e5">camera_matrix_</a>, Size(<a class="code hl_variable" href="class_video_undistorter.html#a33e09df7fd3e1b728ce4a5fd7e1d5a84">frame_width_</a>, <a class="code hl_variable" href="class_video_undistorter.html#a09eb1a83ffec08ce3c34c71c2e953b42">frame_height_</a>), CV_32FC1, mapX, mapY);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">//undistort each frame in loop</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">while</span> (<a class="code hl_variable" href="class_video_undistorter.html#a0ca2ae8209afff234c56e1cb61eb4240">input_cap_</a>-&gt;get(CAP_PROP_POS_FRAMES) &lt; <a class="code hl_variable" href="class_video_undistorter.html#a66a505ba920eabecbf0ddc268b96ec95">frame_count_</a>)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_variable" href="class_video_undistorter.html#a0ca2ae8209afff234c56e1cb61eb4240">input_cap_</a>-&gt;read(<a class="code hl_variable" href="class_video_undistorter.html#a5c8ce476d923037934eb6299a503593e">current_frame_</a>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="class_video_undistorter.html#a5c8ce476d923037934eb6299a503593e">current_frame_</a>.empty())</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Processing frame &quot;</span> &lt;&lt; <a class="code hl_variable" href="class_video_undistorter.html#a0ca2ae8209afff234c56e1cb61eb4240">input_cap_</a>-&gt;get(CAP_PROP_POS_FRAMES) &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; <a class="code hl_variable" href="class_video_undistorter.html#a66a505ba920eabecbf0ddc268b96ec95">frame_count_</a> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="comment">//imshow(winname_, current_frame_);</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="comment">//undistort(current_frame_, undistorted_frame_, camera_matrix_, distortion_coefficients_);</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            remap(<a class="code hl_variable" href="class_video_undistorter.html#a5c8ce476d923037934eb6299a503593e">current_frame_</a>, <a class="code hl_variable" href="class_video_undistorter.html#aea3bd77c199df2c27bf8162c67c54eff">undistorted_frame_</a>, mapX, mapY, INTER_LINEAR);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <a class="code hl_function" href="class_video_undistorter.html#ac82e158db201e5d3189cc2c2eaa0db46">SaveFrame</a>(<a class="code hl_variable" href="class_video_undistorter.html#aea3bd77c199df2c27bf8162c67c54eff">undistorted_frame_</a>);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <a class="code hl_function" href="class_video_undistorter.html#a015a3e4b982094d3ba737debd9f3590e">AddTips</a>(<a class="code hl_variable" href="class_video_undistorter.html#aea3bd77c199df2c27bf8162c67c54eff">undistorted_frame_</a>, <span class="stringliteral">&quot;Current frame: &quot;</span> + <a class="code hl_function" href="group___helper_functions.html#gad8a95244f86df84c8f5d35197fe0196f">HelperFunctions::ToStringWithPrecision</a>(<a class="code hl_variable" href="class_video_undistorter.html#a0ca2ae8209afff234c56e1cb61eb4240">input_cap_</a>-&gt;get(CAP_PROP_POS_FRAMES), 0) + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_function" href="group___helper_functions.html#gad8a95244f86df84c8f5d35197fe0196f">HelperFunctions::ToStringWithPrecision</a>(<a class="code hl_variable" href="class_video_undistorter.html#a66a505ba920eabecbf0ddc268b96ec95">frame_count_</a>, 0));</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            imshow(<a class="code hl_variable" href="class_video_undistorter.html#aaec69d8897221bf238ce22b9eefd0d1c">winname_</a>, <a class="code hl_variable" href="class_video_undistorter.html#aea3bd77c199df2c27bf8162c67c54eff">undistorted_frame_</a>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordtype">int</span> code = waitKey(20);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keywordflow">switch</span> (code)</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <span class="comment">// Пауза</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <span class="comment">// Клавиши - пробел (ASCII code)</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keywordflow">case</span> 32:</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                waitKey(0);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keywordflow">case</span> <span class="charliteral">&#39;q&#39;</span>:</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Undistortion completed&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_video_undistorter.html#a015a3e4b982094d3ba737debd9f3590e">   86</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_video_undistorter.html#a015a3e4b982094d3ba737debd9f3590e">VideoUndistorter::AddTips</a>(Mat&amp; frame, std::string tip)</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>{</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordtype">int</span> font = FONT_HERSHEY_PLAIN;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordtype">double</span> font_scale = 1.5;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordtype">int</span> thickness = 2;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    putText(</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        frame,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        tip,</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        Point(frame.cols * 0.05, frame.rows * 0.05),</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        font,</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        font_scale,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        Scalar(0, 255, 0),</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        thickness</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    );</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="class_video_undistorter.html#ac82e158db201e5d3189cc2c2eaa0db46">  103</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_video_undistorter.html#ac82e158db201e5d3189cc2c2eaa0db46">VideoUndistorter::SaveFrame</a>(Mat frame)</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>{</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <a class="code hl_variable" href="class_video_undistorter.html#aa51dcc2cc2726c97ed156eaa3249665f">output_cap_</a>-&gt;write(frame);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="class_video_undistorter.html#ad97e93cf1bb586a53494fb95909a4bc6">  108</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_video_undistorter.html#ad97e93cf1bb586a53494fb95909a4bc6">VideoUndistorter::LoadFoundParamsFromFile</a>(std::string txt_file_name)</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>{</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    std::vector&lt;double&gt; dist;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    std::ifstream file;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    std::string line;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    std::vector&lt;std::vector&lt;double&gt;&gt; read_data;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    file.open(txt_file_name);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordflow">if</span> (file.is_open())</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Param file opened&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordflow">while</span> (!file.eof())</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        {</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            file &gt;&gt; line;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            std::vector&lt;std::string&gt; delimited_line = <a class="code hl_function" href="class_video_undistorter.html#adb5c11e438bef28a04b438ed7cf70c45">SplitString</a>(line, <span class="stringliteral">&quot;;&quot;</span>);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            delimited_line.erase(delimited_line.begin());</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            std::vector&lt;double&gt; data;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; delimited_line.size(); i++)</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                data.push_back(std::stod(delimited_line[i]));</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            }</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            read_data.push_back(data);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        file.close();</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    }</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <a class="code hl_variable" href="class_video_undistorter.html#aa11423c2edf80da39457470b604e995a">fx_</a> = read_data[0][0];</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <a class="code hl_variable" href="class_video_undistorter.html#a07c962e8a5b9737cab7c7ceef4f99aff">fy_</a> = read_data[1][0];</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <a class="code hl_variable" href="class_video_undistorter.html#a11c3a67cc5f2dc470a5354ffcbbd7816">px_</a> = read_data[2][0];</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <a class="code hl_variable" href="class_video_undistorter.html#a9e6d7352f492baaa97a51f161a016056">py_</a> = read_data[3][0];</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    dist = { read_data[4][0], read_data[4][1], read_data[4][2], read_data[4][3], read_data[4][4] };</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    std::vector&lt;double&gt; intrin_arr = { <a class="code hl_variable" href="class_video_undistorter.html#aa11423c2edf80da39457470b604e995a">fx_</a>, 0, <a class="code hl_variable" href="class_video_undistorter.html#a11c3a67cc5f2dc470a5354ffcbbd7816">px_</a>, 0, <a class="code hl_variable" href="class_video_undistorter.html#a07c962e8a5b9737cab7c7ceef4f99aff">fy_</a>, <a class="code hl_variable" href="class_video_undistorter.html#a9e6d7352f492baaa97a51f161a016056">py_</a>, 0, 0, 1 };</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <a class="code hl_variable" href="class_video_undistorter.html#a78e9df5a43762efac01d4d37d97be8e5">camera_matrix_</a> = Mat(3, 3, CV_64F, intrin_arr.data());</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <a class="code hl_variable" href="class_video_undistorter.html#a9363566d895ea53cf3d7b48c5b6e1964">distortion_coefficients_</a> = Mat(1, dist.size(), CV_64F, dist.data());</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    std::cout &lt;&lt; <a class="code hl_variable" href="class_video_undistorter.html#a78e9df5a43762efac01d4d37d97be8e5">camera_matrix_</a>.size() &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    std::cout &lt;&lt; <a class="code hl_variable" href="class_video_undistorter.html#a9363566d895ea53cf3d7b48c5b6e1964">distortion_coefficients_</a>.size() &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    std::cout &lt;&lt; <a class="code hl_variable" href="class_video_undistorter.html#a78e9df5a43762efac01d4d37d97be8e5">camera_matrix_</a> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    std::cout &lt;&lt; <a class="code hl_variable" href="class_video_undistorter.html#a9363566d895ea53cf3d7b48c5b6e1964">distortion_coefficients_</a> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>}</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="class_video_undistorter.html#adb5c11e438bef28a04b438ed7cf70c45">  157</a></span>std::vector&lt;std::string&gt; <a class="code hl_function" href="class_video_undistorter.html#adb5c11e438bef28a04b438ed7cf70c45">VideoUndistorter::SplitString</a>(std::string input_string, std::string delimiter)</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>{</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keywordtype">int</span> start_position = 0;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keywordtype">int</span> end_position;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordtype">int</span> delimiter_length = delimiter.length();</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    std::string token;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    std::vector&lt;std::string&gt; left;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordflow">while</span> ((end_position = input_string.find(delimiter, start_position)) != std::string::npos) {</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        token = input_string.substr(start_position, end_position - start_position);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        start_position = end_position + delimiter_length;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        left.push_back(token);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    }</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    left.push_back(input_string.substr(start_position));</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="keywordflow">return</span> left;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>}</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="ttc" id="aclass_video_undistorter_html_a015a3e4b982094d3ba737debd9f3590e"><div class="ttname"><a href="class_video_undistorter.html#a015a3e4b982094d3ba737debd9f3590e">VideoUndistorter::AddTips</a></div><div class="ttdeci">void AddTips(Mat &amp;frame, std::string tip)</div><div class="ttdoc">По аналогии с FrameHandler::AddTips добавляет подсказки пользователя. В данном случае это - номер тек...</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8cpp_source.html#l00086">video_undistorter.cpp:86</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_a05b19bb1af0c5fcfd147c48dd447d44d"><div class="ttname"><a href="class_video_undistorter.html#a05b19bb1af0c5fcfd147c48dd447d44d">VideoUndistorter::ExecuteVideoUndistortion</a></div><div class="ttdeci">int ExecuteVideoUndistortion()</div><div class="ttdoc">Основная часть. Выполняет удаление дисторсии из видео</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8cpp_source.html#l00038">video_undistorter.cpp:38</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_a07c962e8a5b9737cab7c7ceef4f99aff"><div class="ttname"><a href="class_video_undistorter.html#a07c962e8a5b9737cab7c7ceef4f99aff">VideoUndistorter::fy_</a></div><div class="ttdeci">double fy_</div><div class="ttdoc">Коэффициент матрицы VideoUndistorter::camera_matrix_.</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8h_source.html#l00139">video_undistorter.h:139</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_a09eb1a83ffec08ce3c34c71c2e953b42"><div class="ttname"><a href="class_video_undistorter.html#a09eb1a83ffec08ce3c34c71c2e953b42">VideoUndistorter::frame_height_</a></div><div class="ttdeci">double frame_height_</div><div class="ttdoc">Ширина кадра (входного и выходного)</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8h_source.html#l00096">video_undistorter.h:96</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_a0ca2ae8209afff234c56e1cb61eb4240"><div class="ttname"><a href="class_video_undistorter.html#a0ca2ae8209afff234c56e1cb61eb4240">VideoUndistorter::input_cap_</a></div><div class="ttdeci">VideoCapture * input_cap_</div><div class="ttdoc">&quot;Поток&quot; из кадров входного видео (последовательности)</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8h_source.html#l00084">video_undistorter.h:84</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_a11c3a67cc5f2dc470a5354ffcbbd7816"><div class="ttname"><a href="class_video_undistorter.html#a11c3a67cc5f2dc470a5354ffcbbd7816">VideoUndistorter::px_</a></div><div class="ttdeci">double px_</div><div class="ttdoc">Коэффициент матрицы VideoUndistorter::camera_matrix_.</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8h_source.html#l00144">video_undistorter.h:144</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_a33e09df7fd3e1b728ce4a5fd7e1d5a84"><div class="ttname"><a href="class_video_undistorter.html#a33e09df7fd3e1b728ce4a5fd7e1d5a84">VideoUndistorter::frame_width_</a></div><div class="ttdeci">double frame_width_</div><div class="ttdoc">Ширина кадра (входного и выходного)</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8h_source.html#l00092">video_undistorter.h:92</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_a374b4a4060c1a77bdb736f432082c9ce"><div class="ttname"><a href="class_video_undistorter.html#a374b4a4060c1a77bdb736f432082c9ce">VideoUndistorter::fps_</a></div><div class="ttdeci">double fps_</div><div class="ttdoc">ФПС входного видео</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8h_source.html#l00104">video_undistorter.h:104</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_a5c8ce476d923037934eb6299a503593e"><div class="ttname"><a href="class_video_undistorter.html#a5c8ce476d923037934eb6299a503593e">VideoUndistorter::current_frame_</a></div><div class="ttdeci">Mat current_frame_</div><div class="ttdoc">Текущий кадр с дисторсией</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8h_source.html#l00125">video_undistorter.h:125</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_a66a505ba920eabecbf0ddc268b96ec95"><div class="ttname"><a href="class_video_undistorter.html#a66a505ba920eabecbf0ddc268b96ec95">VideoUndistorter::frame_count_</a></div><div class="ttdeci">double frame_count_</div><div class="ttdoc">Количество кадров входного видео</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8h_source.html#l00100">video_undistorter.h:100</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_a78e9df5a43762efac01d4d37d97be8e5"><div class="ttname"><a href="class_video_undistorter.html#a78e9df5a43762efac01d4d37d97be8e5">VideoUndistorter::camera_matrix_</a></div><div class="ttdeci">Mat camera_matrix_</div><div class="ttdoc">Та самая матрица, присущая конкретной паре - линща + камера.</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8h_source.html#l00117">video_undistorter.h:117</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_a9363566d895ea53cf3d7b48c5b6e1964"><div class="ttname"><a href="class_video_undistorter.html#a9363566d895ea53cf3d7b48c5b6e1964">VideoUndistorter::distortion_coefficients_</a></div><div class="ttdeci">Mat distortion_coefficients_</div><div class="ttdoc">Коэффициенты дисторсии</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8h_source.html#l00121">video_undistorter.h:121</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_a9e6d7352f492baaa97a51f161a016056"><div class="ttname"><a href="class_video_undistorter.html#a9e6d7352f492baaa97a51f161a016056">VideoUndistorter::py_</a></div><div class="ttdeci">double py_</div><div class="ttdoc">Коэффициент матрицы VideoUndistorter::camera_matrix_.</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8h_source.html#l00149">video_undistorter.h:149</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_aa11423c2edf80da39457470b604e995a"><div class="ttname"><a href="class_video_undistorter.html#aa11423c2edf80da39457470b604e995a">VideoUndistorter::fx_</a></div><div class="ttdeci">double fx_</div><div class="ttdoc">Коэффициент матрицы VideoUndistorter::camera_matrix_.</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8h_source.html#l00134">video_undistorter.h:134</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_aa42fc7f2661d48c5bfe2ff4ade623b30"><div class="ttname"><a href="class_video_undistorter.html#aa42fc7f2661d48c5bfe2ff4ade623b30">VideoUndistorter::VideoUndistorter</a></div><div class="ttdeci">VideoUndistorter(std::string input_file_name_, std::string output_file_name, std::string txt_file_name)</div><div class="ttdoc">Конструктор этого класса</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8cpp_source.html#l00003">video_undistorter.cpp:3</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_aa51dcc2cc2726c97ed156eaa3249665f"><div class="ttname"><a href="class_video_undistorter.html#aa51dcc2cc2726c97ed156eaa3249665f">VideoUndistorter::output_cap_</a></div><div class="ttdeci">VideoWriter * output_cap_</div><div class="ttdoc">&quot;Поток&quot; из кадров выходного видео (последовательности)</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8h_source.html#l00088">video_undistorter.h:88</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_aaec69d8897221bf238ce22b9eefd0d1c"><div class="ttname"><a href="class_video_undistorter.html#aaec69d8897221bf238ce22b9eefd0d1c">VideoUndistorter::winname_</a></div><div class="ttdeci">std::string winname_</div><div class="ttdoc">Название главного окна</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8h_source.html#l00080">video_undistorter.h:80</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_ac82e158db201e5d3189cc2c2eaa0db46"><div class="ttname"><a href="class_video_undistorter.html#ac82e158db201e5d3189cc2c2eaa0db46">VideoUndistorter::SaveFrame</a></div><div class="ttdeci">void SaveFrame(Mat frame)</div><div class="ttdoc">Сохраняет кадр в выходную последовательность (видео)</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8cpp_source.html#l00103">video_undistorter.cpp:103</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_ad97e93cf1bb586a53494fb95909a4bc6"><div class="ttname"><a href="class_video_undistorter.html#ad97e93cf1bb586a53494fb95909a4bc6">VideoUndistorter::LoadFoundParamsFromFile</a></div><div class="ttdeci">void LoadFoundParamsFromFile(std::string txt_file_name)</div><div class="ttdoc">Загружает параметры (коэффициенты fx, fy, cx, cy), необходимые для удаления дисторсии....</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8cpp_source.html#l00108">video_undistorter.cpp:108</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_adb48040817f02d9e15638a06e5491777"><div class="ttname"><a href="class_video_undistorter.html#adb48040817f02d9e15638a06e5491777">VideoUndistorter::output_file_name_</a></div><div class="ttdeci">std::string output_file_name_</div><div class="ttdoc">Путь к выходному видео</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8h_source.html#l00112">video_undistorter.h:112</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_adb5c11e438bef28a04b438ed7cf70c45"><div class="ttname"><a href="class_video_undistorter.html#adb5c11e438bef28a04b438ed7cf70c45">VideoUndistorter::SplitString</a></div><div class="ttdeci">std::vector&lt; std::string &gt; SplitString(std::string line, std::string delimiter)</div><div class="ttdoc">Разделяет строку на некоторое количество подстрок по специальному символу - разделителю</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8cpp_source.html#l00157">video_undistorter.cpp:157</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_aea3bd77c199df2c27bf8162c67c54eff"><div class="ttname"><a href="class_video_undistorter.html#aea3bd77c199df2c27bf8162c67c54eff">VideoUndistorter::undistorted_frame_</a></div><div class="ttdeci">Mat undistorted_frame_</div><div class="ttdoc">Текущий кадр с удалённой дисторсией</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8h_source.html#l00129">video_undistorter.h:129</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_af84edc3f788032cdb9895f05ab4a984b"><div class="ttname"><a href="class_video_undistorter.html#af84edc3f788032cdb9895f05ab4a984b">VideoUndistorter::txt_file_name_</a></div><div class="ttdeci">std::string txt_file_name_</div><div class="ttdoc">Путь к файлу с коэффициентами</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8h_source.html#l00154">video_undistorter.h:154</a></div></div>
+<div class="ttc" id="agroup___helper_functions_html_gad8a95244f86df84c8f5d35197fe0196f"><div class="ttname"><a href="group___helper_functions.html#gad8a95244f86df84c8f5d35197fe0196f">HelperFunctions::ToStringWithPrecision</a></div><div class="ttdeci">std::string ToStringWithPrecision(const T value, const int n=9)</div><div class="ttdoc">Выполняет округление числа с определенной точностью</div><div class="ttdef"><b>Definition:</b> <a href="helper_8h_source.html#l00049">helper.h:49</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

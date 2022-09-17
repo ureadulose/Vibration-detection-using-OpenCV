@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['wanna_5fquit_5f_0',['wanna_quit_',['../class_main_menu.html#a5e2264e9d3087ffdc1e64fc48777f7c2',1,'MainMenu']]],
-  ['warping_5ffigure_5f_1',['warping_figure_',['../class_vibration_detector.html#a901927a4199f5bf914675f19cae9a651',1,'VibrationDetector']]],
-  ['warping_5ffigure_5fselecting_5f_2',['warping_figure_selecting_',['../class_vibration_detector.html#a3b8ea35de43e2702a889f8def948ece4',1,'VibrationDetector']]],
-  ['width_5foffset_5f_3',['width_offset_',['../class_main_menu.html#ac8cde06a54ac62981f6ee2aaab284dbc',1,'MainMenu']]],
-  ['win_5fname_5f_4',['win_name_',['../class_movement_enlarger.html#a2ddb490175f6d262dc5c99ff67aa624b',1,'MovementEnlarger']]],
-  ['window_5fname_5f_5',['window_name_',['../class_vibration_detector.html#a1dddb74ae6ef1b1f5cb4b66e2a352509',1,'VibrationDetector']]],
-  ['winname_5f_6',['winname_',['../class_main_menu.html#a8b8a1a133a5ef0bfcb8203b104d9e7d8',1,'MainMenu::winname_()'],['../class_histogram.html#a292702c6d9b47cb4b017a10c410d7fea',1,'Histogram::winname_()']]]
+  ['vec_5fcolored_5fpoint_5fhandlers_5f_0',['vec_colored_point_handlers_',['../class_vibration_detector.html#add86750dfd1683f09410d3fe3822a950',1,'VibrationDetector']]],
+  ['vec_5flonely_5fpoint_5fhandlers_5f_1',['vec_lonely_point_handlers_',['../class_vibration_detector.html#a5085a389a0ff26924331ab5022eea1af',1,'VibrationDetector']]],
+  ['vec_5fmeaned_5fcoordinates_5fof_5fpoint_5f_2',['vec_meaned_coordinates_of_point_',['../class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb',1,'VibratingPoint']]],
+  ['vec_5fof_5fcorners_5f_3',['vec_of_corners_',['../class_camera_calibrator.html#af702d786b8787340bddbffc450811e11',1,'CameraCalibrator']]]
 ];

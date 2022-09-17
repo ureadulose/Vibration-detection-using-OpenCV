@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Visual Vibration Tracking: Класс OutputToCsv</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Visual Vibration Tracking<span id="projectnumber">&#160;0.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_output_to_csv-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс OutputToCsv</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для сохранения метаданных (временных и пространственных координат, ID точки)  
+ <a href="class_output_to_csv.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="output__to__csv_8h_source.html">output_to_csv.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:OutputToCsv:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_output_to_csv__inherit__graph.png" border="0" usemap="#a_output_to_csv_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_output_to_csv_inherit__map" id="a_output_to_csv_inherit__map">
+<area shape="rect" title="Класс для сохранения метаданных (временных и пространственных координат, ID точки)" alt="" coords="107,5,203,31"/>
+<area shape="rect" href="class_colored_point_handler.html" title="Дочерний (от VibratingPoint) класс. Предназначен для помещения множества цветных точек на кадр и отсл..." alt="" coords="5,79,145,104"/>
+<area shape="rect" href="class_lonely_point_handler.html" title="Дочерний (от VibratingPoint) класс. Предназначен для помещения точки на кадр и отслеживания её вибрац..." alt="" coords="169,79,304,104"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a6c2e719cbb3ff83b249e8820029895f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_output_to_csv.html#a6c2e719cbb3ff83b249e8820029895f0">OutputToCsv</a> (std::string output_file_name, std::vector&lt; Point2f &gt; &amp;point_coordinates, std::vector&lt; double &gt; &amp;point_time_coordinates, int point_id)</td></tr>
+<tr class="memdesc:a6c2e719cbb3ff83b249e8820029895f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор этого класса  <a href="class_output_to_csv.html#a6c2e719cbb3ff83b249e8820029895f0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6c2e719cbb3ff83b249e8820029895f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f1e3239fa21906aa102c3d601183f65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_output_to_csv.html#a8f1e3239fa21906aa102c3d601183f65">Write</a> ()</td></tr>
+<tr class="memdesc:a8f1e3239fa21906aa102c3d601183f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет данные для записи  <a href="class_output_to_csv.html#a8f1e3239fa21906aa102c3d601183f65">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8f1e3239fa21906aa102c3d601183f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a54c842383d98ee9896149112be64e70e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_output_to_csv.html#a54c842383d98ee9896149112be64e70e">output_file_name_</a></td></tr>
+<tr class="memdesc:a54c842383d98ee9896149112be64e70e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя (путь) файла, в который будет производиться запись  <a href="class_output_to_csv.html#a54c842383d98ee9896149112be64e70e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a54c842383d98ee9896149112be64e70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88fc80ddae3f02ad0dfb04b0529f9fd3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Point2f &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_output_to_csv.html#a88fc80ddae3f02ad0dfb04b0529f9fd3">coordinates_</a></td></tr>
+<tr class="memdesc:a88fc80ddae3f02ad0dfb04b0529f9fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Контейнер для пространственных координат (позиций на экране) точки  <a href="class_output_to_csv.html#a88fc80ddae3f02ad0dfb04b0529f9fd3">Подробнее...</a><br /></td></tr>
+<tr class="separator:a88fc80ddae3f02ad0dfb04b0529f9fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aaab03dcb5f23e40bc58c6d1ac1e4a1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_output_to_csv.html#a8aaab03dcb5f23e40bc58c6d1ac1e4a1">time_coordinates_</a></td></tr>
+<tr class="memdesc:a8aaab03dcb5f23e40bc58c6d1ac1e4a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Контейнер для временных координат (позиций на экране) точки  <a href="class_output_to_csv.html#a8aaab03dcb5f23e40bc58c6d1ac1e4a1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8aaab03dcb5f23e40bc58c6d1ac1e4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ad8d8720f27eab5e5c504fc755398c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_output_to_csv.html#a13ad8d8720f27eab5e5c504fc755398c">point_id_</a></td></tr>
+<tr class="memdesc:a13ad8d8720f27eab5e5c504fc755398c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID точки  <a href="class_output_to_csv.html#a13ad8d8720f27eab5e5c504fc755398c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a13ad8d8720f27eab5e5c504fc755398c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p >Класс для сохранения метаданных (временных и пространственных координат, ID точки) </p>
+<p >Имя выходного файла имеет следующий вид: output_year-mm-dd_hh-mm-ss.csv</p>
+<p >Оно генерируется вне дочернего объекта этого класса, а во время начала работы программы. Поэтому можно сохранять метаданные разных точек в один файл (с одним названием) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="output__to__csv_8h_source.html">output_to_csv.h</a> строка <a class="el" href="output__to__csv_8h_source.html#l00018">18</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a6c2e719cbb3ff83b249e8820029895f0" name="a6c2e719cbb3ff83b249e8820029895f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c2e719cbb3ff83b249e8820029895f0">&#9670;&#160;</a></span>OutputToCsv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OutputToCsv::OutputToCsv </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>output_file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; Point2f &gt; &amp;&#160;</td>
+          <td class="paramname"><em>point_coordinates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>point_time_coordinates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>point_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор этого класса </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output_file_name</td><td>имя выходного файла. </td></tr>
+    <tr><td class="paramname">point_coordinates</td><td>ссылка на контейнер пространственных координат точки </td></tr>
+    <tr><td class="paramname">point_time_coordinates</td><td>ссылка на контейнер временных координат точки </td></tr>
+    <tr><td class="paramname">point_id</td><td>ID точки </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="output__to__csv_8cpp_source.html">output_to_csv.cpp</a> строка <a class="el" href="output__to__csv_8cpp_source.html#l00003">3</a></p>
+<div class="fragment"><div class="line"><span class="lineno">    3</span>                                                                                                                                                   :</div>
+<div class="line"><span class="lineno">    4</span>    <a class="code hl_variable" href="class_output_to_csv.html#a54c842383d98ee9896149112be64e70e">output_file_name_</a>{ output_file_name },</div>
+<div class="line"><span class="lineno">    5</span>    <a class="code hl_variable" href="class_output_to_csv.html#a88fc80ddae3f02ad0dfb04b0529f9fd3">coordinates_</a>{ &amp;point_coordinates },</div>
+<div class="line"><span class="lineno">    6</span>    <a class="code hl_variable" href="class_output_to_csv.html#a8aaab03dcb5f23e40bc58c6d1ac1e4a1">time_coordinates_</a>{ &amp;point_time_coordinates },</div>
+<div class="line"><span class="lineno">    7</span>    <a class="code hl_variable" href="class_output_to_csv.html#a13ad8d8720f27eab5e5c504fc755398c">point_id_</a>{ point_id }</div>
+<div class="line"><span class="lineno">    8</span>{</div>
+<div class="line"><span class="lineno">    9</span>}</div>
+<div class="ttc" id="aclass_output_to_csv_html_a13ad8d8720f27eab5e5c504fc755398c"><div class="ttname"><a href="class_output_to_csv.html#a13ad8d8720f27eab5e5c504fc755398c">OutputToCsv::point_id_</a></div><div class="ttdeci">int point_id_</div><div class="ttdoc">ID точки</div><div class="ttdef"><b>Definition:</b> <a href="output__to__csv_8h_source.html#l00050">output_to_csv.h:50</a></div></div>
+<div class="ttc" id="aclass_output_to_csv_html_a54c842383d98ee9896149112be64e70e"><div class="ttname"><a href="class_output_to_csv.html#a54c842383d98ee9896149112be64e70e">OutputToCsv::output_file_name_</a></div><div class="ttdeci">std::string output_file_name_</div><div class="ttdoc">Имя (путь) файла, в который будет производиться запись</div><div class="ttdef"><b>Definition:</b> <a href="output__to__csv_8h_source.html#l00038">output_to_csv.h:38</a></div></div>
+<div class="ttc" id="aclass_output_to_csv_html_a88fc80ddae3f02ad0dfb04b0529f9fd3"><div class="ttname"><a href="class_output_to_csv.html#a88fc80ddae3f02ad0dfb04b0529f9fd3">OutputToCsv::coordinates_</a></div><div class="ttdeci">std::vector&lt; Point2f &gt; * coordinates_</div><div class="ttdoc">Контейнер для пространственных координат (позиций на экране) точки</div><div class="ttdef"><b>Definition:</b> <a href="output__to__csv_8h_source.html#l00042">output_to_csv.h:42</a></div></div>
+<div class="ttc" id="aclass_output_to_csv_html_a8aaab03dcb5f23e40bc58c6d1ac1e4a1"><div class="ttname"><a href="class_output_to_csv.html#a8aaab03dcb5f23e40bc58c6d1ac1e4a1">OutputToCsv::time_coordinates_</a></div><div class="ttdeci">std::vector&lt; double &gt; * time_coordinates_</div><div class="ttdoc">Контейнер для временных координат (позиций на экране) точки</div><div class="ttdef"><b>Definition:</b> <a href="output__to__csv_8h_source.html#l00046">output_to_csv.h:46</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a8f1e3239fa21906aa102c3d601183f65" name="a8f1e3239fa21906aa102c3d601183f65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f1e3239fa21906aa102c3d601183f65">&#9670;&#160;</a></span>Write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OutputToCsv::Write </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавляет данные для записи </p>
+
+<p class="definition">См. определение в файле <a class="el" href="output__to__csv_8cpp_source.html">output_to_csv.cpp</a> строка <a class="el" href="output__to__csv_8cpp_source.html#l00011">11</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   12</span>{</div>
+<div class="line"><span class="lineno">   13</span>    std::ofstream file;</div>
+<div class="line"><span class="lineno">   14</span>    file.open(<a class="code hl_variable" href="class_output_to_csv.html#a54c842383d98ee9896149112be64e70e">output_file_name_</a>, std::fstream::app);</div>
+<div class="line"><span class="lineno">   15</span> </div>
+<div class="line"><span class="lineno">   16</span>    <span class="comment">// Запишем ID точки</span></div>
+<div class="line"><span class="lineno">   17</span>    file &lt;&lt; <span class="stringliteral">&quot;Point &quot;</span> + std::to_string(<a class="code hl_variable" href="class_output_to_csv.html#a13ad8d8720f27eab5e5c504fc755398c">point_id_</a>) + <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   18</span> </div>
+<div class="line"><span class="lineno">   19</span>    <span class="comment">// Запишем временные позиции точки</span></div>
+<div class="line"><span class="lineno">   20</span>    file &lt;&lt; <span class="stringliteral">&quot;Time pos;&quot;</span>;</div>
+<div class="line"><span class="lineno">   21</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_output_to_csv.html#a8aaab03dcb5f23e40bc58c6d1ac1e4a1">time_coordinates_</a>-&gt;size(); i++)</div>
+<div class="line"><span class="lineno">   22</span>    {</div>
+<div class="line"><span class="lineno">   23</span>        file &lt;&lt; std::to_string(<a class="code hl_variable" href="class_output_to_csv.html#a8aaab03dcb5f23e40bc58c6d1ac1e4a1">time_coordinates_</a>-&gt;at(i)) + <span class="stringliteral">&quot;;&quot;</span>;</div>
+<div class="line"><span class="lineno">   24</span>    }</div>
+<div class="line"><span class="lineno">   25</span>    file &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   26</span> </div>
+<div class="line"><span class="lineno">   27</span>    <span class="comment">// Запишем координаты </span></div>
+<div class="line"><span class="lineno">   28</span>    <span class="comment">// Сначала по X</span></div>
+<div class="line"><span class="lineno">   29</span>    file &lt;&lt; <span class="stringliteral">&quot;X pos; &quot;</span>;</div>
+<div class="line"><span class="lineno">   30</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_output_to_csv.html#a88fc80ddae3f02ad0dfb04b0529f9fd3">coordinates_</a>-&gt;size(); i++)</div>
+<div class="line"><span class="lineno">   31</span>    {</div>
+<div class="line"><span class="lineno">   32</span>        file &lt;&lt; std::to_string(<a class="code hl_variable" href="class_output_to_csv.html#a88fc80ddae3f02ad0dfb04b0529f9fd3">coordinates_</a>-&gt;at(i).x) + <span class="stringliteral">&quot;;&quot;</span>;</div>
+<div class="line"><span class="lineno">   33</span>    }</div>
+<div class="line"><span class="lineno">   34</span>    file &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   35</span> </div>
+<div class="line"><span class="lineno">   36</span>    <span class="comment">// Затем по Y</span></div>
+<div class="line"><span class="lineno">   37</span>    file &lt;&lt; <span class="stringliteral">&quot;Y pos; &quot;</span>;</div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_output_to_csv.html#a88fc80ddae3f02ad0dfb04b0529f9fd3">coordinates_</a>-&gt;size(); i++)</div>
+<div class="line"><span class="lineno">   39</span>    {</div>
+<div class="line"><span class="lineno">   40</span>        file &lt;&lt; std::to_string(<a class="code hl_variable" href="class_output_to_csv.html#a88fc80ddae3f02ad0dfb04b0529f9fd3">coordinates_</a>-&gt;at(i).y) + <span class="stringliteral">&quot;;&quot;</span>;</div>
+<div class="line"><span class="lineno">   41</span>    }</div>
+<div class="line"><span class="lineno">   42</span>    file &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>    file.close();</div>
+<div class="line"><span class="lineno">   45</span>    </div>
+<div class="line"><span class="lineno">   46</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a88fc80ddae3f02ad0dfb04b0529f9fd3" name="a88fc80ddae3f02ad0dfb04b0529f9fd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88fc80ddae3f02ad0dfb04b0529f9fd3">&#9670;&#160;</a></span>coordinates_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Point2f&gt;* OutputToCsv::coordinates_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Контейнер для пространственных координат (позиций на экране) точки </p>
+
+<p class="definition">См. определение в файле <a class="el" href="output__to__csv_8h_source.html">output_to_csv.h</a> строка <a class="el" href="output__to__csv_8h_source.html#l00042">42</a></p>
+
+</div>
+</div>
+<a id="a54c842383d98ee9896149112be64e70e" name="a54c842383d98ee9896149112be64e70e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54c842383d98ee9896149112be64e70e">&#9670;&#160;</a></span>output_file_name_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string OutputToCsv::output_file_name_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Имя (путь) файла, в который будет производиться запись </p>
+
+<p class="definition">См. определение в файле <a class="el" href="output__to__csv_8h_source.html">output_to_csv.h</a> строка <a class="el" href="output__to__csv_8h_source.html#l00038">38</a></p>
+
+</div>
+</div>
+<a id="a13ad8d8720f27eab5e5c504fc755398c" name="a13ad8d8720f27eab5e5c504fc755398c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13ad8d8720f27eab5e5c504fc755398c">&#9670;&#160;</a></span>point_id_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int OutputToCsv::point_id_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ID точки </p>
+
+<p class="definition">См. определение в файле <a class="el" href="output__to__csv_8h_source.html">output_to_csv.h</a> строка <a class="el" href="output__to__csv_8h_source.html#l00050">50</a></p>
+
+</div>
+</div>
+<a id="a8aaab03dcb5f23e40bc58c6d1ac1e4a1" name="a8aaab03dcb5f23e40bc58c6d1ac1e4a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aaab03dcb5f23e40bc58c6d1ac1e4a1">&#9670;&#160;</a></span>time_coordinates_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt;* OutputToCsv::time_coordinates_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Контейнер для временных координат (позиций на экране) точки </p>
+
+<p class="definition">См. определение в файле <a class="el" href="output__to__csv_8h_source.html">output_to_csv.h</a> строка <a class="el" href="output__to__csv_8h_source.html#l00046">46</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/include/VVT-V2/<a class="el" href="output__to__csv_8h_source.html">output_to_csv.h</a></li>
+<li>C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/source/<a class="el" href="output__to__csv_8cpp_source.html">output_to_csv.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

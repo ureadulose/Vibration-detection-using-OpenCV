@@ -8,5 +8,6 @@ var searchData=
   ['res_5fmp_5f_5',['res_mp_',['../class_vibration_detector.html#a5c0d42618889da70c073056ba3e4065c',1,'VibrationDetector']]],
   ['roi_5fselected_5f_6',['roi_selected_',['../class_vibration_detector.html#afd9f8f38bcde73bb14c9cf643f270d36',1,'VibrationDetector']]],
   ['roi_5fselecting_5f_7',['roi_selecting_',['../class_vibration_detector.html#aacb53723f4a18df998738d0d54c5290b',1,'VibrationDetector']]],
-  ['running_5f_8',['running_',['../class_vibration_detector.html#ab0fa5fb784f1db6bdb7a9d9e5d608bb3',1,'VibrationDetector']]]
+  ['roiselectionmodehandler_8',['RoiSelectionModeHandler',['../class_vibration_detector.html#a30c131133b8faa624d16839036c2a046',1,'VibrationDetector']]],
+  ['running_5f_9',['running_',['../class_vibration_detector.html#ab0fa5fb784f1db6bdb7a9d9e5d608bb3',1,'VibrationDetector']]]
 ];

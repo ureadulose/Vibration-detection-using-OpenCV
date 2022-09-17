@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Visual Vibration Tracking: Исходный файл C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/source/main_menu.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Visual Vibration Tracking<span id="projectnumber">&#160;0.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_1a7b6f8ea6414524e6d315978b19a51d.html">seeyo</a></li><li class="navelem"><a class="el" href="dir_2849c7605547aec047c1bbd084b35fb3.html">source</a></li><li class="navelem"><a class="el" href="dir_e74395836ad52566ee1a5217dc9ad081.html">repos</a></li><li class="navelem"><a class="el" href="dir_9c05f254fdeb3977de6d7fceb436c906.html">Visual-Vibration-Tracking-V2</a></li><li class="navelem"><a class="el" href="dir_79e40183697295403169ece52fc1338a.html">source</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">main_menu.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;GUI/main_menu.h&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="class_main_menu.html#abb33004f27a82400cf8359379347cd51">    3</a></span><a class="code hl_function" href="class_main_menu.html#abb33004f27a82400cf8359379347cd51">MainMenu::MainMenu</a>(std::string params_file_name) :</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    params_file_name_{ params_file_name },</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    winname_{ MAIN_MENU_WINDOW_NAME },</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    menu_width_{ 500 },</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    menu_height_{ 500 },</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    button_amount_{ 4 },</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    mode_chosen_{ false }</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    namedWindow(<a class="code hl_variable" href="class_main_menu.html#a8b8a1a133a5ef0bfcb8203b104d9e7d8">winname_</a>, WINDOW_AUTOSIZE);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">// Инициализируем отступы</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">int</span> x = 20;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_variable" href="class_main_menu.html#a3609956a27889cec7af6ec85195ac743">button_spacing_</a> = x;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_variable" href="class_main_menu.html#a726804731d9b92dc1797ec69c2e48f93">top_offset_</a> = 3 * x;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_variable" href="class_main_menu.html#ae9b1fae3596f0d598cdd590e1d799fce">bottom_offset_</a> = 5 * x;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_variable" href="class_main_menu.html#ac8cde06a54ac62981f6ee2aaab284dbc">width_offset_</a> = 3 * x;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_variable" href="class_main_menu.html#aafca88e812926ead49f00ec323a987cc">button_width_</a> = <a class="code hl_variable" href="class_main_menu.html#a72f1383d94f8e16f245d58fc596392d0">menu_width_</a> - 2 * <a class="code hl_variable" href="class_main_menu.html#ac8cde06a54ac62981f6ee2aaab284dbc">width_offset_</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_variable" href="class_main_menu.html#a091b2780210717c4620b8b8bec5edb8e">button_height_</a> = (<a class="code hl_variable" href="class_main_menu.html#ae2c50f92a5f3c7486e7a3ad9ef866221">menu_height_</a> - (<a class="code hl_variable" href="class_main_menu.html#ad625d2c00b71239f30056eda2709e69d">button_amount_</a> - 1) * <a class="code hl_variable" href="class_main_menu.html#a3609956a27889cec7af6ec85195ac743">button_spacing_</a> - <a class="code hl_variable" href="class_main_menu.html#a726804731d9b92dc1797ec69c2e48f93">top_offset_</a> - <a class="code hl_variable" href="class_main_menu.html#ae9b1fae3596f0d598cdd590e1d799fce">bottom_offset_</a>) / <a class="code hl_variable" href="class_main_menu.html#ad625d2c00b71239f30056eda2709e69d">button_amount_</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="comment">// Надписи на кнопках</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_variable" href="class_main_menu.html#a678f9dbcd2216709540d4af16ed66b38">button_text_</a>[0] = <span class="stringliteral">&quot;CALIBRATION&quot;</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_variable" href="class_main_menu.html#a678f9dbcd2216709540d4af16ed66b38">button_text_</a>[1] = <span class="stringliteral">&quot;UNDISTORTION&quot;</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_variable" href="class_main_menu.html#a678f9dbcd2216709540d4af16ed66b38">button_text_</a>[2] = <span class="stringliteral">&quot;VIBRATION MONITORING&quot;</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_variable" href="class_main_menu.html#a678f9dbcd2216709540d4af16ed66b38">button_text_</a>[3] = <span class="stringliteral">&quot;MOVEMENT ENLARGEMENT&quot;</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">// Инициализируем контейнер цветов кнопок</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_main_menu.html#ad625d2c00b71239f30056eda2709e69d">button_amount_</a>; i++)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_variable" href="class_main_menu.html#ad7381c9c612fc48c2a21d9a0e0fdb65f">buttons_color_</a>.push_back(Scalar(255, 255, 255));</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">// Инициализируем атрибуты текста</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_variable" href="class_main_menu.html#a141c52a3decb4c9f74528cd158347a9e">font</a> = FONT_HERSHEY_PLAIN;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_variable" href="class_main_menu.html#a2c1c1409a6638988fa33fb7e073ba13d">font_scale</a> = 1;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_variable" href="class_main_menu.html#a29d574adf0376f03c3ef3918fd87141e">thickness</a> = 2;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_variable" href="class_main_menu.html#a9bcf2dfafca93c905bfea6f0a53cbe15">baseline</a> = 0;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">// Создание меню на Mat-объекте</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_function" href="class_main_menu.html#a5ecabae61a1ba65a16966268056fa113">CreateMenu</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_main_menu.html#acf5b3599f1461c5f9431ea1f704da910">   39</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_main_menu.html#acf5b3599f1461c5f9431ea1f704da910">MainMenu::LoadPaths</a>()</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    std::ifstream params_file;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    params_file.open(<a class="code hl_variable" href="class_main_menu.html#a300dd1a1e464e73087d4feabb94e8fb9">params_file_name_</a>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">if</span> (!params_file.is_open())</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Wrong filename&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    std::getline(params_file, <a class="code hl_variable" href="class_main_menu.html#a4ecd32d232bdc09bad417fec831efe2b">input_calibration_video_</a>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    std::getline(params_file, <a class="code hl_variable" href="class_main_menu.html#a43569f3b9d5700184c9cd21e760e78b0">input_distorted_video_</a>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    std::getline(params_file, <a class="code hl_variable" href="class_main_menu.html#ae1388275b984f4d7e5975c42bd20a45e">output_undistorted_video_</a>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    std::getline(params_file, <a class="code hl_variable" href="class_main_menu.html#a085f0e7b8a81371f8b868f447b787ac1">input_vibration_detection_</a>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    std::getline(params_file, <a class="code hl_variable" href="class_main_menu.html#a4e9d0a1af8b544e9f4b856f02864c26f">output_vibration_detection_</a>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    std::getline(params_file, <a class="code hl_variable" href="class_main_menu.html#ae70524216396d958e84697846751db33">chessboards_path_</a>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    std::getline(params_file, <a class="code hl_variable" href="class_main_menu.html#abbc9df90951e4ef60b081c2971fbd978">input_movement_enlargment_</a>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    std::getline(params_file, <a class="code hl_variable" href="class_main_menu.html#a29d7b279fb12523356ba6e084dd1a5e4">output_movement_enlargement_</a>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_main_menu.html#a01aeeb1edc954686d13747cb4c12a8e0">   59</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_main_menu.html#a01aeeb1edc954686d13747cb4c12a8e0">MainMenu::ExecuteCameraCalibration</a>(std::string chessboards_path)</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>{</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_class" href="class_camera_calibrator.html">CameraCalibrator</a> camera_calibrator(chessboards_path);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    camera_calibrator.ExecuteCameraCalibration();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_main_menu.html#a30aba8993a7f8e9f39b242f10fbaf931">   65</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_main_menu.html#a30aba8993a7f8e9f39b242f10fbaf931">MainMenu::ExecuteVideoUndistortion</a>(std::string input_file_name, std::string output_file_name)</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    std::string params;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Please attach the parameters.txt file: &quot;</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    std::cin &gt;&gt; params;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    std::cout &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_class" href="class_video_undistorter.html">VideoUndistorter</a> video_undistorter(input_file_name, output_file_name, params);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    video_undistorter.<a class="code hl_function" href="class_video_undistorter.html#a05b19bb1af0c5fcfd147c48dd447d44d">ExecuteVideoUndistortion</a>();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_main_menu.html#aa5e21268330d9703d6c8bf9f4b33d228">   77</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_main_menu.html#aa5e21268330d9703d6c8bf9f4b33d228">MainMenu::ExecuteVibrationMonitoring</a>(std::string input_file_name, std::string output_file_name)</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>{</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <a class="code hl_class" href="class_vibration_detector.html">VibrationDetector</a> vibration_detector(input_file_name, output_file_name, MAIN_WINDOW_NAME);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    vibration_detector.<a class="code hl_function" href="class_vibration_detector.html#ae93a14aa147af694a90c012f16efc924">ExecuteVibrationDetection</a>();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_main_menu.html#a7110d2e44a744a1556f8a2b2950b9d38">   83</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_main_menu.html#a7110d2e44a744a1556f8a2b2950b9d38">MainMenu::ExecuteMotionMagnification</a>(std::string input_file_name, std::string output_file_name)</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>{</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_class" href="class_movement_enlarger.html">MovementEnlarger</a> movement_enlarger(input_file_name, output_file_name);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    movement_enlarger.<a class="code hl_function" href="class_movement_enlarger.html#a1570d3e0ed67d4ec81a0f8e0c8048414">ExecuteLaplaceEnlargement</a>();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_main_menu.html#a5ecabae61a1ba65a16966268056fa113">   89</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_main_menu.html#a5ecabae61a1ba65a16966268056fa113">MainMenu::CreateMenu</a>()</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>{</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="comment">// Создадим кнопки в соответствии с их позициями</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_main_menu.html#ad625d2c00b71239f30056eda2709e69d">button_amount_</a>; i++)</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <a class="code hl_variable" href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">buttons_</a>.push_back</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        (</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            Rect(</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                Point2i(</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                    <a class="code hl_variable" href="class_main_menu.html#ac8cde06a54ac62981f6ee2aaab284dbc">width_offset_</a>,</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                    <a class="code hl_variable" href="class_main_menu.html#a726804731d9b92dc1797ec69c2e48f93">top_offset_</a> + i * (<a class="code hl_variable" href="class_main_menu.html#a091b2780210717c4620b8b8bec5edb8e">button_height_</a> + <a class="code hl_variable" href="class_main_menu.html#a3609956a27889cec7af6ec85195ac743">button_spacing_</a>)</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                ),</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                Point2i(</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                    <a class="code hl_variable" href="class_main_menu.html#ac8cde06a54ac62981f6ee2aaab284dbc">width_offset_</a> + <a class="code hl_variable" href="class_main_menu.html#aafca88e812926ead49f00ec323a987cc">button_width_</a>,</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                    <a class="code hl_variable" href="class_main_menu.html#a726804731d9b92dc1797ec69c2e48f93">top_offset_</a> + <a class="code hl_variable" href="class_main_menu.html#a091b2780210717c4620b8b8bec5edb8e">button_height_</a> + i * (<a class="code hl_variable" href="class_main_menu.html#a091b2780210717c4620b8b8bec5edb8e">button_height_</a> + <a class="code hl_variable" href="class_main_menu.html#a3609956a27889cec7af6ec85195ac743">button_spacing_</a>)</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                )</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            )</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        );</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <a class="code hl_variable" href="class_main_menu.html#a21f7500296ee52056ba2ff187d437558">menu_</a> = Mat(Size(<a class="code hl_variable" href="class_main_menu.html#a72f1383d94f8e16f245d58fc596392d0">menu_width_</a>, <a class="code hl_variable" href="class_main_menu.html#ae2c50f92a5f3c7486e7a3ad9ef866221">menu_height_</a>), CV_8UC3, Scalar(0, 0, 0)); </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="comment">// Подсказка для пользователя</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    std::string tip = <span class="stringliteral">&quot;Press &#39;Q&#39; to quit&quot;</span>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    putText(</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <a class="code hl_variable" href="class_main_menu.html#a21f7500296ee52056ba2ff187d437558">menu_</a>,</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        tip,</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        Point(</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            (<a class="code hl_variable" href="class_main_menu.html#a72f1383d94f8e16f245d58fc596392d0">menu_width_</a> - getTextSize(tip, <a class="code hl_variable" href="class_main_menu.html#a141c52a3decb4c9f74528cd158347a9e">font</a>, <a class="code hl_variable" href="class_main_menu.html#a2c1c1409a6638988fa33fb7e073ba13d">font_scale</a>, <a class="code hl_variable" href="class_main_menu.html#a29d574adf0376f03c3ef3918fd87141e">thickness</a>, &amp;<a class="code hl_variable" href="class_main_menu.html#a9bcf2dfafca93c905bfea6f0a53cbe15">baseline</a>).width) / 2,</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <a class="code hl_variable" href="class_main_menu.html#ae2c50f92a5f3c7486e7a3ad9ef866221">menu_height_</a> - (<a class="code hl_variable" href="class_main_menu.html#ae9b1fae3596f0d598cdd590e1d799fce">bottom_offset_</a> - getTextSize(tip, <a class="code hl_variable" href="class_main_menu.html#a141c52a3decb4c9f74528cd158347a9e">font</a>, <a class="code hl_variable" href="class_main_menu.html#a2c1c1409a6638988fa33fb7e073ba13d">font_scale</a>, <a class="code hl_variable" href="class_main_menu.html#a29d574adf0376f03c3ef3918fd87141e">thickness</a>, &amp;<a class="code hl_variable" href="class_main_menu.html#a9bcf2dfafca93c905bfea6f0a53cbe15">baseline</a>).height) / 2),</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <a class="code hl_variable" href="class_main_menu.html#a141c52a3decb4c9f74528cd158347a9e">font</a>,</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <a class="code hl_variable" href="class_main_menu.html#a2c1c1409a6638988fa33fb7e073ba13d">font_scale</a>,</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        Scalar(75, 75, 75),</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <a class="code hl_variable" href="class_main_menu.html#a29d574adf0376f03c3ef3918fd87141e">thickness</a> / 2,</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        4</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    );</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <a class="code hl_function" href="class_main_menu.html#a671d24b20bcb5142a67cb28ca7598747">Idle</a>();</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="class_main_menu.html#af6a2070f337a611b3b24be4766bfa826">  129</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_main_menu.html#af6a2070f337a611b3b24be4766bfa826">MainMenu::UpdateBtnColorAndText</a>()</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>{</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_main_menu.html#ad625d2c00b71239f30056eda2709e69d">button_amount_</a>; i++)</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    {</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <span class="comment">// Рисуем очертания кнопки</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        rectangle(<a class="code hl_variable" href="class_main_menu.html#a21f7500296ee52056ba2ff187d437558">menu_</a>, <a class="code hl_variable" href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">buttons_</a>[i], <a class="code hl_variable" href="class_main_menu.html#ad7381c9c612fc48c2a21d9a0e0fdb65f">buttons_color_</a>[i], FILLED);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="comment">// Размеры текста в пикселях</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        Size current_text_size = getTextSize(<a class="code hl_variable" href="class_main_menu.html#a678f9dbcd2216709540d4af16ed66b38">button_text_</a>[i], <a class="code hl_variable" href="class_main_menu.html#a141c52a3decb4c9f74528cd158347a9e">font</a>, <a class="code hl_variable" href="class_main_menu.html#a2c1c1409a6638988fa33fb7e073ba13d">font_scale</a>, <a class="code hl_variable" href="class_main_menu.html#a29d574adf0376f03c3ef3918fd87141e">thickness</a>, &amp;<a class="code hl_variable" href="class_main_menu.html#a9bcf2dfafca93c905bfea6f0a53cbe15">baseline</a>);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <span class="comment">// Координаты текущего текста</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        Point text_coordinates = Point(</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            <a class="code hl_variable" href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">buttons_</a>[i].tl().x + <a class="code hl_variable" href="class_main_menu.html#aafca88e812926ead49f00ec323a987cc">button_width_</a> / 2 - current_text_size.width / 2,</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            <a class="code hl_variable" href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">buttons_</a>[i].tl().y + <a class="code hl_variable" href="class_main_menu.html#a091b2780210717c4620b8b8bec5edb8e">button_height_</a> / 2 + (current_text_size.height) / 2);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="comment">// Рисуем текст кнопки</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        putText(</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            <a class="code hl_variable" href="class_main_menu.html#a21f7500296ee52056ba2ff187d437558">menu_</a>,</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            <a class="code hl_variable" href="class_main_menu.html#a678f9dbcd2216709540d4af16ed66b38">button_text_</a>[i],</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            text_coordinates,</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <a class="code hl_variable" href="class_main_menu.html#a141c52a3decb4c9f74528cd158347a9e">font</a>,</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <a class="code hl_variable" href="class_main_menu.html#a2c1c1409a6638988fa33fb7e073ba13d">font_scale</a>,</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            Scalar(255, 255, 255),</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            <a class="code hl_variable" href="class_main_menu.html#a29d574adf0376f03c3ef3918fd87141e">thickness</a>,</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            4 <span class="comment">// тип линии. вроде отличаются сглаживанием. выбрал 4-й просто так :)</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        );</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    }</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>}</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="class_main_menu.html#af802f4a248ffeb94f29d460522850b4f">  156</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_main_menu.html#af802f4a248ffeb94f29d460522850b4f">MainMenu::OnMouse</a>(<span class="keywordtype">int</span> event, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> flags, <span class="keywordtype">void</span>* userdata)</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>{</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <a class="code hl_class" href="class_main_menu.html">MainMenu</a>* d = <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="class_main_menu.html">MainMenu</a>*<span class="keyword">&gt;</span>(userdata);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    d-&gt;<a class="code hl_function" href="class_main_menu.html#aa378e087eb0805fd1451dcf116e2d56d">DetectEvent</a>(event, x, y, flags);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>}</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="class_main_menu.html#aa378e087eb0805fd1451dcf116e2d56d">  162</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_main_menu.html#aa378e087eb0805fd1451dcf116e2d56d">MainMenu::DetectEvent</a>(<span class="keywordtype">int</span> event, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> flags)</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>{</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="comment">// Загружаем названия директорий</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <a class="code hl_function" href="class_main_menu.html#acf5b3599f1461c5f9431ea1f704da910">LoadPaths</a>();</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keywordflow">switch</span> (event)</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keywordflow">case</span> EVENT_LBUTTONDOWN:</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">buttons_</a>.size(); i++)</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        {</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            <span class="comment">// Если клик пользователя был по кнопке</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">buttons_</a>[i].contains(Point(x, y)))</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            {</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                <span class="keywordflow">switch</span> (i)</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                {</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                <span class="keywordflow">case</span> CALIBRATION:</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                {</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                    std::cout &lt;&lt; <span class="stringliteral">&quot;u&#39;ve chosen camera calibration&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                    <a class="code hl_function" href="class_main_menu.html#a01aeeb1edc954686d13747cb4c12a8e0">ExecuteCameraCalibration</a>(<a class="code hl_variable" href="class_main_menu.html#ae70524216396d958e84697846751db33">chessboards_path_</a>);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                }</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                <span class="keywordflow">case</span> UNDISTORTION:</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                {</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                    std::cout &lt;&lt; <span class="stringliteral">&quot;u&#39;ve chosen undistortion&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                    <a class="code hl_function" href="class_main_menu.html#a30aba8993a7f8e9f39b242f10fbaf931">ExecuteVideoUndistortion</a>(<a class="code hl_variable" href="class_main_menu.html#a43569f3b9d5700184c9cd21e760e78b0">input_distorted_video_</a>, <a class="code hl_variable" href="class_main_menu.html#ae1388275b984f4d7e5975c42bd20a45e">output_undistorted_video_</a>);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                }</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                <span class="keywordflow">case</span> VIBRATION_MONITORING:</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                {</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                    std::cout &lt;&lt; <span class="stringliteral">&quot;u&#39;ve chosen vibration monitoring&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>                    <a class="code hl_function" href="class_main_menu.html#aa5e21268330d9703d6c8bf9f4b33d228">ExecuteVibrationMonitoring</a>(<a class="code hl_variable" href="class_main_menu.html#a085f0e7b8a81371f8b868f447b787ac1">input_vibration_detection_</a>, <a class="code hl_variable" href="class_main_menu.html#a4e9d0a1af8b544e9f4b856f02864c26f">output_vibration_detection_</a>);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                <span class="keywordflow">case</span> MOVEMENT_ENLARGEMENT:</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                {</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                    std::cout &lt;&lt; <span class="stringliteral">&quot;u&#39;ve chosen movement enlarging&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                    <a class="code hl_function" href="class_main_menu.html#a7110d2e44a744a1556f8a2b2950b9d38">ExecuteMotionMagnification</a>(<a class="code hl_variable" href="class_main_menu.html#abbc9df90951e4ef60b081c2971fbd978">input_movement_enlargment_</a>, <a class="code hl_variable" href="class_main_menu.html#a29d7b279fb12523356ba6e084dd1a5e4">output_movement_enlargement_</a>);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                }</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                }</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            }</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        }</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    }</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="keywordflow">case</span> EVENT_MOUSEMOVE:</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    {</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        <a class="code hl_variable" href="class_main_menu.html#a40e69fd0735c12fa24bc0c6ef37bf237">last_mouse_position_</a>.x = x;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        <a class="code hl_variable" href="class_main_menu.html#a40e69fd0735c12fa24bc0c6ef37bf237">last_mouse_position_</a>.y = y;</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    }</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    }</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>}</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="class_main_menu.html#a671d24b20bcb5142a67cb28ca7598747">  216</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_main_menu.html#a671d24b20bcb5142a67cb28ca7598747">MainMenu::Idle</a>()</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>{</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <span class="comment">// Устанавливаем хэндлер окна</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    setMouseCallback(<a class="code hl_variable" href="class_main_menu.html#a8b8a1a133a5ef0bfcb8203b104d9e7d8">winname_</a>, <a class="code hl_function" href="class_main_menu.html#af802f4a248ffeb94f29d460522850b4f">OnMouse</a>, (<span class="keywordtype">void</span>*)<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <span class="keywordflow">while</span> (!<a class="code hl_variable" href="class_main_menu.html#a7807da405b38a72055b51da2230c551b">mode_chosen_</a>)</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    {</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">buttons_</a>.size(); i++)</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        {</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">buttons_</a>[i].contains(<a class="code hl_variable" href="class_main_menu.html#a40e69fd0735c12fa24bc0c6ef37bf237">last_mouse_position_</a>))</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            {</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                <a class="code hl_variable" href="class_main_menu.html#ad7381c9c612fc48c2a21d9a0e0fdb65f">buttons_color_</a>[i] = Scalar(0, 0, 255);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            }</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>            <span class="keywordflow">else</span> <a class="code hl_variable" href="class_main_menu.html#ad7381c9c612fc48c2a21d9a0e0fdb65f">buttons_color_</a>[i] = Scalar(25, 25, 25);</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        }</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        <span class="comment">// Обновляем текущие цвета кнопок</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        <a class="code hl_function" href="class_main_menu.html#af6a2070f337a611b3b24be4766bfa826">UpdateBtnColorAndText</a>();</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        imshow(<a class="code hl_variable" href="class_main_menu.html#a8b8a1a133a5ef0bfcb8203b104d9e7d8">winname_</a>, <a class="code hl_variable" href="class_main_menu.html#a21f7500296ee52056ba2ff187d437558">menu_</a>);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        <span class="keywordflow">switch</span> (waitKey(10))</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        {</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <span class="keywordflow">case</span> <span class="charliteral">&#39;q&#39;</span>:</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        {</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            <a class="code hl_variable" href="class_main_menu.html#a7807da405b38a72055b51da2230c551b">mode_chosen_</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        }</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        }</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    }</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>}</div>
+<div class="ttc" id="aclass_camera_calibrator_html"><div class="ttname"><a href="class_camera_calibrator.html">CameraCalibrator</a></div><div class="ttdoc">Класс для нахождения коэффициентов для конкретной линзы (с помощью которой было снято видео)</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8h_source.html#l00029">camera_calibrator.h:30</a></div></div>
+<div class="ttc" id="aclass_main_menu_html"><div class="ttname"><a href="class_main_menu.html">MainMenu</a></div><div class="ttdoc">Класс для создания начального меню выбора режима работы программы</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00025">main_menu.h:26</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a01aeeb1edc954686d13747cb4c12a8e0"><div class="ttname"><a href="class_main_menu.html#a01aeeb1edc954686d13747cb4c12a8e0">MainMenu::ExecuteCameraCalibration</a></div><div class="ttdeci">void ExecuteCameraCalibration(std::string chessboards_path)</div><div class="ttdoc">Запускает калибровку камеры по картинкам шахматных досок</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00059">main_menu.cpp:59</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a085f0e7b8a81371f8b868f447b787ac1"><div class="ttname"><a href="class_main_menu.html#a085f0e7b8a81371f8b868f447b787ac1">MainMenu::input_vibration_detection_</a></div><div class="ttdeci">std::string input_vibration_detection_</div><div class="ttdoc">Имя (путь) входного файла (видео) для детекции вибрации</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00201">main_menu.h:201</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a091b2780210717c4620b8b8bec5edb8e"><div class="ttname"><a href="class_main_menu.html#a091b2780210717c4620b8b8bec5edb8e">MainMenu::button_height_</a></div><div class="ttdeci">int button_height_</div><div class="ttdoc">Высота кнопки</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00134">main_menu.h:134</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a141c52a3decb4c9f74528cd158347a9e"><div class="ttname"><a href="class_main_menu.html#a141c52a3decb4c9f74528cd158347a9e">MainMenu::font</a></div><div class="ttdeci">int font</div><div class="ttdoc">Шрифт</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00154">main_menu.h:154</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a21f7500296ee52056ba2ff187d437558"><div class="ttname"><a href="class_main_menu.html#a21f7500296ee52056ba2ff187d437558">MainMenu::menu_</a></div><div class="ttdeci">Mat menu_</div><div class="ttdoc">Изображение меню, на котором будет происходить отрисовка</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00106">main_menu.h:106</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a29d574adf0376f03c3ef3918fd87141e"><div class="ttname"><a href="class_main_menu.html#a29d574adf0376f03c3ef3918fd87141e">MainMenu::thickness</a></div><div class="ttdeci">int thickness</div><div class="ttdoc">Толщина шрифта</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00162">main_menu.h:162</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a29d7b279fb12523356ba6e084dd1a5e4"><div class="ttname"><a href="class_main_menu.html#a29d7b279fb12523356ba6e084dd1a5e4">MainMenu::output_movement_enlargement_</a></div><div class="ttdeci">std::string output_movement_enlargement_</div><div class="ttdoc">Имя (путь) выходного файла (видео) для усиления движения</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00217">main_menu.h:217</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a2c1c1409a6638988fa33fb7e073ba13d"><div class="ttname"><a href="class_main_menu.html#a2c1c1409a6638988fa33fb7e073ba13d">MainMenu::font_scale</a></div><div class="ttdeci">double font_scale</div><div class="ttdoc">Величина шрифта</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00158">main_menu.h:158</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a300dd1a1e464e73087d4feabb94e8fb9"><div class="ttname"><a href="class_main_menu.html#a300dd1a1e464e73087d4feabb94e8fb9">MainMenu::params_file_name_</a></div><div class="ttdeci">std::string params_file_name_</div><div class="ttdoc">Путь файла с параметрами</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00098">main_menu.h:98</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a30aba8993a7f8e9f39b242f10fbaf931"><div class="ttname"><a href="class_main_menu.html#a30aba8993a7f8e9f39b242f10fbaf931">MainMenu::ExecuteVideoUndistortion</a></div><div class="ttdeci">void ExecuteVideoUndistortion(std::string input_file_name, std::string output_file_name)</div><div class="ttdoc">Запускает удаление дисторсии</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00065">main_menu.cpp:65</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a3609956a27889cec7af6ec85195ac743"><div class="ttname"><a href="class_main_menu.html#a3609956a27889cec7af6ec85195ac743">MainMenu::button_spacing_</a></div><div class="ttdeci">int button_spacing_</div><div class="ttdoc">Отступ между кнопками</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00138">main_menu.h:138</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a40e69fd0735c12fa24bc0c6ef37bf237"><div class="ttname"><a href="class_main_menu.html#a40e69fd0735c12fa24bc0c6ef37bf237">MainMenu::last_mouse_position_</a></div><div class="ttdeci">Point2i last_mouse_position_</div><div class="ttdoc">Последние найденные в callback координаты курсора</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00171">main_menu.h:171</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a43569f3b9d5700184c9cd21e760e78b0"><div class="ttname"><a href="class_main_menu.html#a43569f3b9d5700184c9cd21e760e78b0">MainMenu::input_distorted_video_</a></div><div class="ttdeci">std::string input_distorted_video_</div><div class="ttdoc">Имя (путь) входного файла (видео) для удаления дисторсии</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00193">main_menu.h:193</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a4e9d0a1af8b544e9f4b856f02864c26f"><div class="ttname"><a href="class_main_menu.html#a4e9d0a1af8b544e9f4b856f02864c26f">MainMenu::output_vibration_detection_</a></div><div class="ttdeci">std::string output_vibration_detection_</div><div class="ttdoc">Имя (путь) выходного файла (видео) после детекции вибрации</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00205">main_menu.h:205</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a4ecd32d232bdc09bad417fec831efe2b"><div class="ttname"><a href="class_main_menu.html#a4ecd32d232bdc09bad417fec831efe2b">MainMenu::input_calibration_video_</a></div><div class="ttdeci">std::string input_calibration_video_</div><div class="ttdoc">Имя (путь) входного файла (видео) для калибровки</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00189">main_menu.h:189</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a5ecabae61a1ba65a16966268056fa113"><div class="ttname"><a href="class_main_menu.html#a5ecabae61a1ba65a16966268056fa113">MainMenu::CreateMenu</a></div><div class="ttdeci">void CreateMenu()</div><div class="ttdoc">Строит сетку меню с кнопками и надписями на Mat-объекте menu_.</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00089">main_menu.cpp:89</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a671d24b20bcb5142a67cb28ca7598747"><div class="ttname"><a href="class_main_menu.html#a671d24b20bcb5142a67cb28ca7598747">MainMenu::Idle</a></div><div class="ttdeci">void Idle()</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00216">main_menu.cpp:216</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a678f9dbcd2216709540d4af16ed66b38"><div class="ttname"><a href="class_main_menu.html#a678f9dbcd2216709540d4af16ed66b38">MainMenu::button_text_</a></div><div class="ttdeci">std::string button_text_[4]</div><div class="ttdoc">Тексты кнопок</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00114">main_menu.h:114</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a7110d2e44a744a1556f8a2b2950b9d38"><div class="ttname"><a href="class_main_menu.html#a7110d2e44a744a1556f8a2b2950b9d38">MainMenu::ExecuteMotionMagnification</a></div><div class="ttdeci">void ExecuteMotionMagnification(std::string input_file_name, std::string output_file_name)</div><div class="ttdoc">Запускает увеличение движения</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00083">main_menu.cpp:83</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a726804731d9b92dc1797ec69c2e48f93"><div class="ttname"><a href="class_main_menu.html#a726804731d9b92dc1797ec69c2e48f93">MainMenu::top_offset_</a></div><div class="ttdeci">int top_offset_</div><div class="ttdoc">Отступ от застаканных кнопок сверху</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00142">main_menu.h:142</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a72f1383d94f8e16f245d58fc596392d0"><div class="ttname"><a href="class_main_menu.html#a72f1383d94f8e16f245d58fc596392d0">MainMenu::menu_width_</a></div><div class="ttdeci">int menu_width_</div><div class="ttdoc">Ширина меню</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00118">main_menu.h:118</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a7807da405b38a72055b51da2230c551b"><div class="ttname"><a href="class_main_menu.html#a7807da405b38a72055b51da2230c551b">MainMenu::mode_chosen_</a></div><div class="ttdeci">bool mode_chosen_</div><div class="ttdoc">Флаг выбранного режима</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00179">main_menu.h:179</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a8b8a1a133a5ef0bfcb8203b104d9e7d8"><div class="ttname"><a href="class_main_menu.html#a8b8a1a133a5ef0bfcb8203b104d9e7d8">MainMenu::winname_</a></div><div class="ttdeci">std::string winname_</div><div class="ttdoc">Название окна</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00102">main_menu.h:102</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a9bcf2dfafca93c905bfea6f0a53cbe15"><div class="ttname"><a href="class_main_menu.html#a9bcf2dfafca93c905bfea6f0a53cbe15">MainMenu::baseline</a></div><div class="ttdeci">int baseline</div><div class="ttdoc">Параметр для cv::getText()</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00166">main_menu.h:166</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_aa378e087eb0805fd1451dcf116e2d56d"><div class="ttname"><a href="class_main_menu.html#aa378e087eb0805fd1451dcf116e2d56d">MainMenu::DetectEvent</a></div><div class="ttdeci">void DetectEvent(int event, int x, int y, int flags)</div><div class="ttdoc">callback функция для определения события (используется для хэндлинга клика мышью)</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00162">main_menu.cpp:162</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_aa5e21268330d9703d6c8bf9f4b33d228"><div class="ttname"><a href="class_main_menu.html#aa5e21268330d9703d6c8bf9f4b33d228">MainMenu::ExecuteVibrationMonitoring</a></div><div class="ttdeci">void ExecuteVibrationMonitoring(std::string input_file_name, std::string output_file_name)</div><div class="ttdoc">Запускает детекцию вибрации (основной режим)</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00077">main_menu.cpp:77</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_aafca88e812926ead49f00ec323a987cc"><div class="ttname"><a href="class_main_menu.html#aafca88e812926ead49f00ec323a987cc">MainMenu::button_width_</a></div><div class="ttdeci">int button_width_</div><div class="ttdoc">Ширина кнопки</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00130">main_menu.h:130</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_abb33004f27a82400cf8359379347cd51"><div class="ttname"><a href="class_main_menu.html#abb33004f27a82400cf8359379347cd51">MainMenu::MainMenu</a></div><div class="ttdeci">MainMenu(std::string txt_file_name)</div><div class="ttdoc">Конструктор этого класса</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00003">main_menu.cpp:3</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_abbc9df90951e4ef60b081c2971fbd978"><div class="ttname"><a href="class_main_menu.html#abbc9df90951e4ef60b081c2971fbd978">MainMenu::input_movement_enlargment_</a></div><div class="ttdeci">std::string input_movement_enlargment_</div><div class="ttdoc">Имя (путь) входного файла (видео) для усиления движения</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00213">main_menu.h:213</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ac6afebbdaef47782d019da5034768389"><div class="ttname"><a href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">MainMenu::buttons_</a></div><div class="ttdeci">std::vector&lt; Rect &gt; buttons_</div><div class="ttdoc">Контейнер, хранящий в себе прямоугольники-кнопки (фактически тут хранятся координаты кнопок)</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00110">main_menu.h:110</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ac8cde06a54ac62981f6ee2aaab284dbc"><div class="ttname"><a href="class_main_menu.html#ac8cde06a54ac62981f6ee2aaab284dbc">MainMenu::width_offset_</a></div><div class="ttdeci">int width_offset_</div><div class="ttdoc">Отступ с двух сторон от кнопки по ширине</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00150">main_menu.h:150</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_acf5b3599f1461c5f9431ea1f704da910"><div class="ttname"><a href="class_main_menu.html#acf5b3599f1461c5f9431ea1f704da910">MainMenu::LoadPaths</a></div><div class="ttdeci">void LoadPaths()</div><div class="ttdoc">Открывает нужные пути</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00039">main_menu.cpp:39</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ad625d2c00b71239f30056eda2709e69d"><div class="ttname"><a href="class_main_menu.html#ad625d2c00b71239f30056eda2709e69d">MainMenu::button_amount_</a></div><div class="ttdeci">int button_amount_</div><div class="ttdoc">Количество кнопок</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00126">main_menu.h:126</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ad7381c9c612fc48c2a21d9a0e0fdb65f"><div class="ttname"><a href="class_main_menu.html#ad7381c9c612fc48c2a21d9a0e0fdb65f">MainMenu::buttons_color_</a></div><div class="ttdeci">std::vector&lt; Scalar &gt; buttons_color_</div><div class="ttdoc">Контейнер для хранения цвета каждой кнопки</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00175">main_menu.h:175</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ae1388275b984f4d7e5975c42bd20a45e"><div class="ttname"><a href="class_main_menu.html#ae1388275b984f4d7e5975c42bd20a45e">MainMenu::output_undistorted_video_</a></div><div class="ttdeci">std::string output_undistorted_video_</div><div class="ttdoc">Имя (путь) выходного файла (видео) после удаления дисторсии</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00197">main_menu.h:197</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ae2c50f92a5f3c7486e7a3ad9ef866221"><div class="ttname"><a href="class_main_menu.html#ae2c50f92a5f3c7486e7a3ad9ef866221">MainMenu::menu_height_</a></div><div class="ttdeci">int menu_height_</div><div class="ttdoc">Высота меню</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00122">main_menu.h:122</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ae70524216396d958e84697846751db33"><div class="ttname"><a href="class_main_menu.html#ae70524216396d958e84697846751db33">MainMenu::chessboards_path_</a></div><div class="ttdeci">std::string chessboards_path_</div><div class="ttdoc">Путь к папке с фотографиями шахматной доски</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00209">main_menu.h:209</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ae9b1fae3596f0d598cdd590e1d799fce"><div class="ttname"><a href="class_main_menu.html#ae9b1fae3596f0d598cdd590e1d799fce">MainMenu::bottom_offset_</a></div><div class="ttdeci">int bottom_offset_</div><div class="ttdoc">Отступ от застаканных кнопок снизу</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00146">main_menu.h:146</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_af6a2070f337a611b3b24be4766bfa826"><div class="ttname"><a href="class_main_menu.html#af6a2070f337a611b3b24be4766bfa826">MainMenu::UpdateBtnColorAndText</a></div><div class="ttdeci">void UpdateBtnColorAndText()</div><div class="ttdoc">Раскрашивает кнопки и наносит на них текст</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00129">main_menu.cpp:129</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_af802f4a248ffeb94f29d460522850b4f"><div class="ttname"><a href="class_main_menu.html#af802f4a248ffeb94f29d460522850b4f">MainMenu::OnMouse</a></div><div class="ttdeci">static void OnMouse(int event, int x, int y, int flags, void *userdata)</div><div class="ttdoc">callback функция для определения события (используется для хэндлинга клика мышью)</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00156">main_menu.cpp:156</a></div></div>
+<div class="ttc" id="aclass_movement_enlarger_html"><div class="ttname"><a href="class_movement_enlarger.html">MovementEnlarger</a></div><div class="ttdoc">Дочерний (от EulerEnlarger) класс для визуального увеличения вибрации на видео</div><div class="ttdef"><b>Definition:</b> <a href="movement__enlargement_8h_source.html#l00019">movement_enlargement.h:20</a></div></div>
+<div class="ttc" id="aclass_movement_enlarger_html_a1570d3e0ed67d4ec81a0f8e0c8048414"><div class="ttname"><a href="class_movement_enlarger.html#a1570d3e0ed67d4ec81a0f8e0c8048414">MovementEnlarger::ExecuteLaplaceEnlargement</a></div><div class="ttdeci">void ExecuteLaplaceEnlargement()</div><div class="ttdoc">Выполняет визуальное увеличение движения</div><div class="ttdef"><b>Definition:</b> <a href="movement__enlargement_8cpp_source.html#l00017">movement_enlargement.cpp:17</a></div></div>
+<div class="ttc" id="aclass_vibration_detector_html"><div class="ttname"><a href="class_vibration_detector.html">VibrationDetector</a></div><div class="ttdoc">Класс для создания объектов-детекторов вибрации</div><div class="ttdef"><b>Definition:</b> <a href="vibration__detector_8h_source.html#l00027">vibration_detector.h:28</a></div></div>
+<div class="ttc" id="aclass_vibration_detector_html_ae93a14aa147af694a90c012f16efc924"><div class="ttname"><a href="class_vibration_detector.html#ae93a14aa147af694a90c012f16efc924">VibrationDetector::ExecuteVibrationDetection</a></div><div class="ttdeci">void ExecuteVibrationDetection()</div><div class="ttdoc">Выполняет детекцию вибрации</div><div class="ttdef"><b>Definition:</b> <a href="vibration__detector_8cpp_source.html#l00501">vibration_detector.cpp:501</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html"><div class="ttname"><a href="class_video_undistorter.html">VideoUndistorter</a></div><div class="ttdoc">Класс для удаления дисторсии на видео</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8h_source.html#l00030">video_undistorter.h:31</a></div></div>
+<div class="ttc" id="aclass_video_undistorter_html_a05b19bb1af0c5fcfd147c48dd447d44d"><div class="ttname"><a href="class_video_undistorter.html#a05b19bb1af0c5fcfd147c48dd447d44d">VideoUndistorter::ExecuteVideoUndistortion</a></div><div class="ttdeci">int ExecuteVideoUndistortion()</div><div class="ttdoc">Основная часть. Выполняет удаление дисторсии из видео</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8cpp_source.html#l00038">video_undistorter.cpp:38</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

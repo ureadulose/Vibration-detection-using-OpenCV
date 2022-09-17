@@ -1,0 +1,1271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Visual Vibration Tracking: Класс Histogram</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Visual Vibration Tracking<span id="projectnumber">&#160;0.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_histogram-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс Histogram</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для создания объектов-гистограмм, на которые можно выводить различную информацию  
+ <a href="class_histogram.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="histogram_8h_source.html">histogram.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:Histogram:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_histogram__inherit__graph.png" border="0" usemap="#a_histogram_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_histogram_inherit__map" id="a_histogram_inherit__map">
+<area shape="rect" title="Класс для создания объектов&#45;гистограмм, на которые можно выводить различную информацию" alt="" coords="115,5,196,31"/>
+<area shape="rect" href="class_colored_point_handler.html" title="Дочерний (от VibratingPoint) класс. Предназначен для помещения множества цветных точек на кадр и отсл..." alt="" coords="5,79,145,104"/>
+<area shape="rect" href="class_lonely_point_handler.html" title="Дочерний (от VibratingPoint) класс. Предназначен для помещения точки на кадр и отслеживания её вибрац..." alt="" coords="169,79,304,104"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a385b019acb01cf7fff1b20b23b9c9c96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a385b019acb01cf7fff1b20b23b9c9c96">Histogram</a> (int width, int height, int x_limit, int id, std::vector&lt; double &gt; &amp;x_values, std::vector&lt; float &gt; &amp;y_values)</td></tr>
+<tr class="memdesc:a385b019acb01cf7fff1b20b23b9c9c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор этого класса  <a href="class_histogram.html#a385b019acb01cf7fff1b20b23b9c9c96">Подробнее...</a><br /></td></tr>
+<tr class="separator:a385b019acb01cf7fff1b20b23b9c9c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf22daf3b8e3f0578337109005532f51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#aaf22daf3b8e3f0578337109005532f51">~Histogram</a> ()</td></tr>
+<tr class="memdesc:aaf22daf3b8e3f0578337109005532f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор этого класса  <a href="class_histogram.html#aaf22daf3b8e3f0578337109005532f51">Подробнее...</a><br /></td></tr>
+<tr class="separator:aaf22daf3b8e3f0578337109005532f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a939c2c567799157b2088c63e661af15e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a939c2c567799157b2088c63e661af15e">DetectEvent</a> (int event, int x, int y, int flags)</td></tr>
+<tr class="memdesc:a939c2c567799157b2088c63e661af15e"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback функция для определения события (используется для хэндлинга клика мышью)  <a href="class_histogram.html#a939c2c567799157b2088c63e661af15e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a939c2c567799157b2088c63e661af15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a5a64a00231d62a6eeacb416f704262"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a5a5a64a00231d62a6eeacb416f704262">ShowHistogram</a> ()</td></tr>
+<tr class="memdesc:a5a5a64a00231d62a6eeacb416f704262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит гистограмму в окно гистограммы  <a href="class_histogram.html#a5a5a64a00231d62a6eeacb416f704262">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5a5a64a00231d62a6eeacb416f704262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ed9e75be45d4c50b54b9150427a89c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a8ed9e75be45d4c50b54b9150427a89c8">SetXValues</a> (std::vector&lt; double &gt; x_values)</td></tr>
+<tr class="memdesc:a8ed9e75be45d4c50b54b9150427a89c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает X-ы  <a href="class_histogram.html#a8ed9e75be45d4c50b54b9150427a89c8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8ed9e75be45d4c50b54b9150427a89c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f59d4b44f3f4866a7b709ec7e1e15c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a6f59d4b44f3f4866a7b709ec7e1e15c4">SetYValues</a> (std::vector&lt; float &gt; y_values)</td></tr>
+<tr class="memdesc:a6f59d4b44f3f4866a7b709ec7e1e15c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает Y-ы  <a href="class_histogram.html#a6f59d4b44f3f4866a7b709ec7e1e15c4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6f59d4b44f3f4866a7b709ec7e1e15c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad4123748f53efc8cdbc0b8f6ae5444e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#aad4123748f53efc8cdbc0b8f6ae5444e">SetHistogramFlag</a> (bool flag)</td></tr>
+<tr class="memdesc:aad4123748f53efc8cdbc0b8f6ae5444e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает статус флага отрисовки гистограммы  <a href="class_histogram.html#aad4123748f53efc8cdbc0b8f6ae5444e">Подробнее...</a><br /></td></tr>
+<tr class="separator:aad4123748f53efc8cdbc0b8f6ae5444e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67ea2102e72112ddffd05f0ed8e2a73e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a67ea2102e72112ddffd05f0ed8e2a73e">SetHistogramWindowProperty</a> (int prop_id, int prop_value)</td></tr>
+<tr class="memdesc:a67ea2102e72112ddffd05f0ed8e2a73e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляет статус окна гистограммы (например, для вывода на передний план)  <a href="class_histogram.html#a67ea2102e72112ddffd05f0ed8e2a73e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a67ea2102e72112ddffd05f0ed8e2a73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a090252d83cd4beb02a842afbf0311d3d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a090252d83cd4beb02a842afbf0311d3d">OnMouse</a> (int event, int x, int y, int flags, void *userdata)</td></tr>
+<tr class="memdesc:a090252d83cd4beb02a842afbf0311d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback функция для определения события (используется для хэндлинга клика мышью)  <a href="class_histogram.html#a090252d83cd4beb02a842afbf0311d3d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a090252d83cd4beb02a842afbf0311d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:ad5f780994e3453a67ed31b9437000ce3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#ad5f780994e3453a67ed31b9437000ce3">is_histogram_plotted_</a></td></tr>
+<tr class="memdesc:ad5f780994e3453a67ed31b9437000ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг для отрисовки гистограммы  <a href="class_histogram.html#ad5f780994e3453a67ed31b9437000ce3">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad5f780994e3453a67ed31b9437000ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:af03efd072e5360e76aa938add6e64fa6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#af03efd072e5360e76aa938add6e64fa6">InitHistogramBackground</a> ()</td></tr>
+<tr class="memdesc:af03efd072e5360e76aa938add6e64fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Подгатавливаем <a class="el" href="class_histogram.html#a04b862513a61fb68ab1c8fd5206d1bcb" title="cv::Mat фон для гистограммы">Histogram::histogram_background_</a> для дальнейшего использования  <a href="class_histogram.html#af03efd072e5360e76aa938add6e64fa6">Подробнее...</a><br /></td></tr>
+<tr class="separator:af03efd072e5360e76aa938add6e64fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a6a966da93879eea7b967b5c12d7b8a"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a6a6a966da93879eea7b967b5c12d7b8a">CalcHistogram</a> ()</td></tr>
+<tr class="memdesc:a6a6a966da93879eea7b967b5c12d7b8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет значения для гистограммы  <a href="class_histogram.html#a6a6a966da93879eea7b967b5c12d7b8a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6a6a966da93879eea7b967b5c12d7b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2008108f7dfd9ffbfa812ca26138540d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a2008108f7dfd9ffbfa812ca26138540d">IsInteracted</a> (int x, int interval)</td></tr>
+<tr class="memdesc:a2008108f7dfd9ffbfa812ca26138540d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, соответствует ли точка координате мыши  <a href="class_histogram.html#a2008108f7dfd9ffbfa812ca26138540d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2008108f7dfd9ffbfa812ca26138540d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bddf7035f3a842b2b9a3b22ab19ca29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a3bddf7035f3a842b2b9a3b22ab19ca29">PlotMouseValue</a> (Mat &amp;frame, int value_idx)</td></tr>
+<tr class="memdesc:a3bddf7035f3a842b2b9a3b22ab19ca29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит значение частоты рядом с курсором  <a href="class_histogram.html#a3bddf7035f3a842b2b9a3b22ab19ca29">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3bddf7035f3a842b2b9a3b22ab19ca29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f570c207d055c4034e12fca708e8a90"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a6f570c207d055c4034e12fca708e8a90">to_string_with_precision</a> (const float value, const int n=6)</td></tr>
+<tr class="memdesc:a6f570c207d055c4034e12fca708e8a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Для ограничения кол-ва знаков  <a href="class_histogram.html#a6f570c207d055c4034e12fca708e8a90">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6f570c207d055c4034e12fca708e8a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a292702c6d9b47cb4b017a10c410d7fea"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a292702c6d9b47cb4b017a10c410d7fea">winname_</a></td></tr>
+<tr class="memdesc:a292702c6d9b47cb4b017a10c410d7fea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название окна  <a href="class_histogram.html#a292702c6d9b47cb4b017a10c410d7fea">Подробнее...</a><br /></td></tr>
+<tr class="separator:a292702c6d9b47cb4b017a10c410d7fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9dee7d6841b7fb9b37de8d87e4db91"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a3d9dee7d6841b7fb9b37de8d87e4db91">histogram_offset_</a></td></tr>
+<tr class="memdesc:a3d9dee7d6841b7fb9b37de8d87e4db91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оффсет рамки гистограммы  <a href="class_histogram.html#a3d9dee7d6841b7fb9b37de8d87e4db91">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3d9dee7d6841b7fb9b37de8d87e4db91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11742964d450404cba6521e1811daeec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a11742964d450404cba6521e1811daeec">histogram_frame_width_</a></td></tr>
+<tr class="memdesc:a11742964d450404cba6521e1811daeec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ширина окна гистограммы (включая оффсет)  <a href="class_histogram.html#a11742964d450404cba6521e1811daeec">Подробнее...</a><br /></td></tr>
+<tr class="separator:a11742964d450404cba6521e1811daeec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19b4e5c3c82a3f26149633ce779ce447"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a19b4e5c3c82a3f26149633ce779ce447">histogram_frame_height_</a></td></tr>
+<tr class="memdesc:a19b4e5c3c82a3f26149633ce779ce447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Высота окна гистограммы (включая оффсет)  <a href="class_histogram.html#a19b4e5c3c82a3f26149633ce779ce447">Подробнее...</a><br /></td></tr>
+<tr class="separator:a19b4e5c3c82a3f26149633ce779ce447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62d371b7f1ca13ead2dfba8faa831a4c"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a62d371b7f1ca13ead2dfba8faa831a4c">histogram_</a></td></tr>
+<tr class="memdesc:a62d371b7f1ca13ead2dfba8faa831a4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">cv::Mat изображение гистограммы  <a href="class_histogram.html#a62d371b7f1ca13ead2dfba8faa831a4c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a62d371b7f1ca13ead2dfba8faa831a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04b862513a61fb68ab1c8fd5206d1bcb"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a04b862513a61fb68ab1c8fd5206d1bcb">histogram_background_</a></td></tr>
+<tr class="memdesc:a04b862513a61fb68ab1c8fd5206d1bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">cv::Mat фон для гистограммы  <a href="class_histogram.html#a04b862513a61fb68ab1c8fd5206d1bcb">Подробнее...</a><br /></td></tr>
+<tr class="separator:a04b862513a61fb68ab1c8fd5206d1bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e8da20001beb108c4d523cbbf5153a5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a1e8da20001beb108c4d523cbbf5153a5">x_values_</a></td></tr>
+<tr class="memdesc:a1e8da20001beb108c4d523cbbf5153a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Значения гистограммы по оси X.  <a href="class_histogram.html#a1e8da20001beb108c4d523cbbf5153a5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1e8da20001beb108c4d523cbbf5153a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0042425ba721ed0c248c7bba486a66e6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a0042425ba721ed0c248c7bba486a66e6">y_values_</a></td></tr>
+<tr class="memdesc:a0042425ba721ed0c248c7bba486a66e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Значения гистограммы по оси Y.  <a href="class_histogram.html#a0042425ba721ed0c248c7bba486a66e6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0042425ba721ed0c248c7bba486a66e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae468947a2d6f255abfb2e6add20e3770"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#ae468947a2d6f255abfb2e6add20e3770">axis_signature_offset_</a></td></tr>
+<tr class="memdesc:ae468947a2d6f255abfb2e6add20e3770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отступ для подписей оси  <a href="class_histogram.html#ae468947a2d6f255abfb2e6add20e3770">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae468947a2d6f255abfb2e6add20e3770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a18ce6f843690d8be8f3490d7ea5cf1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a7a18ce6f843690d8be8f3490d7ea5cf1">signature_interval_</a></td></tr>
+<tr class="memdesc:a7a18ce6f843690d8be8f3490d7ea5cf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Интервал для делений оси и количество этих делений  <a href="class_histogram.html#a7a18ce6f843690d8be8f3490d7ea5cf1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7a18ce6f843690d8be8f3490d7ea5cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1d77e929aeb4b8adc12404bc0dffdc5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#ac1d77e929aeb4b8adc12404bc0dffdc5">signature_amount_</a></td></tr>
+<tr class="memdesc:ac1d77e929aeb4b8adc12404bc0dffdc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество подписей на оси  <a href="class_histogram.html#ac1d77e929aeb4b8adc12404bc0dffdc5">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac1d77e929aeb4b8adc12404bc0dffdc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7734ef44b2e7f0ec9cc46154f18d008"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#ad7734ef44b2e7f0ec9cc46154f18d008">x_limit_</a></td></tr>
+<tr class="memdesc:ad7734ef44b2e7f0ec9cc46154f18d008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальное (предельное) значение по оси X.  <a href="class_histogram.html#ad7734ef44b2e7f0ec9cc46154f18d008">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad7734ef44b2e7f0ec9cc46154f18d008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f5573dfce9dd07761a77916535ea9fd"><td class="memItemLeft" align="right" valign="top">Point2i&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a1f5573dfce9dd07761a77916535ea9fd">last_mouse_coordinates_</a></td></tr>
+<tr class="memdesc:a1f5573dfce9dd07761a77916535ea9fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Координаты мыши (курсора)  <a href="class_histogram.html#a1f5573dfce9dd07761a77916535ea9fd">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1f5573dfce9dd07761a77916535ea9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed69396a74c9570ad6c22b182055f42"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a0ed69396a74c9570ad6c22b182055f42">dead_zone_coeff_</a></td></tr>
+<tr class="memdesc:a0ed69396a74c9570ad6c22b182055f42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Процент диапазона, который будет нижней мертвой зоной: 1.0 - 100%.  <a href="class_histogram.html#a0ed69396a74c9570ad6c22b182055f42">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0ed69396a74c9570ad6c22b182055f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p >Класс для создания объектов-гистограмм, на которые можно выводить различную информацию </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8h_source.html">histogram.h</a> строка <a class="el" href="histogram_8h_source.html#l00016">16</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a385b019acb01cf7fff1b20b23b9c9c96" name="a385b019acb01cf7fff1b20b23b9c9c96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a385b019acb01cf7fff1b20b23b9c9c96">&#9670;&#160;</a></span>Histogram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Histogram::Histogram </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x_limit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>x_values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>y_values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор этого класса </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>ширина окна гистограммы (включая оффсет) </td></tr>
+    <tr><td class="paramname">height</td><td>высота окна гистограммы (включая оффсет) </td></tr>
+    <tr><td class="paramname">x_limit</td><td>максимальное (предельное) значение по оси X </td></tr>
+    <tr><td class="paramname">id</td><td>ID точки </td></tr>
+    <tr><td class="paramname">x_values</td><td>адрес контейнера со значениями для оси X </td></tr>
+    <tr><td class="paramname">y_values</td><td>адрес контейнера со значеними для оси Y </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a> строка <a class="el" href="histogram_8cpp_source.html#l00003">3</a></p>
+<div class="fragment"><div class="line"><span class="lineno">    3</span>                                                                                                                        :</div>
+<div class="line"><span class="lineno">    4</span>    <a class="code hl_variable" href="class_histogram.html#a11742964d450404cba6521e1811daeec">histogram_frame_width_</a>{ width },</div>
+<div class="line"><span class="lineno">    5</span>    <a class="code hl_variable" href="class_histogram.html#a19b4e5c3c82a3f26149633ce779ce447">histogram_frame_height_</a>{ height },</div>
+<div class="line"><span class="lineno">    6</span>    <a class="code hl_variable" href="class_histogram.html#ad7734ef44b2e7f0ec9cc46154f18d008">x_limit_</a>{ x_limit },</div>
+<div class="line"><span class="lineno">    7</span>    <a class="code hl_variable" href="class_histogram.html#ad5f780994e3453a67ed31b9437000ce3">is_histogram_plotted_</a>{ <span class="keyword">false</span> },</div>
+<div class="line"><span class="lineno">    8</span>    <a class="code hl_variable" href="class_histogram.html#ac1d77e929aeb4b8adc12404bc0dffdc5">signature_amount_</a>{ 8 },</div>
+<div class="line"><span class="lineno">    9</span>    <a class="code hl_variable" href="class_histogram.html#a0ed69396a74c9570ad6c22b182055f42">dead_zone_coeff_</a>{ 0.0f },</div>
+<div class="line"><span class="lineno">   10</span>    <a class="code hl_variable" href="class_histogram.html#a1e8da20001beb108c4d523cbbf5153a5">x_values_</a>{ &amp;x_values },</div>
+<div class="line"><span class="lineno">   11</span>    <a class="code hl_variable" href="class_histogram.html#a0042425ba721ed0c248c7bba486a66e6">y_values_</a>{ &amp;y_values }</div>
+<div class="line"><span class="lineno">   12</span>{</div>
+<div class="line"><span class="lineno">   13</span>    <span class="comment">// Инициализация гистограммы пустым кадром черного цвета</span></div>
+<div class="line"><span class="lineno">   14</span>    <a class="code hl_variable" href="class_histogram.html#a3d9dee7d6841b7fb9b37de8d87e4db91">histogram_offset_</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_histogram.html#a11742964d450404cba6521e1811daeec">histogram_frame_width_</a>) * 0.05;</div>
+<div class="line"><span class="lineno">   15</span>    <a class="code hl_variable" href="class_histogram.html#ae468947a2d6f255abfb2e6add20e3770">axis_signature_offset_</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_histogram.html#a11742964d450404cba6521e1811daeec">histogram_frame_width_</a>) * 0.03;</div>
+<div class="line"><span class="lineno">   16</span>    <a class="code hl_variable" href="class_histogram.html#a62d371b7f1ca13ead2dfba8faa831a4c">histogram_</a> = Mat(Size(<a class="code hl_variable" href="class_histogram.html#a11742964d450404cba6521e1811daeec">histogram_frame_width_</a>, <a class="code hl_variable" href="class_histogram.html#a19b4e5c3c82a3f26149633ce779ce447">histogram_frame_height_</a>), CV_32F, Scalar(0, 0, 0));</div>
+<div class="line"><span class="lineno">   17</span>    <span class="comment">// Инициализируем название окна</span></div>
+<div class="line"><span class="lineno">   18</span>    <a class="code hl_variable" href="class_histogram.html#a292702c6d9b47cb4b017a10c410d7fea">winname_</a> = <span class="stringliteral">&quot;histogram &quot;</span> + std::to_string(<span class="keywordtype">id</span>);</div>
+<div class="line"><span class="lineno">   19</span>    <span class="comment">// Посчитаем интервал между подписями оси</span></div>
+<div class="line"><span class="lineno">   20</span>    <a class="code hl_variable" href="class_histogram.html#a7a18ce6f843690d8be8f3490d7ea5cf1">signature_interval_</a> = (<a class="code hl_variable" href="class_histogram.html#a62d371b7f1ca13ead2dfba8faa831a4c">histogram_</a>.cols - <a class="code hl_variable" href="class_histogram.html#a3d9dee7d6841b7fb9b37de8d87e4db91">histogram_offset_</a> * 2.0) / <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_histogram.html#ac1d77e929aeb4b8adc12404bc0dffdc5">signature_amount_</a> - 1);</div>
+<div class="line"><span class="lineno">   21</span>}</div>
+<div class="ttc" id="aclass_histogram_html_a0042425ba721ed0c248c7bba486a66e6"><div class="ttname"><a href="class_histogram.html#a0042425ba721ed0c248c7bba486a66e6">Histogram::y_values_</a></div><div class="ttdeci">std::vector&lt; float &gt; * y_values_</div><div class="ttdoc">Значения гистограммы по оси Y.</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00127">histogram.h:127</a></div></div>
+<div class="ttc" id="aclass_histogram_html_a0ed69396a74c9570ad6c22b182055f42"><div class="ttname"><a href="class_histogram.html#a0ed69396a74c9570ad6c22b182055f42">Histogram::dead_zone_coeff_</a></div><div class="ttdeci">float dead_zone_coeff_</div><div class="ttdoc">Процент диапазона, который будет нижней мертвой зоной: 1.0 - 100%.</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00151">histogram.h:151</a></div></div>
+<div class="ttc" id="aclass_histogram_html_a11742964d450404cba6521e1811daeec"><div class="ttname"><a href="class_histogram.html#a11742964d450404cba6521e1811daeec">Histogram::histogram_frame_width_</a></div><div class="ttdeci">int histogram_frame_width_</div><div class="ttdoc">Ширина окна гистограммы (включая оффсет)</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00107">histogram.h:107</a></div></div>
+<div class="ttc" id="aclass_histogram_html_a19b4e5c3c82a3f26149633ce779ce447"><div class="ttname"><a href="class_histogram.html#a19b4e5c3c82a3f26149633ce779ce447">Histogram::histogram_frame_height_</a></div><div class="ttdeci">int histogram_frame_height_</div><div class="ttdoc">Высота окна гистограммы (включая оффсет)</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00111">histogram.h:111</a></div></div>
+<div class="ttc" id="aclass_histogram_html_a1e8da20001beb108c4d523cbbf5153a5"><div class="ttname"><a href="class_histogram.html#a1e8da20001beb108c4d523cbbf5153a5">Histogram::x_values_</a></div><div class="ttdeci">std::vector&lt; double &gt; * x_values_</div><div class="ttdoc">Значения гистограммы по оси X.</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00123">histogram.h:123</a></div></div>
+<div class="ttc" id="aclass_histogram_html_a292702c6d9b47cb4b017a10c410d7fea"><div class="ttname"><a href="class_histogram.html#a292702c6d9b47cb4b017a10c410d7fea">Histogram::winname_</a></div><div class="ttdeci">std::string winname_</div><div class="ttdoc">Название окна</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00099">histogram.h:99</a></div></div>
+<div class="ttc" id="aclass_histogram_html_a3d9dee7d6841b7fb9b37de8d87e4db91"><div class="ttname"><a href="class_histogram.html#a3d9dee7d6841b7fb9b37de8d87e4db91">Histogram::histogram_offset_</a></div><div class="ttdeci">float histogram_offset_</div><div class="ttdoc">Оффсет рамки гистограммы</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00103">histogram.h:103</a></div></div>
+<div class="ttc" id="aclass_histogram_html_a62d371b7f1ca13ead2dfba8faa831a4c"><div class="ttname"><a href="class_histogram.html#a62d371b7f1ca13ead2dfba8faa831a4c">Histogram::histogram_</a></div><div class="ttdeci">Mat histogram_</div><div class="ttdoc">cv::Mat изображение гистограммы</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00115">histogram.h:115</a></div></div>
+<div class="ttc" id="aclass_histogram_html_a7a18ce6f843690d8be8f3490d7ea5cf1"><div class="ttname"><a href="class_histogram.html#a7a18ce6f843690d8be8f3490d7ea5cf1">Histogram::signature_interval_</a></div><div class="ttdeci">float signature_interval_</div><div class="ttdoc">Интервал для делений оси и количество этих делений</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00135">histogram.h:135</a></div></div>
+<div class="ttc" id="aclass_histogram_html_ac1d77e929aeb4b8adc12404bc0dffdc5"><div class="ttname"><a href="class_histogram.html#ac1d77e929aeb4b8adc12404bc0dffdc5">Histogram::signature_amount_</a></div><div class="ttdeci">int signature_amount_</div><div class="ttdoc">Количество подписей на оси</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00139">histogram.h:139</a></div></div>
+<div class="ttc" id="aclass_histogram_html_ad5f780994e3453a67ed31b9437000ce3"><div class="ttname"><a href="class_histogram.html#ad5f780994e3453a67ed31b9437000ce3">Histogram::is_histogram_plotted_</a></div><div class="ttdeci">bool is_histogram_plotted_</div><div class="ttdoc">Флаг для отрисовки гистограммы</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00093">histogram.h:93</a></div></div>
+<div class="ttc" id="aclass_histogram_html_ad7734ef44b2e7f0ec9cc46154f18d008"><div class="ttname"><a href="class_histogram.html#ad7734ef44b2e7f0ec9cc46154f18d008">Histogram::x_limit_</a></div><div class="ttdeci">int x_limit_</div><div class="ttdoc">Максимальное (предельное) значение по оси X.</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00143">histogram.h:143</a></div></div>
+<div class="ttc" id="aclass_histogram_html_ae468947a2d6f255abfb2e6add20e3770"><div class="ttname"><a href="class_histogram.html#ae468947a2d6f255abfb2e6add20e3770">Histogram::axis_signature_offset_</a></div><div class="ttdeci">float axis_signature_offset_</div><div class="ttdoc">Отступ для подписей оси</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00131">histogram.h:131</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aaf22daf3b8e3f0578337109005532f51" name="aaf22daf3b8e3f0578337109005532f51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf22daf3b8e3f0578337109005532f51">&#9670;&#160;</a></span>~Histogram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Histogram::~Histogram </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Деструктор этого класса </p>
+<p >Окно гистограммы разрушается внутри деструктора </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a> строка <a class="el" href="histogram_8cpp_source.html#l00023">23</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>{</div>
+<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_histogram.html#ad5f780994e3453a67ed31b9437000ce3">is_histogram_plotted_</a>)</div>
+<div class="line"><span class="lineno">   26</span>        destroyWindow(<a class="code hl_variable" href="class_histogram.html#a292702c6d9b47cb4b017a10c410d7fea">winname_</a>);</div>
+<div class="line"><span class="lineno">   27</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a6a6a966da93879eea7b967b5c12d7b8a" name="a6a6a966da93879eea7b967b5c12d7b8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a6a966da93879eea7b967b5c12d7b8a">&#9670;&#160;</a></span>CalcHistogram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat Histogram::CalcHistogram </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисляет значения для гистограммы </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a> строка <a class="el" href="histogram_8cpp_source.html#l00116">116</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  117</span>{</div>
+<div class="line"><span class="lineno">  118</span>    <a class="code hl_function" href="class_histogram.html#af03efd072e5360e76aa938add6e64fa6">InitHistogramBackground</a>();</div>
+<div class="line"><span class="lineno">  119</span>    <span class="keywordtype">float</span> interval = ((<a class="code hl_variable" href="class_histogram.html#a62d371b7f1ca13ead2dfba8faa831a4c">histogram_</a>.cols) - <a class="code hl_variable" href="class_histogram.html#a3d9dee7d6841b7fb9b37de8d87e4db91">histogram_offset_</a> * 2.0) / <a class="code hl_variable" href="class_histogram.html#a0042425ba721ed0c248c7bba486a66e6">y_values_</a>-&gt;size();</div>
+<div class="line"><span class="lineno">  120</span>    </div>
+<div class="line"><span class="lineno">  121</span>    Mat frame = <a class="code hl_variable" href="class_histogram.html#a04b862513a61fb68ab1c8fd5206d1bcb">histogram_background_</a>.clone();</div>
+<div class="line"><span class="lineno">  122</span> </div>
+<div class="line"><span class="lineno">  123</span>    <span class="comment">// Инициализируем максимальные и минимальные значения магнитуд</span></div>
+<div class="line"><span class="lineno">  124</span>    <span class="keywordtype">float</span> max_value = 0.0;</div>
+<div class="line"><span class="lineno">  125</span> </div>
+<div class="line"><span class="lineno">  126</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_histogram.html#a0042425ba721ed0c248c7bba486a66e6">y_values_</a>-&gt;size(); i++)</div>
+<div class="line"><span class="lineno">  127</span>    {</div>
+<div class="line"><span class="lineno">  128</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_histogram.html#a0042425ba721ed0c248c7bba486a66e6">y_values_</a>-&gt;at(i) &gt; max_value)</div>
+<div class="line"><span class="lineno">  129</span>            max_value = <a class="code hl_variable" href="class_histogram.html#a0042425ba721ed0c248c7bba486a66e6">y_values_</a>-&gt;at(i);</div>
+<div class="line"><span class="lineno">  130</span>    }</div>
+<div class="line"><span class="lineno">  131</span> </div>
+<div class="line"><span class="lineno">  132</span> </div>
+<div class="line"><span class="lineno">  133</span>    <span class="comment">// Отрисовка столбцов</span></div>
+<div class="line"><span class="lineno">  134</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_histogram.html#a0042425ba721ed0c248c7bba486a66e6">y_values_</a>-&gt;size(); i++)</div>
+<div class="line"><span class="lineno">  135</span>    {</div>
+<div class="line"><span class="lineno">  136</span>        <span class="keywordtype">float</span> x_0 = <a class="code hl_variable" href="class_histogram.html#a3d9dee7d6841b7fb9b37de8d87e4db91">histogram_offset_</a> + i * interval + interval;</div>
+<div class="line"><span class="lineno">  137</span>        <span class="keywordtype">float</span> y_0 = <a class="code hl_variable" href="class_histogram.html#a19b4e5c3c82a3f26149633ce779ce447">histogram_frame_height_</a> - <a class="code hl_variable" href="class_histogram.html#a3d9dee7d6841b7fb9b37de8d87e4db91">histogram_offset_</a> - <a class="code hl_variable" href="class_histogram.html#ae468947a2d6f255abfb2e6add20e3770">axis_signature_offset_</a>;</div>
+<div class="line"><span class="lineno">  138</span>        <span class="keywordtype">float</span> x_1 = x_0;</div>
+<div class="line"><span class="lineno">  139</span>        <span class="keywordtype">float</span> y_1 = y_0 - <a class="code hl_variable" href="class_histogram.html#a0042425ba721ed0c248c7bba486a66e6">y_values_</a>-&gt;at(i) / max_value * (<a class="code hl_variable" href="class_histogram.html#a19b4e5c3c82a3f26149633ce779ce447">histogram_frame_height_</a> - 2 * <a class="code hl_variable" href="class_histogram.html#a3d9dee7d6841b7fb9b37de8d87e4db91">histogram_offset_</a> - <a class="code hl_variable" href="class_histogram.html#ae468947a2d6f255abfb2e6add20e3770">axis_signature_offset_</a>);</div>
+<div class="line"><span class="lineno">  140</span> </div>
+<div class="line"><span class="lineno">  141</span>        <span class="comment">// Если мышь указывает на текущее значение, отрисовываем это значение рядом с курсором</span></div>
+<div class="line"><span class="lineno">  142</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="class_histogram.html#a2008108f7dfd9ffbfa812ca26138540d">IsInteracted</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(x_0), interval))</div>
+<div class="line"><span class="lineno">  143</span>        {</div>
+<div class="line"><span class="lineno">  144</span>            <a class="code hl_function" href="class_histogram.html#a3bddf7035f3a842b2b9a3b22ab19ca29">PlotMouseValue</a>(frame, i);</div>
+<div class="line"><span class="lineno">  145</span>        }</div>
+<div class="line"><span class="lineno">  146</span>        line(frame, Point2f(x_0, y_0), Point2f(x_1, y_1), Scalar(255, 255, 255), 1, LINE_AA);</div>
+<div class="line"><span class="lineno">  147</span>    }</div>
+<div class="line"><span class="lineno">  148</span> </div>
+<div class="line"><span class="lineno">  149</span>    <span class="keywordflow">return</span> frame;</div>
+<div class="line"><span class="lineno">  150</span>}</div>
+<div class="ttc" id="aclass_histogram_html_a04b862513a61fb68ab1c8fd5206d1bcb"><div class="ttname"><a href="class_histogram.html#a04b862513a61fb68ab1c8fd5206d1bcb">Histogram::histogram_background_</a></div><div class="ttdeci">Mat histogram_background_</div><div class="ttdoc">cv::Mat фон для гистограммы</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00119">histogram.h:119</a></div></div>
+<div class="ttc" id="aclass_histogram_html_a2008108f7dfd9ffbfa812ca26138540d"><div class="ttname"><a href="class_histogram.html#a2008108f7dfd9ffbfa812ca26138540d">Histogram::IsInteracted</a></div><div class="ttdeci">bool IsInteracted(int x, int interval)</div><div class="ttdoc">Проверяет, соответствует ли точка координате мыши</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8cpp_source.html#l00152">histogram.cpp:152</a></div></div>
+<div class="ttc" id="aclass_histogram_html_a3bddf7035f3a842b2b9a3b22ab19ca29"><div class="ttname"><a href="class_histogram.html#a3bddf7035f3a842b2b9a3b22ab19ca29">Histogram::PlotMouseValue</a></div><div class="ttdeci">void PlotMouseValue(Mat &amp;frame, int value_idx)</div><div class="ttdoc">Выводит значение частоты рядом с курсором</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8cpp_source.html#l00162">histogram.cpp:162</a></div></div>
+<div class="ttc" id="aclass_histogram_html_af03efd072e5360e76aa938add6e64fa6"><div class="ttname"><a href="class_histogram.html#af03efd072e5360e76aa938add6e64fa6">Histogram::InitHistogramBackground</a></div><div class="ttdeci">void InitHistogramBackground()</div><div class="ttdoc">Подгатавливаем Histogram::histogram_background_ для дальнейшего использования</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8cpp_source.html#l00085">histogram.cpp:85</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a939c2c567799157b2088c63e661af15e" name="a939c2c567799157b2088c63e661af15e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a939c2c567799157b2088c63e661af15e">&#9670;&#160;</a></span>DetectEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Histogram::DetectEvent </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>callback функция для определения события (используется для хэндлинга клика мышью) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a> строка <a class="el" href="histogram_8cpp_source.html#l00035">35</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>{</div>
+<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">switch</span> (event) {</div>
+<div class="line"><span class="lineno">   38</span>        <span class="comment">// ЛКМ была прожата вниз</span></div>
+<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">case</span> EVENT_LBUTTONDOWN:</div>
+<div class="line"><span class="lineno">   40</span>    {</div>
+<div class="line"><span class="lineno">   41</span>        <a class="code hl_variable" href="class_histogram.html#ad5f780994e3453a67ed31b9437000ce3">is_histogram_plotted_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   42</span>        destroyWindow(<a class="code hl_variable" href="class_histogram.html#a292702c6d9b47cb4b017a10c410d7fea">winname_</a>);</div>
+<div class="line"><span class="lineno">   43</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   44</span>    }</div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">case</span> EVENT_MOUSEMOVE:</div>
+<div class="line"><span class="lineno">   46</span>    {</div>
+<div class="line"><span class="lineno">   47</span>        <a class="code hl_variable" href="class_histogram.html#a1f5573dfce9dd07761a77916535ea9fd">last_mouse_coordinates_</a>.x = x;</div>
+<div class="line"><span class="lineno">   48</span>        <a class="code hl_variable" href="class_histogram.html#a1f5573dfce9dd07761a77916535ea9fd">last_mouse_coordinates_</a>.y = y;</div>
+<div class="line"><span class="lineno">   49</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   50</span>    }</div>
+<div class="line"><span class="lineno">   51</span>    }</div>
+<div class="line"><span class="lineno">   52</span>}</div>
+<div class="ttc" id="aclass_histogram_html_a1f5573dfce9dd07761a77916535ea9fd"><div class="ttname"><a href="class_histogram.html#a1f5573dfce9dd07761a77916535ea9fd">Histogram::last_mouse_coordinates_</a></div><div class="ttdeci">Point2i last_mouse_coordinates_</div><div class="ttdoc">Координаты мыши (курсора)</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00147">histogram.h:147</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af03efd072e5360e76aa938add6e64fa6" name="af03efd072e5360e76aa938add6e64fa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af03efd072e5360e76aa938add6e64fa6">&#9670;&#160;</a></span>InitHistogramBackground()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Histogram::InitHistogramBackground </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Подгатавливаем <a class="el" href="class_histogram.html#a04b862513a61fb68ab1c8fd5206d1bcb" title="cv::Mat фон для гистограммы">Histogram::histogram_background_</a> для дальнейшего использования </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a> строка <a class="el" href="histogram_8cpp_source.html#l00085">85</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   86</span>{</div>
+<div class="line"><span class="lineno">   87</span>    Mat frame = Mat(Size(<a class="code hl_variable" href="class_histogram.html#a11742964d450404cba6521e1811daeec">histogram_frame_width_</a>, <a class="code hl_variable" href="class_histogram.html#a19b4e5c3c82a3f26149633ce779ce447">histogram_frame_height_</a>), CV_32F, Scalar(0, 0, 0));</div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>    <span class="comment">// Отрисовываем рамку гистограммы</span></div>
+<div class="line"><span class="lineno">   90</span>    rectangle(frame, Rect(</div>
+<div class="line"><span class="lineno">   91</span>        Point2f(<a class="code hl_variable" href="class_histogram.html#a3d9dee7d6841b7fb9b37de8d87e4db91">histogram_offset_</a> * 0.5, <a class="code hl_variable" href="class_histogram.html#a3d9dee7d6841b7fb9b37de8d87e4db91">histogram_offset_</a> * 0.5), <span class="comment">// top-left</span></div>
+<div class="line"><span class="lineno">   92</span>        Point2f(<a class="code hl_variable" href="class_histogram.html#a11742964d450404cba6521e1811daeec">histogram_frame_width_</a> - <a class="code hl_variable" href="class_histogram.html#a3d9dee7d6841b7fb9b37de8d87e4db91">histogram_offset_</a> * 0.5, <a class="code hl_variable" href="class_histogram.html#a19b4e5c3c82a3f26149633ce779ce447">histogram_frame_height_</a> - <a class="code hl_variable" href="class_histogram.html#a3d9dee7d6841b7fb9b37de8d87e4db91">histogram_offset_</a> * 0.5 - <a class="code hl_variable" href="class_histogram.html#ae468947a2d6f255abfb2e6add20e3770">axis_signature_offset_</a>)), <span class="comment">// bottom-right</span></div>
+<div class="line"><span class="lineno">   93</span>        Scalar(255, 255, 255),</div>
+<div class="line"><span class="lineno">   94</span>        1</div>
+<div class="line"><span class="lineno">   95</span>    );</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>    <span class="comment">// Отрисовываем подписи</span></div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_histogram.html#ac1d77e929aeb4b8adc12404bc0dffdc5">signature_amount_</a>; i++)</div>
+<div class="line"><span class="lineno">   99</span>    {</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordtype">float</span> signature_start = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_histogram.html#a1e8da20001beb108c4d523cbbf5153a5">x_values_</a>-&gt;front());</div>
+<div class="line"><span class="lineno">  101</span>        <span class="keywordtype">float</span> signature_interval = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_histogram.html#ad7734ef44b2e7f0ec9cc46154f18d008">x_limit_</a> - signature_start) / <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_histogram.html#ac1d77e929aeb4b8adc12404bc0dffdc5">signature_amount_</a> - 1);</div>
+<div class="line"><span class="lineno">  102</span>        <span class="keywordtype">float</span> value = signature_start + signature_interval * i;</div>
+<div class="line"><span class="lineno">  103</span>        putText(</div>
+<div class="line"><span class="lineno">  104</span>            frame,</div>
+<div class="line"><span class="lineno">  105</span>            <a class="code hl_function" href="class_histogram.html#a6f570c207d055c4034e12fca708e8a90">to_string_with_precision</a>(value, 1),</div>
+<div class="line"><span class="lineno">  106</span>            Point2f(<a class="code hl_variable" href="class_histogram.html#a3d9dee7d6841b7fb9b37de8d87e4db91">histogram_offset_</a> / 2.0 + i * <a class="code hl_variable" href="class_histogram.html#a7a18ce6f843690d8be8f3490d7ea5cf1">signature_interval_</a>, <a class="code hl_variable" href="class_histogram.html#a19b4e5c3c82a3f26149633ce779ce447">histogram_frame_height_</a> - <a class="code hl_variable" href="class_histogram.html#ae468947a2d6f255abfb2e6add20e3770">axis_signature_offset_</a> / 2.0),</div>
+<div class="line"><span class="lineno">  107</span>            FONT_HERSHEY_PLAIN,</div>
+<div class="line"><span class="lineno">  108</span>            1,</div>
+<div class="line"><span class="lineno">  109</span>            Scalar(255, 255, 255)</div>
+<div class="line"><span class="lineno">  110</span>        );</div>
+<div class="line"><span class="lineno">  111</span>    }</div>
+<div class="line"><span class="lineno">  112</span> </div>
+<div class="line"><span class="lineno">  113</span>    frame.copyTo(<a class="code hl_variable" href="class_histogram.html#a04b862513a61fb68ab1c8fd5206d1bcb">histogram_background_</a>);</div>
+<div class="line"><span class="lineno">  114</span>}</div>
+<div class="ttc" id="aclass_histogram_html_a6f570c207d055c4034e12fca708e8a90"><div class="ttname"><a href="class_histogram.html#a6f570c207d055c4034e12fca708e8a90">Histogram::to_string_with_precision</a></div><div class="ttdeci">std::string to_string_with_precision(const float value, const int n=6)</div><div class="ttdoc">Для ограничения кол-ва знаков</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8cpp_source.html#l00174">histogram.cpp:174</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2008108f7dfd9ffbfa812ca26138540d" name="a2008108f7dfd9ffbfa812ca26138540d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2008108f7dfd9ffbfa812ca26138540d">&#9670;&#160;</a></span>IsInteracted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Histogram::IsInteracted </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>interval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверяет, соответствует ли точка координате мыши </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a> строка <a class="el" href="histogram_8cpp_source.html#l00152">152</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  153</span>{</div>
+<div class="line"><span class="lineno">  154</span>    <span class="keywordflow">if</span> (interval &gt; 1)</div>
+<div class="line"><span class="lineno">  155</span>    {</div>
+<div class="line"><span class="lineno">  156</span>        Rect interaction_box = Rect(Point2f(x - interval * 0.9, -1), Point2f(x + interval * 0.9, 1));</div>
+<div class="line"><span class="lineno">  157</span>        <span class="keywordflow">return</span> ((interaction_box.contains(Point2i(<a class="code hl_variable" href="class_histogram.html#a1f5573dfce9dd07761a77916535ea9fd">last_mouse_coordinates_</a>.x, 0))) ? <span class="keyword">true</span> : <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  158</span>    }</div>
+<div class="line"><span class="lineno">  159</span>    <span class="keywordflow">return</span> ((<a class="code hl_variable" href="class_histogram.html#a1f5573dfce9dd07761a77916535ea9fd">last_mouse_coordinates_</a>.x == x) ? <span class="keyword">true</span> : <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  160</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a090252d83cd4beb02a842afbf0311d3d" name="a090252d83cd4beb02a842afbf0311d3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a090252d83cd4beb02a842afbf0311d3d">&#9670;&#160;</a></span>OnMouse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Histogram::OnMouse </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>callback функция для определения события (используется для хэндлинга клика мышью) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a> строка <a class="el" href="histogram_8cpp_source.html#l00029">29</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   30</span>{</div>
+<div class="line"><span class="lineno">   31</span>    <a class="code hl_class" href="class_histogram.html">Histogram</a>* d = <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="class_histogram.html">Histogram</a>*<span class="keyword">&gt;</span>(userdata);</div>
+<div class="line"><span class="lineno">   32</span>    d-&gt;<a class="code hl_function" href="class_histogram.html#a939c2c567799157b2088c63e661af15e">DetectEvent</a>(event, x, y, flags);</div>
+<div class="line"><span class="lineno">   33</span>}</div>
+<div class="ttc" id="aclass_histogram_html"><div class="ttname"><a href="class_histogram.html">Histogram</a></div><div class="ttdoc">Класс для создания объектов-гистограмм, на которые можно выводить различную информацию</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00016">histogram.h:17</a></div></div>
+<div class="ttc" id="aclass_histogram_html_a939c2c567799157b2088c63e661af15e"><div class="ttname"><a href="class_histogram.html#a939c2c567799157b2088c63e661af15e">Histogram::DetectEvent</a></div><div class="ttdeci">void DetectEvent(int event, int x, int y, int flags)</div><div class="ttdoc">callback функция для определения события (используется для хэндлинга клика мышью)</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8cpp_source.html#l00035">histogram.cpp:35</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3bddf7035f3a842b2b9a3b22ab19ca29" name="a3bddf7035f3a842b2b9a3b22ab19ca29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bddf7035f3a842b2b9a3b22ab19ca29">&#9670;&#160;</a></span>PlotMouseValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Histogram::PlotMouseValue </td>
+          <td>(</td>
+          <td class="paramtype">Mat &amp;&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value_idx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выводит значение частоты рядом с курсором </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a> строка <a class="el" href="histogram_8cpp_source.html#l00162">162</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  163</span>{</div>
+<div class="line"><span class="lineno">  164</span>    putText(</div>
+<div class="line"><span class="lineno">  165</span>        frame,</div>
+<div class="line"><span class="lineno">  166</span>        <a class="code hl_function" href="class_histogram.html#a6f570c207d055c4034e12fca708e8a90">to_string_with_precision</a>(<a class="code hl_variable" href="class_histogram.html#a1e8da20001beb108c4d523cbbf5153a5">x_values_</a>-&gt;at(value_idx), 1),</div>
+<div class="line"><span class="lineno">  167</span>        Point2f(<a class="code hl_variable" href="class_histogram.html#a1f5573dfce9dd07761a77916535ea9fd">last_mouse_coordinates_</a>.x + <a class="code hl_variable" href="class_histogram.html#a3d9dee7d6841b7fb9b37de8d87e4db91">histogram_offset_</a> * 0.5, <a class="code hl_variable" href="class_histogram.html#a1f5573dfce9dd07761a77916535ea9fd">last_mouse_coordinates_</a>.y + <a class="code hl_variable" href="class_histogram.html#a3d9dee7d6841b7fb9b37de8d87e4db91">histogram_offset_</a> * 0.2),</div>
+<div class="line"><span class="lineno">  168</span>        FONT_HERSHEY_PLAIN,</div>
+<div class="line"><span class="lineno">  169</span>        1,</div>
+<div class="line"><span class="lineno">  170</span>        Scalar(255, 255, 255)</div>
+<div class="line"><span class="lineno">  171</span>    );</div>
+<div class="line"><span class="lineno">  172</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aad4123748f53efc8cdbc0b8f6ae5444e" name="aad4123748f53efc8cdbc0b8f6ae5444e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad4123748f53efc8cdbc0b8f6ae5444e">&#9670;&#160;</a></span>SetHistogramFlag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Histogram::SetHistogramFlag </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Устанавливает статус флага отрисовки гистограммы </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a> строка <a class="el" href="histogram_8cpp_source.html#l00074">74</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   75</span>{</div>
+<div class="line"><span class="lineno">   76</span>    <span class="comment">// Устанавливаем флаг</span></div>
+<div class="line"><span class="lineno">   77</span>    <a class="code hl_variable" href="class_histogram.html#ad5f780994e3453a67ed31b9437000ce3">is_histogram_plotted_</a> = flag;</div>
+<div class="line"><span class="lineno">   78</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a67ea2102e72112ddffd05f0ed8e2a73e" name="a67ea2102e72112ddffd05f0ed8e2a73e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67ea2102e72112ddffd05f0ed8e2a73e">&#9670;&#160;</a></span>SetHistogramWindowProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Histogram::SetHistogramWindowProperty </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>prop_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>prop_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обновляет статус окна гистограммы (например, для вывода на передний план) </p>
+<p >На данный момент функция не используется :/ </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a> строка <a class="el" href="histogram_8cpp_source.html#l00080">80</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   81</span>{</div>
+<div class="line"><span class="lineno">   82</span>    setWindowProperty(<a class="code hl_variable" href="class_histogram.html#a292702c6d9b47cb4b017a10c410d7fea">winname_</a>, prop_id, prop_value);</div>
+<div class="line"><span class="lineno">   83</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8ed9e75be45d4c50b54b9150427a89c8" name="a8ed9e75be45d4c50b54b9150427a89c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ed9e75be45d4c50b54b9150427a89c8">&#9670;&#160;</a></span>SetXValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Histogram::SetXValues </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>x_values</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Устанавливает X-ы </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a> строка <a class="el" href="histogram_8cpp_source.html#l00064">64</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   65</span>{</div>
+<div class="line"><span class="lineno">   66</span>    <span class="comment">//x_values_ = x_values;</span></div>
+<div class="line"><span class="lineno">   67</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6f59d4b44f3f4866a7b709ec7e1e15c4" name="a6f59d4b44f3f4866a7b709ec7e1e15c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f59d4b44f3f4866a7b709ec7e1e15c4">&#9670;&#160;</a></span>SetYValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Histogram::SetYValues </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>y_values</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Устанавливает Y-ы </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a> строка <a class="el" href="histogram_8cpp_source.html#l00069">69</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>{</div>
+<div class="line"><span class="lineno">   71</span>    <span class="comment">//y_values_ = y_values;</span></div>
+<div class="line"><span class="lineno">   72</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5a5a64a00231d62a6eeacb416f704262" name="a5a5a64a00231d62a6eeacb416f704262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a5a64a00231d62a6eeacb416f704262">&#9670;&#160;</a></span>ShowHistogram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Histogram::ShowHistogram </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выводит гистограмму в окно гистограммы </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a> строка <a class="el" href="histogram_8cpp_source.html#l00054">54</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>{</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_histogram.html#ad5f780994e3453a67ed31b9437000ce3">is_histogram_plotted_</a>)</div>
+<div class="line"><span class="lineno">   57</span>    {</div>
+<div class="line"><span class="lineno">   58</span>        <a class="code hl_variable" href="class_histogram.html#a62d371b7f1ca13ead2dfba8faa831a4c">histogram_</a> = <a class="code hl_function" href="class_histogram.html#a6a6a966da93879eea7b967b5c12d7b8a">CalcHistogram</a>();</div>
+<div class="line"><span class="lineno">   59</span>        imshow(<a class="code hl_variable" href="class_histogram.html#a292702c6d9b47cb4b017a10c410d7fea">winname_</a>, <a class="code hl_variable" href="class_histogram.html#a62d371b7f1ca13ead2dfba8faa831a4c">histogram_</a>);</div>
+<div class="line"><span class="lineno">   60</span>        setMouseCallback(<a class="code hl_variable" href="class_histogram.html#a292702c6d9b47cb4b017a10c410d7fea">winname_</a>, <a class="code hl_function" href="class_histogram.html#a090252d83cd4beb02a842afbf0311d3d">OnMouse</a>, (<span class="keywordtype">void</span>*)<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   61</span>    }</div>
+<div class="line"><span class="lineno">   62</span>}</div>
+<div class="ttc" id="aclass_histogram_html_a090252d83cd4beb02a842afbf0311d3d"><div class="ttname"><a href="class_histogram.html#a090252d83cd4beb02a842afbf0311d3d">Histogram::OnMouse</a></div><div class="ttdeci">static void OnMouse(int event, int x, int y, int flags, void *userdata)</div><div class="ttdoc">callback функция для определения события (используется для хэндлинга клика мышью)</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8cpp_source.html#l00029">histogram.cpp:29</a></div></div>
+<div class="ttc" id="aclass_histogram_html_a6a6a966da93879eea7b967b5c12d7b8a"><div class="ttname"><a href="class_histogram.html#a6a6a966da93879eea7b967b5c12d7b8a">Histogram::CalcHistogram</a></div><div class="ttdeci">Mat CalcHistogram()</div><div class="ttdoc">Вычисляет значения для гистограммы</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8cpp_source.html#l00116">histogram.cpp:116</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6f570c207d055c4034e12fca708e8a90" name="a6f570c207d055c4034e12fca708e8a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f570c207d055c4034e12fca708e8a90">&#9670;&#160;</a></span>to_string_with_precision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Histogram::to_string_with_precision </td>
+          <td>(</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em> = <code>6</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Для ограничения кол-ва знаков </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a> строка <a class="el" href="histogram_8cpp_source.html#l00174">174</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  175</span>{</div>
+<div class="line"><span class="lineno">  176</span>    std::ostringstream out;</div>
+<div class="line"><span class="lineno">  177</span>    out.precision(n);</div>
+<div class="line"><span class="lineno">  178</span>    out &lt;&lt; std::fixed &lt;&lt; value;</div>
+<div class="line"><span class="lineno">  179</span>    <span class="keywordflow">return</span> out.str();</div>
+<div class="line"><span class="lineno">  180</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="ae468947a2d6f255abfb2e6add20e3770" name="ae468947a2d6f255abfb2e6add20e3770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae468947a2d6f255abfb2e6add20e3770">&#9670;&#160;</a></span>axis_signature_offset_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Histogram::axis_signature_offset_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отступ для подписей оси </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8h_source.html">histogram.h</a> строка <a class="el" href="histogram_8h_source.html#l00131">131</a></p>
+
+</div>
+</div>
+<a id="a0ed69396a74c9570ad6c22b182055f42" name="a0ed69396a74c9570ad6c22b182055f42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ed69396a74c9570ad6c22b182055f42">&#9670;&#160;</a></span>dead_zone_coeff_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Histogram::dead_zone_coeff_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Процент диапазона, который будет нижней мертвой зоной: 1.0 - 100%. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8h_source.html">histogram.h</a> строка <a class="el" href="histogram_8h_source.html#l00151">151</a></p>
+
+</div>
+</div>
+<a id="a62d371b7f1ca13ead2dfba8faa831a4c" name="a62d371b7f1ca13ead2dfba8faa831a4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62d371b7f1ca13ead2dfba8faa831a4c">&#9670;&#160;</a></span>histogram_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat Histogram::histogram_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>cv::Mat изображение гистограммы </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8h_source.html">histogram.h</a> строка <a class="el" href="histogram_8h_source.html#l00115">115</a></p>
+
+</div>
+</div>
+<a id="a04b862513a61fb68ab1c8fd5206d1bcb" name="a04b862513a61fb68ab1c8fd5206d1bcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04b862513a61fb68ab1c8fd5206d1bcb">&#9670;&#160;</a></span>histogram_background_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat Histogram::histogram_background_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>cv::Mat фон для гистограммы </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8h_source.html">histogram.h</a> строка <a class="el" href="histogram_8h_source.html#l00119">119</a></p>
+
+</div>
+</div>
+<a id="a19b4e5c3c82a3f26149633ce779ce447" name="a19b4e5c3c82a3f26149633ce779ce447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19b4e5c3c82a3f26149633ce779ce447">&#9670;&#160;</a></span>histogram_frame_height_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Histogram::histogram_frame_height_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Высота окна гистограммы (включая оффсет) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8h_source.html">histogram.h</a> строка <a class="el" href="histogram_8h_source.html#l00111">111</a></p>
+
+</div>
+</div>
+<a id="a11742964d450404cba6521e1811daeec" name="a11742964d450404cba6521e1811daeec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11742964d450404cba6521e1811daeec">&#9670;&#160;</a></span>histogram_frame_width_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Histogram::histogram_frame_width_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ширина окна гистограммы (включая оффсет) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8h_source.html">histogram.h</a> строка <a class="el" href="histogram_8h_source.html#l00107">107</a></p>
+
+</div>
+</div>
+<a id="a3d9dee7d6841b7fb9b37de8d87e4db91" name="a3d9dee7d6841b7fb9b37de8d87e4db91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9dee7d6841b7fb9b37de8d87e4db91">&#9670;&#160;</a></span>histogram_offset_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Histogram::histogram_offset_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Оффсет рамки гистограммы </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8h_source.html">histogram.h</a> строка <a class="el" href="histogram_8h_source.html#l00103">103</a></p>
+
+</div>
+</div>
+<a id="ad5f780994e3453a67ed31b9437000ce3" name="ad5f780994e3453a67ed31b9437000ce3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5f780994e3453a67ed31b9437000ce3">&#9670;&#160;</a></span>is_histogram_plotted_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Histogram::is_histogram_plotted_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Флаг для отрисовки гистограммы </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8h_source.html">histogram.h</a> строка <a class="el" href="histogram_8h_source.html#l00093">93</a></p>
+
+</div>
+</div>
+<a id="a1f5573dfce9dd07761a77916535ea9fd" name="a1f5573dfce9dd07761a77916535ea9fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f5573dfce9dd07761a77916535ea9fd">&#9670;&#160;</a></span>last_mouse_coordinates_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point2i Histogram::last_mouse_coordinates_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Координаты мыши (курсора) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8h_source.html">histogram.h</a> строка <a class="el" href="histogram_8h_source.html#l00147">147</a></p>
+
+</div>
+</div>
+<a id="ac1d77e929aeb4b8adc12404bc0dffdc5" name="ac1d77e929aeb4b8adc12404bc0dffdc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1d77e929aeb4b8adc12404bc0dffdc5">&#9670;&#160;</a></span>signature_amount_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Histogram::signature_amount_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Количество подписей на оси </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8h_source.html">histogram.h</a> строка <a class="el" href="histogram_8h_source.html#l00139">139</a></p>
+
+</div>
+</div>
+<a id="a7a18ce6f843690d8be8f3490d7ea5cf1" name="a7a18ce6f843690d8be8f3490d7ea5cf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a18ce6f843690d8be8f3490d7ea5cf1">&#9670;&#160;</a></span>signature_interval_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Histogram::signature_interval_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Интервал для делений оси и количество этих делений </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8h_source.html">histogram.h</a> строка <a class="el" href="histogram_8h_source.html#l00135">135</a></p>
+
+</div>
+</div>
+<a id="a292702c6d9b47cb4b017a10c410d7fea" name="a292702c6d9b47cb4b017a10c410d7fea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a292702c6d9b47cb4b017a10c410d7fea">&#9670;&#160;</a></span>winname_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Histogram::winname_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название окна </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8h_source.html">histogram.h</a> строка <a class="el" href="histogram_8h_source.html#l00099">99</a></p>
+
+</div>
+</div>
+<a id="ad7734ef44b2e7f0ec9cc46154f18d008" name="ad7734ef44b2e7f0ec9cc46154f18d008"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7734ef44b2e7f0ec9cc46154f18d008">&#9670;&#160;</a></span>x_limit_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Histogram::x_limit_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Максимальное (предельное) значение по оси X. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8h_source.html">histogram.h</a> строка <a class="el" href="histogram_8h_source.html#l00143">143</a></p>
+
+</div>
+</div>
+<a id="a1e8da20001beb108c4d523cbbf5153a5" name="a1e8da20001beb108c4d523cbbf5153a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e8da20001beb108c4d523cbbf5153a5">&#9670;&#160;</a></span>x_values_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt;* Histogram::x_values_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Значения гистограммы по оси X. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8h_source.html">histogram.h</a> строка <a class="el" href="histogram_8h_source.html#l00123">123</a></p>
+
+</div>
+</div>
+<a id="a0042425ba721ed0c248c7bba486a66e6" name="a0042425ba721ed0c248c7bba486a66e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0042425ba721ed0c248c7bba486a66e6">&#9670;&#160;</a></span>y_values_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;float&gt;* Histogram::y_values_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Значения гистограммы по оси Y. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="histogram_8h_source.html">histogram.h</a> строка <a class="el" href="histogram_8h_source.html#l00127">127</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/include/VVT-V2/<a class="el" href="histogram_8h_source.html">histogram.h</a></li>
+<li>C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/source/<a class="el" href="histogram_8cpp_source.html">histogram.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

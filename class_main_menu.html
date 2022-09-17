@@ -1,0 +1,1758 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Visual Vibration Tracking: Класс MainMenu</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Visual Vibration Tracking<span id="projectnumber">&#160;0.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-types">Закрытые типы</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-static-methods">Закрытые статические члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_main_menu-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс MainMenu</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для создания начального меню выбора режима работы программы  
+ <a href="class_main_menu.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="main__menu_8h_source.html">main_menu.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:abb33004f27a82400cf8359379347cd51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#abb33004f27a82400cf8359379347cd51">MainMenu</a> (std::string txt_file_name)</td></tr>
+<tr class="memdesc:abb33004f27a82400cf8359379347cd51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор этого класса  <a href="class_main_menu.html#abb33004f27a82400cf8359379347cd51">Подробнее...</a><br /></td></tr>
+<tr class="separator:abb33004f27a82400cf8359379347cd51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Закрытые типы</h2></td></tr>
+<tr class="memitem:af5860e380c7d3b75817fbc9cd7be6dab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#af5860e380c7d3b75817fbc9cd7be6dab">MODE</a> { <b>CALIBRATION</b>
+, <b>UNDISTORTION</b>
+, <b>VIBRATION_MONITORING</b>
+, <b>MOVEMENT_ENLARGEMENT</b>
+ }</td></tr>
+<tr class="memdesc:af5860e380c7d3b75817fbc9cd7be6dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перечисление со списком основных режимов работы  <a href="class_main_menu.html#af5860e380c7d3b75817fbc9cd7be6dab">Подробнее...</a><br /></td></tr>
+<tr class="separator:af5860e380c7d3b75817fbc9cd7be6dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:acf5b3599f1461c5f9431ea1f704da910"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#acf5b3599f1461c5f9431ea1f704da910">LoadPaths</a> ()</td></tr>
+<tr class="memdesc:acf5b3599f1461c5f9431ea1f704da910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открывает нужные пути  <a href="class_main_menu.html#acf5b3599f1461c5f9431ea1f704da910">Подробнее...</a><br /></td></tr>
+<tr class="separator:acf5b3599f1461c5f9431ea1f704da910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01aeeb1edc954686d13747cb4c12a8e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a01aeeb1edc954686d13747cb4c12a8e0">ExecuteCameraCalibration</a> (std::string chessboards_path)</td></tr>
+<tr class="memdesc:a01aeeb1edc954686d13747cb4c12a8e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запускает калибровку камеры по картинкам шахматных досок  <a href="class_main_menu.html#a01aeeb1edc954686d13747cb4c12a8e0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a01aeeb1edc954686d13747cb4c12a8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30aba8993a7f8e9f39b242f10fbaf931"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a30aba8993a7f8e9f39b242f10fbaf931">ExecuteVideoUndistortion</a> (std::string input_file_name, std::string output_file_name)</td></tr>
+<tr class="memdesc:a30aba8993a7f8e9f39b242f10fbaf931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запускает удаление дисторсии  <a href="class_main_menu.html#a30aba8993a7f8e9f39b242f10fbaf931">Подробнее...</a><br /></td></tr>
+<tr class="separator:a30aba8993a7f8e9f39b242f10fbaf931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e21268330d9703d6c8bf9f4b33d228"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#aa5e21268330d9703d6c8bf9f4b33d228">ExecuteVibrationMonitoring</a> (std::string input_file_name, std::string output_file_name)</td></tr>
+<tr class="memdesc:aa5e21268330d9703d6c8bf9f4b33d228"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запускает детекцию вибрации (основной режим)  <a href="class_main_menu.html#aa5e21268330d9703d6c8bf9f4b33d228">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa5e21268330d9703d6c8bf9f4b33d228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7110d2e44a744a1556f8a2b2950b9d38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a7110d2e44a744a1556f8a2b2950b9d38">ExecuteMotionMagnification</a> (std::string input_file_name, std::string output_file_name)</td></tr>
+<tr class="memdesc:a7110d2e44a744a1556f8a2b2950b9d38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запускает увеличение движения  <a href="class_main_menu.html#a7110d2e44a744a1556f8a2b2950b9d38">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7110d2e44a744a1556f8a2b2950b9d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ecabae61a1ba65a16966268056fa113"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a5ecabae61a1ba65a16966268056fa113">CreateMenu</a> ()</td></tr>
+<tr class="memdesc:a5ecabae61a1ba65a16966268056fa113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Строит сетку меню с кнопками и надписями на Mat-объекте menu_.  <a href="class_main_menu.html#a5ecabae61a1ba65a16966268056fa113">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5ecabae61a1ba65a16966268056fa113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6a2070f337a611b3b24be4766bfa826"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#af6a2070f337a611b3b24be4766bfa826">UpdateBtnColorAndText</a> ()</td></tr>
+<tr class="memdesc:af6a2070f337a611b3b24be4766bfa826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Раскрашивает кнопки и наносит на них текст  <a href="class_main_menu.html#af6a2070f337a611b3b24be4766bfa826">Подробнее...</a><br /></td></tr>
+<tr class="separator:af6a2070f337a611b3b24be4766bfa826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa378e087eb0805fd1451dcf116e2d56d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#aa378e087eb0805fd1451dcf116e2d56d">DetectEvent</a> (int event, int x, int y, int flags)</td></tr>
+<tr class="memdesc:aa378e087eb0805fd1451dcf116e2d56d"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback функция для определения события (используется для хэндлинга клика мышью)  <a href="class_main_menu.html#aa378e087eb0805fd1451dcf116e2d56d">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa378e087eb0805fd1451dcf116e2d56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671d24b20bcb5142a67cb28ca7598747"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a671d24b20bcb5142a67cb28ca7598747">Idle</a> ()</td></tr>
+<tr class="separator:a671d24b20bcb5142a67cb28ca7598747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Закрытые статические члены</h2></td></tr>
+<tr class="memitem:af802f4a248ffeb94f29d460522850b4f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#af802f4a248ffeb94f29d460522850b4f">OnMouse</a> (int event, int x, int y, int flags, void *userdata)</td></tr>
+<tr class="memdesc:af802f4a248ffeb94f29d460522850b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback функция для определения события (используется для хэндлинга клика мышью)  <a href="class_main_menu.html#af802f4a248ffeb94f29d460522850b4f">Подробнее...</a><br /></td></tr>
+<tr class="separator:af802f4a248ffeb94f29d460522850b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a300dd1a1e464e73087d4feabb94e8fb9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a300dd1a1e464e73087d4feabb94e8fb9">params_file_name_</a></td></tr>
+<tr class="memdesc:a300dd1a1e464e73087d4feabb94e8fb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Путь файла с параметрами  <a href="class_main_menu.html#a300dd1a1e464e73087d4feabb94e8fb9">Подробнее...</a><br /></td></tr>
+<tr class="separator:a300dd1a1e464e73087d4feabb94e8fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b8a1a133a5ef0bfcb8203b104d9e7d8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a8b8a1a133a5ef0bfcb8203b104d9e7d8">winname_</a></td></tr>
+<tr class="memdesc:a8b8a1a133a5ef0bfcb8203b104d9e7d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название окна  <a href="class_main_menu.html#a8b8a1a133a5ef0bfcb8203b104d9e7d8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8b8a1a133a5ef0bfcb8203b104d9e7d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f7500296ee52056ba2ff187d437558"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a21f7500296ee52056ba2ff187d437558">menu_</a></td></tr>
+<tr class="memdesc:a21f7500296ee52056ba2ff187d437558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изображение меню, на котором будет происходить отрисовка  <a href="class_main_menu.html#a21f7500296ee52056ba2ff187d437558">Подробнее...</a><br /></td></tr>
+<tr class="separator:a21f7500296ee52056ba2ff187d437558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6afebbdaef47782d019da5034768389"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Rect &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">buttons_</a></td></tr>
+<tr class="memdesc:ac6afebbdaef47782d019da5034768389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Контейнер, хранящий в себе прямоугольники-кнопки (фактически тут хранятся координаты кнопок)  <a href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac6afebbdaef47782d019da5034768389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a678f9dbcd2216709540d4af16ed66b38"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a678f9dbcd2216709540d4af16ed66b38">button_text_</a> [4]</td></tr>
+<tr class="memdesc:a678f9dbcd2216709540d4af16ed66b38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тексты кнопок  <a href="class_main_menu.html#a678f9dbcd2216709540d4af16ed66b38">Подробнее...</a><br /></td></tr>
+<tr class="separator:a678f9dbcd2216709540d4af16ed66b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f1383d94f8e16f245d58fc596392d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a72f1383d94f8e16f245d58fc596392d0">menu_width_</a></td></tr>
+<tr class="memdesc:a72f1383d94f8e16f245d58fc596392d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ширина меню  <a href="class_main_menu.html#a72f1383d94f8e16f245d58fc596392d0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a72f1383d94f8e16f245d58fc596392d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c50f92a5f3c7486e7a3ad9ef866221"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#ae2c50f92a5f3c7486e7a3ad9ef866221">menu_height_</a></td></tr>
+<tr class="memdesc:ae2c50f92a5f3c7486e7a3ad9ef866221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Высота меню  <a href="class_main_menu.html#ae2c50f92a5f3c7486e7a3ad9ef866221">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae2c50f92a5f3c7486e7a3ad9ef866221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad625d2c00b71239f30056eda2709e69d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#ad625d2c00b71239f30056eda2709e69d">button_amount_</a></td></tr>
+<tr class="memdesc:ad625d2c00b71239f30056eda2709e69d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество кнопок  <a href="class_main_menu.html#ad625d2c00b71239f30056eda2709e69d">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad625d2c00b71239f30056eda2709e69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafca88e812926ead49f00ec323a987cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#aafca88e812926ead49f00ec323a987cc">button_width_</a></td></tr>
+<tr class="memdesc:aafca88e812926ead49f00ec323a987cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ширина кнопки  <a href="class_main_menu.html#aafca88e812926ead49f00ec323a987cc">Подробнее...</a><br /></td></tr>
+<tr class="separator:aafca88e812926ead49f00ec323a987cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a091b2780210717c4620b8b8bec5edb8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a091b2780210717c4620b8b8bec5edb8e">button_height_</a></td></tr>
+<tr class="memdesc:a091b2780210717c4620b8b8bec5edb8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Высота кнопки  <a href="class_main_menu.html#a091b2780210717c4620b8b8bec5edb8e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a091b2780210717c4620b8b8bec5edb8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3609956a27889cec7af6ec85195ac743"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a3609956a27889cec7af6ec85195ac743">button_spacing_</a></td></tr>
+<tr class="memdesc:a3609956a27889cec7af6ec85195ac743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отступ между кнопками  <a href="class_main_menu.html#a3609956a27889cec7af6ec85195ac743">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3609956a27889cec7af6ec85195ac743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a726804731d9b92dc1797ec69c2e48f93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a726804731d9b92dc1797ec69c2e48f93">top_offset_</a></td></tr>
+<tr class="memdesc:a726804731d9b92dc1797ec69c2e48f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отступ от застаканных кнопок сверху  <a href="class_main_menu.html#a726804731d9b92dc1797ec69c2e48f93">Подробнее...</a><br /></td></tr>
+<tr class="separator:a726804731d9b92dc1797ec69c2e48f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9b1fae3596f0d598cdd590e1d799fce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#ae9b1fae3596f0d598cdd590e1d799fce">bottom_offset_</a></td></tr>
+<tr class="memdesc:ae9b1fae3596f0d598cdd590e1d799fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отступ от застаканных кнопок снизу  <a href="class_main_menu.html#ae9b1fae3596f0d598cdd590e1d799fce">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae9b1fae3596f0d598cdd590e1d799fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8cde06a54ac62981f6ee2aaab284dbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#ac8cde06a54ac62981f6ee2aaab284dbc">width_offset_</a></td></tr>
+<tr class="memdesc:ac8cde06a54ac62981f6ee2aaab284dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отступ с двух сторон от кнопки по ширине  <a href="class_main_menu.html#ac8cde06a54ac62981f6ee2aaab284dbc">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac8cde06a54ac62981f6ee2aaab284dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a141c52a3decb4c9f74528cd158347a9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a141c52a3decb4c9f74528cd158347a9e">font</a></td></tr>
+<tr class="memdesc:a141c52a3decb4c9f74528cd158347a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шрифт  <a href="class_main_menu.html#a141c52a3decb4c9f74528cd158347a9e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a141c52a3decb4c9f74528cd158347a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1c1409a6638988fa33fb7e073ba13d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a2c1c1409a6638988fa33fb7e073ba13d">font_scale</a></td></tr>
+<tr class="memdesc:a2c1c1409a6638988fa33fb7e073ba13d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Величина шрифта  <a href="class_main_menu.html#a2c1c1409a6638988fa33fb7e073ba13d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2c1c1409a6638988fa33fb7e073ba13d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29d574adf0376f03c3ef3918fd87141e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a29d574adf0376f03c3ef3918fd87141e">thickness</a></td></tr>
+<tr class="memdesc:a29d574adf0376f03c3ef3918fd87141e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Толщина шрифта  <a href="class_main_menu.html#a29d574adf0376f03c3ef3918fd87141e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a29d574adf0376f03c3ef3918fd87141e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bcf2dfafca93c905bfea6f0a53cbe15"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a9bcf2dfafca93c905bfea6f0a53cbe15">baseline</a></td></tr>
+<tr class="memdesc:a9bcf2dfafca93c905bfea6f0a53cbe15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметр для cv::getText()  <a href="class_main_menu.html#a9bcf2dfafca93c905bfea6f0a53cbe15">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9bcf2dfafca93c905bfea6f0a53cbe15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40e69fd0735c12fa24bc0c6ef37bf237"><td class="memItemLeft" align="right" valign="top">Point2i&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a40e69fd0735c12fa24bc0c6ef37bf237">last_mouse_position_</a></td></tr>
+<tr class="memdesc:a40e69fd0735c12fa24bc0c6ef37bf237"><td class="mdescLeft">&#160;</td><td class="mdescRight">Последние найденные в callback координаты курсора  <a href="class_main_menu.html#a40e69fd0735c12fa24bc0c6ef37bf237">Подробнее...</a><br /></td></tr>
+<tr class="separator:a40e69fd0735c12fa24bc0c6ef37bf237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7381c9c612fc48c2a21d9a0e0fdb65f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Scalar &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#ad7381c9c612fc48c2a21d9a0e0fdb65f">buttons_color_</a></td></tr>
+<tr class="memdesc:ad7381c9c612fc48c2a21d9a0e0fdb65f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Контейнер для хранения цвета каждой кнопки  <a href="class_main_menu.html#ad7381c9c612fc48c2a21d9a0e0fdb65f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad7381c9c612fc48c2a21d9a0e0fdb65f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7807da405b38a72055b51da2230c551b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a7807da405b38a72055b51da2230c551b">mode_chosen_</a></td></tr>
+<tr class="memdesc:a7807da405b38a72055b51da2230c551b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг выбранного режима  <a href="class_main_menu.html#a7807da405b38a72055b51da2230c551b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7807da405b38a72055b51da2230c551b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2264e9d3087ffdc1e64fc48777f7c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a5e2264e9d3087ffdc1e64fc48777f7c2">wanna_quit_</a></td></tr>
+<tr class="memdesc:a5e2264e9d3087ffdc1e64fc48777f7c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг выхода из программы  <a href="class_main_menu.html#a5e2264e9d3087ffdc1e64fc48777f7c2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5e2264e9d3087ffdc1e64fc48777f7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ecd32d232bdc09bad417fec831efe2b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a4ecd32d232bdc09bad417fec831efe2b">input_calibration_video_</a></td></tr>
+<tr class="memdesc:a4ecd32d232bdc09bad417fec831efe2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя (путь) входного файла (видео) для калибровки  <a href="class_main_menu.html#a4ecd32d232bdc09bad417fec831efe2b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4ecd32d232bdc09bad417fec831efe2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43569f3b9d5700184c9cd21e760e78b0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a43569f3b9d5700184c9cd21e760e78b0">input_distorted_video_</a></td></tr>
+<tr class="memdesc:a43569f3b9d5700184c9cd21e760e78b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя (путь) входного файла (видео) для удаления дисторсии  <a href="class_main_menu.html#a43569f3b9d5700184c9cd21e760e78b0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a43569f3b9d5700184c9cd21e760e78b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1388275b984f4d7e5975c42bd20a45e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#ae1388275b984f4d7e5975c42bd20a45e">output_undistorted_video_</a></td></tr>
+<tr class="memdesc:ae1388275b984f4d7e5975c42bd20a45e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя (путь) выходного файла (видео) после удаления дисторсии  <a href="class_main_menu.html#ae1388275b984f4d7e5975c42bd20a45e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae1388275b984f4d7e5975c42bd20a45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a085f0e7b8a81371f8b868f447b787ac1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a085f0e7b8a81371f8b868f447b787ac1">input_vibration_detection_</a></td></tr>
+<tr class="memdesc:a085f0e7b8a81371f8b868f447b787ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя (путь) входного файла (видео) для детекции вибрации  <a href="class_main_menu.html#a085f0e7b8a81371f8b868f447b787ac1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a085f0e7b8a81371f8b868f447b787ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e9d0a1af8b544e9f4b856f02864c26f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a4e9d0a1af8b544e9f4b856f02864c26f">output_vibration_detection_</a></td></tr>
+<tr class="memdesc:a4e9d0a1af8b544e9f4b856f02864c26f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя (путь) выходного файла (видео) после детекции вибрации  <a href="class_main_menu.html#a4e9d0a1af8b544e9f4b856f02864c26f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4e9d0a1af8b544e9f4b856f02864c26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae70524216396d958e84697846751db33"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#ae70524216396d958e84697846751db33">chessboards_path_</a></td></tr>
+<tr class="memdesc:ae70524216396d958e84697846751db33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Путь к папке с фотографиями шахматной доски  <a href="class_main_menu.html#ae70524216396d958e84697846751db33">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae70524216396d958e84697846751db33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc9df90951e4ef60b081c2971fbd978"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#abbc9df90951e4ef60b081c2971fbd978">input_movement_enlargment_</a></td></tr>
+<tr class="memdesc:abbc9df90951e4ef60b081c2971fbd978"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя (путь) входного файла (видео) для усиления движения  <a href="class_main_menu.html#abbc9df90951e4ef60b081c2971fbd978">Подробнее...</a><br /></td></tr>
+<tr class="separator:abbc9df90951e4ef60b081c2971fbd978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29d7b279fb12523356ba6e084dd1a5e4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_menu.html#a29d7b279fb12523356ba6e084dd1a5e4">output_movement_enlargement_</a></td></tr>
+<tr class="memdesc:a29d7b279fb12523356ba6e084dd1a5e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя (путь) выходного файла (видео) для усиления движения  <a href="class_main_menu.html#a29d7b279fb12523356ba6e084dd1a5e4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a29d7b279fb12523356ba6e084dd1a5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p >Класс для создания начального меню выбора режима работы программы </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00025">25</a></p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="af5860e380c7d3b75817fbc9cd7be6dab" name="af5860e380c7d3b75817fbc9cd7be6dab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5860e380c7d3b75817fbc9cd7be6dab">&#9670;&#160;</a></span>MODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_main_menu.html#af5860e380c7d3b75817fbc9cd7be6dab">MainMenu::MODE</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перечисление со списком основных режимов работы </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00030">30</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>    {</div>
+<div class="line"><span class="lineno">   32</span>        CALIBRATION,</div>
+<div class="line"><span class="lineno">   33</span>        UNDISTORTION,</div>
+<div class="line"><span class="lineno">   34</span>        VIBRATION_MONITORING,</div>
+<div class="line"><span class="lineno">   35</span>        MOVEMENT_ENLARGEMENT</div>
+<div class="line"><span class="lineno">   36</span>    };</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="abb33004f27a82400cf8359379347cd51" name="abb33004f27a82400cf8359379347cd51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb33004f27a82400cf8359379347cd51">&#9670;&#160;</a></span>MainMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainMenu::MainMenu </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>txt_file_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор этого класса </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">txt_file_name</td><td>имя (путь) текстового документа, содержащий нужные для работы пути к входным и выходным расположениям </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a> строка <a class="el" href="main__menu_8cpp_source.html#l00003">3</a></p>
+<div class="fragment"><div class="line"><span class="lineno">    3</span>                                             :</div>
+<div class="line"><span class="lineno">    4</span>    <a class="code hl_variable" href="class_main_menu.html#a300dd1a1e464e73087d4feabb94e8fb9">params_file_name_</a>{ params_file_name },</div>
+<div class="line"><span class="lineno">    5</span>    <a class="code hl_variable" href="class_main_menu.html#a8b8a1a133a5ef0bfcb8203b104d9e7d8">winname_</a>{ MAIN_MENU_WINDOW_NAME },</div>
+<div class="line"><span class="lineno">    6</span>    <a class="code hl_variable" href="class_main_menu.html#a72f1383d94f8e16f245d58fc596392d0">menu_width_</a>{ 500 },</div>
+<div class="line"><span class="lineno">    7</span>    <a class="code hl_variable" href="class_main_menu.html#ae2c50f92a5f3c7486e7a3ad9ef866221">menu_height_</a>{ 500 },</div>
+<div class="line"><span class="lineno">    8</span>    <a class="code hl_variable" href="class_main_menu.html#ad625d2c00b71239f30056eda2709e69d">button_amount_</a>{ 4 },</div>
+<div class="line"><span class="lineno">    9</span>    <a class="code hl_variable" href="class_main_menu.html#a7807da405b38a72055b51da2230c551b">mode_chosen_</a>{ <span class="keyword">false</span> }</div>
+<div class="line"><span class="lineno">   10</span>{</div>
+<div class="line"><span class="lineno">   11</span>    namedWindow(<a class="code hl_variable" href="class_main_menu.html#a8b8a1a133a5ef0bfcb8203b104d9e7d8">winname_</a>, WINDOW_AUTOSIZE);</div>
+<div class="line"><span class="lineno">   12</span>    <span class="comment">// Инициализируем отступы</span></div>
+<div class="line"><span class="lineno">   13</span>    <span class="keywordtype">int</span> x = 20;</div>
+<div class="line"><span class="lineno">   14</span>    <a class="code hl_variable" href="class_main_menu.html#a3609956a27889cec7af6ec85195ac743">button_spacing_</a> = x;</div>
+<div class="line"><span class="lineno">   15</span>    <a class="code hl_variable" href="class_main_menu.html#a726804731d9b92dc1797ec69c2e48f93">top_offset_</a> = 3 * x;</div>
+<div class="line"><span class="lineno">   16</span>    <a class="code hl_variable" href="class_main_menu.html#ae9b1fae3596f0d598cdd590e1d799fce">bottom_offset_</a> = 5 * x;</div>
+<div class="line"><span class="lineno">   17</span>    <a class="code hl_variable" href="class_main_menu.html#ac8cde06a54ac62981f6ee2aaab284dbc">width_offset_</a> = 3 * x;</div>
+<div class="line"><span class="lineno">   18</span>    <a class="code hl_variable" href="class_main_menu.html#aafca88e812926ead49f00ec323a987cc">button_width_</a> = <a class="code hl_variable" href="class_main_menu.html#a72f1383d94f8e16f245d58fc596392d0">menu_width_</a> - 2 * <a class="code hl_variable" href="class_main_menu.html#ac8cde06a54ac62981f6ee2aaab284dbc">width_offset_</a>;</div>
+<div class="line"><span class="lineno">   19</span>    <a class="code hl_variable" href="class_main_menu.html#a091b2780210717c4620b8b8bec5edb8e">button_height_</a> = (<a class="code hl_variable" href="class_main_menu.html#ae2c50f92a5f3c7486e7a3ad9ef866221">menu_height_</a> - (<a class="code hl_variable" href="class_main_menu.html#ad625d2c00b71239f30056eda2709e69d">button_amount_</a> - 1) * <a class="code hl_variable" href="class_main_menu.html#a3609956a27889cec7af6ec85195ac743">button_spacing_</a> - <a class="code hl_variable" href="class_main_menu.html#a726804731d9b92dc1797ec69c2e48f93">top_offset_</a> - <a class="code hl_variable" href="class_main_menu.html#ae9b1fae3596f0d598cdd590e1d799fce">bottom_offset_</a>) / <a class="code hl_variable" href="class_main_menu.html#ad625d2c00b71239f30056eda2709e69d">button_amount_</a>;</div>
+<div class="line"><span class="lineno">   20</span>    <span class="comment">// Надписи на кнопках</span></div>
+<div class="line"><span class="lineno">   21</span>    <a class="code hl_variable" href="class_main_menu.html#a678f9dbcd2216709540d4af16ed66b38">button_text_</a>[0] = <span class="stringliteral">&quot;CALIBRATION&quot;</span>;</div>
+<div class="line"><span class="lineno">   22</span>    <a class="code hl_variable" href="class_main_menu.html#a678f9dbcd2216709540d4af16ed66b38">button_text_</a>[1] = <span class="stringliteral">&quot;UNDISTORTION&quot;</span>;</div>
+<div class="line"><span class="lineno">   23</span>    <a class="code hl_variable" href="class_main_menu.html#a678f9dbcd2216709540d4af16ed66b38">button_text_</a>[2] = <span class="stringliteral">&quot;VIBRATION MONITORING&quot;</span>;</div>
+<div class="line"><span class="lineno">   24</span>    <a class="code hl_variable" href="class_main_menu.html#a678f9dbcd2216709540d4af16ed66b38">button_text_</a>[3] = <span class="stringliteral">&quot;MOVEMENT ENLARGEMENT&quot;</span>;</div>
+<div class="line"><span class="lineno">   25</span>    <span class="comment">// Инициализируем контейнер цветов кнопок</span></div>
+<div class="line"><span class="lineno">   26</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_main_menu.html#ad625d2c00b71239f30056eda2709e69d">button_amount_</a>; i++)</div>
+<div class="line"><span class="lineno">   27</span>    {</div>
+<div class="line"><span class="lineno">   28</span>        <a class="code hl_variable" href="class_main_menu.html#ad7381c9c612fc48c2a21d9a0e0fdb65f">buttons_color_</a>.push_back(Scalar(255, 255, 255));</div>
+<div class="line"><span class="lineno">   29</span>    }</div>
+<div class="line"><span class="lineno">   30</span>    <span class="comment">// Инициализируем атрибуты текста</span></div>
+<div class="line"><span class="lineno">   31</span>    <a class="code hl_variable" href="class_main_menu.html#a141c52a3decb4c9f74528cd158347a9e">font</a> = FONT_HERSHEY_PLAIN;</div>
+<div class="line"><span class="lineno">   32</span>    <a class="code hl_variable" href="class_main_menu.html#a2c1c1409a6638988fa33fb7e073ba13d">font_scale</a> = 1;</div>
+<div class="line"><span class="lineno">   33</span>    <a class="code hl_variable" href="class_main_menu.html#a29d574adf0376f03c3ef3918fd87141e">thickness</a> = 2;</div>
+<div class="line"><span class="lineno">   34</span>    <a class="code hl_variable" href="class_main_menu.html#a9bcf2dfafca93c905bfea6f0a53cbe15">baseline</a> = 0;</div>
+<div class="line"><span class="lineno">   35</span>    <span class="comment">// Создание меню на Mat-объекте</span></div>
+<div class="line"><span class="lineno">   36</span>    <a class="code hl_function" href="class_main_menu.html#a5ecabae61a1ba65a16966268056fa113">CreateMenu</a>();</div>
+<div class="line"><span class="lineno">   37</span>}</div>
+<div class="ttc" id="aclass_main_menu_html_a091b2780210717c4620b8b8bec5edb8e"><div class="ttname"><a href="class_main_menu.html#a091b2780210717c4620b8b8bec5edb8e">MainMenu::button_height_</a></div><div class="ttdeci">int button_height_</div><div class="ttdoc">Высота кнопки</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00134">main_menu.h:134</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a141c52a3decb4c9f74528cd158347a9e"><div class="ttname"><a href="class_main_menu.html#a141c52a3decb4c9f74528cd158347a9e">MainMenu::font</a></div><div class="ttdeci">int font</div><div class="ttdoc">Шрифт</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00154">main_menu.h:154</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a29d574adf0376f03c3ef3918fd87141e"><div class="ttname"><a href="class_main_menu.html#a29d574adf0376f03c3ef3918fd87141e">MainMenu::thickness</a></div><div class="ttdeci">int thickness</div><div class="ttdoc">Толщина шрифта</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00162">main_menu.h:162</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a2c1c1409a6638988fa33fb7e073ba13d"><div class="ttname"><a href="class_main_menu.html#a2c1c1409a6638988fa33fb7e073ba13d">MainMenu::font_scale</a></div><div class="ttdeci">double font_scale</div><div class="ttdoc">Величина шрифта</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00158">main_menu.h:158</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a300dd1a1e464e73087d4feabb94e8fb9"><div class="ttname"><a href="class_main_menu.html#a300dd1a1e464e73087d4feabb94e8fb9">MainMenu::params_file_name_</a></div><div class="ttdeci">std::string params_file_name_</div><div class="ttdoc">Путь файла с параметрами</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00098">main_menu.h:98</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a3609956a27889cec7af6ec85195ac743"><div class="ttname"><a href="class_main_menu.html#a3609956a27889cec7af6ec85195ac743">MainMenu::button_spacing_</a></div><div class="ttdeci">int button_spacing_</div><div class="ttdoc">Отступ между кнопками</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00138">main_menu.h:138</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a5ecabae61a1ba65a16966268056fa113"><div class="ttname"><a href="class_main_menu.html#a5ecabae61a1ba65a16966268056fa113">MainMenu::CreateMenu</a></div><div class="ttdeci">void CreateMenu()</div><div class="ttdoc">Строит сетку меню с кнопками и надписями на Mat-объекте menu_.</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00089">main_menu.cpp:89</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a678f9dbcd2216709540d4af16ed66b38"><div class="ttname"><a href="class_main_menu.html#a678f9dbcd2216709540d4af16ed66b38">MainMenu::button_text_</a></div><div class="ttdeci">std::string button_text_[4]</div><div class="ttdoc">Тексты кнопок</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00114">main_menu.h:114</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a726804731d9b92dc1797ec69c2e48f93"><div class="ttname"><a href="class_main_menu.html#a726804731d9b92dc1797ec69c2e48f93">MainMenu::top_offset_</a></div><div class="ttdeci">int top_offset_</div><div class="ttdoc">Отступ от застаканных кнопок сверху</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00142">main_menu.h:142</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a72f1383d94f8e16f245d58fc596392d0"><div class="ttname"><a href="class_main_menu.html#a72f1383d94f8e16f245d58fc596392d0">MainMenu::menu_width_</a></div><div class="ttdeci">int menu_width_</div><div class="ttdoc">Ширина меню</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00118">main_menu.h:118</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a7807da405b38a72055b51da2230c551b"><div class="ttname"><a href="class_main_menu.html#a7807da405b38a72055b51da2230c551b">MainMenu::mode_chosen_</a></div><div class="ttdeci">bool mode_chosen_</div><div class="ttdoc">Флаг выбранного режима</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00179">main_menu.h:179</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a8b8a1a133a5ef0bfcb8203b104d9e7d8"><div class="ttname"><a href="class_main_menu.html#a8b8a1a133a5ef0bfcb8203b104d9e7d8">MainMenu::winname_</a></div><div class="ttdeci">std::string winname_</div><div class="ttdoc">Название окна</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00102">main_menu.h:102</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a9bcf2dfafca93c905bfea6f0a53cbe15"><div class="ttname"><a href="class_main_menu.html#a9bcf2dfafca93c905bfea6f0a53cbe15">MainMenu::baseline</a></div><div class="ttdeci">int baseline</div><div class="ttdoc">Параметр для cv::getText()</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00166">main_menu.h:166</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_aafca88e812926ead49f00ec323a987cc"><div class="ttname"><a href="class_main_menu.html#aafca88e812926ead49f00ec323a987cc">MainMenu::button_width_</a></div><div class="ttdeci">int button_width_</div><div class="ttdoc">Ширина кнопки</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00130">main_menu.h:130</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ac8cde06a54ac62981f6ee2aaab284dbc"><div class="ttname"><a href="class_main_menu.html#ac8cde06a54ac62981f6ee2aaab284dbc">MainMenu::width_offset_</a></div><div class="ttdeci">int width_offset_</div><div class="ttdoc">Отступ с двух сторон от кнопки по ширине</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00150">main_menu.h:150</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ad625d2c00b71239f30056eda2709e69d"><div class="ttname"><a href="class_main_menu.html#ad625d2c00b71239f30056eda2709e69d">MainMenu::button_amount_</a></div><div class="ttdeci">int button_amount_</div><div class="ttdoc">Количество кнопок</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00126">main_menu.h:126</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ad7381c9c612fc48c2a21d9a0e0fdb65f"><div class="ttname"><a href="class_main_menu.html#ad7381c9c612fc48c2a21d9a0e0fdb65f">MainMenu::buttons_color_</a></div><div class="ttdeci">std::vector&lt; Scalar &gt; buttons_color_</div><div class="ttdoc">Контейнер для хранения цвета каждой кнопки</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00175">main_menu.h:175</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ae2c50f92a5f3c7486e7a3ad9ef866221"><div class="ttname"><a href="class_main_menu.html#ae2c50f92a5f3c7486e7a3ad9ef866221">MainMenu::menu_height_</a></div><div class="ttdeci">int menu_height_</div><div class="ttdoc">Высота меню</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00122">main_menu.h:122</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ae9b1fae3596f0d598cdd590e1d799fce"><div class="ttname"><a href="class_main_menu.html#ae9b1fae3596f0d598cdd590e1d799fce">MainMenu::bottom_offset_</a></div><div class="ttdeci">int bottom_offset_</div><div class="ttdoc">Отступ от застаканных кнопок снизу</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00146">main_menu.h:146</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a5ecabae61a1ba65a16966268056fa113" name="a5ecabae61a1ba65a16966268056fa113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ecabae61a1ba65a16966268056fa113">&#9670;&#160;</a></span>CreateMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainMenu::CreateMenu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Строит сетку меню с кнопками и надписями на Mat-объекте menu_. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a> строка <a class="el" href="main__menu_8cpp_source.html#l00089">89</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   90</span>{</div>
+<div class="line"><span class="lineno">   91</span>    <span class="comment">// Создадим кнопки в соответствии с их позициями</span></div>
+<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_main_menu.html#ad625d2c00b71239f30056eda2709e69d">button_amount_</a>; i++)</div>
+<div class="line"><span class="lineno">   93</span>    {</div>
+<div class="line"><span class="lineno">   94</span>        <a class="code hl_variable" href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">buttons_</a>.push_back</div>
+<div class="line"><span class="lineno">   95</span>        (</div>
+<div class="line"><span class="lineno">   96</span>            Rect(</div>
+<div class="line"><span class="lineno">   97</span>                Point2i(</div>
+<div class="line"><span class="lineno">   98</span>                    <a class="code hl_variable" href="class_main_menu.html#ac8cde06a54ac62981f6ee2aaab284dbc">width_offset_</a>,</div>
+<div class="line"><span class="lineno">   99</span>                    <a class="code hl_variable" href="class_main_menu.html#a726804731d9b92dc1797ec69c2e48f93">top_offset_</a> + i * (<a class="code hl_variable" href="class_main_menu.html#a091b2780210717c4620b8b8bec5edb8e">button_height_</a> + <a class="code hl_variable" href="class_main_menu.html#a3609956a27889cec7af6ec85195ac743">button_spacing_</a>)</div>
+<div class="line"><span class="lineno">  100</span>                ),</div>
+<div class="line"><span class="lineno">  101</span>                Point2i(</div>
+<div class="line"><span class="lineno">  102</span>                    <a class="code hl_variable" href="class_main_menu.html#ac8cde06a54ac62981f6ee2aaab284dbc">width_offset_</a> + <a class="code hl_variable" href="class_main_menu.html#aafca88e812926ead49f00ec323a987cc">button_width_</a>,</div>
+<div class="line"><span class="lineno">  103</span>                    <a class="code hl_variable" href="class_main_menu.html#a726804731d9b92dc1797ec69c2e48f93">top_offset_</a> + <a class="code hl_variable" href="class_main_menu.html#a091b2780210717c4620b8b8bec5edb8e">button_height_</a> + i * (<a class="code hl_variable" href="class_main_menu.html#a091b2780210717c4620b8b8bec5edb8e">button_height_</a> + <a class="code hl_variable" href="class_main_menu.html#a3609956a27889cec7af6ec85195ac743">button_spacing_</a>)</div>
+<div class="line"><span class="lineno">  104</span>                )</div>
+<div class="line"><span class="lineno">  105</span>            )</div>
+<div class="line"><span class="lineno">  106</span>        );</div>
+<div class="line"><span class="lineno">  107</span>    }</div>
+<div class="line"><span class="lineno">  108</span>    </div>
+<div class="line"><span class="lineno">  109</span>    <a class="code hl_variable" href="class_main_menu.html#a21f7500296ee52056ba2ff187d437558">menu_</a> = Mat(Size(<a class="code hl_variable" href="class_main_menu.html#a72f1383d94f8e16f245d58fc596392d0">menu_width_</a>, <a class="code hl_variable" href="class_main_menu.html#ae2c50f92a5f3c7486e7a3ad9ef866221">menu_height_</a>), CV_8UC3, Scalar(0, 0, 0)); </div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>    <span class="comment">// Подсказка для пользователя</span></div>
+<div class="line"><span class="lineno">  112</span>    std::string tip = <span class="stringliteral">&quot;Press &#39;Q&#39; to quit&quot;</span>;</div>
+<div class="line"><span class="lineno">  113</span>    putText(</div>
+<div class="line"><span class="lineno">  114</span>        <a class="code hl_variable" href="class_main_menu.html#a21f7500296ee52056ba2ff187d437558">menu_</a>,</div>
+<div class="line"><span class="lineno">  115</span>        tip,</div>
+<div class="line"><span class="lineno">  116</span>        Point(</div>
+<div class="line"><span class="lineno">  117</span>            (<a class="code hl_variable" href="class_main_menu.html#a72f1383d94f8e16f245d58fc596392d0">menu_width_</a> - getTextSize(tip, <a class="code hl_variable" href="class_main_menu.html#a141c52a3decb4c9f74528cd158347a9e">font</a>, <a class="code hl_variable" href="class_main_menu.html#a2c1c1409a6638988fa33fb7e073ba13d">font_scale</a>, <a class="code hl_variable" href="class_main_menu.html#a29d574adf0376f03c3ef3918fd87141e">thickness</a>, &amp;<a class="code hl_variable" href="class_main_menu.html#a9bcf2dfafca93c905bfea6f0a53cbe15">baseline</a>).width) / 2,</div>
+<div class="line"><span class="lineno">  118</span>            <a class="code hl_variable" href="class_main_menu.html#ae2c50f92a5f3c7486e7a3ad9ef866221">menu_height_</a> - (<a class="code hl_variable" href="class_main_menu.html#ae9b1fae3596f0d598cdd590e1d799fce">bottom_offset_</a> - getTextSize(tip, <a class="code hl_variable" href="class_main_menu.html#a141c52a3decb4c9f74528cd158347a9e">font</a>, <a class="code hl_variable" href="class_main_menu.html#a2c1c1409a6638988fa33fb7e073ba13d">font_scale</a>, <a class="code hl_variable" href="class_main_menu.html#a29d574adf0376f03c3ef3918fd87141e">thickness</a>, &amp;<a class="code hl_variable" href="class_main_menu.html#a9bcf2dfafca93c905bfea6f0a53cbe15">baseline</a>).height) / 2),</div>
+<div class="line"><span class="lineno">  119</span>        <a class="code hl_variable" href="class_main_menu.html#a141c52a3decb4c9f74528cd158347a9e">font</a>,</div>
+<div class="line"><span class="lineno">  120</span>        <a class="code hl_variable" href="class_main_menu.html#a2c1c1409a6638988fa33fb7e073ba13d">font_scale</a>,</div>
+<div class="line"><span class="lineno">  121</span>        Scalar(75, 75, 75),</div>
+<div class="line"><span class="lineno">  122</span>        <a class="code hl_variable" href="class_main_menu.html#a29d574adf0376f03c3ef3918fd87141e">thickness</a> / 2,</div>
+<div class="line"><span class="lineno">  123</span>        4</div>
+<div class="line"><span class="lineno">  124</span>    );</div>
+<div class="line"><span class="lineno">  125</span> </div>
+<div class="line"><span class="lineno">  126</span>    <a class="code hl_function" href="class_main_menu.html#a671d24b20bcb5142a67cb28ca7598747">Idle</a>();</div>
+<div class="line"><span class="lineno">  127</span>}</div>
+<div class="ttc" id="aclass_main_menu_html_a21f7500296ee52056ba2ff187d437558"><div class="ttname"><a href="class_main_menu.html#a21f7500296ee52056ba2ff187d437558">MainMenu::menu_</a></div><div class="ttdeci">Mat menu_</div><div class="ttdoc">Изображение меню, на котором будет происходить отрисовка</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00106">main_menu.h:106</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a671d24b20bcb5142a67cb28ca7598747"><div class="ttname"><a href="class_main_menu.html#a671d24b20bcb5142a67cb28ca7598747">MainMenu::Idle</a></div><div class="ttdeci">void Idle()</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00216">main_menu.cpp:216</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ac6afebbdaef47782d019da5034768389"><div class="ttname"><a href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">MainMenu::buttons_</a></div><div class="ttdeci">std::vector&lt; Rect &gt; buttons_</div><div class="ttdoc">Контейнер, хранящий в себе прямоугольники-кнопки (фактически тут хранятся координаты кнопок)</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00110">main_menu.h:110</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa378e087eb0805fd1451dcf116e2d56d" name="aa378e087eb0805fd1451dcf116e2d56d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa378e087eb0805fd1451dcf116e2d56d">&#9670;&#160;</a></span>DetectEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainMenu::DetectEvent </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>callback функция для определения события (используется для хэндлинга клика мышью) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a> строка <a class="el" href="main__menu_8cpp_source.html#l00162">162</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  163</span>{</div>
+<div class="line"><span class="lineno">  164</span>    <span class="comment">// Загружаем названия директорий</span></div>
+<div class="line"><span class="lineno">  165</span>    <a class="code hl_function" href="class_main_menu.html#acf5b3599f1461c5f9431ea1f704da910">LoadPaths</a>();</div>
+<div class="line"><span class="lineno">  166</span> </div>
+<div class="line"><span class="lineno">  167</span>    <span class="keywordflow">switch</span> (event)</div>
+<div class="line"><span class="lineno">  168</span>    {</div>
+<div class="line"><span class="lineno">  169</span>    <span class="keywordflow">case</span> EVENT_LBUTTONDOWN:</div>
+<div class="line"><span class="lineno">  170</span>    {</div>
+<div class="line"><span class="lineno">  171</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">buttons_</a>.size(); i++)</div>
+<div class="line"><span class="lineno">  172</span>        {</div>
+<div class="line"><span class="lineno">  173</span>            <span class="comment">// Если клик пользователя был по кнопке</span></div>
+<div class="line"><span class="lineno">  174</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">buttons_</a>[i].contains(Point(x, y)))</div>
+<div class="line"><span class="lineno">  175</span>            {</div>
+<div class="line"><span class="lineno">  176</span>                <span class="keywordflow">switch</span> (i)</div>
+<div class="line"><span class="lineno">  177</span>                {</div>
+<div class="line"><span class="lineno">  178</span>                <span class="keywordflow">case</span> CALIBRATION:</div>
+<div class="line"><span class="lineno">  179</span>                {</div>
+<div class="line"><span class="lineno">  180</span>                    std::cout &lt;&lt; <span class="stringliteral">&quot;u&#39;ve chosen camera calibration&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  181</span>                    <a class="code hl_function" href="class_main_menu.html#a01aeeb1edc954686d13747cb4c12a8e0">ExecuteCameraCalibration</a>(<a class="code hl_variable" href="class_main_menu.html#ae70524216396d958e84697846751db33">chessboards_path_</a>);</div>
+<div class="line"><span class="lineno">  182</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  183</span>                }</div>
+<div class="line"><span class="lineno">  184</span>                <span class="keywordflow">case</span> UNDISTORTION:</div>
+<div class="line"><span class="lineno">  185</span>                {</div>
+<div class="line"><span class="lineno">  186</span>                    std::cout &lt;&lt; <span class="stringliteral">&quot;u&#39;ve chosen undistortion&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  187</span>                    <a class="code hl_function" href="class_main_menu.html#a30aba8993a7f8e9f39b242f10fbaf931">ExecuteVideoUndistortion</a>(<a class="code hl_variable" href="class_main_menu.html#a43569f3b9d5700184c9cd21e760e78b0">input_distorted_video_</a>, <a class="code hl_variable" href="class_main_menu.html#ae1388275b984f4d7e5975c42bd20a45e">output_undistorted_video_</a>);</div>
+<div class="line"><span class="lineno">  188</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  189</span>                }</div>
+<div class="line"><span class="lineno">  190</span>                <span class="keywordflow">case</span> VIBRATION_MONITORING:</div>
+<div class="line"><span class="lineno">  191</span>                {</div>
+<div class="line"><span class="lineno">  192</span>                    std::cout &lt;&lt; <span class="stringliteral">&quot;u&#39;ve chosen vibration monitoring&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  193</span>                    <a class="code hl_function" href="class_main_menu.html#aa5e21268330d9703d6c8bf9f4b33d228">ExecuteVibrationMonitoring</a>(<a class="code hl_variable" href="class_main_menu.html#a085f0e7b8a81371f8b868f447b787ac1">input_vibration_detection_</a>, <a class="code hl_variable" href="class_main_menu.html#a4e9d0a1af8b544e9f4b856f02864c26f">output_vibration_detection_</a>);</div>
+<div class="line"><span class="lineno">  194</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  195</span>                }</div>
+<div class="line"><span class="lineno">  196</span>                <span class="keywordflow">case</span> MOVEMENT_ENLARGEMENT:</div>
+<div class="line"><span class="lineno">  197</span>                {</div>
+<div class="line"><span class="lineno">  198</span>                    std::cout &lt;&lt; <span class="stringliteral">&quot;u&#39;ve chosen movement enlarging&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  199</span>                    <a class="code hl_function" href="class_main_menu.html#a7110d2e44a744a1556f8a2b2950b9d38">ExecuteMotionMagnification</a>(<a class="code hl_variable" href="class_main_menu.html#abbc9df90951e4ef60b081c2971fbd978">input_movement_enlargment_</a>, <a class="code hl_variable" href="class_main_menu.html#a29d7b279fb12523356ba6e084dd1a5e4">output_movement_enlargement_</a>);</div>
+<div class="line"><span class="lineno">  200</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  201</span>                }</div>
+<div class="line"><span class="lineno">  202</span>                }</div>
+<div class="line"><span class="lineno">  203</span>            }</div>
+<div class="line"><span class="lineno">  204</span>        }</div>
+<div class="line"><span class="lineno">  205</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  206</span>    }</div>
+<div class="line"><span class="lineno">  207</span>    <span class="keywordflow">case</span> EVENT_MOUSEMOVE:</div>
+<div class="line"><span class="lineno">  208</span>    {</div>
+<div class="line"><span class="lineno">  209</span>        <a class="code hl_variable" href="class_main_menu.html#a40e69fd0735c12fa24bc0c6ef37bf237">last_mouse_position_</a>.x = x;</div>
+<div class="line"><span class="lineno">  210</span>        <a class="code hl_variable" href="class_main_menu.html#a40e69fd0735c12fa24bc0c6ef37bf237">last_mouse_position_</a>.y = y;</div>
+<div class="line"><span class="lineno">  211</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  212</span>    }</div>
+<div class="line"><span class="lineno">  213</span>    }</div>
+<div class="line"><span class="lineno">  214</span>}</div>
+<div class="ttc" id="aclass_main_menu_html_a01aeeb1edc954686d13747cb4c12a8e0"><div class="ttname"><a href="class_main_menu.html#a01aeeb1edc954686d13747cb4c12a8e0">MainMenu::ExecuteCameraCalibration</a></div><div class="ttdeci">void ExecuteCameraCalibration(std::string chessboards_path)</div><div class="ttdoc">Запускает калибровку камеры по картинкам шахматных досок</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00059">main_menu.cpp:59</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a085f0e7b8a81371f8b868f447b787ac1"><div class="ttname"><a href="class_main_menu.html#a085f0e7b8a81371f8b868f447b787ac1">MainMenu::input_vibration_detection_</a></div><div class="ttdeci">std::string input_vibration_detection_</div><div class="ttdoc">Имя (путь) входного файла (видео) для детекции вибрации</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00201">main_menu.h:201</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a29d7b279fb12523356ba6e084dd1a5e4"><div class="ttname"><a href="class_main_menu.html#a29d7b279fb12523356ba6e084dd1a5e4">MainMenu::output_movement_enlargement_</a></div><div class="ttdeci">std::string output_movement_enlargement_</div><div class="ttdoc">Имя (путь) выходного файла (видео) для усиления движения</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00217">main_menu.h:217</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a30aba8993a7f8e9f39b242f10fbaf931"><div class="ttname"><a href="class_main_menu.html#a30aba8993a7f8e9f39b242f10fbaf931">MainMenu::ExecuteVideoUndistortion</a></div><div class="ttdeci">void ExecuteVideoUndistortion(std::string input_file_name, std::string output_file_name)</div><div class="ttdoc">Запускает удаление дисторсии</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00065">main_menu.cpp:65</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a40e69fd0735c12fa24bc0c6ef37bf237"><div class="ttname"><a href="class_main_menu.html#a40e69fd0735c12fa24bc0c6ef37bf237">MainMenu::last_mouse_position_</a></div><div class="ttdeci">Point2i last_mouse_position_</div><div class="ttdoc">Последние найденные в callback координаты курсора</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00171">main_menu.h:171</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a43569f3b9d5700184c9cd21e760e78b0"><div class="ttname"><a href="class_main_menu.html#a43569f3b9d5700184c9cd21e760e78b0">MainMenu::input_distorted_video_</a></div><div class="ttdeci">std::string input_distorted_video_</div><div class="ttdoc">Имя (путь) входного файла (видео) для удаления дисторсии</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00193">main_menu.h:193</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a4e9d0a1af8b544e9f4b856f02864c26f"><div class="ttname"><a href="class_main_menu.html#a4e9d0a1af8b544e9f4b856f02864c26f">MainMenu::output_vibration_detection_</a></div><div class="ttdeci">std::string output_vibration_detection_</div><div class="ttdoc">Имя (путь) выходного файла (видео) после детекции вибрации</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00205">main_menu.h:205</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_a7110d2e44a744a1556f8a2b2950b9d38"><div class="ttname"><a href="class_main_menu.html#a7110d2e44a744a1556f8a2b2950b9d38">MainMenu::ExecuteMotionMagnification</a></div><div class="ttdeci">void ExecuteMotionMagnification(std::string input_file_name, std::string output_file_name)</div><div class="ttdoc">Запускает увеличение движения</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00083">main_menu.cpp:83</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_aa5e21268330d9703d6c8bf9f4b33d228"><div class="ttname"><a href="class_main_menu.html#aa5e21268330d9703d6c8bf9f4b33d228">MainMenu::ExecuteVibrationMonitoring</a></div><div class="ttdeci">void ExecuteVibrationMonitoring(std::string input_file_name, std::string output_file_name)</div><div class="ttdoc">Запускает детекцию вибрации (основной режим)</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00077">main_menu.cpp:77</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_abbc9df90951e4ef60b081c2971fbd978"><div class="ttname"><a href="class_main_menu.html#abbc9df90951e4ef60b081c2971fbd978">MainMenu::input_movement_enlargment_</a></div><div class="ttdeci">std::string input_movement_enlargment_</div><div class="ttdoc">Имя (путь) входного файла (видео) для усиления движения</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00213">main_menu.h:213</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_acf5b3599f1461c5f9431ea1f704da910"><div class="ttname"><a href="class_main_menu.html#acf5b3599f1461c5f9431ea1f704da910">MainMenu::LoadPaths</a></div><div class="ttdeci">void LoadPaths()</div><div class="ttdoc">Открывает нужные пути</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00039">main_menu.cpp:39</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ae1388275b984f4d7e5975c42bd20a45e"><div class="ttname"><a href="class_main_menu.html#ae1388275b984f4d7e5975c42bd20a45e">MainMenu::output_undistorted_video_</a></div><div class="ttdeci">std::string output_undistorted_video_</div><div class="ttdoc">Имя (путь) выходного файла (видео) после удаления дисторсии</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00197">main_menu.h:197</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_ae70524216396d958e84697846751db33"><div class="ttname"><a href="class_main_menu.html#ae70524216396d958e84697846751db33">MainMenu::chessboards_path_</a></div><div class="ttdeci">std::string chessboards_path_</div><div class="ttdoc">Путь к папке с фотографиями шахматной доски</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00209">main_menu.h:209</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a01aeeb1edc954686d13747cb4c12a8e0" name="a01aeeb1edc954686d13747cb4c12a8e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01aeeb1edc954686d13747cb4c12a8e0">&#9670;&#160;</a></span>ExecuteCameraCalibration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainMenu::ExecuteCameraCalibration </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>chessboards_path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Запускает калибровку камеры по картинкам шахматных досок </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chessboards_path</td><td>имя (путь) к папке с изображениями шахматных досок </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a> строка <a class="el" href="main__menu_8cpp_source.html#l00059">59</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   60</span>{</div>
+<div class="line"><span class="lineno">   61</span>    <a class="code hl_class" href="class_camera_calibrator.html">CameraCalibrator</a> camera_calibrator(chessboards_path);</div>
+<div class="line"><span class="lineno">   62</span>    camera_calibrator.ExecuteCameraCalibration();</div>
+<div class="line"><span class="lineno">   63</span>}</div>
+<div class="ttc" id="aclass_camera_calibrator_html"><div class="ttname"><a href="class_camera_calibrator.html">CameraCalibrator</a></div><div class="ttdoc">Класс для нахождения коэффициентов для конкретной линзы (с помощью которой было снято видео)</div><div class="ttdef"><b>Definition:</b> <a href="camera__calibrator_8h_source.html#l00029">camera_calibrator.h:30</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7110d2e44a744a1556f8a2b2950b9d38" name="a7110d2e44a744a1556f8a2b2950b9d38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7110d2e44a744a1556f8a2b2950b9d38">&#9670;&#160;</a></span>ExecuteMotionMagnification()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainMenu::ExecuteMotionMagnification </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>input_file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>output_file_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Запускает увеличение движения </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_file_name</td><td>имя (путь) входного видео </td></tr>
+    <tr><td class="paramname">output_file_name</td><td>имя (путь) выходного файла </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a> строка <a class="el" href="main__menu_8cpp_source.html#l00083">83</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   84</span>{</div>
+<div class="line"><span class="lineno">   85</span>    <a class="code hl_class" href="class_movement_enlarger.html">MovementEnlarger</a> movement_enlarger(input_file_name, output_file_name);</div>
+<div class="line"><span class="lineno">   86</span>    movement_enlarger.ExecuteLaplaceEnlargement();</div>
+<div class="line"><span class="lineno">   87</span>}</div>
+<div class="ttc" id="aclass_movement_enlarger_html"><div class="ttname"><a href="class_movement_enlarger.html">MovementEnlarger</a></div><div class="ttdoc">Дочерний (от EulerEnlarger) класс для визуального увеличения вибрации на видео</div><div class="ttdef"><b>Definition:</b> <a href="movement__enlargement_8h_source.html#l00019">movement_enlargement.h:20</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa5e21268330d9703d6c8bf9f4b33d228" name="aa5e21268330d9703d6c8bf9f4b33d228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5e21268330d9703d6c8bf9f4b33d228">&#9670;&#160;</a></span>ExecuteVibrationMonitoring()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainMenu::ExecuteVibrationMonitoring </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>input_file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>output_file_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Запускает детекцию вибрации (основной режим) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_file_name</td><td>имя (путь) входного видео </td></tr>
+    <tr><td class="paramname">output_file_name</td><td>имя (путь) выходного файла </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a> строка <a class="el" href="main__menu_8cpp_source.html#l00077">77</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   78</span>{</div>
+<div class="line"><span class="lineno">   79</span>    <a class="code hl_class" href="class_vibration_detector.html">VibrationDetector</a> vibration_detector(input_file_name, output_file_name, MAIN_WINDOW_NAME);</div>
+<div class="line"><span class="lineno">   80</span>    vibration_detector.ExecuteVibrationDetection();</div>
+<div class="line"><span class="lineno">   81</span>}</div>
+<div class="ttc" id="aclass_vibration_detector_html"><div class="ttname"><a href="class_vibration_detector.html">VibrationDetector</a></div><div class="ttdoc">Класс для создания объектов-детекторов вибрации</div><div class="ttdef"><b>Definition:</b> <a href="vibration__detector_8h_source.html#l00027">vibration_detector.h:28</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a30aba8993a7f8e9f39b242f10fbaf931" name="a30aba8993a7f8e9f39b242f10fbaf931"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30aba8993a7f8e9f39b242f10fbaf931">&#9670;&#160;</a></span>ExecuteVideoUndistortion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainMenu::ExecuteVideoUndistortion </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>input_file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>output_file_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Запускает удаление дисторсии </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_file_name</td><td>имя (путь) входного видео </td></tr>
+    <tr><td class="paramname">output_file_name</td><td>имя (путь) выходного файла </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a> строка <a class="el" href="main__menu_8cpp_source.html#l00065">65</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   66</span>{</div>
+<div class="line"><span class="lineno">   67</span>    std::string params;</div>
+<div class="line"><span class="lineno">   68</span> </div>
+<div class="line"><span class="lineno">   69</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Please attach the parameters.txt file: &quot;</span>;</div>
+<div class="line"><span class="lineno">   70</span>    std::cin &gt;&gt; params;</div>
+<div class="line"><span class="lineno">   71</span>    std::cout &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>    <a class="code hl_class" href="class_video_undistorter.html">VideoUndistorter</a> video_undistorter(input_file_name, output_file_name, params);</div>
+<div class="line"><span class="lineno">   74</span>    video_undistorter.ExecuteVideoUndistortion();</div>
+<div class="line"><span class="lineno">   75</span>}</div>
+<div class="ttc" id="aclass_video_undistorter_html"><div class="ttname"><a href="class_video_undistorter.html">VideoUndistorter</a></div><div class="ttdoc">Класс для удаления дисторсии на видео</div><div class="ttdef"><b>Definition:</b> <a href="video__undistorter_8h_source.html#l00030">video_undistorter.h:31</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a671d24b20bcb5142a67cb28ca7598747" name="a671d24b20bcb5142a67cb28ca7598747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a671d24b20bcb5142a67cb28ca7598747">&#9670;&#160;</a></span>Idle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainMenu::Idle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Запускает меню </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a> строка <a class="el" href="main__menu_8cpp_source.html#l00216">216</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  217</span>{</div>
+<div class="line"><span class="lineno">  218</span>    <span class="comment">// Устанавливаем хэндлер окна</span></div>
+<div class="line"><span class="lineno">  219</span>    setMouseCallback(<a class="code hl_variable" href="class_main_menu.html#a8b8a1a133a5ef0bfcb8203b104d9e7d8">winname_</a>, <a class="code hl_function" href="class_main_menu.html#af802f4a248ffeb94f29d460522850b4f">OnMouse</a>, (<span class="keywordtype">void</span>*)<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  220</span> </div>
+<div class="line"><span class="lineno">  221</span>    <span class="keywordflow">while</span> (!<a class="code hl_variable" href="class_main_menu.html#a7807da405b38a72055b51da2230c551b">mode_chosen_</a>)</div>
+<div class="line"><span class="lineno">  222</span>    {</div>
+<div class="line"><span class="lineno">  223</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">buttons_</a>.size(); i++)</div>
+<div class="line"><span class="lineno">  224</span>        {</div>
+<div class="line"><span class="lineno">  225</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">buttons_</a>[i].contains(<a class="code hl_variable" href="class_main_menu.html#a40e69fd0735c12fa24bc0c6ef37bf237">last_mouse_position_</a>))</div>
+<div class="line"><span class="lineno">  226</span>            {</div>
+<div class="line"><span class="lineno">  227</span>                <a class="code hl_variable" href="class_main_menu.html#ad7381c9c612fc48c2a21d9a0e0fdb65f">buttons_color_</a>[i] = Scalar(0, 0, 255);</div>
+<div class="line"><span class="lineno">  228</span>            }</div>
+<div class="line"><span class="lineno">  229</span>            <span class="keywordflow">else</span> <a class="code hl_variable" href="class_main_menu.html#ad7381c9c612fc48c2a21d9a0e0fdb65f">buttons_color_</a>[i] = Scalar(25, 25, 25);</div>
+<div class="line"><span class="lineno">  230</span>        }</div>
+<div class="line"><span class="lineno">  231</span>        <span class="comment">// Обновляем текущие цвета кнопок</span></div>
+<div class="line"><span class="lineno">  232</span>        <a class="code hl_function" href="class_main_menu.html#af6a2070f337a611b3b24be4766bfa826">UpdateBtnColorAndText</a>();</div>
+<div class="line"><span class="lineno">  233</span> </div>
+<div class="line"><span class="lineno">  234</span>        imshow(<a class="code hl_variable" href="class_main_menu.html#a8b8a1a133a5ef0bfcb8203b104d9e7d8">winname_</a>, <a class="code hl_variable" href="class_main_menu.html#a21f7500296ee52056ba2ff187d437558">menu_</a>);</div>
+<div class="line"><span class="lineno">  235</span>        <span class="keywordflow">switch</span> (waitKey(10))</div>
+<div class="line"><span class="lineno">  236</span>        {</div>
+<div class="line"><span class="lineno">  237</span>        <span class="keywordflow">case</span> <span class="charliteral">&#39;q&#39;</span>:</div>
+<div class="line"><span class="lineno">  238</span>        {</div>
+<div class="line"><span class="lineno">  239</span>            <a class="code hl_variable" href="class_main_menu.html#a7807da405b38a72055b51da2230c551b">mode_chosen_</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  240</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  241</span>        }</div>
+<div class="line"><span class="lineno">  242</span>        }</div>
+<div class="line"><span class="lineno">  243</span>    }</div>
+<div class="line"><span class="lineno">  244</span>}</div>
+<div class="ttc" id="aclass_main_menu_html_af6a2070f337a611b3b24be4766bfa826"><div class="ttname"><a href="class_main_menu.html#af6a2070f337a611b3b24be4766bfa826">MainMenu::UpdateBtnColorAndText</a></div><div class="ttdeci">void UpdateBtnColorAndText()</div><div class="ttdoc">Раскрашивает кнопки и наносит на них текст</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00129">main_menu.cpp:129</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_af802f4a248ffeb94f29d460522850b4f"><div class="ttname"><a href="class_main_menu.html#af802f4a248ffeb94f29d460522850b4f">MainMenu::OnMouse</a></div><div class="ttdeci">static void OnMouse(int event, int x, int y, int flags, void *userdata)</div><div class="ttdoc">callback функция для определения события (используется для хэндлинга клика мышью)</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00156">main_menu.cpp:156</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acf5b3599f1461c5f9431ea1f704da910" name="acf5b3599f1461c5f9431ea1f704da910"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf5b3599f1461c5f9431ea1f704da910">&#9670;&#160;</a></span>LoadPaths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainMenu::LoadPaths </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Открывает нужные пути </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a> строка <a class="el" href="main__menu_8cpp_source.html#l00039">39</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{</div>
+<div class="line"><span class="lineno">   41</span>    std::ifstream params_file;</div>
+<div class="line"><span class="lineno">   42</span>    params_file.open(<a class="code hl_variable" href="class_main_menu.html#a300dd1a1e464e73087d4feabb94e8fb9">params_file_name_</a>);</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">if</span> (!params_file.is_open())</div>
+<div class="line"><span class="lineno">   45</span>    {</div>
+<div class="line"><span class="lineno">   46</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Wrong filename&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   47</span>    }</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>    std::getline(params_file, <a class="code hl_variable" href="class_main_menu.html#a4ecd32d232bdc09bad417fec831efe2b">input_calibration_video_</a>);</div>
+<div class="line"><span class="lineno">   50</span>    std::getline(params_file, <a class="code hl_variable" href="class_main_menu.html#a43569f3b9d5700184c9cd21e760e78b0">input_distorted_video_</a>);</div>
+<div class="line"><span class="lineno">   51</span>    std::getline(params_file, <a class="code hl_variable" href="class_main_menu.html#ae1388275b984f4d7e5975c42bd20a45e">output_undistorted_video_</a>);</div>
+<div class="line"><span class="lineno">   52</span>    std::getline(params_file, <a class="code hl_variable" href="class_main_menu.html#a085f0e7b8a81371f8b868f447b787ac1">input_vibration_detection_</a>);</div>
+<div class="line"><span class="lineno">   53</span>    std::getline(params_file, <a class="code hl_variable" href="class_main_menu.html#a4e9d0a1af8b544e9f4b856f02864c26f">output_vibration_detection_</a>);</div>
+<div class="line"><span class="lineno">   54</span>    std::getline(params_file, <a class="code hl_variable" href="class_main_menu.html#ae70524216396d958e84697846751db33">chessboards_path_</a>);</div>
+<div class="line"><span class="lineno">   55</span>    std::getline(params_file, <a class="code hl_variable" href="class_main_menu.html#abbc9df90951e4ef60b081c2971fbd978">input_movement_enlargment_</a>);</div>
+<div class="line"><span class="lineno">   56</span>    std::getline(params_file, <a class="code hl_variable" href="class_main_menu.html#a29d7b279fb12523356ba6e084dd1a5e4">output_movement_enlargement_</a>);</div>
+<div class="line"><span class="lineno">   57</span>}</div>
+<div class="ttc" id="aclass_main_menu_html_a4ecd32d232bdc09bad417fec831efe2b"><div class="ttname"><a href="class_main_menu.html#a4ecd32d232bdc09bad417fec831efe2b">MainMenu::input_calibration_video_</a></div><div class="ttdeci">std::string input_calibration_video_</div><div class="ttdoc">Имя (путь) входного файла (видео) для калибровки</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00189">main_menu.h:189</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af802f4a248ffeb94f29d460522850b4f" name="af802f4a248ffeb94f29d460522850b4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af802f4a248ffeb94f29d460522850b4f">&#9670;&#160;</a></span>OnMouse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainMenu::OnMouse </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>callback функция для определения события (используется для хэндлинга клика мышью) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a> строка <a class="el" href="main__menu_8cpp_source.html#l00156">156</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  157</span>{</div>
+<div class="line"><span class="lineno">  158</span>    <a class="code hl_class" href="class_main_menu.html">MainMenu</a>* d = <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="class_main_menu.html">MainMenu</a>*<span class="keyword">&gt;</span>(userdata);</div>
+<div class="line"><span class="lineno">  159</span>    d-&gt;<a class="code hl_function" href="class_main_menu.html#aa378e087eb0805fd1451dcf116e2d56d">DetectEvent</a>(event, x, y, flags);</div>
+<div class="line"><span class="lineno">  160</span>}</div>
+<div class="ttc" id="aclass_main_menu_html"><div class="ttname"><a href="class_main_menu.html">MainMenu</a></div><div class="ttdoc">Класс для создания начального меню выбора режима работы программы</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8h_source.html#l00025">main_menu.h:26</a></div></div>
+<div class="ttc" id="aclass_main_menu_html_aa378e087eb0805fd1451dcf116e2d56d"><div class="ttname"><a href="class_main_menu.html#aa378e087eb0805fd1451dcf116e2d56d">MainMenu::DetectEvent</a></div><div class="ttdeci">void DetectEvent(int event, int x, int y, int flags)</div><div class="ttdoc">callback функция для определения события (используется для хэндлинга клика мышью)</div><div class="ttdef"><b>Definition:</b> <a href="main__menu_8cpp_source.html#l00162">main_menu.cpp:162</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af6a2070f337a611b3b24be4766bfa826" name="af6a2070f337a611b3b24be4766bfa826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6a2070f337a611b3b24be4766bfa826">&#9670;&#160;</a></span>UpdateBtnColorAndText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainMenu::UpdateBtnColorAndText </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Раскрашивает кнопки и наносит на них текст </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a> строка <a class="el" href="main__menu_8cpp_source.html#l00129">129</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  130</span>{</div>
+<div class="line"><span class="lineno">  131</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_main_menu.html#ad625d2c00b71239f30056eda2709e69d">button_amount_</a>; i++)</div>
+<div class="line"><span class="lineno">  132</span>    {</div>
+<div class="line"><span class="lineno">  133</span>        <span class="comment">// Рисуем очертания кнопки</span></div>
+<div class="line"><span class="lineno">  134</span>        rectangle(<a class="code hl_variable" href="class_main_menu.html#a21f7500296ee52056ba2ff187d437558">menu_</a>, <a class="code hl_variable" href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">buttons_</a>[i], <a class="code hl_variable" href="class_main_menu.html#ad7381c9c612fc48c2a21d9a0e0fdb65f">buttons_color_</a>[i], FILLED);</div>
+<div class="line"><span class="lineno">  135</span>        <span class="comment">// Размеры текста в пикселях</span></div>
+<div class="line"><span class="lineno">  136</span>        Size current_text_size = getTextSize(<a class="code hl_variable" href="class_main_menu.html#a678f9dbcd2216709540d4af16ed66b38">button_text_</a>[i], <a class="code hl_variable" href="class_main_menu.html#a141c52a3decb4c9f74528cd158347a9e">font</a>, <a class="code hl_variable" href="class_main_menu.html#a2c1c1409a6638988fa33fb7e073ba13d">font_scale</a>, <a class="code hl_variable" href="class_main_menu.html#a29d574adf0376f03c3ef3918fd87141e">thickness</a>, &amp;<a class="code hl_variable" href="class_main_menu.html#a9bcf2dfafca93c905bfea6f0a53cbe15">baseline</a>);</div>
+<div class="line"><span class="lineno">  137</span>        <span class="comment">// Координаты текущего текста</span></div>
+<div class="line"><span class="lineno">  138</span>        Point text_coordinates = Point(</div>
+<div class="line"><span class="lineno">  139</span>            <a class="code hl_variable" href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">buttons_</a>[i].tl().x + <a class="code hl_variable" href="class_main_menu.html#aafca88e812926ead49f00ec323a987cc">button_width_</a> / 2 - current_text_size.width / 2,</div>
+<div class="line"><span class="lineno">  140</span>            <a class="code hl_variable" href="class_main_menu.html#ac6afebbdaef47782d019da5034768389">buttons_</a>[i].tl().y + <a class="code hl_variable" href="class_main_menu.html#a091b2780210717c4620b8b8bec5edb8e">button_height_</a> / 2 + (current_text_size.height) / 2);</div>
+<div class="line"><span class="lineno">  141</span>        <span class="comment">// Рисуем текст кнопки</span></div>
+<div class="line"><span class="lineno">  142</span>        putText(</div>
+<div class="line"><span class="lineno">  143</span>            <a class="code hl_variable" href="class_main_menu.html#a21f7500296ee52056ba2ff187d437558">menu_</a>,</div>
+<div class="line"><span class="lineno">  144</span>            <a class="code hl_variable" href="class_main_menu.html#a678f9dbcd2216709540d4af16ed66b38">button_text_</a>[i],</div>
+<div class="line"><span class="lineno">  145</span>            text_coordinates,</div>
+<div class="line"><span class="lineno">  146</span>            <a class="code hl_variable" href="class_main_menu.html#a141c52a3decb4c9f74528cd158347a9e">font</a>,</div>
+<div class="line"><span class="lineno">  147</span>            <a class="code hl_variable" href="class_main_menu.html#a2c1c1409a6638988fa33fb7e073ba13d">font_scale</a>,</div>
+<div class="line"><span class="lineno">  148</span>            Scalar(255, 255, 255),</div>
+<div class="line"><span class="lineno">  149</span>            <a class="code hl_variable" href="class_main_menu.html#a29d574adf0376f03c3ef3918fd87141e">thickness</a>,</div>
+<div class="line"><span class="lineno">  150</span>            4 <span class="comment">// тип линии. вроде отличаются сглаживанием. выбрал 4-й просто так :)</span></div>
+<div class="line"><span class="lineno">  151</span>        );</div>
+<div class="line"><span class="lineno">  152</span> </div>
+<div class="line"><span class="lineno">  153</span>    }</div>
+<div class="line"><span class="lineno">  154</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a9bcf2dfafca93c905bfea6f0a53cbe15" name="a9bcf2dfafca93c905bfea6f0a53cbe15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bcf2dfafca93c905bfea6f0a53cbe15">&#9670;&#160;</a></span>baseline</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainMenu::baseline</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Параметр для cv::getText() </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00166">166</a></p>
+
+</div>
+</div>
+<a id="ae9b1fae3596f0d598cdd590e1d799fce" name="ae9b1fae3596f0d598cdd590e1d799fce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9b1fae3596f0d598cdd590e1d799fce">&#9670;&#160;</a></span>bottom_offset_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainMenu::bottom_offset_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отступ от застаканных кнопок снизу </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00146">146</a></p>
+
+</div>
+</div>
+<a id="ad625d2c00b71239f30056eda2709e69d" name="ad625d2c00b71239f30056eda2709e69d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad625d2c00b71239f30056eda2709e69d">&#9670;&#160;</a></span>button_amount_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainMenu::button_amount_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Количество кнопок </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00126">126</a></p>
+
+</div>
+</div>
+<a id="a091b2780210717c4620b8b8bec5edb8e" name="a091b2780210717c4620b8b8bec5edb8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a091b2780210717c4620b8b8bec5edb8e">&#9670;&#160;</a></span>button_height_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainMenu::button_height_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Высота кнопки </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00134">134</a></p>
+
+</div>
+</div>
+<a id="a3609956a27889cec7af6ec85195ac743" name="a3609956a27889cec7af6ec85195ac743"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3609956a27889cec7af6ec85195ac743">&#9670;&#160;</a></span>button_spacing_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainMenu::button_spacing_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отступ между кнопками </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00138">138</a></p>
+
+</div>
+</div>
+<a id="a678f9dbcd2216709540d4af16ed66b38" name="a678f9dbcd2216709540d4af16ed66b38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a678f9dbcd2216709540d4af16ed66b38">&#9670;&#160;</a></span>button_text_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string MainMenu::button_text_[4]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Тексты кнопок </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00114">114</a></p>
+
+</div>
+</div>
+<a id="aafca88e812926ead49f00ec323a987cc" name="aafca88e812926ead49f00ec323a987cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafca88e812926ead49f00ec323a987cc">&#9670;&#160;</a></span>button_width_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainMenu::button_width_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ширина кнопки </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00130">130</a></p>
+
+</div>
+</div>
+<a id="ac6afebbdaef47782d019da5034768389" name="ac6afebbdaef47782d019da5034768389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6afebbdaef47782d019da5034768389">&#9670;&#160;</a></span>buttons_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Rect&gt; MainMenu::buttons_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Контейнер, хранящий в себе прямоугольники-кнопки (фактически тут хранятся координаты кнопок) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00110">110</a></p>
+
+</div>
+</div>
+<a id="ad7381c9c612fc48c2a21d9a0e0fdb65f" name="ad7381c9c612fc48c2a21d9a0e0fdb65f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7381c9c612fc48c2a21d9a0e0fdb65f">&#9670;&#160;</a></span>buttons_color_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Scalar&gt; MainMenu::buttons_color_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Контейнер для хранения цвета каждой кнопки </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00175">175</a></p>
+
+</div>
+</div>
+<a id="ae70524216396d958e84697846751db33" name="ae70524216396d958e84697846751db33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae70524216396d958e84697846751db33">&#9670;&#160;</a></span>chessboards_path_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string MainMenu::chessboards_path_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Путь к папке с фотографиями шахматной доски </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00209">209</a></p>
+
+</div>
+</div>
+<a id="a141c52a3decb4c9f74528cd158347a9e" name="a141c52a3decb4c9f74528cd158347a9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a141c52a3decb4c9f74528cd158347a9e">&#9670;&#160;</a></span>font</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainMenu::font</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Шрифт </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00154">154</a></p>
+
+</div>
+</div>
+<a id="a2c1c1409a6638988fa33fb7e073ba13d" name="a2c1c1409a6638988fa33fb7e073ba13d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c1c1409a6638988fa33fb7e073ba13d">&#9670;&#160;</a></span>font_scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double MainMenu::font_scale</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Величина шрифта </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00158">158</a></p>
+
+</div>
+</div>
+<a id="a4ecd32d232bdc09bad417fec831efe2b" name="a4ecd32d232bdc09bad417fec831efe2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ecd32d232bdc09bad417fec831efe2b">&#9670;&#160;</a></span>input_calibration_video_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string MainMenu::input_calibration_video_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Имя (путь) входного файла (видео) для калибровки </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00189">189</a></p>
+
+</div>
+</div>
+<a id="a43569f3b9d5700184c9cd21e760e78b0" name="a43569f3b9d5700184c9cd21e760e78b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43569f3b9d5700184c9cd21e760e78b0">&#9670;&#160;</a></span>input_distorted_video_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string MainMenu::input_distorted_video_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Имя (путь) входного файла (видео) для удаления дисторсии </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00193">193</a></p>
+
+</div>
+</div>
+<a id="abbc9df90951e4ef60b081c2971fbd978" name="abbc9df90951e4ef60b081c2971fbd978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbc9df90951e4ef60b081c2971fbd978">&#9670;&#160;</a></span>input_movement_enlargment_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string MainMenu::input_movement_enlargment_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Имя (путь) входного файла (видео) для усиления движения </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00213">213</a></p>
+
+</div>
+</div>
+<a id="a085f0e7b8a81371f8b868f447b787ac1" name="a085f0e7b8a81371f8b868f447b787ac1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a085f0e7b8a81371f8b868f447b787ac1">&#9670;&#160;</a></span>input_vibration_detection_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string MainMenu::input_vibration_detection_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Имя (путь) входного файла (видео) для детекции вибрации </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00201">201</a></p>
+
+</div>
+</div>
+<a id="a40e69fd0735c12fa24bc0c6ef37bf237" name="a40e69fd0735c12fa24bc0c6ef37bf237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40e69fd0735c12fa24bc0c6ef37bf237">&#9670;&#160;</a></span>last_mouse_position_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point2i MainMenu::last_mouse_position_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Последние найденные в callback координаты курсора </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00171">171</a></p>
+
+</div>
+</div>
+<a id="a21f7500296ee52056ba2ff187d437558" name="a21f7500296ee52056ba2ff187d437558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21f7500296ee52056ba2ff187d437558">&#9670;&#160;</a></span>menu_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat MainMenu::menu_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Изображение меню, на котором будет происходить отрисовка </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00106">106</a></p>
+
+</div>
+</div>
+<a id="ae2c50f92a5f3c7486e7a3ad9ef866221" name="ae2c50f92a5f3c7486e7a3ad9ef866221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2c50f92a5f3c7486e7a3ad9ef866221">&#9670;&#160;</a></span>menu_height_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainMenu::menu_height_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Высота меню </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00122">122</a></p>
+
+</div>
+</div>
+<a id="a72f1383d94f8e16f245d58fc596392d0" name="a72f1383d94f8e16f245d58fc596392d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72f1383d94f8e16f245d58fc596392d0">&#9670;&#160;</a></span>menu_width_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainMenu::menu_width_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ширина меню </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00118">118</a></p>
+
+</div>
+</div>
+<a id="a7807da405b38a72055b51da2230c551b" name="a7807da405b38a72055b51da2230c551b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7807da405b38a72055b51da2230c551b">&#9670;&#160;</a></span>mode_chosen_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainMenu::mode_chosen_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Флаг выбранного режима </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00179">179</a></p>
+
+</div>
+</div>
+<a id="a29d7b279fb12523356ba6e084dd1a5e4" name="a29d7b279fb12523356ba6e084dd1a5e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29d7b279fb12523356ba6e084dd1a5e4">&#9670;&#160;</a></span>output_movement_enlargement_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string MainMenu::output_movement_enlargement_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Имя (путь) выходного файла (видео) для усиления движения </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00217">217</a></p>
+
+</div>
+</div>
+<a id="ae1388275b984f4d7e5975c42bd20a45e" name="ae1388275b984f4d7e5975c42bd20a45e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1388275b984f4d7e5975c42bd20a45e">&#9670;&#160;</a></span>output_undistorted_video_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string MainMenu::output_undistorted_video_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Имя (путь) выходного файла (видео) после удаления дисторсии </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00197">197</a></p>
+
+</div>
+</div>
+<a id="a4e9d0a1af8b544e9f4b856f02864c26f" name="a4e9d0a1af8b544e9f4b856f02864c26f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e9d0a1af8b544e9f4b856f02864c26f">&#9670;&#160;</a></span>output_vibration_detection_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string MainMenu::output_vibration_detection_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Имя (путь) выходного файла (видео) после детекции вибрации </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00205">205</a></p>
+
+</div>
+</div>
+<a id="a300dd1a1e464e73087d4feabb94e8fb9" name="a300dd1a1e464e73087d4feabb94e8fb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a300dd1a1e464e73087d4feabb94e8fb9">&#9670;&#160;</a></span>params_file_name_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string MainMenu::params_file_name_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Путь файла с параметрами </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00098">98</a></p>
+
+</div>
+</div>
+<a id="a29d574adf0376f03c3ef3918fd87141e" name="a29d574adf0376f03c3ef3918fd87141e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29d574adf0376f03c3ef3918fd87141e">&#9670;&#160;</a></span>thickness</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainMenu::thickness</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Толщина шрифта </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00162">162</a></p>
+
+</div>
+</div>
+<a id="a726804731d9b92dc1797ec69c2e48f93" name="a726804731d9b92dc1797ec69c2e48f93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a726804731d9b92dc1797ec69c2e48f93">&#9670;&#160;</a></span>top_offset_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainMenu::top_offset_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отступ от застаканных кнопок сверху </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00142">142</a></p>
+
+</div>
+</div>
+<a id="a5e2264e9d3087ffdc1e64fc48777f7c2" name="a5e2264e9d3087ffdc1e64fc48777f7c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e2264e9d3087ffdc1e64fc48777f7c2">&#9670;&#160;</a></span>wanna_quit_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainMenu::wanna_quit_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Флаг выхода из программы </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00183">183</a></p>
+
+</div>
+</div>
+<a id="ac8cde06a54ac62981f6ee2aaab284dbc" name="ac8cde06a54ac62981f6ee2aaab284dbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8cde06a54ac62981f6ee2aaab284dbc">&#9670;&#160;</a></span>width_offset_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainMenu::width_offset_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отступ с двух сторон от кнопки по ширине </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00150">150</a></p>
+
+</div>
+</div>
+<a id="a8b8a1a133a5ef0bfcb8203b104d9e7d8" name="a8b8a1a133a5ef0bfcb8203b104d9e7d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b8a1a133a5ef0bfcb8203b104d9e7d8">&#9670;&#160;</a></span>winname_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string MainMenu::winname_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название окна </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main__menu_8h_source.html">main_menu.h</a> строка <a class="el" href="main__menu_8h_source.html#l00102">102</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/include/GUI/<a class="el" href="main__menu_8h_source.html">main_menu.h</a></li>
+<li>C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/source/<a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

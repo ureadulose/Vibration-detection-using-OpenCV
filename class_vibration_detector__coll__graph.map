@@ -1,0 +1,4 @@
+<map id="VibrationDetector" name="VibrationDetector">
+<area shape="rect" id="node1" title="Класс для создания объектов&#45;детекторов вибрации" alt="" coords="5,93,128,119"/>
+<area shape="rect" id="node2" href="$class_frame_handler.html" title="Класс для чтения и сохранения кадров видео, а также различной их обработки" alt="" coords="15,5,118,31"/>
+</map>

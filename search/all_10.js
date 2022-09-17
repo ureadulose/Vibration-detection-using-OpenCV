@@ -7,5 +7,7 @@ var searchData=
   ['tl_5fclick_5fcoords_5f_4',['tl_click_coords_',['../class_vibration_detector.html#aef49bdadca0536214393e22addf4ce04',1,'VibrationDetector']]],
   ['to_5fstring_5fwith_5fprecision_5',['to_string_with_precision',['../class_histogram.html#a6f570c207d055c4034e12fca708e8a90',1,'Histogram']]],
   ['top_5foffset_5f_6',['top_offset_',['../class_main_menu.html#a726804731d9b92dc1797ec69c2e48f93',1,'MainMenu']]],
-  ['tostringwithprecision_7',['ToStringWithPrecision',['../group___helper_functions.html#gad8a95244f86df84c8f5d35197fe0196f',1,'HelperFunctions']]]
+  ['tostringwithprecision_7',['ToStringWithPrecision',['../group___helper_functions.html#gad8a95244f86df84c8f5d35197fe0196f',1,'HelperFunctions']]],
+  ['trackandcalc_8',['TrackAndCalc',['../class_vibration_detector.html#a81f38d7f3d0599b01186a122d68d09ee',1,'VibrationDetector']]],
+  ['txt_5ffile_5fname_5f_9',['txt_file_name_',['../class_camera_calibrator.html#ab6d7ca5b52ba0cdab65c1dc0230697ce',1,'CameraCalibrator::txt_file_name_()'],['../class_video_undistorter.html#af84edc3f788032cdb9895f05ab4a984b',1,'VideoUndistorter::txt_file_name_()']]]
 ];

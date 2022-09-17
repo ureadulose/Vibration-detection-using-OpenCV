@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Visual Vibration Tracking: Исходный файл C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/include/VVT-V2/colored_point_handler.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Visual Vibration Tracking<span id="projectnumber">&#160;0.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_1a7b6f8ea6414524e6d315978b19a51d.html">seeyo</a></li><li class="navelem"><a class="el" href="dir_2849c7605547aec047c1bbd084b35fb3.html">source</a></li><li class="navelem"><a class="el" href="dir_e74395836ad52566ee1a5217dc9ad081.html">repos</a></li><li class="navelem"><a class="el" href="dir_9c05f254fdeb3977de6d7fceb436c906.html">Visual-Vibration-Tracking-V2</a></li><li class="navelem"><a class="el" href="dir_77f13ed43646d921c318463cd4f3fa10.html">include</a></li><li class="navelem"><a class="el" href="dir_762d7f7302bd579d65515ab4a74cadf6.html">VVT-V2</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">colored_point_handler.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef COLORED_POINT_HANDLER_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define COLORED_POINT_HANDLER_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// standart headers</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// OpenCV headers</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;opencv2/opencv.hpp&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// my headers</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;VVT-V2/vibrating_point.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;VVT-V2/histogram.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;VVT-V2/output_to_csv.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using namespace </span>cv;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_colored_point_handler.html">   26</a></span><span class="keyword">class </span><a class="code hl_class" href="class_colored_point_handler.html">ColoredPointHandler</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_histogram.html">Histogram</a>, <span class="keyword">public</span> <a class="code hl_class" href="class_vibrating_point.html">VibratingPoint</a>, <span class="keyword">public</span> <a class="code hl_class" href="class_output_to_csv.html">OutputToCsv</a></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_colored_point_handler.html#ad0550fe1aac50d476a071743e3c3802a">   31</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_colored_point_handler.html#ad0550fe1aac50d476a071743e3c3802a">coloring_mode</a></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        DEFAULT,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        COLORING_BASED_ON_FREQUENCY,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        COLORING_BASED_ON_AMPLITUDE,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    };</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_class" href="class_colored_point_handler.html">ColoredPointHandler</a>(Point2f init_coordinates, <span class="keywordtype">double</span> sampling_rate, <span class="keywordtype">int</span> point_id, <span class="keywordtype">float</span> radius_resize_factor, std::string output_csv_filename);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_function" href="class_colored_point_handler.html#a55e451f03127858deb1dda40e2124611">~ColoredPointHandler</a>();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_colored_point_handler.html#ad16eb2210bc1e9f8983186088cc9a573">Draw</a>(Mat&amp; frame) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_colored_point_handler.html#aca8be23a3787bd9f62dd0f950c1f2645">SetColoringMode</a>(<span class="keywordtype">int</span> <a class="code hl_enumeration" href="class_colored_point_handler.html#ad0550fe1aac50d476a071743e3c3802a">coloring_mode</a>);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_colored_point_handler.html#a3c6b8eef49c18add5c4c56d9035c06df">DrawHistogram</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_colored_point_handler.html#a19d02da549d21bce5167c041257ad808">DrawPoint</a>(Mat&amp; frame);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_colored_point_handler.html#ae36ef1c44415f932993212c8aff980f6">DrawInteractionRectangle</a>(Mat&amp; frame);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_colored_point_handler.html#ad360ca58ca141acaf11d98a9bf59483b">UpdatePointColor</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="comment">// Текущий режим работы (цвета на основе амплитуд/частот)</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordtype">int</span> coloring_mode_;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_colored_point_handler.html#a1920c209cdbaf82feee3310787cedc47">   94</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_colored_point_handler.html#a1920c209cdbaf82feee3310787cedc47">radius_resize_factor_</a>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="class_colored_point_handler.html#a10084b9ba7abcc7a6637cf51ae688a5d">   98</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_colored_point_handler.html#a10084b9ba7abcc7a6637cf51ae688a5d">point_id_</a>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="class_colored_point_handler.html#a4b3ee0b18de6bf71cd0f5124ce73c490">  102</a></span>    Scalar <a class="code hl_variable" href="class_colored_point_handler.html#a4b3ee0b18de6bf71cd0f5124ce73c490">point_color_</a>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>};</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_colored_point_handler_html"><div class="ttname"><a href="class_colored_point_handler.html">ColoredPointHandler</a></div><div class="ttdoc">Дочерний (от VibratingPoint) класс. Предназначен для помещения множества цветных точек на кадр и отсл...</div><div class="ttdef"><b>Definition:</b> <a href="colored__point__handler_8h_source.html#l00026">colored_point_handler.h:27</a></div></div>
+<div class="ttc" id="aclass_colored_point_handler_html_a10084b9ba7abcc7a6637cf51ae688a5d"><div class="ttname"><a href="class_colored_point_handler.html#a10084b9ba7abcc7a6637cf51ae688a5d">ColoredPointHandler::point_id_</a></div><div class="ttdeci">int point_id_</div><div class="ttdoc">ID точки (нет блин почки)</div><div class="ttdef"><b>Definition:</b> <a href="colored__point__handler_8h_source.html#l00098">colored_point_handler.h:98</a></div></div>
+<div class="ttc" id="aclass_colored_point_handler_html_a1920c209cdbaf82feee3310787cedc47"><div class="ttname"><a href="class_colored_point_handler.html#a1920c209cdbaf82feee3310787cedc47">ColoredPointHandler::radius_resize_factor_</a></div><div class="ttdeci">float radius_resize_factor_</div><div class="ttdoc">Коэффициент рескейла для радиуса точки</div><div class="ttdef"><b>Definition:</b> <a href="colored__point__handler_8h_source.html#l00094">colored_point_handler.h:94</a></div></div>
+<div class="ttc" id="aclass_colored_point_handler_html_a19d02da549d21bce5167c041257ad808"><div class="ttname"><a href="class_colored_point_handler.html#a19d02da549d21bce5167c041257ad808">ColoredPointHandler::DrawPoint</a></div><div class="ttdeci">void DrawPoint(Mat &amp;frame)</div><div class="ttdoc">Отрисовывает точку на кадре</div><div class="ttdef"><b>Definition:</b> <a href="colored__point__handler_8cpp_source.html#l00061">colored_point_handler.cpp:61</a></div></div>
+<div class="ttc" id="aclass_colored_point_handler_html_a3c6b8eef49c18add5c4c56d9035c06df"><div class="ttname"><a href="class_colored_point_handler.html#a3c6b8eef49c18add5c4c56d9035c06df">ColoredPointHandler::DrawHistogram</a></div><div class="ttdeci">void DrawHistogram() override</div><div class="ttdoc">Отрисовывает гистограмму</div><div class="ttdef"><b>Definition:</b> <a href="colored__point__handler_8cpp_source.html#l00051">colored_point_handler.cpp:51</a></div></div>
+<div class="ttc" id="aclass_colored_point_handler_html_a4b3ee0b18de6bf71cd0f5124ce73c490"><div class="ttname"><a href="class_colored_point_handler.html#a4b3ee0b18de6bf71cd0f5124ce73c490">ColoredPointHandler::point_color_</a></div><div class="ttdeci">Scalar point_color_</div><div class="ttdoc">Цвет точки</div><div class="ttdef"><b>Definition:</b> <a href="colored__point__handler_8h_source.html#l00102">colored_point_handler.h:102</a></div></div>
+<div class="ttc" id="aclass_colored_point_handler_html_a55e451f03127858deb1dda40e2124611"><div class="ttname"><a href="class_colored_point_handler.html#a55e451f03127858deb1dda40e2124611">ColoredPointHandler::~ColoredPointHandler</a></div><div class="ttdeci">~ColoredPointHandler()</div><div class="ttdoc">Деструктор этого класса</div><div class="ttdef"><b>Definition:</b> <a href="colored__point__handler_8cpp_source.html#l00033">colored_point_handler.cpp:33</a></div></div>
+<div class="ttc" id="aclass_colored_point_handler_html_aca8be23a3787bd9f62dd0f950c1f2645"><div class="ttname"><a href="class_colored_point_handler.html#aca8be23a3787bd9f62dd0f950c1f2645">ColoredPointHandler::SetColoringMode</a></div><div class="ttdeci">void SetColoringMode(int coloring_mode)</div><div class="ttdoc">Устанавливает нужный режим отрисовки цветом</div><div class="ttdef"><b>Definition:</b> <a href="colored__point__handler_8cpp_source.html#l00046">colored_point_handler.cpp:46</a></div></div>
+<div class="ttc" id="aclass_colored_point_handler_html_ad0550fe1aac50d476a071743e3c3802a"><div class="ttname"><a href="class_colored_point_handler.html#ad0550fe1aac50d476a071743e3c3802a">ColoredPointHandler::coloring_mode</a></div><div class="ttdeci">coloring_mode</div><div class="ttdoc">Перечисление, используемое для более удобного отображения текущего режима подсветки точки</div><div class="ttdef"><b>Definition:</b> <a href="colored__point__handler_8h_source.html#l00031">colored_point_handler.h:32</a></div></div>
+<div class="ttc" id="aclass_colored_point_handler_html_ad16eb2210bc1e9f8983186088cc9a573"><div class="ttname"><a href="class_colored_point_handler.html#ad16eb2210bc1e9f8983186088cc9a573">ColoredPointHandler::Draw</a></div><div class="ttdeci">void Draw(Mat &amp;frame) override</div><div class="ttdoc">Отрисовывает точку и данные, связанные с ней</div><div class="ttdef"><b>Definition:</b> <a href="colored__point__handler_8cpp_source.html#l00038">colored_point_handler.cpp:38</a></div></div>
+<div class="ttc" id="aclass_colored_point_handler_html_ad360ca58ca141acaf11d98a9bf59483b"><div class="ttname"><a href="class_colored_point_handler.html#ad360ca58ca141acaf11d98a9bf59483b">ColoredPointHandler::UpdatePointColor</a></div><div class="ttdeci">void UpdatePointColor() override</div><div class="ttdoc">Обновляет текущий цвет точки</div><div class="ttdef"><b>Definition:</b> <a href="colored__point__handler_8cpp_source.html#l00073">colored_point_handler.cpp:73</a></div></div>
+<div class="ttc" id="aclass_colored_point_handler_html_ae36ef1c44415f932993212c8aff980f6"><div class="ttname"><a href="class_colored_point_handler.html#ae36ef1c44415f932993212c8aff980f6">ColoredPointHandler::DrawInteractionRectangle</a></div><div class="ttdeci">void DrawInteractionRectangle(Mat &amp;frame)</div><div class="ttdoc">Отрисовывает прямоугольник взаимодействия</div><div class="ttdef"><b>Definition:</b> <a href="colored__point__handler_8cpp_source.html#l00068">colored_point_handler.cpp:68</a></div></div>
+<div class="ttc" id="aclass_histogram_html"><div class="ttname"><a href="class_histogram.html">Histogram</a></div><div class="ttdoc">Класс для создания объектов-гистограмм, на которые можно выводить различную информацию</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00016">histogram.h:17</a></div></div>
+<div class="ttc" id="aclass_output_to_csv_html"><div class="ttname"><a href="class_output_to_csv.html">OutputToCsv</a></div><div class="ttdoc">Класс для сохранения метаданных (временных и пространственных координат, ID точки)</div><div class="ttdef"><b>Definition:</b> <a href="output__to__csv_8h_source.html#l00018">output_to_csv.h:18</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html"><div class="ttname"><a href="class_vibrating_point.html">VibratingPoint</a></div><div class="ttdoc">Абстрактный класс для описания вибрирующей точки</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00024">vibrating_point.h:25</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

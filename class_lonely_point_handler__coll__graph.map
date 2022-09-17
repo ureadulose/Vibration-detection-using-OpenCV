@@ -1,0 +1,6 @@
+<map id="LonelyPointHandler" name="LonelyPointHandler">
+<area shape="rect" id="node1" title="Дочерний (от VibratingPoint) класс. Предназначен для помещения точки на кадр и отслеживания её вибрац..." alt="" coords="95,79,229,104"/>
+<area shape="rect" id="node2" href="$class_histogram.html" title="Класс для создания объектов&#45;гистограмм, на которые можно выводить различную информацию" alt="" coords="5,5,87,31"/>
+<area shape="rect" id="node3" href="$class_vibrating_point.html" title="Абстрактный класс для описания вибрирующей точки" alt="" coords="111,5,213,31"/>
+<area shape="rect" id="node4" href="$class_output_to_csv.html" title="Класс для сохранения метаданных (временных и пространственных координат, ID точки)" alt="" coords="238,5,334,31"/>
+</map>

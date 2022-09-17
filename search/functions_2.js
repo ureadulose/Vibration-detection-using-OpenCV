@@ -10,5 +10,7 @@ var searchData=
   ['concatenateframeshorizontally_7',['ConcatenateFramesHorizontally',['../class_frame_handler.html#a94cec95a902939c5e56361737d113933',1,'FrameHandler']]],
   ['concatenateframesvertically_8',['ConcatenateFramesVertically',['../class_frame_handler.html#a93befa779beed3a21639b629993195d8',1,'FrameHandler']]],
   ['contourhandler_9',['ContourHandler',['../class_contour_handler.html#a166e4049c623a262f39ff0adbc19becc',1,'ContourHandler']]],
-  ['createmenu_10',['CreateMenu',['../class_main_menu.html#a5ecabae61a1ba65a16966268056fa113',1,'MainMenu']]]
+  ['createmenu_10',['CreateMenu',['../class_main_menu.html#a5ecabae61a1ba65a16966268056fa113',1,'MainMenu']]],
+  ['createnewcoloredpoint_11',['CreateNewColoredPoint',['../class_vibration_detector.html#a725d87ae6c09ef9f18c95f8490086478',1,'VibrationDetector']]],
+  ['createnewpoint_12',['CreateNewPoint',['../class_vibration_detector.html#a176e5b0d0ca409c6cfcacdeca13240de',1,'VibrationDetector']]]
 ];

@@ -1,0 +1,1609 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Visual Vibration Tracking: Класс FrameHandler</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Visual Vibration Tracking<span id="projectnumber">&#160;0.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_frame_handler-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс FrameHandler</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для чтения и сохранения кадров видео, а также различной их обработки  
+ <a href="class_frame_handler.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="frame__handler_8h_source.html">frame_handler.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a1e87b87f91fc59dfedae6e9d3a650a3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a1e87b87f91fc59dfedae6e9d3a650a3d">FrameHandler</a> (const std::string input_file_name, const std::string output_file_name, const std::string main_window_name)</td></tr>
+<tr class="memdesc:a1e87b87f91fc59dfedae6e9d3a650a3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор этого класса  <a href="class_frame_handler.html#a1e87b87f91fc59dfedae6e9d3a650a3d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1e87b87f91fc59dfedae6e9d3a650a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3837bca5a13d8e1e4969edf0d831baf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a3837bca5a13d8e1e4969edf0d831baf3">ReadNextFrame</a> ()</td></tr>
+<tr class="memdesc:a3837bca5a13d8e1e4969edf0d831baf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Считывает следующий кадр видео  <a href="class_frame_handler.html#a3837bca5a13d8e1e4969edf0d831baf3">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3837bca5a13d8e1e4969edf0d831baf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a194e20bc41e1d8bb849dc6666f182202"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a194e20bc41e1d8bb849dc6666f182202">ShowFrame</a> (Mat frame, bool fullscreen)</td></tr>
+<tr class="memdesc:a194e20bc41e1d8bb849dc6666f182202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит в главное окно принимаемое изображение  <a href="class_frame_handler.html#a194e20bc41e1d8bb849dc6666f182202">Подробнее...</a><br /></td></tr>
+<tr class="separator:a194e20bc41e1d8bb849dc6666f182202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43fe77a59e8e5d99f7bb0ad3499591ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a43fe77a59e8e5d99f7bb0ad3499591ef">WriteFrame</a> (Mat frame)</td></tr>
+<tr class="memdesc:a43fe77a59e8e5d99f7bb0ad3499591ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записывает кадр с помощью output_cap.  <a href="class_frame_handler.html#a43fe77a59e8e5d99f7bb0ad3499591ef">Подробнее...</a><br /></td></tr>
+<tr class="separator:a43fe77a59e8e5d99f7bb0ad3499591ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94cec95a902939c5e56361737d113933"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a94cec95a902939c5e56361737d113933">ConcatenateFramesHorizontally</a> (Mat left_frame, Mat right_frame)</td></tr>
+<tr class="memdesc:a94cec95a902939c5e56361737d113933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объединяет два кадра горизонтально  <a href="class_frame_handler.html#a94cec95a902939c5e56361737d113933">Подробнее...</a><br /></td></tr>
+<tr class="separator:a94cec95a902939c5e56361737d113933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93befa779beed3a21639b629993195d8"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a93befa779beed3a21639b629993195d8">ConcatenateFramesVertically</a> (Mat top_frame, Mat bottom_frame)</td></tr>
+<tr class="memdesc:a93befa779beed3a21639b629993195d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объединяет два кадра вертикально  <a href="class_frame_handler.html#a93befa779beed3a21639b629993195d8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a93befa779beed3a21639b629993195d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c33b8ad150344db93c24d29bbabd853"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a7c33b8ad150344db93c24d29bbabd853">PutFrameOverFrame</a> (Mat foreground_frame, Mat background_frame, Point2i translation_vector)</td></tr>
+<tr class="memdesc:a7c33b8ad150344db93c24d29bbabd853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Накладывает изображение (переднний план) на другое изображение (задний план)  <a href="class_frame_handler.html#a7c33b8ad150344db93c24d29bbabd853">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7c33b8ad150344db93c24d29bbabd853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bd1108adbbd4c21c4c3233efa8c8d1e"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a4bd1108adbbd4c21c4c3233efa8c8d1e">MakeGrayFrame</a> (Mat frame_to_be_grayed)</td></tr>
+<tr class="memdesc:a4bd1108adbbd4c21c4c3233efa8c8d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает серый кадр с блюром  <a href="class_frame_handler.html#a4bd1108adbbd4c21c4c3233efa8c8d1e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4bd1108adbbd4c21c4c3233efa8c8d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18519accbae4e5e7a043e81bd6a9d2c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a18519accbae4e5e7a043e81bd6a9d2c6">GetInputCapStatus</a> ()</td></tr>
+<tr class="memdesc:a18519accbae4e5e7a043e81bd6a9d2c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает текущий статус input_cap.  <a href="class_frame_handler.html#a18519accbae4e5e7a043e81bd6a9d2c6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a18519accbae4e5e7a043e81bd6a9d2c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b5695df6161f00af36210e4d3d78ad"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a26b5695df6161f00af36210e4d3d78ad">GetCurrentFrame</a> ()</td></tr>
+<tr class="memdesc:a26b5695df6161f00af36210e4d3d78ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает последний прочитанный на данный момент кадр  <a href="class_frame_handler.html#a26b5695df6161f00af36210e4d3d78ad">Подробнее...</a><br /></td></tr>
+<tr class="separator:a26b5695df6161f00af36210e4d3d78ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115a1da50a8bc1b00d703b6f8c44222b"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a115a1da50a8bc1b00d703b6f8c44222b">GetMainWindowName</a> ()</td></tr>
+<tr class="memdesc:a115a1da50a8bc1b00d703b6f8c44222b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает название главного окна, в которое выводятся кадры  <a href="class_frame_handler.html#a115a1da50a8bc1b00d703b6f8c44222b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a115a1da50a8bc1b00d703b6f8c44222b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61109313b6d4a9a21783a9c7b66dea68"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a61109313b6d4a9a21783a9c7b66dea68">GetCurrentTimeOfFrame</a> ()</td></tr>
+<tr class="memdesc:a61109313b6d4a9a21783a9c7b66dea68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает текущее время кадра (таймкод в мс)  <a href="class_frame_handler.html#a61109313b6d4a9a21783a9c7b66dea68">Подробнее...</a><br /></td></tr>
+<tr class="separator:a61109313b6d4a9a21783a9c7b66dea68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79ab90b6a2ce7ea8fef695a11bef514c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a79ab90b6a2ce7ea8fef695a11bef514c">GetCurrentPosOfFrame</a> ()</td></tr>
+<tr class="memdesc:a79ab90b6a2ce7ea8fef695a11bef514c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает текущее положение кадра относительно первого  <a href="class_frame_handler.html#a79ab90b6a2ce7ea8fef695a11bef514c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a79ab90b6a2ce7ea8fef695a11bef514c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a926273fbb3a3901c9a5a75e3380e16"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a0a926273fbb3a3901c9a5a75e3380e16">GetAmountOfFrames</a> ()</td></tr>
+<tr class="memdesc:a0a926273fbb3a3901c9a5a75e3380e16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает общее количество кадров  <a href="class_frame_handler.html#a0a926273fbb3a3901c9a5a75e3380e16">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0a926273fbb3a3901c9a5a75e3380e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7871807bfd918b88272a175aa33ea165"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a7871807bfd918b88272a175aa33ea165">GetInputFps</a> ()</td></tr>
+<tr class="memdesc:a7871807bfd918b88272a175aa33ea165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает FPS считываемого видео  <a href="class_frame_handler.html#a7871807bfd918b88272a175aa33ea165">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7871807bfd918b88272a175aa33ea165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a128638bf1c2d42a6ef84bdd67d6bf442"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a128638bf1c2d42a6ef84bdd67d6bf442">GetFrameWidth</a> ()</td></tr>
+<tr class="memdesc:a128638bf1c2d42a6ef84bdd67d6bf442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает ширину исходного видео  <a href="class_frame_handler.html#a128638bf1c2d42a6ef84bdd67d6bf442">Подробнее...</a><br /></td></tr>
+<tr class="separator:a128638bf1c2d42a6ef84bdd67d6bf442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd588ce2d914edf1d719f86cca3912c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#abd588ce2d914edf1d719f86cca3912c5">GetFrameHeight</a> ()</td></tr>
+<tr class="memdesc:abd588ce2d914edf1d719f86cca3912c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает высоту считываемого видео  <a href="class_frame_handler.html#abd588ce2d914edf1d719f86cca3912c5">Подробнее...</a><br /></td></tr>
+<tr class="separator:abd588ce2d914edf1d719f86cca3912c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae37c57501fea114483f4ea51da37d08a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#ae37c57501fea114483f4ea51da37d08a">GetTextResizeFactor</a> ()</td></tr>
+<tr class="memdesc:ae37c57501fea114483f4ea51da37d08a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает коэффициент масштабирования  <a href="class_frame_handler.html#ae37c57501fea114483f4ea51da37d08a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae37c57501fea114483f4ea51da37d08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13af7fdd06b373db04ece2adc6e62d14"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a13af7fdd06b373db04ece2adc6e62d14">AddTips</a> (Mat frame, int mode)</td></tr>
+<tr class="memdesc:a13af7fdd06b373db04ece2adc6e62d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет (отрисовывает) подсказки для пользователя на кадр  <a href="class_frame_handler.html#a13af7fdd06b373db04ece2adc6e62d14">Подробнее...</a><br /></td></tr>
+<tr class="separator:a13af7fdd06b373db04ece2adc6e62d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac586501514225a9e054845c69fe9ccc7"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#ac586501514225a9e054845c69fe9ccc7">GenerateGradScale</a> (int left_limit, int right_limit, int colored_point_mode)</td></tr>
+<tr class="memdesc:ac586501514225a9e054845c69fe9ccc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Генерирует шкалу с градиентом и подписями. Ширина шкалы - ширина исходного видео. Высота регулируется внутри  <a href="class_frame_handler.html#ac586501514225a9e054845c69fe9ccc7">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac586501514225a9e054845c69fe9ccc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:ae3165c660c17d4b410c1690d13fda93c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#ae3165c660c17d4b410c1690d13fda93c">InitTextResizeFactors</a> ()</td></tr>
+<tr class="memdesc:ae3165c660c17d4b410c1690d13fda93c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализирует коэффициент масштабирования текста в зависимости от разрешения видео  <a href="class_frame_handler.html#ae3165c660c17d4b410c1690d13fda93c">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae3165c660c17d4b410c1690d13fda93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a2047595394b429b3233474c17af56c3d"><td class="memItemLeft" align="right" valign="top">Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a2047595394b429b3233474c17af56c3d">current_frame_</a></td></tr>
+<tr class="memdesc:a2047595394b429b3233474c17af56c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Последнний прочитанный кадр  <a href="class_frame_handler.html#a2047595394b429b3233474c17af56c3d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2047595394b429b3233474c17af56c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56190979d8bfe9b896ca05fa23052136"><td class="memItemLeft" align="right" valign="top">VideoCapture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a56190979d8bfe9b896ca05fa23052136">input_cap_</a></td></tr>
+<tr class="memdesc:a56190979d8bfe9b896ca05fa23052136"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на объект-захватчик входных кадров видео  <a href="class_frame_handler.html#a56190979d8bfe9b896ca05fa23052136">Подробнее...</a><br /></td></tr>
+<tr class="separator:a56190979d8bfe9b896ca05fa23052136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6644d694da107a0b432d7a4d9d3afd39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a6644d694da107a0b432d7a4d9d3afd39">input_cap_status_</a></td></tr>
+<tr class="memdesc:a6644d694da107a0b432d7a4d9d3afd39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг, принимающий true при удачном чтении кадра и false, если следующий кадр не был считан  <a href="class_frame_handler.html#a6644d694da107a0b432d7a4d9d3afd39">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6644d694da107a0b432d7a4d9d3afd39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77346c9760c6406958ff9bd9034be2c"><td class="memItemLeft" align="right" valign="top">VideoWriter *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#af77346c9760c6406958ff9bd9034be2c">output_cap_</a></td></tr>
+<tr class="memdesc:af77346c9760c6406958ff9bd9034be2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на объект, сохраняющий кадры в последовательность (видео) в зависимости от выбранного кодека (cv::fourcc)  <a href="class_frame_handler.html#af77346c9760c6406958ff9bd9034be2c">Подробнее...</a><br /></td></tr>
+<tr class="separator:af77346c9760c6406958ff9bd9034be2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a948132ceb761b1c9f1c5c71deee75"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#af5a948132ceb761b1c9f1c5c71deee75">main_window_name_</a></td></tr>
+<tr class="memdesc:af5a948132ceb761b1c9f1c5c71deee75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя главного окна  <a href="class_frame_handler.html#af5a948132ceb761b1c9f1c5c71deee75">Подробнее...</a><br /></td></tr>
+<tr class="separator:af5a948132ceb761b1c9f1c5c71deee75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a053396cb9e34ffe2b301b29fec72a0cc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a053396cb9e34ffe2b301b29fec72a0cc">fullscreen_</a></td></tr>
+<tr class="memdesc:a053396cb9e34ffe2b301b29fec72a0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг полноэкранного режима  <a href="class_frame_handler.html#a053396cb9e34ffe2b301b29fec72a0cc">Подробнее...</a><br /></td></tr>
+<tr class="separator:a053396cb9e34ffe2b301b29fec72a0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc1333f07f5bb10f34c2d37459e79b9e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#acc1333f07f5bb10f34c2d37459e79b9e">input_frame_width_</a></td></tr>
+<tr class="memdesc:acc1333f07f5bb10f34c2d37459e79b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ширина кадра исходного видео  <a href="class_frame_handler.html#acc1333f07f5bb10f34c2d37459e79b9e">Подробнее...</a><br /></td></tr>
+<tr class="separator:acc1333f07f5bb10f34c2d37459e79b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b32b3317313f0affe872c2d9ab63f6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a90b32b3317313f0affe872c2d9ab63f6">input_frame_height_</a></td></tr>
+<tr class="memdesc:a90b32b3317313f0affe872c2d9ab63f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Высота кадра исходного видео  <a href="class_frame_handler.html#a90b32b3317313f0affe872c2d9ab63f6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a90b32b3317313f0affe872c2d9ab63f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afab579c6e630ae2bf9fdc47a2f9177dc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#afab579c6e630ae2bf9fdc47a2f9177dc">input_frame_size_ratio_</a></td></tr>
+<tr class="memdesc:afab579c6e630ae2bf9fdc47a2f9177dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Соотношение сторон исходного видео  <a href="class_frame_handler.html#afab579c6e630ae2bf9fdc47a2f9177dc">Подробнее...</a><br /></td></tr>
+<tr class="separator:afab579c6e630ae2bf9fdc47a2f9177dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52b12ec33b607d0eb0250c648e819609"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a52b12ec33b607d0eb0250c648e819609">input_fps_</a></td></tr>
+<tr class="memdesc:a52b12ec33b607d0eb0250c648e819609"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPS исходного видео  <a href="class_frame_handler.html#a52b12ec33b607d0eb0250c648e819609">Подробнее...</a><br /></td></tr>
+<tr class="separator:a52b12ec33b607d0eb0250c648e819609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a103fd8c5d4ab70aae5b5e8fe9a8b57fd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a103fd8c5d4ab70aae5b5e8fe9a8b57fd">current_time_of_frame_</a></td></tr>
+<tr class="memdesc:a103fd8c5d4ab70aae5b5e8fe9a8b57fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущее время кадра из последовательности  <a href="class_frame_handler.html#a103fd8c5d4ab70aae5b5e8fe9a8b57fd">Подробнее...</a><br /></td></tr>
+<tr class="separator:a103fd8c5d4ab70aae5b5e8fe9a8b57fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97cfa371c3ac3ecdde04f19422c986c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#ae97cfa371c3ac3ecdde04f19422c986c">current_pos_of_frame_</a></td></tr>
+<tr class="memdesc:ae97cfa371c3ac3ecdde04f19422c986c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущий номер кадра из последовательности  <a href="class_frame_handler.html#ae97cfa371c3ac3ecdde04f19422c986c">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae97cfa371c3ac3ecdde04f19422c986c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51cbdce3182856d3fa5e4209bfd859b4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a51cbdce3182856d3fa5e4209bfd859b4">text_resize_factor_</a></td></tr>
+<tr class="memdesc:a51cbdce3182856d3fa5e4209bfd859b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Коэффициент масштабирования текста (зависит от разрешения исходного видео)  <a href="class_frame_handler.html#a51cbdce3182856d3fa5e4209bfd859b4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a51cbdce3182856d3fa5e4209bfd859b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aa22fb456140327c3848efdea1536b4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_handler.html#a2aa22fb456140327c3848efdea1536b4">tip_text_</a></td></tr>
+<tr class="memdesc:a2aa22fb456140327c3848efdea1536b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тексты подсказок для пользователя  <a href="class_frame_handler.html#a2aa22fb456140327c3848efdea1536b4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2aa22fb456140327c3848efdea1536b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p >Класс для чтения и сохранения кадров видео, а также различной их обработки </p>
+<p >Объект класса захватывает последовательность кадров по имени (пути) входного видео, после чего, обращаясь к объекту класса можно считывать кадры с помощью метода ReadNextFrame</p>
+<p >Для записи кадра необходимо использовать метод WriteFrame, который в качестве аргумента принимает cv::Mat объект (изображение) и записывает его в конец выходной последовательности (видео) </p><dl class="section note"><dt>Заметки</dt><dd>Дополнительно добавляет на кадр подсказки для пользователя (метод AddTips) и градиент (GenerateGradScale) </dd>
+<dd>
+Дополнительно может конкатенировать (объединять в одно изображение два) cv::Mat-сущности по горизонтали или по вертикали </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8h_source.html">frame_handler.h</a> строка <a class="el" href="frame__handler_8h_source.html#l00028">28</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a1e87b87f91fc59dfedae6e9d3a650a3d" name="a1e87b87f91fc59dfedae6e9d3a650a3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e87b87f91fc59dfedae6e9d3a650a3d">&#9670;&#160;</a></span>FrameHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FrameHandler::FrameHandler </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>input_file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>output_file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>main_window_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор этого класса </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_file_name</td><td>имя (путь) входного видео для обработки </td></tr>
+    <tr><td class="paramname">output_file_name</td><td>имя (путь) выходдного видео после обработки </td></tr>
+    <tr><td class="paramname">main_window_name</td><td>название главного окна </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00003">3</a></p>
+<div class="fragment"><div class="line"><span class="lineno">    3</span>                                                                                                                              :</div>
+<div class="line"><span class="lineno">    4</span>    <a class="code hl_variable" href="class_frame_handler.html#a56190979d8bfe9b896ca05fa23052136">input_cap_</a>{ <span class="keyword">new</span> VideoCapture(input_file_name) },</div>
+<div class="line"><span class="lineno">    5</span>    <a class="code hl_variable" href="class_frame_handler.html#a6644d694da107a0b432d7a4d9d3afd39">input_cap_status_</a>{ <span class="keyword">false</span> },</div>
+<div class="line"><span class="lineno">    6</span>    <a class="code hl_variable" href="class_frame_handler.html#af77346c9760c6406958ff9bd9034be2c">output_cap_</a>{ <span class="keyword">new</span> VideoWriter(output_file_name, VideoWriter::fourcc(<span class="charliteral">&#39;D&#39;</span>, <span class="charliteral">&#39;I&#39;</span>, <span class="charliteral">&#39;V&#39;</span>, <span class="charliteral">&#39;X&#39;</span>), <a class="code hl_variable" href="class_frame_handler.html#a56190979d8bfe9b896ca05fa23052136">input_cap_</a>-&gt;get(CAP_PROP_FPS), Size(<a class="code hl_variable" href="class_frame_handler.html#a56190979d8bfe9b896ca05fa23052136">input_cap_</a>-&gt;get(CAP_PROP_FRAME_WIDTH), <a class="code hl_variable" href="class_frame_handler.html#a56190979d8bfe9b896ca05fa23052136">input_cap_</a>-&gt;get(CAP_PROP_FRAME_HEIGHT))) },</div>
+<div class="line"><span class="lineno">    7</span>    <a class="code hl_variable" href="class_frame_handler.html#af5a948132ceb761b1c9f1c5c71deee75">main_window_name_</a>{ main_window_name },</div>
+<div class="line"><span class="lineno">    8</span>    <a class="code hl_variable" href="class_frame_handler.html#a103fd8c5d4ab70aae5b5e8fe9a8b57fd">current_time_of_frame_</a>{ 0 },</div>
+<div class="line"><span class="lineno">    9</span>    <a class="code hl_variable" href="class_frame_handler.html#ae97cfa371c3ac3ecdde04f19422c986c">current_pos_of_frame_</a>{ 0 },</div>
+<div class="line"><span class="lineno">   10</span>    <a class="code hl_variable" href="class_frame_handler.html#a053396cb9e34ffe2b301b29fec72a0cc">fullscreen_</a>{ <span class="keyword">false</span> },</div>
+<div class="line"><span class="lineno">   11</span>    <a class="code hl_variable" href="class_frame_handler.html#a52b12ec33b607d0eb0250c648e819609">input_fps_</a>{ <a class="code hl_variable" href="class_frame_handler.html#a56190979d8bfe9b896ca05fa23052136">input_cap_</a>-&gt;get(CAP_PROP_FPS) },</div>
+<div class="line"><span class="lineno">   12</span>    <a class="code hl_variable" href="class_frame_handler.html#a90b32b3317313f0affe872c2d9ab63f6">input_frame_height_</a>{ <a class="code hl_variable" href="class_frame_handler.html#a56190979d8bfe9b896ca05fa23052136">input_cap_</a>-&gt;get(CAP_PROP_FRAME_HEIGHT) },</div>
+<div class="line"><span class="lineno">   13</span>    <a class="code hl_variable" href="class_frame_handler.html#acc1333f07f5bb10f34c2d37459e79b9e">input_frame_width_</a>{ <a class="code hl_variable" href="class_frame_handler.html#a56190979d8bfe9b896ca05fa23052136">input_cap_</a>-&gt;get(CAP_PROP_FRAME_WIDTH) },</div>
+<div class="line"><span class="lineno">   14</span>    <a class="code hl_variable" href="class_frame_handler.html#afab579c6e630ae2bf9fdc47a2f9177dc">input_frame_size_ratio_</a>{ <a class="code hl_variable" href="class_frame_handler.html#acc1333f07f5bb10f34c2d37459e79b9e">input_frame_width_</a> / <a class="code hl_variable" href="class_frame_handler.html#a90b32b3317313f0affe872c2d9ab63f6">input_frame_height_</a> },</div>
+<div class="line"><span class="lineno">   15</span>    <a class="code hl_variable" href="class_frame_handler.html#a51cbdce3182856d3fa5e4209bfd859b4">text_resize_factor_</a>{ 1.0f }</div>
+<div class="line"><span class="lineno">   16</span>{</div>
+<div class="line"><span class="lineno">   17</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Input fps is: &quot;</span> &lt;&lt; <a class="code hl_variable" href="class_frame_handler.html#a52b12ec33b607d0eb0250c648e819609">input_fps_</a> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   18</span>    <span class="comment">// создаём окно</span></div>
+<div class="line"><span class="lineno">   19</span>    namedWindow(<a class="code hl_variable" href="class_frame_handler.html#af5a948132ceb761b1c9f1c5c71deee75">main_window_name_</a>, WINDOW_NORMAL);</div>
+<div class="line"><span class="lineno">   20</span> </div>
+<div class="line"><span class="lineno">   21</span>    <span class="comment">// Находим коэффициент масштабирования для текста</span></div>
+<div class="line"><span class="lineno">   22</span>    <a class="code hl_function" href="class_frame_handler.html#ae3165c660c17d4b410c1690d13fda93c">InitTextResizeFactors</a>();</div>
+<div class="line"><span class="lineno">   23</span>    </div>
+<div class="line"><span class="lineno">   24</span>    <span class="comment">// Инициализируем текст подсказок</span></div>
+<div class="line"><span class="lineno">   25</span>    <a class="code hl_variable" href="class_frame_handler.html#a2aa22fb456140327c3848efdea1536b4">tip_text_</a>.push_back(<span class="stringliteral">&quot;Default Mode&quot;</span>);</div>
+<div class="line"><span class="lineno">   26</span>    <a class="code hl_variable" href="class_frame_handler.html#a2aa22fb456140327c3848efdea1536b4">tip_text_</a>.push_back(<span class="stringliteral">&quot;ROI selecting mode (Press &#39;R&#39;)&quot;</span>);</div>
+<div class="line"><span class="lineno">   27</span>    <a class="code hl_variable" href="class_frame_handler.html#a2aa22fb456140327c3848efdea1536b4">tip_text_</a>.push_back(<span class="stringliteral">&quot;Pause (Press &#39;Space&#39;)&quot;</span>);</div>
+<div class="line"><span class="lineno">   28</span>    <a class="code hl_variable" href="class_frame_handler.html#a2aa22fb456140327c3848efdea1536b4">tip_text_</a>.push_back(<span class="stringliteral">&quot;Fullscreen (Press &#39;F&#39;)&quot;</span>);</div>
+<div class="line"><span class="lineno">   29</span>}</div>
+<div class="ttc" id="aclass_frame_handler_html_a053396cb9e34ffe2b301b29fec72a0cc"><div class="ttname"><a href="class_frame_handler.html#a053396cb9e34ffe2b301b29fec72a0cc">FrameHandler::fullscreen_</a></div><div class="ttdeci">bool fullscreen_</div><div class="ttdoc">Флаг полноэкранного режима</div><div class="ttdef"><b>Definition:</b> <a href="frame__handler_8h_source.html#l00184">frame_handler.h:184</a></div></div>
+<div class="ttc" id="aclass_frame_handler_html_a103fd8c5d4ab70aae5b5e8fe9a8b57fd"><div class="ttname"><a href="class_frame_handler.html#a103fd8c5d4ab70aae5b5e8fe9a8b57fd">FrameHandler::current_time_of_frame_</a></div><div class="ttdeci">double current_time_of_frame_</div><div class="ttdoc">Текущее время кадра из последовательности</div><div class="ttdef"><b>Definition:</b> <a href="frame__handler_8h_source.html#l00206">frame_handler.h:206</a></div></div>
+<div class="ttc" id="aclass_frame_handler_html_a2aa22fb456140327c3848efdea1536b4"><div class="ttname"><a href="class_frame_handler.html#a2aa22fb456140327c3848efdea1536b4">FrameHandler::tip_text_</a></div><div class="ttdeci">std::vector&lt; std::string &gt; tip_text_</div><div class="ttdoc">Тексты подсказок для пользователя</div><div class="ttdef"><b>Definition:</b> <a href="frame__handler_8h_source.html#l00218">frame_handler.h:218</a></div></div>
+<div class="ttc" id="aclass_frame_handler_html_a51cbdce3182856d3fa5e4209bfd859b4"><div class="ttname"><a href="class_frame_handler.html#a51cbdce3182856d3fa5e4209bfd859b4">FrameHandler::text_resize_factor_</a></div><div class="ttdeci">float text_resize_factor_</div><div class="ttdoc">Коэффициент масштабирования текста (зависит от разрешения исходного видео)</div><div class="ttdef"><b>Definition:</b> <a href="frame__handler_8h_source.html#l00214">frame_handler.h:214</a></div></div>
+<div class="ttc" id="aclass_frame_handler_html_a52b12ec33b607d0eb0250c648e819609"><div class="ttname"><a href="class_frame_handler.html#a52b12ec33b607d0eb0250c648e819609">FrameHandler::input_fps_</a></div><div class="ttdeci">double input_fps_</div><div class="ttdoc">FPS исходного видео</div><div class="ttdef"><b>Definition:</b> <a href="frame__handler_8h_source.html#l00202">frame_handler.h:202</a></div></div>
+<div class="ttc" id="aclass_frame_handler_html_a56190979d8bfe9b896ca05fa23052136"><div class="ttname"><a href="class_frame_handler.html#a56190979d8bfe9b896ca05fa23052136">FrameHandler::input_cap_</a></div><div class="ttdeci">VideoCapture * input_cap_</div><div class="ttdoc">Указатель на объект-захватчик входных кадров видео</div><div class="ttdef"><b>Definition:</b> <a href="frame__handler_8h_source.html#l00167">frame_handler.h:167</a></div></div>
+<div class="ttc" id="aclass_frame_handler_html_a6644d694da107a0b432d7a4d9d3afd39"><div class="ttname"><a href="class_frame_handler.html#a6644d694da107a0b432d7a4d9d3afd39">FrameHandler::input_cap_status_</a></div><div class="ttdeci">bool input_cap_status_</div><div class="ttdoc">Флаг, принимающий true при удачном чтении кадра и false, если следующий кадр не был считан</div><div class="ttdef"><b>Definition:</b> <a href="frame__handler_8h_source.html#l00171">frame_handler.h:171</a></div></div>
+<div class="ttc" id="aclass_frame_handler_html_a90b32b3317313f0affe872c2d9ab63f6"><div class="ttname"><a href="class_frame_handler.html#a90b32b3317313f0affe872c2d9ab63f6">FrameHandler::input_frame_height_</a></div><div class="ttdeci">double input_frame_height_</div><div class="ttdoc">Высота кадра исходного видео</div><div class="ttdef"><b>Definition:</b> <a href="frame__handler_8h_source.html#l00194">frame_handler.h:194</a></div></div>
+<div class="ttc" id="aclass_frame_handler_html_acc1333f07f5bb10f34c2d37459e79b9e"><div class="ttname"><a href="class_frame_handler.html#acc1333f07f5bb10f34c2d37459e79b9e">FrameHandler::input_frame_width_</a></div><div class="ttdeci">double input_frame_width_</div><div class="ttdoc">Ширина кадра исходного видео</div><div class="ttdef"><b>Definition:</b> <a href="frame__handler_8h_source.html#l00190">frame_handler.h:190</a></div></div>
+<div class="ttc" id="aclass_frame_handler_html_ae3165c660c17d4b410c1690d13fda93c"><div class="ttname"><a href="class_frame_handler.html#ae3165c660c17d4b410c1690d13fda93c">FrameHandler::InitTextResizeFactors</a></div><div class="ttdeci">void InitTextResizeFactors()</div><div class="ttdoc">Инициализирует коэффициент масштабирования текста в зависимости от разрешения видео</div><div class="ttdef"><b>Definition:</b> <a href="frame__handler_8cpp_source.html#l00337">frame_handler.cpp:337</a></div></div>
+<div class="ttc" id="aclass_frame_handler_html_ae97cfa371c3ac3ecdde04f19422c986c"><div class="ttname"><a href="class_frame_handler.html#ae97cfa371c3ac3ecdde04f19422c986c">FrameHandler::current_pos_of_frame_</a></div><div class="ttdeci">int current_pos_of_frame_</div><div class="ttdoc">Текущий номер кадра из последовательности</div><div class="ttdef"><b>Definition:</b> <a href="frame__handler_8h_source.html#l00210">frame_handler.h:210</a></div></div>
+<div class="ttc" id="aclass_frame_handler_html_af5a948132ceb761b1c9f1c5c71deee75"><div class="ttname"><a href="class_frame_handler.html#af5a948132ceb761b1c9f1c5c71deee75">FrameHandler::main_window_name_</a></div><div class="ttdeci">std::string main_window_name_</div><div class="ttdoc">Имя главного окна</div><div class="ttdef"><b>Definition:</b> <a href="frame__handler_8h_source.html#l00179">frame_handler.h:179</a></div></div>
+<div class="ttc" id="aclass_frame_handler_html_af77346c9760c6406958ff9bd9034be2c"><div class="ttname"><a href="class_frame_handler.html#af77346c9760c6406958ff9bd9034be2c">FrameHandler::output_cap_</a></div><div class="ttdeci">VideoWriter * output_cap_</div><div class="ttdoc">Указатель на объект, сохраняющий кадры в последовательность (видео) в зависимости от выбранного кодек...</div><div class="ttdef"><b>Definition:</b> <a href="frame__handler_8h_source.html#l00175">frame_handler.h:175</a></div></div>
+<div class="ttc" id="aclass_frame_handler_html_afab579c6e630ae2bf9fdc47a2f9177dc"><div class="ttname"><a href="class_frame_handler.html#afab579c6e630ae2bf9fdc47a2f9177dc">FrameHandler::input_frame_size_ratio_</a></div><div class="ttdeci">double input_frame_size_ratio_</div><div class="ttdoc">Соотношение сторон исходного видео</div><div class="ttdef"><b>Definition:</b> <a href="frame__handler_8h_source.html#l00198">frame_handler.h:198</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9bf8775f79aae7cc236f7e2844881f5c" name="a9bf8775f79aae7cc236f7e2844881f5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bf8775f79aae7cc236f7e2844881f5c">&#9670;&#160;</a></span>~FrameHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FrameHandler::~FrameHandler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00031">31</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>{</div>
+<div class="line"><span class="lineno">   33</span>    destroyWindow(<a class="code hl_variable" href="class_frame_handler.html#af5a948132ceb761b1c9f1c5c71deee75">main_window_name_</a>);</div>
+<div class="line"><span class="lineno">   34</span>    this-&gt;<a class="code hl_variable" href="class_frame_handler.html#a56190979d8bfe9b896ca05fa23052136">input_cap_</a>-&gt;release();</div>
+<div class="line"><span class="lineno">   35</span>    <span class="keyword">delete</span> this-&gt;<a class="code hl_variable" href="class_frame_handler.html#a56190979d8bfe9b896ca05fa23052136">input_cap_</a>;</div>
+<div class="line"><span class="lineno">   36</span>    this-&gt;<a class="code hl_variable" href="class_frame_handler.html#af77346c9760c6406958ff9bd9034be2c">output_cap_</a>-&gt;release();</div>
+<div class="line"><span class="lineno">   37</span>    <span class="keyword">delete</span> this-&gt;<a class="code hl_variable" href="class_frame_handler.html#af77346c9760c6406958ff9bd9034be2c">output_cap_</a>;</div>
+<div class="line"><span class="lineno">   38</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a13af7fdd06b373db04ece2adc6e62d14" name="a13af7fdd06b373db04ece2adc6e62d14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13af7fdd06b373db04ece2adc6e62d14">&#9670;&#160;</a></span>AddTips()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat FrameHandler::AddTips </td>
+          <td>(</td>
+          <td class="paramtype">Mat&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавляет (отрисовывает) подсказки для пользователя на кадр </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>изображение, на которое будут нанесены подсказки для пользователя </td></tr>
+    <tr><td class="paramname">mode</td><td>текущий режим работы приложения </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>cv::Mat кадр с подсказками </dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Режимы работы приложения: default, ROI selecting, pause </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00201">201</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  202</span>{</div>
+<div class="line"><span class="lineno">  203</span>    <span class="comment">// Параметры шрифта</span></div>
+<div class="line"><span class="lineno">  204</span>    <span class="keywordtype">int</span> font = FONT_HERSHEY_PLAIN;</div>
+<div class="line"><span class="lineno">  205</span>    <span class="keywordtype">double</span> font_scale = 1.5 * <a class="code hl_variable" href="class_frame_handler.html#a51cbdce3182856d3fa5e4209bfd859b4">text_resize_factor_</a>;</div>
+<div class="line"><span class="lineno">  206</span>    <span class="keywordtype">int</span> thickness = 2;</div>
+<div class="line"><span class="lineno">  207</span>    <span class="keywordtype">int</span> baseline = 0;</div>
+<div class="line"><span class="lineno">  208</span>    <span class="keywordtype">int</span> line_spacing = 5;</div>
+<div class="line"><span class="lineno">  209</span>    <span class="keywordtype">int</span> border_offset = 15;</div>
+<div class="line"><span class="lineno">  210</span>    Scalar default_tip_color(150, 150, 150);</div>
+<div class="line"><span class="lineno">  211</span>    Scalar mode_color(100, 255, 100);</div>
+<div class="line"><span class="lineno">  212</span>    <span class="comment">// Выводим тексты подсказок для режимов</span></div>
+<div class="line"><span class="lineno">  213</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_frame_handler.html#a2aa22fb456140327c3848efdea1536b4">tip_text_</a>.size() - 1; i++)</div>
+<div class="line"><span class="lineno">  214</span>    {</div>
+<div class="line"><span class="lineno">  215</span>        Scalar font_color = default_tip_color;</div>
+<div class="line"><span class="lineno">  216</span>        <span class="keywordflow">if</span> (i == mode)</div>
+<div class="line"><span class="lineno">  217</span>        {</div>
+<div class="line"><span class="lineno">  218</span>            font_color = mode_color;</div>
+<div class="line"><span class="lineno">  219</span>            <span class="comment">// Замена кнопки для переключения режимов подсвечивания точек. Пока так)</span></div>
+<div class="line"><span class="lineno">  220</span>        }</div>
+<div class="line"><span class="lineno">  221</span>        putText(</div>
+<div class="line"><span class="lineno">  222</span>            frame,</div>
+<div class="line"><span class="lineno">  223</span>            <a class="code hl_variable" href="class_frame_handler.html#a2aa22fb456140327c3848efdea1536b4">tip_text_</a>[i],</div>
+<div class="line"><span class="lineno">  224</span>            Point2i(</div>
+<div class="line"><span class="lineno">  225</span>                border_offset,</div>
+<div class="line"><span class="lineno">  226</span>                border_offset * <a class="code hl_variable" href="class_frame_handler.html#afab579c6e630ae2bf9fdc47a2f9177dc">input_frame_size_ratio_</a> + i * (getTextSize(<a class="code hl_variable" href="class_frame_handler.html#a2aa22fb456140327c3848efdea1536b4">tip_text_</a>[i], font, font_scale, thickness, &amp;baseline).height + line_spacing)</div>
+<div class="line"><span class="lineno">  227</span>            ),</div>
+<div class="line"><span class="lineno">  228</span>            font,</div>
+<div class="line"><span class="lineno">  229</span>            font_scale,</div>
+<div class="line"><span class="lineno">  230</span>            font_color,</div>
+<div class="line"><span class="lineno">  231</span>            thickness,</div>
+<div class="line"><span class="lineno">  232</span>            4</div>
+<div class="line"><span class="lineno">  233</span>        );</div>
+<div class="line"><span class="lineno">  234</span>    }</div>
+<div class="line"><span class="lineno">  235</span> </div>
+<div class="line"><span class="lineno">  236</span>    <span class="comment">// Выводим текст подсказки для полноэкранного режима</span></div>
+<div class="line"><span class="lineno">  237</span>    Scalar font_color = default_tip_color;</div>
+<div class="line"><span class="lineno">  238</span> </div>
+<div class="line"><span class="lineno">  239</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_frame_handler.html#a053396cb9e34ffe2b301b29fec72a0cc">fullscreen_</a>)</div>
+<div class="line"><span class="lineno">  240</span>        font_color = Scalar(255, 100, 100);</div>
+<div class="line"><span class="lineno">  241</span>    putText(</div>
+<div class="line"><span class="lineno">  242</span>        frame,</div>
+<div class="line"><span class="lineno">  243</span>        <a class="code hl_variable" href="class_frame_handler.html#a2aa22fb456140327c3848efdea1536b4">tip_text_</a>.back(),</div>
+<div class="line"><span class="lineno">  244</span>        Point2i(</div>
+<div class="line"><span class="lineno">  245</span>            (<a class="code hl_variable" href="class_frame_handler.html#acc1333f07f5bb10f34c2d37459e79b9e">input_frame_width_</a> - border_offset - (getTextSize(<a class="code hl_variable" href="class_frame_handler.html#a2aa22fb456140327c3848efdea1536b4">tip_text_</a>.back(), font, font_scale, thickness, &amp;baseline).width)),</div>
+<div class="line"><span class="lineno">  246</span>            border_offset * <a class="code hl_variable" href="class_frame_handler.html#afab579c6e630ae2bf9fdc47a2f9177dc">input_frame_size_ratio_</a></div>
+<div class="line"><span class="lineno">  247</span>        ),</div>
+<div class="line"><span class="lineno">  248</span>        font,</div>
+<div class="line"><span class="lineno">  249</span>        font_scale,</div>
+<div class="line"><span class="lineno">  250</span>        font_color,</div>
+<div class="line"><span class="lineno">  251</span>        thickness,</div>
+<div class="line"><span class="lineno">  252</span>        4</div>
+<div class="line"><span class="lineno">  253</span>    );</div>
+<div class="line"><span class="lineno">  254</span> </div>
+<div class="line"><span class="lineno">  255</span>    <span class="keywordflow">return</span> frame;</div>
+<div class="line"><span class="lineno">  256</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a94cec95a902939c5e56361737d113933" name="a94cec95a902939c5e56361737d113933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94cec95a902939c5e56361737d113933">&#9670;&#160;</a></span>ConcatenateFramesHorizontally()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat FrameHandler::ConcatenateFramesHorizontally </td>
+          <td>(</td>
+          <td class="paramtype">Mat&#160;</td>
+          <td class="paramname"><em>left_frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Mat&#160;</td>
+          <td class="paramname"><em>right_frame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объединяет два кадра горизонтально </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left_frame</td><td>кадр, который будет слева </td></tr>
+    <tr><td class="paramname">right_frame</td><td>кадр, который будет справа </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>dst: объединённый кадр </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00067">67</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>{</div>
+<div class="line"><span class="lineno">   69</span>    Mat dst;</div>
+<div class="line"><span class="lineno">   70</span>    std::vector&lt;Mat&gt; vec_of_frames;</div>
+<div class="line"><span class="lineno">   71</span>    vec_of_frames.push_back(left_frame);</div>
+<div class="line"><span class="lineno">   72</span>    vec_of_frames.push_back(right_frame);</div>
+<div class="line"><span class="lineno">   73</span>    hconcat(vec_of_frames, dst);</div>
+<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">return</span> dst;</div>
+<div class="line"><span class="lineno">   75</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a93befa779beed3a21639b629993195d8" name="a93befa779beed3a21639b629993195d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93befa779beed3a21639b629993195d8">&#9670;&#160;</a></span>ConcatenateFramesVertically()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat FrameHandler::ConcatenateFramesVertically </td>
+          <td>(</td>
+          <td class="paramtype">Mat&#160;</td>
+          <td class="paramname"><em>top_frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Mat&#160;</td>
+          <td class="paramname"><em>bottom_frame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объединяет два кадра вертикально </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">top_frame</td><td>кадр, который будет сверху </td></tr>
+    <tr><td class="paramname">bottom_frame</td><td>кадр, который будет снизу </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>dst: объединённый кадр </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00077">77</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   78</span>{</div>
+<div class="line"><span class="lineno">   79</span>    Mat dst;</div>
+<div class="line"><span class="lineno">   80</span>    std::vector&lt;Mat&gt; vec_of_frames;</div>
+<div class="line"><span class="lineno">   81</span>    vec_of_frames.push_back(top_frame);</div>
+<div class="line"><span class="lineno">   82</span>    vec_of_frames.push_back(bottom_frame);</div>
+<div class="line"><span class="lineno">   83</span>    vconcat(vec_of_frames, dst);</div>
+<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">return</span> dst;</div>
+<div class="line"><span class="lineno">   85</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac586501514225a9e054845c69fe9ccc7" name="ac586501514225a9e054845c69fe9ccc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac586501514225a9e054845c69fe9ccc7">&#9670;&#160;</a></span>GenerateGradScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat FrameHandler::GenerateGradScale </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>left_limit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>right_limit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colored_point_mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Генерирует шкалу с градиентом и подписями. Ширина шкалы - ширина исходного видео. Высота регулируется внутри </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left_limit</td><td>граница градации цветов слева </td></tr>
+    <tr><td class="paramname">right_limit</td><td>граница градации цветов справа </td></tr>
+    <tr><td class="paramname">colored_point_mode</td><td>режим подсветки цветных точек </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>cv::Mat сущность с изображением градиента шириной равной ширине исходного видео и настраиваемой внутри высотой </dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Режимы подсветки цветных точек: стандартный (default), подсветка по частоте вибрации, подсветка по амплитуде </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00258">258</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  259</span>{</div>
+<div class="line"><span class="lineno">  260</span>    <span class="comment">// Параметры шрифта</span></div>
+<div class="line"><span class="lineno">  261</span>    <span class="keywordtype">int</span> font = FONT_HERSHEY_PLAIN;</div>
+<div class="line"><span class="lineno">  262</span>    <span class="keywordtype">double</span> font_scale = 1 * <a class="code hl_variable" href="class_frame_handler.html#a51cbdce3182856d3fa5e4209bfd859b4">text_resize_factor_</a>;</div>
+<div class="line"><span class="lineno">  263</span>    <span class="keywordtype">int</span> thickness = 1;</div>
+<div class="line"><span class="lineno">  264</span>    <span class="keywordtype">int</span> baseline = 0;</div>
+<div class="line"><span class="lineno">  265</span>    <span class="keywordtype">int</span> font_offset = 5;</div>
+<div class="line"><span class="lineno">  266</span>    <span class="keywordtype">int</span> font_height = getTextSize(<span class="stringliteral">&quot;tmp&quot;</span>, font, font_scale, thickness, &amp;baseline).height;</div>
+<div class="line"><span class="lineno">  267</span>    <span class="comment">// Параметры окна шкалы</span></div>
+<div class="line"><span class="lineno">  268</span>    <span class="keywordtype">int</span> mat_width = <a class="code hl_variable" href="class_frame_handler.html#acc1333f07f5bb10f34c2d37459e79b9e">input_frame_width_</a>;</div>
+<div class="line"><span class="lineno">  269</span>    <span class="keywordtype">int</span> scale_height = 10;</div>
+<div class="line"><span class="lineno">  270</span>    <span class="keywordtype">int</span> mat_height = scale_height + font_height + font_offset;</div>
+<div class="line"><span class="lineno">  271</span>    <span class="keywordtype">int</span> scale_left_offset = <a class="code hl_variable" href="class_frame_handler.html#acc1333f07f5bb10f34c2d37459e79b9e">input_frame_width_</a> * 0.1;</div>
+<div class="line"><span class="lineno">  272</span>    <span class="keywordtype">int</span> scale_width = <a class="code hl_variable" href="class_frame_handler.html#acc1333f07f5bb10f34c2d37459e79b9e">input_frame_width_</a> - scale_left_offset;</div>
+<div class="line"><span class="lineno">  273</span> </div>
+<div class="line"><span class="lineno">  274</span>    Mat frame = Mat(Size(mat_width, mat_height), <a class="code hl_variable" href="class_frame_handler.html#a2047595394b429b3233474c17af56c3d">current_frame_</a>.type(), Scalar(0, 0, 0));</div>
+<div class="line"><span class="lineno">  275</span>    <span class="keywordtype">float</span> interval = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(scale_width) / <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(right_limit - left_limit + 1);</div>
+<div class="line"><span class="lineno">  276</span>    <span class="comment">// Флаг текущей итерации</span></div>
+<div class="line"><span class="lineno">  277</span>    <span class="keywordtype">int</span> iteration = 0;</div>
+<div class="line"><span class="lineno">  278</span> </div>
+<div class="line"><span class="lineno">  279</span>    <span class="comment">// Отрисовываем цветные прямоугольнички</span></div>
+<div class="line"><span class="lineno">  280</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = left_limit; x &lt;= right_limit; x++)</div>
+<div class="line"><span class="lineno">  281</span>    {</div>
+<div class="line"><span class="lineno">  282</span>        Rect scale_unit = Rect(</div>
+<div class="line"><span class="lineno">  283</span>            Point2f(interval * iteration + scale_left_offset, 0),</div>
+<div class="line"><span class="lineno">  284</span>            Point2f(interval + interval * iteration + scale_left_offset, scale_height)</div>
+<div class="line"><span class="lineno">  285</span>        );</div>
+<div class="line"><span class="lineno">  286</span>        rectangle(</div>
+<div class="line"><span class="lineno">  287</span>            frame,</div>
+<div class="line"><span class="lineno">  288</span>            scale_unit,</div>
+<div class="line"><span class="lineno">  289</span>            <a class="code hl_function" href="group___helper_functions.html#ga79584d71167afeb72ca384eaf87c1419">HelperFunctions::RatioToRgb</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(x) / <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(right_limit)),</div>
+<div class="line"><span class="lineno">  290</span>            FILLED</div>
+<div class="line"><span class="lineno">  291</span>        );</div>
+<div class="line"><span class="lineno">  292</span> </div>
+<div class="line"><span class="lineno">  293</span>        std::string scale_signature = std::to_string(x);</div>
+<div class="line"><span class="lineno">  294</span>        Size current_text_size = getTextSize(scale_signature, font, font_scale, thickness, &amp;baseline);</div>
+<div class="line"><span class="lineno">  295</span> </div>
+<div class="line"><span class="lineno">  296</span>        putText(</div>
+<div class="line"><span class="lineno">  297</span>            frame,</div>
+<div class="line"><span class="lineno">  298</span>            scale_signature,</div>
+<div class="line"><span class="lineno">  299</span>            Point2f(</div>
+<div class="line"><span class="lineno">  300</span>                scale_unit.tl().x + (interval) / 2 - current_text_size.width / 2,</div>
+<div class="line"><span class="lineno">  301</span>                scale_unit.br().y + scale_height + (current_text_size.height) / 2</div>
+<div class="line"><span class="lineno">  302</span>            ),</div>
+<div class="line"><span class="lineno">  303</span>            font,</div>
+<div class="line"><span class="lineno">  304</span>            font_scale,</div>
+<div class="line"><span class="lineno">  305</span>            Scalar(255, 255, 255),</div>
+<div class="line"><span class="lineno">  306</span>            thickness,</div>
+<div class="line"><span class="lineno">  307</span>            4</div>
+<div class="line"><span class="lineno">  308</span>        );</div>
+<div class="line"><span class="lineno">  309</span> </div>
+<div class="line"><span class="lineno">  310</span>        iteration++;</div>
+<div class="line"><span class="lineno">  311</span>    }</div>
+<div class="line"><span class="lineno">  312</span> </div>
+<div class="line"><span class="lineno">  313</span>    <span class="comment">// TEMPORARY!!!</span></div>
+<div class="line"><span class="lineno">  314</span>    <span class="comment">// Отдельно выводим два варианта режима при активном ROI - подсвечивание точек по амплитуде/частоте</span></div>
+<div class="line"><span class="lineno">  315</span>    std::string coloring_points_mode_tips[3] = { <span class="stringliteral">&quot;Default&quot;</span>, <span class="stringliteral">&quot;Coloring by Frequency&quot;</span>, <span class="stringliteral">&quot;Coloring by Amplitude&quot;</span> };</div>
+<div class="line"><span class="lineno">  316</span>    Size current_text_size = getTextSize(coloring_points_mode_tips[colored_point_mode], font, font_scale, thickness, &amp;baseline);</div>
+<div class="line"><span class="lineno">  317</span> </div>
+<div class="line"><span class="lineno">  318</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;current mode: &quot;</span> &lt;&lt; coloring_points_mode_tips[colored_point_mode] &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  319</span> </div>
+<div class="line"><span class="lineno">  320</span>    putText(</div>
+<div class="line"><span class="lineno">  321</span>        frame,</div>
+<div class="line"><span class="lineno">  322</span>        coloring_points_mode_tips[colored_point_mode],</div>
+<div class="line"><span class="lineno">  323</span>        Point2f(</div>
+<div class="line"><span class="lineno">  324</span>            scale_left_offset / 2 - current_text_size.width / 2,</div>
+<div class="line"><span class="lineno">  325</span>            mat_height / 2 + current_text_size.height / 2</div>
+<div class="line"><span class="lineno">  326</span>        ),</div>
+<div class="line"><span class="lineno">  327</span>        font,</div>
+<div class="line"><span class="lineno">  328</span>        font_scale,</div>
+<div class="line"><span class="lineno">  329</span>        Scalar(255, 255, 255),</div>
+<div class="line"><span class="lineno">  330</span>        thickness,</div>
+<div class="line"><span class="lineno">  331</span>        4</div>
+<div class="line"><span class="lineno">  332</span>    );</div>
+<div class="line"><span class="lineno">  333</span> </div>
+<div class="line"><span class="lineno">  334</span>    <span class="keywordflow">return</span> frame;</div>
+<div class="line"><span class="lineno">  335</span>}</div>
+<div class="ttc" id="aclass_frame_handler_html_a2047595394b429b3233474c17af56c3d"><div class="ttname"><a href="class_frame_handler.html#a2047595394b429b3233474c17af56c3d">FrameHandler::current_frame_</a></div><div class="ttdeci">Mat current_frame_</div><div class="ttdoc">Последнний прочитанный кадр</div><div class="ttdef"><b>Definition:</b> <a href="frame__handler_8h_source.html#l00163">frame_handler.h:163</a></div></div>
+<div class="ttc" id="agroup___helper_functions_html_ga79584d71167afeb72ca384eaf87c1419"><div class="ttname"><a href="group___helper_functions.html#ga79584d71167afeb72ca384eaf87c1419">HelperFunctions::RatioToRgb</a></div><div class="ttdeci">cv::Scalar RatioToRgb(double ratio)</div><div class="ttdoc">Генерирует имя TXT файла для сохранени</div><div class="ttdef"><b>Definition:</b> <a href="helper_8cpp_source.html#l00028">helper.cpp:28</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0a926273fbb3a3901c9a5a75e3380e16" name="a0a926273fbb3a3901c9a5a75e3380e16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a926273fbb3a3901c9a5a75e3380e16">&#9670;&#160;</a></span>GetAmountOfFrames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FrameHandler::GetAmountOfFrames </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает общее количество кадров </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество кадров в последовательности </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00176">176</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  177</span>{</div>
+<div class="line"><span class="lineno">  178</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_frame_handler.html#a56190979d8bfe9b896ca05fa23052136">input_cap_</a>-&gt;get(CAP_PROP_FRAME_COUNT);</div>
+<div class="line"><span class="lineno">  179</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a26b5695df6161f00af36210e4d3d78ad" name="a26b5695df6161f00af36210e4d3d78ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26b5695df6161f00af36210e4d3d78ad">&#9670;&#160;</a></span>GetCurrentFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat FrameHandler::GetCurrentFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает последний прочитанный на данный момент кадр </p>
+<dl class="section return"><dt>Возвращает</dt><dd>cv::Mat instance </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00156">156</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  157</span>{</div>
+<div class="line"><span class="lineno">  158</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_frame_handler.html#a2047595394b429b3233474c17af56c3d">current_frame_</a>;</div>
+<div class="line"><span class="lineno">  159</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a79ab90b6a2ce7ea8fef695a11bef514c" name="a79ab90b6a2ce7ea8fef695a11bef514c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79ab90b6a2ce7ea8fef695a11bef514c">&#9670;&#160;</a></span>GetCurrentPosOfFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FrameHandler::GetCurrentPosOfFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает текущее положение кадра относительно первого </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Номер кадра в последовательности </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00171">171</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  172</span>{</div>
+<div class="line"><span class="lineno">  173</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_frame_handler.html#ae97cfa371c3ac3ecdde04f19422c986c">current_pos_of_frame_</a>;</div>
+<div class="line"><span class="lineno">  174</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a61109313b6d4a9a21783a9c7b66dea68" name="a61109313b6d4a9a21783a9c7b66dea68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61109313b6d4a9a21783a9c7b66dea68">&#9670;&#160;</a></span>GetCurrentTimeOfFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FrameHandler::GetCurrentTimeOfFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает текущее время кадра (таймкод в мс) </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Текущее время кадра в миллисекундах </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00166">166</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  167</span>{</div>
+<div class="line"><span class="lineno">  168</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_frame_handler.html#a103fd8c5d4ab70aae5b5e8fe9a8b57fd">current_time_of_frame_</a>;</div>
+<div class="line"><span class="lineno">  169</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abd588ce2d914edf1d719f86cca3912c5" name="abd588ce2d914edf1d719f86cca3912c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd588ce2d914edf1d719f86cca3912c5">&#9670;&#160;</a></span>GetFrameHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FrameHandler::GetFrameHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает высоту считываемого видео </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Высота исходного видео </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00191">191</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  192</span>{</div>
+<div class="line"><span class="lineno">  193</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_frame_handler.html#a90b32b3317313f0affe872c2d9ab63f6">input_frame_height_</a>;</div>
+<div class="line"><span class="lineno">  194</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a128638bf1c2d42a6ef84bdd67d6bf442" name="a128638bf1c2d42a6ef84bdd67d6bf442"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a128638bf1c2d42a6ef84bdd67d6bf442">&#9670;&#160;</a></span>GetFrameWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FrameHandler::GetFrameWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает ширину исходного видео </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Ширина исходного видео </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00186">186</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  187</span>{</div>
+<div class="line"><span class="lineno">  188</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_frame_handler.html#acc1333f07f5bb10f34c2d37459e79b9e">input_frame_width_</a>;</div>
+<div class="line"><span class="lineno">  189</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a18519accbae4e5e7a043e81bd6a9d2c6" name="a18519accbae4e5e7a043e81bd6a9d2c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18519accbae4e5e7a043e81bd6a9d2c6">&#9670;&#160;</a></span>GetInputCapStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FrameHandler::GetInputCapStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает текущий статус input_cap. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true: кадр был считан, false: кадр не был считан </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00151">151</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  152</span>{</div>
+<div class="line"><span class="lineno">  153</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_frame_handler.html#a6644d694da107a0b432d7a4d9d3afd39">input_cap_status_</a>;</div>
+<div class="line"><span class="lineno">  154</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7871807bfd918b88272a175aa33ea165" name="a7871807bfd918b88272a175aa33ea165"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7871807bfd918b88272a175aa33ea165">&#9670;&#160;</a></span>GetInputFps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FrameHandler::GetInputFps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает FPS считываемого видео </p>
+<dl class="section return"><dt>Возвращает</dt><dd>FPS </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00181">181</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  182</span>{</div>
+<div class="line"><span class="lineno">  183</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_frame_handler.html#a52b12ec33b607d0eb0250c648e819609">input_fps_</a>;</div>
+<div class="line"><span class="lineno">  184</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a115a1da50a8bc1b00d703b6f8c44222b" name="a115a1da50a8bc1b00d703b6f8c44222b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a115a1da50a8bc1b00d703b6f8c44222b">&#9670;&#160;</a></span>GetMainWindowName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String FrameHandler::GetMainWindowName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает название главного окна, в которое выводятся кадры </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Название окна </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00161">161</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  162</span>{</div>
+<div class="line"><span class="lineno">  163</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_frame_handler.html#af5a948132ceb761b1c9f1c5c71deee75">main_window_name_</a>;</div>
+<div class="line"><span class="lineno">  164</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae37c57501fea114483f4ea51da37d08a" name="ae37c57501fea114483f4ea51da37d08a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae37c57501fea114483f4ea51da37d08a">&#9670;&#160;</a></span>GetTextResizeFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FrameHandler::GetTextResizeFactor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает коэффициент масштабирования </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Коэффициент масштабирования </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00196">196</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  197</span>{</div>
+<div class="line"><span class="lineno">  198</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_frame_handler.html#a51cbdce3182856d3fa5e4209bfd859b4">text_resize_factor_</a>;</div>
+<div class="line"><span class="lineno">  199</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae3165c660c17d4b410c1690d13fda93c" name="ae3165c660c17d4b410c1690d13fda93c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3165c660c17d4b410c1690d13fda93c">&#9670;&#160;</a></span>InitTextResizeFactors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FrameHandler::InitTextResizeFactors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Инициализирует коэффициент масштабирования текста в зависимости от разрешения видео </p>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00337">337</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  338</span>{</div>
+<div class="line"><span class="lineno">  339</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;frame width: &quot;</span> &lt;&lt; <a class="code hl_variable" href="class_frame_handler.html#acc1333f07f5bb10f34c2d37459e79b9e">input_frame_width_</a> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  340</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;frame height: &quot;</span> &lt;&lt; <a class="code hl_variable" href="class_frame_handler.html#a90b32b3317313f0affe872c2d9ab63f6">input_frame_height_</a> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  341</span> </div>
+<div class="line"><span class="lineno">  342</span>    <span class="keywordflow">if</span> (<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_frame_handler.html#afab579c6e630ae2bf9fdc47a2f9177dc">input_frame_size_ratio_</a>))</div>
+<div class="line"><span class="lineno">  343</span>    {</div>
+<div class="line"><span class="lineno">  344</span>        <span class="keywordflow">switch</span> (<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_frame_handler.html#a90b32b3317313f0affe872c2d9ab63f6">input_frame_height_</a>))</div>
+<div class="line"><span class="lineno">  345</span>        {</div>
+<div class="line"><span class="lineno">  346</span>        <span class="keywordflow">case</span> (480):</div>
+<div class="line"><span class="lineno">  347</span>        {</div>
+<div class="line"><span class="lineno">  348</span>            <a class="code hl_variable" href="class_frame_handler.html#a51cbdce3182856d3fa5e4209bfd859b4">text_resize_factor_</a> = 0.44f;</div>
+<div class="line"><span class="lineno">  349</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  350</span>        }</div>
+<div class="line"><span class="lineno">  351</span>        <span class="keywordflow">case</span> (720):</div>
+<div class="line"><span class="lineno">  352</span>        {</div>
+<div class="line"><span class="lineno">  353</span>            <a class="code hl_variable" href="class_frame_handler.html#a51cbdce3182856d3fa5e4209bfd859b4">text_resize_factor_</a> = 0.67f;</div>
+<div class="line"><span class="lineno">  354</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  355</span>        }</div>
+<div class="line"><span class="lineno">  356</span>        <span class="keywordflow">case</span> (1080):</div>
+<div class="line"><span class="lineno">  357</span>        {</div>
+<div class="line"><span class="lineno">  358</span>            <a class="code hl_variable" href="class_frame_handler.html#a51cbdce3182856d3fa5e4209bfd859b4">text_resize_factor_</a> = 1.0f;</div>
+<div class="line"><span class="lineno">  359</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  360</span>        }</div>
+<div class="line"><span class="lineno">  361</span>        <span class="keywordflow">case</span> (1520):</div>
+<div class="line"><span class="lineno">  362</span>        {</div>
+<div class="line"><span class="lineno">  363</span>            <a class="code hl_variable" href="class_frame_handler.html#a51cbdce3182856d3fa5e4209bfd859b4">text_resize_factor_</a> = 1.40f;</div>
+<div class="line"><span class="lineno">  364</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  365</span>        }</div>
+<div class="line"><span class="lineno">  366</span>        <span class="keywordflow">case</span> (2160):</div>
+<div class="line"><span class="lineno">  367</span>        {</div>
+<div class="line"><span class="lineno">  368</span>            <a class="code hl_variable" href="class_frame_handler.html#a51cbdce3182856d3fa5e4209bfd859b4">text_resize_factor_</a> = 2.0f;</div>
+<div class="line"><span class="lineno">  369</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  370</span>        }</div>
+<div class="line"><span class="lineno">  371</span>        }</div>
+<div class="line"><span class="lineno">  372</span>    }</div>
+<div class="line"><span class="lineno">  373</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  374</span>    {</div>
+<div class="line"><span class="lineno">  375</span>        <span class="keywordflow">switch</span> (<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="class_frame_handler.html#acc1333f07f5bb10f34c2d37459e79b9e">input_frame_width_</a>))</div>
+<div class="line"><span class="lineno">  376</span>        {</div>
+<div class="line"><span class="lineno">  377</span>        <span class="keywordflow">case</span> (480):</div>
+<div class="line"><span class="lineno">  378</span>        {</div>
+<div class="line"><span class="lineno">  379</span>            <a class="code hl_variable" href="class_frame_handler.html#a51cbdce3182856d3fa5e4209bfd859b4">text_resize_factor_</a> = 0.44f;</div>
+<div class="line"><span class="lineno">  380</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  381</span>        }</div>
+<div class="line"><span class="lineno">  382</span>        <span class="keywordflow">case</span> (720):</div>
+<div class="line"><span class="lineno">  383</span>        {</div>
+<div class="line"><span class="lineno">  384</span>            <a class="code hl_variable" href="class_frame_handler.html#a51cbdce3182856d3fa5e4209bfd859b4">text_resize_factor_</a> = 0.67f;</div>
+<div class="line"><span class="lineno">  385</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  386</span>        }</div>
+<div class="line"><span class="lineno">  387</span>        <span class="keywordflow">case</span> (1080):</div>
+<div class="line"><span class="lineno">  388</span>        {</div>
+<div class="line"><span class="lineno">  389</span>            <a class="code hl_variable" href="class_frame_handler.html#a51cbdce3182856d3fa5e4209bfd859b4">text_resize_factor_</a> = 1.0f;</div>
+<div class="line"><span class="lineno">  390</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  391</span>        }</div>
+<div class="line"><span class="lineno">  392</span>        <span class="keywordflow">case</span> (1520):</div>
+<div class="line"><span class="lineno">  393</span>        {</div>
+<div class="line"><span class="lineno">  394</span>            <a class="code hl_variable" href="class_frame_handler.html#a51cbdce3182856d3fa5e4209bfd859b4">text_resize_factor_</a> = 1.4f;</div>
+<div class="line"><span class="lineno">  395</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  396</span>        }</div>
+<div class="line"><span class="lineno">  397</span>        <span class="keywordflow">case</span> (2160):</div>
+<div class="line"><span class="lineno">  398</span>        {</div>
+<div class="line"><span class="lineno">  399</span>            <a class="code hl_variable" href="class_frame_handler.html#a51cbdce3182856d3fa5e4209bfd859b4">text_resize_factor_</a> = 2.0f;</div>
+<div class="line"><span class="lineno">  400</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  401</span>        }</div>
+<div class="line"><span class="lineno">  402</span>        }</div>
+<div class="line"><span class="lineno">  403</span>    }</div>
+<div class="line"><span class="lineno">  404</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4bd1108adbbd4c21c4c3233efa8c8d1e" name="a4bd1108adbbd4c21c4c3233efa8c8d1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bd1108adbbd4c21c4c3233efa8c8d1e">&#9670;&#160;</a></span>MakeGrayFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat FrameHandler::MakeGrayFrame </td>
+          <td>(</td>
+          <td class="paramtype">Mat&#160;</td>
+          <td class="paramname"><em>frame_to_be_grayed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает серый кадр с блюром </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame_to_be_grayed</td><td>изображение, которое будет сконвертировано в grayscale и на которое будет наложен небольшой блюр (для удаления цифровых шумов) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Обработанный кадр (cv::Mat) </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00137">137</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  138</span>{</div>
+<div class="line"><span class="lineno">  139</span>    Mat grayed_frame;</div>
+<div class="line"><span class="lineno">  140</span>    </div>
+<div class="line"><span class="lineno">  141</span>    <span class="keywordflow">if</span> (!frame_to_be_grayed.empty())</div>
+<div class="line"><span class="lineno">  142</span>    {</div>
+<div class="line"><span class="lineno">  143</span>        <span class="comment">// Конвертируем входной Mat из РГБ(БГР) в грейскейл</span></div>
+<div class="line"><span class="lineno">  144</span>        cvtColor(frame_to_be_grayed, grayed_frame, COLOR_BGR2GRAY);</div>
+<div class="line"><span class="lineno">  145</span>        GaussianBlur(grayed_frame, grayed_frame, Size(3, 3), 0);</div>
+<div class="line"><span class="lineno">  146</span>    }</div>
+<div class="line"><span class="lineno">  147</span>    </div>
+<div class="line"><span class="lineno">  148</span>    <span class="keywordflow">return</span> grayed_frame;</div>
+<div class="line"><span class="lineno">  149</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7c33b8ad150344db93c24d29bbabd853" name="a7c33b8ad150344db93c24d29bbabd853"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c33b8ad150344db93c24d29bbabd853">&#9670;&#160;</a></span>PutFrameOverFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat FrameHandler::PutFrameOverFrame </td>
+          <td>(</td>
+          <td class="paramtype">Mat&#160;</td>
+          <td class="paramname"><em>foreground_frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Mat&#160;</td>
+          <td class="paramname"><em>background_frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point2i&#160;</td>
+          <td class="paramname"><em>translation_vector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Накладывает изображение (переднний план) на другое изображение (задний план) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">foreground_frame</td><td>изображение на переднем плане </td></tr>
+    <tr><td class="paramname">background_frame</td><td>изображение на заднем плане </td></tr>
+    <tr><td class="paramname">translation_vector</td><td>вектор (направленный отрезок) перемещения переднего изображения относительно заднего </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>dst: выходное изображение с наложенным на фоновое изображение переднеплановое изображение </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00087">87</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   88</span>{</div>
+<div class="line"><span class="lineno">   89</span>    <span class="comment">// Количество каналов переднепланового изображения</span></div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordtype">int</span> channels_number = foreground_frame.channels();</div>
+<div class="line"><span class="lineno">   91</span>    <span class="comment">// Количества каналов двух изображений должны совпадать</span></div>
+<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">if</span> (channels_number != background_frame.channels())</div>
+<div class="line"><span class="lineno">   93</span>        <span class="keywordflow">return</span> background_frame;</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>    <span class="comment">// Разделяем переднее изображение по каналам</span></div>
+<div class="line"><span class="lineno">   96</span>    std::vector&lt;Mat&gt; foreground_planes(channels_number);</div>
+<div class="line"><span class="lineno">   97</span>    split(foreground_frame, foreground_planes);</div>
+<div class="line"><span class="lineno">   98</span> </div>
+<div class="line"><span class="lineno">   99</span>    <span class="comment">// Разделяем переднее изображение по каналам</span></div>
+<div class="line"><span class="lineno">  100</span>    std::vector&lt;Mat&gt; background_planes(channels_number);</div>
+<div class="line"><span class="lineno">  101</span>    split(background_frame, background_planes);</div>
+<div class="line"><span class="lineno">  102</span> </div>
+<div class="line"><span class="lineno">  103</span>    <span class="comment">// Проходимся сначала по рядам переднего изображения (по его высоте)</span></div>
+<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> foreground_row = 0; foreground_row &lt; foreground_frame.rows; foreground_row++)</div>
+<div class="line"><span class="lineno">  105</span>    {</div>
+<div class="line"><span class="lineno">  106</span>        <span class="comment">// Проходимся по колонкам переднего изображения (по его ширине)</span></div>
+<div class="line"><span class="lineno">  107</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> foreground_col = 0; foreground_col &lt; foreground_frame.cols; foreground_col++)</div>
+<div class="line"><span class="lineno">  108</span>        {</div>
+<div class="line"><span class="lineno">  109</span>            <span class="comment">// Инициализируем значения ширины (col) и высоты (row) отображения (трансляции)</span></div>
+<div class="line"><span class="lineno">  110</span>            <span class="keywordtype">int</span> translated_col = foreground_col + translation_vector.x;</div>
+<div class="line"><span class="lineno">  111</span>            <span class="keywordtype">int</span> translated_row = foreground_row + translation_vector.y;</div>
+<div class="line"><span class="lineno">  112</span>            </div>
+<div class="line"><span class="lineno">  113</span>            <span class="comment">// Проверка, необходимая, чтобы случайно не обратиться к пикселю, находящемуся за границами фонового (заднего) изображения</span></div>
+<div class="line"><span class="lineno">  114</span>            <span class="keywordflow">if</span> (!((translated_col) &lt; background_frame.cols &amp;&amp; (translated_row) &lt; background_frame.rows))</div>
+<div class="line"><span class="lineno">  115</span>            {</div>
+<div class="line"><span class="lineno">  116</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  117</span>            }</div>
+<div class="line"><span class="lineno">  118</span> </div>
+<div class="line"><span class="lineno">  119</span>            <span class="comment">// Итераторы для прохода по векторам каналов переднего и заднего изображений</span></div>
+<div class="line"><span class="lineno">  120</span>            <span class="keyword">auto</span> backgnd_it = background_planes.begin();</div>
+<div class="line"><span class="lineno">  121</span>            <span class="keyword">auto</span> foregnd_it = foreground_planes.begin();</div>
+<div class="line"><span class="lineno">  122</span>            <span class="keywordflow">while</span> (backgnd_it != background_planes.end())</div>
+<div class="line"><span class="lineno">  123</span>            {</div>
+<div class="line"><span class="lineno">  124</span>                <span class="comment">// Попиксельно отображаем (транслируем) пиксели переднего изображения на заднее изображение</span></div>
+<div class="line"><span class="lineno">  125</span>                backgnd_it-&gt;at&lt;uchar&gt;(translated_row, translated_col) = foregnd_it-&gt;at&lt;uchar&gt;(foreground_row, foreground_col);</div>
+<div class="line"><span class="lineno">  126</span>                backgnd_it++;</div>
+<div class="line"><span class="lineno">  127</span>                foregnd_it++;</div>
+<div class="line"><span class="lineno">  128</span>            }</div>
+<div class="line"><span class="lineno">  129</span>        }</div>
+<div class="line"><span class="lineno">  130</span>    }</div>
+<div class="line"><span class="lineno">  131</span>    </div>
+<div class="line"><span class="lineno">  132</span>    Mat result;</div>
+<div class="line"><span class="lineno">  133</span>    merge(background_planes, result);</div>
+<div class="line"><span class="lineno">  134</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  135</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3837bca5a13d8e1e4969edf0d831baf3" name="a3837bca5a13d8e1e4969edf0d831baf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3837bca5a13d8e1e4969edf0d831baf3">&#9670;&#160;</a></span>ReadNextFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FrameHandler::ReadNextFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Считывает следующий кадр видео </p>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00039">39</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{</div>
+<div class="line"><span class="lineno">   41</span>    <a class="code hl_variable" href="class_frame_handler.html#a6644d694da107a0b432d7a4d9d3afd39">input_cap_status_</a> = <a class="code hl_variable" href="class_frame_handler.html#a56190979d8bfe9b896ca05fa23052136">input_cap_</a>-&gt;read(<a class="code hl_variable" href="class_frame_handler.html#a2047595394b429b3233474c17af56c3d">current_frame_</a>);</div>
+<div class="line"><span class="lineno">   42</span>    <a class="code hl_variable" href="class_frame_handler.html#a103fd8c5d4ab70aae5b5e8fe9a8b57fd">current_time_of_frame_</a> = <a class="code hl_variable" href="class_frame_handler.html#a56190979d8bfe9b896ca05fa23052136">input_cap_</a>-&gt;get(CAP_PROP_POS_MSEC);</div>
+<div class="line"><span class="lineno">   43</span>    <a class="code hl_variable" href="class_frame_handler.html#ae97cfa371c3ac3ecdde04f19422c986c">current_pos_of_frame_</a> = <a class="code hl_variable" href="class_frame_handler.html#a56190979d8bfe9b896ca05fa23052136">input_cap_</a>-&gt;get(CAP_PROP_POS_FRAMES);</div>
+<div class="line"><span class="lineno">   44</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a194e20bc41e1d8bb849dc6666f182202" name="a194e20bc41e1d8bb849dc6666f182202"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a194e20bc41e1d8bb849dc6666f182202">&#9670;&#160;</a></span>ShowFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FrameHandler::ShowFrame </td>
+          <td>(</td>
+          <td class="paramtype">Mat&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fullscreen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выводит в главное окно принимаемое изображение </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>изображение, которое нужно отобразить в окне </td></tr>
+    <tr><td class="paramname">fullscreen</td><td>флаг полноэкрааного режима </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00046">46</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>{</div>
+<div class="line"><span class="lineno">   48</span>    <a class="code hl_variable" href="class_frame_handler.html#a053396cb9e34ffe2b301b29fec72a0cc">fullscreen_</a> = fullscreen;</div>
+<div class="line"><span class="lineno">   49</span> </div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_frame_handler.html#a053396cb9e34ffe2b301b29fec72a0cc">fullscreen_</a>)</div>
+<div class="line"><span class="lineno">   51</span>    {</div>
+<div class="line"><span class="lineno">   52</span>        setWindowProperty(<a class="code hl_variable" href="class_frame_handler.html#af5a948132ceb761b1c9f1c5c71deee75">main_window_name_</a>, WND_PROP_FULLSCREEN, WINDOW_FULLSCREEN);</div>
+<div class="line"><span class="lineno">   53</span>    }</div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   55</span>    {</div>
+<div class="line"><span class="lineno">   56</span>        setWindowProperty(<a class="code hl_variable" href="class_frame_handler.html#af5a948132ceb761b1c9f1c5c71deee75">main_window_name_</a>, WND_PROP_FULLSCREEN, WINDOW_NORMAL);</div>
+<div class="line"><span class="lineno">   57</span>    }</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>    imshow(<a class="code hl_variable" href="class_frame_handler.html#af5a948132ceb761b1c9f1c5c71deee75">main_window_name_</a>, frame);</div>
+<div class="line"><span class="lineno">   60</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a43fe77a59e8e5d99f7bb0ad3499591ef" name="a43fe77a59e8e5d99f7bb0ad3499591ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43fe77a59e8e5d99f7bb0ad3499591ef">&#9670;&#160;</a></span>WriteFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FrameHandler::WriteFrame </td>
+          <td>(</td>
+          <td class="paramtype">Mat&#160;</td>
+          <td class="paramname"><em>frame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Записывает кадр с помощью output_cap. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>изображение, которое будет записано в последовательность (фактически добавлено в её конец) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a> строка <a class="el" href="frame__handler_8cpp_source.html#l00062">62</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>{</div>
+<div class="line"><span class="lineno">   64</span>    <a class="code hl_variable" href="class_frame_handler.html#af77346c9760c6406958ff9bd9034be2c">output_cap_</a>-&gt;write(frame_to_be_written);</div>
+<div class="line"><span class="lineno">   65</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a2047595394b429b3233474c17af56c3d" name="a2047595394b429b3233474c17af56c3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2047595394b429b3233474c17af56c3d">&#9670;&#160;</a></span>current_frame_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mat FrameHandler::current_frame_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Последнний прочитанный кадр </p>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8h_source.html">frame_handler.h</a> строка <a class="el" href="frame__handler_8h_source.html#l00163">163</a></p>
+
+</div>
+</div>
+<a id="ae97cfa371c3ac3ecdde04f19422c986c" name="ae97cfa371c3ac3ecdde04f19422c986c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae97cfa371c3ac3ecdde04f19422c986c">&#9670;&#160;</a></span>current_pos_of_frame_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FrameHandler::current_pos_of_frame_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Текущий номер кадра из последовательности </p>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8h_source.html">frame_handler.h</a> строка <a class="el" href="frame__handler_8h_source.html#l00210">210</a></p>
+
+</div>
+</div>
+<a id="a103fd8c5d4ab70aae5b5e8fe9a8b57fd" name="a103fd8c5d4ab70aae5b5e8fe9a8b57fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a103fd8c5d4ab70aae5b5e8fe9a8b57fd">&#9670;&#160;</a></span>current_time_of_frame_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FrameHandler::current_time_of_frame_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Текущее время кадра из последовательности </p>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8h_source.html">frame_handler.h</a> строка <a class="el" href="frame__handler_8h_source.html#l00206">206</a></p>
+
+</div>
+</div>
+<a id="a053396cb9e34ffe2b301b29fec72a0cc" name="a053396cb9e34ffe2b301b29fec72a0cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a053396cb9e34ffe2b301b29fec72a0cc">&#9670;&#160;</a></span>fullscreen_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FrameHandler::fullscreen_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Флаг полноэкранного режима </p>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8h_source.html">frame_handler.h</a> строка <a class="el" href="frame__handler_8h_source.html#l00184">184</a></p>
+
+</div>
+</div>
+<a id="a56190979d8bfe9b896ca05fa23052136" name="a56190979d8bfe9b896ca05fa23052136"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56190979d8bfe9b896ca05fa23052136">&#9670;&#160;</a></span>input_cap_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VideoCapture* FrameHandler::input_cap_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Указатель на объект-захватчик входных кадров видео </p>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8h_source.html">frame_handler.h</a> строка <a class="el" href="frame__handler_8h_source.html#l00167">167</a></p>
+
+</div>
+</div>
+<a id="a6644d694da107a0b432d7a4d9d3afd39" name="a6644d694da107a0b432d7a4d9d3afd39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6644d694da107a0b432d7a4d9d3afd39">&#9670;&#160;</a></span>input_cap_status_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FrameHandler::input_cap_status_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Флаг, принимающий true при удачном чтении кадра и false, если следующий кадр не был считан </p>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8h_source.html">frame_handler.h</a> строка <a class="el" href="frame__handler_8h_source.html#l00171">171</a></p>
+
+</div>
+</div>
+<a id="a52b12ec33b607d0eb0250c648e819609" name="a52b12ec33b607d0eb0250c648e819609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52b12ec33b607d0eb0250c648e819609">&#9670;&#160;</a></span>input_fps_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FrameHandler::input_fps_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>FPS исходного видео </p>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8h_source.html">frame_handler.h</a> строка <a class="el" href="frame__handler_8h_source.html#l00202">202</a></p>
+
+</div>
+</div>
+<a id="a90b32b3317313f0affe872c2d9ab63f6" name="a90b32b3317313f0affe872c2d9ab63f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90b32b3317313f0affe872c2d9ab63f6">&#9670;&#160;</a></span>input_frame_height_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FrameHandler::input_frame_height_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Высота кадра исходного видео </p>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8h_source.html">frame_handler.h</a> строка <a class="el" href="frame__handler_8h_source.html#l00194">194</a></p>
+
+</div>
+</div>
+<a id="afab579c6e630ae2bf9fdc47a2f9177dc" name="afab579c6e630ae2bf9fdc47a2f9177dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afab579c6e630ae2bf9fdc47a2f9177dc">&#9670;&#160;</a></span>input_frame_size_ratio_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FrameHandler::input_frame_size_ratio_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Соотношение сторон исходного видео </p>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8h_source.html">frame_handler.h</a> строка <a class="el" href="frame__handler_8h_source.html#l00198">198</a></p>
+
+</div>
+</div>
+<a id="acc1333f07f5bb10f34c2d37459e79b9e" name="acc1333f07f5bb10f34c2d37459e79b9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc1333f07f5bb10f34c2d37459e79b9e">&#9670;&#160;</a></span>input_frame_width_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FrameHandler::input_frame_width_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ширина кадра исходного видео </p>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8h_source.html">frame_handler.h</a> строка <a class="el" href="frame__handler_8h_source.html#l00190">190</a></p>
+
+</div>
+</div>
+<a id="af5a948132ceb761b1c9f1c5c71deee75" name="af5a948132ceb761b1c9f1c5c71deee75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5a948132ceb761b1c9f1c5c71deee75">&#9670;&#160;</a></span>main_window_name_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string FrameHandler::main_window_name_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Имя главного окна </p>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8h_source.html">frame_handler.h</a> строка <a class="el" href="frame__handler_8h_source.html#l00179">179</a></p>
+
+</div>
+</div>
+<a id="af77346c9760c6406958ff9bd9034be2c" name="af77346c9760c6406958ff9bd9034be2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af77346c9760c6406958ff9bd9034be2c">&#9670;&#160;</a></span>output_cap_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VideoWriter* FrameHandler::output_cap_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Указатель на объект, сохраняющий кадры в последовательность (видео) в зависимости от выбранного кодека (cv::fourcc) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8h_source.html">frame_handler.h</a> строка <a class="el" href="frame__handler_8h_source.html#l00175">175</a></p>
+
+</div>
+</div>
+<a id="a51cbdce3182856d3fa5e4209bfd859b4" name="a51cbdce3182856d3fa5e4209bfd859b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51cbdce3182856d3fa5e4209bfd859b4">&#9670;&#160;</a></span>text_resize_factor_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FrameHandler::text_resize_factor_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Коэффициент масштабирования текста (зависит от разрешения исходного видео) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8h_source.html">frame_handler.h</a> строка <a class="el" href="frame__handler_8h_source.html#l00214">214</a></p>
+
+</div>
+</div>
+<a id="a2aa22fb456140327c3848efdea1536b4" name="a2aa22fb456140327c3848efdea1536b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aa22fb456140327c3848efdea1536b4">&#9670;&#160;</a></span>tip_text_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; FrameHandler::tip_text_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Тексты подсказок для пользователя </p>
+
+<p class="definition">См. определение в файле <a class="el" href="frame__handler_8h_source.html">frame_handler.h</a> строка <a class="el" href="frame__handler_8h_source.html#l00218">218</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/include/VVT-V2/<a class="el" href="frame__handler_8h_source.html">frame_handler.h</a></li>
+<li>C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/source/<a class="el" href="frame__handler_8cpp_source.html">frame_handler.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

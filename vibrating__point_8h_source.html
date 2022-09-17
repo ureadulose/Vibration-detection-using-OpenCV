@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Visual Vibration Tracking: Исходный файл C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/include/VVT-V2/vibrating_point.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Visual Vibration Tracking<span id="projectnumber">&#160;0.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_1a7b6f8ea6414524e6d315978b19a51d.html">seeyo</a></li><li class="navelem"><a class="el" href="dir_2849c7605547aec047c1bbd084b35fb3.html">source</a></li><li class="navelem"><a class="el" href="dir_e74395836ad52566ee1a5217dc9ad081.html">repos</a></li><li class="navelem"><a class="el" href="dir_9c05f254fdeb3977de6d7fceb436c906.html">Visual-Vibration-Tracking-V2</a></li><li class="navelem"><a class="el" href="dir_77f13ed43646d921c318463cd4f3fa10.html">include</a></li><li class="navelem"><a class="el" href="dir_762d7f7302bd579d65515ab4a74cadf6.html">VVT-V2</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">vibrating_point.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef VIBRATING_POINT_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define VIBRATING_POINT_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// standart headers</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// OpenCV headers</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;opencv2/opencv.hpp&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// other headers</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;VVT-V2/peak_finder.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;VVT-V2/helper.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using namespace </span>cv;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_vibrating_point.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="class_vibrating_point.html">VibratingPoint</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_vibrating_point.html#a005868411bd6b296d992f3dcd79451d7">ExecuteFFT</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_vibrating_point.html#a1b2402724fd5d9aba2785ba771042c91">AddNewPointPosition</a>(Point2f position);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_vibrating_point.html#a4ba7478f71991439ad31ee5555bb93c6">AddNewPointTime</a>(<span class="keywordtype">double</span> time);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_vibrating_point.html#a342c75a6ac0f9ab85de1a0dd663eab03">IsInteracted</a>(Point2i coordinates);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_vibrating_point.html#ad9e5f2e543097cc7010baadec3c7e0df">SetSensivity</a>(<span class="keywordtype">double</span> sensivity);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_vibrating_point.html#afeb56c53e4ee3e3dc2049e4553bff402">CalculateAmplitude</a>();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#a84210a3247277ca0137d4754c5ec5b03">   60</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_vibrating_point.html#a84210a3247277ca0137d4754c5ec5b03">Draw</a>(Mat&amp; frame) = 0;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#a2bd28bb86f01ccae6fa193914863045a">   66</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_vibrating_point.html#a2bd28bb86f01ccae6fa193914863045a">DrawHistogram</a>() = 0;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#aadc5ff6408bb2e4a474dd25cd5bb6fdf">   70</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_vibrating_point.html#aadc5ff6408bb2e4a474dd25cd5bb6fdf">UpdatePointColor</a>() = 0;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">// Геттеры</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    Point2f <a class="code hl_function" href="class_vibrating_point.html#afa134e84fe3e2ffc492b34823f60d14d">GetLastFoundCoordinates</a>();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    std::vector&lt;double&gt; <a class="code hl_function" href="class_vibrating_point.html#a2e3b78289d75d6fa3f7888b36a8b5a42">GetCurrentVibrationFrequency</a>();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_vibrating_point.html#a5c943d1b1916ac33a214f46cbe2cb8fa">GetCurrentMainFrequency</a>();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    Point3f <a class="code hl_function" href="class_vibrating_point.html#af1651e3d022f841aa1442b20b5f40b42">GetRelativeAmplitude</a>();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    Point3f <a class="code hl_function" href="class_vibrating_point.html#abf5fd60d3d7f900d597040c0dcb69586">GetCurrentAmplitude</a>();</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_vibrating_point.html#a056d67ffd99e21b98ebaa97150641fe3">GetCurrentConfidenceLevel</a>();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#afdefa096df21cf891ae6835a6df4ffc9">  106</a></span>    <span class="keyword">static</span> <span class="keyword">inline</span> std::pair&lt;double, double&gt; <a class="code hl_variable" href="class_vibrating_point.html#afdefa096df21cf891ae6835a6df4ffc9">extremum_amplitude_</a>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#a5b35f5a2109df2be2d2832b25dfa2285">  112</a></span>    Rect <a class="code hl_variable" href="class_vibrating_point.html#a5b35f5a2109df2be2d2832b25dfa2285">interaction_box_</a>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">  116</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">interaction_offset_</a>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#a0298c80261ea234f82e1afff59d2d1fa">  122</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_vibrating_point.html#a0298c80261ea234f82e1afff59d2d1fa">interacted_</a>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#a9989c50fa30cecf13079ae0c595ef87c">  127</a></span>    Point3f <a class="code hl_variable" href="class_vibrating_point.html#a9989c50fa30cecf13079ae0c595ef87c">relative_amplitude_</a>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#a5ae50ac111f6681489eded6da7ef66ea">  131</a></span>    Point3f <a class="code hl_variable" href="class_vibrating_point.html#a5ae50ac111f6681489eded6da7ef66ea">current_amplitude_</a>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">  135</a></span>    std::vector&lt;Point2f&gt; <a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#a6653e27fe96e5fe6e7aa410fb3138c92">  139</a></span>    std::vector&lt;double&gt; <a class="code hl_variable" href="class_vibrating_point.html#a6653e27fe96e5fe6e7aa410fb3138c92">x_coordinates_</a>;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#a5df5aa7a4d955de091640290f849961c">  143</a></span>    std::vector&lt;double&gt; <a class="code hl_variable" href="class_vibrating_point.html#a5df5aa7a4d955de091640290f849961c">y_coordinates_</a>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb">  147</a></span>    std::vector&lt;cv::Point2f&gt; <a class="code hl_variable" href="class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb">vec_meaned_coordinates_of_point_</a>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#adfd1433886cf1fb2b3b07062b69614b1">  151</a></span>    std::vector&lt;double&gt; <a class="code hl_variable" href="class_vibrating_point.html#adfd1433886cf1fb2b3b07062b69614b1">frequencies_</a>;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#aa0b94560fbac6ae1c5dbae9f4931d28c">  155</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_vibrating_point.html#aa0b94560fbac6ae1c5dbae9f4931d28c">main_frequency_</a>;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#ad2aa8fe4bc94a957f75aa00fb9ce9f26">  159</a></span>    std::vector&lt;double&gt; <a class="code hl_variable" href="class_vibrating_point.html#ad2aa8fe4bc94a957f75aa00fb9ce9f26">point_time_coordinates_</a>;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#a67ffaaa1b714226a78d6d5cc31c195c9">  163</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_vibrating_point.html#a67ffaaa1b714226a78d6d5cc31c195c9">sampling_rate_</a>;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#ac0a7383346b67916a29c9dc892addfae">  167</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_vibrating_point.html#ac0a7383346b67916a29c9dc892addfae">current_point_radius_</a>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#af4a9903a86d6d1a98b1acf89684492ae">  171</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_vibrating_point.html#af4a9903a86d6d1a98b1acf89684492ae">default_point_radius_</a>;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#a5ea36bdad5aeac784ecfa21f3ca98517">  176</a></span>    std::vector&lt;double&gt; <a class="code hl_variable" href="class_vibrating_point.html#a5ea36bdad5aeac784ecfa21f3ca98517">x_</a>;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#aa22ce2e3bdd0b4614b1c0ad0adf256e5">  180</a></span>    std::vector&lt;float&gt; <a class="code hl_variable" href="class_vibrating_point.html#aa22ce2e3bdd0b4614b1c0ad0adf256e5">y_</a>;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#ab2539b861e02f361eb772c71e06c9af3">  184</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_vibrating_point.html#ab2539b861e02f361eb772c71e06c9af3">sensivity_</a>;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#a6ed26ed40b33b1486cb4c304981d4444">  188</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_vibrating_point.html#a6ed26ed40b33b1486cb4c304981d4444">confidence_level_</a>;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="class_vibrating_point.html#a69824b3fe81e876f3018844d236b72c5">  195</a></span>    std::vector&lt;float&gt; <a class="code hl_variable" href="class_vibrating_point.html#a69824b3fe81e876f3018844d236b72c5">mag_max_differences_</a>;</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>};</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_vibrating_point_html"><div class="ttname"><a href="class_vibrating_point.html">VibratingPoint</a></div><div class="ttdoc">Абстрактный класс для описания вибрирующей точки</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00024">vibrating_point.h:25</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a005868411bd6b296d992f3dcd79451d7"><div class="ttname"><a href="class_vibrating_point.html#a005868411bd6b296d992f3dcd79451d7">VibratingPoint::ExecuteFFT</a></div><div class="ttdeci">void ExecuteFFT()</div><div class="ttdoc">Выполняет БПФ для нахождения частоты вибрации.</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8cpp_source.html#l00003">vibrating_point.cpp:3</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a0298c80261ea234f82e1afff59d2d1fa"><div class="ttname"><a href="class_vibrating_point.html#a0298c80261ea234f82e1afff59d2d1fa">VibratingPoint::interacted_</a></div><div class="ttdeci">bool interacted_</div><div class="ttdoc">Флаг взаимодействия с точкой</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00122">vibrating_point.h:122</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a056d67ffd99e21b98ebaa97150641fe3"><div class="ttname"><a href="class_vibrating_point.html#a056d67ffd99e21b98ebaa97150641fe3">VibratingPoint::GetCurrentConfidenceLevel</a></div><div class="ttdeci">double GetCurrentConfidenceLevel()</div><div class="ttdoc">Возвращает последний найденный уровень достоверности</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8cpp_source.html#l00257">vibrating_point.cpp:257</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a1b2402724fd5d9aba2785ba771042c91"><div class="ttname"><a href="class_vibrating_point.html#a1b2402724fd5d9aba2785ba771042c91">VibratingPoint::AddNewPointPosition</a></div><div class="ttdeci">void AddNewPointPosition(Point2f position)</div><div class="ttdoc">Добавляет новую пространственную координату в конец контейнера VibratingPoint::point_coordinates_;.</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8cpp_source.html#l00149">vibrating_point.cpp:149</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a2bd28bb86f01ccae6fa193914863045a"><div class="ttname"><a href="class_vibrating_point.html#a2bd28bb86f01ccae6fa193914863045a">VibratingPoint::DrawHistogram</a></div><div class="ttdeci">virtual void DrawHistogram()=0</div><div class="ttdoc">Отрисовывает гистограмму спектра частот колебаний точки (полученную после БПФ в методе ExecuteFFT())</div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a2e3b78289d75d6fa3f7888b36a8b5a42"><div class="ttname"><a href="class_vibrating_point.html#a2e3b78289d75d6fa3f7888b36a8b5a42">VibratingPoint::GetCurrentVibrationFrequency</a></div><div class="ttdeci">std::vector&lt; double &gt; GetCurrentVibrationFrequency()</div><div class="ttdoc">Возвращает вектор текущих частот точки</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8cpp_source.html#l00237">vibrating_point.cpp:237</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a342c75a6ac0f9ab85de1a0dd663eab03"><div class="ttname"><a href="class_vibrating_point.html#a342c75a6ac0f9ab85de1a0dd663eab03">VibratingPoint::IsInteracted</a></div><div class="ttdeci">bool IsInteracted(Point2i coordinates)</div><div class="ttdoc">Проверяет точку на наличие взаимодействия с ней (если курсор попал в область взаимодействия точки Vib...</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8cpp_source.html#l00165">vibrating_point.cpp:165</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a4ba7478f71991439ad31ee5555bb93c6"><div class="ttname"><a href="class_vibrating_point.html#a4ba7478f71991439ad31ee5555bb93c6">VibratingPoint::AddNewPointTime</a></div><div class="ttdeci">void AddNewPointTime(double time)</div><div class="ttdoc">Добавляет новую временную координату (время кадра, на котором новая позиция точки была трекнута) в ко...</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8cpp_source.html#l00160">vibrating_point.cpp:160</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a5ae50ac111f6681489eded6da7ef66ea"><div class="ttname"><a href="class_vibrating_point.html#a5ae50ac111f6681489eded6da7ef66ea">VibratingPoint::current_amplitude_</a></div><div class="ttdeci">Point3f current_amplitude_</div><div class="ttdoc">Фактические амплитуды вибрации по x, y. Выражаюытся в пикселях</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00131">vibrating_point.h:131</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a5b35f5a2109df2be2d2832b25dfa2285"><div class="ttname"><a href="class_vibrating_point.html#a5b35f5a2109df2be2d2832b25dfa2285">VibratingPoint::interaction_box_</a></div><div class="ttdeci">Rect interaction_box_</div><div class="ttdoc">Прямоугольник (область) взаимодействия с точкой</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00112">vibrating_point.h:112</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a5c943d1b1916ac33a214f46cbe2cb8fa"><div class="ttname"><a href="class_vibrating_point.html#a5c943d1b1916ac33a214f46cbe2cb8fa">VibratingPoint::GetCurrentMainFrequency</a></div><div class="ttdeci">double GetCurrentMainFrequency()</div><div class="ttdoc">Возвращает текущую &quot;основную&quot; частоту</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8cpp_source.html#l00242">vibrating_point.cpp:242</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a5df5aa7a4d955de091640290f849961c"><div class="ttname"><a href="class_vibrating_point.html#a5df5aa7a4d955de091640290f849961c">VibratingPoint::y_coordinates_</a></div><div class="ttdeci">std::vector&lt; double &gt; y_coordinates_</div><div class="ttdoc">Контейнер для координат точки по оси Y.</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00143">vibrating_point.h:143</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a5ea36bdad5aeac784ecfa21f3ca98517"><div class="ttname"><a href="class_vibrating_point.html#a5ea36bdad5aeac784ecfa21f3ca98517">VibratingPoint::x_</a></div><div class="ttdeci">std::vector&lt; double &gt; x_</div><div class="ttdoc">Контейнер для хранения координат гистограммы по оси X (фактически - найденный спектр частот вибрации ...</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00176">vibrating_point.h:176</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a6653e27fe96e5fe6e7aa410fb3138c92"><div class="ttname"><a href="class_vibrating_point.html#a6653e27fe96e5fe6e7aa410fb3138c92">VibratingPoint::x_coordinates_</a></div><div class="ttdeci">std::vector&lt; double &gt; x_coordinates_</div><div class="ttdoc">Контейнер для координат точки по оси X.</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00139">vibrating_point.h:139</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a67ffaaa1b714226a78d6d5cc31c195c9"><div class="ttname"><a href="class_vibrating_point.html#a67ffaaa1b714226a78d6d5cc31c195c9">VibratingPoint::sampling_rate_</a></div><div class="ttdeci">double sampling_rate_</div><div class="ttdoc">Частота сэмплирования (фактически - FPS исходного видео)</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00163">vibrating_point.h:163</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a69824b3fe81e876f3018844d236b72c5"><div class="ttname"><a href="class_vibrating_point.html#a69824b3fe81e876f3018844d236b72c5">VibratingPoint::mag_max_differences_</a></div><div class="ttdeci">std::vector&lt; float &gt; mag_max_differences_</div><div class="ttdoc">Максимальная разнциа в магнитудах в найденном спектре после БПФ</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00195">vibrating_point.h:195</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a6ed26ed40b33b1486cb4c304981d4444"><div class="ttname"><a href="class_vibrating_point.html#a6ed26ed40b33b1486cb4c304981d4444">VibratingPoint::confidence_level_</a></div><div class="ttdeci">double confidence_level_</div><div class="ttdoc">Рейтинг достоверности вибрации</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00188">vibrating_point.h:188</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a84210a3247277ca0137d4754c5ec5b03"><div class="ttname"><a href="class_vibrating_point.html#a84210a3247277ca0137d4754c5ec5b03">VibratingPoint::Draw</a></div><div class="ttdeci">virtual void Draw(Mat &amp;frame)=0</div><div class="ttdoc">Отрисовывает точку на кадре</div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a8c035e084006469922a45f023b1bcce0"><div class="ttname"><a href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">VibratingPoint::interaction_offset_</a></div><div class="ttdeci">int interaction_offset_</div><div class="ttdoc">Половина длины прямоугольника взаимодействия</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00116">vibrating_point.h:116</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a9989c50fa30cecf13079ae0c595ef87c"><div class="ttname"><a href="class_vibrating_point.html#a9989c50fa30cecf13079ae0c595ef87c">VibratingPoint::relative_amplitude_</a></div><div class="ttdeci">Point3f relative_amplitude_</div><div class="ttdoc">Относительные амплитуды вибрации по x, y. Выражается отношением амплитуды</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00127">vibrating_point.h:127</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_aa0b94560fbac6ae1c5dbae9f4931d28c"><div class="ttname"><a href="class_vibrating_point.html#aa0b94560fbac6ae1c5dbae9f4931d28c">VibratingPoint::main_frequency_</a></div><div class="ttdeci">double main_frequency_</div><div class="ttdoc">Главная частота (основная)</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00155">vibrating_point.h:155</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_aa22ce2e3bdd0b4614b1c0ad0adf256e5"><div class="ttname"><a href="class_vibrating_point.html#aa22ce2e3bdd0b4614b1c0ad0adf256e5">VibratingPoint::y_</a></div><div class="ttdeci">std::vector&lt; float &gt; y_</div><div class="ttdoc">Контейнер для хранения координат гистограммы по оси Y (фактически - найденные магнитуды точки после в...</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00180">vibrating_point.h:180</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_aa65df19b908306e2f4c725480594b2bb"><div class="ttname"><a href="class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb">VibratingPoint::vec_meaned_coordinates_of_point_</a></div><div class="ttdeci">std::vector&lt; cv::Point2f &gt; vec_meaned_coordinates_of_point_</div><div class="ttdoc">Контейнер для координат точки относительно нулевого уровня</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00147">vibrating_point.h:147</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_aadc5ff6408bb2e4a474dd25cd5bb6fdf"><div class="ttname"><a href="class_vibrating_point.html#aadc5ff6408bb2e4a474dd25cd5bb6fdf">VibratingPoint::UpdatePointColor</a></div><div class="ttdeci">virtual void UpdatePointColor()=0</div><div class="ttdoc">Обновляем текущий цвет точки</div></div>
+<div class="ttc" id="aclass_vibrating_point_html_ab2539b861e02f361eb772c71e06c9af3"><div class="ttname"><a href="class_vibrating_point.html#ab2539b861e02f361eb772c71e06c9af3">VibratingPoint::sensivity_</a></div><div class="ttdeci">double sensivity_</div><div class="ttdoc">Чувствительность определения вибрации</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00184">vibrating_point.h:184</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_abf5fd60d3d7f900d597040c0dcb69586"><div class="ttname"><a href="class_vibrating_point.html#abf5fd60d3d7f900d597040c0dcb69586">VibratingPoint::GetCurrentAmplitude</a></div><div class="ttdeci">Point3f GetCurrentAmplitude()</div><div class="ttdoc">Возвращает последнюю найденную относительную амплитуду</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8cpp_source.html#l00252">vibrating_point.cpp:252</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_ac0a7383346b67916a29c9dc892addfae"><div class="ttname"><a href="class_vibrating_point.html#ac0a7383346b67916a29c9dc892addfae">VibratingPoint::current_point_radius_</a></div><div class="ttdeci">int current_point_radius_</div><div class="ttdoc">Радиус точки, который нужен для её отрисовки</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00167">vibrating_point.h:167</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_ad2aa8fe4bc94a957f75aa00fb9ce9f26"><div class="ttname"><a href="class_vibrating_point.html#ad2aa8fe4bc94a957f75aa00fb9ce9f26">VibratingPoint::point_time_coordinates_</a></div><div class="ttdeci">std::vector&lt; double &gt; point_time_coordinates_</div><div class="ttdoc">Контейнер для временных координат точки</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00159">vibrating_point.h:159</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_ad9e5f2e543097cc7010baadec3c7e0df"><div class="ttname"><a href="class_vibrating_point.html#ad9e5f2e543097cc7010baadec3c7e0df">VibratingPoint::SetSensivity</a></div><div class="ttdeci">void SetSensivity(double sensivity)</div><div class="ttdoc">Устанавливает чувствительность, влияющую на confidence.</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8cpp_source.html#l00171">vibrating_point.cpp:171</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_adfd1433886cf1fb2b3b07062b69614b1"><div class="ttname"><a href="class_vibrating_point.html#adfd1433886cf1fb2b3b07062b69614b1">VibratingPoint::frequencies_</a></div><div class="ttdeci">std::vector&lt; double &gt; frequencies_</div><div class="ttdoc">Контейнер для частот точки</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00151">vibrating_point.h:151</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_af1651e3d022f841aa1442b20b5f40b42"><div class="ttname"><a href="class_vibrating_point.html#af1651e3d022f841aa1442b20b5f40b42">VibratingPoint::GetRelativeAmplitude</a></div><div class="ttdeci">Point3f GetRelativeAmplitude()</div><div class="ttdoc">Возвращает последнюю найденную относительную амплитуду</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8cpp_source.html#l00247">vibrating_point.cpp:247</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_af4a9903a86d6d1a98b1acf89684492ae"><div class="ttname"><a href="class_vibrating_point.html#af4a9903a86d6d1a98b1acf89684492ae">VibratingPoint::default_point_radius_</a></div><div class="ttdeci">int default_point_radius_</div><div class="ttdoc">Дефолтный радиус точки</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00171">vibrating_point.h:171</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_afa134e84fe3e2ffc492b34823f60d14d"><div class="ttname"><a href="class_vibrating_point.html#afa134e84fe3e2ffc492b34823f60d14d">VibratingPoint::GetLastFoundCoordinates</a></div><div class="ttdeci">Point2f GetLastFoundCoordinates()</div><div class="ttdoc">Возвращает последний элемент вектора координат</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8cpp_source.html#l00232">vibrating_point.cpp:232</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_afb01bb9d96c3d2fb6d9f99982fde66c6"><div class="ttname"><a href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">VibratingPoint::point_coordinates_</a></div><div class="ttdeci">std::vector&lt; Point2f &gt; point_coordinates_</div><div class="ttdoc">Контейнер для координат точки</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00135">vibrating_point.h:135</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_afdefa096df21cf891ae6835a6df4ffc9"><div class="ttname"><a href="class_vibrating_point.html#afdefa096df21cf891ae6835a6df4ffc9">VibratingPoint::extremum_amplitude_</a></div><div class="ttdeci">static std::pair&lt; double, double &gt; extremum_amplitude_</div><div class="ttdoc">Максимум и минимум амплитуды среди всех VibratingPoint объектов-наследников</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00106">vibrating_point.h:106</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_afeb56c53e4ee3e3dc2049e4553bff402"><div class="ttname"><a href="class_vibrating_point.html#afeb56c53e4ee3e3dc2049e4553bff402">VibratingPoint::CalculateAmplitude</a></div><div class="ttdeci">void CalculateAmplitude()</div><div class="ttdoc">Проводит необходимые для вычисления амплитуды вычисления</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8cpp_source.html#l00176">vibrating_point.cpp:176</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

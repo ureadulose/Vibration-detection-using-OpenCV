@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['y_5f_0',['y_',['../class_vibrating_point.html#aa22ce2e3bdd0b4614b1c0ad0adf256e5',1,'VibratingPoint']]],
-  ['y_5fcoordinates_5f_1',['y_coordinates_',['../class_vibrating_point.html#a5df5aa7a4d955de091640290f849961c',1,'VibratingPoint']]],
-  ['y_5fvalues_5f_2',['y_values_',['../class_histogram.html#a0042425ba721ed0c248c7bba486a66e6',1,'Histogram']]]
+  ['x_5f_0',['x_',['../class_vibrating_point.html#a5ea36bdad5aeac784ecfa21f3ca98517',1,'VibratingPoint']]],
+  ['x_5fcoordinates_5f_1',['x_coordinates_',['../class_vibrating_point.html#a6653e27fe96e5fe6e7aa410fb3138c92',1,'VibratingPoint']]],
+  ['x_5flimit_5f_2',['x_limit_',['../class_histogram.html#ad7734ef44b2e7f0ec9cc46154f18d008',1,'Histogram']]],
+  ['x_5fvalues_5f_3',['x_values_',['../class_histogram.html#a1e8da20001beb108c4d523cbbf5153a5',1,'Histogram']]]
 ];

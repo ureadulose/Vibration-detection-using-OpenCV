@@ -1,0 +1,882 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Visual Vibration Tracking: Класс ColoredPointHandler</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Visual Vibration Tracking<span id="projectnumber">&#160;0.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-types">Закрытые типы</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_colored_point_handler-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс ColoredPointHandler</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Дочерний (от <a class="el" href="class_vibrating_point.html" title="Абстрактный класс для описания вибрирующей точки">VibratingPoint</a>) класс. Предназначен для помещения множества цветных точек на кадр и отслеживания вибрации каждой из них  
+ <a href="class_colored_point_handler.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="colored__point__handler_8h_source.html">colored_point_handler.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:ColoredPointHandler:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_colored_point_handler__inherit__graph.png" border="0" usemap="#a_colored_point_handler_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_colored_point_handler_inherit__map" id="a_colored_point_handler_inherit__map">
+<area shape="rect" title="Дочерний (от VibratingPoint) класс. Предназначен для помещения множества цветных точек на кадр и отсл..." alt="" coords="92,79,232,104"/>
+<area shape="rect" href="class_histogram.html" title="Класс для создания объектов&#45;гистограмм, на которые можно выводить различную информацию" alt="" coords="5,5,87,31"/>
+<area shape="rect" href="class_vibrating_point.html" title="Абстрактный класс для описания вибрирующей точки" alt="" coords="111,5,213,31"/>
+<area shape="rect" href="class_output_to_csv.html" title="Класс для сохранения метаданных (временных и пространственных координат, ID точки)" alt="" coords="238,5,334,31"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса ColoredPointHandler:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_colored_point_handler__coll__graph.png" border="0" usemap="#a_colored_point_handler_coll__map" alt="Collaboration graph"/></div>
+<map name="a_colored_point_handler_coll__map" id="a_colored_point_handler_coll__map">
+<area shape="rect" title="Дочерний (от VibratingPoint) класс. Предназначен для помещения множества цветных точек на кадр и отсл..." alt="" coords="92,79,232,104"/>
+<area shape="rect" href="class_histogram.html" title="Класс для создания объектов&#45;гистограмм, на которые можно выводить различную информацию" alt="" coords="5,5,87,31"/>
+<area shape="rect" href="class_vibrating_point.html" title="Абстрактный класс для описания вибрирующей точки" alt="" coords="111,5,213,31"/>
+<area shape="rect" href="class_output_to_csv.html" title="Класс для сохранения метаданных (временных и пространственных координат, ID точки)" alt="" coords="238,5,334,31"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a4c7292c2268cad44b6c656f4f582194a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_colored_point_handler.html#a4c7292c2268cad44b6c656f4f582194a">ColoredPointHandler</a> (Point2f init_coordinates, double sampling_rate, int point_id, float radius_resize_factor, std::string output_csv_filename)</td></tr>
+<tr class="memdesc:a4c7292c2268cad44b6c656f4f582194a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор этого класса  <a href="class_colored_point_handler.html#a4c7292c2268cad44b6c656f4f582194a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4c7292c2268cad44b6c656f4f582194a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55e451f03127858deb1dda40e2124611"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_colored_point_handler.html#a55e451f03127858deb1dda40e2124611">~ColoredPointHandler</a> ()</td></tr>
+<tr class="memdesc:a55e451f03127858deb1dda40e2124611"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор этого класса  <a href="class_colored_point_handler.html#a55e451f03127858deb1dda40e2124611">Подробнее...</a><br /></td></tr>
+<tr class="separator:a55e451f03127858deb1dda40e2124611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad16eb2210bc1e9f8983186088cc9a573"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_colored_point_handler.html#ad16eb2210bc1e9f8983186088cc9a573">Draw</a> (Mat &amp;frame) override</td></tr>
+<tr class="memdesc:ad16eb2210bc1e9f8983186088cc9a573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отрисовывает точку и данные, связанные с ней  <a href="class_colored_point_handler.html#ad16eb2210bc1e9f8983186088cc9a573">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad16eb2210bc1e9f8983186088cc9a573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca8be23a3787bd9f62dd0f950c1f2645"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_colored_point_handler.html#aca8be23a3787bd9f62dd0f950c1f2645">SetColoringMode</a> (int <a class="el" href="class_colored_point_handler.html#ad0550fe1aac50d476a071743e3c3802a">coloring_mode</a>)</td></tr>
+<tr class="memdesc:aca8be23a3787bd9f62dd0f950c1f2645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает нужный режим отрисовки цветом  <a href="class_colored_point_handler.html#aca8be23a3787bd9f62dd0f950c1f2645">Подробнее...</a><br /></td></tr>
+<tr class="separator:aca8be23a3787bd9f62dd0f950c1f2645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_histogram"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_histogram')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_histogram.html">Histogram</a></td></tr>
+<tr class="memitem:a385b019acb01cf7fff1b20b23b9c9c96 inherit pub_methods_class_histogram"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a385b019acb01cf7fff1b20b23b9c9c96">Histogram</a> (int width, int height, int x_limit, int id, std::vector&lt; double &gt; &amp;x_values, std::vector&lt; float &gt; &amp;y_values)</td></tr>
+<tr class="memdesc:a385b019acb01cf7fff1b20b23b9c9c96 inherit pub_methods_class_histogram"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор этого класса  <a href="class_histogram.html#a385b019acb01cf7fff1b20b23b9c9c96">Подробнее...</a><br /></td></tr>
+<tr class="separator:a385b019acb01cf7fff1b20b23b9c9c96 inherit pub_methods_class_histogram"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf22daf3b8e3f0578337109005532f51 inherit pub_methods_class_histogram"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#aaf22daf3b8e3f0578337109005532f51">~Histogram</a> ()</td></tr>
+<tr class="memdesc:aaf22daf3b8e3f0578337109005532f51 inherit pub_methods_class_histogram"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор этого класса  <a href="class_histogram.html#aaf22daf3b8e3f0578337109005532f51">Подробнее...</a><br /></td></tr>
+<tr class="separator:aaf22daf3b8e3f0578337109005532f51 inherit pub_methods_class_histogram"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a939c2c567799157b2088c63e661af15e inherit pub_methods_class_histogram"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a939c2c567799157b2088c63e661af15e">DetectEvent</a> (int event, int x, int y, int flags)</td></tr>
+<tr class="memdesc:a939c2c567799157b2088c63e661af15e inherit pub_methods_class_histogram"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback функция для определения события (используется для хэндлинга клика мышью)  <a href="class_histogram.html#a939c2c567799157b2088c63e661af15e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a939c2c567799157b2088c63e661af15e inherit pub_methods_class_histogram"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a5a64a00231d62a6eeacb416f704262 inherit pub_methods_class_histogram"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a5a5a64a00231d62a6eeacb416f704262">ShowHistogram</a> ()</td></tr>
+<tr class="memdesc:a5a5a64a00231d62a6eeacb416f704262 inherit pub_methods_class_histogram"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит гистограмму в окно гистограммы  <a href="class_histogram.html#a5a5a64a00231d62a6eeacb416f704262">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5a5a64a00231d62a6eeacb416f704262 inherit pub_methods_class_histogram"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ed9e75be45d4c50b54b9150427a89c8 inherit pub_methods_class_histogram"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a8ed9e75be45d4c50b54b9150427a89c8">SetXValues</a> (std::vector&lt; double &gt; x_values)</td></tr>
+<tr class="memdesc:a8ed9e75be45d4c50b54b9150427a89c8 inherit pub_methods_class_histogram"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает X-ы  <a href="class_histogram.html#a8ed9e75be45d4c50b54b9150427a89c8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8ed9e75be45d4c50b54b9150427a89c8 inherit pub_methods_class_histogram"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f59d4b44f3f4866a7b709ec7e1e15c4 inherit pub_methods_class_histogram"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a6f59d4b44f3f4866a7b709ec7e1e15c4">SetYValues</a> (std::vector&lt; float &gt; y_values)</td></tr>
+<tr class="memdesc:a6f59d4b44f3f4866a7b709ec7e1e15c4 inherit pub_methods_class_histogram"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает Y-ы  <a href="class_histogram.html#a6f59d4b44f3f4866a7b709ec7e1e15c4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6f59d4b44f3f4866a7b709ec7e1e15c4 inherit pub_methods_class_histogram"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad4123748f53efc8cdbc0b8f6ae5444e inherit pub_methods_class_histogram"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#aad4123748f53efc8cdbc0b8f6ae5444e">SetHistogramFlag</a> (bool flag)</td></tr>
+<tr class="memdesc:aad4123748f53efc8cdbc0b8f6ae5444e inherit pub_methods_class_histogram"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает статус флага отрисовки гистограммы  <a href="class_histogram.html#aad4123748f53efc8cdbc0b8f6ae5444e">Подробнее...</a><br /></td></tr>
+<tr class="separator:aad4123748f53efc8cdbc0b8f6ae5444e inherit pub_methods_class_histogram"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67ea2102e72112ddffd05f0ed8e2a73e inherit pub_methods_class_histogram"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a67ea2102e72112ddffd05f0ed8e2a73e">SetHistogramWindowProperty</a> (int prop_id, int prop_value)</td></tr>
+<tr class="memdesc:a67ea2102e72112ddffd05f0ed8e2a73e inherit pub_methods_class_histogram"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляет статус окна гистограммы (например, для вывода на передний план)  <a href="class_histogram.html#a67ea2102e72112ddffd05f0ed8e2a73e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a67ea2102e72112ddffd05f0ed8e2a73e inherit pub_methods_class_histogram"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_vibrating_point"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_vibrating_point')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_vibrating_point.html">VibratingPoint</a></td></tr>
+<tr class="memitem:a005868411bd6b296d992f3dcd79451d7 inherit pub_methods_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#a005868411bd6b296d992f3dcd79451d7">ExecuteFFT</a> ()</td></tr>
+<tr class="memdesc:a005868411bd6b296d992f3dcd79451d7 inherit pub_methods_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет БПФ для нахождения частоты вибрации.  <a href="class_vibrating_point.html#a005868411bd6b296d992f3dcd79451d7">Подробнее...</a><br /></td></tr>
+<tr class="separator:a005868411bd6b296d992f3dcd79451d7 inherit pub_methods_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2402724fd5d9aba2785ba771042c91 inherit pub_methods_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#a1b2402724fd5d9aba2785ba771042c91">AddNewPointPosition</a> (Point2f position)</td></tr>
+<tr class="memdesc:a1b2402724fd5d9aba2785ba771042c91 inherit pub_methods_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет новую пространственную координату в конец контейнера <a class="el" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6" title="Контейнер для координат точки">VibratingPoint::point_coordinates_</a>;.  <a href="class_vibrating_point.html#a1b2402724fd5d9aba2785ba771042c91">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1b2402724fd5d9aba2785ba771042c91 inherit pub_methods_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba7478f71991439ad31ee5555bb93c6 inherit pub_methods_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#a4ba7478f71991439ad31ee5555bb93c6">AddNewPointTime</a> (double time)</td></tr>
+<tr class="memdesc:a4ba7478f71991439ad31ee5555bb93c6 inherit pub_methods_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет новую временную координату (время кадра, на котором новая позиция точки была трекнута) в конец контейнера <a class="el" href="class_vibrating_point.html#ad2aa8fe4bc94a957f75aa00fb9ce9f26" title="Контейнер для временных координат точки">VibratingPoint::point_time_coordinates_</a>;.  <a href="class_vibrating_point.html#a4ba7478f71991439ad31ee5555bb93c6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4ba7478f71991439ad31ee5555bb93c6 inherit pub_methods_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a342c75a6ac0f9ab85de1a0dd663eab03 inherit pub_methods_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#a342c75a6ac0f9ab85de1a0dd663eab03">IsInteracted</a> (Point2i coordinates)</td></tr>
+<tr class="memdesc:a342c75a6ac0f9ab85de1a0dd663eab03 inherit pub_methods_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет точку на наличие взаимодействия с ней (если курсор попал в область взаимодействия точки <a class="el" href="class_vibrating_point.html#a5b35f5a2109df2be2d2832b25dfa2285" title="Прямоугольник (область) взаимодействия с точкой">VibratingPoint::interaction_box_</a>)  <a href="class_vibrating_point.html#a342c75a6ac0f9ab85de1a0dd663eab03">Подробнее...</a><br /></td></tr>
+<tr class="separator:a342c75a6ac0f9ab85de1a0dd663eab03 inherit pub_methods_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9e5f2e543097cc7010baadec3c7e0df inherit pub_methods_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#ad9e5f2e543097cc7010baadec3c7e0df">SetSensivity</a> (double sensivity)</td></tr>
+<tr class="memdesc:ad9e5f2e543097cc7010baadec3c7e0df inherit pub_methods_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает чувствительность, влияющую на confidence.  <a href="class_vibrating_point.html#ad9e5f2e543097cc7010baadec3c7e0df">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad9e5f2e543097cc7010baadec3c7e0df inherit pub_methods_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb56c53e4ee3e3dc2049e4553bff402 inherit pub_methods_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#afeb56c53e4ee3e3dc2049e4553bff402">CalculateAmplitude</a> ()</td></tr>
+<tr class="memdesc:afeb56c53e4ee3e3dc2049e4553bff402 inherit pub_methods_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проводит необходимые для вычисления амплитуды вычисления  <a href="class_vibrating_point.html#afeb56c53e4ee3e3dc2049e4553bff402">Подробнее...</a><br /></td></tr>
+<tr class="separator:afeb56c53e4ee3e3dc2049e4553bff402 inherit pub_methods_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84210a3247277ca0137d4754c5ec5b03 inherit pub_methods_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#a84210a3247277ca0137d4754c5ec5b03">Draw</a> (Mat &amp;frame)=0</td></tr>
+<tr class="memdesc:a84210a3247277ca0137d4754c5ec5b03 inherit pub_methods_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отрисовывает точку на кадре  <a href="class_vibrating_point.html#a84210a3247277ca0137d4754c5ec5b03">Подробнее...</a><br /></td></tr>
+<tr class="separator:a84210a3247277ca0137d4754c5ec5b03 inherit pub_methods_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa134e84fe3e2ffc492b34823f60d14d inherit pub_methods_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">Point2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#afa134e84fe3e2ffc492b34823f60d14d">GetLastFoundCoordinates</a> ()</td></tr>
+<tr class="memdesc:afa134e84fe3e2ffc492b34823f60d14d inherit pub_methods_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает последний элемент вектора координат  <a href="class_vibrating_point.html#afa134e84fe3e2ffc492b34823f60d14d">Подробнее...</a><br /></td></tr>
+<tr class="separator:afa134e84fe3e2ffc492b34823f60d14d inherit pub_methods_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3b78289d75d6fa3f7888b36a8b5a42 inherit pub_methods_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#a2e3b78289d75d6fa3f7888b36a8b5a42">GetCurrentVibrationFrequency</a> ()</td></tr>
+<tr class="memdesc:a2e3b78289d75d6fa3f7888b36a8b5a42 inherit pub_methods_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает вектор текущих частот точки  <a href="class_vibrating_point.html#a2e3b78289d75d6fa3f7888b36a8b5a42">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2e3b78289d75d6fa3f7888b36a8b5a42 inherit pub_methods_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c943d1b1916ac33a214f46cbe2cb8fa inherit pub_methods_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#a5c943d1b1916ac33a214f46cbe2cb8fa">GetCurrentMainFrequency</a> ()</td></tr>
+<tr class="memdesc:a5c943d1b1916ac33a214f46cbe2cb8fa inherit pub_methods_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает текущую "основную" частоту  <a href="class_vibrating_point.html#a5c943d1b1916ac33a214f46cbe2cb8fa">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5c943d1b1916ac33a214f46cbe2cb8fa inherit pub_methods_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1651e3d022f841aa1442b20b5f40b42 inherit pub_methods_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">Point3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#af1651e3d022f841aa1442b20b5f40b42">GetRelativeAmplitude</a> ()</td></tr>
+<tr class="memdesc:af1651e3d022f841aa1442b20b5f40b42 inherit pub_methods_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает последнюю найденную относительную амплитуду  <a href="class_vibrating_point.html#af1651e3d022f841aa1442b20b5f40b42">Подробнее...</a><br /></td></tr>
+<tr class="separator:af1651e3d022f841aa1442b20b5f40b42 inherit pub_methods_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf5fd60d3d7f900d597040c0dcb69586 inherit pub_methods_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">Point3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#abf5fd60d3d7f900d597040c0dcb69586">GetCurrentAmplitude</a> ()</td></tr>
+<tr class="memdesc:abf5fd60d3d7f900d597040c0dcb69586 inherit pub_methods_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает последнюю найденную относительную амплитуду  <a href="class_vibrating_point.html#abf5fd60d3d7f900d597040c0dcb69586">Подробнее...</a><br /></td></tr>
+<tr class="separator:abf5fd60d3d7f900d597040c0dcb69586 inherit pub_methods_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a056d67ffd99e21b98ebaa97150641fe3 inherit pub_methods_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#a056d67ffd99e21b98ebaa97150641fe3">GetCurrentConfidenceLevel</a> ()</td></tr>
+<tr class="memdesc:a056d67ffd99e21b98ebaa97150641fe3 inherit pub_methods_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает последний найденный уровень достоверности  <a href="class_vibrating_point.html#a056d67ffd99e21b98ebaa97150641fe3">Подробнее...</a><br /></td></tr>
+<tr class="separator:a056d67ffd99e21b98ebaa97150641fe3 inherit pub_methods_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_output_to_csv"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_output_to_csv')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_output_to_csv.html">OutputToCsv</a></td></tr>
+<tr class="memitem:a6c2e719cbb3ff83b249e8820029895f0 inherit pub_methods_class_output_to_csv"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_output_to_csv.html#a6c2e719cbb3ff83b249e8820029895f0">OutputToCsv</a> (std::string output_file_name, std::vector&lt; Point2f &gt; &amp;point_coordinates, std::vector&lt; double &gt; &amp;point_time_coordinates, int point_id)</td></tr>
+<tr class="memdesc:a6c2e719cbb3ff83b249e8820029895f0 inherit pub_methods_class_output_to_csv"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор этого класса  <a href="class_output_to_csv.html#a6c2e719cbb3ff83b249e8820029895f0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6c2e719cbb3ff83b249e8820029895f0 inherit pub_methods_class_output_to_csv"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f1e3239fa21906aa102c3d601183f65 inherit pub_methods_class_output_to_csv"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_output_to_csv.html#a8f1e3239fa21906aa102c3d601183f65">Write</a> ()</td></tr>
+<tr class="memdesc:a8f1e3239fa21906aa102c3d601183f65 inherit pub_methods_class_output_to_csv"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет данные для записи  <a href="class_output_to_csv.html#a8f1e3239fa21906aa102c3d601183f65">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8f1e3239fa21906aa102c3d601183f65 inherit pub_methods_class_output_to_csv"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Закрытые типы</h2></td></tr>
+<tr class="memitem:ad0550fe1aac50d476a071743e3c3802a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_colored_point_handler.html#ad0550fe1aac50d476a071743e3c3802a">coloring_mode</a> { <b>DEFAULT</b>
+, <b>COLORING_BASED_ON_FREQUENCY</b>
+, <b>COLORING_BASED_ON_AMPLITUDE</b>
+ }</td></tr>
+<tr class="memdesc:ad0550fe1aac50d476a071743e3c3802a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перечисление, используемое для более удобного отображения текущего режима подсветки точки  <a href="class_colored_point_handler.html#ad0550fe1aac50d476a071743e3c3802a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad0550fe1aac50d476a071743e3c3802a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a3c6b8eef49c18add5c4c56d9035c06df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_colored_point_handler.html#a3c6b8eef49c18add5c4c56d9035c06df">DrawHistogram</a> () override</td></tr>
+<tr class="memdesc:a3c6b8eef49c18add5c4c56d9035c06df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отрисовывает гистограмму  <a href="class_colored_point_handler.html#a3c6b8eef49c18add5c4c56d9035c06df">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3c6b8eef49c18add5c4c56d9035c06df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19d02da549d21bce5167c041257ad808"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_colored_point_handler.html#a19d02da549d21bce5167c041257ad808">DrawPoint</a> (Mat &amp;frame)</td></tr>
+<tr class="memdesc:a19d02da549d21bce5167c041257ad808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отрисовывает точку на кадре  <a href="class_colored_point_handler.html#a19d02da549d21bce5167c041257ad808">Подробнее...</a><br /></td></tr>
+<tr class="separator:a19d02da549d21bce5167c041257ad808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae36ef1c44415f932993212c8aff980f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_colored_point_handler.html#ae36ef1c44415f932993212c8aff980f6">DrawInteractionRectangle</a> (Mat &amp;frame)</td></tr>
+<tr class="memdesc:ae36ef1c44415f932993212c8aff980f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отрисовывает прямоугольник взаимодействия  <a href="class_colored_point_handler.html#ae36ef1c44415f932993212c8aff980f6">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae36ef1c44415f932993212c8aff980f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad360ca58ca141acaf11d98a9bf59483b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_colored_point_handler.html#ad360ca58ca141acaf11d98a9bf59483b">UpdatePointColor</a> () override</td></tr>
+<tr class="memdesc:ad360ca58ca141acaf11d98a9bf59483b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляет текущий цвет точки  <a href="class_colored_point_handler.html#ad360ca58ca141acaf11d98a9bf59483b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad360ca58ca141acaf11d98a9bf59483b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a2fe1b3b0ab84e773e09fa26d79f5d3f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_colored_point_handler.html#a2fe1b3b0ab84e773e09fa26d79f5d3f9">coloring_mode_</a></td></tr>
+<tr class="separator:a2fe1b3b0ab84e773e09fa26d79f5d3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1920c209cdbaf82feee3310787cedc47"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_colored_point_handler.html#a1920c209cdbaf82feee3310787cedc47">radius_resize_factor_</a></td></tr>
+<tr class="memdesc:a1920c209cdbaf82feee3310787cedc47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Коэффициент рескейла для радиуса точки  <a href="class_colored_point_handler.html#a1920c209cdbaf82feee3310787cedc47">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1920c209cdbaf82feee3310787cedc47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10084b9ba7abcc7a6637cf51ae688a5d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_colored_point_handler.html#a10084b9ba7abcc7a6637cf51ae688a5d">point_id_</a></td></tr>
+<tr class="memdesc:a10084b9ba7abcc7a6637cf51ae688a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID точки (нет блин почки)  <a href="class_colored_point_handler.html#a10084b9ba7abcc7a6637cf51ae688a5d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a10084b9ba7abcc7a6637cf51ae688a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3ee0b18de6bf71cd0f5124ce73c490"><td class="memItemLeft" align="right" valign="top">Scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_colored_point_handler.html#a4b3ee0b18de6bf71cd0f5124ce73c490">point_color_</a></td></tr>
+<tr class="memdesc:a4b3ee0b18de6bf71cd0f5124ce73c490"><td class="mdescLeft">&#160;</td><td class="mdescRight">Цвет точки  <a href="class_colored_point_handler.html#a4b3ee0b18de6bf71cd0f5124ce73c490">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4b3ee0b18de6bf71cd0f5124ce73c490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pub_static_methods_class_histogram"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_histogram')"><img src="closed.png" alt="-"/>&#160;Открытые статические члены унаследованные от <a class="el" href="class_histogram.html">Histogram</a></td></tr>
+<tr class="memitem:a090252d83cd4beb02a842afbf0311d3d inherit pub_static_methods_class_histogram"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#a090252d83cd4beb02a842afbf0311d3d">OnMouse</a> (int event, int x, int y, int flags, void *userdata)</td></tr>
+<tr class="memdesc:a090252d83cd4beb02a842afbf0311d3d inherit pub_static_methods_class_histogram"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback функция для определения события (используется для хэндлинга клика мышью)  <a href="class_histogram.html#a090252d83cd4beb02a842afbf0311d3d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a090252d83cd4beb02a842afbf0311d3d inherit pub_static_methods_class_histogram"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_class_vibrating_point"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_vibrating_point')"><img src="closed.png" alt="-"/>&#160;Статические открытые данные унаследованные от <a class="el" href="class_vibrating_point.html">VibratingPoint</a></td></tr>
+<tr class="memitem:afdefa096df21cf891ae6835a6df4ffc9 inherit pub_static_attribs_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">static std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#afdefa096df21cf891ae6835a6df4ffc9">extremum_amplitude_</a></td></tr>
+<tr class="memdesc:afdefa096df21cf891ae6835a6df4ffc9 inherit pub_static_attribs_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимум и минимум амплитуды среди всех <a class="el" href="class_vibrating_point.html" title="Абстрактный класс для описания вибрирующей точки">VibratingPoint</a> объектов-наследников  <a href="class_vibrating_point.html#afdefa096df21cf891ae6835a6df4ffc9">Подробнее...</a><br /></td></tr>
+<tr class="separator:afdefa096df21cf891ae6835a6df4ffc9 inherit pub_static_attribs_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bd28bb86f01ccae6fa193914863045a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#a2bd28bb86f01ccae6fa193914863045a">DrawHistogram</a> ()=0</td></tr>
+<tr class="memdesc:a2bd28bb86f01ccae6fa193914863045a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отрисовывает гистограмму спектра частот колебаний точки (полученную после БПФ в методе <a class="el" href="class_vibrating_point.html#a005868411bd6b296d992f3dcd79451d7" title="Выполняет БПФ для нахождения частоты вибрации.">ExecuteFFT()</a>)  <a href="class_vibrating_point.html#a2bd28bb86f01ccae6fa193914863045a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2bd28bb86f01ccae6fa193914863045a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadc5ff6408bb2e4a474dd25cd5bb6fdf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#aadc5ff6408bb2e4a474dd25cd5bb6fdf">UpdatePointColor</a> ()=0</td></tr>
+<tr class="memdesc:aadc5ff6408bb2e4a474dd25cd5bb6fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляем текущий цвет точки  <a href="class_vibrating_point.html#aadc5ff6408bb2e4a474dd25cd5bb6fdf">Подробнее...</a><br /></td></tr>
+<tr class="separator:aadc5ff6408bb2e4a474dd25cd5bb6fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_histogram"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_histogram')"><img src="closed.png" alt="-"/>&#160;Защищенные данные унаследованные от <a class="el" href="class_histogram.html">Histogram</a></td></tr>
+<tr class="memitem:ad5f780994e3453a67ed31b9437000ce3 inherit pro_attribs_class_histogram"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_histogram.html#ad5f780994e3453a67ed31b9437000ce3">is_histogram_plotted_</a></td></tr>
+<tr class="memdesc:ad5f780994e3453a67ed31b9437000ce3 inherit pro_attribs_class_histogram"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг для отрисовки гистограммы  <a href="class_histogram.html#ad5f780994e3453a67ed31b9437000ce3">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad5f780994e3453a67ed31b9437000ce3 inherit pro_attribs_class_histogram"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_vibrating_point"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_vibrating_point')"><img src="closed.png" alt="-"/>&#160;Защищенные данные унаследованные от <a class="el" href="class_vibrating_point.html">VibratingPoint</a></td></tr>
+<tr class="memitem:a5b35f5a2109df2be2d2832b25dfa2285 inherit pro_attribs_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#a5b35f5a2109df2be2d2832b25dfa2285">interaction_box_</a></td></tr>
+<tr class="memdesc:a5b35f5a2109df2be2d2832b25dfa2285 inherit pro_attribs_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прямоугольник (область) взаимодействия с точкой  <a href="class_vibrating_point.html#a5b35f5a2109df2be2d2832b25dfa2285">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5b35f5a2109df2be2d2832b25dfa2285 inherit pro_attribs_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c035e084006469922a45f023b1bcce0 inherit pro_attribs_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">interaction_offset_</a></td></tr>
+<tr class="memdesc:a8c035e084006469922a45f023b1bcce0 inherit pro_attribs_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Половина длины прямоугольника взаимодействия  <a href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8c035e084006469922a45f023b1bcce0 inherit pro_attribs_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0298c80261ea234f82e1afff59d2d1fa inherit pro_attribs_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#a0298c80261ea234f82e1afff59d2d1fa">interacted_</a></td></tr>
+<tr class="memdesc:a0298c80261ea234f82e1afff59d2d1fa inherit pro_attribs_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг взаимодействия с точкой  <a href="class_vibrating_point.html#a0298c80261ea234f82e1afff59d2d1fa">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0298c80261ea234f82e1afff59d2d1fa inherit pro_attribs_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9989c50fa30cecf13079ae0c595ef87c inherit pro_attribs_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">Point3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#a9989c50fa30cecf13079ae0c595ef87c">relative_amplitude_</a></td></tr>
+<tr class="memdesc:a9989c50fa30cecf13079ae0c595ef87c inherit pro_attribs_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Относительные амплитуды вибрации по x, y. Выражается отношением амплитуды  <a href="class_vibrating_point.html#a9989c50fa30cecf13079ae0c595ef87c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9989c50fa30cecf13079ae0c595ef87c inherit pro_attribs_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae50ac111f6681489eded6da7ef66ea inherit pro_attribs_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">Point3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#a5ae50ac111f6681489eded6da7ef66ea">current_amplitude_</a></td></tr>
+<tr class="memdesc:a5ae50ac111f6681489eded6da7ef66ea inherit pro_attribs_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Фактические амплитуды вибрации по x, y. Выражаюытся в пикселях  <a href="class_vibrating_point.html#a5ae50ac111f6681489eded6da7ef66ea">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5ae50ac111f6681489eded6da7ef66ea inherit pro_attribs_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb01bb9d96c3d2fb6d9f99982fde66c6 inherit pro_attribs_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Point2f &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a></td></tr>
+<tr class="memdesc:afb01bb9d96c3d2fb6d9f99982fde66c6 inherit pro_attribs_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Контейнер для координат точки  <a href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">Подробнее...</a><br /></td></tr>
+<tr class="separator:afb01bb9d96c3d2fb6d9f99982fde66c6 inherit pro_attribs_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6653e27fe96e5fe6e7aa410fb3138c92 inherit pro_attribs_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#a6653e27fe96e5fe6e7aa410fb3138c92">x_coordinates_</a></td></tr>
+<tr class="memdesc:a6653e27fe96e5fe6e7aa410fb3138c92 inherit pro_attribs_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Контейнер для координат точки по оси X.  <a href="class_vibrating_point.html#a6653e27fe96e5fe6e7aa410fb3138c92">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6653e27fe96e5fe6e7aa410fb3138c92 inherit pro_attribs_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df5aa7a4d955de091640290f849961c inherit pro_attribs_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#a5df5aa7a4d955de091640290f849961c">y_coordinates_</a></td></tr>
+<tr class="memdesc:a5df5aa7a4d955de091640290f849961c inherit pro_attribs_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Контейнер для координат точки по оси Y.  <a href="class_vibrating_point.html#a5df5aa7a4d955de091640290f849961c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5df5aa7a4d955de091640290f849961c inherit pro_attribs_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa65df19b908306e2f4c725480594b2bb inherit pro_attribs_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">std::vector&lt; cv::Point2f &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb">vec_meaned_coordinates_of_point_</a></td></tr>
+<tr class="memdesc:aa65df19b908306e2f4c725480594b2bb inherit pro_attribs_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Контейнер для координат точки относительно нулевого уровня  <a href="class_vibrating_point.html#aa65df19b908306e2f4c725480594b2bb">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa65df19b908306e2f4c725480594b2bb inherit pro_attribs_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd1433886cf1fb2b3b07062b69614b1 inherit pro_attribs_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#adfd1433886cf1fb2b3b07062b69614b1">frequencies_</a></td></tr>
+<tr class="memdesc:adfd1433886cf1fb2b3b07062b69614b1 inherit pro_attribs_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Контейнер для частот точки  <a href="class_vibrating_point.html#adfd1433886cf1fb2b3b07062b69614b1">Подробнее...</a><br /></td></tr>
+<tr class="separator:adfd1433886cf1fb2b3b07062b69614b1 inherit pro_attribs_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0b94560fbac6ae1c5dbae9f4931d28c inherit pro_attribs_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#aa0b94560fbac6ae1c5dbae9f4931d28c">main_frequency_</a></td></tr>
+<tr class="memdesc:aa0b94560fbac6ae1c5dbae9f4931d28c inherit pro_attribs_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Главная частота (основная)  <a href="class_vibrating_point.html#aa0b94560fbac6ae1c5dbae9f4931d28c">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa0b94560fbac6ae1c5dbae9f4931d28c inherit pro_attribs_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2aa8fe4bc94a957f75aa00fb9ce9f26 inherit pro_attribs_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#ad2aa8fe4bc94a957f75aa00fb9ce9f26">point_time_coordinates_</a></td></tr>
+<tr class="memdesc:ad2aa8fe4bc94a957f75aa00fb9ce9f26 inherit pro_attribs_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Контейнер для временных координат точки  <a href="class_vibrating_point.html#ad2aa8fe4bc94a957f75aa00fb9ce9f26">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad2aa8fe4bc94a957f75aa00fb9ce9f26 inherit pro_attribs_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67ffaaa1b714226a78d6d5cc31c195c9 inherit pro_attribs_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#a67ffaaa1b714226a78d6d5cc31c195c9">sampling_rate_</a></td></tr>
+<tr class="memdesc:a67ffaaa1b714226a78d6d5cc31c195c9 inherit pro_attribs_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Частота сэмплирования (фактически - FPS исходного видео)  <a href="class_vibrating_point.html#a67ffaaa1b714226a78d6d5cc31c195c9">Подробнее...</a><br /></td></tr>
+<tr class="separator:a67ffaaa1b714226a78d6d5cc31c195c9 inherit pro_attribs_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a7383346b67916a29c9dc892addfae inherit pro_attribs_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#ac0a7383346b67916a29c9dc892addfae">current_point_radius_</a></td></tr>
+<tr class="memdesc:ac0a7383346b67916a29c9dc892addfae inherit pro_attribs_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Радиус точки, который нужен для её отрисовки  <a href="class_vibrating_point.html#ac0a7383346b67916a29c9dc892addfae">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac0a7383346b67916a29c9dc892addfae inherit pro_attribs_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4a9903a86d6d1a98b1acf89684492ae inherit pro_attribs_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#af4a9903a86d6d1a98b1acf89684492ae">default_point_radius_</a></td></tr>
+<tr class="memdesc:af4a9903a86d6d1a98b1acf89684492ae inherit pro_attribs_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дефолтный радиус точки  <a href="class_vibrating_point.html#af4a9903a86d6d1a98b1acf89684492ae">Подробнее...</a><br /></td></tr>
+<tr class="separator:af4a9903a86d6d1a98b1acf89684492ae inherit pro_attribs_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ea36bdad5aeac784ecfa21f3ca98517 inherit pro_attribs_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#a5ea36bdad5aeac784ecfa21f3ca98517">x_</a></td></tr>
+<tr class="memdesc:a5ea36bdad5aeac784ecfa21f3ca98517 inherit pro_attribs_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Контейнер для хранения координат гистограммы по оси X (фактически - найденный спектр частот вибрации точки после выполнения БПФ)  <a href="class_vibrating_point.html#a5ea36bdad5aeac784ecfa21f3ca98517">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5ea36bdad5aeac784ecfa21f3ca98517 inherit pro_attribs_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa22ce2e3bdd0b4614b1c0ad0adf256e5 inherit pro_attribs_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#aa22ce2e3bdd0b4614b1c0ad0adf256e5">y_</a></td></tr>
+<tr class="memdesc:aa22ce2e3bdd0b4614b1c0ad0adf256e5 inherit pro_attribs_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Контейнер для хранения координат гистограммы по оси Y (фактически - найденные магнитуды точки после выполнения БПФ)  <a href="class_vibrating_point.html#aa22ce2e3bdd0b4614b1c0ad0adf256e5">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa22ce2e3bdd0b4614b1c0ad0adf256e5 inherit pro_attribs_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2539b861e02f361eb772c71e06c9af3 inherit pro_attribs_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#ab2539b861e02f361eb772c71e06c9af3">sensivity_</a></td></tr>
+<tr class="memdesc:ab2539b861e02f361eb772c71e06c9af3 inherit pro_attribs_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чувствительность определения вибрации  <a href="class_vibrating_point.html#ab2539b861e02f361eb772c71e06c9af3">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab2539b861e02f361eb772c71e06c9af3 inherit pro_attribs_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ed26ed40b33b1486cb4c304981d4444 inherit pro_attribs_class_vibrating_point"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vibrating_point.html#a6ed26ed40b33b1486cb4c304981d4444">confidence_level_</a></td></tr>
+<tr class="memdesc:a6ed26ed40b33b1486cb4c304981d4444 inherit pro_attribs_class_vibrating_point"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рейтинг достоверности вибрации  <a href="class_vibrating_point.html#a6ed26ed40b33b1486cb4c304981d4444">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6ed26ed40b33b1486cb4c304981d4444 inherit pro_attribs_class_vibrating_point"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p >Дочерний (от <a class="el" href="class_vibrating_point.html" title="Абстрактный класс для описания вибрирующей точки">VibratingPoint</a>) класс. Предназначен для помещения множества цветных точек на кадр и отслеживания вибрации каждой из них </p>
+<p >Объект класса - "цветная" точка на видео, положение которой отслеживается с течением времени для вычисления частоты вибрации этой точки</p>
+<p >Точку можно отрисовать методом <a class="el" href="class_colored_point_handler.html#ad16eb2210bc1e9f8983186088cc9a573" title="Отрисовывает точку и данные, связанные с ней">Draw()</a> на кадре</p>
+<p >Также при взаимодействии с точкой (<a class="el" href="class_vibrating_point.html#a342c75a6ac0f9ab85de1a0dd663eab03" title="Проверяет точку на наличие взаимодействия с ней (если курсор попал в область взаимодействия точки Vib...">VibratingPoint::IsInteracted()</a>) будет выводиться гистограмма частот в отдельное окно (<a class="el" href="class_colored_point_handler.html#a3c6b8eef49c18add5c4c56d9035c06df" title="Отрисовывает гистограмму">DrawHistogram()</a>) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="colored__point__handler_8h_source.html">colored_point_handler.h</a> строка <a class="el" href="colored__point__handler_8h_source.html#l00026">26</a></p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="ad0550fe1aac50d476a071743e3c3802a" name="ad0550fe1aac50d476a071743e3c3802a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0550fe1aac50d476a071743e3c3802a">&#9670;&#160;</a></span>coloring_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_colored_point_handler.html#ad0550fe1aac50d476a071743e3c3802a">ColoredPointHandler::coloring_mode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перечисление, используемое для более удобного отображения текущего режима подсветки точки </p>
+
+<p class="definition">См. определение в файле <a class="el" href="colored__point__handler_8h_source.html">colored_point_handler.h</a> строка <a class="el" href="colored__point__handler_8h_source.html#l00031">31</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>    {</div>
+<div class="line"><span class="lineno">   33</span>        DEFAULT,</div>
+<div class="line"><span class="lineno">   34</span>        COLORING_BASED_ON_FREQUENCY,</div>
+<div class="line"><span class="lineno">   35</span>        COLORING_BASED_ON_AMPLITUDE,</div>
+<div class="line"><span class="lineno">   36</span>    };</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a4c7292c2268cad44b6c656f4f582194a" name="a4c7292c2268cad44b6c656f4f582194a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c7292c2268cad44b6c656f4f582194a">&#9670;&#160;</a></span>ColoredPointHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ColoredPointHandler::ColoredPointHandler </td>
+          <td>(</td>
+          <td class="paramtype">Point2f&#160;</td>
+          <td class="paramname"><em>init_coordinates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sampling_rate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>point_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>radius_resize_factor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>output_csv_filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор этого класса </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">init_coordinates</td><td>самые первые координаты точки (фактически - координаты клика мышью на окне, куда выводилось исходное видео) </td></tr>
+    <tr><td class="paramname">sampling_rate</td><td>частота сэмплирования (фактически - FPS исходного видео) </td></tr>
+    <tr><td class="paramname">point_id</td><td>ID точки </td></tr>
+    <tr><td class="paramname">radius_resize_factor</td><td>коэффициент масштабирования радиуса отрисовываемой точки </td></tr>
+    <tr><td class="paramname">output_csv_filename</td><td>имя (путь) csv-файла для записи метаданных </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Заметки</dt><dd>Коэффициент масштабирования: <a class="el" href="class_frame_handler.html#ae3165c660c17d4b410c1690d13fda93c" title="Инициализирует коэффициент масштабирования текста в зависимости от разрешения видео">FrameHandler::InitTextResizeFactors()</a> </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="colored__point__handler_8cpp_source.html">colored_point_handler.cpp</a> строка <a class="el" href="colored__point__handler_8cpp_source.html#l00003">3</a></p>
+<div class="fragment"><div class="line"><span class="lineno">    3</span>                                                                                                                                                                :</div>
+<div class="line"><span class="lineno">    4</span>    <a class="code hl_class" href="class_histogram.html">Histogram</a>{ 600, 300, sampling_rate / 2, point_id, <a class="code hl_variable" href="class_vibrating_point.html#a5ea36bdad5aeac784ecfa21f3ca98517">x_</a>, <a class="code hl_variable" href="class_vibrating_point.html#aa22ce2e3bdd0b4614b1c0ad0adf256e5">y_</a> },</div>
+<div class="line"><span class="lineno">    5</span>    <a class="code hl_class" href="class_output_to_csv.html">OutputToCsv</a>{ output_csv_filename, <a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>, <a class="code hl_variable" href="class_vibrating_point.html#ad2aa8fe4bc94a957f75aa00fb9ce9f26">point_time_coordinates_</a>, point_id },</div>
+<div class="line"><span class="lineno">    6</span>    <a class="code hl_variable" href="class_colored_point_handler.html#a10084b9ba7abcc7a6637cf51ae688a5d">point_id_</a>{ point_id },</div>
+<div class="line"><span class="lineno">    7</span>    <a class="code hl_variable" href="class_colored_point_handler.html#a1920c209cdbaf82feee3310787cedc47">radius_resize_factor_</a>{ radius_resize_factor },</div>
+<div class="line"><span class="lineno">    8</span>    coloring_mode_{ COLORING_BASED_ON_FREQUENCY }</div>
+<div class="line"><span class="lineno">    9</span>{</div>
+<div class="line"><span class="lineno">   10</span>    <a class="code hl_variable" href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">interaction_offset_</a> = 3;</div>
+<div class="line"><span class="lineno">   11</span>    <a class="code hl_variable" href="class_vibrating_point.html#a67ffaaa1b714226a78d6d5cc31c195c9">sampling_rate_</a> = sampling_rate;</div>
+<div class="line"><span class="lineno">   12</span> </div>
+<div class="line"><span class="lineno">   13</span>    <span class="comment">// Добавляем первые координаты клика мышью</span></div>
+<div class="line"><span class="lineno">   14</span>    <a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>.push_back(init_coordinates);</div>
+<div class="line"><span class="lineno">   15</span>    <a class="code hl_variable" href="class_vibrating_point.html#a5b35f5a2109df2be2d2832b25dfa2285">interaction_box_</a> = Rect(</div>
+<div class="line"><span class="lineno">   16</span>        Point2i(init_coordinates.x - <a class="code hl_variable" href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">interaction_offset_</a>, init_coordinates.y - <a class="code hl_variable" href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">interaction_offset_</a>),</div>
+<div class="line"><span class="lineno">   17</span>        Point2i(init_coordinates.x + <a class="code hl_variable" href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">interaction_offset_</a>, init_coordinates.y + <a class="code hl_variable" href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">interaction_offset_</a>)</div>
+<div class="line"><span class="lineno">   18</span>    );</div>
+<div class="line"><span class="lineno">   19</span>    <a class="code hl_variable" href="class_vibrating_point.html#a0298c80261ea234f82e1afff59d2d1fa">interacted_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   20</span> </div>
+<div class="line"><span class="lineno">   21</span>    <a class="code hl_variable" href="class_vibrating_point.html#af4a9903a86d6d1a98b1acf89684492ae">default_point_radius_</a> = 4 * radius_resize_factor;</div>
+<div class="line"><span class="lineno">   22</span>    <a class="code hl_variable" href="class_vibrating_point.html#ac0a7383346b67916a29c9dc892addfae">current_point_radius_</a> = <a class="code hl_variable" href="class_vibrating_point.html#af4a9903a86d6d1a98b1acf89684492ae">default_point_radius_</a>;</div>
+<div class="line"><span class="lineno">   23</span> </div>
+<div class="line"><span class="lineno">   24</span>    <a class="code hl_variable" href="class_vibrating_point.html#adfd1433886cf1fb2b3b07062b69614b1">frequencies_</a>.push_back(0.0);</div>
+<div class="line"><span class="lineno">   25</span>    <a class="code hl_variable" href="class_vibrating_point.html#a9989c50fa30cecf13079ae0c595ef87c">relative_amplitude_</a> = Point3f(0.0, 0.0, 0.0);</div>
+<div class="line"><span class="lineno">   26</span> </div>
+<div class="line"><span class="lineno">   27</span>    <a class="code hl_variable" href="class_vibrating_point.html#ab2539b861e02f361eb772c71e06c9af3">sensivity_</a> = 0.01;</div>
+<div class="line"><span class="lineno">   28</span>    <a class="code hl_variable" href="class_vibrating_point.html#a6ed26ed40b33b1486cb4c304981d4444">confidence_level_</a> = 1.0;</div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span>    <a class="code hl_variable" href="class_colored_point_handler.html#a4b3ee0b18de6bf71cd0f5124ce73c490">point_color_</a> = Scalar(0, 0, 255);</div>
+<div class="line"><span class="lineno">   31</span>}</div>
+<div class="ttc" id="aclass_colored_point_handler_html_a10084b9ba7abcc7a6637cf51ae688a5d"><div class="ttname"><a href="class_colored_point_handler.html#a10084b9ba7abcc7a6637cf51ae688a5d">ColoredPointHandler::point_id_</a></div><div class="ttdeci">int point_id_</div><div class="ttdoc">ID точки (нет блин почки)</div><div class="ttdef"><b>Definition:</b> <a href="colored__point__handler_8h_source.html#l00098">colored_point_handler.h:98</a></div></div>
+<div class="ttc" id="aclass_colored_point_handler_html_a1920c209cdbaf82feee3310787cedc47"><div class="ttname"><a href="class_colored_point_handler.html#a1920c209cdbaf82feee3310787cedc47">ColoredPointHandler::radius_resize_factor_</a></div><div class="ttdeci">float radius_resize_factor_</div><div class="ttdoc">Коэффициент рескейла для радиуса точки</div><div class="ttdef"><b>Definition:</b> <a href="colored__point__handler_8h_source.html#l00094">colored_point_handler.h:94</a></div></div>
+<div class="ttc" id="aclass_colored_point_handler_html_a4b3ee0b18de6bf71cd0f5124ce73c490"><div class="ttname"><a href="class_colored_point_handler.html#a4b3ee0b18de6bf71cd0f5124ce73c490">ColoredPointHandler::point_color_</a></div><div class="ttdeci">Scalar point_color_</div><div class="ttdoc">Цвет точки</div><div class="ttdef"><b>Definition:</b> <a href="colored__point__handler_8h_source.html#l00102">colored_point_handler.h:102</a></div></div>
+<div class="ttc" id="aclass_histogram_html"><div class="ttname"><a href="class_histogram.html">Histogram</a></div><div class="ttdoc">Класс для создания объектов-гистограмм, на которые можно выводить различную информацию</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00016">histogram.h:17</a></div></div>
+<div class="ttc" id="aclass_output_to_csv_html"><div class="ttname"><a href="class_output_to_csv.html">OutputToCsv</a></div><div class="ttdoc">Класс для сохранения метаданных (временных и пространственных координат, ID точки)</div><div class="ttdef"><b>Definition:</b> <a href="output__to__csv_8h_source.html#l00018">output_to_csv.h:18</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a0298c80261ea234f82e1afff59d2d1fa"><div class="ttname"><a href="class_vibrating_point.html#a0298c80261ea234f82e1afff59d2d1fa">VibratingPoint::interacted_</a></div><div class="ttdeci">bool interacted_</div><div class="ttdoc">Флаг взаимодействия с точкой</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00122">vibrating_point.h:122</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a5b35f5a2109df2be2d2832b25dfa2285"><div class="ttname"><a href="class_vibrating_point.html#a5b35f5a2109df2be2d2832b25dfa2285">VibratingPoint::interaction_box_</a></div><div class="ttdeci">Rect interaction_box_</div><div class="ttdoc">Прямоугольник (область) взаимодействия с точкой</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00112">vibrating_point.h:112</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a5ea36bdad5aeac784ecfa21f3ca98517"><div class="ttname"><a href="class_vibrating_point.html#a5ea36bdad5aeac784ecfa21f3ca98517">VibratingPoint::x_</a></div><div class="ttdeci">std::vector&lt; double &gt; x_</div><div class="ttdoc">Контейнер для хранения координат гистограммы по оси X (фактически - найденный спектр частот вибрации ...</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00176">vibrating_point.h:176</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a67ffaaa1b714226a78d6d5cc31c195c9"><div class="ttname"><a href="class_vibrating_point.html#a67ffaaa1b714226a78d6d5cc31c195c9">VibratingPoint::sampling_rate_</a></div><div class="ttdeci">double sampling_rate_</div><div class="ttdoc">Частота сэмплирования (фактически - FPS исходного видео)</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00163">vibrating_point.h:163</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a6ed26ed40b33b1486cb4c304981d4444"><div class="ttname"><a href="class_vibrating_point.html#a6ed26ed40b33b1486cb4c304981d4444">VibratingPoint::confidence_level_</a></div><div class="ttdeci">double confidence_level_</div><div class="ttdoc">Рейтинг достоверности вибрации</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00188">vibrating_point.h:188</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a8c035e084006469922a45f023b1bcce0"><div class="ttname"><a href="class_vibrating_point.html#a8c035e084006469922a45f023b1bcce0">VibratingPoint::interaction_offset_</a></div><div class="ttdeci">int interaction_offset_</div><div class="ttdoc">Половина длины прямоугольника взаимодействия</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00116">vibrating_point.h:116</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_a9989c50fa30cecf13079ae0c595ef87c"><div class="ttname"><a href="class_vibrating_point.html#a9989c50fa30cecf13079ae0c595ef87c">VibratingPoint::relative_amplitude_</a></div><div class="ttdeci">Point3f relative_amplitude_</div><div class="ttdoc">Относительные амплитуды вибрации по x, y. Выражается отношением амплитуды</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00127">vibrating_point.h:127</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_aa22ce2e3bdd0b4614b1c0ad0adf256e5"><div class="ttname"><a href="class_vibrating_point.html#aa22ce2e3bdd0b4614b1c0ad0adf256e5">VibratingPoint::y_</a></div><div class="ttdeci">std::vector&lt; float &gt; y_</div><div class="ttdoc">Контейнер для хранения координат гистограммы по оси Y (фактически - найденные магнитуды точки после в...</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00180">vibrating_point.h:180</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_ab2539b861e02f361eb772c71e06c9af3"><div class="ttname"><a href="class_vibrating_point.html#ab2539b861e02f361eb772c71e06c9af3">VibratingPoint::sensivity_</a></div><div class="ttdeci">double sensivity_</div><div class="ttdoc">Чувствительность определения вибрации</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00184">vibrating_point.h:184</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_ac0a7383346b67916a29c9dc892addfae"><div class="ttname"><a href="class_vibrating_point.html#ac0a7383346b67916a29c9dc892addfae">VibratingPoint::current_point_radius_</a></div><div class="ttdeci">int current_point_radius_</div><div class="ttdoc">Радиус точки, который нужен для её отрисовки</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00167">vibrating_point.h:167</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_ad2aa8fe4bc94a957f75aa00fb9ce9f26"><div class="ttname"><a href="class_vibrating_point.html#ad2aa8fe4bc94a957f75aa00fb9ce9f26">VibratingPoint::point_time_coordinates_</a></div><div class="ttdeci">std::vector&lt; double &gt; point_time_coordinates_</div><div class="ttdoc">Контейнер для временных координат точки</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00159">vibrating_point.h:159</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_adfd1433886cf1fb2b3b07062b69614b1"><div class="ttname"><a href="class_vibrating_point.html#adfd1433886cf1fb2b3b07062b69614b1">VibratingPoint::frequencies_</a></div><div class="ttdeci">std::vector&lt; double &gt; frequencies_</div><div class="ttdoc">Контейнер для частот точки</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00151">vibrating_point.h:151</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_af4a9903a86d6d1a98b1acf89684492ae"><div class="ttname"><a href="class_vibrating_point.html#af4a9903a86d6d1a98b1acf89684492ae">VibratingPoint::default_point_radius_</a></div><div class="ttdeci">int default_point_radius_</div><div class="ttdoc">Дефолтный радиус точки</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00171">vibrating_point.h:171</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_afb01bb9d96c3d2fb6d9f99982fde66c6"><div class="ttname"><a href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">VibratingPoint::point_coordinates_</a></div><div class="ttdeci">std::vector&lt; Point2f &gt; point_coordinates_</div><div class="ttdoc">Контейнер для координат точки</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00135">vibrating_point.h:135</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a55e451f03127858deb1dda40e2124611" name="a55e451f03127858deb1dda40e2124611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55e451f03127858deb1dda40e2124611">&#9670;&#160;</a></span>~ColoredPointHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ColoredPointHandler::~ColoredPointHandler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Деструктор этого класса </p>
+<p >Вызывает метод родительского класса <a class="el" href="class_output_to_csv.html" title="Класс для сохранения метаданных (временных и пространственных координат, ID точки)">OutputToCsv</a> <a class="el" href="class_output_to_csv.html#a8f1e3239fa21906aa102c3d601183f65" title="Добавляет данные для записи">Write()</a> для записи метаданных </p>
+
+<p class="definition">См. определение в файле <a class="el" href="colored__point__handler_8cpp_source.html">colored_point_handler.cpp</a> строка <a class="el" href="colored__point__handler_8cpp_source.html#l00033">33</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>{</div>
+<div class="line"><span class="lineno">   35</span>    <a class="code hl_function" href="class_output_to_csv.html#a8f1e3239fa21906aa102c3d601183f65">Write</a>();</div>
+<div class="line"><span class="lineno">   36</span>}</div>
+<div class="ttc" id="aclass_output_to_csv_html_a8f1e3239fa21906aa102c3d601183f65"><div class="ttname"><a href="class_output_to_csv.html#a8f1e3239fa21906aa102c3d601183f65">OutputToCsv::Write</a></div><div class="ttdeci">void Write()</div><div class="ttdoc">Добавляет данные для записи</div><div class="ttdef"><b>Definition:</b> <a href="output__to__csv_8cpp_source.html#l00011">output_to_csv.cpp:11</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="ad16eb2210bc1e9f8983186088cc9a573" name="ad16eb2210bc1e9f8983186088cc9a573"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad16eb2210bc1e9f8983186088cc9a573">&#9670;&#160;</a></span>Draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ColoredPointHandler::Draw </td>
+          <td>(</td>
+          <td class="paramtype">Mat &amp;&#160;</td>
+          <td class="paramname"><em>frame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отрисовывает точку и данные, связанные с ней </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>изображение, на котором будет происходить отрисовка </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_vibrating_point.html#a84210a3247277ca0137d4754c5ec5b03">VibratingPoint</a>.</p>
+
+<p class="definition">См. определение в файле <a class="el" href="colored__point__handler_8cpp_source.html">colored_point_handler.cpp</a> строка <a class="el" href="colored__point__handler_8cpp_source.html#l00038">38</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>{</div>
+<div class="line"><span class="lineno">   40</span>    <span class="comment">// отрисовываем круг вокруг точки</span></div>
+<div class="line"><span class="lineno">   41</span>    <a class="code hl_function" href="class_colored_point_handler.html#a19d02da549d21bce5167c041257ad808">DrawPoint</a>(frame);</div>
+<div class="line"><span class="lineno">   42</span>    <span class="comment">// отрисовываем гистограмму</span></div>
+<div class="line"><span class="lineno">   43</span>    <a class="code hl_function" href="class_colored_point_handler.html#a3c6b8eef49c18add5c4c56d9035c06df">DrawHistogram</a>();</div>
+<div class="line"><span class="lineno">   44</span>}</div>
+<div class="ttc" id="aclass_colored_point_handler_html_a19d02da549d21bce5167c041257ad808"><div class="ttname"><a href="class_colored_point_handler.html#a19d02da549d21bce5167c041257ad808">ColoredPointHandler::DrawPoint</a></div><div class="ttdeci">void DrawPoint(Mat &amp;frame)</div><div class="ttdoc">Отрисовывает точку на кадре</div><div class="ttdef"><b>Definition:</b> <a href="colored__point__handler_8cpp_source.html#l00061">colored_point_handler.cpp:61</a></div></div>
+<div class="ttc" id="aclass_colored_point_handler_html_a3c6b8eef49c18add5c4c56d9035c06df"><div class="ttname"><a href="class_colored_point_handler.html#a3c6b8eef49c18add5c4c56d9035c06df">ColoredPointHandler::DrawHistogram</a></div><div class="ttdeci">void DrawHistogram() override</div><div class="ttdoc">Отрисовывает гистограмму</div><div class="ttdef"><b>Definition:</b> <a href="colored__point__handler_8cpp_source.html#l00051">colored_point_handler.cpp:51</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3c6b8eef49c18add5c4c56d9035c06df" name="a3c6b8eef49c18add5c4c56d9035c06df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c6b8eef49c18add5c4c56d9035c06df">&#9670;&#160;</a></span>DrawHistogram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ColoredPointHandler::DrawHistogram </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отрисовывает гистограмму </p>
+
+<p>Замещает <a class="el" href="class_vibrating_point.html#a2bd28bb86f01ccae6fa193914863045a">VibratingPoint</a>.</p>
+
+<p class="definition">См. определение в файле <a class="el" href="colored__point__handler_8cpp_source.html">colored_point_handler.cpp</a> строка <a class="el" href="colored__point__handler_8cpp_source.html#l00051">51</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   52</span>{</div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_histogram.html#ad5f780994e3453a67ed31b9437000ce3">is_histogram_plotted_</a>)</div>
+<div class="line"><span class="lineno">   54</span>    {</div>
+<div class="line"><span class="lineno">   55</span>        <a class="code hl_function" href="class_histogram.html#a8ed9e75be45d4c50b54b9150427a89c8">SetXValues</a>(<a class="code hl_variable" href="class_vibrating_point.html#a5ea36bdad5aeac784ecfa21f3ca98517">x_</a>);</div>
+<div class="line"><span class="lineno">   56</span>        <a class="code hl_function" href="class_histogram.html#a6f59d4b44f3f4866a7b709ec7e1e15c4">SetYValues</a>(<a class="code hl_variable" href="class_vibrating_point.html#aa22ce2e3bdd0b4614b1c0ad0adf256e5">y_</a>);</div>
+<div class="line"><span class="lineno">   57</span>        <a class="code hl_function" href="class_histogram.html#a5a5a64a00231d62a6eeacb416f704262">ShowHistogram</a>();</div>
+<div class="line"><span class="lineno">   58</span>    }</div>
+<div class="line"><span class="lineno">   59</span>}</div>
+<div class="ttc" id="aclass_histogram_html_a5a5a64a00231d62a6eeacb416f704262"><div class="ttname"><a href="class_histogram.html#a5a5a64a00231d62a6eeacb416f704262">Histogram::ShowHistogram</a></div><div class="ttdeci">void ShowHistogram()</div><div class="ttdoc">Выводит гистограмму в окно гистограммы</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8cpp_source.html#l00054">histogram.cpp:54</a></div></div>
+<div class="ttc" id="aclass_histogram_html_a6f59d4b44f3f4866a7b709ec7e1e15c4"><div class="ttname"><a href="class_histogram.html#a6f59d4b44f3f4866a7b709ec7e1e15c4">Histogram::SetYValues</a></div><div class="ttdeci">void SetYValues(std::vector&lt; float &gt; y_values)</div><div class="ttdoc">Устанавливает Y-ы</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8cpp_source.html#l00069">histogram.cpp:69</a></div></div>
+<div class="ttc" id="aclass_histogram_html_a8ed9e75be45d4c50b54b9150427a89c8"><div class="ttname"><a href="class_histogram.html#a8ed9e75be45d4c50b54b9150427a89c8">Histogram::SetXValues</a></div><div class="ttdeci">void SetXValues(std::vector&lt; double &gt; x_values)</div><div class="ttdoc">Устанавливает X-ы</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8cpp_source.html#l00064">histogram.cpp:64</a></div></div>
+<div class="ttc" id="aclass_histogram_html_ad5f780994e3453a67ed31b9437000ce3"><div class="ttname"><a href="class_histogram.html#ad5f780994e3453a67ed31b9437000ce3">Histogram::is_histogram_plotted_</a></div><div class="ttdeci">bool is_histogram_plotted_</div><div class="ttdoc">Флаг для отрисовки гистограммы</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00093">histogram.h:93</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae36ef1c44415f932993212c8aff980f6" name="ae36ef1c44415f932993212c8aff980f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae36ef1c44415f932993212c8aff980f6">&#9670;&#160;</a></span>DrawInteractionRectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ColoredPointHandler::DrawInteractionRectangle </td>
+          <td>(</td>
+          <td class="paramtype">Mat &amp;&#160;</td>
+          <td class="paramname"><em>frame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отрисовывает прямоугольник взаимодействия </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>изображение, на котором будет происходить отрисовка </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="colored__point__handler_8cpp_source.html">colored_point_handler.cpp</a> строка <a class="el" href="colored__point__handler_8cpp_source.html#l00068">68</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>{</div>
+<div class="line"><span class="lineno">   70</span>    rectangle(frame, <a class="code hl_variable" href="class_vibrating_point.html#a5b35f5a2109df2be2d2832b25dfa2285">interaction_box_</a>, Scalar(0, 0, 255), 1);</div>
+<div class="line"><span class="lineno">   71</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a19d02da549d21bce5167c041257ad808" name="a19d02da549d21bce5167c041257ad808"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19d02da549d21bce5167c041257ad808">&#9670;&#160;</a></span>DrawPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ColoredPointHandler::DrawPoint </td>
+          <td>(</td>
+          <td class="paramtype">Mat &amp;&#160;</td>
+          <td class="paramname"><em>frame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отрисовывает точку на кадре </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>изображение, на котором будет происходить отрисовка </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="colored__point__handler_8cpp_source.html">colored_point_handler.cpp</a> строка <a class="el" href="colored__point__handler_8cpp_source.html#l00061">61</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>{</div>
+<div class="line"><span class="lineno">   63</span>    <a class="code hl_function" href="class_colored_point_handler.html#ad360ca58ca141acaf11d98a9bf59483b">UpdatePointColor</a>();</div>
+<div class="line"><span class="lineno">   64</span>    <span class="comment">// отрисовываем круг вокруг точки</span></div>
+<div class="line"><span class="lineno">   65</span>    circle(frame, <a class="code hl_variable" href="class_vibrating_point.html#afb01bb9d96c3d2fb6d9f99982fde66c6">point_coordinates_</a>.back(), <a class="code hl_variable" href="class_vibrating_point.html#ac0a7383346b67916a29c9dc892addfae">current_point_radius_</a>, <a class="code hl_variable" href="class_colored_point_handler.html#a4b3ee0b18de6bf71cd0f5124ce73c490">point_color_</a>, FILLED);</div>
+<div class="line"><span class="lineno">   66</span>}</div>
+<div class="ttc" id="aclass_colored_point_handler_html_ad360ca58ca141acaf11d98a9bf59483b"><div class="ttname"><a href="class_colored_point_handler.html#ad360ca58ca141acaf11d98a9bf59483b">ColoredPointHandler::UpdatePointColor</a></div><div class="ttdeci">void UpdatePointColor() override</div><div class="ttdoc">Обновляет текущий цвет точки</div><div class="ttdef"><b>Definition:</b> <a href="colored__point__handler_8cpp_source.html#l00073">colored_point_handler.cpp:73</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aca8be23a3787bd9f62dd0f950c1f2645" name="aca8be23a3787bd9f62dd0f950c1f2645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca8be23a3787bd9f62dd0f950c1f2645">&#9670;&#160;</a></span>SetColoringMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ColoredPointHandler::SetColoringMode </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coloring_mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Устанавливает нужный режим отрисовки цветом </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coloring_mode</td><td>режим, который нужно установить </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Заметки</dt><dd><a class="el" href="class_colored_point_handler.html#ad0550fe1aac50d476a071743e3c3802a" title="Перечисление, используемое для более удобного отображения текущего режима подсветки точки">ColoredPointHandler::coloring_mode</a> </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="colored__point__handler_8cpp_source.html">colored_point_handler.cpp</a> строка <a class="el" href="colored__point__handler_8cpp_source.html#l00046">46</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>{</div>
+<div class="line"><span class="lineno">   48</span>    coloring_mode_ = <a class="code hl_enumeration" href="class_colored_point_handler.html#ad0550fe1aac50d476a071743e3c3802a">coloring_mode</a>;</div>
+<div class="line"><span class="lineno">   49</span>}</div>
+<div class="ttc" id="aclass_colored_point_handler_html_ad0550fe1aac50d476a071743e3c3802a"><div class="ttname"><a href="class_colored_point_handler.html#ad0550fe1aac50d476a071743e3c3802a">ColoredPointHandler::coloring_mode</a></div><div class="ttdeci">coloring_mode</div><div class="ttdoc">Перечисление, используемое для более удобного отображения текущего режима подсветки точки</div><div class="ttdef"><b>Definition:</b> <a href="colored__point__handler_8h_source.html#l00031">colored_point_handler.h:32</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad360ca58ca141acaf11d98a9bf59483b" name="ad360ca58ca141acaf11d98a9bf59483b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad360ca58ca141acaf11d98a9bf59483b">&#9670;&#160;</a></span>UpdatePointColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ColoredPointHandler::UpdatePointColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обновляет текущий цвет точки </p>
+
+<p>Замещает <a class="el" href="class_vibrating_point.html#aadc5ff6408bb2e4a474dd25cd5bb6fdf">VibratingPoint</a>.</p>
+
+<p class="definition">См. определение в файле <a class="el" href="colored__point__handler_8cpp_source.html">colored_point_handler.cpp</a> строка <a class="el" href="colored__point__handler_8cpp_source.html#l00073">73</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>{</div>
+<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">switch</span> (coloring_mode_)</div>
+<div class="line"><span class="lineno">   76</span>    {</div>
+<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">case</span> DEFAULT:</div>
+<div class="line"><span class="lineno">   78</span>    {</div>
+<div class="line"><span class="lineno">   79</span>        <a class="code hl_variable" href="class_vibrating_point.html#ac0a7383346b67916a29c9dc892addfae">current_point_radius_</a> = <a class="code hl_variable" href="class_vibrating_point.html#af4a9903a86d6d1a98b1acf89684492ae">default_point_radius_</a>;</div>
+<div class="line"><span class="lineno">   80</span>        <a class="code hl_variable" href="class_colored_point_handler.html#a4b3ee0b18de6bf71cd0f5124ce73c490">point_color_</a> = Scalar(0, 0, 255);</div>
+<div class="line"><span class="lineno">   81</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   82</span>    }</div>
+<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">case</span> COLORING_BASED_ON_FREQUENCY:</div>
+<div class="line"><span class="lineno">   84</span>    {</div>
+<div class="line"><span class="lineno">   85</span>        <a class="code hl_variable" href="class_vibrating_point.html#ac0a7383346b67916a29c9dc892addfae">current_point_radius_</a> = <a class="code hl_variable" href="class_vibrating_point.html#af4a9903a86d6d1a98b1acf89684492ae">default_point_radius_</a>;</div>
+<div class="line"><span class="lineno">   86</span>        <span class="comment">// переведём диапазон частоты [0; range_limit] в [0; 255] int color value;</span></div>
+<div class="line"><span class="lineno">   87</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="class_vibrating_point.html#adfd1433886cf1fb2b3b07062b69614b1">frequencies_</a>.empty())</div>
+<div class="line"><span class="lineno">   88</span>        {</div>
+<div class="line"><span class="lineno">   89</span>            <a class="code hl_variable" href="class_colored_point_handler.html#a4b3ee0b18de6bf71cd0f5124ce73c490">point_color_</a> = <a class="code hl_function" href="group___helper_functions.html#ga79584d71167afeb72ca384eaf87c1419">HelperFunctions::RatioToRgb</a>(<a class="code hl_variable" href="class_vibrating_point.html#aa0b94560fbac6ae1c5dbae9f4931d28c">main_frequency_</a> / (<a class="code hl_variable" href="class_vibrating_point.html#a67ffaaa1b714226a78d6d5cc31c195c9">sampling_rate_</a> / 2));</div>
+<div class="line"><span class="lineno">   90</span>        }</div>
+<div class="line"><span class="lineno">   91</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   92</span>    }</div>
+<div class="line"><span class="lineno">   93</span>    <span class="keywordflow">case</span> COLORING_BASED_ON_AMPLITUDE:</div>
+<div class="line"><span class="lineno">   94</span>    {</div>
+<div class="line"><span class="lineno">   95</span>        <a class="code hl_variable" href="class_vibrating_point.html#ac0a7383346b67916a29c9dc892addfae">current_point_radius_</a> = <a class="code hl_variable" href="class_vibrating_point.html#af4a9903a86d6d1a98b1acf89684492ae">default_point_radius_</a>;</div>
+<div class="line"><span class="lineno">   96</span>        <span class="comment">// переведём диапазон амплитуд [0; max_amplitude_] в [0; 255] int color value;</span></div>
+<div class="line"><span class="lineno">   97</span>        <span class="keywordtype">double</span> current_amplitude_absolute = sqrt(<a class="code hl_variable" href="class_vibrating_point.html#a5ae50ac111f6681489eded6da7ef66ea">current_amplitude_</a>.x * <a class="code hl_variable" href="class_vibrating_point.html#a5ae50ac111f6681489eded6da7ef66ea">current_amplitude_</a>.x + <a class="code hl_variable" href="class_vibrating_point.html#a5ae50ac111f6681489eded6da7ef66ea">current_amplitude_</a>.y * <a class="code hl_variable" href="class_vibrating_point.html#a5ae50ac111f6681489eded6da7ef66ea">current_amplitude_</a>.y);</div>
+<div class="line"><span class="lineno">   98</span>        <span class="keywordtype">double</span> ratio = (current_amplitude_absolute - <a class="code hl_variable" href="class_vibrating_point.html#afdefa096df21cf891ae6835a6df4ffc9">extremum_amplitude_</a>.second) / (<a class="code hl_variable" href="class_vibrating_point.html#afdefa096df21cf891ae6835a6df4ffc9">extremum_amplitude_</a>.first - <a class="code hl_variable" href="class_vibrating_point.html#afdefa096df21cf891ae6835a6df4ffc9">extremum_amplitude_</a>.second);</div>
+<div class="line"><span class="lineno">   99</span>        <a class="code hl_variable" href="class_colored_point_handler.html#a4b3ee0b18de6bf71cd0f5124ce73c490">point_color_</a> = <a class="code hl_function" href="group___helper_functions.html#ga79584d71167afeb72ca384eaf87c1419">HelperFunctions::RatioToRgb</a>(ratio);</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_colored_point_handler.html#a4b3ee0b18de6bf71cd0f5124ce73c490">point_color_</a> == Scalar(0, 0, 0))</div>
+<div class="line"><span class="lineno">  101</span>        {</div>
+<div class="line"><span class="lineno">  102</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;ratio: &quot;</span> &lt;&lt; ratio &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  103</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;current_amplitude_.x: &quot;</span> &lt;&lt; <a class="code hl_variable" href="class_vibrating_point.html#a5ae50ac111f6681489eded6da7ef66ea">current_amplitude_</a>.x &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  104</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;max ampl: &quot;</span> &lt;&lt; <a class="code hl_variable" href="class_vibrating_point.html#afdefa096df21cf891ae6835a6df4ffc9">extremum_amplitude_</a>.first &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  105</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;min ampl: &quot;</span> &lt;&lt; <a class="code hl_variable" href="class_vibrating_point.html#afdefa096df21cf891ae6835a6df4ffc9">extremum_amplitude_</a>.second &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  106</span>        }</div>
+<div class="line"><span class="lineno">  107</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  108</span>    }</div>
+<div class="line"><span class="lineno">  109</span>    }</div>
+<div class="line"><span class="lineno">  110</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_vibrating_point.html#a0298c80261ea234f82e1afff59d2d1fa">interacted_</a>)</div>
+<div class="line"><span class="lineno">  111</span>    {</div>
+<div class="line"><span class="lineno">  112</span>        <a class="code hl_variable" href="class_colored_point_handler.html#a4b3ee0b18de6bf71cd0f5124ce73c490">point_color_</a> = Scalar(255, 255, 255);</div>
+<div class="line"><span class="lineno">  113</span>        <a class="code hl_variable" href="class_vibrating_point.html#ac0a7383346b67916a29c9dc892addfae">current_point_radius_</a> *= 3;</div>
+<div class="line"><span class="lineno">  114</span>    }</div>
+<div class="line"><span class="lineno">  115</span>}</div>
+<div class="ttc" id="aclass_vibrating_point_html_a5ae50ac111f6681489eded6da7ef66ea"><div class="ttname"><a href="class_vibrating_point.html#a5ae50ac111f6681489eded6da7ef66ea">VibratingPoint::current_amplitude_</a></div><div class="ttdeci">Point3f current_amplitude_</div><div class="ttdoc">Фактические амплитуды вибрации по x, y. Выражаюытся в пикселях</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00131">vibrating_point.h:131</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_aa0b94560fbac6ae1c5dbae9f4931d28c"><div class="ttname"><a href="class_vibrating_point.html#aa0b94560fbac6ae1c5dbae9f4931d28c">VibratingPoint::main_frequency_</a></div><div class="ttdeci">double main_frequency_</div><div class="ttdoc">Главная частота (основная)</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00155">vibrating_point.h:155</a></div></div>
+<div class="ttc" id="aclass_vibrating_point_html_afdefa096df21cf891ae6835a6df4ffc9"><div class="ttname"><a href="class_vibrating_point.html#afdefa096df21cf891ae6835a6df4ffc9">VibratingPoint::extremum_amplitude_</a></div><div class="ttdeci">static std::pair&lt; double, double &gt; extremum_amplitude_</div><div class="ttdoc">Максимум и минимум амплитуды среди всех VibratingPoint объектов-наследников</div><div class="ttdef"><b>Definition:</b> <a href="vibrating__point_8h_source.html#l00106">vibrating_point.h:106</a></div></div>
+<div class="ttc" id="agroup___helper_functions_html_ga79584d71167afeb72ca384eaf87c1419"><div class="ttname"><a href="group___helper_functions.html#ga79584d71167afeb72ca384eaf87c1419">HelperFunctions::RatioToRgb</a></div><div class="ttdeci">cv::Scalar RatioToRgb(double ratio)</div><div class="ttdoc">Генерирует имя TXT файла для сохранени</div><div class="ttdef"><b>Definition:</b> <a href="helper_8cpp_source.html#l00028">helper.cpp:28</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a2fe1b3b0ab84e773e09fa26d79f5d3f9" name="a2fe1b3b0ab84e773e09fa26d79f5d3f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fe1b3b0ab84e773e09fa26d79f5d3f9">&#9670;&#160;</a></span>coloring_mode_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ColoredPointHandler::coloring_mode_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="colored__point__handler_8h_source.html">colored_point_handler.h</a> строка <a class="el" href="colored__point__handler_8h_source.html#l00090">90</a></p>
+
+</div>
+</div>
+<a id="a4b3ee0b18de6bf71cd0f5124ce73c490" name="a4b3ee0b18de6bf71cd0f5124ce73c490"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b3ee0b18de6bf71cd0f5124ce73c490">&#9670;&#160;</a></span>point_color_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Scalar ColoredPointHandler::point_color_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Цвет точки </p>
+
+<p class="definition">См. определение в файле <a class="el" href="colored__point__handler_8h_source.html">colored_point_handler.h</a> строка <a class="el" href="colored__point__handler_8h_source.html#l00102">102</a></p>
+
+</div>
+</div>
+<a id="a10084b9ba7abcc7a6637cf51ae688a5d" name="a10084b9ba7abcc7a6637cf51ae688a5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10084b9ba7abcc7a6637cf51ae688a5d">&#9670;&#160;</a></span>point_id_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ColoredPointHandler::point_id_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ID точки (нет блин почки) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="colored__point__handler_8h_source.html">colored_point_handler.h</a> строка <a class="el" href="colored__point__handler_8h_source.html#l00098">98</a></p>
+
+</div>
+</div>
+<a id="a1920c209cdbaf82feee3310787cedc47" name="a1920c209cdbaf82feee3310787cedc47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1920c209cdbaf82feee3310787cedc47">&#9670;&#160;</a></span>radius_resize_factor_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ColoredPointHandler::radius_resize_factor_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Коэффициент рескейла для радиуса точки </p>
+
+<p class="definition">См. определение в файле <a class="el" href="colored__point__handler_8h_source.html">colored_point_handler.h</a> строка <a class="el" href="colored__point__handler_8h_source.html#l00094">94</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/include/VVT-V2/<a class="el" href="colored__point__handler_8h_source.html">colored_point_handler.h</a></li>
+<li>C:/Users/seeyo/source/repos/Visual-Vibration-Tracking-V2/source/<a class="el" href="colored__point__handler_8cpp_source.html">colored_point_handler.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>
